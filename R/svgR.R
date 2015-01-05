@@ -1,20 +1,6 @@
-# svgR
-#' Compose SVG using R scripts
-#' 
-#' svgR provides tools to compose svg markup 
-#' within the R framework. The results
-#' can then be easily added to either a slidfy 
-#' or shiny application
-#' 
-
-#' 
 #' @import XML
 #' @import stringr
-#' @import data.table
 #' @import shiny
-#' @docType package
-#' @name svgR
-NULL
 
 
 #Helper functions---
