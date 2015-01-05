@@ -2,7 +2,7 @@
 #' Utility to display a svgR file in local browser using shiny
 #' @param svgMarkup A character string containing the svg markup to display (default=NULL)
 #' @param fileName A file name containing the svg markup to display (default=NULL)
-#' @param rCode  Svgcomposer instructions to be evaluated (default=NULL)
+#' @param rCode  svgR instructions to be evaluated (default=NULL)
 #' @details Specify only one of the three named parameters.
 #' @examples 
 #' \dontrun{ display(fileName="dog.r") }
