@@ -26,17 +26,9 @@ require("stringr")
 svgDoc.new=function(width=1150, height=860, ... ){
   list(...)->args
   args<-c( list( width=width, height=height), list(...) )
-  if( "namespaceDefinitons" %in% names(args)){
-    namespaceDefinitons<-args[["namespaceDefinitons"]]
-  } else {
-    namespaceDefinitons<- c(
-      "http://www.w3.org/2000/svg",
-      "xmlns:xlink"="http://www.w3.org/1999/xlink",
-      "xmlns:ev"="http://www.w3.org/2001/xml-events"
-    )    
-  }
     
-  doc<-newXMLDoc(namespaceDefinitons)
+  #doc<-newXMLDoc(namespaceDefinitons)
+  doc<-newXMLDoc()
   svgRoot( parent=doc, args=args)
   doc<-structure(list(top=doc,
                       wh=c(width,height)
@@ -54,6 +46,17 @@ svgRoot<-function(parent,  args){
 #       ev="http://www.w3.org/2001/xml-events"
 #     )
 #   } 
+  if( "namespaceDefinitons" %in% names(args)){
+    namespaceDefinitions<-args[["namespaceDefinitions"]]
+    argsargs[["namespaceDefinitions"]]=NULL
+  } else {
+    namespaceDefinitions<- c(
+      "http://www.w3.org/2000/svg",
+      "xlink"="http://www.w3.org/1999/xlink",
+      "ev"="http://www.w3.org/2001/xml-events"
+    )
+  }
+  
   args[["id"]]<-"root"
   args <- promoteUnamedLists(args)
   attrs <- named(args)
@@ -80,7 +83,7 @@ attrs[indx] <- lapply(attrs[indx], function(x) {
 })
 newXMLNode("svg", parent=parent,
            attrs=attrs, 
-           #namespaceDefinitions = namespaceDefinitions, 
+           namespaceDefinitions = namespaceDefinitions, 
            .children=unnamed(args)) 
 
 }
