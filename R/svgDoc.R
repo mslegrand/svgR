@@ -117,8 +117,10 @@ function(doc,id=''){
     fn<-function(...){ 
       s<-substitute(list(...))
       args<-eval(s, list2env(eleDefs, parent.frame() ) )
-      kids<-unnamed(args)
+      args <- promoteUnamedLists(args)
+      #kids<-unnamed(args)
       attrS<-named(args)
+      kids<-allGoodChildern(args)
       if(length(attrS)>0){
         #cat(names(attrS),collapse=",  ")
         #cat("\n")
