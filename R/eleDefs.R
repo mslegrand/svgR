@@ -1,4 +1,5 @@
-eleDefs<- structure(list("font-face" = function (...) 
+eleDefs<-
+ structure(list("font-face" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -20,7 +21,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, glyph = function (...) 
+}, 
+glyph = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -58,7 +60,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("glyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, "missing-glyph" = function (...) 
+}, 
+"missing-glyph" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -89,7 +92,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("missing-glyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, hkern = function (...) 
+}, 
+hkern = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -106,7 +110,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("hkern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, vkern = function (...) 
+}, 
+vkern = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -123,7 +128,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("vkern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, font = function (...) 
+}, 
+font = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -148,7 +154,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, "font-face-name" = function (...) 
+}, 
+"font-face-name" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -156,7 +163,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, "font-face-format" = function (...) 
+}, 
+"font-face-format" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -164,7 +172,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, "font-face-uri" = function (...) 
+}, 
+"font-face-uri" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -172,7 +181,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, animate = function (...) 
+}, 
+animate = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -209,7 +219,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("animate", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, animateColor = function (...) 
+}, 
+animateColor = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -246,7 +257,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("animateColor", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, animateMotion = function (...) 
+}, 
+animateMotion = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -289,7 +301,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("animateMotion", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, animateTransform = function (...) 
+}, 
+animateTransform = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -326,7 +339,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("animateTransform", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, set = function (...) 
+}, 
+set = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -356,7 +370,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("set", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, mpath = function (...) 
+}, 
+mpath = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -364,7 +379,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("mpath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feFuncA = function (...) 
+}, 
+feFuncA = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -372,7 +388,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feFuncA", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feFuncB = function (...) 
+}, 
+feFuncB = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -380,7 +397,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feFuncB", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feFuncG = function (...) 
+}, 
+feFuncG = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -388,7 +406,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feFuncG", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feFuncR = function (...) 
+}, 
+feFuncR = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -396,7 +415,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feFuncR", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feDistantLight = function (...) 
+}, 
+feDistantLight = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -404,7 +424,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feDistantLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feTurbulence = function (...) 
+}, 
+feTurbulence = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -436,7 +457,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feTurbulence", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feConvolveMatrix = function (...) 
+}, 
+feConvolveMatrix = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -468,7 +490,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feConvolveMatrix", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feDiffuseLighting = function (...) 
+}, 
+feDiffuseLighting = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -500,7 +523,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feDiffuseLighting", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feOffset = function (...) 
+}, 
+feOffset = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -526,7 +550,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feOffset", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, filter = function (...) 
+}, 
+filter = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -558,7 +583,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("filter", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feBlend = function (...) 
+}, 
+feBlend = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -583,7 +609,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feBlend", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feColorMatrix = function (...) 
+}, 
+feColorMatrix = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -608,7 +635,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feColorMatrix", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feComponentTransfer = function (...) 
+}, 
+feComponentTransfer = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -633,7 +661,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feComponentTransfer", attrs = attrs, 
         .children = allGoodChildern(args), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feComposite = function (...) 
+}, 
+feComposite = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -659,7 +688,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feComposite", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feDisplacementMap = function (...) 
+}, 
+feDisplacementMap = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -684,7 +714,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feDisplacementMap", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feFlood = function (...) 
+}, 
+feFlood = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -709,7 +740,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feFlood", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feGaussianBlur = function (...) 
+}, 
+feGaussianBlur = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -741,7 +773,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feGaussianBlur", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feImage = function (...) 
+}, 
+feImage = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -766,7 +799,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feImage", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feMerge = function (...) 
+}, 
+feMerge = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -791,7 +825,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feMerge", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feMorphology = function (...) 
+}, 
+feMorphology = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -823,7 +858,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feMorphology", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feSpecularLighting = function (...) 
+}, 
+feSpecularLighting = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -855,7 +891,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feSpecularLighting", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feTile = function (...) 
+}, 
+feTile = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -880,7 +917,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feTile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feSpotLight = function (...) 
+}, 
+feSpotLight = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -890,7 +928,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feSpotLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, fePointLight = function (...) 
+}, 
+fePointLight = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -900,7 +939,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("fePointLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, svg = function (...) 
+}, 
+svg = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -932,7 +972,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("svg", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, a = function (...) 
+}, 
+a = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -968,7 +1009,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("a", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, altGlyph = function (...) 
+}, 
+altGlyph = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -999,7 +1041,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("altGlyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, circle = function (...) 
+}, 
+circle = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1037,7 +1080,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("circle", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, clipPath = function (...) 
+}, 
+clipPath = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1073,7 +1117,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("clipPath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, cursor = function (...) 
+}, 
+cursor = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1096,7 +1141,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("cursor", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, defs = function (...) 
+}, 
+defs = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1132,7 +1178,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("defs", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, ellipse = function (...) 
+}, 
+ellipse = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1170,7 +1217,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("ellipse", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, foreignObject = function (...) 
+}, 
+foreignObject = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1209,7 +1257,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("foreignObject", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, g = function (...) 
+}, 
+g = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1245,7 +1294,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("g", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, image = function (...) 
+}, 
+image = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1284,7 +1334,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("image", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, line = function (...) 
+}, 
+line = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1323,7 +1374,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("line", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, linearGradient = function (...) 
+}, 
+linearGradient = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1372,7 +1424,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("linearGradient", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, marker = function (...) 
+}, 
+marker = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1403,7 +1456,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("marker", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, mask = function (...) 
+}, 
+mask = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1435,7 +1489,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("mask", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, path = function (...) 
+}, 
+path = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1478,7 +1533,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("path", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, pattern = function (...) 
+}, 
+pattern = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1517,7 +1573,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("pattern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, polygon = function (...) 
+}, 
+polygon = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1560,7 +1617,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("polygon", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, polyline = function (...) 
+}, 
+polyline = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1603,7 +1661,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("polyline", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, radialGradient = function (...) 
+}, 
+radialGradient = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1651,7 +1710,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("radialGradient", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, rect = function (...) 
+}, 
+rect = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1690,7 +1750,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("rect", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, script = function (...) 
+}, 
+script = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1698,7 +1759,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("script", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, switch = function (...) 
+}, 
+switch = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1734,7 +1796,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("switch", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, symbol = function (...) 
+}, 
+symbol = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1763,7 +1826,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("symbol", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, text = function (...) 
+}, 
+text = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1820,7 +1884,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("text", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, textPath = function (...) 
+}, 
+textPath = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1868,7 +1933,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("textPath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, tref = function (...) 
+}, 
+tref = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1899,7 +1965,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("tref", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, tspan = function (...) 
+}, 
+tspan = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1949,7 +2016,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("tspan", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, use = function (...) 
+}, 
+use = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1988,7 +2056,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("use", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, view = function (...) 
+}, 
+view = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2010,7 +2079,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("view", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, altGlyphDef = function (...) 
+}, 
+altGlyphDef = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2018,7 +2088,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("altGlyphDef", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, altGlyphItem = function (...) 
+}, 
+altGlyphItem = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2026,7 +2097,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("altGlyphItem", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, "color-profile" = function (...) 
+}, 
+"color-profile" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2041,7 +2113,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, desc = function (...) 
+}, 
+desc = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2063,7 +2136,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("desc", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, feMergeNode = function (...) 
+}, 
+feMergeNode = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2071,7 +2145,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("feMergeNode", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, "font-face-src" = function (...) 
+}, 
+"font-face-src" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2079,7 +2154,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, glyphRef = function (...) 
+}, 
+glyphRef = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2110,7 +2186,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("glyphRef", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, metadata = function (...) 
+}, 
+metadata = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2118,7 +2195,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("metadata", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, stop = function (...) 
+}, 
+stop = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2140,7 +2218,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("stop", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, style = function (...) 
+}, 
+style = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2155,7 +2234,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("style", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, title = function (...) 
+}, 
+title = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2177,7 +2257,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("title", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, font.face = function (...) 
+}, 
+font.face = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2199,7 +2280,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, missing.glyph = function (...) 
+}, 
+missing.glyph = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2230,7 +2312,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("missing-glyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, font.face.name = function (...) 
+}, 
+font.face.name = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2238,7 +2321,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, font.face.format = function (...) 
+}, 
+font.face.format = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2246,7 +2330,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, font.face.uri = function (...) 
+}, 
+font.face.uri = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2254,7 +2339,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, color.profile = function (...) 
+}, 
+color.profile = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2269,7 +2355,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, font.face.src = function (...) 
+}, 
+font.face.src = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2277,54 +2364,8 @@ eleDefs<- structure(list("font-face" = function (...)
     node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, svgDoc = function (width = 1150, height = 860, ...) 
-{
-    args <- unlist(c(list(width = width, height = height), list(...)))
-    namespaceDefinitions <- list(xmlns = "http://www.w3.org/2000/svg", 
-        xmlns = "http://www.w3.org/1999/xlink")
-    root <- newXMLNode("svg", attrs = named(args), namespaceDefinitions = namespaceDefinitions, 
-        .children = unnamed(args))
-    ensureNamespace(root, c(xlink = "http://www.w3.org/1999/xlink"))
-    root
-}, svgMarkup.new = function (width = 1150, height = 860, namespaceDefinitons = NULL, 
-    ...) 
-{
-    args <- c(list(width = width, height = height), list(...))
-    if (is.null(args[["namespaceDefinitons"]])) {
-        namespaceDefinitions <- c("http://www.w3.org/2000/svg", 
-            xlink = "http://www.w3.org/1999/xlink", ev = "http://www.w3.org/2001/xml-events")
-    }
-    else {
-        namespaceDefinitions <- args[["namespaceDefiniton"]]
-        args[["namespaceDefiniton"]] <- NULL
-    }
-    args[["id"]] <- "rootNode"
-    args <- promoteUnamedLists(args)
-    attrs <- named(args)
-    attrs <- attrSplitX(attrs, "width", "height", "wh")
-    attrs <- attrSplitX(attrs, "x", "y", "xy")
-    attrs <- mapCenteredXY(attrs)
-    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "requiredExtensions requiredFeatures class preserveAspectRatio"))
-    attrs[indx] <- lapply(attrs[indx], function(x) {
-        svgPreproc[["wsp-list"]](x)
-    })
-    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "systemLanguage viewBox"))
-    attrs[indx] <- lapply(attrs[indx], function(x) {
-        svgPreproc[["cmm-list"]](x)
-    })
-    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "style"))
-    attrs[indx] <- lapply(attrs[indx], function(x) {
-        svgPreproc[["cln-scln-list"]](x)
-    })
-    rootNode <- newXMLNode("svg", attrs = attrs, namespaceDefinitions = namespaceDefinitions, 
-        .children = unnamed(args))
-    doc <- structure(list(rootNode = rootNode, time = 0), class = "svgDoc", 
-        wh = c(width, height), delta = 1)
-    doc
-}, getNode = function (rootNode, id) 
+}, 
+getNode = function (rootNode, id) 
 {
     if (id != "root") {
         kidV <- getNodeSet(rootNode, paste("//*[@id=\"", id, 
@@ -2354,4 +2395,4 @@ eleDefs<- structure(list("font-face" = function (...)
 "feMergeNode", "font-face-src", "glyphRef", "metadata", "stop", 
 "style", "title", "font.face", "missing.glyph", "font.face.name", 
 "font.face.format", "font.face.uri", "color.profile", "font.face.src", 
-"svgDoc", "svgMarkup.new", "getNode"))
+"getNode"))
