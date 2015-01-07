@@ -27,16 +27,29 @@ unnamed <- function(x) {
 }
 
 promoteUnamedLists<-function(args){
-  if ( is.null(names(args))) {
-    return(args)
-  }
-  indx1<-which(names(args)=="")
-  indx2<-which(sapply(args, class)=="list")
-  indx<-intersect(indx1, indx2)
-  if(length(indx)>0){
-    to.promote<-args[indx]
-    do.call(c,to.promote)->promoted
-    args<-c(args[-indx], promoted)
+  if(length(args)!=0){
+    if ( is.null(names(args)) ) {
+      indx1<-1:length(args)
+    } else {
+      indx1<-which(names(args)=="")
+    }    
+    indx2<-which(sapply(args, class)=="list")
+    indx<-intersect(indx1, indx2)
+    if(length(indx)>0){
+      to.promote<-args[indx]
+      do.call(c,to.promote)->promoted
+      args<-c(args[-indx], promoted)
+    }
+    if ( is.null(names(args)) ) {
+      indx1<-1:length(args)
+    } else {
+      indx1<-which(names(args)=="")
+    }    
+    for(i in indx1 ){
+      if(is.numeric(args[[i]]) || is.character(args[[i]]) ){
+         args[[i]]<-newXMLTextNode(args[[i]])
+      }
+    }      
   }
   args
 }
