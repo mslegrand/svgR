@@ -84,7 +84,9 @@ attrs[indx] <- lapply(attrs[indx], function(x) {
 newXMLNode("svg", parent=parent,
            attrs=attrs, 
            namespaceDefinitions = namespaceDefinitions, 
-           .children=unnamed(args)) 
+           suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning",TRUE),
+           .children=unnamed(args)
+           ) 
 
 }
 
