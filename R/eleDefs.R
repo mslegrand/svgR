@@ -188,6 +188,7 @@ animate = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     attrs <- mapAttributeName(attrs)
+    attrs <- preProcAnimate(attrs)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
         x, "($| )", sep = ""), "begin end"))
     if (length(indx) > 0) {

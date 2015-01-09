@@ -83,7 +83,6 @@ preSubList<-list(
   list(sfrom ="\\.", sto="-")
 )
 
-#from inside build.svgFnQ
 
 svgPreproc<-list(
   "cmm-list"       = function(x){paste(x, collapse=",")} ,
@@ -221,6 +220,47 @@ comboParamHandler<-function(attrs, cp ){
   attrs<-c(attrs, tmp)
   attrs
 }
+
+animateOneParamExpand<-function(attrs, paramName){
+  ani.df<-structure(list(treatValueAs = 
+    c("number-optional-number", "number-optional-number",  
+                  "number-optional-number", "number-optional-number", "number-optional-number",  
+                  "number-optional-number", "wsp-list", "wsp-list", "wsp-list",  
+                  "wsp-list", "wsp-list", "wsp-list", "wsp-list", "wsp-list", "cmm-wsp-list",  
+                  "transform-list", "transform-list", "transform-list", "path-data-list",  
+                  "cmm-list"), V1 = c("baseFrequency", "filterRes", "kernelUnitLength",  
+                                      "order", "radius", "stdDeviation", "kernelMatrix", "class", "dx",  
+                                      "dy", "rotate", "x", "y", "preserveAspectRatio", "points", "gradientTransform",  
+                                      "patternTransform", "transform", "d", "viewBox")
+    ), .Names = c("treatValueAs",   "V1"), row.names = c(NA, -20L), class = "data.frame"
+  ) 
+  if( 'attributeType' %in% names(attrs) && paramName %in% names(attrs) ){
+    attributeType<-attrs[['attributeType']]
+    if(!is.null(attributeType) && attributeType!="CSS"){
+      attributeName<-attrs[['attributeName']]
+      if(attributeName %in% ani.df$V1){
+        #param<-attrs[[paramName]]
+        tva<-ani.df[which(ani.df$V1==attributeName),1]
+        attrs[[paramName]]=svgPreproc[[tva]](attrs[[paramName]])
+        }
+      } 
+    }
+  attrs
+}
+
+preProcAnimate<-function(attrs){
+  params<-c("from","to")
+  for(paramName in params){
+    attrs<-animateOneParamExpand(attrs, paramName)
+  }
+  attrs
+}
+
+
+#}
+#"cmm-wsp-list", "number-optional-number", "path-data-list", "transform-list", 
+#"wsp-list"))
+
 
 #END Helper functions---
 
