@@ -1,6 +1,9 @@
 
 require("XML")
 require("stringr")
+#require("data.table")
+
+
 
 #xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
 
@@ -140,11 +143,11 @@ function(doc,id=''){
 #' @method "as.character" svgDoc
 #' @export  
 as.character.svgDoc<-function(x, ...){
-  tmp<-list(...)
+  tmp<-list(...) 
   if("fragment" %in% names(tmp) && tmp["fragment"]==FALSE){
-    saveXML(x$top, file=NULL, indent=TRUE,    prefix = "")
+    saveXML(x$top, file=tmp[['file']], indent=TRUE,    prefix = "")
   } else {
-    saveXML(xmlRoot(x$top), file=NULL, indent=TRUE,    prefix = "")    
+    saveXML(xmlRoot(x$top), file=tmp[['file']], indent=TRUE,    prefix = "")    
   }
 }
 
