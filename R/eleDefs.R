@@ -18,9 +18,30 @@ eleDefs<-
             svgPreproc[["wsp-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 glyph = function (...) 
 {
@@ -57,9 +78,30 @@ glyph = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("glyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 "missing-glyph" = function (...) 
 {
@@ -89,9 +131,30 @@ glyph = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("missing-glyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 hkern = function (...) 
 {
@@ -107,9 +170,30 @@ hkern = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("hkern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 vkern = function (...) 
 {
@@ -125,9 +209,30 @@ vkern = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("vkern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 font = function (...) 
 {
@@ -151,36 +256,120 @@ font = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 "font-face-name" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 "font-face-format" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 "font-face-uri" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 animate = function (...) 
 {
@@ -217,9 +406,30 @@ animate = function (...)
             svgPreproc[["wsp-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("animate", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 animateColor = function (...) 
 {
@@ -255,9 +465,30 @@ animateColor = function (...)
             svgPreproc[["wsp-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("animateColor", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 animateMotion = function (...) 
 {
@@ -299,9 +530,30 @@ animateMotion = function (...)
             svgPreproc[["wsp-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("animateMotion", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 animateTransform = function (...) 
 {
@@ -337,9 +589,30 @@ animateTransform = function (...)
             svgPreproc[["wsp-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("animateTransform", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 set = function (...) 
 {
@@ -368,63 +641,210 @@ set = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("set", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 mpath = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("mpath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feFuncA = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feFuncA", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feFuncB = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feFuncB", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feFuncG = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feFuncG", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feFuncR = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feFuncR", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feDistantLight = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feDistantLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feTurbulence = function (...) 
 {
@@ -455,9 +875,48 @@ feTurbulence = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feTurbulence", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feConvolveMatrix = function (...) 
 {
@@ -488,9 +947,48 @@ feConvolveMatrix = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feConvolveMatrix", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feDiffuseLighting = function (...) 
 {
@@ -521,9 +1019,48 @@ feDiffuseLighting = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feDiffuseLighting", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feOffset = function (...) 
 {
@@ -548,9 +1085,48 @@ feOffset = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feOffset", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 filter = function (...) 
 {
@@ -581,9 +1157,30 @@ filter = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("filter", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feBlend = function (...) 
 {
@@ -607,9 +1204,48 @@ feBlend = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feBlend", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feColorMatrix = function (...) 
 {
@@ -633,9 +1269,48 @@ feColorMatrix = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feColorMatrix", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feComponentTransfer = function (...) 
 {
@@ -659,9 +1334,48 @@ feComponentTransfer = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feComponentTransfer", attrs = attrs, 
         .children = allGoodChildern(args), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feComposite = function (...) 
 {
@@ -686,9 +1400,48 @@ feComposite = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feComposite", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feDisplacementMap = function (...) 
 {
@@ -712,9 +1465,48 @@ feDisplacementMap = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feDisplacementMap", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feFlood = function (...) 
 {
@@ -738,9 +1530,48 @@ feFlood = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feFlood", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feGaussianBlur = function (...) 
 {
@@ -771,9 +1602,48 @@ feGaussianBlur = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feGaussianBlur", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feImage = function (...) 
 {
@@ -797,9 +1667,48 @@ feImage = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feImage", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feMerge = function (...) 
 {
@@ -823,9 +1732,48 @@ feMerge = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feMerge", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feMorphology = function (...) 
 {
@@ -856,9 +1804,48 @@ feMorphology = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feMorphology", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feSpecularLighting = function (...) 
 {
@@ -889,9 +1876,48 @@ feSpecularLighting = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feSpecularLighting", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feTile = function (...) 
 {
@@ -915,9 +1941,48 @@ feTile = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    {
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+                if (inherits(feNode, "XMLAbstractNode")) {
+                  resultStr <- getsafeNodeAttr("result", feNode)
+                  rtv <- c(rtv, feNode)
+                  attrs[[n]] <- resultStr
+                }
+            }
+        }
+    }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feTile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
+    node <- c(rtv, node)
 }, 
 feSpotLight = function (...) 
 {
@@ -926,9 +1991,30 @@ feSpotLight = function (...)
     attrs <- named(args)
     attrs <- comboParamHandler(attrs, list(pointsAtXYZ = c("pointsAtX", 
     "pointsAtY", "pointsAtZ"), xyz = c("x", "y", "z")))
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feSpotLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 fePointLight = function (...) 
 {
@@ -937,9 +2023,30 @@ fePointLight = function (...)
     attrs <- named(args)
     attrs <- comboParamHandler(attrs, list(xyz = c("x", "y", 
     "z")))
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("fePointLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 svg = function (...) 
 {
@@ -970,9 +2077,16 @@ svg = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
     node <- newXMLNode("svg", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 a = function (...) 
 {
@@ -1007,9 +2121,30 @@ a = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("a", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 altGlyph = function (...) 
 {
@@ -1039,9 +2174,30 @@ altGlyph = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("altGlyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 circle = function (...) 
 {
@@ -1078,9 +2234,30 @@ circle = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("circle", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 clipPath = function (...) 
 {
@@ -1115,9 +2292,30 @@ clipPath = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("clipPath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 cursor = function (...) 
 {
@@ -1139,9 +2337,30 @@ cursor = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("cursor", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 defs = function (...) 
 {
@@ -1176,9 +2395,16 @@ defs = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
     node <- newXMLNode("defs", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 ellipse = function (...) 
 {
@@ -1215,9 +2441,30 @@ ellipse = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("ellipse", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 foreignObject = function (...) 
 {
@@ -1255,9 +2502,30 @@ foreignObject = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("foreignObject", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 g = function (...) 
 {
@@ -1292,9 +2560,30 @@ g = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("g", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 image = function (...) 
 {
@@ -1332,9 +2621,30 @@ image = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("image", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 line = function (...) 
 {
@@ -1372,9 +2682,30 @@ line = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("line", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 linearGradient = function (...) 
 {
@@ -1405,6 +2736,7 @@ linearGradient = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
     if ("colors" %in% names(attrs)) {
         colors <- attrs[["colors"]]
         attrs[["colors"]] <- NULL
@@ -1422,9 +2754,29 @@ linearGradient = function (...)
             args <- c(args, stopi)
         }
     }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("linearGradient", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 marker = function (...) 
 {
@@ -1454,9 +2806,30 @@ marker = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("marker", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 mask = function (...) 
 {
@@ -1487,9 +2860,30 @@ mask = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("mask", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 path = function (...) 
 {
@@ -1531,9 +2925,30 @@ path = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("path", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 pattern = function (...) 
 {
@@ -1571,9 +2986,30 @@ pattern = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("pattern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 polygon = function (...) 
 {
@@ -1615,9 +3051,30 @@ polygon = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("polygon", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 polyline = function (...) 
 {
@@ -1659,9 +3116,30 @@ polyline = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("polyline", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 radialGradient = function (...) 
 {
@@ -1691,6 +3169,7 @@ radialGradient = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
     if ("colors" %in% names(attrs)) {
         colors <- attrs[["colors"]]
         attrs[["colors"]] <- NULL
@@ -1708,9 +3187,29 @@ radialGradient = function (...)
             args <- c(args, stopi)
         }
     }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("radialGradient", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 rect = function (...) 
 {
@@ -1748,18 +3247,60 @@ rect = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("rect", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 script = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("script", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 switch = function (...) 
 {
@@ -1794,9 +3335,30 @@ switch = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("switch", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 symbol = function (...) 
 {
@@ -1824,9 +3386,30 @@ symbol = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("symbol", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 text = function (...) 
 {
@@ -1863,6 +3446,7 @@ text = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
     if (!is.null(names(attrs))) {
         attr.names <- names(attrs)
         attr.names <- gsub("^(((style))|((weight))|((variant))|((size))|((family)))$", 
@@ -1882,9 +3466,29 @@ text = function (...)
             attrs["text"] <- NULL
         }
     }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("text", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 textPath = function (...) 
 {
@@ -1912,6 +3516,7 @@ textPath = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
     if (!is.null(names(attrs))) {
         attr.names <- names(attrs)
         attr.names <- gsub("^(((style))|((weight))|((variant))|((size))|((family)))$", 
@@ -1931,9 +3536,29 @@ textPath = function (...)
             attrs["text"] <- NULL
         }
     }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("textPath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 tref = function (...) 
 {
@@ -1963,9 +3588,30 @@ tref = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("tref", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 tspan = function (...) 
 {
@@ -1995,6 +3641,7 @@ tspan = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
     if (!is.null(names(attrs))) {
         attr.names <- names(attrs)
         attr.names <- gsub("^(((style))|((weight))|((variant))|((size))|((family)))$", 
@@ -2014,9 +3661,29 @@ tspan = function (...)
             attrs["text"] <- NULL
         }
     }
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("tspan", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 use = function (...) 
 {
@@ -2054,9 +3721,30 @@ use = function (...)
             svgPreproc[["transform-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("use", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 view = function (...) 
 {
@@ -2077,27 +3765,90 @@ view = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("view", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 altGlyphDef = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("altGlyphDef", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 altGlyphItem = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("altGlyphItem", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 "color-profile" = function (...) 
 {
@@ -2111,9 +3862,30 @@ altGlyphItem = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 desc = function (...) 
 {
@@ -2134,27 +3906,90 @@ desc = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("desc", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 feMergeNode = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("feMergeNode", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 "font-face-src" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 glyphRef = function (...) 
 {
@@ -2184,18 +4019,60 @@ glyphRef = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("glyphRef", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 metadata = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("metadata", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 stop = function (...) 
 {
@@ -2216,9 +4093,30 @@ stop = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("stop", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 style = function (...) 
 {
@@ -2232,9 +4130,30 @@ style = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("style", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 title = function (...) 
 {
@@ -2255,9 +4174,30 @@ title = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("title", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 font.face = function (...) 
 {
@@ -2278,9 +4218,30 @@ font.face = function (...)
             svgPreproc[["wsp-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 missing.glyph = function (...) 
 {
@@ -2310,36 +4271,120 @@ missing.glyph = function (...)
             svgPreproc[["cln-scln-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("missing-glyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 font.face.name = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 font.face.format = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 font.face.uri = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 color.profile = function (...) 
 {
@@ -2353,18 +4398,60 @@ color.profile = function (...)
             svgPreproc[["cmm-list"]](x)
         })
     }
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 font.face.src = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    rtv <- list()
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
+        for (n in indx) {
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
+                }
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
     node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 getNode = function (rootNode, id) 
 {

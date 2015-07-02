@@ -26,6 +26,7 @@ unnamed <- function(x) {
   rtv  
 }
 
+
 promoteUnamedLists<-function(args){
   if(length(args)!=0){
     if ( is.null(names(args)) ) {
@@ -54,7 +55,7 @@ promoteUnamedLists<-function(args){
   args
 }
 
-
+# extracts only the unamed args (if any)
 allGoodChildern<-function(args){
   if (is.null(names(args))) {
     unnamed<-args
@@ -254,6 +255,35 @@ preProcAnimate<-function(attrs){
     attrs<-animateOneParamExpand(attrs, paramName)
   }
   attrs
+}
+
+getDefsNode<-function(anyNode){
+  xmlElementsByTagName(xmlRoot(anyNode), 'defs')->defsNodelist
+  if(length(defsNodelist)==0){
+    newXMLNode('defs')->defsnode
+    defsNodelist<-list(defsnode)
+    #works but I am not confortable with this
+    addChildren(xmlRoot(anyNode), kids=defsNodelist, at=0)
+  }
+  defsNodelist[[1]]
+}
+
+genId.new<-function(gname="genid"){
+  attr.no<-1
+  function(){
+    attr.no<<-attr.no+1
+    attr.id<-paste0("genid", attr.no)
+  } 
+}
+genId<-genId.new()
+
+getsafeNodeAttr<-function(attr.name, node){
+  xmlGetAttr(node, attr.name)->attr.id
+  if(is.null(attr.id)){    
+    attr.id<-genId()    
+    xmlAttrs(node)<-structure(list(attr.id), names=attr.name)
+  }
+  attr.id
 }
 
 
