@@ -28,31 +28,36 @@ unnamed <- function(x) {
 
 
 promoteUnamedLists<-function(args){
-  if(length(args)!=0){
-    if ( is.null(names(args)) ) {
-      indx1<-1:length(args)
-    } else {
-      indx1<-which(names(args)=="")
-    }    
-    indx2<-which(sapply(args, class)=="list")
-    indx<-intersect(indx1, indx2)
-    if(length(indx)>0){
-      to.promote<-args[indx]
-      do.call(c,to.promote)->promoted
-      args<-c(args[-indx], promoted)
-    }
-    if ( is.null(names(args)) ) {
-      indx1<-1:length(args)
-    } else {
-      indx1<-which(names(args)=="")
-    }    
-    for(i in indx1 ){
-      if(is.numeric(args[[i]]) || is.character(args[[i]]) ){
-         args[[i]]<-newXMLTextNode(args[[i]])
-      }
-    }      
+  args->ml1
+  if(!inherits(ml1,'list') | length(args)==0){
+    return(ml1)
   }
-  args
+  if(is.null(names(ml1))){
+    names(ml1)<-rep("",length(ml1))
+  }
+  ml2<-lapply(1:length(ml1), function(i){
+    rtv<-ml1[[i]]
+    nm<-names(ml1)[i]
+    if(nm=="" && (inherits(rtv, 'list'))){
+      rtv<-promoteUnamedLists(rtv)
+    } else {
+      rtv<-list(rtv) 
+      names(rtv)<-nm
+    } 
+    rtv  
+  })
+  do.call(c, ml2)->ml3
+  ml3
+  nms<-names(ml3)
+  ml4<-lapply(1:length(ml3), function(i){
+    rtv<-ml3[[i]]
+    if(nms[i]=="" && (inherits(rtv, 'character')|| inherits(rtv, 'numeric'))){
+      rtv<-newXMLTextNode(rtv)
+    }
+    rtv
+  })
+  names(ml4)<-names(ml3)
+  ml4
 }
 
 # extracts only the unamed args (if any)

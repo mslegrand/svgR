@@ -25,7 +25,7 @@ eleDefs<-
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -128,7 +128,7 @@ glyph = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -224,7 +224,7 @@ glyph = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -306,7 +306,7 @@ hkern = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -388,7 +388,7 @@ vkern = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -478,7 +478,7 @@ font = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -551,7 +551,7 @@ font = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -624,7 +624,7 @@ font = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -697,7 +697,7 @@ font = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -800,7 +800,7 @@ animate = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -902,7 +902,7 @@ animateColor = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1010,7 +1010,7 @@ animateMotion = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1112,7 +1112,7 @@ animateTransform = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1207,7 +1207,7 @@ set = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1280,7 +1280,7 @@ mpath = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1353,7 +1353,7 @@ feFuncA = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1426,7 +1426,7 @@ feFuncB = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1499,7 +1499,7 @@ feFuncG = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1572,7 +1572,7 @@ feFuncR = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1645,7 +1645,7 @@ feDistantLight = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1737,6 +1737,12 @@ feTurbulence = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -1745,11 +1751,14 @@ feTurbulence = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -1759,7 +1768,7 @@ feTurbulence = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1852,6 +1861,12 @@ feConvolveMatrix = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -1860,11 +1875,14 @@ feConvolveMatrix = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -1874,7 +1892,7 @@ feConvolveMatrix = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -1967,6 +1985,12 @@ feDiffuseLighting = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -1975,11 +1999,14 @@ feDiffuseLighting = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -1989,7 +2016,7 @@ feDiffuseLighting = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2076,6 +2103,12 @@ feOffset = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2084,11 +2117,14 @@ feOffset = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2098,7 +2134,7 @@ feOffset = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2164,6 +2200,12 @@ filter = function (...)
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
+    if ("XfeNode" %in% names(args)) {
+        tmp <- names(args)
+        indx <- which(tmp == "XfeNode")
+        tmp[indx] <- ""
+        names(args) <- tmp
+    }
     attrs <- named(args)
     attrs <- comboParamHandler(attrs, list(wh = c("width", "height"
     ), xy = c("x", "y")))
@@ -2196,7 +2238,7 @@ filter = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2281,6 +2323,12 @@ feBlend = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2289,11 +2337,14 @@ feBlend = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2303,7 +2354,7 @@ feBlend = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2389,6 +2440,12 @@ feColorMatrix = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2397,11 +2454,14 @@ feColorMatrix = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2411,7 +2471,7 @@ feColorMatrix = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2497,6 +2557,12 @@ feComponentTransfer = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2505,11 +2571,14 @@ feComponentTransfer = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2519,7 +2588,7 @@ feComponentTransfer = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2606,6 +2675,12 @@ feComposite = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2614,11 +2689,14 @@ feComposite = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2628,7 +2706,7 @@ feComposite = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2714,6 +2792,12 @@ feDisplacementMap = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2722,11 +2806,14 @@ feDisplacementMap = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2736,7 +2823,7 @@ feDisplacementMap = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2822,6 +2909,12 @@ feFlood = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2830,11 +2923,14 @@ feFlood = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2844,7 +2940,7 @@ feFlood = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -2937,6 +3033,12 @@ feGaussianBlur = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -2945,11 +3047,14 @@ feGaussianBlur = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -2959,7 +3064,7 @@ feGaussianBlur = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3045,6 +3150,12 @@ feImage = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -3053,11 +3164,14 @@ feImage = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -3067,7 +3181,7 @@ feImage = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3153,6 +3267,12 @@ feMerge = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -3161,11 +3281,14 @@ feMerge = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -3175,7 +3298,7 @@ feMerge = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3268,6 +3391,12 @@ feMorphology = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -3276,11 +3405,14 @@ feMorphology = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -3290,7 +3422,7 @@ feMorphology = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3383,6 +3515,12 @@ feSpecularLighting = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -3391,11 +3529,14 @@ feSpecularLighting = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -3405,7 +3546,7 @@ feSpecularLighting = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3491,6 +3632,12 @@ feTile = function (...)
     }
     rtv <- list()
     {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
         indx.in <- which(names(attrs) == "in" | names(attrs) == 
             "in2")
         for (n in indx.in) {
@@ -3499,11 +3646,14 @@ feTile = function (...)
                 len <- length(an)
                 rtv <- c(rtv, an[1:(len - 1)])
                 feNode = an[[len]]
-                if (inherits(feNode, "XMLAbstractNode")) {
-                  resultStr <- getsafeNodeAttr("result", feNode)
-                  rtv <- c(rtv, feNode)
-                  attrs[[n]] <- resultStr
-                }
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
             }
         }
     }
@@ -3513,7 +3663,7 @@ feTile = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3589,7 +3739,7 @@ feSpotLight = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3664,7 +3814,7 @@ fePointLight = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3761,7 +3911,7 @@ svg = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3848,7 +3998,7 @@ a = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -3944,7 +4094,7 @@ altGlyph = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4047,7 +4197,7 @@ circle = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4148,7 +4298,7 @@ clipPath = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4236,7 +4386,7 @@ cursor = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4337,7 +4487,7 @@ defs = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4426,7 +4576,7 @@ ellipse = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4530,7 +4680,7 @@ foreignObject = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4631,7 +4781,7 @@ g = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4735,7 +4885,7 @@ image = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4881,7 +5031,7 @@ line = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -4995,7 +5145,7 @@ linearGradient = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5091,7 +5241,7 @@ marker = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5188,7 +5338,7 @@ mask = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5338,7 +5488,7 @@ path = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5442,7 +5592,7 @@ pattern = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5550,7 +5700,7 @@ polygon = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5700,7 +5850,7 @@ polyline = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5813,7 +5963,7 @@ radialGradient = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5917,7 +6067,7 @@ rect = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -5990,7 +6140,7 @@ script = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6091,7 +6241,7 @@ switch = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6185,7 +6335,7 @@ symbol = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6307,7 +6457,7 @@ text = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6420,7 +6570,7 @@ textPath = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6516,7 +6666,7 @@ tref = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6631,7 +6781,7 @@ tspan = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6735,7 +6885,7 @@ use = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6822,7 +6972,7 @@ view = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6895,7 +7045,7 @@ altGlyphDef = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -6968,7 +7118,7 @@ altGlyphItem = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7048,7 +7198,7 @@ altGlyphItem = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7135,7 +7285,7 @@ desc = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7202,13 +7352,39 @@ feMergeNode = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    {
+        indx <- which(names(attrs) == "XfeNode")
+        if (length(indx) > 0) {
+            tmp <- attrs[indx]
+            attrs <- attrs[-indx]
+            rtv <- c(rtv, tmp)
+        }
+        indx.in <- which(names(attrs) == "in" | names(attrs) == 
+            "in2")
+        for (n in indx.in) {
+            an <- attrs[[n]]
+            if (inherits(an, "list") && length(an) >= 1) {
+                len <- length(an)
+                rtv <- c(rtv, an[1:(len - 1)])
+                feNode = an[[len]]
+            }
+            else {
+                feNode = an
+            }
+            if (inherits(feNode, "XMLAbstractNode")) {
+                resultStr <- getsafeNodeAttr("result", feNode)
+                rtv <- c(rtv, XfeNode = feNode)
+                attrs[[n]] <- resultStr
+            }
+        }
+    }
     if ("fill" %in% names(attrs)) {
         indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7268,6 +7444,7 @@ feMergeNode = function (...)
         }
         node
     }
+    node <- c(rtv, node)
 }, 
 "font-face-src" = function (...) 
 {
@@ -7281,7 +7458,7 @@ feMergeNode = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7377,7 +7554,7 @@ glyphRef = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7450,7 +7627,7 @@ metadata = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7537,7 +7714,7 @@ stop = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7617,7 +7794,7 @@ style = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7704,7 +7881,7 @@ title = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7791,7 +7968,7 @@ font.face = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7887,7 +8064,7 @@ missing.glyph = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -7960,7 +8137,7 @@ font.face.name = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -8033,7 +8210,7 @@ font.face.format = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -8106,7 +8283,7 @@ font.face.uri = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -8186,7 +8363,7 @@ color.profile = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
@@ -8259,7 +8436,7 @@ font.face.src = function (...)
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                  "radialGradient"))) {
+                "radialGradient"))) {
                   stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
