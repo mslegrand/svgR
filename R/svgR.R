@@ -255,6 +255,9 @@ animateOneParamExpand<-function(attrs, paramName){
 }
 
 preProcAnimate<-function(attrs){
+  if("attributeName" %in% names(attrs)){
+    attrs[["attributeName"]]<-sub('\\.',"-",attrs[["attributeName"]])
+  }
   params<-c("from","to")
   for(paramName in params){
     attrs<-animateOneParamExpand(attrs, paramName)
