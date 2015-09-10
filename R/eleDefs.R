@@ -19,63 +19,6 @@ eleDefs<-
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -122,14 +65,13 @@ glyph = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -144,20 +86,6 @@ glyph = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -218,14 +146,13 @@ glyph = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -240,20 +167,6 @@ glyph = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -300,63 +213,6 @@ hkern = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("hkern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -382,63 +238,6 @@ vkern = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("vkern", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -472,63 +271,6 @@ font = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -545,63 +287,6 @@ font = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -618,63 +303,6 @@ font = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -691,63 +319,6 @@ font = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -794,63 +365,6 @@ animate = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("animate", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -896,63 +410,6 @@ animateColor = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("animateColor", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1004,63 +461,6 @@ animateMotion = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("animateMotion", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1106,63 +506,6 @@ animateTransform = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("animateTransform", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1201,63 +544,6 @@ set = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("set", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1274,63 +560,6 @@ mpath = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("mpath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1347,63 +576,6 @@ feFuncA = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feFuncA", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1420,63 +592,6 @@ feFuncB = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feFuncB", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1493,63 +608,6 @@ feFuncG = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feFuncG", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1566,63 +624,6 @@ feFuncR = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feFuncR", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1639,63 +640,6 @@ feDistantLight = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feDistantLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -1759,63 +703,6 @@ feTurbulence = function (...)
                 resultStr <- getsafeNodeAttr("result", feNode)
                 rtv <- c(rtv, XfeNode = feNode)
                 attrs[[n]] <- resultStr
-            }
-        }
-    }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
     }
@@ -1886,63 +773,6 @@ feConvolveMatrix = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feConvolveMatrix", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -2010,63 +840,6 @@ feDiffuseLighting = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feDiffuseLighting", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -2128,63 +901,6 @@ feOffset = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feOffset", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -2232,63 +948,6 @@ filter = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("filter", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -2345,63 +1004,6 @@ feBlend = function (...)
                 resultStr <- getsafeNodeAttr("result", feNode)
                 rtv <- c(rtv, XfeNode = feNode)
                 attrs[[n]] <- resultStr
-            }
-        }
-    }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
     }
@@ -2465,63 +1067,6 @@ feColorMatrix = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feColorMatrix", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -2579,63 +1124,6 @@ feComponentTransfer = function (...)
                 resultStr <- getsafeNodeAttr("result", feNode)
                 rtv <- c(rtv, XfeNode = feNode)
                 attrs[[n]] <- resultStr
-            }
-        }
-    }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
     }
@@ -2700,63 +1188,6 @@ feComposite = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feComposite", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -2817,63 +1248,6 @@ feDisplacementMap = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feDisplacementMap", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -2931,63 +1305,6 @@ feFlood = function (...)
                 resultStr <- getsafeNodeAttr("result", feNode)
                 rtv <- c(rtv, XfeNode = feNode)
                 attrs[[n]] <- resultStr
-            }
-        }
-    }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
     }
@@ -3058,63 +1375,6 @@ feGaussianBlur = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feGaussianBlur", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -3175,63 +1435,6 @@ feImage = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feImage", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -3289,63 +1492,6 @@ feMerge = function (...)
                 resultStr <- getsafeNodeAttr("result", feNode)
                 rtv <- c(rtv, XfeNode = feNode)
                 attrs[[n]] <- resultStr
-            }
-        }
-    }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
     }
@@ -3416,63 +1562,6 @@ feMorphology = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feMorphology", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -3540,63 +1629,6 @@ feSpecularLighting = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feSpecularLighting", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -3657,63 +1689,6 @@ feTile = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feTile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -3733,63 +1708,6 @@ feSpotLight = function (...)
     attrs <- comboParamHandler(attrs, list(pointsAtXYZ = c("pointsAtX", 
     "pointsAtY", "pointsAtZ"), xyz = c("x", "y", "z")))
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feSpotLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -3808,63 +1726,6 @@ fePointLight = function (...)
     attrs <- comboParamHandler(attrs, list(xyz = c("x", "y", 
     "z")))
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("fePointLight", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -3905,14 +1766,13 @@ svg = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -3934,16 +1794,16 @@ svg = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
         for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
                 }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
@@ -3992,14 +1852,13 @@ a = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4014,20 +1873,6 @@ a = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4103,48 +1948,6 @@ altGlyph = function (...)
             }
         }
     }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("altGlyph", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -4191,14 +1994,13 @@ circle = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4220,13 +2022,14 @@ circle = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4292,21 +2095,6 @@ clipPath = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     if ("clip-path" %in% names(attrs)) {
         indx <- which(names(attrs) == "clip-path")
         for (n in indx) {
@@ -4317,34 +2105,6 @@ clipPath = function (...)
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
@@ -4380,63 +2140,6 @@ cursor = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("cursor", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -4481,14 +2184,13 @@ defs = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4510,16 +2212,16 @@ defs = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("filter" %in% names(attrs)) {
+        indx <- which(names(attrs) == "filter")
         for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+            filterNode <- attrs[[n]]
+            if (inherits(filterNode, "XMLAbstractNode")) {
+                if (xmlName(filterNode) != "filter") {
+                  stop("Not a filter node")
                 }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
+                fid <- getsafeNodeAttr("id", filterNode)
+                rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
@@ -4570,14 +2272,13 @@ ellipse = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4599,13 +2300,14 @@ ellipse = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4674,63 +2376,6 @@ foreignObject = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("foreignObject", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -4775,14 +2420,55 @@ g = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("marker-end" %in% names(attrs)) {
+        indx <- which(names(attrs) == "marker-end")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "marker")) {
+                  stop("Bad marker parameter")
+                }
+                fid <- getsafeNodeAttr("id", aNode)
+                rtv <- c(rtv, aNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
+    if ("marker-mid" %in% names(attrs)) {
+        indx <- which(names(attrs) == "marker-mid")
+        for (n in indx) {
+            aNode <- attrs[[n]]
+            if (inherits(aNode, "XMLAbstractNode")) {
+                if (!(xmlName(aNode) %in% "marker")) {
+                  stop("Bad marker parameter")
+                }
+                fid <- getsafeNodeAttr("id", aNode)
+                rtv <- c(rtv, aNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
+    if ("marker-start" %in% names(attrs)) {
+        indx <- which(names(attrs) == "marker-start")
+        for (n in indx) {
+            aNode <- attrs[[n]]
+            if (inherits(aNode, "XMLAbstractNode")) {
+                if (!(xmlName(aNode) %in% "marker")) {
+                  stop("Bad marker parameter")
+                }
+                fid <- getsafeNodeAttr("id", aNode)
+                rtv <- c(rtv, aNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
+        for (n in indx) {
+            aNode <- attrs[[n]]
+            if (inherits(aNode, "XMLAbstractNode")) {
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4804,13 +2490,14 @@ g = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4879,14 +2566,13 @@ image = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -4901,20 +2587,6 @@ image = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5025,14 +2697,13 @@ line = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5054,13 +2725,14 @@ line = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5139,63 +2811,6 @@ linearGradient = function (...)
             args <- c(args, stopi)
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("linearGradient", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -5235,14 +2850,13 @@ marker = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5257,20 +2871,6 @@ marker = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5332,14 +2932,13 @@ mask = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5357,34 +2956,6 @@ mask = function (...)
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
@@ -5482,14 +3053,13 @@ path = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5511,13 +3081,14 @@ path = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5586,14 +3157,13 @@ pattern = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5608,20 +3178,6 @@ pattern = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5694,14 +3250,55 @@ polygon = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("marker-end" %in% names(attrs)) {
+        indx <- which(names(attrs) == "marker-end")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "marker")) {
+                  stop("Bad marker parameter")
+                }
+                fid <- getsafeNodeAttr("id", aNode)
+                rtv <- c(rtv, aNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
+    if ("marker-mid" %in% names(attrs)) {
+        indx <- which(names(attrs) == "marker-mid")
+        for (n in indx) {
+            aNode <- attrs[[n]]
+            if (inherits(aNode, "XMLAbstractNode")) {
+                if (!(xmlName(aNode) %in% "marker")) {
+                  stop("Bad marker parameter")
+                }
+                fid <- getsafeNodeAttr("id", aNode)
+                rtv <- c(rtv, aNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
+    if ("marker-start" %in% names(attrs)) {
+        indx <- which(names(attrs) == "marker-start")
+        for (n in indx) {
+            aNode <- attrs[[n]]
+            if (inherits(aNode, "XMLAbstractNode")) {
+                if (!(xmlName(aNode) %in% "marker")) {
+                  stop("Bad marker parameter")
+                }
+                fid <- getsafeNodeAttr("id", aNode)
+                rtv <- c(rtv, aNode)
+                attrs[[n]] = paste0("url(#", fid, ")")
+            }
+        }
+    }
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
+        for (n in indx) {
+            aNode <- attrs[[n]]
+            if (inherits(aNode, "XMLAbstractNode")) {
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5723,13 +3320,14 @@ polygon = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5844,14 +3442,13 @@ polyline = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5873,13 +3470,14 @@ polyline = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -5957,63 +3555,6 @@ radialGradient = function (...)
             args <- c(args, stopi)
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("radialGradient", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -6061,14 +3602,13 @@ rect = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6090,13 +3630,14 @@ rect = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6131,75 +3672,12 @@ rect = function (...)
 script = function (...) 
 {
     args <- list(...)
-    args <- promoteUnamedLists(args)
-    attrs <- named(args)
-    rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    node <- newXMLNode("script", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
+    stopifnot(length(args) > 0, sapply(args, function(x) inherits(x, 
+        "character")))
+    js <- paste(args, collapse = "\n")
+    newXMLNode("script", attrs = list(type = "text/JavaScript"), 
+        newXMLCDataNode(js), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-    {
-        if (length(rtv) > 0) {
-            node <- c(rtv, node)
-        }
-        node
-    }
 }, 
 switch = function (...) 
 {
@@ -6235,14 +3713,13 @@ switch = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6257,20 +3734,6 @@ switch = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6329,14 +3792,13 @@ symbol = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6351,20 +3813,6 @@ symbol = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6451,14 +3899,13 @@ text = function (...)
             attrs["text"] <- NULL
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6480,13 +3927,14 @@ text = function (...)
             }
         }
     }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
+    if ("fill" %in% names(attrs)) {
+        indx <- which(names(attrs) == "fill")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
+                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
+                "radialGradient"))) {
+                  stop("Bad fill parameter")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6579,48 +4027,6 @@ textPath = function (...)
             }
         }
     }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("textPath", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -6671,48 +4077,6 @@ tref = function (...)
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
         }
@@ -6790,48 +4154,6 @@ tspan = function (...)
             }
         }
     }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("tspan", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -6879,14 +4201,13 @@ use = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6901,20 +4222,6 @@ use = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -6966,63 +4273,6 @@ view = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("view", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7039,63 +4289,6 @@ altGlyphDef = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("altGlyphDef", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7112,63 +4305,6 @@ altGlyphItem = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("altGlyphItem", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7192,63 +4328,6 @@ altGlyphItem = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7279,63 +4358,6 @@ desc = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("desc", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7378,63 +4400,6 @@ feMergeNode = function (...)
             }
         }
     }
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("feMergeNode", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7452,63 +4417,6 @@ feMergeNode = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7548,63 +4456,6 @@ glyphRef = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("glyphRef", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7621,63 +4472,6 @@ metadata = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("metadata", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7708,63 +4502,6 @@ stop = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("stop", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7788,63 +4525,6 @@ style = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("style", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7875,63 +4555,6 @@ title = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("title", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -7962,63 +4585,6 @@ font.face = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -8058,14 +4624,13 @@ missing.glyph = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
+    if ("mask" %in% names(attrs)) {
+        indx <- which(names(attrs) == "mask")
         for (n in indx) {
             aNode <- attrs[[n]]
             if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
+                if (!(xmlName(aNode) %in% "mask")) {
+                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -8080,20 +4645,6 @@ missing.glyph = function (...)
             if (inherits(aNode, "XMLAbstractNode")) {
                 if (!(xmlName(aNode) %in% "clipPath")) {
                   stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
                 }
                 fid <- getsafeNodeAttr("id", aNode)
                 rtv <- c(rtv, aNode)
@@ -8131,63 +4682,6 @@ font.face.name = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -8204,63 +4698,6 @@ font.face.format = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -8277,63 +4714,6 @@ font.face.uri = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -8357,63 +4737,6 @@ color.profile = function (...)
         })
     }
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
@@ -8430,63 +4753,6 @@ font.face.src = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    if ("fill" %in% names(attrs)) {
-        indx <- which(names(attrs) == "fill")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% c("pattern", "linearGradient", 
-                "radialGradient"))) {
-                  stop("Bad fill parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("clip-path" %in% names(attrs)) {
-        indx <- which(names(attrs) == "clip-path")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "clipPath")) {
-                  stop("Bad clipPath parameter")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("mask" %in% names(attrs)) {
-        indx <- which(names(attrs) == "mask")
-        for (n in indx) {
-            aNode <- attrs[[n]]
-            if (inherits(aNode, "XMLAbstractNode")) {
-                if (!(xmlName(aNode) %in% "mask")) {
-                  stop("Bad mask")
-                }
-                fid <- getsafeNodeAttr("id", aNode)
-                rtv <- c(rtv, aNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
-    if ("filter" %in% names(attrs)) {
-        indx <- which(names(attrs) == "filter")
-        for (n in indx) {
-            filterNode <- attrs[[n]]
-            if (inherits(filterNode, "XMLAbstractNode")) {
-                if (xmlName(filterNode) != "filter") {
-                  stop("Not a filter node")
-                }
-                fid <- getsafeNodeAttr("id", filterNode)
-                rtv <- c(rtv, filterNode)
-                attrs[[n]] = paste0("url(#", fid, ")")
-            }
-        }
-    }
     node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
         suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
