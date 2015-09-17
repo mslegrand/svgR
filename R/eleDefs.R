@@ -722,6 +722,9 @@ feConvolveMatrix = function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    if (inherits(attrs$kernelMatrix, "matrix")) {
+        attrs$order <- paste(dim(attrs$kernelMatrix))
+    }
     attrs <- comboParamHandler(attrs, list(in1 = "in", targetXY = c("targetX", 
     "targetY"), wh = c("width", "height"), xy = c("x", "y")))
     attrs <- mapCenteredXY(attrs)
