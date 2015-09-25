@@ -132,7 +132,7 @@ NULL
 #' @title font.stretch
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ all | [ normal | ultra.condensed | extra.condensed | condensed | semi.condensed | semi.expanded | expanded | extra.expanded | ultra.expanded] [, [ normal | ultra.condensed | extra.condensed | condensed | semi.condensed | semi.expanded | expanded | extra.expanded | ultra.expanded] ]*}{ Same syntax and semantics as the 'font.stretch' descriptor within an font.face rule. Indication of the condensed or expanded nature of the face relative to others in the same font family. Takes on the same values as the 'font.stretch' property except that. relative keywords (wider, narrower) are not permitteda comma.separated list is permittedthe keyword 'all' is permitted If the attribute is not specified, the effect is as if a value of 'normal' were specified.Animatable. no. }
+#' \item{ all | [ normal | ultra.condensed | extra.condensed | condensed | semi.condensed | semi.expanded | expanded | extra.expanded | ultra.expanded] [, [ normal | ultra.condensed | extra.condensed | condensed | semi.condensed | semi.expanded | expanded | extra.expanded | ultra.expanded] ]*}{Same syntax and semantics as the 'font.stretch' descriptor within an font.face rule. Indication of the condensed or expanded nature of the face relative to others in the same font family. Takes on the same values as the 'font.stretch' property except that. relative keywords (wider, narrower) are not permitteda comma.separated list is permittedthe keyword 'all' is permitted If the attribute is not specified, the effect is as if a value of 'normal' were specified.Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -171,7 +171,7 @@ NULL
 #' @title font.weight
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ all | [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900] [, [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]]*}{ Same syntax and semantics as the 'font.weight' descriptor within an font.face rule. The weight of a face relative to others in the same font family. Takes on the same values as the 'font.weight' property with three exceptions. relative keywords (bolder, lighter) are not permitteda comma.separated list of values is permitted, for fonts that contain multiple weightsan additional keyword, 'all', is permitted, which means that the font will match for all possible weights; either because it contains multiple weights, or because that face only has a single weight. If the attribute is not specified, the effect is as if a value of 'all' were specified.Animatable. no. }
+#' \item{ all | [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900] [, [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]]*}{Same syntax and semantics as the 'font.weight' descriptor within an font.face rule. The weight of a face relative to others in the same font family. Takes on the same values as the 'font.weight' property with three exceptions. relative keywords (bolder, lighter) are not permitteda comma.separated list of values is permitted, for fonts that contain multiple weightsan additional keyword, 'all', is permitted, which means that the font will match for all possible weights; either because it contains multiple weights, or because that face only has a single weight. If the attribute is not specified, the effect is as if a value of 'all' were specified.Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -340,7 +340,7 @@ NULL
 #' @title name
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ <anything>}{ The 'name' attribute specifies the name of a local font. Unlike the syntax allowed between the parentheses of the local(...) clause in an font.face rule 'src' descriptor, the font name specified in this attribute is not surrounded in single or double quotes. Refer to the description of the 'src' descriptor in CSS2 for details on how the font name is interpreted ([CSS2], section 15.3.5).Animatable. no. }
+#' \item{ <anything>}{The 'name' attribute specifies the name of a local font. Unlike the syntax allowed between the parentheses of the local(...) clause in an font.face rule 'src' descriptor, the font name specified in this attribute is not surrounded in single or double quotes. Refer to the description of the 'src' descriptor in CSS2 for details on how the font name is interpreted ([CSS2], section 15.3.5).Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -470,7 +470,7 @@ NULL
 #' @title string
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ <anything>}{ The 'string' attribute is a hint to the user agent, and specifies a list of formats that the font referenced by the parent 'font.face.uri' element supports. The syntax of the attribute value is a format string as defined in CSS2, such as 'truetype'. Refer to the description of the 'src' descriptor in CSS2 for details on how the format hint is interpreted ([CSS2], section 15.3.5).Animatable. no. }
+#' \item{ <anything>}{The 'string' attribute is a hint to the user agent, and specifies a list of formats that the font referenced by the parent 'font.face.uri' element supports. The syntax of the attribute value is a format string as defined in CSS2, such as 'truetype'. Refer to the description of the 'src' descriptor in CSS2 for details on how the format hint is interpreted ([CSS2], section 15.3.5).Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -730,7 +730,7 @@ NULL
 #' @title xlink.href
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ <IRI>}{ The 'xlink.href' attribute specifies the location of the referenced font.Animatable. no. }
+#' \item{ <IRI>}{The 'xlink.href' attribute specifies the location of the referenced font.Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -835,7 +835,7 @@ NULL
 #' \describe{
 #' \item{ discrete}{This specifies that the animation function will jump from one value to the next without any interpolation.}
 #' \item{ linear}{Simple linear interpolation between values is used to calculate the animation function. Except for 'animateMotion', this is the default 'calcMode'.}
-#' \item{ paced}{ Defines interpolation to produce an even pace of change across the animation. This is only supported for the data types for which there is an appropriate distance function defined, which includes only scalar numeric types plus the types listed in Paced animation and complex types. If 'paced' is specified, any 'keyTimes' or 'keySplines' will be ignored. For 'animateMotion', this is the default 'calcMode'. Authors are discouraged from using paced animation on types that do not have a distance function defined, due to its unpredictable behavior in some user agents.}
+#' \item{ paced}{Defines interpolation to produce an even pace of change across the animation. This is only supported for the data types for which there is an appropriate distance function defined, which includes only scalar numeric types plus the types listed in Paced animation and complex types. If 'paced' is specified, any 'keyTimes' or 'keySplines' will be ignored. For 'animateMotion', this is the default 'calcMode'. Authors are discouraged from using paced animation on types that do not have a distance function defined, due to its unpredictable behavior in some user agents.}
 #' \item{ spline}{Interpolates from one value in the 'values' list to the next according to a time function defined by a cubic Bzier spline. The points of the spline are defined in the 'keyTimes' attribute, and the control points for each interval are defined in the 'keySplines' attribute.}
 #' }
 #' @section Used by the Elements:
@@ -931,7 +931,7 @@ NULL
 #' @title keyTimes
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ <list>}{ A semicolon.separated list of time values used to control the pacing of the animation. Each time in the list corresponds to a value in the 'values' attribute list, and defines when the value is used in the animation function. Each time value in the 'keyTimes' list is specified as a floating point value between 0 and 1 (inclusive), representing a proportional offset into the simple duration of the animation element. For animations specified with a 'values' list, the 'keyTimes' attribute if specified must have exactly as many values as there are in the 'values' attribute. For from/to/by animations, the 'keyTimes' attribute if specified must have two values. Each successive time value must be greater than or equal to the preceding time value. The 'keyTimes' list semantics depends upon the interpolation mode. For linear and spline animation, the first time value in the list must be 0, and the last time value in the list must be 1. The key time associated with each value defines when the value is set; values are interpolated between the key times.For discrete animation, the first time value in the list must be 0. The time associated with each value defines when the value is set; the animation function uses that value until the next time defined in 'keyTimes'.If the interpolation mode is 'paced', the 'keyTimes' attribute is ignored. If there are any errors in the 'keyTimes' specification (bad values, too many or too few values), the document fragment is in error (see error processing). If the simple duration is indefinite, any 'keyTimes' specification will be ignored. Because paced animation interpolation is unspecified for some value types, authors are encouraged to use 'linear' animation interpolation with calculated 'keyTimes' to achieve particular interpolation behavior for these types. Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. 'keyTimes' attribute ([SMILANIM], section 3.2.3). }
+#' \item{ <list>}{A semicolon.separated list of time values used to control the pacing of the animation. Each time in the list corresponds to a value in the 'values' attribute list, and defines when the value is used in the animation function. Each time value in the 'keyTimes' list is specified as a floating point value between 0 and 1 (inclusive), representing a proportional offset into the simple duration of the animation element. For animations specified with a 'values' list, the 'keyTimes' attribute if specified must have exactly as many values as there are in the 'values' attribute. For from/to/by animations, the 'keyTimes' attribute if specified must have two values. Each successive time value must be greater than or equal to the preceding time value. The 'keyTimes' list semantics depends upon the interpolation mode. For linear and spline animation, the first time value in the list must be 0, and the last time value in the list must be 1. The key time associated with each value defines when the value is set; values are interpolated between the key times.For discrete animation, the first time value in the list must be 0. The time associated with each value defines when the value is set; the animation function uses that value until the next time defined in 'keyTimes'.If the interpolation mode is 'paced', the 'keyTimes' attribute is ignored. If there are any errors in the 'keyTimes' specification (bad values, too many or too few values), the document fragment is in error (see error processing). If the simple duration is indefinite, any 'keyTimes' specification will be ignored. Because paced animation interpolation is unspecified for some value types, authors are encouraged to use 'linear' animation interpolation with calculated 'keyTimes' to achieve particular interpolation behavior for these types. Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. 'keyTimes' attribute ([SMILANIM], section 3.2.3).}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1082,7 +1082,7 @@ NULL
 #' @title type
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ translate | scale | rotate | skewX | skewY}{Indicates the type of transformation which is to have its values change over time. If the attribute is not specified, then the effect is as if a value of 'translate' were specified. }
+#' \item{ translate | scale | rotate | skewX | skewY}{Indicates the type of transformation which is to have its values change over time. If the attribute is not specified, then the effect is as if a value of 'translate' were specified.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1134,7 +1134,7 @@ NULL
 #' @title amplitude
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{When type="gamma", the amplitude of the gamma function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{When type="gamma", the amplitude of the gamma function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1147,7 +1147,7 @@ NULL
 #' @title azimuth
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Direction angle for the light source on the XY plane (clockwise), in degrees from the x axis. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Direction angle for the light source on the XY plane (clockwise), in degrees from the x axis. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1160,7 +1160,7 @@ NULL
 #' @title baseFrequency
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number.optional.number>"}{The base frequency (frequencies) parameter(s) for the noise function. If two <number>s are provided, the first number represents a base frequency in the X direction and the second value represents a base frequency in the Y direction. If one number is provided, then that value is used for both X and Y. A negative value for base frequency is an error (see Error processing). If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number.optional.number>}{The base frequency (frequencies) parameter(s) for the noise function. If two <number>s are provided, the first number represents a base frequency in the X direction and the second value represents a base frequency in the Y direction. If one number is provided, then that value is used for both X and Y. A negative value for base frequency is an error (see Error processing). If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1186,7 +1186,7 @@ NULL
 #' @title diffuseConstant
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{kd in Phong lighting model. In SVG, this can be any non.negative number. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{kd in Phong lighting model. In SVG, this can be any non.negative number. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1212,7 +1212,7 @@ NULL
 #' @title dx
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{The amount to offset the input graphic along the x.axis. The offset amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{The amount to offset the input graphic along the x.axis. The offset amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1225,7 +1225,7 @@ NULL
 #' @title dy
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{The amount to offset the input graphic along the y.axis. The offset amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{The amount to offset the input graphic along the y.axis. The offset amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1238,7 +1238,7 @@ NULL
 #' @title edgeMode
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ duplicate | wrap | none}{ Determines how to extend the input image as necessary with color values so that the matrix operations can be applied when the kernel is positioned at or near the edge of the input image. "duplicate" indicates that the input image is extended along each of its borders as necessary by duplicating the color values at the given edge of the input image.Original N.by.M image, where m=M.1 and n=N.1. 11 12 ... 1m 1M 21 22 ... 2m 2M .. .. ... .. .. n1 n2 ... nm nM N1 N2 ... Nm NMExtended by two pixels using "duplicate". 11 11 11 12 ... 1m 1M 1M 1M 11 11 11 12 ... 1m 1M 1M 1M 11 11 11 12 ... 1m 1M 1M 1M 21 21 21 22 ... 2m 2M 2M 2M .. .. .. .. ... .. .. .. .. n1 n1 n1 n2 ... nm nM nM nM N1 N1 N1 N2 ... Nm NM NM NM N1 N1 N1 N2 ... Nm NM NM NM N1 N1 N1 N2 ... Nm NM NM NM "wrap" indicates that the input image is extended by taking the color values from the opposite edge of the image.Extended by two pixels using "wrap". nm nM n1 n2 ... nm nM n1 n2 Nm NM N1 N2 ... Nm NM N1 N2 1m 1M 11 12 ... 1m 1M 11 12 2m 2M 21 22 ... 2m 2M 21 22 .. .. .. .. ... .. .. .. .. nm nM n1 n2 ... nm nM n1 n2 Nm NM N1 N2 ... Nm NM N1 N2 1m 1M 11 12 ... 1m 1M 11 12 2m 2M 21 22 ... 2m 2M 21 22 "none" indicates that the input image is extended with pixel values of zero for R, G, B and A. If attribute 'edgeMode' is not specified, then the effect is as if a value of duplicate were specified. Animatable. yes. }
+#' \item{ duplicate | wrap | none}{Determines how to extend the input image as necessary with color values so that the matrix operations can be applied when the kernel is positioned at or near the edge of the input image. "duplicate" indicates that the input image is extended along each of its borders as necessary by duplicating the color values at the given edge of the input image.Original N.by.M image, where m=M.1 and n=N.1. 11 12 ... 1m 1M 21 22 ... 2m 2M .. .. ... .. .. n1 n2 ... nm nM N1 N2 ... Nm NMExtended by two pixels using "duplicate". 11 11 11 12 ... 1m 1M 1M 1M 11 11 11 12 ... 1m 1M 1M 1M 11 11 11 12 ... 1m 1M 1M 1M 21 21 21 22 ... 2m 2M 2M 2M .. .. .. .. ... .. .. .. .. n1 n1 n1 n2 ... nm nM nM nM N1 N1 N1 N2 ... Nm NM NM NM N1 N1 N1 N2 ... Nm NM NM NM N1 N1 N1 N2 ... Nm NM NM NM "wrap" indicates that the input image is extended by taking the color values from the opposite edge of the image.Extended by two pixels using "wrap". nm nM n1 n2 ... nm nM n1 n2 Nm NM N1 N2 ... Nm NM N1 N2 1m 1M 11 12 ... 1m 1M 11 12 2m 2M 21 22 ... 2m 2M 21 22 .. .. .. .. ... .. .. .. .. nm nM n1 n2 ... nm nM n1 n2 Nm NM N1 N2 ... Nm NM N1 N2 1m 1M 11 12 ... 1m 1M 11 12 2m 2M 21 22 ... 2m 2M 21 22 "none" indicates that the input image is extended with pixel values of zero for R, G, B and A. If attribute 'edgeMode' is not specified, then the effect is as if a value of duplicate were specified. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1251,7 +1251,7 @@ NULL
 #' @title elevation
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Direction angle for the light source from the XY plane towards the z axis, in degrees. Note the positive Z.axis points towards the viewer of the content. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Direction angle for the light source from the XY plane towards the z axis, in degrees. Note the positive Z.axis points towards the viewer of the content. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1264,7 +1264,7 @@ NULL
 #' @title exponent
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{When type="gamma", the exponent of the gamma function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{When type="gamma", the exponent of the gamma function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1277,7 +1277,7 @@ NULL
 #' @title filterRes
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number.optional.number>"}{See Filter effects region.}
+#' \item{ <number.optional.number>}{See Filter effects region.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1290,7 +1290,7 @@ NULL
 #' @title filterUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{See Filter effects region.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{See Filter effects region.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1303,7 +1303,7 @@ NULL
 #' @title height
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<length>"}{See Filter effects region.}
+#' \item{ <length>}{See Filter effects region.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1316,7 +1316,7 @@ NULL
 #' @title height
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<length>"}{The height of the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is a transparent black image).Animatable. yes.}
+#' \item{ <length>}{The height of the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is a transparent black image).Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1347,7 +1347,7 @@ NULL
 #' @title in2
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "(see 'in' attribute)"}{The second input image to the blending operation. This attribute can take on the same values as the 'in' attribute.Animatable. yes.}
+#' \item{ (see 'in' attribute)}{The second input image to the blending operation. This attribute can take on the same values as the 'in' attribute.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1360,7 +1360,7 @@ NULL
 #' @title in2
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "(see 'in' attribute)"}{The second input image to the compositing operation. This attribute can take on the same values as the 'in' attribute.Animatable. yes.}
+#' \item{ (see 'in' attribute)}{The second input image to the compositing operation. This attribute can take on the same values as the 'in' attribute.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1373,7 +1373,7 @@ NULL
 #' @title in2
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "(see 'in' attribute)"}{The second input image, which is used to displace the pixels in the image from attribute 'in'. This attribute can take on the same values as the 'in' attribute.Animatable. yes.}
+#' \item{ (see 'in' attribute)}{The second input image, which is used to displace the pixels in the image from attribute 'in'. This attribute can take on the same values as the 'in' attribute.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1386,7 +1386,7 @@ NULL
 #' @title intercept
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{When type="linear", the intercept of the linear function. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{When type="linear", the intercept of the linear function. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1399,7 +1399,7 @@ NULL
 #' @title k1
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1412,7 +1412,7 @@ NULL
 #' @title k2
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1425,7 +1425,7 @@ NULL
 #' @title k3
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1438,7 +1438,7 @@ NULL
 #' @title k4
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1503,7 +1503,7 @@ NULL
 #' @title limitingConeAngle
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{A limiting cone which restricts the region where the light is projected. No light is projected outside the cone. 'limitingConeAngle' represents the angle in degrees between the spot light axis (i.e. the axis between the light source and the point to which it is pointing at) and the spot light cone. User agents should apply a smoothing technique such as anti.aliasing at the boundary of the cone. If no value is specified, then no limiting cone will be applied.Animatable. yes.}
+#' \item{ <number>}{A limiting cone which restricts the region where the light is projected. No light is projected outside the cone. 'limitingConeAngle' represents the angle in degrees between the spot light axis (i.e. the axis between the light source and the point to which it is pointing at) and the spot light cone. User agents should apply a smoothing technique such as anti.aliasing at the boundary of the cone. If no value is specified, then no limiting cone will be applied.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1516,7 +1516,7 @@ NULL
 #' @title mode
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "normal | multiply | screen | darken | lighten"}{One of the image blending modes (see table below). If attribute 'mode' is not specified, then the effect is as if a value of normal were specified.Animatable. yes.}
+#' \item{ normal | multiply | screen | darken | lighten}{One of the image blending modes (see table below). If attribute 'mode' is not specified, then the effect is as if a value of normal were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1529,7 +1529,7 @@ NULL
 #' @title numOctaves
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<integer>"}{The numOctaves parameter for the noise function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <integer>}{The numOctaves parameter for the noise function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1542,7 +1542,7 @@ NULL
 #' @title offset
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{When type="gamma", the offset of the gamma function. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{When type="gamma", the offset of the gamma function. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1555,7 +1555,7 @@ NULL
 #' @title operator
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "over | in | out | atop | xor | arithmetic"}{The compositing operation that is to be performed. All of the 'operator' types except arithmetic match the corresponding operation as described in [PORTERDUFF]. The arithmetic operator is described above. If attribute 'operator' is not specified, then the effect is as if a value of over were specified.Animatable. yes.}
+#' \item{ over | in | out | atop | xor | arithmetic}{The compositing operation that is to be performed. All of the 'operator' types except arithmetic match the corresponding operation as described in [PORTERDUFF]. The arithmetic operator is described above. If attribute 'operator' is not specified, then the effect is as if a value of over were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1568,7 +1568,7 @@ NULL
 #' @title operator
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "erode | dilate"}{A keyword indicating whether to erode (i.e., thin) or dilate (fatten) the source graphic. If attribute 'operator' is not specified, then the effect is as if a value of erode were specified. Animatable. yes.}
+#' \item{ erode | dilate}{A keyword indicating whether to erode (i.e., thin) or dilate (fatten) the source graphic. If attribute 'operator' is not specified, then the effect is as if a value of erode were specified. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1594,7 +1594,7 @@ NULL
 #' @title pointsAtX
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{X location in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element of the point at which the light source is pointing. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{X location in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element of the point at which the light source is pointing. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1607,7 +1607,7 @@ NULL
 #' @title pointsAtY
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Y location in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element of the point at which the light source is pointing. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Y location in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element of the point at which the light source is pointing. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1620,7 +1620,7 @@ NULL
 #' @title pointsAtZ
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Z location in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element of the point at which the light source is pointing, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Z location in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element of the point at which the light source is pointing, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1646,7 +1646,7 @@ NULL
 #' @title primitiveUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Specifies the coordinate system for the various length values within the filter primitives and for the attributes that define the filter primitive subregion. If primitiveUnits="userSpaceOnUse", any length values within the filter definitions represent values in the current user coordinate system in place at the time when the 'filter' element is referenced (i.e., the user coordinate system for the element referencing the 'filter' element via a 'filter' property). If primitiveUnits="objectBoundingBox", then any length values within the filter definitions represent fractions or percentages of the bounding box on the referencing element (see Object bounding box units). Note that if only one number was specified in a <number.optional.number> value this number is expanded out before the 'primitiveUnits' computation takes place. If attribute 'primitiveUnits' is not specified, then the effect is as if a value of userSpaceOnUse were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Specifies the coordinate system for the various length values within the filter primitives and for the attributes that define the filter primitive subregion. If primitiveUnits="userSpaceOnUse", any length values within the filter definitions represent values in the current user coordinate system in place at the time when the 'filter' element is referenced (i.e., the user coordinate system for the element referencing the 'filter' element via a 'filter' property). If primitiveUnits="objectBoundingBox", then any length values within the filter definitions represent fractions or percentages of the bounding box on the referencing element (see Object bounding box units). Note that if only one number was specified in a <number.optional.number> value this number is expanded out before the 'primitiveUnits' computation takes place. If attribute 'primitiveUnits' is not specified, then the effect is as if a value of userSpaceOnUse were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1659,7 +1659,7 @@ NULL
 #' @title radius
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number.optional.number>"}{The radius (or radii) for the operation. If two <number>s are provided, the first number represents a x.radius and the second value represents a y.radius. If one number is provided, then that value is used for both X and Y. The values are in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is a transparent black image). If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number.optional.number>}{The radius (or radii) for the operation. If two <number>s are provided, the first number represents a x.radius and the second value represents a y.radius. If one number is provided, then that value is used for both X and Y. The values are in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is a transparent black image). If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1672,7 +1672,7 @@ NULL
 #' @title result
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<filter.primitive.reference>"}{Assigned name for this filter primitive. If supplied, then graphics that result from processing this filter primitive can be referenced by an 'in' attribute on a subsequent filter primitive within the same 'filter' element. If no value is provided, the output will only be available for re.use as the implicit input into the next filter primitive if that filter primitive provides no value for its 'in' attribute. Note that a <filter.primitive.reference> is not an XML ID; instead, a <filter.primitive.reference> is only meaningful within a given 'filter' element and thus have only local scope. It is legal for the same <filter.primitive.reference> to appear multiple times within the same 'filter' element. When referenced, the <filter.primitive.reference> will use the closest preceding filter primitive with the given result.Animatable. yes.}
+#' \item{ <filter.primitive.reference>}{Assigned name for this filter primitive. If supplied, then graphics that result from processing this filter primitive can be referenced by an 'in' attribute on a subsequent filter primitive within the same 'filter' element. If no value is provided, the output will only be available for re.use as the implicit input into the next filter primitive if that filter primitive provides no value for its 'in' attribute. Note that a <filter.primitive.reference> is not an XML ID; instead, a <filter.primitive.reference> is only meaningful within a given 'filter' element and thus have only local scope. It is legal for the same <filter.primitive.reference> to appear multiple times within the same 'filter' element. When referenced, the <filter.primitive.reference> will use the closest preceding filter primitive with the given result.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1685,7 +1685,7 @@ NULL
 #' @title scale
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Displacement scale factor. The amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. When the value of this attribute is 0, this operation has no effect on the source image. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Displacement scale factor. The amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. When the value of this attribute is 0, this operation has no effect on the source image. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1698,7 +1698,7 @@ NULL
 #' @title seed
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{The starting number for the pseudo random number generator. If the attribute is not specified, then the effect is as if a value of 0 were specified. When the seed number is handed over to the algorithm above it must first be truncated, i.e. rounded to the closest integer value towards zero.Animatable. yes.}
+#' \item{ <number>}{The starting number for the pseudo random number generator. If the attribute is not specified, then the effect is as if a value of 0 were specified. When the seed number is handed over to the algorithm above it must first be truncated, i.e. rounded to the closest integer value towards zero.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1711,7 +1711,7 @@ NULL
 #' @title slope
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{When type="linear", the slope of the linear function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{When type="linear", the slope of the linear function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1724,7 +1724,7 @@ NULL
 #' @title specularConstant
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{ks in Phong lighting model. In SVG, this can be any non.negative number. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{ks in Phong lighting model. In SVG, this can be any non.negative number. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1737,7 +1737,7 @@ NULL
 #' @title specularExponent
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Exponent for specular term, larger is more "shiny". Range 1.0 to 128.0. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{Exponent for specular term, larger is more "shiny". Range 1.0 to 128.0. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1750,7 +1750,7 @@ NULL
 #' @title specularExponent
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Exponent value controlling the focus for the light source. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{Exponent value controlling the focus for the light source. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1763,7 +1763,7 @@ NULL
 #' @title stdDeviation
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number.optional.number>"}{The standard deviation for the blur operation. If two <number>s are provided, the first number represents a standard deviation value along the x.axis of the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. The second value represents a standard deviation in Y. If one number is provided, then that value is used for both X and Y. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is the filter input image). If 'stdDeviation' is 0 in only one of X or Y, then the effect is that the blur is only applied in the direction that has a non.zero value. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number.optional.number>}{The standard deviation for the blur operation. If two <number>s are provided, the first number represents a standard deviation value along the x.axis of the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. The second value represents a standard deviation in Y. If one number is provided, then that value is used for both X and Y. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is the filter input image). If 'stdDeviation' is 0 in only one of X or Y, then the effect is that the blur is only applied in the direction that has a non.zero value. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1776,7 +1776,7 @@ NULL
 #' @title stitchTiles
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "stitch | noStitch"}{If stitchTiles="noStitch", no attempt it made to achieve smooth transitions at the border of tiles which contain a turbulence function. Sometimes the result will show clear discontinuities at the tile borders. If stitchTiles="stitch", then the user agent will automatically adjust baseFrequency.x and baseFrequency.y values such that the feTurbulence node's width and height (i.e., the width and height of the current subregion) contains an integral number of the Perlin tile width and height for the first octave. The baseFrequency will be adjusted up or down depending on which way has the smallest relative (not absolute) change as follows. Given the frequency, calculate lowFreq=floor(width*frequency)/width and hiFreq=ceil(width*frequency)/width. If frequency/lowFreq < hiFreq/frequency then use lowFreq, else use hiFreq. While generating turbulence values, generate lattice vectors as normal for Perlin Noise, except for those lattice points that lie on the right or bottom edges of the active area (the size of the resulting tile). In those cases, copy the lattice vector from the opposite edge of the active area. If attribute 'stitchTiles' is not specified, then the effect is as if a value of noStitch were specified. Animatable. yes.}
+#' \item{ stitch | noStitch}{If stitchTiles="noStitch", no attempt it made to achieve smooth transitions at the border of tiles which contain a turbulence function. Sometimes the result will show clear discontinuities at the tile borders. If stitchTiles="stitch", then the user agent will automatically adjust baseFrequency.x and baseFrequency.y values such that the feTurbulence node's width and height (i.e., the width and height of the current subregion) contains an integral number of the Perlin tile width and height for the first octave. The baseFrequency will be adjusted up or down depending on which way has the smallest relative (not absolute) change as follows. Given the frequency, calculate lowFreq=floor(width*frequency)/width and hiFreq=ceil(width*frequency)/width. If frequency/lowFreq < hiFreq/frequency then use lowFreq, else use hiFreq. While generating turbulence values, generate lattice vectors as normal for Perlin Noise, except for those lattice points that lie on the right or bottom edges of the active area (the size of the resulting tile). In those cases, copy the lattice vector from the opposite edge of the active area. If attribute 'stitchTiles' is not specified, then the effect is as if a value of noStitch were specified. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1789,7 +1789,7 @@ NULL
 #' @title surfaceScale
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{height of surface when Ain = 1. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{height of surface when Ain = 1. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1802,7 +1802,7 @@ NULL
 #' @title surfaceScale
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{height of surface when Ain = 1. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+#' \item{ <number>}{height of surface when Ain = 1. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1815,7 +1815,7 @@ NULL
 #' @title tableValues
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "(list of <number>s)"}{When type="table", the list of <number>s v0,v1,...vn, separated by white space and/or a comma, which define the lookup table. An empty list results in an identity transfer function. If the attribute is not specified, then the effect is as if an empty list were provided.Animatable. yes.}
+#' \item{ (list of <number>s)}{When type="table", the list of <number>s v0,v1,...vn, separated by white space and/or a comma, which define the lookup table. An empty list results in an identity transfer function. If the attribute is not specified, then the effect is as if an empty list were provided.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1854,7 +1854,7 @@ NULL
 #' @title type
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "matrix | saturate | hueRotate | luminanceToAlpha"}{Indicates the type of matrix operation. The keyword 'matrix' indicates that a full 5x4 matrix of values will be provided. The other keywords represent convenience shortcuts to allow commonly used color operations to be performed without specifying a complete matrix. If attribute 'type' is not specified, then the effect is as if a value of matrix were specified.Animatable. yes.}
+#' \item{ matrix | saturate | hueRotate | luminanceToAlpha}{Indicates the type of matrix operation. The keyword 'matrix' indicates that a full 5x4 matrix of values will be provided. The other keywords represent convenience shortcuts to allow commonly used color operations to be performed without specifying a complete matrix. If attribute 'type' is not specified, then the effect is as if a value of matrix were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1867,7 +1867,7 @@ NULL
 #' @title type
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "fractalNoise | turbulence"}{Indicates whether the filter primitive should perform a noise or turbulence function. If attribute 'type' is not specified, then the effect is as if a value of turbulence were specified. Animatable. yes.}
+#' \item{ fractalNoise | turbulence}{Indicates whether the filter primitive should perform a noise or turbulence function. If attribute 'type' is not specified, then the effect is as if a value of turbulence were specified. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1880,7 +1880,7 @@ NULL
 #' @title type
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "identity | table | discrete | linear | gamma"}{ Indicates the type of component transfer function. The type of function determines the applicability of the other attributes. In the following, C is the initial component (e.g., 'feFuncR'), C' is the remapped component; both in the closed interval [0,1]. For identity. C' = C For table, the function is defined by linear interpolation between values given in the attribute 'tableValues'. The table has n+1 values (i.e., v0 to vn) specifying the start and end values for n evenly sized interpolation regions. Interpolations use the following formula. For a value C < 1 find k such that. k/n <= C < (k+1)/n The result C' is given by. C' = vk + (C . k/n)*n * (vk+1 . vk) If C = 1 then. C' = vn. For discrete, the function is defined by the step function given in the attribute 'tableValues', which provides a list of n values (i.e., v0 to vn.1) in order to identify a step function consisting of n steps. The step function is defined by the following formula. For a value C < 1 find k such that. k/n <= C < (k+1)/n The result C' is given by. C' = vk If C = 1 then. C' = vn.1. For linear, the function is defined by the following linear equation. C' = slope * C + intercept For gamma, the function is defined by the following exponential function. C' = amplitude * pow(C, exponent) + offset Animatable. yes. }
+#' \item{ identity | table | discrete | linear | gamma}{Indicates the type of component transfer function. The type of function determines the applicability of the other attributes. In the following, C is the initial component (e.g., 'feFuncR'), C' is the remapped component; both in the closed interval [0,1]. For identity. C' = C For table, the function is defined by linear interpolation between values given in the attribute 'tableValues'. The table has n+1 values (i.e., v0 to vn) specifying the start and end values for n evenly sized interpolation regions. Interpolations use the following formula. For a value C < 1 find k such that. k/n <= C < (k+1)/n The result C' is given by. C' = vk + (C . k/n)*n * (vk+1 . vk) If C = 1 then. C' = vn. For discrete, the function is defined by the step function given in the attribute 'tableValues', which provides a list of n values (i.e., v0 to vn.1) in order to identify a step function consisting of n steps. The step function is defined by the following formula. For a value C < 1 find k such that. k/n <= C < (k+1)/n The result C' is given by. C' = vk If C = 1 then. C' = vn.1. For linear, the function is defined by the following linear equation. C' = slope * C + intercept For gamma, the function is defined by the following exponential function. C' = amplitude * pow(C, exponent) + offset Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1893,7 +1893,7 @@ NULL
 #' @title values
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "list of <number>s"}{ The contents of 'values' depends on the value of attribute 'type'. For type="matrix", 'values' is a list of 20 matrix values (a00 a01 a02 a03 a04 a10 a11 ... a34), separated by whitespace and/or a comma. For example, the identity matrix could be expressed as. type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" For type="saturate", 'values' is a single real number value (0 to 1). A saturate operation is equivalent to the following matrix operation. | R' | |0.213+0.787s 0.715.0.715s 0.072.0.072s 0 0 | | R || G' | |0.213.0.213s 0.715+0.285s 0.072.0.072s 0 0 | | G || B' | = |0.213.0.213s 0.715.0.715s 0.072+0.928s 0 0 | * | B || A' | | 0 0 0 1 0 | | A || 1 | | 0 0 0 0 1 | | 1 | For type="hueRotate", 'values' is a single one real number value (degrees). A hueRotate operation is equivalent to the following matrix operation. | R' | | a00 a01 a02 0 0 | | R || G' | | a10 a11 a12 0 0 | | G || B' | = | a20 a21 a22 0 0 | * | B || A' | | 0 0 0 1 0 | | A || 1 | | 0 0 0 0 1 | | 1 | where the terms a00, a01, etc. are calculated as follows. | a00 a01 a02 | [+0.213 +0.715 +0.072]| a10 a11 a12 | = [+0.213 +0.715 +0.072] +| a20 a21 a22 | [+0.213 +0.715 +0.072] [+0.787 .0.715 .0.072]cos(hueRotate value) * [.0.213 +0.285 .0.072] + [.0.213 .0.715 +0.928] [.0.213 .0.715+0.928]sin(hueRotate value) * [+0.143 +0.140.0.283] [.0.787 +0.715+0.072] Thus, the upper left term of the hue matrix turns out to be. .213 + cos(hueRotate value)*.787 . sin(hueRotate value)*.213 For type="luminanceToAlpha", 'values' is not applicable. A luminanceToAlpha operation is equivalent to the following matrix operation. | R' | | 0 0 0 0 0 | | R | | G' | | 0 0 0 0 0 | | G | | B' | = | 0 0 0 0 0 | * | B | | A' | | 0.2125 0.7154 0.0721 0 0 | | A | | 1 | | 0 0 0 0 1 | | 1 | If the attribute is not specified, then the default behavior depends on the value of attribute 'type'. If type="matrix", then this attribute defaults to the identity matrix. If type="saturate", then this attribute defaults to the value 1, which results in the identity matrix. If type="hueRotate", then this attribute defaults to the value 0, which results in the identity matrix.Animatable. yes. }
+#' \item{ list of <number>s}{The contents of 'values' depends on the value of attribute 'type'. For type="matrix", 'values' is a list of 20 matrix values (a00 a01 a02 a03 a04 a10 a11 ... a34), separated by whitespace and/or a comma. For example, the identity matrix could be expressed as. type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" For type="saturate", 'values' is a single real number value (0 to 1). A saturate operation is equivalent to the following matrix operation. | R' | |0.213+0.787s 0.715.0.715s 0.072.0.072s 0 0 | | R || G' | |0.213.0.213s 0.715+0.285s 0.072.0.072s 0 0 | | G || B' | = |0.213.0.213s 0.715.0.715s 0.072+0.928s 0 0 | * | B || A' | | 0 0 0 1 0 | | A || 1 | | 0 0 0 0 1 | | 1 | For type="hueRotate", 'values' is a single one real number value (degrees). A hueRotate operation is equivalent to the following matrix operation. | R' | | a00 a01 a02 0 0 | | R || G' | | a10 a11 a12 0 0 | | G || B' | = | a20 a21 a22 0 0 | * | B || A' | | 0 0 0 1 0 | | A || 1 | | 0 0 0 0 1 | | 1 | where the terms a00, a01, etc. are calculated as follows. | a00 a01 a02 | [+0.213 +0.715 +0.072]| a10 a11 a12 | = [+0.213 +0.715 +0.072] +| a20 a21 a22 | [+0.213 +0.715 +0.072] [+0.787 .0.715 .0.072]cos(hueRotate value) * [.0.213 +0.285 .0.072] + [.0.213 .0.715 +0.928] [.0.213 .0.715+0.928]sin(hueRotate value) * [+0.143 +0.140.0.283] [.0.787 +0.715+0.072] Thus, the upper left term of the hue matrix turns out to be. .213 + cos(hueRotate value)*.787 . sin(hueRotate value)*.213 For type="luminanceToAlpha", 'values' is not applicable. A luminanceToAlpha operation is equivalent to the following matrix operation. | R' | | 0 0 0 0 0 | | R | | G' | | 0 0 0 0 0 | | G | | B' | = | 0 0 0 0 0 | * | B | | A' | | 0.2125 0.7154 0.0721 0 0 | | A | | 1 | | 0 0 0 0 1 | | 1 | If the attribute is not specified, then the default behavior depends on the value of attribute 'type'. If type="matrix", then this attribute defaults to the identity matrix. If type="saturate", then this attribute defaults to the value 1, which results in the identity matrix. If type="hueRotate", then this attribute defaults to the value 0, which results in the identity matrix.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1906,7 +1906,7 @@ NULL
 #' @title width
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<length>"}{See Filter effects region.}
+#' \item{ <length>}{See Filter effects region.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1919,7 +1919,7 @@ NULL
 #' @title width
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<length>"}{The width of the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is a transparent black image).Animatable. yes.}
+#' \item{ <length>}{The width of the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is a transparent black image).Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1932,7 +1932,7 @@ NULL
 #' @title x
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{X location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{X location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1945,7 +1945,7 @@ NULL
 #' @title x
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{X location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{X location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1958,7 +1958,7 @@ NULL
 #' @title x
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<coordinate>"}{See Filter effects region.}
+#' \item{ <coordinate>}{See Filter effects region.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1971,7 +1971,7 @@ NULL
 #' @title x
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<coordinate>"}{The minimum x coordinate for the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion.Animatable. yes.}
+#' \item{ <coordinate>}{The minimum x coordinate for the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1984,7 +1984,7 @@ NULL
 #' @title xChannelSelector
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "R | G | B | A"}{Indicates which channel from 'in2' to use to displace the pixels in 'in' along the x.axis. If attribute 'xChannelSelector' is not specified, then the effect is as if a value of A were specified. Animatable. yes.}
+#' \item{ R | G | B | A}{Indicates which channel from 'in2' to use to displace the pixels in 'in' along the x.axis. If attribute 'xChannelSelector' is not specified, then the effect is as if a value of A were specified. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1997,7 +1997,7 @@ NULL
 #' @title xlink.href
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ <iri>}{ An IRI reference to the image source. Animatable. yes. }
+#' \item{ <iri>}{An IRI reference to the image source. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2023,7 +2023,7 @@ NULL
 #' @title y
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Y location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Y location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2036,7 +2036,7 @@ NULL
 #' @title y
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Y location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Y location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2049,7 +2049,7 @@ NULL
 #' @title y
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<coordinate>"}{See Filter effects region.}
+#' \item{ <coordinate>}{See Filter effects region.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2062,7 +2062,7 @@ NULL
 #' @title y
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<coordinate>"}{The minimum y coordinate for the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion.Animatable. yes.}
+#' \item{ <coordinate>}{The minimum y coordinate for the subregion which restricts calculation and rendering of the given filter primitive. See filter primitive subregion.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2075,7 +2075,7 @@ NULL
 #' @title yChannelSelector
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "R | G | B | A"}{Indicates which channel from 'in2' to use to displace the pixels in 'in' along the y.axis. If attribute 'yChannelSelector' is not specified, then the effect is as if a value of A were specified. Animatable. yes.}
+#' \item{ R | G | B | A}{Indicates which channel from 'in2' to use to displace the pixels in 'in' along the y.axis. If attribute 'yChannelSelector' is not specified, then the effect is as if a value of A were specified. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2088,7 +2088,7 @@ NULL
 #' @title z
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Z location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Z location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2101,7 +2101,7 @@ NULL
 #' @title z
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{Z location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+#' \item{ <number>}{Z location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2114,7 +2114,7 @@ NULL
 #' @title baseProfile
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  profile.name}{Describes the minimum SVG language profile that the author believes is necessary to correctly render the content. The attribute does not specify any processing restrictions; It can be considered metadata. For example, the value of the attribute could be used by an authoring tool to warn the user when they are modifying the document beyond the scope of the specified base profile. Each SVG profile should define the text that is appropriate for this attribute. If the attribute is not specified, the effect is as if a value of 'none' were specified.Animatable. no.}
+#' \item{ profile.name}{Describes the minimum SVG language profile that the author believes is necessary to correctly render the content. The attribute does not specify any processing restrictions; It can be considered metadata. For example, the value of the attribute could be used by an authoring tool to warn the user when they are modifying the document beyond the scope of the specified base profile. Each SVG profile should define the text that is appropriate for this attribute. If the attribute is not specified, the effect is as if a value of 'none' were specified.Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2206,7 +2206,7 @@ NULL
 #' @title requiredExtensions
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  list.of.extensions}{The value is a list of IRI references which identify the required extensions, with the individual values separated by white space. Determines whether all of the named extensions are supported by the user agent. If all of the given extensions are supported, then the attribute evaluates to true; otherwise, the current element and its children are skipped and thus will not be rendered.Animatable. no.}
+#' \item{ list.of.extensions}{The value is a list of IRI references which identify the required extensions, with the individual values separated by white space. Determines whether all of the named extensions are supported by the user agent. If all of the given extensions are supported, then the attribute evaluates to true; otherwise, the current element and its children are skipped and thus will not be rendered.Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2223,7 +2223,7 @@ NULL
 #' @title requiredFeatures
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  list.of.features}{The value is a list of feature strings, with the individual values separated by white space. Determines whether all of the named features are supported by the user agent. Only feature strings defined in the Feature String appendix are allowed. If all of the given features are supported, then the attribute evaluates to true; otherwise, the current element and its children are skipped and thus will not be rendered.Animatable. no.}
+#' \item{ list.of.features}{The value is a list of feature strings, with the individual values separated by white space. Determines whether all of the named features are supported by the user agent. Only feature strings defined in the Feature String appendix are allowed. If all of the given features are supported, then the attribute evaluates to true; otherwise, the current element and its children are skipped and thus will not be rendered.Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2505,7 +2505,7 @@ NULL
 #' @title media
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  media.descriptors}{This attribute specifies the intended destination medium for style information. It may be a single media descriptor or a comma.separated list. The default value for this attribute is "all". The set of recognized media.descriptors are the list of media types recognized by CSS2 ([CSS2], section 7.3).Animatable. no.}
+#' \item{ media.descriptors}{This attribute specifies the intended destination medium for style information. It may be a single media descriptor or a comma.separated list. The default value for this attribute is "all". The set of recognized media.descriptors are the list of media types recognized by CSS2 ([CSS2], section 7.3).Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2537,7 +2537,7 @@ NULL
 #' @title title
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  advisory.title}{(For compatibility with HTML 4 [HTML4].) This attribute specifies an advisory title for the 'style' element.Animatable. no.}
+#' \item{ advisory.title}{(For compatibility with HTML 4 [HTML4].) This attribute specifies an advisory title for the 'style' element.Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2550,7 +2550,7 @@ NULL
 #' @title type
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  content.type}{This attribute specifies the style sheet language of the element's contents. The style sheet language is specified as a content type (e.g., "text/css"), as per MIME Part Two. Media Types [RFC2046]. If a 'type' is not provided, the value of 'contentStyleType' on the 'svg' element shall be used, which in turn defaults to "text/css" [RFC2046]. If a 'style' element falls outside of the outermost svg element and the 'type' is not provided, the 'type' must default to "text/css" [RFC2046]. Animatable. no.}
+#' \item{ content.type}{This attribute specifies the style sheet language of the element's contents. The style sheet language is specified as a content type (e.g., "text/css"), as per MIME Part Two. Media Types [RFC2046]. If a 'type' is not provided, the value of 'contentStyleType' on the 'svg' element shall be used, which in turn defaults to "text/css" [RFC2046]. If a 'style' element falls outside of the outermost svg element and the 'type' is not provided, the 'type' must default to "text/css" [RFC2046]. Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2563,7 +2563,7 @@ NULL
 #' @title clipPathUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Defines the coordinate system for the contents of the 'clipPath'. If clipPathUnits="userSpaceOnUse", the contents of the 'clipPath' represent values in the current user coordinate system in place at the time when the 'clipPath' element is referenced (i.e., the user coordinate system for the element referencing the 'clipPath' element via the 'clip.path' property). If clipPathUnits="objectBoundingBox", then the user coordinate system for the contents of the 'clipPath' element is established using the bounding box of the element to which the clipping path is applied (see Object bounding box units). If attribute 'clipPathUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for the contents of the 'clipPath'. If clipPathUnits="userSpaceOnUse", the contents of the 'clipPath' represent values in the current user coordinate system in place at the time when the 'clipPath' element is referenced (i.e., the user coordinate system for the element referencing the 'clipPath' element via the 'clip.path' property). If clipPathUnits="objectBoundingBox", then the user coordinate system for the contents of the 'clipPath' element is established using the bounding box of the element to which the clipping path is applied (see Object bounding box units). If attribute 'clipPathUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2589,7 +2589,7 @@ NULL
 #' @title maskContentUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Defines the coordinate system for the contents of the 'mask'. If maskContentUnits="userSpaceOnUse", the user coordinate system for the contents of the 'mask' element is the current user coordinate system in place at the time when the 'mask' element is referenced (i.e., the user coordinate system for the element referencing the 'mask' element via the 'mask' property). If maskContentUnits="objectBoundingBox", the user coordinate system for the contents of the 'mask' is established using the bounding box of the element to which the mask is applied. (See Object bounding box units.) If attribute 'maskContentUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for the contents of the 'mask'. If maskContentUnits="userSpaceOnUse", the user coordinate system for the contents of the 'mask' element is the current user coordinate system in place at the time when the 'mask' element is referenced (i.e., the user coordinate system for the element referencing the 'mask' element via the 'mask' property). If maskContentUnits="objectBoundingBox", the user coordinate system for the contents of the 'mask' is established using the bounding box of the element to which the mask is applied. (See Object bounding box units.) If attribute 'maskContentUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -2602,7 +2602,7 @@ NULL
 #' @title maskUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Defines the coordinate system for attributes 'x', 'y', 'width' and 'height'. If maskUnits="userSpaceOnUse", 'x', 'y', 'width' and 'height' represent values in the current user coordinate system in place at the time when the 'mask' element is referenced (i.e., the user coordinate system for the element referencing the 'mask' element via the 'mask' property). If maskUnits="objectBoundingBox", 'x', 'y', 'width' and 'height' represent fractions or percentages of the bounding box of the element to which the mask is applied. (See Object bounding box units.) If attribute 'maskUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for attributes 'x', 'y', 'width' and 'height'. If maskUnits="userSpaceOnUse", 'x', 'y', 'width' and 'height' represent values in the current user coordinate system in place at the time when the 'mask' element is referenced (i.e., the user coordinate system for the element referencing the 'mask' element via the 'mask' property). If maskUnits="objectBoundingBox", 'x', 'y', 'width' and 'height' represent fractions or percentages of the bounding box of the element to which the mask is applied. (See Object bounding box units.) If attribute 'maskUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3296,7 +3296,7 @@ NULL
 #' @title gradientUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Defines the coordinate system for attributes 'x1', 'y1', 'x2' and 'y2'. If gradientUnits="userSpaceOnUse", 'x1', 'y1', 'x2' and 'y2' represent values in the coordinate system that results from taking the current user coordinate system in place at the time when the gradient element is referenced (i.e., the user coordinate system for the element referencing the gradient element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'gradientTransform'. If gradientUnits="objectBoundingBox", the user coordinate system for attributes 'x1', 'y1', 'x2' and 'y2' is established using the bounding box of the element to which the gradient is applied (see Object bounding box units) and then applying the transform specified by attribute 'gradientTransform'. When gradientUnits="objectBoundingBox" and 'gradientTransform' is the identity matrix, the normal of the linear gradient is perpendicular to the gradient vector in object bounding box space (i.e., the abstract coordinate system where (0,0) is at the top/left of the object bounding box and (1,1) is at the bottom/right of the object bounding box). When the object's bounding box is not square, the gradient normal which is initially perpendicular to the gradient vector within object bounding box space may render non.perpendicular relative to the gradient vector in user space. If the gradient vector is parallel to one of the axes of the bounding box, the gradient normal will remain perpendicular. This transformation is due to application of the non.uniform scaling transformation from bounding box space to user space. If attribute 'gradientUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for attributes 'x1', 'y1', 'x2' and 'y2'. If gradientUnits="userSpaceOnUse", 'x1', 'y1', 'x2' and 'y2' represent values in the coordinate system that results from taking the current user coordinate system in place at the time when the gradient element is referenced (i.e., the user coordinate system for the element referencing the gradient element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'gradientTransform'. If gradientUnits="objectBoundingBox", the user coordinate system for attributes 'x1', 'y1', 'x2' and 'y2' is established using the bounding box of the element to which the gradient is applied (see Object bounding box units) and then applying the transform specified by attribute 'gradientTransform'. When gradientUnits="objectBoundingBox" and 'gradientTransform' is the identity matrix, the normal of the linear gradient is perpendicular to the gradient vector in object bounding box space (i.e., the abstract coordinate system where (0,0) is at the top/left of the object bounding box and (1,1) is at the bottom/right of the object bounding box). When the object's bounding box is not square, the gradient normal which is initially perpendicular to the gradient vector within object bounding box space may render non.perpendicular relative to the gradient vector in user space. If the gradient vector is parallel to one of the axes of the bounding box, the gradient normal will remain perpendicular. This transformation is due to application of the non.uniform scaling transformation from bounding box space to user space. If attribute 'gradientUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3309,7 +3309,7 @@ NULL
 #' @title gradientUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Defines the coordinate system for attributes 'cx', 'cy', 'r', 'fx' and 'fy'. If gradientUnits="userSpaceOnUse", 'cx', 'cy', 'r', 'fx' and 'fy' represent values in the coordinate system that results from taking the current user coordinate system in place at the time when the gradient element is referenced (i.e., the user coordinate system for the element referencing the gradient element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'gradientTransform'. If gradientUnits="objectBoundingBox", the user coordinate system for attributes 'cx', 'cy', 'r', 'fx' and 'fy' is established using the bounding box of the element to which the gradient is applied (see Object bounding box units) and then applying the transform specified by attribute 'gradientTransform'. When gradientUnits="objectBoundingBox" and 'gradientTransform' is the identity matrix, then the rings of the radial gradient are circular with respect to the object bounding box space (i.e., the abstract coordinate system where (0,0) is at the top/left of the object bounding box and (1,1) is at the bottom/right of the object bounding box). When the object's bounding box is not square, the rings that are conceptually circular within object bounding box space will render as elliptical due to application of the non.uniform scaling transformation from bounding box space to user space. If attribute 'gradientUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for attributes 'cx', 'cy', 'r', 'fx' and 'fy'. If gradientUnits="userSpaceOnUse", 'cx', 'cy', 'r', 'fx' and 'fy' represent values in the coordinate system that results from taking the current user coordinate system in place at the time when the gradient element is referenced (i.e., the user coordinate system for the element referencing the gradient element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'gradientTransform'. If gradientUnits="objectBoundingBox", the user coordinate system for attributes 'cx', 'cy', 'r', 'fx' and 'fy' is established using the bounding box of the element to which the gradient is applied (see Object bounding box units) and then applying the transform specified by attribute 'gradientTransform'. When gradientUnits="objectBoundingBox" and 'gradientTransform' is the identity matrix, then the rings of the radial gradient are circular with respect to the object bounding box space (i.e., the abstract coordinate system where (0,0) is at the top/left of the object bounding box and (1,1) is at the bottom/right of the object bounding box). When the object's bounding box is not square, the rings that are conceptually circular within object bounding box space will render as elliptical due to application of the non.uniform scaling transformation from bounding box space to user space. If attribute 'gradientUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3335,7 +3335,7 @@ NULL
 #' @title offset
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number> | <percentage>"}{The 'offset' attribute is either a <number> (usually ranging from 0 to 1) or a <percentage> (usually ranging from 0 to 100) which indicates where the gradient stop is placed. For linear gradients, the 'offset' attribute represents a location along the gradient vector. For radial gradients, it represents a percentage distance from (fx,fy) to the edge of the outermost/largest circle.Animatable. yes.}
+#' \item{ <number> | <percentage>}{The 'offset' attribute is either a <number> (usually ranging from 0 to 1) or a <percentage> (usually ranging from 0 to 100) which indicates where the gradient stop is placed. For linear gradients, the 'offset' attribute represents a location along the gradient vector. For radial gradients, it represents a percentage distance from (fx,fy) to the edge of the outermost/largest circle.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3348,7 +3348,7 @@ NULL
 #' @title patternContentUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Defines the coordinate system for the contents of the 'pattern'. Note that this attribute has no effect if attribute 'viewBox' is specified. If patternContentUnits="userSpaceOnUse", the user coordinate system for the contents of the 'pattern' element is the coordinate system that results from taking the current user coordinate system in place at the time when the 'pattern' element is referenced (i.e., the user coordinate system for the element referencing the 'pattern' element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'patternTransform'. If patternContentUnits="objectBoundingBox", the user coordinate system for the contents of the 'pattern' element is established using the bounding box of the element to which the pattern is applied (see Object bounding box units) and then applying the transform specified by attribute 'patternTransform'. If attribute 'patternContentUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for the contents of the 'pattern'. Note that this attribute has no effect if attribute 'viewBox' is specified. If patternContentUnits="userSpaceOnUse", the user coordinate system for the contents of the 'pattern' element is the coordinate system that results from taking the current user coordinate system in place at the time when the 'pattern' element is referenced (i.e., the user coordinate system for the element referencing the 'pattern' element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'patternTransform'. If patternContentUnits="objectBoundingBox", the user coordinate system for the contents of the 'pattern' element is established using the bounding box of the element to which the pattern is applied (see Object bounding box units) and then applying the transform specified by attribute 'patternTransform'. If attribute 'patternContentUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3374,7 +3374,7 @@ NULL
 #' @title patternUnits
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "userSpaceOnUse | objectBoundingBox"}{Defines the coordinate system for attributes 'x', 'y', 'width' and 'height'. If patternUnits="userSpaceOnUse", 'x', 'y', 'width' and 'height' represent values in the coordinate system that results from taking the current user coordinate system in place at the time when the 'pattern' element is referenced (i.e., the user coordinate system for the element referencing the 'pattern' element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'patternTransform'. If patternUnits="objectBoundingBox", the user coordinate system for attributes 'x', 'y', 'width' and 'height' is established using the bounding box of the element to which the pattern is applied (see Object bounding box units) and then applying the transform specified by attribute 'patternTransform'. If attribute 'patternUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
+#' \item{ userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for attributes 'x', 'y', 'width' and 'height'. If patternUnits="userSpaceOnUse", 'x', 'y', 'width' and 'height' represent values in the coordinate system that results from taking the current user coordinate system in place at the time when the 'pattern' element is referenced (i.e., the user coordinate system for the element referencing the 'pattern' element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'patternTransform'. If patternUnits="objectBoundingBox", the user coordinate system for attributes 'x', 'y', 'width' and 'height' is established using the bounding box of the element to which the pattern is applied (see Object bounding box units) and then applying the transform specified by attribute 'patternTransform'. If attribute 'patternUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3400,7 +3400,7 @@ NULL
 #' @title spreadMethod
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "pad | reflect | repeat"}{Indicates what happens if the gradient starts or ends inside the bounds of the target rectangle. Possible values are. 'pad', which says to use the terminal colors of the gradient to fill the remainder of the target region, 'reflect', which says to reflect the gradient pattern start.to.end, end.to.start, start.to.end, etc. continuously until the target rectangle is filled, and repeat, which says to repeat the gradient pattern start.to.end, start.to.end, start.to.end, etc. continuously until the target region is filled. If the attribute is not specified, the effect is as if a value of 'pad' were specified.Animatable. yes.}
+#' \item{ pad | reflect | repeat}{Indicates what happens if the gradient starts or ends inside the bounds of the target rectangle. Possible values are. 'pad', which says to use the terminal colors of the gradient to fill the remainder of the target region, 'reflect', which says to reflect the gradient pattern start.to.end, end.to.start, start.to.end, etc. continuously until the target rectangle is filled, and repeat, which says to repeat the gradient pattern start.to.end, start.to.end, start.to.end, etc. continuously until the target region is filled. If the attribute is not specified, the effect is as if a value of 'pad' were specified.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3413,7 +3413,7 @@ NULL
 #' @title spreadMethod
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "pad | reflect | repeat"}{Indicates what happens if the gradient starts or ends inside the bounds of the object(s) being painted by the gradient. Has the same values and meanings as the 'spreadMethod' attribute on 'linearGradient' element.Animatable. yes.}
+#' \item{ pad | reflect | repeat}{Indicates what happens if the gradient starts or ends inside the bounds of the object(s) being painted by the gradient. Has the same values and meanings as the 'spreadMethod' attribute on 'linearGradient' element.Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3556,7 +3556,7 @@ NULL
 #' @title d
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "path data"}{The definition of the outline of a shape. See Path data.Animatable. yes. Path data animation is only possible when each path data specification within an animation specification has exactly the same list of path data commands as the 'd' attribute. If an animation is specified and the list of path data commands is not the same, then the animation specification is in error (see Error Processing). The animation engine interpolates each parameter to each path data command separately based on the attributes to the given animation element. Flags and booleans are interpolated as fractions between zero and one, with any non.zero value considered to be a value of one/true.}
+#' \item{ path data}{The definition of the outline of a shape. See Path data.Animatable. yes. Path data animation is only possible when each path data specification within an animation specification has exactly the same list of path data commands as the 'd' attribute. If an animation is specified and the list of path data commands is not the same, then the animation specification is in error (see Error Processing). The animation engine interpolates each parameter to each path data command separately based on the attributes to the given animation element. Flags and booleans are interpolated as fractions between zero and one, with any non.zero value considered to be a value of one/true.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3569,7 +3569,7 @@ NULL
 #' @title pathLength
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "<number>"}{The author's computation of the total length of the path, in user units. This value is used to calibrate the user agent's own distance.along.a.path calculations with that of the author. The user agent will scale all distance.along.a.path computations by the ratio of 'pathLength' to the user agent's own computed value for total path length. 'pathLength' potentially affects calculations for text on a path, motion animation and various stroke operations. A negative value is an error (see Error processing).Animatable. yes.}
+#' \item{ <number>}{The author's computation of the total length of the path, in user units. This value is used to calibrate the user agent's own distance.along.a.path calculations with that of the author. The user agent will scale all distance.along.a.path computations by the ratio of 'pathLength' to the user agent's own computed value for total path length. 'pathLength' potentially affects calculations for text on a path, motion animation and various stroke operations. A negative value is an error (see Error processing).Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -3791,7 +3791,7 @@ NULL
 #' @title rotate
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ <list.of.numbers>}{The supplemental rotation about the current text position that will be applied to all of the glyphs corresponding to each character within this element. If a comma. or space.separated list of <number>s is provided, then the first <number> represents the supplemental rotation for the glyphs corresponding to the first character within this element or any of its descendants, the second <number> represents the supplemental rotation for the glyphs that correspond to the second character, and so on. If more <number>s are provided than there are characters, then the extra <number>s will be ignored. If more characters are provided than <number>s, then for each of these extra characters the rotation value specified by the last number must be used. If the attribute is not specified and if an ancestor 'text' or 'tspan' element specifies a supplemental rotation for a given character via a 'rotate' attribute, then the given supplemental rotation is applied to the given character (nearest ancestor has precedence). If there are more characters than <number>s specified in the ancestor's 'rotate' attribute, then for each of these extra characters the rotation value specified by the last number must be used. This supplemental rotation has no impact on the rules by which current text position is modified as glyphs get rendered and is supplemental to any rotation due to text on a path and to 'glyph.orientation.horizontal' or 'glyph.orientation.vertical'.Animatable. yes (non.additive). }
+#' \item{ <list.of.numbers>}{The supplemental rotation about the current text position that will be applied to all of the glyphs corresponding to each character within this element. If a comma. or space.separated list of <number>s is provided, then the first <number> represents the supplemental rotation for the glyphs corresponding to the first character within this element or any of its descendants, the second <number> represents the supplemental rotation for the glyphs that correspond to the second character, and so on. If more <number>s are provided than there are characters, then the extra <number>s will be ignored. If more characters are provided than <number>s, then for each of these extra characters the rotation value specified by the last number must be used. If the attribute is not specified and if an ancestor 'text' or 'tspan' element specifies a supplemental rotation for a given character via a 'rotate' attribute, then the given supplemental rotation is applied to the given character (nearest ancestor has precedence). If there are more characters than <number>s specified in the ancestor's 'rotate' attribute, then for each of these extra characters the rotation value specified by the last number must be used. This supplemental rotation has no impact on the rules by which current text position is modified as glyphs get rendered and is supplemental to any rotation due to text on a path and to 'glyph.orientation.horizontal' or 'glyph.orientation.vertical'.Animatable. yes (non.additive).}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -4159,7 +4159,7 @@ NULL
 #' @title orient
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ auto | <angle>}{ Indicates how the marker is rotated. A value of 'auto' indicates that the marker is oriented such that its positive x.axis is pointing as follows. If there is a path segment coming into the vertex and another path segment going out of the vertex, the marker's positive x.axis should point toward the angle bisector for the angle at the given vertex, where that angle has one side consisting of tangent vector for the path segment going into the vertex and the other side the tangent vector for the path segment going out of the vertex. Note. If the tangent vectors are the same, the angle bisector equals the two tangent vectors.If an incoming and an outgoing vertex produce a zero vector the direction of marker is undefined. If there is only a path segment going into the vertex (e.g., the last vertex on an open path), the marker's positive x.axis should point in the same direction as the tangent vector for the path segment going into the vertex. If there is only a path segment going out of the vertex (e.g., the first vertex on an open path), the marker's positive x.axis should point in the same direction as the tangent vector for the path segment going out of the vertex. (Refer to 'path' element implementation notes for a more thorough discussion of the directionality of path segments.) In all cases for closed subpaths (e.g., subpaths which end with a 'closepath' command), the orientation of the marker corresponding to the initial point of the subpath is calculated assuming that. the path segment going into the vertex is the path segment corresponding to the closepaththe path segment coming out of the vertex is the first path segment in the subpath When a 'closepath' command is followed by a command other than a 'moveto' command, then the orientation of the marker corresponding to the 'closepath' command is calculated assuming that. the path segment going into the vertex is the path segment corresponding to the closepaththe path segment coming out of the vertex is the first path segment of the subsequent subpath A <angle> value represents a particular orientation in the user space of the graphic object referencing the marker. For example, if a value of "0" is given, then the marker will be drawn such that its x.axis will align with the x.axis of the user space of the graphic object referencing the marker. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes (non.additive). }
+#' \item{ auto | <angle>}{Indicates how the marker is rotated. A value of 'auto' indicates that the marker is oriented such that its positive x.axis is pointing as follows. If there is a path segment coming into the vertex and another path segment going out of the vertex, the marker's positive x.axis should point toward the angle bisector for the angle at the given vertex, where that angle has one side consisting of tangent vector for the path segment going into the vertex and the other side the tangent vector for the path segment going out of the vertex. Note. If the tangent vectors are the same, the angle bisector equals the two tangent vectors.If an incoming and an outgoing vertex produce a zero vector the direction of marker is undefined. If there is only a path segment going into the vertex (e.g., the last vertex on an open path), the marker's positive x.axis should point in the same direction as the tangent vector for the path segment going into the vertex. If there is only a path segment going out of the vertex (e.g., the first vertex on an open path), the marker's positive x.axis should point in the same direction as the tangent vector for the path segment going out of the vertex. (Refer to 'path' element implementation notes for a more thorough discussion of the directionality of path segments.) In all cases for closed subpaths (e.g., subpaths which end with a 'closepath' command), the orientation of the marker corresponding to the initial point of the subpath is calculated assuming that. the path segment going into the vertex is the path segment corresponding to the closepaththe path segment coming out of the vertex is the first path segment in the subpath When a 'closepath' command is followed by a command other than a 'moveto' command, then the orientation of the marker corresponding to the 'closepath' command is calculated assuming that. the path segment going into the vertex is the path segment corresponding to the closepaththe path segment coming out of the vertex is the first path segment of the subsequent subpath A <angle> value represents a particular orientation in the user space of the graphic object referencing the marker. For example, if a value of "0" is given, then the marker will be drawn such that its x.axis will align with the x.axis of the user space of the graphic object referencing the marker. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes (non.additive).}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -4247,7 +4247,7 @@ NULL
 #' \item{ _parent}{The immediate frameset parent of the SVG image is replaced by the linked content.}
 #' \item{ _top}{The content of the full window or tab, including any frames, is replaced by the linked content}
 #' \item{ _blank}{A new un.named window or tab is requested for the display of the linked content. If this fails, the result is the same as _top}
-#' \item{ <XML.Name>}{Specifies the name of the frame, pane, or other relevant presentation context for display of the linked content. If this already exists, it is re.used, replacing the existing content. If it does not exist, it is created (the same as '_blank', except that it now has a name). }
+#' \item{ <XML.Name>}{Specifies the name of the frame, pane, or other relevant presentation context for display of the linked content. If this already exists, it is re.used, replacing the existing content. If it does not exist, it is created (the same as '_blank', except that it now has a name).}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -4260,7 +4260,7 @@ NULL
 #' @title viewTarget
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{  "XML_Name [XML_NAME]*"}{Indicates the target object associated with the view. Animatable. no.}
+#' \item{ XML_Name [XML_NAME]*}{Indicates the target object associated with the view. Animatable. no.}
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -4321,7 +4321,7 @@ NULL
 #' @title xlink.href
 #' @section Available Attribute Values:
 #' \describe{
-#' \item{ <IRI>}{The location of the referenced object, expressed as an IRI reference. Animatable. yes. }
+#' \item{ <IRI>}{The location of the referenced object, expressed as an IRI reference. Animatable. yes.}
 #' }
 #' @section Used by the Elements:
 #' \describe{

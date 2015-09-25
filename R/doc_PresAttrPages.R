@@ -2,13 +2,13 @@
 #' @title writing.mode
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ lr-tb }{**to do** }
-#' \item{  rl-tb }{**to do** }
-#' \item{  tb-rl }{**to do** }
-#' \item{  lr }{**to do** }
-#' \item{  rl }{**to do** }
-#' \item{  tb }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ lr-tb}{**to do** }
+#' \item{ rl-tb}{**to do** }
+#' \item{ tb-rl}{**to do** }
+#' \item{ lr}{**to do** }
+#' \item{ rl}{**to do** }
+#' \item{ tb}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -21,9 +21,9 @@ NULL
 #' @title glyph.orientation.vertical
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  <angle> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ <angle>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -37,8 +37,8 @@ NULL
 #' @title glyph.orientation.horizontal
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <angle> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <angle>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -52,9 +52,9 @@ NULL
 #' @title direction
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ ltr }{**to do** }
-#' \item{  rtl }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ ltr}{**to do** }
+#' \item{ rtl}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -68,10 +68,10 @@ NULL
 #' @title unicode.bidi
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ normal }{**to do** }
-#' \item{  embed }{**to do** }
-#' \item{  bidi-override }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ normal}{**to do** }
+#' \item{ embed}{**to do** }
+#' \item{ bidi-override}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -85,10 +85,10 @@ NULL
 #' @title text.anchor
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ start }{**to do** }
-#' \item{  middle }{**to do** }
-#' \item{  end }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ start}{**to do** }
+#' \item{ middle}{**to do** }
+#' \item{ end}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -102,19 +102,19 @@ NULL
 #' @title dominant.baseline
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  use-script }{**to do** }
-#' \item{  no-change }{**to do** }
-#' \item{  reset-size }{**to do** }
-#' \item{  ideographic }{**to do** }
-#' \item{  alphabetic }{**to do** }
-#' \item{  hanging }{**to do** }
-#' \item{  mathematical }{**to do** }
-#' \item{  central }{**to do** }
-#' \item{  middle }{**to do** }
-#' \item{  text-after-edge }{**to do** }
-#' \item{  text-before-edge }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ use-script}{**to do** }
+#' \item{ no-change}{**to do** }
+#' \item{ reset-size}{**to do** }
+#' \item{ ideographic}{**to do** }
+#' \item{ alphabetic}{**to do** }
+#' \item{ hanging}{**to do** }
+#' \item{ mathematical}{**to do** }
+#' \item{ central}{**to do** }
+#' \item{ middle}{**to do** }
+#' \item{ text-after-edge}{**to do** }
+#' \item{ text-before-edge}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -128,19 +128,19 @@ NULL
 #' @title alignment.baseline
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  baseline }{**to do** }
-#' \item{  before-edge }{**to do** }
-#' \item{  text-before-edge }{**to do** }
-#' \item{  middle }{**to do** }
-#' \item{  central }{**to do** }
-#' \item{  after-edge }{**to do** }
-#' \item{  text-after-edge }{**to do** }
-#' \item{  ideographic }{**to do** }
-#' \item{  alphabetic }{**to do** }
-#' \item{  hanging }{**to do** }
-#' \item{  mathematical }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ baseline}{**to do** }
+#' \item{ before-edge}{**to do** }
+#' \item{ text-before-edge}{**to do** }
+#' \item{ middle}{**to do** }
+#' \item{ central}{**to do** }
+#' \item{ after-edge}{**to do** }
+#' \item{ text-after-edge}{**to do** }
+#' \item{ ideographic}{**to do** }
+#' \item{ alphabetic}{**to do** }
+#' \item{ hanging}{**to do** }
+#' \item{ mathematical}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -153,12 +153,12 @@ NULL
 #' @title baseline.shift
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ baseline }{**to do** }
-#' \item{  sub }{**to do** }
-#' \item{  super }{**to do** }
-#' \item{  <percentage> }{**to do** }
-#' \item{  <length> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ baseline}{**to do** }
+#' \item{ sub}{**to do** }
+#' \item{ super}{**to do** }
+#' \item{ <percentage>}{**to do** }
+#' \item{ <length>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -185,10 +185,10 @@ NULL
 #' @title font.style
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ normal }{**to do** }
-#' \item{  italic }{**to do** }
-#' \item{  oblique }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ normal}{**to do** }
+#' \item{ italic}{**to do** }
+#' \item{ oblique}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -202,9 +202,9 @@ NULL
 #' @title font.variant
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ normal }{**to do** }
-#' \item{  small-caps }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ normal}{**to do** }
+#' \item{ small-caps}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -218,20 +218,20 @@ NULL
 #' @title font.weight
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ normal }{**to do** }
-#' \item{  bold }{**to do** }
-#' \item{  bolder }{**to do** }
-#' \item{  lighter }{**to do** }
-#' \item{  100 }{**to do** }
-#' \item{  200 }{**to do** }
-#' \item{  300 }{**to do** }
-#' \item{  400 }{**to do** }
-#' \item{  500 }{**to do** }
-#' \item{  600 }{**to do** }
-#' \item{  700 }{**to do** }
-#' \item{  800 }{**to do** }
-#' \item{  900 }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ normal}{**to do** }
+#' \item{ bold}{**to do** }
+#' \item{ bolder}{**to do** }
+#' \item{ lighter}{**to do** }
+#' \item{ 100}{**to do** }
+#' \item{ 200}{**to do** }
+#' \item{ 300}{**to do** }
+#' \item{ 400}{**to do** }
+#' \item{ 500}{**to do** }
+#' \item{ 600}{**to do** }
+#' \item{ 700}{**to do** }
+#' \item{ 800}{**to do** }
+#' \item{ 900}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -245,18 +245,18 @@ NULL
 #' @title font.stretch
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ normal }{**to do** }
-#' \item{  wider }{**to do** }
-#' \item{  narrower }{**to do** }
-#' \item{  ultra-condensed }{**to do** }
-#' \item{  extra-condensed }{**to do** }
-#' \item{  condensed }{**to do** }
-#' \item{  semi-condensed }{**to do** }
-#' \item{  semi-expanded }{**to do** }
-#' \item{  expanded }{**to do** }
-#' \item{  extra-expanded }{**to do** }
-#' \item{  ultra-expanded }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ normal}{**to do** }
+#' \item{ wider}{**to do** }
+#' \item{ narrower}{**to do** }
+#' \item{ ultra-condensed}{**to do** }
+#' \item{ extra-condensed}{**to do** }
+#' \item{ condensed}{**to do** }
+#' \item{ semi-condensed}{**to do** }
+#' \item{ semi-expanded}{**to do** }
+#' \item{ expanded}{**to do** }
+#' \item{ extra-expanded}{**to do** }
+#' \item{ ultra-expanded}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -270,11 +270,11 @@ NULL
 #' @title font.size
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <absolute-size> }{**to do** }
-#' \item{  <relative-size> }{**to do** }
-#' \item{  <length> }{**to do** }
-#' \item{  <percentage> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <absolute-size>}{**to do** }
+#' \item{ <relative-size>}{**to do** }
+#' \item{ <length>}{**to do** }
+#' \item{ <percentage>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -288,9 +288,9 @@ NULL
 #' @title font.size.adjust
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <number> }{**to do** }
-#' \item{  none }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <number>}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -318,9 +318,9 @@ NULL
 #' @title kerning
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  <length> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ <length>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -334,9 +334,9 @@ NULL
 #' @title letter.spacing
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ normal }{**to do** }
-#' \item{  <length> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ normal}{**to do** }
+#' \item{ <length>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -350,9 +350,9 @@ NULL
 #' @title word.spacing
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ normal }{**to do** }
-#' \item{  <length> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ normal}{**to do** }
+#' \item{ <length>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -380,11 +380,11 @@ NULL
 #' @title overflow
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ visible }{**to do** }
-#' \item{  hidden }{**to do** }
-#' \item{  scroll }{**to do** }
-#' \item{  auto }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ visible}{**to do** }
+#' \item{ hidden}{**to do** }
+#' \item{ scroll}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -398,9 +398,9 @@ NULL
 #' @title clip
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <shape> }{**to do** }
-#' \item{  auto }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <shape>}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -414,9 +414,9 @@ NULL
 #' @title clip.path
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <funciri> }{**to do** }
-#' \item{  none }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <funciri>}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -431,9 +431,9 @@ NULL
 #' @title clip.rule
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ nonzero }{**to do** }
-#' \item{  evenodd }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ nonzero}{**to do** }
+#' \item{ evenodd}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -448,9 +448,9 @@ NULL
 #' @title mask
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <funciri> }{**to do** }
-#' \item{  none }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <funciri>}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -465,8 +465,8 @@ NULL
 #' @title opacity
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <opacity-value> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <opacity-value>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -496,9 +496,9 @@ NULL
 #' @title fill.rule
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ nonzero }{**to do** }
-#' \item{  evenodd }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ nonzero}{**to do** }
+#' \item{ evenodd}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -513,8 +513,8 @@ NULL
 #' @title fill.opacity
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <opacity-value> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <opacity-value>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -544,9 +544,9 @@ NULL
 #' @title stroke.width
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <percentage> }{**to do** }
-#' \item{  <length> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <percentage>}{**to do** }
+#' \item{ <length>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -561,10 +561,10 @@ NULL
 #' @title stroke.linecap
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ butt }{**to do** }
-#' \item{  round }{**to do** }
-#' \item{  square }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ butt}{**to do** }
+#' \item{ round}{**to do** }
+#' \item{ square}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -579,10 +579,10 @@ NULL
 #' @title stroke.linejoin
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ miter }{**to do** }
-#' \item{  round }{**to do** }
-#' \item{  bevel }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ miter}{**to do** }
+#' \item{ round}{**to do** }
+#' \item{ bevel}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -597,8 +597,8 @@ NULL
 #' @title stroke.miterlimit
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <miterlimit> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <miterlimit>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -613,9 +613,9 @@ NULL
 #' @title stroke.dasharray
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ none }{**to do** }
-#' \item{  <dasharray> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ <dasharray>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -630,9 +630,9 @@ NULL
 #' @title stroke.dashoffset
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <percentage> }{**to do** }
-#' \item{  <length> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <percentage>}{**to do** }
+#' \item{ <length>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -647,8 +647,8 @@ NULL
 #' @title stroke.opacity
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <opacity-value> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <opacity-value>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -663,24 +663,24 @@ NULL
 #' @title display
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ inline }{**to do** }
-#' \item{  block }{**to do** }
-#' \item{  list-item }{**to do** }
-#' \item{  run-in }{**to do** }
-#' \item{  compact }{**to do** }
-#' \item{  marker }{**to do** }
-#' \item{  table }{**to do** }
-#' \item{  inline-table }{**to do** }
-#' \item{  table-row-group }{**to do** }
-#' \item{  table-header-group }{**to do** }
-#' \item{  table-footer-group }{**to do** }
-#' \item{  table-row }{**to do** }
-#' \item{  table-column-group }{**to do** }
-#' \item{  table-column }{**to do** }
-#' \item{  table-cell }{**to do** }
-#' \item{  table-caption }{**to do** }
-#' \item{  none }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ inline}{**to do** }
+#' \item{ block}{**to do** }
+#' \item{ list-item}{**to do** }
+#' \item{ run-in}{**to do** }
+#' \item{ compact}{**to do** }
+#' \item{ marker}{**to do** }
+#' \item{ table}{**to do** }
+#' \item{ inline-table}{**to do** }
+#' \item{ table-row-group}{**to do** }
+#' \item{ table-header-group}{**to do** }
+#' \item{ table-footer-group}{**to do** }
+#' \item{ table-row}{**to do** }
+#' \item{ table-column-group}{**to do** }
+#' \item{ table-column}{**to do** }
+#' \item{ table-cell}{**to do** }
+#' \item{ table-caption}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -696,10 +696,10 @@ NULL
 #' @title visibility
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ visible }{**to do** }
-#' \item{  hidden }{**to do** }
-#' \item{  collapse }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ visible}{**to do** }
+#' \item{ hidden}{**to do** }
+#' \item{ collapse}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -715,9 +715,9 @@ NULL
 #' @title marker properties
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ none }{**to do** }
-#' \item{  <funciri> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ <funciri>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -743,10 +743,10 @@ NULL
 #' @title color.interpolation
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  sRGB }{**to do** }
-#' \item{  linearRGB }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ sRGB}{**to do** }
+#' \item{ linearRGB}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -762,10 +762,10 @@ NULL
 #' @title color.interpolation.filters
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  sRGB }{**to do** }
-#' \item{  linearRGB }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ sRGB}{**to do** }
+#' \item{ linearRGB}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -778,10 +778,10 @@ NULL
 #' @title color.rendering
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  optimizeSpeed }{**to do** }
-#' \item{  optimizeQuality }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ optimizeSpeed}{**to do** }
+#' \item{ optimizeQuality}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -797,11 +797,11 @@ NULL
 #' @title shape.rendering
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  optimizeSpeed }{**to do** }
-#' \item{  crispEdges }{**to do** }
-#' \item{  geometricPrecision }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ optimizeSpeed}{**to do** }
+#' \item{ crispEdges}{**to do** }
+#' \item{ geometricPrecision}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -814,11 +814,11 @@ NULL
 #' @title text.rendering
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  optimizeSpeed }{**to do** }
-#' \item{  optimizeLegibility }{**to do** }
-#' \item{  geometricPrecision }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ optimizeSpeed}{**to do** }
+#' \item{ optimizeLegibility}{**to do** }
+#' \item{ geometricPrecision}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -831,10 +831,10 @@ NULL
 #' @title image.rendering
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  optimizeSpeed }{**to do** }
-#' \item{  optimizeQuality }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ optimizeSpeed}{**to do** }
+#' \item{ optimizeQuality}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -847,8 +847,8 @@ NULL
 #' @title color
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <color> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <color>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -864,11 +864,11 @@ NULL
 #' @title color.profile
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ auto }{**to do** }
-#' \item{  sRGB }{**to do** }
-#' \item{  <name> }{**to do** }
-#' \item{  <iri> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ auto}{**to do** }
+#' \item{ sRGB}{**to do** }
+#' \item{ <name>}{**to do** }
+#' \item{ <iri>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -881,16 +881,16 @@ NULL
 #' @title pointer.events
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ visiblePainted }{**to do** }
-#' \item{  visibleFill }{**to do** }
-#' \item{  visibleStroke }{**to do** }
-#' \item{  visible }{**to do** }
-#' \item{  painted }{**to do** }
-#' \item{  fill }{**to do** }
-#' \item{  stroke }{**to do** }
-#' \item{  all }{**to do** }
-#' \item{  none }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ visiblePainted}{**to do** }
+#' \item{ visibleFill}{**to do** }
+#' \item{ visibleStroke}{**to do** }
+#' \item{ visible}{**to do** }
+#' \item{ painted}{**to do** }
+#' \item{ fill}{**to do** }
+#' \item{ stroke}{**to do** }
+#' \item{ all}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -920,9 +920,9 @@ NULL
 #' @title filter
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <funciri> }{**to do** }
-#' \item{  none }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <funciri>}{**to do** }
+#' \item{ none}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -977,8 +977,8 @@ NULL
 #' @title flood.opacity
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <opacity-value> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <opacity-value>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -991,9 +991,9 @@ NULL
 #' @title stop.color
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ currentColor }{**to do** }
-#' \item{ <color> <icccolor> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ currentColor}{**to do** }
+#' \item{ <color> <icccolor>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -1006,8 +1006,8 @@ NULL
 #' @title stop.opacity
 #' @section Available Attribute Values:
 #' \itemize{
-#' \item{ <opacity-value> }{**to do** }
-#' \item{  inherit}{**to do** }
+#' \item{ <opacity-value>}{**to do** }
+#' \item{ inherit}{**to do** }
 #' }
 #' @section Used by the Elements:
 #' \describe{

@@ -337,7 +337,7 @@ animate = function (...)
     attrs <- mapAttributeName(attrs)
     attrs <- preProcAnimate(attrs)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "begin end"))
+        x, "($| )", sep = ""), "begin end keyTimes"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
             svgPreproc[["scln-list"]](x)
@@ -351,10 +351,17 @@ animate = function (...)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "keySplines keyTimes values"))
+        x, "($| )", sep = ""), "keySplines"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
-            svgPreproc[["cmm-scln-list"]](x)
+            svgPreproc[["wsp4scln-list"]](x)
+        })
+    }
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "values"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-scln-list"]](x)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
@@ -382,7 +389,7 @@ animateColor = function (...)
     attrs <- named(args)
     attrs <- mapAttributeName(attrs)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "begin end"))
+        x, "($| )", sep = ""), "begin end keyTimes"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
             svgPreproc[["scln-list"]](x)
@@ -396,10 +403,17 @@ animateColor = function (...)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "keySplines keyTimes values"))
+        x, "($| )", sep = ""), "keySplines"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
-            svgPreproc[["cmm-scln-list"]](x)
+            svgPreproc[["wsp4scln-list"]](x)
+        })
+    }
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "values"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-scln-list"]](x)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
@@ -426,7 +440,7 @@ animateMotion = function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "begin end keyPoints"))
+        x, "($| )", sep = ""), "begin end keyPoints keyTimes"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
             svgPreproc[["scln-list"]](x)
@@ -440,10 +454,10 @@ animateMotion = function (...)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "keySplines keyTimes values"))
+        x, "($| )", sep = ""), "keySplines"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
-            svgPreproc[["cmm-scln-list"]](x)
+            svgPreproc[["wsp4scln-list"]](x)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
@@ -451,6 +465,13 @@ animateMotion = function (...)
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
             svgPreproc[["path-data-list"]](x)
+        })
+    }
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "values"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-scln-list"]](x)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
@@ -478,7 +499,7 @@ animateTransform = function (...)
     attrs <- named(args)
     attrs <- mapAttributeName(attrs)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "begin end"))
+        x, "($| )", sep = ""), "begin end keyTimes"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
             svgPreproc[["scln-list"]](x)
@@ -492,10 +513,17 @@ animateTransform = function (...)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "keySplines keyTimes values"))
+        x, "($| )", sep = ""), "keySplines"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
-            svgPreproc[["cmm-scln-list"]](x)
+            svgPreproc[["wsp4scln-list"]](x)
+        })
+    }
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "values"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-scln-list"]](x)
         })
     }
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 

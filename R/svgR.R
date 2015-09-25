@@ -109,15 +109,23 @@ svgPreproc<-list(
     }
     tmp
   } ,  
-  "cmm-scln-list"  = function(x){ 
+  "wsp-scln-list"  = function(x){ #
     if(inherits(x,"list")){ #list
-      paste(  sapply(x, function(y){paste(y, collapse=",")}), collapse=";"  )   
+      #paste(  sapply(x, function(y){paste(y, collapse=" ")}), collapse="; "  )
+      paste(x,sep=" ", collapse=";")
     } else if(inherits(x,"matrix")){ #matrix
-      paste(apply(x, 2, function(y)paste(y,collapse=",")), collapse=";")     
+      paste(apply(x, 2, function(y)paste(y,collapse=",")), collapse="; ")     
     } else {
       paste(x, collapse=";")
     }                               
   } ,
+  "wsp4scln-list"  = function(x){ #todo: seperate int chunks of 4, each chunk is space seperated vec of nos.
+    if(inherits(x,"list")){ #list
+      paste(  sapply(x, function(y){paste(y, collapse=" ")}), collapse="; "  )   
+    } else {
+      paste(x, collapse=" ")
+    }                               
+  },
   "cln-scln-list"  = function(x){ 
     if(inherits(x,"list")){ #list
       paste(  sapply(x, function(y){paste(y, collapse=":")}), collapse=";"  )   
@@ -152,7 +160,7 @@ svgPreproc<-list(
 
 
 
-
+#used only by text, textPath, and tspan in eledefs
 mapArg<-function(attrs, seqArg, toArgs){
   if(!is.null(attrs[[seqArg]])){
     for(i in 1:length(toArgs)){
@@ -163,6 +171,7 @@ mapArg<-function(attrs, seqArg, toArgs){
   attrs    
 }
 
+# used in elementDefs, but only by the 4 animation elements
 mapAttributeName<-function(attrs){
   indx<-grep("attributeName",names(attrs))
   if(length(indx)>0){
@@ -171,6 +180,7 @@ mapAttributeName<-function(attrs){
   attrs
 }
 
+#used eleDefs
 mapCenteredXY<-function(attrs){
   if( !is.null(attrs[["cxy"]]) & !is.null(attrs[["width"]]) & !is.null(attrs[["height"]]) ){
     wh<-c(as.numeric(attrs[["width"]]), as.numeric(attrs[["height"]]))
@@ -183,6 +193,7 @@ mapCenteredXY<-function(attrs){
 
 # preprocXtras
 # xy, cxy, rxy, xy1, xy2, wh
+# used only by mapCenteredXY !!!
 attrSplitX<-function(attrs,  a1, a2, a12){
   if(a12 %in% names(attrs)){
     attrs[c(a1,a2)]<-attrs[[a12]]
@@ -193,14 +204,14 @@ attrSplitX<-function(attrs,  a1, a2, a12){
 #END Helper functions---
 
 # preprocess combos, ie split  xy, rxy, ... and add x, y, rx, ry, ...
-attrComboSplit<-function(attrs, comboParam, splitParam){
-  if(comboParam %in% names(attrs)){
-    tmp<-as.list(attrs[[comboParam]])
-    names(tmp)<-splitParam
-    attrs[[comboParam]]<-NULL
-    c(attrs, tmp)    
-  }
-}
+# attrComboSplit<-function(attrs, comboParam, splitParam){
+#   if(comboParam %in% names(attrs)){
+#     tmp<-as.list(attrs[[comboParam]])
+#     names(tmp)<-splitParam
+#     attrs[[comboParam]]<-NULL
+#     c(attrs, tmp)    
+#   }
+# }
 
 
 # typeAttrHandler<-function(tvaAttr){
@@ -213,6 +224,7 @@ attrComboSplit<-function(attrs, comboParam, splitParam){
 # cp is a combo param list: 
 # for example
 # cp=list(xy=c('x','y'), in12=c('in', 'in2'))
+#used in eleDefs
 comboParamHandler<-function(attrs, cp ){
   nacp<-names(cp)[match(names(cp),names(attrs),0)!=0]
   unlist(attrs[nacp])->tmp
@@ -254,6 +266,7 @@ animateOneParamExpand<-function(attrs, paramName){
   attrs
 }
 
+#used only by animate element in eleDefs
 preProcAnimate<-function(attrs){
   if("attributeName" %in% names(attrs)){
     attrs[["attributeName"]]<-sub('\\.',"-",attrs[["attributeName"]])
