@@ -111,8 +111,7 @@ svgPreproc<-list(
   } ,  
   "wsp-scln-list"  = function(x){ #
     if(inherits(x,"list")){ #list
-      #paste(  sapply(x, function(y){paste(y, collapse=" ")}), collapse="; "  )
-      paste(x,sep=" ", collapse=";")
+      paste(  sapply(x, function(y){paste(y, collapse=" ")}), collapse="; "  )
     } else if(inherits(x,"matrix")){ #matrix
       paste(apply(x, 2, function(y)paste(y,collapse=",")), collapse="; ")     
     } else {
