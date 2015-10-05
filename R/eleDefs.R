@@ -3815,12 +3815,18 @@ rect = function (...)
 script = function (...) 
 {
     args <- list(...)
-    stopifnot(length(args) > 0, sapply(args, function(x) inherits(x, 
-        "character")))
-    js <- paste(args, collapse = "\n")
-    newXMLNode("script", attrs = list(type = "text/JavaScript"), 
-        newXMLCDataNode(js), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
+    args <- promoteUnamedLists(args)
+    attrs <- named(args)
+    rtv <- list()
+    node <- newXMLNode("script", attrs = attrs, .children = allGoodChildern(args), 
+        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+    {
+        if (length(rtv) > 0) {
+            node <- c(rtv, node)
+        }
+        node
+    }
 }, 
 switch = function (...) 
 {
@@ -4919,6 +4925,16 @@ getNode = function (rootNode, id)
         stop("Cannot find node with id=", id)
     }
     kidV
+}, 
+script = function (...) 
+{
+    args <- list(...)
+    stopifnot(length(args) > 0, sapply(args, function(x) inherits(x, 
+        "character")))
+    js <- paste(args, collapse = "\n")
+    newXMLNode("script", attrs = list(type = "text/JavaScript"), 
+        newXMLCDataNode(js), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
+            TRUE))
 }), .Names = c("font-face", "glyph", "missing-glyph", "hkern", 
 "vkern", "font", "font-face-name", "font-face-format", "font-face-uri", 
 "animate", "animateColor", "animateMotion", "animateTransform", 
@@ -4936,4 +4952,4 @@ getNode = function (rootNode, id)
 "feMergeNode", "font-face-src", "glyphRef", "metadata", "stop", 
 "style", "title", "font.face", "missing.glyph", "font.face.name", 
 "font.face.format", "font.face.uri", "color.profile", "font.face.src", 
-"getNode"))
+"getNode", "script"))
