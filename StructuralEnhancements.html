@@ -83,9 +83,7 @@ img {
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#attribute-combining">Attribute Combining</a><ul>
 <li><a href="#the-r-script-to-generate-a-red-circle">The R script to generate a red circle:</a></li>
-<li><a href="#generated-svg-markup">Generated SVG markup</a><ul>
-<li><a href="#fyi">FYI</a></li>
-</ul></li>
+<li><a href="#generated-svg-markup">Generated SVG markup</a></li>
 </ul></li>
 <li><a href="#handling-lists">Handling Lists</a><ul>
 <li><a href="#using-lapply-for-muliple-circles.">Using lapply for muliple circles.</a></li>
@@ -141,7 +139,10 @@ img {
   wh=c(600,100),
   circle(cxy=c(100,50), r=30, fill='red')
 )</code></pre>
-<p>We can visualize the calling structure of this as</p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" id="root" width="600" height="100">
+<circle r="30" fill="red" cx="100" cy="50"></circle>
+</svg>
+<p>We can visualize the call structure of the above code as</p>
 <!--This uses autoTree-->
 <table>
 <tr>
@@ -179,13 +180,6 @@ directly in svgR, its just a little more typing. In the tree to left, <em>light 
 </td>
 </tr>
 </table>
-<div id="fyi" class="section level3">
-<h3>FYI</h3>
-<p>The result graphics is</p>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" id="root" width="600" height="100">
-<circle r="30" fill="red" cx="100" cy="50"></circle>
-</svg>
-</div>
 </div>
 </div>
 <div id="handling-lists" class="section level1">
