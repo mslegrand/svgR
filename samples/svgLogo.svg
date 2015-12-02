@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" id="root" width="800" height="70">
+  <filter id="genid5">
+    <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="genid2"/>
+    <feSpecularLighting surfaceScale="6" specularConstant="1" specularExponent="30" lighting-color="pink" in="genid2" result="genid3">
+      <fePointLight x="40" y="-30" z="200"/>
+    </feSpecularLighting>
+    <feComposite operator="in" in="genid3" in2="SourceAlpha" result="genid4"/>
+    <feMerge>
+      <feMergeNode in="SourceGraphic"/>
+      <feMergeNode in="genid4"/>
+    </feMerge>
+  </filter>
+  <g stroke="black" filter="url(#genid5)">
+    <text fill="darkblue" font-size="35" font-family="san serif" stroke-width="3" x="80" y="63">svgR</text>
+    <line stroke-width="5" x1="160" y1="35" x2="792" y2="35"/>
+  </g>
+</svg>
