@@ -1,6 +1,19 @@
 # svgR
-An R package to generate SVG markup, documentation will be forth comming. Sample programs can be found on 
+An R package to generate SVG markup. 
 
-https://coanalytics.shinyapps.io/svgShinesIO
+A complete description can be found at
+http://mslegrand.github.io/svgR/
+
+There you will find
+
+- examples
+- structural information
+- userguide
+- tutorial
+
+
+
+
+
 
 
