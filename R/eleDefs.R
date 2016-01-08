@@ -1,4 +1,9 @@
-eleDefs<-
+# About:
+  # The code in this file was programmiclly generated,
+  # the program responsible can be found at
+  # https://github.com/mslegrand/svgcomposeR_PrjBlder
+  #
+   eleDefs<-
  structure(list("font-face" = function (...) 
 {
     args <- list(...)
@@ -4935,6 +4940,36 @@ script = function (...)
     newXMLNode("script", attrs = list(type = "text/JavaScript"), 
         newXMLCDataNode(js), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
+}, 
+translate = function (x, y = NULL) 
+{
+    if (length(c(x, y) != 2)) {
+        stop("bad translate arguments")
+    }
+    list(translate = c(x, y))
+}, 
+rotate = function (angle, x = NULL, y = NULL) 
+{
+    if (!(length(c(angle, x, y)) %in% c(1, 3))) {
+        stop("bad rotate arguments")
+    }
+    list(rotate = c(angle, x, y))
+}, 
+rotatR = function (angle, x = NULL, y = NULL) 
+{
+    if (!(length(c(angle, x, y)) %in% c(1, 3))) {
+        stop("bad rotate arguments")
+    }
+    tmp <- c(angle, x, y)
+    tmp[1] <- as.numeric(tmp[1]) * 180/pi
+    list(rotate = tmp)
+}, 
+scale = function (x, y = NULL) 
+{
+    if (length(c(x, y) != 2)) {
+        stop("bad translate arguments")
+    }
+    list(scale = c(x, y))
 }), .Names = c("font-face", "glyph", "missing-glyph", "hkern", 
 "vkern", "font", "font-face-name", "font-face-format", "font-face-uri", 
 "animate", "animateColor", "animateMotion", "animateTransform", 
@@ -4952,4 +4987,5 @@ script = function (...)
 "feMergeNode", "font-face-src", "glyphRef", "metadata", "stop", 
 "style", "title", "font.face", "missing.glyph", "font.face.name", 
 "font.face.format", "font.face.uri", "color.profile", "font.face.src", 
-"getNode", "script"))
+"getNode", "script", "translate", "rotate", "rotatR", "scale"
+))

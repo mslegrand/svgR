@@ -149,11 +149,16 @@ svgPreproc<-list(
       tmp<-lapply(1:length(names), function(i){
         paste( names[i], "(", paste(x[[i]], collapse=","), ")", sep="" )
       })
-      tmp<-paste(tmp, collapse=" ")
-    } else {
-      tmp<-paste(x, collapse=" ")
+      return(paste(tmp, collapse=" "))
+    }  
+    if( inherits(x,matrix) ){
+     if(dim(x)[1]==2 & dim[2]==4){
+       return(paste0("matrix(", paste(x, collapse=" "),")"))
+      } else {
+        stop("transfrom matrix should have dimension 2 x 4")
+      }
     }
-    tmp
+    return(paste(x, collapse=" "))
   } 
 )
 
