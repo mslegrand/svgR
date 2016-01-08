@@ -10,14 +10,14 @@ require("stringr")
 #     "http://www.w3.org/2000/svg",
 #     "xlink"="http://www.w3.org/1999/xlink",
 #     "ev"="http://www.w3.org/2001/xml-events"
-#     
+#
 #     xmlns="http://www.w3.org/2000/svg",
 #     version="1.1",
 #     "xmlns:xlink"="http://www.w3.org/1999/xlink",
 #     "xmlns:ev"="http://www.w3.org/2001/xml-events"
 #
 #' Creates a new svg Document
-#' 
+#'
 #' @export
 #' @param width Specifies the width of the SVG document
 #' @param height Specifies the height of the SVG document
@@ -36,26 +36,26 @@ svgR=function( ... ){
 #   attrS<-named(args)
 #   kids<-allGoodChildern(args)
   #at this point edit attrS for svgRoot
-  
+
 #   if(length(attrS)>0){
 #     #cat(names(attrS),collapse=",  ")
 #     #cat("\n")
 #     addAttributes(parent, .attrs=attrS, append=TRUE)
 #   }
-#   
+#
 #   if(length(kids)>0){
 #     #cat(length(kids),"\n")
 #     addChildren(parent, kids=kids)
-#   }   
-  
+#   }
+
   #list(...)->args
   #args<-c( list( width=width, height=height), list(...) )
-    
+
   #doc<-newXMLDoc(namespaceDefinitons)
   doc<-newXMLDoc() #parent
   svgRoot( parent=doc, width, height, args=args)
 #   doc<-structure(
-#     list(top=doc,  wh=c(width,height)), 
+#     list(top=doc,  wh=c(width,height)),
 #     class="svgDoc"
 #   )
   class(doc)<-c("svgDoc", class(doc))
@@ -63,7 +63,7 @@ svgR=function( ... ){
 }
 
 
-#called by svgR 
+#called by svgR
 svgRoot<-function(parent, width, height, args){
 #   if( is.null(namespaceDefinitons) ){
 #     namespaceDefinitions<- c(
@@ -71,7 +71,7 @@ svgRoot<-function(parent, width, height, args){
 #       xlink="http://www.w3.org/1999/xlink",
 #       ev="http://www.w3.org/2001/xml-events"
 #     )
-#   } 
+#   }
   #specific to svgRoot
   if( "namespaceDefinitons" %in% names(args)){
     namespaceDefinitions<-args[["namespaceDefinitions"]]
@@ -82,13 +82,13 @@ svgRoot<-function(parent, width, height, args){
       "xlink"="http://www.w3.org/1999/xlink",
       "ev"="http://www.w3.org/2001/xml-events"
     )
-  }  
-  args[["id"]]<-"root"
+  }
+  #args[["id"]]<-"root"
   # copied from svg(...)
-  
+
   args <- promoteUnamedLists(args)
   attrs <- named(args)
-  attrs <- comboParamHandler(attrs, list(wh = c("width", "height"))) 
+  attrs <- comboParamHandler(attrs, list(wh = c("width", "height")))
   #this has no meaning in outermost svg, ie root
   if(is.null(attrs$width)){
     attrs$width=width
@@ -96,37 +96,37 @@ svgRoot<-function(parent, width, height, args){
   if(is.null(attrs$height)){
     attrs$width=height
   }
-  
-  indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+
+  indx <- sapply(names(attrs), function(x) grepl(paste("(^| )",
                                                      x, "($| )", sep = ""), "requiredExtensions requiredFeatures class preserveAspectRatio"))
   attrs[indx] <- lapply(attrs[indx], function(x) {
     svgPreproc[["wsp-list"]](x)
   })
-  indx <- sapply(names(attrs), 
+  indx <- sapply(names(attrs),
                  function(x){
-                   grepl( paste("(^| )", x,  "($| )", sep = ""), 
+                   grepl( paste("(^| )", x,  "($| )", sep = ""),
                           "systemLanguage viewBox")
-                 })                         
+                 })
   attrs[indx] <- lapply(attrs[indx], function(x) {
     svgPreproc[["cmm-list"]](x)
   })
   indx <- sapply(names(attrs), function(x){
     grepl(paste("(^| )",  x, "($| )", sep = ""), "style")
-  })  
+  })
   attrs[indx] <- lapply(attrs[indx], function(x) {
     svgPreproc[["cln-scln-list"]](x)
   })
   newXMLNode("svg", parent=parent,
-           attrs=attrs, 
-           namespaceDefinitions = namespaceDefinitions, 
+           attrs=attrs,
+           namespaceDefinitions = namespaceDefinitions,
            suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning",TRUE),
            .children=unnamed(args)
-  ) 
+  )
 }
 
-# 
-# 
-# #called by svgR 
+#
+#
+# #called by svgR
 # svgRoot<-function(parent,  args){
 #   #   if( is.null(namespaceDefinitons) ){
 #   #     namespaceDefinitions<- c(
@@ -134,7 +134,7 @@ svgRoot<-function(parent, width, height, args){
 #   #       xlink="http://www.w3.org/1999/xlink",
 #   #       ev="http://www.w3.org/2001/xml-events"
 #   #     )
-#   #   } 
+#   #   }
 #   #specific to svgRoot
 #   if( "namespaceDefinitons" %in% names(args)){
 #     namespaceDefinitions<-args[["namespaceDefinitions"]]
@@ -145,40 +145,40 @@ svgRoot<-function(parent, width, height, args){
 #       "xlink"="http://www.w3.org/1999/xlink",
 #       "ev"="http://www.w3.org/2001/xml-events"
 #     )
-#   }  
+#   }
 #   args[["id"]]<-"root"
 #   # copied from svg(...)
-#   
+#
 #   args <- promoteUnamedLists(args)
 #   attrs <- named(args)
 #   attrs <- comboParamHandler(attrs, list(wh = c("width", "height")))
 #   attrs <- mapCenteredXY(attrs)
-#   indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+#   indx <- sapply(names(attrs), function(x) grepl(paste("(^| )",
 #                                                        x, "($| )", sep = ""), "requiredExtensions requiredFeatures class preserveAspectRatio"))
 #   attrs[indx] <- lapply(attrs[indx], function(x) {
 #     svgPreproc[["wsp-list"]](x)
 #   })
-#   indx <- sapply(names(attrs), 
+#   indx <- sapply(names(attrs),
 #                  function(x){
-#                    grepl( paste("(^| )", x,  "($| )", sep = ""), 
+#                    grepl( paste("(^| )", x,  "($| )", sep = ""),
 #                           "systemLanguage viewBox")
-#                  })                         
+#                  })
 #   attrs[indx] <- lapply(attrs[indx], function(x) {
 #     svgPreproc[["cmm-list"]](x)
 #   })
 #   indx <- sapply(names(attrs), function(x){
 #     grepl(paste("(^| )",  x, "($| )", sep = ""), "style")
-#   })  
+#   })
 #   attrs[indx] <- lapply(attrs[indx], function(x) {
 #     svgPreproc[["cln-scln-list"]](x)
 #   })
 #   newXMLNode("svg", parent=parent,
-#              attrs=attrs, 
-#              namespaceDefinitions = namespaceDefinitions, 
+#              attrs=attrs,
+#              namespaceDefinitions = namespaceDefinitions,
 #              suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning",TRUE),
 #              .children=unnamed(args)
-#   ) 
-#   
+#   )
+#
 # }
 
 
@@ -186,8 +186,9 @@ svgRoot<-function(parent, width, height, args){
 
 
 getNode=function(doc,id){
-  if(id=='/'){
+  if(id=='/' || id=='root'){
     id<-'root'
+    return(xmlRoot(doc)) # so root need not be the id of the root  node
   }
   #kidV <- getNodeSet(doc$top, paste("//*[@id=\"", id, "\"]", sep=""))
   kidV <- getNodeSet(doc, paste("//*[@id=\"", id, "\"]", sep=""))
@@ -198,11 +199,11 @@ getNode=function(doc,id){
 }
 
 #' Edit the document at the node given by the index
-#' 
+#'
 #' @param doc An svg document created by svgDoc.new
 #' @param id The id of the node to access. The root node is always
 #' named 'root'
-#' @export 
+#' @export
 "[[.svgDoc"<-
 function(doc,id=''){
   if(id==''|| is.null(id)){
@@ -213,7 +214,7 @@ function(doc,id=''){
     }
   } else {
     parent<-getNode(doc,id)
-    fn<-function(...){ 
+    fn<-function(...){
       s<-substitute(list(...))
       args<-eval(s, list2env(eleDefs, parent.frame() ) )
       args <- promoteUnamedLists(args)
@@ -228,33 +229,33 @@ function(doc,id=''){
       if(length(kids)>0){
         #cat(length(kids),"\n")
         addChildren(parent, kids=kids)
-      }   
+      }
       list(parent)
-    }    
+    }
   }
   fn
 }
 
 
 #' @method "as.character" svgDoc
-#' @export  
+#' @export
 as.character.svgDoc<-function(x, ...){
-  tmp<-list(...) 
+  tmp<-list(...)
   if("fragment" %in% names(tmp) && tmp["fragment"]==FALSE){
     saveXML(x, file=tmp[['file']], indent=TRUE,    prefix = "")
   } else {
-    saveXML(xmlRoot(x), file=tmp[['file']], indent=TRUE,    prefix = "")    
+    saveXML(xmlRoot(x), file=tmp[['file']], indent=TRUE,    prefix = "")
   }
 #   if("fragment" %in% names(tmp) && tmp["fragment"]==FALSE){
 #     saveXML(x$top, file=tmp[['file']], indent=TRUE,    prefix = "")
 #   } else {
-#     saveXML(xmlRoot(x$top), file=tmp[['file']], indent=TRUE,    prefix = "")    
+#     saveXML(xmlRoot(x$top), file=tmp[['file']], indent=TRUE,    prefix = "")
 #   }
 }
 
 
 #' Retrieve  the value of an attribute
-#' 
+#'
 #' @param doc a svgDocument
 #' @param id a valid id for a given node
 #' @param attributeName the name for attribute whose value is to be retrieved
@@ -266,7 +267,7 @@ getAttribute<-function(doc, id, attributeName){
 }
 
 #' convert to rgb representation
-#' 
+#'
 #' @param vector with r g b values
 #' @return returns character vector representing a rgb color
 #' @export
@@ -276,7 +277,7 @@ as.rgb<-function(x,y,z){
 }
 
 #'Generate a random rgb color
-#' 
+#'
 #' @return returns character vector representing a rgb color (as a character vector)
 #' @export
 rrgb<-function(){
@@ -285,5 +286,5 @@ rrgb<-function(){
   paste('rgb(',paste(tmp,collapse=","), ')', sep="")
 }
 
- 
+
 

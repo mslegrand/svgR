@@ -1,6 +1,6 @@
 Package: svgR
 Type: Package
-Title: svgR is an R DSL to generate svg markup 
+Title: svgR is an R DSL to generate svg markup
 Version: 0.1
 Date: 2015-01-05
 Author: M.S.Legrand
@@ -8,8 +8,11 @@ Maintainer: M.S.Legrand <slegrand3.14@gmail.com>
 Description: A DSL for composing SVG markup. One of the benefits is to be
     able to generate SVG dynamically, in a shiny web app.
 License: MIT + file LICENSE
-Suggests: knitr
+Suggests:
+    knitr
 VignetteBuilder: knitr
-Imports: XML,
+Imports:
+    XML,
     stringr,
     shiny
+RoxygenNote: 5.0.1

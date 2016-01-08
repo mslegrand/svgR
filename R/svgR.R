@@ -254,7 +254,7 @@ comboParamHandler<-function(attrs, cp ){
   unlist(attrs[nacp])->tmp
   unlist(cp[nacp])->names4tmp
   if(length(names4tmp)!=length(tmp)){
-    stop("combo param length mistmatch")
+    stop("combo param ",nacp,"length mistmatch")
   }
   names4tmp->names(tmp)  
   tmp<-as.list(tmp)
