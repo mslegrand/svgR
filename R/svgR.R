@@ -151,7 +151,7 @@ svgPreproc<-list(
       })
       return(paste(tmp, collapse=" "))
     }  
-    if( inherits(x,matrix) ){
+    if( inherits(x,"matrix") ){
      if(dim(x)[1]==2 & dim[2]==4){
        return(paste0("matrix(", paste(x, collapse=" "),")"))
       } else {
