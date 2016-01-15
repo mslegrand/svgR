@@ -156,7 +156,7 @@ svgPreproc<-list(
      if(dim(x)[1]==2 & length(x)==6){ # so that the second dim need not be specified
        return(paste0("matrix(", paste(x, collapse=" "),")"))
       } else {
-        stop("transfrom matrix should have dimension 2 x 4")
+        stop("transfrom matrix should have dimension 2 x 3")
       }
     }
     return(paste(x, collapse=" "))
