@@ -152,7 +152,7 @@ svgPreproc<-list(
       return(paste(tmp, collapse=" "))
     }  
     if( inherits(x,"matrix") ){
-     if(dim(x)[1]==2 & dim[2]==4){
+     if(dim(x)[1]==2 & length(x)==8){ # so that the second dim need not be specified
        return(paste0("matrix(", paste(x, collapse=" "),")"))
       } else {
         stop("transfrom matrix should have dimension 2 x 4")
