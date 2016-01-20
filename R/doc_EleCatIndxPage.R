@@ -145,7 +145,9 @@
 #' \item{\code{\link[=view]{view}}}{}
 #' \item{\code{\link[=vkern]{vkern}}}{}
 #' }
-#' @name Element Index
+#' @name Elememt Index
 #' @title Element Generators Indexed by Category
-#' @description This is a listing by category of generators to use when generating an svg markup.
+#' @description 
+#' This is a listing by category of generators to use when generating an svg markup.
 NULL
+

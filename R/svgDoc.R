@@ -19,9 +19,9 @@ require("stringr")
 #' Creates a new svg Document
 #'
 #' @export
-#' @param width Specifies the width of the SVG document
-#' @param height Specifies the height of the SVG document
 #' @param ... Additional paramaeters
+#' 
+#' 
 #' @note By default, name space definition are given by
 #' "http://www.w3.org/2000/svg", "http://www.w3.org/1999/xlink",
 #' "http://www.w3.org/2001/xml-events", but can be overriddent by
@@ -268,12 +268,14 @@ getAttribute<-function(doc, id, attributeName){
 
 #' convert to rgb representation
 #'
-#' @param vector with r g b values
+#' @param r red component: 0-255
+#' @param g green component: 0-255
+#' @param b blue component: 0-255
 #' @return returns character vector representing a rgb color
 #' @export
-as.rgb<-function(x,y,z){
-  tmp<-c(x,y,z)
-  paste('rgb(',paste(tmp,collapse=","), ')', sep="")
+as.rgb<-function(r,g,b){
+  tmp<-c(r,g,b)
+  paste0('rgb(',paste(tmp,collapse=","), ')' )
 }
 
 #'Generate a random rgb color
