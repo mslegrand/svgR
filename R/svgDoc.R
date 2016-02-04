@@ -20,47 +20,202 @@ require("stringr")
 #'
 #' @export
 #' @param ... Additional paramaeters
-#' 
-#' 
+#'
+#'
 #' @note By default, name space definition are given by
 #' "http://www.w3.org/2000/svg", "http://www.w3.org/1999/xlink",
 #' "http://www.w3.org/2001/xml-events", but can be overriddent by
 #' specifying namespaceDefinitions=c(...) as an additional parameter.
-svgR=function( ... ){
+svgR<-function( ... ){
+  #s<-substitute(list(...))
+  #args<-eval(s, list2env(eleDefs, parent.frame() ) ) # causes name pollution
+  #args<-eval(s, c(eleDefs, parent.frame() ))
+
+#   s<-bquote(alist(...), eleDefs)
+#   s<-substitute(s)
+#   #this song and dance is to ensure parent.frame in knitter
+ pf<-as.list(parent.frame()) #pf=y
+#  el<-c( eleDefs, list(elementList=eleDefs) ) #el=x
+# 
+#   ind = match(names(pf), names(el))
+#   ind = is.na(ind) #indices of names in pf not in el
+#   if (any(ind)) {
+#     el[names(pf)[which(ind)]] = pf[which(ind)]
+#   }
+ 
+  enames<-names( parent.env(environment() ) )
+  indx<-setdiff(names(pf),enames)
+  el<-pf[indx]
+ 
+#  if (any(ind)) {
+#      el[names(pf)[which(ind)]] = pf[which(ind)]
+#   }
+ 
+ 
+  list2env(el, environment() )
   s<-substitute(list(...))
-  args<-eval(s, list2env(eleDefs, parent.frame() ) ) #this should be a list
+#   print(environment())
+#   print(ls(environment()))
+#   print(environment(circle))
+  
+#
+#   args<-eval(s,envir=el)
+
+#   parent.frame.child <-new.env() #parent is parent.frame
+#   parent.frame.child$elementList=eleDefs
+#   on.exit(rm(parent.frame.child))
+  #args<-eval(s, list2env(eleDefs, parent.frame() ) )
+  #list2env(eleDefs, parent.frame.child )
+  #s<-substitute(list(...), parent.frame.child)
+#   cat("parent.frame of svgR\n")
+#   print(ls(parent.frame()) )
+#   cat("\n")
+  #s<-substitute(list(...))
+  #args<-eval(s,envir=parent.frame.child )
+ #el<-c(eleDefs, list(elementList=eleDefs))
+#   cat("\nclass of el is:",class(el),"\n\n")
+#   print(sort(unlist(names(el))))
+#   cat("\n\n")
+  args<-eval(s )
+
+
   width=1150
   height=860
-#   args <- promoteUnamedLists(args)
-#   #kids<-unnamed(args)
-#   attrS<-named(args)
-#   kids<-allGoodChildern(args)
-  #at this point edit attrS for svgRoot
-
-#   if(length(attrS)>0){
-#     #cat(names(attrS),collapse=",  ")
-#     #cat("\n")
-#     addAttributes(parent, .attrs=attrS, append=TRUE)
-#   }
-#
-#   if(length(kids)>0){
-#     #cat(length(kids),"\n")
-#     addChildren(parent, kids=kids)
-#   }
-
-  #list(...)->args
-  #args<-c( list( width=width, height=height), list(...) )
-
-  #doc<-newXMLDoc(namespaceDefinitons)
   doc<-newXMLDoc() #parent
   svgRoot( parent=doc, width, height, args=args)
-#   doc<-structure(
-#     list(top=doc,  wh=c(width,height)),
-#     class="svgDoc"
-#   )
   class(doc)<-c("svgDoc", class(doc))
   doc
 }
+
+#' access svgR element definitions
+#'
+#' @export
+#' @param ... Additional paramaeters
+#'
+#'
+with_svg<-function(x,args=NULL){
+  tmp<-eval(substitute(x), c(args, eleDefs) )
+  return(tmp)
+}
+
+
+
+
+#' Wraps an R function to be used as a compounds
+#'
+#' @export
+#' @param f an R function
+#'
+#' @return A function that evaluates the f in the svg environment.
+#'
+toCompound<-function(f){
+  if(!inherits(f, "Compound")){
+    tmplateFn<-function(...){
+      el<-get("eleDefs", envir = parent.frame() )
+      tmp<-c(el,list(eleDefs=el))
+      list2env(tmp, environment())
+      xxx
+    }
+    bd0<-body(f)
+    bdTmp<-body(tmplateFn)
+    bdTmp[[5]]<-bd0
+    body(f)<-bdTmp
+    class(f)<-c(class(f),'Component')
+  }
+  f
+}
+
+
+
+
+
+
+
+
+# toCompound<-function(f){ #works, sort of
+#   g<-function(){
+#     environment(f)<-parent.frame()
+#     tmp<-as.list(match.call())[-1]
+#     arg<-eval(tmp)
+#     do.call(f,arg)
+#   }
+#   formals(g)<-formals(f)
+#   return(g)
+# }
+
+
+
+# toCompound<-function(f){
+#   if(!inherits(f, "Compound")){
+#     tmplateFn<-function(...){
+#       args<-as.list(match.call())[-1]
+#       args<-lapply(args,function(q) eval.parent(q, 2))
+#       with_svg(xxx,args)
+#     }
+#     bd0<-body(f)
+#     bdTmp<-body(tmplateFn)
+#     bdTmp[[4]][[2]]<-bd0
+#     body(f)<-bdTmp
+#     class(f)<-c(class(f),'Component')
+#   }
+#   f
+# }
+
+
+#
+# toCompound<-function(f){ #works?
+#   g<-function(){
+#     environment(f)<-parent.frame()
+#     tmp<-as.list(match.call())
+#     args<-tmp[-1]
+#     #args<-sapply(tmp, eval.parent(2))
+#     rtv<-do.call(f, args)
+#     rtv
+#   }
+#   formals(g)<-formals(f)
+#   return(g)
+# }
+
+# toCompound<-function(f){ #works, sort of
+#   g<-function(){
+#     environment(f)<-parent.frame()
+#     tmp<-as.list(match.call())
+#     do.call(f, tmp[-1])
+#   }
+#   formals(g)<-formals(f)
+#   return(g)
+# }
+
+
+# toCompound<-function(x){
+#   tmp<-eval(substitute(x), c(eleDefs, parent.frame()) )
+#   return(tmp)
+# }
+
+
+
+#' Convenience operator for creating compounds
+#'
+#' @export
+#' @param name the name to assign to the component
+#' @param f an R function
+#'
+#' @return A function that evaluates the body of f in the calling environment.
+#'
+#' @usage circir %<c-% function(cxy,r,...){g(circle(cxy=cxy, r=r,...), circle(cxt=cxy, r=2*r, ...))}
+#'
+`%<c-%`<-function(name,f){
+  name<-substitute(name)
+  if (!is.name(name)) stop("Left-hand side must be a name")
+  name<-deparse(name)
+  f<-toCompound(f)
+  assign(name,f, envir=parent.frame())
+  invisible()
+}
+
+
+
+
 
 
 #called by svgR
@@ -209,14 +364,16 @@ function(doc,id=''){
   if(id==''|| is.null(id)){
     fn<-function(...){
       s<-substitute(list(...))
-      kids<-eval(s, list2env(eleDefs, parent=parent.frame() ) )
+      #kids<-eval(s, list2env(eleDefs, parent=parent.frame() ) )
+      kids<-eval(s, c(eleDefs, parent.frame() ))
       kids
     }
   } else {
     parent<-getNode(doc,id)
     fn<-function(...){
       s<-substitute(list(...))
-      args<-eval(s, list2env(eleDefs, parent.frame() ) )
+      #args<-eval(s, list2env(eleDefs, parent.frame() ) )
+      args<-eval(s, c(eleDefs, parent.frame() ))
       args <- promoteUnamedLists(args)
       #kids<-unnamed(args)
       attrS<-named(args)
