@@ -1,5 +1,5 @@
 # svgR
-An R package to generate SVG markup. 
+An R package to generate SVG markup. (Can be embedding in R presentations, slides and Shiny applications) 
 A short example is
 
     svgR(wh=c(800,600), circle(cxy=c(400,300), r=100))

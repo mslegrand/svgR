@@ -4979,7 +4979,7 @@ paste0(x, "pt"), u.pc = function (x)
 paste0(x, "pc"), u.cm = function (x) 
 paste0(x, "cm"), u.mm = function (x) 
 paste0(x, "mm"), u.in = function (x) 
-paste0(x, "in"), "u.%" = function (x) 
+paste0(x, "in"), u.prct = function (x) 
 paste0(x, "%"), u.rad = function (x) 
 x * 180/pi), .Names = c("font-face", "glyph", "missing-glyph", 
 "hkern", "vkern", "font", "font-face-name", "font-face-format", 
@@ -5000,4 +5000,4 @@ x * 180/pi), .Names = c("font-face", "glyph", "missing-glyph",
 "font.face.format", "font.face.uri", "color.profile", "font.face.src", 
 "getNode", "script", "translate", "rotate", "rotatR", "scale", 
 "u.em", "u.ex", "u.px", "u.pt", "u.pc", "u.cm", "u.mm", "u.in", 
-"u.%", "u.rad"))
+"u.prct", "u.rad"))
