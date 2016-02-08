@@ -5,17 +5,6 @@ require("stringr")
 
 
 
-#xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-
-#     "http://www.w3.org/2000/svg",
-#     "xlink"="http://www.w3.org/1999/xlink",
-#     "ev"="http://www.w3.org/2001/xml-events"
-#
-#     xmlns="http://www.w3.org/2000/svg",
-#     version="1.1",
-#     "xmlns:xlink"="http://www.w3.org/1999/xlink",
-#     "xmlns:ev"="http://www.w3.org/2001/xml-events"
-#
 #' Creates a new svg Document
 #'
 #' @export
@@ -27,55 +16,16 @@ require("stringr")
 #' "http://www.w3.org/2001/xml-events", but can be overriddent by
 #' specifying namespaceDefinitions=c(...) as an additional parameter.
 svgR<-function( ... ){
-  #s<-substitute(list(...))
-  #args<-eval(s, list2env(eleDefs, parent.frame() ) ) # causes name pollution
-  #args<-eval(s, c(eleDefs, parent.frame() ))
 
-#   s<-bquote(alist(...), eleDefs)
-#   s<-substitute(s)
-#   #this song and dance is to ensure parent.frame in knitter
- pf<-as.list(parent.frame()) #pf=y
-#  el<-c( eleDefs, list(elementList=eleDefs) ) #el=x
-# 
-#   ind = match(names(pf), names(el))
-#   ind = is.na(ind) #indices of names in pf not in el
-#   if (any(ind)) {
-#     el[names(pf)[which(ind)]] = pf[which(ind)]
-#   }
+  pf<-as.list(parent.frame()) #pf=y
  
   enames<-names( parent.env(environment() ) )
   indx<-setdiff(names(pf),enames)
   el<-pf[indx]
  
-#  if (any(ind)) {
-#      el[names(pf)[which(ind)]] = pf[which(ind)]
-#   }
- 
- 
   list2env(el, environment() )
   s<-substitute(list(...))
-#   print(environment())
-#   print(ls(environment()))
-#   print(environment(circle))
   
-#
-#   args<-eval(s,envir=el)
-
-#   parent.frame.child <-new.env() #parent is parent.frame
-#   parent.frame.child$elementList=eleDefs
-#   on.exit(rm(parent.frame.child))
-  #args<-eval(s, list2env(eleDefs, parent.frame() ) )
-  #list2env(eleDefs, parent.frame.child )
-  #s<-substitute(list(...), parent.frame.child)
-#   cat("parent.frame of svgR\n")
-#   print(ls(parent.frame()) )
-#   cat("\n")
-  #s<-substitute(list(...))
-  #args<-eval(s,envir=parent.frame.child )
- #el<-c(eleDefs, list(elementList=eleDefs))
-#   cat("\nclass of el is:",class(el),"\n\n")
-#   print(sort(unlist(names(el))))
-#   cat("\n\n")
   args<-eval(s )
 
 
@@ -85,17 +35,6 @@ svgR<-function( ... ){
   svgRoot( parent=doc, width, height, args=args)
   class(doc)<-c("svgDoc", class(doc))
   doc
-}
-
-#' access svgR element definitions
-#'
-#' @export
-#' @param ... Additional paramaeters
-#'
-#'
-with_svg<-function(x,args=NULL){
-  tmp<-eval(substitute(x), c(args, eleDefs) )
-  return(tmp)
 }
 
 
@@ -126,74 +65,6 @@ toCompound<-function(f){
 }
 
 
-
-
-
-
-
-
-# toCompound<-function(f){ #works, sort of
-#   g<-function(){
-#     environment(f)<-parent.frame()
-#     tmp<-as.list(match.call())[-1]
-#     arg<-eval(tmp)
-#     do.call(f,arg)
-#   }
-#   formals(g)<-formals(f)
-#   return(g)
-# }
-
-
-
-# toCompound<-function(f){
-#   if(!inherits(f, "Compound")){
-#     tmplateFn<-function(...){
-#       args<-as.list(match.call())[-1]
-#       args<-lapply(args,function(q) eval.parent(q, 2))
-#       with_svg(xxx,args)
-#     }
-#     bd0<-body(f)
-#     bdTmp<-body(tmplateFn)
-#     bdTmp[[4]][[2]]<-bd0
-#     body(f)<-bdTmp
-#     class(f)<-c(class(f),'Component')
-#   }
-#   f
-# }
-
-
-#
-# toCompound<-function(f){ #works?
-#   g<-function(){
-#     environment(f)<-parent.frame()
-#     tmp<-as.list(match.call())
-#     args<-tmp[-1]
-#     #args<-sapply(tmp, eval.parent(2))
-#     rtv<-do.call(f, args)
-#     rtv
-#   }
-#   formals(g)<-formals(f)
-#   return(g)
-# }
-
-# toCompound<-function(f){ #works, sort of
-#   g<-function(){
-#     environment(f)<-parent.frame()
-#     tmp<-as.list(match.call())
-#     do.call(f, tmp[-1])
-#   }
-#   formals(g)<-formals(f)
-#   return(g)
-# }
-
-
-# toCompound<-function(x){
-#   tmp<-eval(substitute(x), c(eleDefs, parent.frame()) )
-#   return(tmp)
-# }
-
-
-
 #' Convenience operator for creating compounds
 #'
 #' @export
@@ -220,13 +91,6 @@ toCompound<-function(f){
 
 #called by svgR
 svgRoot<-function(parent, width, height, args){
-#   if( is.null(namespaceDefinitons) ){
-#     namespaceDefinitions<- c(
-#       "http://www.w3.org/2000/svg",
-#       xlink="http://www.w3.org/1999/xlink",
-#       ev="http://www.w3.org/2001/xml-events"
-#     )
-#   }
   #specific to svgRoot
   if( "namespaceDefinitons" %in% names(args)){
     namespaceDefinitions<-args[["namespaceDefinitions"]]
@@ -238,9 +102,7 @@ svgRoot<-function(parent, width, height, args){
       "ev"="http://www.w3.org/2001/xml-events"
     )
   }
-  #args[["id"]]<-"root"
-  # copied from svg(...)
-
+  
   args <- promoteUnamedLists(args)
   attrs <- named(args)
   attrs <- comboParamHandler(attrs, list(wh = c("width", "height")))
@@ -279,66 +141,6 @@ svgRoot<-function(parent, width, height, args){
   )
 }
 
-#
-#
-# #called by svgR
-# svgRoot<-function(parent,  args){
-#   #   if( is.null(namespaceDefinitons) ){
-#   #     namespaceDefinitions<- c(
-#   #       "http://www.w3.org/2000/svg",
-#   #       xlink="http://www.w3.org/1999/xlink",
-#   #       ev="http://www.w3.org/2001/xml-events"
-#   #     )
-#   #   }
-#   #specific to svgRoot
-#   if( "namespaceDefinitons" %in% names(args)){
-#     namespaceDefinitions<-args[["namespaceDefinitions"]]
-#     argsargs[["namespaceDefinitions"]]=NULL
-#   } else {
-#     namespaceDefinitions<- c(
-#       "http://www.w3.org/2000/svg",
-#       "xlink"="http://www.w3.org/1999/xlink",
-#       "ev"="http://www.w3.org/2001/xml-events"
-#     )
-#   }
-#   args[["id"]]<-"root"
-#   # copied from svg(...)
-#
-#   args <- promoteUnamedLists(args)
-#   attrs <- named(args)
-#   attrs <- comboParamHandler(attrs, list(wh = c("width", "height")))
-#   attrs <- mapCenteredXY(attrs)
-#   indx <- sapply(names(attrs), function(x) grepl(paste("(^| )",
-#                                                        x, "($| )", sep = ""), "requiredExtensions requiredFeatures class preserveAspectRatio"))
-#   attrs[indx] <- lapply(attrs[indx], function(x) {
-#     svgPreproc[["wsp-list"]](x)
-#   })
-#   indx <- sapply(names(attrs),
-#                  function(x){
-#                    grepl( paste("(^| )", x,  "($| )", sep = ""),
-#                           "systemLanguage viewBox")
-#                  })
-#   attrs[indx] <- lapply(attrs[indx], function(x) {
-#     svgPreproc[["cmm-list"]](x)
-#   })
-#   indx <- sapply(names(attrs), function(x){
-#     grepl(paste("(^| )",  x, "($| )", sep = ""), "style")
-#   })
-#   attrs[indx] <- lapply(attrs[indx], function(x) {
-#     svgPreproc[["cln-scln-list"]](x)
-#   })
-#   newXMLNode("svg", parent=parent,
-#              attrs=attrs,
-#              namespaceDefinitions = namespaceDefinitions,
-#              suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning",TRUE),
-#              .children=unnamed(args)
-#   )
-#
-# }
-
-
-
-
 
 getNode=function(doc,id){
   if(id=='/' || id=='root'){
@@ -364,27 +166,36 @@ function(doc,id=''){
   if(id==''|| is.null(id)){
     fn<-function(...){
       s<-substitute(list(...))
-      #kids<-eval(s, list2env(eleDefs, parent=parent.frame() ) )
       kids<-eval(s, c(eleDefs, parent.frame() ))
       kids
     }
   } else {
     parent<-getNode(doc,id)
     fn<-function(...){
+      pf<-as.list(parent.frame()) #pf=y
+      
+      enames<-names( parent.env(environment() ) )
+      indx<-setdiff(names(pf),enames)
+      el<-pf[indx]
+      env1<-environment()
+      
+      list2env(el, environment() )
       s<-substitute(list(...))
-      #args<-eval(s, list2env(eleDefs, parent.frame() ) )
-      args<-eval(s, c(eleDefs, parent.frame() ))
+      
+      args<-eval(s )
+#       
+      
+      
+#       s<-substitute(list(...))
+#       args<-eval(s, c(eleDefs, parent.frame() ))
+      
       args <- promoteUnamedLists(args)
-      #kids<-unnamed(args)
       attrS<-named(args)
       kids<-allGoodChildern(args)
       if(length(attrS)>0){
-        #cat(names(attrS),collapse=",  ")
-        #cat("\n")
         addAttributes(parent, .attrs=attrS, append=TRUE)
       }
       if(length(kids)>0){
-        #cat(length(kids),"\n")
         addChildren(parent, kids=kids)
       }
       list(parent)
@@ -403,11 +214,6 @@ as.character.svgDoc<-function(x, ...){
   } else {
     saveXML(xmlRoot(x), file=tmp[['file']], indent=TRUE,    prefix = "")
   }
-#   if("fragment" %in% names(tmp) && tmp["fragment"]==FALSE){
-#     saveXML(x$top, file=tmp[['file']], indent=TRUE,    prefix = "")
-#   } else {
-#     saveXML(xmlRoot(x$top), file=tmp[['file']], indent=TRUE,    prefix = "")
-#   }
 }
 
 
