@@ -145,6 +145,9 @@ svgPreproc<-list(
   } ,
   "transform-list" = function(x){ #at this point we do no length check
     names<-names(x)
+    if(is.null(x)){
+      x<-diag(3)[-3,]
+    }
     if(inherits(x,"list")){ #list
       tmp<-lapply(1:length(names), function(i){
         paste( names[i], "(", paste(x[[i]], collapse=","), ")", sep="" )
@@ -152,11 +155,13 @@ svgPreproc<-list(
       return(paste(tmp, collapse=" "))
     }  
     if( inherits(x,"matrix") ){
-
+     if(dim(x)[1]==3 & dim(x)[2]==3){ #if present, drop last row
+       x<-x[-3,]
+     }
      if(dim(x)[1]==2 & length(x)==6){ # so that the second dim need not be specified
        return(paste0("matrix(", paste(x, collapse=" "),")"))
       } else {
-        stop("transfrom matrix should have dimension 2 x 3")
+        stop("expecting transfrom matrix to be dimension 2 x 3")
       }
     }
     return(paste(x, collapse=" "))
