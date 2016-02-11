@@ -1,10 +1,4 @@
-# About:
-  # The code in this file was programmiclly generated,
-  # the program responsible can be found at
-  # https://github.com/mslegrand/svgcomposeR_PrjBlder
-  #
-   eleDefs<-
- structure(list("font-face" = function (...) 
+"font-face"<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -33,13 +27,14 @@
         }
         node
     }
-}, 
-glyph = function (...) 
+}
+
+glyph<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
-    attrs <- comboParamHandler(attrs, list("vert-origin-xy" = c("vert-origin-x", 
+    attrs <- comboParamHandler(attrs, list(`vert-origin-xy` = c("vert-origin-x", 
     "vert-origin-y")))
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
         x, "($| )", sep = ""), "d"))
@@ -121,13 +116,14 @@ glyph = function (...)
         }
         node
     }
-}, 
-"missing-glyph" = function (...) 
+}
+
+"missing-glyph"<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
-    attrs <- comboParamHandler(attrs, list("vert-origin-xy" = c("vert-origin-x", 
+    attrs <- comboParamHandler(attrs, list(`vert-origin-xy` = c("vert-origin-x", 
     "vert-origin-y")))
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
         x, "($| )", sep = ""), "d"))
@@ -202,8 +198,9 @@ glyph = function (...)
         }
         node
     }
-}, 
-hkern = function (...) 
+}
+
+hkern<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -227,8 +224,9 @@ hkern = function (...)
         }
         node
     }
-}, 
-vkern = function (...) 
+}
+
+vkern<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -252,14 +250,15 @@ vkern = function (...)
         }
         node
     }
-}, 
-font = function (...) 
+}
+
+font<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
-    attrs <- comboParamHandler(attrs, list("horiz-origin-xy" = c("horiz-origin-x", 
-    "horiz-origin-y"), "vert-origin-xy" = c("vert-origin-x", 
+    attrs <- comboParamHandler(attrs, list(`horiz-origin-xy` = c("horiz-origin-x", 
+    "horiz-origin-y"), `vert-origin-xy` = c("vert-origin-x", 
     "vert-origin-y")))
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
         x, "($| )", sep = ""), "class"))
@@ -285,8 +284,9 @@ font = function (...)
         }
         node
     }
-}, 
-"font-face-name" = function (...) 
+}
+
+"font-face-name"<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -301,8 +301,9 @@ font = function (...)
         }
         node
     }
-}, 
-"font-face-format" = function (...) 
+}
+
+"font-face-format"<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -317,8 +318,9 @@ font = function (...)
         }
         node
     }
-}, 
-"font-face-uri" = function (...) 
+}
+
+"font-face-uri"<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -333,18 +335,19 @@ font = function (...)
         }
         node
     }
-}, 
-animate = function (...) 
+}
+
+animate<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     combos <- list(cxy = c("cx", "cy"), dxy = c("dx", "dy"), 
-        fxy = c("fx", "fy"), g12 = c("g1", "g2"), "horiz-origin-xy" = c("horiz-origin-x", 
+        fxy = c("fx", "fy"), g12 = c("g1", "g2"), `horiz-origin-xy` = c("horiz-origin-x", 
         "horiz-origin-y"), in12 = c("in", "in2"), k1234 = c("k1", 
         "k2", "k3", "k4"), pointsAtXYZ = c("pointsAtX", "pointsAtY", 
         "pointsAtZ"), refXY = c("refX", "refY"), rxy = c("rx", 
         "ry"), targetXY = c("targetX", "targetY"), u12 = c("u1", 
-        "u2"), "vert-origin-xy" = c("vert-origin-x", "vert-origin-y"
+        "u2"), `vert-origin-xy` = c("vert-origin-x", "vert-origin-y"
         ), wh = c("width", "height"), x12 = c("x1", "x2"), xy = c("x", 
         "y"), xy1 = c("x1", "y1"), xy2 = c("x2", "y2"), xyz = c("x", 
         "y", "z"), y12 = c("y1", "y2"))
@@ -380,8 +383,7 @@ animate = function (...)
                 names(vals) <- aNames
             }
             vals
-        }, 
-simplify = FALSE, USE.NAMES = TRUE)
+        }, simplify = FALSE, USE.NAMES = TRUE)
         rtv <- lapply(aNames, function(an) {
             args2 <- args
             args2[["attributeName"]] <- an
@@ -442,8 +444,9 @@ simplify = FALSE, USE.NAMES = TRUE)
         }
         node
     }
-}, 
-animateColor = function (...) 
+}
+
+animateColor<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -494,8 +497,9 @@ animateColor = function (...)
         }
         node
     }
-}, 
-animateMotion = function (...) 
+}
+
+animateMotion<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -552,8 +556,9 @@ animateMotion = function (...)
         }
         node
     }
-}, 
-animateTransform = function (...) 
+}
+
+animateTransform<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -604,18 +609,19 @@ animateTransform = function (...)
         }
         node
     }
-}, 
-set = function (...) 
+}
+
+set<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     combos <- list(cxy = c("cx", "cy"), dxy = c("dx", "dy"), 
-        fxy = c("fx", "fy"), g12 = c("g1", "g2"), "horiz-origin-xy" = c("horiz-origin-x", 
+        fxy = c("fx", "fy"), g12 = c("g1", "g2"), `horiz-origin-xy` = c("horiz-origin-x", 
         "horiz-origin-y"), in12 = c("in", "in2"), k1234 = c("k1", 
         "k2", "k3", "k4"), pointsAtXYZ = c("pointsAtX", "pointsAtY", 
         "pointsAtZ"), refXY = c("refX", "refY"), rxy = c("rx", 
         "ry"), targetXY = c("targetX", "targetY"), u12 = c("u1", 
-        "u2"), "vert-origin-xy" = c("vert-origin-x", "vert-origin-y"
+        "u2"), `vert-origin-xy` = c("vert-origin-x", "vert-origin-y"
         ), wh = c("width", "height"), x12 = c("x1", "x2"), xy = c("x", 
         "y"), xy1 = c("x1", "y1"), xy2 = c("x2", "y2"), xyz = c("x", 
         "y", "z"), y12 = c("y1", "y2"))
@@ -651,8 +657,7 @@ set = function (...)
                 names(vals) <- aNames
             }
             vals
-        }, 
-simplify = FALSE, USE.NAMES = TRUE)
+        }, simplify = FALSE, USE.NAMES = TRUE)
         rtv <- lapply(aNames, function(an) {
             args2 <- args
             args2[["attributeName"]] <- an
@@ -698,8 +703,9 @@ simplify = FALSE, USE.NAMES = TRUE)
         }
         node
     }
-}, 
-mpath = function (...) 
+}
+
+mpath<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -714,8 +720,9 @@ mpath = function (...)
         }
         node
     }
-}, 
-feFuncA = function (...) 
+}
+
+feFuncA<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -730,8 +737,9 @@ feFuncA = function (...)
         }
         node
     }
-}, 
-feFuncB = function (...) 
+}
+
+feFuncB<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -746,8 +754,9 @@ feFuncB = function (...)
         }
         node
     }
-}, 
-feFuncG = function (...) 
+}
+
+feFuncG<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -762,8 +771,9 @@ feFuncG = function (...)
         }
         node
     }
-}, 
-feFuncR = function (...) 
+}
+
+feFuncR<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -778,8 +788,9 @@ feFuncR = function (...)
         }
         node
     }
-}, 
-feDistantLight = function (...) 
+}
+
+feDistantLight<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -794,8 +805,9 @@ feDistantLight = function (...)
         }
         node
     }
-}, 
-feTurbulence = function (...) 
+}
+
+feTurbulence<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -861,8 +873,9 @@ feTurbulence = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feConvolveMatrix = function (...) 
+}
+
+feConvolveMatrix<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -931,8 +944,9 @@ feConvolveMatrix = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feDiffuseLighting = function (...) 
+}
+
+feDiffuseLighting<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -998,8 +1012,9 @@ feDiffuseLighting = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feOffset = function (...) 
+}
+
+feOffset<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1059,8 +1074,9 @@ feOffset = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-filter = function (...) 
+}
+
+filter<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1105,8 +1121,9 @@ filter = function (...)
         }
         node
     }
-}, 
-feBlend = function (...) 
+}
+
+feBlend<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1165,8 +1182,9 @@ feBlend = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feColorMatrix = function (...) 
+}
+
+feColorMatrix<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1225,8 +1243,9 @@ feColorMatrix = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feComponentTransfer = function (...) 
+}
+
+feComponentTransfer<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1285,8 +1304,9 @@ feComponentTransfer = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feComposite = function (...) 
+}
+
+feComposite<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1346,8 +1366,9 @@ feComposite = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feDisplacementMap = function (...) 
+}
+
+feDisplacementMap<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1406,8 +1427,9 @@ feDisplacementMap = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feFlood = function (...) 
+}
+
+feFlood<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1466,8 +1488,9 @@ feFlood = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feGaussianBlur = function (...) 
+}
+
+feGaussianBlur<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1533,8 +1556,9 @@ feGaussianBlur = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feImage = function (...) 
+}
+
+feImage<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1593,8 +1617,9 @@ feImage = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feMerge = function (...) 
+}
+
+feMerge<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1653,8 +1678,9 @@ feMerge = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feMorphology = function (...) 
+}
+
+feMorphology<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1720,8 +1746,9 @@ feMorphology = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feSpecularLighting = function (...) 
+}
+
+feSpecularLighting<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1787,8 +1814,9 @@ feSpecularLighting = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feTile = function (...) 
+}
+
+feTile<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1847,8 +1875,9 @@ feTile = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-feSpotLight = function (...) 
+}
+
+feSpotLight<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1865,8 +1894,9 @@ feSpotLight = function (...)
         }
         node
     }
-}, 
-fePointLight = function (...) 
+}
+
+fePointLight<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1883,8 +1913,9 @@ fePointLight = function (...)
         }
         node
     }
-}, 
-svg = function (...) 
+}
+
+svg<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -1965,8 +1996,9 @@ svg = function (...)
         }
         node
     }
-}, 
-a = function (...) 
+}
+
+a<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2051,8 +2083,9 @@ a = function (...)
         }
         node
     }
-}, 
-altGlyph = function (...) 
+}
+
+altGlyph<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2105,8 +2138,9 @@ altGlyph = function (...)
         }
         node
     }
-}, 
-circle = function (...) 
+}
+
+circle<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2208,8 +2242,9 @@ circle = function (...)
         }
         node
     }
-}, 
-clipPath = function (...) 
+}
+
+clipPath<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2266,8 +2301,9 @@ clipPath = function (...)
         }
         node
     }
-}, 
-cursor = function (...) 
+}
+
+cursor<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2297,8 +2333,9 @@ cursor = function (...)
         }
         node
     }
-}, 
-defs = function (...) 
+}
+
+defs<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2383,8 +2420,9 @@ defs = function (...)
         }
         node
     }
-}, 
-ellipse = function (...) 
+}
+
+ellipse<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2486,8 +2524,9 @@ ellipse = function (...)
         }
         node
     }
-}, 
-foreignObject = function (...) 
+}
+
+foreignObject<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2533,8 +2572,9 @@ foreignObject = function (...)
         }
         node
     }
-}, 
-g = function (...) 
+}
+
+g<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2676,8 +2716,9 @@ g = function (...)
         }
         node
     }
-}, 
-image = function (...) 
+}
+
+image<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2765,8 +2806,9 @@ image = function (...)
         }
         node
     }
-}, 
-line = function (...) 
+}
+
+line<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2911,8 +2953,9 @@ line = function (...)
         }
         node
     }
-}, 
-linearGradient = function (...) 
+}
+
+linearGradient<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -2954,7 +2997,7 @@ linearGradient = function (...)
         }
         for (i in 1:length(colors)) {
             attrs.si <- list(offset = sprintf("%d%%", as.integer(offsets[i])), 
-                "stop-color" = colors[i])
+                `stop-color` = colors[i])
             stopi <- newXMLNode("stop", attrs = attrs.si)
             args <- c(args, stopi)
         }
@@ -2968,8 +3011,9 @@ linearGradient = function (...)
         }
         node
     }
-}, 
-marker = function (...) 
+}
+
+marker<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3049,8 +3093,9 @@ marker = function (...)
         }
         node
     }
-}, 
-mask = function (...) 
+}
+
+mask<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3117,8 +3162,9 @@ mask = function (...)
         }
         node
     }
-}, 
-path = function (...) 
+}
+
+path<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3267,8 +3313,9 @@ path = function (...)
         }
         node
     }
-}, 
-pattern = function (...) 
+}
+
+pattern<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3356,8 +3403,9 @@ pattern = function (...)
         }
         node
     }
-}, 
-polygon = function (...) 
+}
+
+polygon<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3506,8 +3554,9 @@ polygon = function (...)
         }
         node
     }
-}, 
-polyline = function (...) 
+}
+
+polyline<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3656,8 +3705,9 @@ polyline = function (...)
         }
         node
     }
-}, 
-radialGradient = function (...) 
+}
+
+radialGradient<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3698,7 +3748,7 @@ radialGradient = function (...)
         }
         for (i in 1:length(colors)) {
             attrs.si <- list(offset = sprintf("%d%%", as.integer(offsets[i])), 
-                "stop-color" = colors[i])
+                `stop-color` = colors[i])
             stopi <- newXMLNode("stop", attrs = attrs.si)
             args <- c(args, stopi)
         }
@@ -3712,8 +3762,9 @@ radialGradient = function (...)
         }
         node
     }
-}, 
-rect = function (...) 
+}
+
+rect<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3816,8 +3867,9 @@ rect = function (...)
         }
         node
     }
-}, 
-script = function (...) 
+}
+
+script<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3832,8 +3884,9 @@ script = function (...)
         }
         node
     }
-}, 
-switch = function (...) 
+}
+
+switch<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3918,8 +3971,9 @@ switch = function (...)
         }
         node
     }
-}, 
-symbol = function (...) 
+}
+
+symbol<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -3997,8 +4051,9 @@ symbol = function (...)
         }
         node
     }
-}, 
-text = function (...) 
+}
+
+text<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4119,8 +4174,9 @@ text = function (...)
         }
         node
     }
-}, 
-textPath = function (...) 
+}
+
+textPath<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4190,8 +4246,9 @@ textPath = function (...)
         }
         node
     }
-}, 
-tref = function (...) 
+}
+
+tref<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4244,8 +4301,9 @@ tref = function (...)
         }
         node
     }
-}, 
-tspan = function (...) 
+}
+
+tspan<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4317,8 +4375,9 @@ tspan = function (...)
         }
         node
     }
-}, 
-use = function (...) 
+}
+
+use<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4406,8 +4465,9 @@ use = function (...)
         }
         node
     }
-}, 
-view = function (...) 
+}
+
+view<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4436,8 +4496,9 @@ view = function (...)
         }
         node
     }
-}, 
-altGlyphDef = function (...) 
+}
+
+altGlyphDef<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4452,8 +4513,9 @@ altGlyphDef = function (...)
         }
         node
     }
-}, 
-altGlyphItem = function (...) 
+}
+
+altGlyphItem<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4468,8 +4530,9 @@ altGlyphItem = function (...)
         }
         node
     }
-}, 
-"color-profile" = function (...) 
+}
+
+"color-profile"<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4491,8 +4554,9 @@ altGlyphItem = function (...)
         }
         node
     }
-}, 
-desc = function (...) 
+}
+
+desc<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4521,8 +4585,9 @@ desc = function (...)
         }
         node
     }
-}, 
-feMergeNode = function (...) 
+}
+
+feMergeNode<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4564,8 +4629,9 @@ feMergeNode = function (...)
         node
     }
     node <- c(rtv, node)
-}, 
-"font-face-src" = function (...) 
+}
+
+"font-face-src"<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4580,8 +4646,9 @@ feMergeNode = function (...)
         }
         node
     }
-}, 
-glyphRef = function (...) 
+}
+
+glyphRef<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4619,8 +4686,9 @@ glyphRef = function (...)
         }
         node
     }
-}, 
-metadata = function (...) 
+}
+
+metadata<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4635,8 +4703,9 @@ metadata = function (...)
         }
         node
     }
-}, 
-stop = function (...) 
+}
+
+stop<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4665,8 +4734,9 @@ stop = function (...)
         }
         node
     }
-}, 
-style = function (...) 
+}
+
+style<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4688,8 +4758,9 @@ style = function (...)
         }
         node
     }
-}, 
-title = function (...) 
+}
+
+title<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4718,8 +4789,9 @@ title = function (...)
         }
         node
     }
-}, 
-font.face = function (...) 
+}
+
+font.face<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4748,13 +4820,14 @@ font.face = function (...)
         }
         node
     }
-}, 
-missing.glyph = function (...) 
+}
+
+missing.glyph<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
-    attrs <- comboParamHandler(attrs, list("vert-origin-xy" = c("vert-origin-x", 
+    attrs <- comboParamHandler(attrs, list(`vert-origin-xy` = c("vert-origin-x", 
     "vert-origin-y")))
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
         x, "($| )", sep = ""), "d"))
@@ -4829,8 +4902,9 @@ missing.glyph = function (...)
         }
         node
     }
-}, 
-font.face.name = function (...) 
+}
+
+font.face.name<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4845,8 +4919,9 @@ font.face.name = function (...)
         }
         node
     }
-}, 
-font.face.format = function (...) 
+}
+
+font.face.format<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4861,8 +4936,9 @@ font.face.format = function (...)
         }
         node
     }
-}, 
-font.face.uri = function (...) 
+}
+
+font.face.uri<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4877,8 +4953,9 @@ font.face.uri = function (...)
         }
         node
     }
-}, 
-color.profile = function (...) 
+}
+
+color.profile<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4900,8 +4977,9 @@ color.profile = function (...)
         }
         node
     }
-}, 
-font.face.src = function (...) 
+}
+
+font.face.src<-function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -4916,8 +4994,9 @@ font.face.src = function (...)
         }
         node
     }
-}, 
-getNode = function (rootNode, id) 
+}
+
+getNode<-function (rootNode, id) 
 {
     if (id != "root") {
         kidV <- getNodeSet(rootNode, paste("//*[@id=\"", id, 
@@ -4930,8 +5009,9 @@ getNode = function (rootNode, id)
         stop("Cannot find node with id=", id)
     }
     kidV
-}, 
-script = function (...) 
+}
+
+script<-function (...) 
 {
     args <- list(...)
     stopifnot(length(args) > 0, sapply(args, function(x) inherits(x, 
@@ -4940,22 +5020,25 @@ script = function (...)
     newXMLNode("script", attrs = list(type = "text/JavaScript"), 
         newXMLCDataNode(js), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
             TRUE))
-}, 
-translate = function (dx, dy = NULL) 
+}
+
+translate<-function (dx, dy = NULL) 
 {
     if (length(c(dx, dy)) != 2) {
         stop("bad translate arguments")
     }
     list(translate = c(dx, dy))
-}, 
-rotate = function (angle, x = NULL, y = NULL) 
+}
+
+rotate<-function (angle, x = NULL, y = NULL) 
 {
     if (!(length(c(angle, x, y)) %in% c(1, 3))) {
         stop("bad rotate arguments")
     }
     list(rotate = c(angle, x, y))
-}, 
-rotatR = function (angle, x = NULL, y = NULL) 
+}
+
+rotatR<-function (angle, x = NULL, y = NULL) 
 {
     if (!(length(c(angle, x, y)) %in% c(1, 3))) {
         stop("bad rotate arguments")
@@ -4963,41 +5046,42 @@ rotatR = function (angle, x = NULL, y = NULL)
     tmp <- c(angle, x, y)
     tmp[1] <- as.numeric(tmp[1]) * 180/pi
     list(rotate = tmp)
-}, 
-scale = function (dx, dy = NULL) 
+}
+
+scale<-function (dx, dy = NULL) 
 {
     if (!(length(c(dx, dy)) %in% 2)) {
         stop("bad scale arguments")
     }
     list(scale = c(dx, dy))
-}, 
-u.em = function (x) 
-paste0(x, "em"), u.ex = function (x) 
-paste0(x, "ex"), u.px = function (x) 
-paste0(x, "px"), u.pt = function (x) 
-paste0(x, "pt"), u.pc = function (x) 
-paste0(x, "pc"), u.cm = function (x) 
-paste0(x, "cm"), u.mm = function (x) 
-paste0(x, "mm"), u.in = function (x) 
-paste0(x, "in"), u.prct = function (x) 
-paste0(x, "%"), u.rad = function (x) 
-x * 180/pi), .Names = c("font-face", "glyph", "missing-glyph", 
-"hkern", "vkern", "font", "font-face-name", "font-face-format", 
-"font-face-uri", "animate", "animateColor", "animateMotion", 
-"animateTransform", "set", "mpath", "feFuncA", "feFuncB", "feFuncG", 
-"feFuncR", "feDistantLight", "feTurbulence", "feConvolveMatrix", 
-"feDiffuseLighting", "feOffset", "filter", "feBlend", "feColorMatrix", 
-"feComponentTransfer", "feComposite", "feDisplacementMap", "feFlood", 
-"feGaussianBlur", "feImage", "feMerge", "feMorphology", "feSpecularLighting", 
-"feTile", "feSpotLight", "fePointLight", "svg", "a", "altGlyph", 
-"circle", "clipPath", "cursor", "defs", "ellipse", "foreignObject", 
-"g", "image", "line", "linearGradient", "marker", "mask", "path", 
-"pattern", "polygon", "polyline", "radialGradient", "rect", "script", 
-"switch", "symbol", "text", "textPath", "tref", "tspan", "use", 
-"view", "altGlyphDef", "altGlyphItem", "color-profile", "desc", 
-"feMergeNode", "font-face-src", "glyphRef", "metadata", "stop", 
-"style", "title", "font.face", "missing.glyph", "font.face.name", 
-"font.face.format", "font.face.uri", "color.profile", "font.face.src", 
-"getNode", "script", "translate", "rotate", "rotatR", "scale", 
-"u.em", "u.ex", "u.px", "u.pt", "u.pc", "u.cm", "u.mm", "u.in", 
-"u.prct", "u.rad"))
+}
+
+u.em<-function (x) 
+paste0(x, "em")
+
+u.ex<-function (x) 
+paste0(x, "ex")
+
+u.px<-function (x) 
+paste0(x, "px")
+
+u.pt<-function (x) 
+paste0(x, "pt")
+
+u.pc<-function (x) 
+paste0(x, "pc")
+
+u.cm<-function (x) 
+paste0(x, "cm")
+
+u.mm<-function (x) 
+paste0(x, "mm")
+
+u.in<-function (x) 
+paste0(x, "in")
+
+u.prct<-function (x) 
+paste0(x, "%")
+
+u.rad<-function (x) 
+x * 180/pi
