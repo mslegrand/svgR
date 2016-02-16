@@ -8,10 +8,11 @@ Maintainer: M.S.Legrand <slegrand3.14@gmail.com>
 Description: A DSL for composing SVG markup. One of the benefits is to be
     able to generate SVG dynamically, in a shiny web app.
 License: MIT + file LICENSE
-Suggests:
-    knitr
+Suggests: 
+    knitr,
+    testthat
 VignetteBuilder: knitr
-Imports:
+Imports: 
     XML,
     stringr,
     shiny
