@@ -203,6 +203,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 
 
+
 # -----------------------------------------------------
 test_that("test-filter-Combining-5", {
 WH=c(800, 100) # window rect

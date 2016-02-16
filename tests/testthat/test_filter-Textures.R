@@ -1245,8 +1245,92 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 
 # -----------------------------------------------------
-# test-filter-Textures-6 Ommited!!!
-
+test_that("test-filter-Textures-6", {
+bf=3 # This is a kludge to force bf
+library(svgR)
+WH=c(800, 800) # window rect
+N<-4
+dH<-WH[2]/(N+1)
+y<-0:(N-1)*dH
+ww<-WH[1]-40
+svgR( wh=WH,
+  lapply(1:N, function(i){
+    id=paste0("funky1-",i/N)
+    bf<<-.02/i # Very bad kludge
+    txt<-paste0('funky filter base frequency=', bf)
+    g(
+      text(txt, xy=c(20, y[i]+35) ),
+      rect(xy=c(20,y[i]+60), wh=c(ww, dH-60 ), 
+         filter = funkyFilter(id,  bf))
+    )      
+  })   
+)->res
+expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="800">
+<g>
+<text x="20" y="35">funky filter base frequency=0.02</text>
+<filter id="funky1-0.25">
+<feTurbulence baseFrequency="0.02" numOctaves="3" seed="100"/>
+<feComponentTransfer>
+<feFuncR type="linear" slope="4" intercept="-1"/>
+<feFuncG type="linear" slope="4" intercept="-1"/>
+<feFuncB type="linear" slope="4" intercept="-1"/>
+<feFuncA type="linear" slope="0" intercept="1"/>
+</feComponentTransfer>
+<feColorMatrix type="saturate"/>
+</filter>
+<rect filter="url(#funky1-0.25)" width="760" height="100" x="20" y="60"/>
+</g>
+<g>
+<text x="20" y="195">funky filter base frequency=0.01</text>
+<filter id="funky1-0.5">
+<feTurbulence baseFrequency="0.01" numOctaves="3" seed="100"/>
+<feComponentTransfer>
+<feFuncR type="linear" slope="4" intercept="-1"/>
+<feFuncG type="linear" slope="4" intercept="-1"/>
+<feFuncB type="linear" slope="4" intercept="-1"/>
+<feFuncA type="linear" slope="0" intercept="1"/>
+</feComponentTransfer>
+<feColorMatrix type="saturate"/>
+</filter>
+<rect filter="url(#funky1-0.5)" width="760" height="100" x="20" y="220"/>
+</g>
+<g>
+<text x="20" y="355">funky filter base frequency=0.00666666666666667</text>
+<filter id="funky1-0.75">
+<feTurbulence baseFrequency="0.00666666666666667" numOctaves="3" seed="100"/>
+<feComponentTransfer>
+<feFuncR type="linear" slope="4" intercept="-1"/>
+<feFuncG type="linear" slope="4" intercept="-1"/>
+<feFuncB type="linear" slope="4" intercept="-1"/>
+<feFuncA type="linear" slope="0" intercept="1"/>
+</feComponentTransfer>
+<feColorMatrix type="saturate"/>
+</filter>
+<rect filter="url(#funky1-0.75)" width="760" height="100" x="20" y="380"/>
+</g>
+<g>
+<text x="20" y="515">funky filter base frequency=0.005</text>
+<filter id="funky1-1">
+<feTurbulence baseFrequency="0.005" numOctaves="3" seed="100"/>
+<feComponentTransfer>
+<feFuncR type="linear" slope="4" intercept="-1"/>
+<feFuncG type="linear" slope="4" intercept="-1"/>
+<feFuncB type="linear" slope="4" intercept="-1"/>
+<feFuncA type="linear" slope="0" intercept="1"/>
+</feComponentTransfer>
+<feColorMatrix type="saturate"/>
+</filter>
+<rect filter="url(#funky1-1)" width="760" height="100" x="20" y="540"/>
+</g>
+</svg>'
+    res <- as.character(res)
+    rlines <- str_trim(strsplit(res, "\n")[[1]])
+    elines <- str_trim(strsplit(expected_res, "\n")[[1]])
+    expect_equal(length(rlines), length(elines))
+    for (i in length(rlines)) {
+        expect_identical(rlines[i], elines[i])
+    }
+})
 # -----------------------------------------------------
 
 

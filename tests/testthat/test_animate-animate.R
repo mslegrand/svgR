@@ -1083,36 +1083,36 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 </feDisplacementMap>
 </filter>
 <g filter="url(#genid23)">
-<text fill="rgb(65,245,99)" font-size="29" text-anchor="middle" dominant-baseline="central" x="294.58543073386" y="103.501923903823">Flowing Data</text>
-<text fill="rgb(82,8,14)" font-size="22" text-anchor="middle" dominant-baseline="central" x="408.93921976909" y="260.192366940901">Flowing Data</text>
-<text fill="rgb(72,231,106)" font-size="26" text-anchor="middle" dominant-baseline="central" x="262.240803409368" y="127.252186648548">Flowing Data</text>
-<text fill="rgb(241,219,238)" font-size="13" text-anchor="middle" dominant-baseline="central" x="383.786388076842" y="240.025637261569">Flowing Data</text>
-<text fill="rgb(170,186,34)" font-size="14" text-anchor="middle" dominant-baseline="central" x="446.432027313858" y="230.930682457983">Flowing Data</text>
-<text fill="rgb(250,156,221)" font-size="26" text-anchor="middle" dominant-baseline="central" x="119.912136830389" y="62.6415266748518">Flowing Data</text>
-<text fill="rgb(193,197,16)" font-size="13" text-anchor="middle" dominant-baseline="central" x="65.2018902264535" y="86.8146698921919">Flowing Data</text>
-<text fill="rgb(218,12,156)" font-size="19" text-anchor="middle" dominant-baseline="central" x="550.068387854844" y="72.0213748142123">Flowing Data</text>
-<text fill="rgb(84,87,44)" font-size="17" text-anchor="middle" dominant-baseline="central" x="538.449111413211" y="323.772644493729">Flowing Data</text>
-<text fill="rgb(10,241,177)" font-size="30" text-anchor="middle" dominant-baseline="central" x="354.85192373395" y="216.413778103888">Flowing Data</text>
-<text fill="rgb(63,46,239)" font-size="26" text-anchor="middle" dominant-baseline="central" x="221.675226129591" y="162.17067623511">Flowing Data</text>
-<text fill="rgb(238,112,52)" font-size="30" text-anchor="middle" dominant-baseline="central" x="416.8211517483" y="320.686930315569">Flowing Data</text>
-<text fill="rgb(193,160,232)" font-size="19" text-anchor="middle" dominant-baseline="central" x="134.882702920586" y="209.594321288168">Flowing Data</text>
-<text fill="rgb(253,17,245)" font-size="30" text-anchor="middle" dominant-baseline="central" x="344.954071585089" y="260.877002533525">Flowing Data</text>
-<text fill="rgb(165,35,30)" font-size="13" text-anchor="middle" dominant-baseline="central" x="95.2120005898178" y="147.71476123482">Flowing Data</text>
-<text fill="rgb(192,58,53)" font-size="16" text-anchor="middle" dominant-baseline="central" x="112.037256211042" y="204.982286347076">Flowing Data</text>
-<text fill="rgb(24,172,207)" font-size="21" text-anchor="middle" dominant-baseline="central" x="267.288731262088" y="289.471262199804">Flowing Data</text>
-<text fill="rgb(11,214,151)" font-size="10" text-anchor="middle" dominant-baseline="central" x="543.242264445871" y="85.0379469059408">Flowing Data</text>
-<text fill="rgb(239,252,81)" font-size="14" text-anchor="middle" dominant-baseline="central" x="223.065750356764" y="200.005919411778">Flowing Data</text>
-<text fill="rgb(189,157,111)" font-size="27" text-anchor="middle" dominant-baseline="central" x="254.203080851585" y="254.12000275217">Flowing Data</text>
-<text fill="rgb(194,108,16)" font-size="27" text-anchor="middle" dominant-baseline="central" x="350.888491012156" y="85.4391683172435">Flowing Data</text>
-<text fill="rgb(177,139,86)" font-size="15" text-anchor="middle" dominant-baseline="central" x="160.957474783063" y="121.620728159323">Flowing Data</text>
-<text fill="rgb(170,181,101)" font-size="11" text-anchor="middle" dominant-baseline="central" x="480.868812315166" y="279.181942753494">Flowing Data</text>
-<text fill="rgb(151,33,53)" font-size="29" text-anchor="middle" dominant-baseline="central" x="178.674949277192" y="322.835012143478">Flowing Data</text>
-<text fill="rgb(44,217,142)" font-size="26" text-anchor="middle" dominant-baseline="central" x="495.164146386087" y="219.94417139329">Flowing Data</text>
-<text fill="rgb(11,122,129)" font-size="12" text-anchor="middle" dominant-baseline="central" x="397.051635701209" y="266.180486669764">Flowing Data</text>
-<text fill="rgb(29,203,254)" font-size="10" text-anchor="middle" dominant-baseline="central" x="235.159185733646" y="224.635752690956">Flowing Data</text>
-<text fill="rgb(24,48,175)" font-size="27" text-anchor="middle" dominant-baseline="central" x="86.830835044384" y="95.8326752204448">Flowing Data</text>
-<text fill="rgb(74,37,181)" font-size="11" text-anchor="middle" dominant-baseline="central" x="102.206592839211" y="283.477427884936">Flowing Data</text>
-<text fill="rgb(195,162,220)" font-size="15" text-anchor="middle" dominant-baseline="central" x="513.748391699046" y="115.5905092787">Flowing Data</text>
+<text fill="rgb(220,185,50)" font-size="16" text-anchor="middle" dominant-baseline="central" x="566.069381870329" y="261.66662575677">Flowing Data</text>
+<text fill="rgb(102,86,12)" font-size="26" text-anchor="middle" dominant-baseline="central" x="351.054323725402" y="313.228570241481">Flowing Data</text>
+<text fill="rgb(117,244,182)" font-size="26" text-anchor="middle" dominant-baseline="central" x="516.262147054076" y="116.715315980837">Flowing Data</text>
+<text fill="rgb(155,15,141)" font-size="17" text-anchor="middle" dominant-baseline="central" x="589.169416818768" y="328.313352102414">Flowing Data</text>
+<text fill="rgb(245,175,142)" font-size="11" text-anchor="middle" dominant-baseline="central" x="362.481732927263" y="158.425872437656">Flowing Data</text>
+<text fill="rgb(228,91,9)" font-size="29" text-anchor="middle" dominant-baseline="central" x="417.115725725889" y="164.49073693715">Flowing Data</text>
+<text fill="rgb(35,209,245)" font-size="21" text-anchor="middle" dominant-baseline="central" x="195.832286383957" y="168.576555494219">Flowing Data</text>
+<text fill="rgb(74,149,30)" font-size="12" text-anchor="middle" dominant-baseline="central" x="537.559507675469" y="145.252287276089">Flowing Data</text>
+<text fill="rgb(142,94,190)" font-size="15" text-anchor="middle" dominant-baseline="central" x="105.154183041304" y="312.668601246551">Flowing Data</text>
+<text fill="rgb(188,13,198)" font-size="17" text-anchor="middle" dominant-baseline="central" x="55.0371575169265" y="306.564328484237">Flowing Data</text>
+<text fill="rgb(183,28,25)" font-size="18" text-anchor="middle" dominant-baseline="central" x="73.2637838460505" y="148.925390709192">Flowing Data</text>
+<text fill="rgb(29,119,127)" font-size="23" text-anchor="middle" dominant-baseline="central" x="517.371205445379" y="170.469360388815">Flowing Data</text>
+<text fill="rgb(167,249,103)" font-size="24" text-anchor="middle" dominant-baseline="central" x="251.718495655805" y="190.763289202005">Flowing Data</text>
+<text fill="rgb(179,59,113)" font-size="18" text-anchor="middle" dominant-baseline="central" x="456.078386176377" y="248.207356734201">Flowing Data</text>
+<text fill="rgb(229,21,191)" font-size="22" text-anchor="middle" dominant-baseline="central" x="589.166162405163" y="194.065388180315">Flowing Data</text>
+<text fill="rgb(126,218,19)" font-size="20" text-anchor="middle" dominant-baseline="central" x="575.247067492455" y="255.01621154137">Flowing Data</text>
+<text fill="rgb(53,182,95)" font-size="24" text-anchor="middle" dominant-baseline="central" x="113.853738065809" y="239.171954179183">Flowing Data</text>
+<text fill="rgb(86,47,242)" font-size="14" text-anchor="middle" dominant-baseline="central" x="129.353021197021" y="93.7271522171795">Flowing Data</text>
+<text fill="rgb(207,237,58)" font-size="26" text-anchor="middle" dominant-baseline="central" x="358.235893510282" y="254.664724376053">Flowing Data</text>
+<text fill="rgb(147,22,16)" font-size="23" text-anchor="middle" dominant-baseline="central" x="584.337720889598" y="284.08301721327">Flowing Data</text>
+<text fill="rgb(71,110,180)" font-size="15" text-anchor="middle" dominant-baseline="central" x="244.949519801885" y="146.456855731085">Flowing Data</text>
+<text fill="rgb(191,242,130)" font-size="26" text-anchor="middle" dominant-baseline="central" x="111.504614707083" y="67.0592797733843">Flowing Data</text>
+<text fill="rgb(14,152,202)" font-size="23" text-anchor="middle" dominant-baseline="central" x="407.96987246722" y="156.701175477356">Flowing Data</text>
+<text fill="rgb(156,87,94)" font-size="14" text-anchor="middle" dominant-baseline="central" x="590.213927384466" y="155.190542917699">Flowing Data</text>
+<text fill="rgb(244,134,3)" font-size="16" text-anchor="middle" dominant-baseline="central" x="291.888127494603" y="208.045021705329">Flowing Data</text>
+<text fill="rgb(232,129,47)" font-size="27" text-anchor="middle" dominant-baseline="central" x="443.575584292412" y="236.118390569463">Flowing Data</text>
+<text fill="rgb(241,129,178)" font-size="26" text-anchor="middle" dominant-baseline="central" x="388.004663810134" y="273.646666724235">Flowing Data</text>
+<text fill="rgb(118,219,99)" font-size="10" text-anchor="middle" dominant-baseline="central" x="516.428264137357" y="147.237816685811">Flowing Data</text>
+<text fill="rgb(254,94,129)" font-size="18" text-anchor="middle" dominant-baseline="central" x="463.9740466699" y="186.345167700201">Flowing Data</text>
+<text fill="rgb(217,123,50)" font-size="18" text-anchor="middle" dominant-baseline="central" x="295.088130068034" y="298.850895790383">Flowing Data</text>
 </g>
 </svg>'
     res <- as.character(res)

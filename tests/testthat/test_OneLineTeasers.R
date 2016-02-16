@@ -24,16 +24,16 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-2", {
 svgR(  wh=c(600, 150), lapply(1:10, function(i)circle(cxy=c(i*30,i*10),r=5+i, fill=rrgb() ) ))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="150">
-<circle r="6" fill="rgb(167,250,79)" cx="30" cy="10"/>
-<circle r="7" fill="rgb(47,191,216)" cx="60" cy="20"/>
-<circle r="8" fill="rgb(217,204,44)" cx="90" cy="30"/>
-<circle r="9" fill="rgb(46,37,53)" cx="120" cy="40"/>
-<circle r="10" fill="rgb(99,112,128)" cx="150" cy="50"/>
-<circle r="11" fill="rgb(158,230,222)" cx="180" cy="60"/>
-<circle r="12" fill="rgb(244,145,88)" cx="210" cy="70"/>
-<circle r="13" fill="rgb(55,174,158)" cx="240" cy="80"/>
-<circle r="14" fill="rgb(137,222,109)" cx="270" cy="90"/>
-<circle r="15" fill="rgb(44,126,85)" cx="300" cy="100"/>
+<circle r="6" fill="rgb(232,183,209)" cx="30" cy="10"/>
+<circle r="7" fill="rgb(233,137,119)" cx="60" cy="20"/>
+<circle r="8" fill="rgb(207,217,174)" cx="90" cy="30"/>
+<circle r="9" fill="rgb(20,183,122)" cx="120" cy="40"/>
+<circle r="10" fill="rgb(232,30,254)" cx="150" cy="50"/>
+<circle r="11" fill="rgb(102,159,192)" cx="180" cy="60"/>
+<circle r="12" fill="rgb(188,132,72)" cx="210" cy="70"/>
+<circle r="13" fill="rgb(162,154,114)" cx="240" cy="80"/>
+<circle r="14" fill="rgb(135,68,149)" cx="270" cy="90"/>
+<circle r="15" fill="rgb(143,238,211)" cx="300" cy="100"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -51,16 +51,16 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-3", {
 svgR( wh=c(600, 100),  lapply(10:1, function(i)circle(cxy=c(100,50),r=i*5, fill=rrgb()) ))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="100">
-<circle r="50" fill="rgb(91,121,86)" cx="100" cy="50"/>
-<circle r="45" fill="rgb(56,75,151)" cx="100" cy="50"/>
-<circle r="40" fill="rgb(130,189,168)" cx="100" cy="50"/>
-<circle r="35" fill="rgb(223,55,165)" cx="100" cy="50"/>
-<circle r="30" fill="rgb(73,98,97)" cx="100" cy="50"/>
-<circle r="25" fill="rgb(16,41,24)" cx="100" cy="50"/>
-<circle r="20" fill="rgb(135,6,244)" cx="100" cy="50"/>
-<circle r="15" fill="rgb(216,12,87)" cx="100" cy="50"/>
-<circle r="10" fill="rgb(123,238,126)" cx="100" cy="50"/>
-<circle r="5" fill="rgb(52,236,3)" cx="100" cy="50"/>
+<circle r="50" fill="rgb(212,185,59)" cx="100" cy="50"/>
+<circle r="45" fill="rgb(191,93,200)" cx="100" cy="50"/>
+<circle r="40" fill="rgb(166,61,222)" cx="100" cy="50"/>
+<circle r="35" fill="rgb(141,148,39)" cx="100" cy="50"/>
+<circle r="30" fill="rgb(185,117,82)" cx="100" cy="50"/>
+<circle r="25" fill="rgb(219,105,119)" cx="100" cy="50"/>
+<circle r="20" fill="rgb(176,195,144)" cx="100" cy="50"/>
+<circle r="15" fill="rgb(63,168,85)" cx="100" cy="50"/>
+<circle r="10" fill="rgb(156,170,214)" cx="100" cy="50"/>
+<circle r="5" fill="rgb(57,216,2)" cx="100" cy="50"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -78,16 +78,16 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-4", {
 svgR( wh=c(600, 100),  lapply(10:1, function(i)circle(cxy=sample(1:100,2),r=5+sample(5:50,1), fill=rrgb()) ))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="100">
-<circle r="36" fill="rgb(183,231,124)" cx="49" cy="41"/>
-<circle r="20" fill="rgb(242,201,190)" cx="71" cy="53"/>
-<circle r="53" fill="rgb(172,21,162)" cx="39" cy="74"/>
-<circle r="31" fill="rgb(15,52,108)" cx="56" cy="13"/>
-<circle r="22" fill="rgb(129,235,17)" cx="45" cy="50"/>
-<circle r="25" fill="rgb(128,74,49)" cx="97" cy="3"/>
-<circle r="15" fill="rgb(88,93,2)" cx="1" cy="99"/>
-<circle r="37" fill="rgb(40,184,159)" cx="73" cy="18"/>
-<circle r="16" fill="rgb(48,108,73)" cx="14" cy="21"/>
-<circle r="39" fill="rgb(96,248,2)" cx="84" cy="79"/>
+<circle r="22" fill="rgb(35,224,93)" cx="44" cy="47"/>
+<circle r="41" fill="rgb(100,139,38)" cx="58" cy="87"/>
+<circle r="54" fill="rgb(166,24,48)" cx="89" cy="10"/>
+<circle r="43" fill="rgb(201,152,133)" cx="74" cy="52"/>
+<circle r="32" fill="rgb(213,130,48)" cx="68" cy="64"/>
+<circle r="24" fill="rgb(52,177,28)" cx="100" cy="55"/>
+<circle r="10" fill="rgb(65,36,74)" cx="42" cy="46"/>
+<circle r="33" fill="rgb(148,22,163)" cx="11" cy="70"/>
+<circle r="45" fill="rgb(10,65,217)" cx="90" cy="8"/>
+<circle r="28" fill="rgb(5,254,81)" cx="78" cy="93"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -141,21 +141,21 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-7", {
 svgR( wh=c(600, 100),  lapply(1:15, function(i)rect(xy=i*c(80,0), wh=sample(20:80,2), fill=rrgb())))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="100">
-<rect fill="rgb(235,30,91)" width="47" height="57" x="80" y="0"/>
-<rect fill="rgb(102,131,17)" width="60" height="80" x="160" y="0"/>
-<rect fill="rgb(39,32,215)" width="67" height="30" x="240" y="0"/>
-<rect fill="rgb(152,244,39)" width="55" height="39" x="320" y="0"/>
-<rect fill="rgb(180,154,98)" width="56" height="78" x="400" y="0"/>
-<rect fill="rgb(102,210,56)" width="63" height="40" x="480" y="0"/>
-<rect fill="rgb(3,108,48)" width="41" height="45" x="560" y="0"/>
-<rect fill="rgb(60,184,73)" width="26" height="38" x="640" y="0"/>
-<rect fill="rgb(161,111,96)" width="28" height="53" x="720" y="0"/>
-<rect fill="rgb(92,109,1)" width="22" height="68" x="800" y="0"/>
-<rect fill="rgb(9,184,202)" width="56" height="67" x="880" y="0"/>
-<rect fill="rgb(70,166,138)" width="47" height="35" x="960" y="0"/>
-<rect fill="rgb(43,204,245)" width="22" height="59" x="1040" y="0"/>
-<rect fill="rgb(97,245,72)" width="63" height="75" x="1120" y="0"/>
-<rect fill="rgb(161,184,180)" width="69" height="26" x="1200" y="0"/>
+<rect fill="rgb(118,167,3)" width="21" height="39" x="80" y="0"/>
+<rect fill="rgb(89,66,161)" width="26" height="21" x="160" y="0"/>
+<rect fill="rgb(33,95,233)" width="32" height="46" x="240" y="0"/>
+<rect fill="rgb(155,53,134)" width="39" height="34" x="320" y="0"/>
+<rect fill="rgb(29,218,178)" width="76" height="54" x="400" y="0"/>
+<rect fill="rgb(160,127,43)" width="71" height="28" x="480" y="0"/>
+<rect fill="rgb(115,56,100)" width="53" height="57" x="560" y="0"/>
+<rect fill="rgb(98,21,224)" width="35" height="42" x="640" y="0"/>
+<rect fill="rgb(206,188,116)" width="22" height="44" x="720" y="0"/>
+<rect fill="rgb(252,205,201)" width="68" height="73" x="800" y="0"/>
+<rect fill="rgb(114,187,38)" width="73" height="50" x="880" y="0"/>
+<rect fill="rgb(148,251,224)" width="38" height="39" x="960" y="0"/>
+<rect fill="rgb(27,255,115)" width="80" height="24" x="1040" y="0"/>
+<rect fill="rgb(25,244,251)" width="53" height="63" x="1120" y="0"/>
+<rect fill="rgb(6,132,87)" width="42" height="72" x="1200" y="0"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -446,106 +446,106 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-9", {
 svgR( wh=c(600, 100),  lapply(1:100, function(i)line(x12=sample(0:600,2), y12=c(0,100), stroke=rrgb())))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="100">
-<line stroke="rgb(179,159,243)" x1="456" x2="11" y1="0" y2="100"/>
-<line stroke="rgb(198,91,193)" x1="150" x2="525" y1="0" y2="100"/>
-<line stroke="rgb(246,242,163)" x1="65" x2="26" y1="0" y2="100"/>
-<line stroke="rgb(102,177,97)" x1="357" x2="121" y1="0" y2="100"/>
-<line stroke="rgb(123,188,68)" x1="152" x2="581" y1="0" y2="100"/>
-<line stroke="rgb(218,136,187)" x1="278" x2="291" y1="0" y2="100"/>
-<line stroke="rgb(204,124,16)" x1="148" x2="180" y1="0" y2="100"/>
-<line stroke="rgb(30,142,145)" x1="109" x2="491" y1="0" y2="100"/>
-<line stroke="rgb(86,145,27)" x1="298" x2="519" y1="0" y2="100"/>
-<line stroke="rgb(181,198,62)" x1="106" x2="506" y1="0" y2="100"/>
-<line stroke="rgb(120,81,235)" x1="553" x2="396" y1="0" y2="100"/>
-<line stroke="rgb(39,111,149)" x1="478" x2="134" y1="0" y2="100"/>
-<line stroke="rgb(120,228,61)" x1="284" x2="145" y1="0" y2="100"/>
-<line stroke="rgb(196,132,197)" x1="117" x2="125" y1="0" y2="100"/>
-<line stroke="rgb(80,77,16)" x1="419" x2="179" y1="0" y2="100"/>
-<line stroke="rgb(92,89,7)" x1="30" x2="426" y1="0" y2="100"/>
-<line stroke="rgb(212,175,142)" x1="448" x2="290" y1="0" y2="100"/>
-<line stroke="rgb(78,41,121)" x1="272" x2="15" y1="0" y2="100"/>
-<line stroke="rgb(135,70,73)" x1="95" x2="380" y1="0" y2="100"/>
-<line stroke="rgb(64,204,91)" x1="321" x2="315" y1="0" y2="100"/>
-<line stroke="rgb(236,55,164)" x1="137" x2="148" y1="0" y2="100"/>
-<line stroke="rgb(214,86,80)" x1="319" x2="414" y1="0" y2="100"/>
-<line stroke="rgb(166,72,110)" x1="273" x2="588" y1="0" y2="100"/>
-<line stroke="rgb(42,227,194)" x1="396" x2="247" y1="0" y2="100"/>
-<line stroke="rgb(226,144,211)" x1="41" x2="266" y1="0" y2="100"/>
-<line stroke="rgb(238,152,108)" x1="174" x2="531" y1="0" y2="100"/>
-<line stroke="rgb(94,244,9)" x1="467" x2="507" y1="0" y2="100"/>
-<line stroke="rgb(172,66,22)" x1="178" x2="124" y1="0" y2="100"/>
-<line stroke="rgb(254,230,187)" x1="297" x2="43" y1="0" y2="100"/>
-<line stroke="rgb(236,83,223)" x1="214" x2="495" y1="0" y2="100"/>
-<line stroke="rgb(61,169,204)" x1="400" x2="231" y1="0" y2="100"/>
-<line stroke="rgb(191,133,116)" x1="565" x2="419" y1="0" y2="100"/>
-<line stroke="rgb(174,156,44)" x1="26" x2="321" y1="0" y2="100"/>
-<line stroke="rgb(123,19,90)" x1="94" x2="31" y1="0" y2="100"/>
-<line stroke="rgb(178,159,5)" x1="391" x2="216" y1="0" y2="100"/>
-<line stroke="rgb(127,23,134)" x1="575" x2="169" y1="0" y2="100"/>
-<line stroke="rgb(35,59,230)" x1="268" x2="496" y1="0" y2="100"/>
-<line stroke="rgb(127,217,48)" x1="58" x2="75" y1="0" y2="100"/>
-<line stroke="rgb(40,38,27)" x1="497" x2="46" y1="0" y2="100"/>
-<line stroke="rgb(144,80,47)" x1="480" x2="286" y1="0" y2="100"/>
-<line stroke="rgb(190,250,197)" x1="277" x2="498" y1="0" y2="100"/>
-<line stroke="rgb(152,220,71)" x1="281" x2="487" y1="0" y2="100"/>
-<line stroke="rgb(242,79,89)" x1="302" x2="5" y1="0" y2="100"/>
-<line stroke="rgb(198,229,91)" x1="308" x2="595" y1="0" y2="100"/>
-<line stroke="rgb(16,138,142)" x1="331" x2="324" y1="0" y2="100"/>
-<line stroke="rgb(192,138,117)" x1="47" x2="525" y1="0" y2="100"/>
-<line stroke="rgb(141,23,41)" x1="397" x2="540" y1="0" y2="100"/>
-<line stroke="rgb(169,123,5)" x1="257" x2="551" y1="0" y2="100"/>
-<line stroke="rgb(37,28,196)" x1="251" x2="350" y1="0" y2="100"/>
-<line stroke="rgb(23,215,13)" x1="127" x2="374" y1="0" y2="100"/>
-<line stroke="rgb(135,62,96)" x1="382" x2="96" y1="0" y2="100"/>
-<line stroke="rgb(84,124,48)" x1="15" x2="489" y1="0" y2="100"/>
-<line stroke="rgb(103,244,19)" x1="35" x2="478" y1="0" y2="100"/>
-<line stroke="rgb(38,36,212)" x1="274" x2="2" y1="0" y2="100"/>
-<line stroke="rgb(168,100,248)" x1="275" x2="368" y1="0" y2="100"/>
-<line stroke="rgb(108,53,61)" x1="562" x2="161" y1="0" y2="100"/>
-<line stroke="rgb(29,242,146)" x1="154" x2="591" y1="0" y2="100"/>
-<line stroke="rgb(3,43,139)" x1="217" x2="562" y1="0" y2="100"/>
-<line stroke="rgb(212,77,13)" x1="393" x2="113" y1="0" y2="100"/>
-<line stroke="rgb(162,220,14)" x1="216" x2="576" y1="0" y2="100"/>
-<line stroke="rgb(83,119,186)" x1="5" x2="330" y1="0" y2="100"/>
-<line stroke="rgb(196,32,243)" x1="593" x2="143" y1="0" y2="100"/>
-<line stroke="rgb(71,143,37)" x1="589" x2="576" y1="0" y2="100"/>
-<line stroke="rgb(170,137,135)" x1="65" x2="29" y1="0" y2="100"/>
-<line stroke="rgb(218,231,115)" x1="115" x2="389" y1="0" y2="100"/>
-<line stroke="rgb(77,219,213)" x1="187" x2="288" y1="0" y2="100"/>
-<line stroke="rgb(178,175,41)" x1="280" x2="45" y1="0" y2="100"/>
-<line stroke="rgb(128,152,77)" x1="459" x2="481" y1="0" y2="100"/>
-<line stroke="rgb(152,129,230)" x1="382" x2="355" y1="0" y2="100"/>
-<line stroke="rgb(208,18,44)" x1="294" x2="240" y1="0" y2="100"/>
-<line stroke="rgb(172,190,164)" x1="400" x2="103" y1="0" y2="100"/>
-<line stroke="rgb(201,242,138)" x1="428" x2="141" y1="0" y2="100"/>
-<line stroke="rgb(170,102,214)" x1="198" x2="496" y1="0" y2="100"/>
-<line stroke="rgb(217,46,224)" x1="445" x2="96" y1="0" y2="100"/>
-<line stroke="rgb(123,197,81)" x1="519" x2="526" y1="0" y2="100"/>
-<line stroke="rgb(197,5,57)" x1="128" x2="267" y1="0" y2="100"/>
-<line stroke="rgb(27,192,185)" x1="331" x2="267" y1="0" y2="100"/>
-<line stroke="rgb(176,86,27)" x1="315" x2="585" y1="0" y2="100"/>
-<line stroke="rgb(237,157,189)" x1="424" x2="475" y1="0" y2="100"/>
-<line stroke="rgb(192,233,219)" x1="358" x2="163" y1="0" y2="100"/>
-<line stroke="rgb(174,2,121)" x1="560" x2="432" y1="0" y2="100"/>
-<line stroke="rgb(182,217,66)" x1="48" x2="472" y1="0" y2="100"/>
-<line stroke="rgb(196,92,112)" x1="380" x2="498" y1="0" y2="100"/>
-<line stroke="rgb(159,52,143)" x1="139" x2="594" y1="0" y2="100"/>
-<line stroke="rgb(117,121,147)" x1="91" x2="457" y1="0" y2="100"/>
-<line stroke="rgb(199,169,190)" x1="350" x2="23" y1="0" y2="100"/>
-<line stroke="rgb(132,232,146)" x1="238" x2="297" y1="0" y2="100"/>
-<line stroke="rgb(14,252,83)" x1="320" x2="435" y1="0" y2="100"/>
-<line stroke="rgb(206,224,83)" x1="336" x2="333" y1="0" y2="100"/>
-<line stroke="rgb(149,177,15)" x1="429" x2="396" y1="0" y2="100"/>
-<line stroke="rgb(238,251,202)" x1="398" x2="23" y1="0" y2="100"/>
-<line stroke="rgb(158,161,221)" x1="515" x2="504" y1="0" y2="100"/>
-<line stroke="rgb(188,51,215)" x1="70" x2="489" y1="0" y2="100"/>
-<line stroke="rgb(25,188,250)" x1="484" x2="529" y1="0" y2="100"/>
-<line stroke="rgb(216,8,110)" x1="117" x2="137" y1="0" y2="100"/>
-<line stroke="rgb(3,243,60)" x1="253" x2="340" y1="0" y2="100"/>
-<line stroke="rgb(34,154,93)" x1="253" x2="470" y1="0" y2="100"/>
-<line stroke="rgb(65,84,12)" x1="115" x2="7" y1="0" y2="100"/>
-<line stroke="rgb(200,121,3)" x1="594" x2="169" y1="0" y2="100"/>
-<line stroke="rgb(206,76,246)" x1="131" x2="380" y1="0" y2="100"/>
+<line stroke="rgb(32,108,118)" x1="530" x2="110" y1="0" y2="100"/>
+<line stroke="rgb(106,5,232)" x1="11" x2="554" y1="0" y2="100"/>
+<line stroke="rgb(80,201,244)" x1="129" x2="198" y1="0" y2="100"/>
+<line stroke="rgb(78,39,116)" x1="415" x2="78" y1="0" y2="100"/>
+<line stroke="rgb(126,15,53)" x1="202" x2="43" y1="0" y2="100"/>
+<line stroke="rgb(102,141,181)" x1="529" x2="259" y1="0" y2="100"/>
+<line stroke="rgb(170,146,250)" x1="384" x2="3" y1="0" y2="100"/>
+<line stroke="rgb(118,190,140)" x1="121" x2="168" y1="0" y2="100"/>
+<line stroke="rgb(214,69,231)" x1="142" x2="88" y1="0" y2="100"/>
+<line stroke="rgb(7,33,26)" x1="387" x2="354" y1="0" y2="100"/>
+<line stroke="rgb(247,22,95)" x1="192" x2="288" y1="0" y2="100"/>
+<line stroke="rgb(144,167,54)" x1="295" x2="324" y1="0" y2="100"/>
+<line stroke="rgb(156,249,117)" x1="158" x2="532" y1="0" y2="100"/>
+<line stroke="rgb(191,232,193)" x1="56" x2="473" y1="0" y2="100"/>
+<line stroke="rgb(251,91,58)" x1="308" x2="203" y1="0" y2="100"/>
+<line stroke="rgb(149,67,43)" x1="583" x2="277" y1="0" y2="100"/>
+<line stroke="rgb(68,236,16)" x1="369" x2="468" y1="0" y2="100"/>
+<line stroke="rgb(83,232,123)" x1="99" x2="270" y1="0" y2="100"/>
+<line stroke="rgb(12,28,106)" x1="125" x2="426" y1="0" y2="100"/>
+<line stroke="rgb(236,31,63)" x1="16" x2="368" y1="0" y2="100"/>
+<line stroke="rgb(139,108,178)" x1="381" x2="72" y1="0" y2="100"/>
+<line stroke="rgb(204,215,181)" x1="468" x2="357" y1="0" y2="100"/>
+<line stroke="rgb(250,84,171)" x1="6" x2="57" y1="0" y2="100"/>
+<line stroke="rgb(210,145,38)" x1="125" x2="148" y1="0" y2="100"/>
+<line stroke="rgb(220,163,97)" x1="470" x2="465" y1="0" y2="100"/>
+<line stroke="rgb(62,137,17)" x1="536" x2="19" y1="0" y2="100"/>
+<line stroke="rgb(62,164,66)" x1="227" x2="234" y1="0" y2="100"/>
+<line stroke="rgb(46,9,206)" x1="461" x2="180" y1="0" y2="100"/>
+<line stroke="rgb(118,153,124)" x1="76" x2="371" y1="0" y2="100"/>
+<line stroke="rgb(51,232,99)" x1="70" x2="433" y1="0" y2="100"/>
+<line stroke="rgb(114,35,134)" x1="486" x2="546" y1="0" y2="100"/>
+<line stroke="rgb(241,200,50)" x1="516" x2="288" y1="0" y2="100"/>
+<line stroke="rgb(167,97,43)" x1="217" x2="318" y1="0" y2="100"/>
+<line stroke="rgb(216,239,180)" x1="494" x2="54" y1="0" y2="100"/>
+<line stroke="rgb(74,252,217)" x1="256" x2="296" y1="0" y2="100"/>
+<line stroke="rgb(109,245,38)" x1="163" x2="242" y1="0" y2="100"/>
+<line stroke="rgb(101,88,199)" x1="503" x2="546" y1="0" y2="100"/>
+<line stroke="rgb(195,7,76)" x1="523" x2="94" y1="0" y2="100"/>
+<line stroke="rgb(84,255,234)" x1="24" x2="559" y1="0" y2="100"/>
+<line stroke="rgb(46,138,242)" x1="482" x2="279" y1="0" y2="100"/>
+<line stroke="rgb(5,246,64)" x1="112" x2="387" y1="0" y2="100"/>
+<line stroke="rgb(67,97,225)" x1="502" x2="404" y1="0" y2="100"/>
+<line stroke="rgb(168,119,242)" x1="25" x2="29" y1="0" y2="100"/>
+<line stroke="rgb(125,161,137)" x1="414" x2="153" y1="0" y2="100"/>
+<line stroke="rgb(55,213,37)" x1="111" x2="399" y1="0" y2="100"/>
+<line stroke="rgb(79,106,119)" x1="428" x2="152" y1="0" y2="100"/>
+<line stroke="rgb(157,151,152)" x1="62" x2="44" y1="0" y2="100"/>
+<line stroke="rgb(220,149,152)" x1="208" x2="350" y1="0" y2="100"/>
+<line stroke="rgb(156,170,108)" x1="538" x2="272" y1="0" y2="100"/>
+<line stroke="rgb(120,155,58)" x1="155" x2="380" y1="0" y2="100"/>
+<line stroke="rgb(49,195,142)" x1="558" x2="247" y1="0" y2="100"/>
+<line stroke="rgb(110,66,176)" x1="47" x2="17" y1="0" y2="100"/>
+<line stroke="rgb(21,57,126)" x1="435" x2="124" y1="0" y2="100"/>
+<line stroke="rgb(36,204,150)" x1="111" x2="272" y1="0" y2="100"/>
+<line stroke="rgb(22,223,175)" x1="275" x2="241" y1="0" y2="100"/>
+<line stroke="rgb(64,14,174)" x1="354" x2="448" y1="0" y2="100"/>
+<line stroke="rgb(90,136,231)" x1="407" x2="272" y1="0" y2="100"/>
+<line stroke="rgb(169,71,100)" x1="228" x2="236" y1="0" y2="100"/>
+<line stroke="rgb(126,6,50)" x1="43" x2="337" y1="0" y2="100"/>
+<line stroke="rgb(210,193,192)" x1="279" x2="117" y1="0" y2="100"/>
+<line stroke="rgb(2,224,137)" x1="423" x2="95" y1="0" y2="100"/>
+<line stroke="rgb(115,54,40)" x1="574" x2="386" y1="0" y2="100"/>
+<line stroke="rgb(74,20,162)" x1="188" x2="167" y1="0" y2="100"/>
+<line stroke="rgb(158,63,206)" x1="351" x2="32" y1="0" y2="100"/>
+<line stroke="rgb(234,38,165)" x1="381" x2="26" y1="0" y2="100"/>
+<line stroke="rgb(30,237,175)" x1="408" x2="107" y1="0" y2="100"/>
+<line stroke="rgb(172,61,94)" x1="588" x2="422" y1="0" y2="100"/>
+<line stroke="rgb(108,225,206)" x1="571" x2="353" y1="0" y2="100"/>
+<line stroke="rgb(55,149,114)" x1="298" x2="158" y1="0" y2="100"/>
+<line stroke="rgb(37,15,31)" x1="573" x2="593" y1="0" y2="100"/>
+<line stroke="rgb(217,228,13)" x1="478" x2="385" y1="0" y2="100"/>
+<line stroke="rgb(242,81,98)" x1="156" x2="138" y1="0" y2="100"/>
+<line stroke="rgb(255,29,218)" x1="385" x2="34" y1="0" y2="100"/>
+<line stroke="rgb(197,14,196)" x1="292" x2="118" y1="0" y2="100"/>
+<line stroke="rgb(167,12,244)" x1="55" x2="5" y1="0" y2="100"/>
+<line stroke="rgb(201,142,180)" x1="316" x2="373" y1="0" y2="100"/>
+<line stroke="rgb(139,89,75)" x1="184" x2="233" y1="0" y2="100"/>
+<line stroke="rgb(89,94,35)" x1="69" x2="235" y1="0" y2="100"/>
+<line stroke="rgb(109,148,184)" x1="398" x2="229" y1="0" y2="100"/>
+<line stroke="rgb(230,93,26)" x1="82" x2="413" y1="0" y2="100"/>
+<line stroke="rgb(52,62,200)" x1="121" x2="385" y1="0" y2="100"/>
+<line stroke="rgb(119,27,236)" x1="227" x2="379" y1="0" y2="100"/>
+<line stroke="rgb(145,196,125)" x1="77" x2="523" y1="0" y2="100"/>
+<line stroke="rgb(9,110,224)" x1="485" x2="130" y1="0" y2="100"/>
+<line stroke="rgb(13,61,124)" x1="200" x2="590" y1="0" y2="100"/>
+<line stroke="rgb(177,7,223)" x1="84" x2="481" y1="0" y2="100"/>
+<line stroke="rgb(108,106,174)" x1="473" x2="299" y1="0" y2="100"/>
+<line stroke="rgb(97,153,242)" x1="216" x2="133" y1="0" y2="100"/>
+<line stroke="rgb(250,172,139)" x1="521" x2="396" y1="0" y2="100"/>
+<line stroke="rgb(80,125,109)" x1="345" x2="569" y1="0" y2="100"/>
+<line stroke="rgb(140,132,113)" x1="586" x2="35" y1="0" y2="100"/>
+<line stroke="rgb(3,162,129)" x1="105" x2="97" y1="0" y2="100"/>
+<line stroke="rgb(9,89,240)" x1="160" x2="357" y1="0" y2="100"/>
+<line stroke="rgb(174,80,101)" x1="4" x2="173" y1="0" y2="100"/>
+<line stroke="rgb(249,65,57)" x1="324" x2="91" y1="0" y2="100"/>
+<line stroke="rgb(82,13,203)" x1="198" x2="558" y1="0" y2="100"/>
+<line stroke="rgb(188,249,15)" x1="454" x2="407" y1="0" y2="100"/>
+<line stroke="rgb(208,119,8)" x1="209" x2="501" y1="0" y2="100"/>
+<line stroke="rgb(202,212,32)" x1="543" x2="6" y1="0" y2="100"/>
+<line stroke="rgb(74,76,80)" x1="344" x2="546" y1="0" y2="100"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -563,16 +563,16 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-10", {
 svgR( wh=c(600, 100),  lapply(1:10, function(i) rect(cxy=c(100+i*10,50), wh=c(80+i*10,40), fill='none', stroke=rrgb())))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="100">
-<rect fill="none" stroke="rgb(79,232,198)" width="90" height="40" x="65" y="30"/>
-<rect fill="none" stroke="rgb(179,200,62)" width="100" height="40" x="70" y="30"/>
-<rect fill="none" stroke="rgb(12,173,195)" width="110" height="40" x="75" y="30"/>
-<rect fill="none" stroke="rgb(177,36,216)" width="120" height="40" x="80" y="30"/>
-<rect fill="none" stroke="rgb(20,19,254)" width="130" height="40" x="85" y="30"/>
-<rect fill="none" stroke="rgb(102,206,20)" width="140" height="40" x="90" y="30"/>
-<rect fill="none" stroke="rgb(58,138,65)" width="150" height="40" x="95" y="30"/>
-<rect fill="none" stroke="rgb(99,244,59)" width="160" height="40" x="100" y="30"/>
-<rect fill="none" stroke="rgb(174,230,206)" width="170" height="40" x="105" y="30"/>
-<rect fill="none" stroke="rgb(250,149,240)" width="180" height="40" x="110" y="30"/>
+<rect fill="none" stroke="rgb(64,166,193)" width="90" height="40" x="65" y="30"/>
+<rect fill="none" stroke="rgb(23,70,74)" width="100" height="40" x="70" y="30"/>
+<rect fill="none" stroke="rgb(162,53,204)" width="110" height="40" x="75" y="30"/>
+<rect fill="none" stroke="rgb(229,124,248)" width="120" height="40" x="80" y="30"/>
+<rect fill="none" stroke="rgb(241,91,247)" width="130" height="40" x="85" y="30"/>
+<rect fill="none" stroke="rgb(158,41,244)" width="140" height="40" x="90" y="30"/>
+<rect fill="none" stroke="rgb(163,161,232)" width="150" height="40" x="95" y="30"/>
+<rect fill="none" stroke="rgb(165,82,13)" width="160" height="40" x="100" y="30"/>
+<rect fill="none" stroke="rgb(116,213,173)" width="170" height="40" x="105" y="30"/>
+<rect fill="none" stroke="rgb(238,119,110)" width="180" height="40" x="110" y="30"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -590,51 +590,51 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-11", {
 svgR( wh=c(600, 200),  lapply(1:45, function(i) ellipse(cxy=c(100,100), rxy=c(80,40), transform=list(rotate= c(i*4, 100,100)), fill='none', stroke=rrgb())))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="200">
-<ellipse transform="rotate(4,100,100)" fill="none" stroke="rgb(76,196,45)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(8,100,100)" fill="none" stroke="rgb(64,168,231)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(12,100,100)" fill="none" stroke="rgb(137,190,156)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(16,100,100)" fill="none" stroke="rgb(164,38,131)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(20,100,100)" fill="none" stroke="rgb(56,156,231)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(24,100,100)" fill="none" stroke="rgb(183,75,171)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(28,100,100)" fill="none" stroke="rgb(205,241,113)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(32,100,100)" fill="none" stroke="rgb(64,234,127)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(36,100,100)" fill="none" stroke="rgb(166,151,175)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(40,100,100)" fill="none" stroke="rgb(65,6,5)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(44,100,100)" fill="none" stroke="rgb(45,104,121)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(48,100,100)" fill="none" stroke="rgb(125,78,148)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(52,100,100)" fill="none" stroke="rgb(221,173,79)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(56,100,100)" fill="none" stroke="rgb(242,37,83)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(60,100,100)" fill="none" stroke="rgb(104,162,24)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(64,100,100)" fill="none" stroke="rgb(165,74,83)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(68,100,100)" fill="none" stroke="rgb(33,254,99)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(72,100,100)" fill="none" stroke="rgb(44,214,75)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(76,100,100)" fill="none" stroke="rgb(172,53,160)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(80,100,100)" fill="none" stroke="rgb(131,102,201)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(84,100,100)" fill="none" stroke="rgb(114,229,198)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(88,100,100)" fill="none" stroke="rgb(92,160,209)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(92,100,100)" fill="none" stroke="rgb(196,165,211)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(96,100,100)" fill="none" stroke="rgb(141,200,78)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(100,100,100)" fill="none" stroke="rgb(165,119,179)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(104,100,100)" fill="none" stroke="rgb(153,214,219)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(108,100,100)" fill="none" stroke="rgb(51,34,81)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(112,100,100)" fill="none" stroke="rgb(69,129,14)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(116,100,100)" fill="none" stroke="rgb(111,76,56)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(120,100,100)" fill="none" stroke="rgb(149,150,41)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(124,100,100)" fill="none" stroke="rgb(138,58,148)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(128,100,100)" fill="none" stroke="rgb(234,50,32)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(132,100,100)" fill="none" stroke="rgb(110,238,182)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(136,100,100)" fill="none" stroke="rgb(231,106,126)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(140,100,100)" fill="none" stroke="rgb(147,118,110)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(144,100,100)" fill="none" stroke="rgb(64,184,82)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(148,100,100)" fill="none" stroke="rgb(117,140,212)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(152,100,100)" fill="none" stroke="rgb(178,173,179)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(156,100,100)" fill="none" stroke="rgb(241,186,233)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(160,100,100)" fill="none" stroke="rgb(5,78,76)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(164,100,100)" fill="none" stroke="rgb(2,29,121)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(168,100,100)" fill="none" stroke="rgb(133,162,192)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(172,100,100)" fill="none" stroke="rgb(208,47,123)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(176,100,100)" fill="none" stroke="rgb(102,205,146)" cx="100" cy="100" rx="80" ry="40"/>
-<ellipse transform="rotate(180,100,100)" fill="none" stroke="rgb(106,65,186)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(4,100,100)" fill="none" stroke="rgb(6,137,117)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(8,100,100)" fill="none" stroke="rgb(29,67,7)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(12,100,100)" fill="none" stroke="rgb(87,72,226)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(16,100,100)" fill="none" stroke="rgb(157,99,248)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(20,100,100)" fill="none" stroke="rgb(57,40,52)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(24,100,100)" fill="none" stroke="rgb(103,145,98)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(28,100,100)" fill="none" stroke="rgb(164,87,46)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(32,100,100)" fill="none" stroke="rgb(149,215,121)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(36,100,100)" fill="none" stroke="rgb(195,148,58)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(40,100,100)" fill="none" stroke="rgb(132,164,7)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(44,100,100)" fill="none" stroke="rgb(250,79,17)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(48,100,100)" fill="none" stroke="rgb(115,101,124)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(52,100,100)" fill="none" stroke="rgb(116,214,103)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(56,100,100)" fill="none" stroke="rgb(57,56,20)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(60,100,100)" fill="none" stroke="rgb(101,182,176)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(64,100,100)" fill="none" stroke="rgb(158,227,133)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(68,100,100)" fill="none" stroke="rgb(213,11,32)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(72,100,100)" fill="none" stroke="rgb(30,160,16)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(76,100,100)" fill="none" stroke="rgb(106,223,78)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(80,100,100)" fill="none" stroke="rgb(87,98,62)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(84,100,100)" fill="none" stroke="rgb(186,96,232)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(88,100,100)" fill="none" stroke="rgb(64,146,222)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(92,100,100)" fill="none" stroke="rgb(7,68,56)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(96,100,100)" fill="none" stroke="rgb(32,168,120)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(100,100,100)" fill="none" stroke="rgb(142,57,54)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(104,100,100)" fill="none" stroke="rgb(240,91,129)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(108,100,100)" fill="none" stroke="rgb(90,114,2)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(112,100,100)" fill="none" stroke="rgb(74,38,233)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(116,100,100)" fill="none" stroke="rgb(153,250,205)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(120,100,100)" fill="none" stroke="rgb(64,181,43)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(124,100,100)" fill="none" stroke="rgb(65,204,83)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(128,100,100)" fill="none" stroke="rgb(39,199,162)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(132,100,100)" fill="none" stroke="rgb(13,99,127)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(136,100,100)" fill="none" stroke="rgb(58,191,185)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(140,100,100)" fill="none" stroke="rgb(8,204,63)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(144,100,100)" fill="none" stroke="rgb(205,7,165)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(148,100,100)" fill="none" stroke="rgb(245,241,58)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(152,100,100)" fill="none" stroke="rgb(9,122,126)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(156,100,100)" fill="none" stroke="rgb(66,31,250)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(160,100,100)" fill="none" stroke="rgb(192,49,197)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(164,100,100)" fill="none" stroke="rgb(213,87,123)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(168,100,100)" fill="none" stroke="rgb(209,167,53)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(172,100,100)" fill="none" stroke="rgb(25,98,21)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(176,100,100)" fill="none" stroke="rgb(200,98,70)" cx="100" cy="100" rx="80" ry="40"/>
+<ellipse transform="rotate(180,100,100)" fill="none" stroke="rgb(51,158,36)" cx="100" cy="100" rx="80" ry="40"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -652,21 +652,21 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-12", {
 svgR( wh=c(600, 200),  lapply(1:15, function(i) rect(cxy=c(100,100), wh=c(80,80), transform=list(rotate= c(i*8, 100,100)), fill='none', stroke=rrgb())))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="200">
-<rect transform="rotate(8,100,100)" fill="none" stroke="rgb(204,70,60)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(16,100,100)" fill="none" stroke="rgb(228,211,210)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(24,100,100)" fill="none" stroke="rgb(94,235,10)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(32,100,100)" fill="none" stroke="rgb(224,45,240)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(40,100,100)" fill="none" stroke="rgb(47,106,237)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(48,100,100)" fill="none" stroke="rgb(158,1,137)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(56,100,100)" fill="none" stroke="rgb(39,14,21)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(64,100,100)" fill="none" stroke="rgb(126,112,250)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(72,100,100)" fill="none" stroke="rgb(5,181,49)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(80,100,100)" fill="none" stroke="rgb(119,156,182)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(88,100,100)" fill="none" stroke="rgb(231,142,9)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(96,100,100)" fill="none" stroke="rgb(89,193,186)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(104,100,100)" fill="none" stroke="rgb(46,227,222)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(112,100,100)" fill="none" stroke="rgb(151,160,69)" width="80" height="80" x="60" y="60"/>
-<rect transform="rotate(120,100,100)" fill="none" stroke="rgb(60,80,72)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(8,100,100)" fill="none" stroke="rgb(40,18,116)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(16,100,100)" fill="none" stroke="rgb(37,220,159)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(24,100,100)" fill="none" stroke="rgb(2,152,62)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(32,100,100)" fill="none" stroke="rgb(74,44,136)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(40,100,100)" fill="none" stroke="rgb(88,181,173)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(48,100,100)" fill="none" stroke="rgb(6,172,55)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(56,100,100)" fill="none" stroke="rgb(112,198,27)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(64,100,100)" fill="none" stroke="rgb(66,142,86)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(72,100,100)" fill="none" stroke="rgb(81,26,204)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(80,100,100)" fill="none" stroke="rgb(36,115,156)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(88,100,100)" fill="none" stroke="rgb(211,103,116)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(96,100,100)" fill="none" stroke="rgb(182,140,74)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(104,100,100)" fill="none" stroke="rgb(124,20,19)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(112,100,100)" fill="none" stroke="rgb(98,71,104)" width="80" height="80" x="60" y="60"/>
+<rect transform="rotate(120,100,100)" fill="none" stroke="rgb(179,110,49)" width="80" height="80" x="60" y="60"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -684,17 +684,17 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-OneLineTeasers-13", {
 svgR(wh=c(600,200), lapply(0:10,  function(i)circle(cxy=c(350,100),r=30,fill=rrgb(),opacity=.3, transform=list(rotate= c(-i*18,300,100)))))->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="200">
-<circle r="30" fill="rgb(224,67,199)" opacity="0.3" transform="rotate(0,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(162,95,118)" opacity="0.3" transform="rotate(-18,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(53,141,61)" opacity="0.3" transform="rotate(-36,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(98,96,132)" opacity="0.3" transform="rotate(-54,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(28,128,218)" opacity="0.3" transform="rotate(-72,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(113,36,151)" opacity="0.3" transform="rotate(-90,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(210,202,170)" opacity="0.3" transform="rotate(-108,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(118,20,148)" opacity="0.3" transform="rotate(-126,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(128,114,96)" opacity="0.3" transform="rotate(-144,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(252,129,29)" opacity="0.3" transform="rotate(-162,300,100)" cx="350" cy="100"/>
-<circle r="30" fill="rgb(24,155,131)" opacity="0.3" transform="rotate(-180,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(107,22,230)" opacity="0.3" transform="rotate(0,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(49,184,179)" opacity="0.3" transform="rotate(-18,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(80,83,120)" opacity="0.3" transform="rotate(-36,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(95,243,241)" opacity="0.3" transform="rotate(-54,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(74,193,250)" opacity="0.3" transform="rotate(-72,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(216,238,183)" opacity="0.3" transform="rotate(-90,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(38,185,249)" opacity="0.3" transform="rotate(-108,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(87,20,121)" opacity="0.3" transform="rotate(-126,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(243,17,96)" opacity="0.3" transform="rotate(-144,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(53,237,230)" opacity="0.3" transform="rotate(-162,300,100)" cx="350" cy="100"/>
+<circle r="30" fill="rgb(240,86,84)" opacity="0.3" transform="rotate(-180,300,100)" cx="350" cy="100"/>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])

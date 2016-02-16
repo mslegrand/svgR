@@ -42,14 +42,14 @@ svgR( wh=WH,
       })
 )->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" font-size="40" stroke="black" stroke-width="0.5" width="800" height="200">
-<text font-family="serif" fill="rgb(9,123,130)" x="440" y="40">serif</text>
-<text font-family="sans-serif" fill="rgb(48,187,37)" x="40" y="40">sans-serif</text>
-<text font-family="cursive" fill="rgb(158,204,233)" x="440" y="80">cursive</text>
-<text font-family="fantasy" fill="rgb(196,15,135)" x="40" y="80">fantasy</text>
-<text font-family="Arial" fill="rgb(184,17,80)" x="440" y="120">Arial</text>
-<text font-family="Times New Roman" fill="rgb(81,92,29)" x="40" y="120">Times New Roman</text>
-<text font-family="Verdana" fill="rgb(46,95,51)" x="440" y="160">Verdana</text>
-<text font-family="Comic Sans" fill="rgb(209,252,215)" x="40" y="160">Comic Sans</text>
+<text font-family="serif" fill="rgb(137,24,13)" x="440" y="40">serif</text>
+<text font-family="sans-serif" fill="rgb(21,13,65)" x="40" y="40">sans-serif</text>
+<text font-family="cursive" fill="rgb(171,37,255)" x="440" y="80">cursive</text>
+<text font-family="fantasy" fill="rgb(62,37,233)" x="40" y="80">fantasy</text>
+<text font-family="Arial" fill="rgb(124,24,200)" x="440" y="120">Arial</text>
+<text font-family="Times New Roman" fill="rgb(189,200,149)" x="40" y="120">Times New Roman</text>
+<text font-family="Verdana" fill="rgb(161,236,139)" x="440" y="160">Verdana</text>
+<text font-family="Comic Sans" fill="rgb(54,84,214)" x="40" y="160">Comic Sans</text>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -76,10 +76,10 @@ svgR( wh=WH,
       })
 )->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" font-style="inherit" font-size="40" stroke="black" stroke-width="0.5" width="800" height="120">
-<text font-style="normal" fill="rgb(140,215,94)" x="440" y="40">normal</text>
-<text font-style="italic" fill="rgb(244,234,254)" x="40" y="40">italic</text>
-<text font-style="oblique" fill="rgb(248,179,183)" x="440" y="80">oblique</text>
-<text font-style="inherit" fill="rgb(103,95,130)" x="40" y="80">inherit</text>
+<text font-style="normal" fill="rgb(102,216,163)" x="440" y="40">normal</text>
+<text font-style="italic" fill="rgb(15,228,206)" x="40" y="40">italic</text>
+<text font-style="oblique" fill="rgb(236,209,244)" x="440" y="80">oblique</text>
+<text font-style="inherit" fill="rgb(173,201,121)" x="40" y="80">inherit</text>
 </svg>'
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
@@ -117,20 +117,20 @@ svgR( wh=WH,
 )->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="160">
 <text x="40" y="120">
-<tspan font-size="10" fill="rgb(213,77,8)">A</tspan>
-<tspan font-size="20" fill="rgb(157,214,82)">B</tspan>
-<tspan font-size="30" fill="rgb(245,41,123)">C</tspan>
-<tspan font-size="40" fill="rgb(87,213,114)">D</tspan>
-<tspan font-size="50" fill="rgb(169,47,205)">E</tspan>
-<tspan font-size="60" fill="rgb(58,53,20)">F</tspan>
-<tspan font-size="70" fill="rgb(135,244,113)">G</tspan>
-<tspan font-size="80" fill="rgb(71,143,138)">H</tspan>
-<tspan font-size="90" fill="rgb(35,218,247)">I</tspan>
-<tspan font-size="100" fill="rgb(179,181,238)">J</tspan>
-<tspan font-size="110" fill="rgb(213,123,241)">K</tspan>
-<tspan font-size="120" fill="rgb(194,34,179)">L</tspan>
-<tspan font-size="130" fill="rgb(4,19,41)">M</tspan>
-<tspan font-size="140" fill="rgb(145,252,82)">N</tspan>
+<tspan font-size="10" fill="rgb(172,4,173)">A</tspan>
+<tspan font-size="20" fill="rgb(189,3,155)">B</tspan>
+<tspan font-size="30" fill="rgb(162,84,247)">C</tspan>
+<tspan font-size="40" fill="rgb(23,208,22)">D</tspan>
+<tspan font-size="50" fill="rgb(231,136,210)">E</tspan>
+<tspan font-size="60" fill="rgb(201,49,144)">F</tspan>
+<tspan font-size="70" fill="rgb(17,176,147)">G</tspan>
+<tspan font-size="80" fill="rgb(61,138,99)">H</tspan>
+<tspan font-size="90" fill="rgb(196,13,63)">I</tspan>
+<tspan font-size="100" fill="rgb(110,57,236)">J</tspan>
+<tspan font-size="110" fill="rgb(183,172,255)">K</tspan>
+<tspan font-size="120" fill="rgb(109,35,67)">L</tspan>
+<tspan font-size="130" fill="rgb(35,73,239)">M</tspan>
+<tspan font-size="140" fill="rgb(10,107,248)">N</tspan>
 </text>
 </svg>'
     res <- as.character(res)
@@ -155,20 +155,20 @@ svgR( wh=WH,
 )->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="160">
 <text font-size="20" x="40" y="40">
-<tspan dy="10" fill="rgb(17,144,73)">A</tspan>
-<tspan dy="0" fill="rgb(150,47,58)">B</tspan>
-<tspan dy="10" fill="rgb(2,133,97)">C</tspan>
-<tspan dy="0" fill="rgb(63,240,231)">D</tspan>
-<tspan dy="10" fill="rgb(252,166,167)">E</tspan>
-<tspan dy="0" fill="rgb(224,32,177)">F</tspan>
-<tspan dy="10" fill="rgb(184,148,222)">G</tspan>
-<tspan dy="0" fill="rgb(125,35,108)">H</tspan>
-<tspan dy="10" fill="rgb(232,38,131)">I</tspan>
-<tspan dy="0" fill="rgb(41,169,77)">J</tspan>
-<tspan dy="10" fill="rgb(4,55,1)">K</tspan>
-<tspan dy="0" fill="rgb(191,48,208)">L</tspan>
-<tspan dy="10" fill="rgb(65,166,222)">M</tspan>
-<tspan dy="0" fill="rgb(242,219,103)">N</tspan>
+<tspan dy="10" fill="rgb(125,27,235)">A</tspan>
+<tspan dy="0" fill="rgb(52,220,46)">B</tspan>
+<tspan dy="10" fill="rgb(96,62,154)">C</tspan>
+<tspan dy="0" fill="rgb(157,96,224)">D</tspan>
+<tspan dy="10" fill="rgb(64,248,182)">E</tspan>
+<tspan dy="0" fill="rgb(116,58,105)">F</tspan>
+<tspan dy="10" fill="rgb(22,222,82)">G</tspan>
+<tspan dy="0" fill="rgb(109,164,119)">H</tspan>
+<tspan dy="10" fill="rgb(35,118,135)">I</tspan>
+<tspan dy="0" fill="rgb(12,78,242)">J</tspan>
+<tspan dy="10" fill="rgb(99,208,183)">K</tspan>
+<tspan dy="0" fill="rgb(4,215,242)">L</tspan>
+<tspan dy="10" fill="rgb(216,159,218)">M</tspan>
+<tspan dy="0" fill="rgb(61,138,130)">N</tspan>
 </text>
 </svg>'
     res <- as.character(res)
@@ -303,8 +303,26 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 
 # -----------------------------------------------------
-# test-text-13 Ommited!!!
-
+test_that("test-text-13", {
+WH<-c(200,600)
+svgR( wh=WH,
+      text( linearRegression ,  writing.mode="tb" , 
+              font.size=100,
+              xy=c(80, 80), fill='red',
+              font.weight="bold", stroke='black',  stroke.width=0.5
+      )
+)->res
+expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="200" height="600">
+<text writing-mode="tb" font-size="100" fill="red" font-weight="bold" stroke="black" stroke-width="0.5" x="80" y="80">线性回归</text>
+</svg>'
+    res <- as.character(res)
+    rlines <- str_trim(strsplit(res, "\n")[[1]])
+    elines <- str_trim(strsplit(expected_res, "\n")[[1]])
+    expect_equal(length(rlines), length(elines))
+    for (i in length(rlines)) {
+        expect_identical(rlines[i], elines[i])
+    }
+})
 # -----------------------------------------------------
 
 
