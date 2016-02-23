@@ -4,7 +4,7 @@ context("animate-animate")
 assign("attr.no", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-animate-animate-1", {
-library(svgR)
+
 WH<-c(800,200)
 svgR( 
     circle( cxy=WH/2, r=40, stroke="black", fill="yellow",
@@ -419,7 +419,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-animate-animate-12", {
-library(svgR)
+
 WH<-c(800,300)
 pt<-c(30,30)
 svgR( 
@@ -942,7 +942,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-animate-animate-25", {
-library(svgR)
+
 WH=c(800, 400) # window rect
 svgR( 
       rect(xy=c(0,0), wh=WH, fill='lightblue'),
@@ -1016,7 +1016,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-animate-animate-26", {
-library(svgR)
+
 WH=c(800, 400) # window rect
 x<-c(.3,.4,.5,.6)
 dx<-.1

@@ -4,7 +4,7 @@ context("caseStudy_lighting")
 assign("attr.no", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-1", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 svgR(wh=WH+c(0,30),
@@ -36,7 +36,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-2", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 svgR(wh=WH+c(0,30),
@@ -72,7 +72,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-3", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 svgR(wh=WH,
@@ -116,7 +116,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-4", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 svgR(wh=WH,
@@ -161,7 +161,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-5", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 svgR(wh=WH,
@@ -210,7 +210,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-6", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 phi<-pi/4
@@ -275,7 +275,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-7", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 phi<-pi/4
@@ -348,7 +348,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-8", {
-library(svgR)
+# 
 WH=c(800,400)
 R<-.4*WH[2]
 phi<-pi/4

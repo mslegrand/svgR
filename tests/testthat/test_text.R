@@ -1,10 +1,11 @@
 context("text")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("attr.no", 1, envir=environment(svgR:::genId))
 # -----------------------------------------------------
 test_that("test-text-1", {
 WH=c(800, 400) # window rect
+
 r=WH[2]/2
 svgR( wh=WH,
   g(
@@ -138,7 +139,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
     expect_equal(length(rlines), length(elines))
     for (i in length(rlines)) {
-        expect_identical(rlines[i], elines[i])
+        expect_equal(rlines[i], elines[i])
     }
 })
 # -----------------------------------------------------
@@ -306,7 +307,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 test_that("test-text-13", {
 WH<-c(200,600)
 svgR( wh=WH,
-      text( linearRegression ,  writing.mode="tb" , 
+      text( "linearRegression" ,  writing.mode="tb" , 
               font.size=100,
               xy=c(80, 80), fill='red',
               font.weight="bold", stroke='black',  stroke.width=0.5

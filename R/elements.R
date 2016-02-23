@@ -18,9 +18,8 @@
         })
     }
     rtv <- list()
-    node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -74,6 +73,7 @@ glyph<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -107,9 +107,8 @@ glyph<-function (...)
             }
         }
     }
-    node <- newXMLNode("glyph", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "glyph", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -156,6 +155,7 @@ glyph<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -189,9 +189,8 @@ glyph<-function (...)
             }
         }
     }
-    node <- newXMLNode("missing-glyph", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "missing-glyph", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -215,9 +214,8 @@ hkern<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("hkern", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "hkern", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -241,9 +239,8 @@ vkern<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("vkern", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "vkern", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -275,9 +272,8 @@ font<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("font", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -292,9 +288,8 @@ font<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-name", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -309,9 +304,8 @@ font<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-format", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -326,9 +320,8 @@ font<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-uri", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -435,9 +428,8 @@ animate<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("animate", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "animate", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -488,9 +480,8 @@ animateColor<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("animateColor", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "animateColor", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -547,9 +538,8 @@ animateMotion<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("animateMotion", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "animateMotion", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -600,9 +590,8 @@ animateTransform<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("animateTransform", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "animateTransform", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -694,9 +683,7 @@ set<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("set", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "set", attrs = attrs, .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -711,9 +698,8 @@ mpath<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("mpath", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "mpath", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -728,9 +714,8 @@ feFuncA<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("feFuncA", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feFuncA", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -745,9 +730,8 @@ feFuncB<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("feFuncB", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feFuncB", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -762,9 +746,8 @@ feFuncG<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("feFuncG", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feFuncG", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -779,9 +762,8 @@ feFuncR<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("feFuncR", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feFuncR", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -796,9 +778,8 @@ feDistantLight<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("feDistantLight", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feDistantLight", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -863,16 +844,14 @@ feTurbulence<-function (...)
             }
         }
     }
-    node <- newXMLNode("feTurbulence", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feTurbulence", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feConvolveMatrix<-function (...) 
@@ -934,16 +913,14 @@ feConvolveMatrix<-function (...)
             }
         }
     }
-    node <- newXMLNode("feConvolveMatrix", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feConvolveMatrix", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feDiffuseLighting<-function (...) 
@@ -1002,16 +979,14 @@ feDiffuseLighting<-function (...)
             }
         }
     }
-    node <- newXMLNode("feDiffuseLighting", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feDiffuseLighting", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feOffset<-function (...) 
@@ -1064,16 +1039,14 @@ feOffset<-function (...)
             }
         }
     }
-    node <- newXMLNode("feOffset", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feOffset", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 filter<-function (...) 
@@ -1112,9 +1085,8 @@ filter<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("filter", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "filter", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1172,16 +1144,14 @@ feBlend<-function (...)
             }
         }
     }
-    node <- newXMLNode("feBlend", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feBlend", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feColorMatrix<-function (...) 
@@ -1233,16 +1203,14 @@ feColorMatrix<-function (...)
             }
         }
     }
-    node <- newXMLNode("feColorMatrix", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feColorMatrix", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feComponentTransfer<-function (...) 
@@ -1294,16 +1262,14 @@ feComponentTransfer<-function (...)
             }
         }
     }
-    node <- newXMLNode("feComponentTransfer", attrs = attrs, 
-        .children = allGoodChildern(args), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feComponentTransfer", 
+        attrs = attrs, .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feComposite<-function (...) 
@@ -1356,16 +1322,14 @@ feComposite<-function (...)
             }
         }
     }
-    node <- newXMLNode("feComposite", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feComposite", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feDisplacementMap<-function (...) 
@@ -1417,16 +1381,14 @@ feDisplacementMap<-function (...)
             }
         }
     }
-    node <- newXMLNode("feDisplacementMap", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feDisplacementMap", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feFlood<-function (...) 
@@ -1478,16 +1440,14 @@ feFlood<-function (...)
             }
         }
     }
-    node <- newXMLNode("feFlood", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feFlood", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feGaussianBlur<-function (...) 
@@ -1546,16 +1506,14 @@ feGaussianBlur<-function (...)
             }
         }
     }
-    node <- newXMLNode("feGaussianBlur", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feGaussianBlur", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feImage<-function (...) 
@@ -1607,16 +1565,14 @@ feImage<-function (...)
             }
         }
     }
-    node <- newXMLNode("feImage", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feImage", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feMerge<-function (...) 
@@ -1668,16 +1624,14 @@ feMerge<-function (...)
             }
         }
     }
-    node <- newXMLNode("feMerge", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feMerge", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feMorphology<-function (...) 
@@ -1736,16 +1690,14 @@ feMorphology<-function (...)
             }
         }
     }
-    node <- newXMLNode("feMorphology", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feMorphology", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feSpecularLighting<-function (...) 
@@ -1804,16 +1756,14 @@ feSpecularLighting<-function (...)
             }
         }
     }
-    node <- newXMLNode("feSpecularLighting", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feSpecularLighting", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feTile<-function (...) 
@@ -1865,16 +1815,14 @@ feTile<-function (...)
             }
         }
     }
-    node <- newXMLNode("feTile", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feTile", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 feSpotLight<-function (...) 
@@ -1885,9 +1833,8 @@ feSpotLight<-function (...)
     attrs <- comboParamHandler(attrs, list(pointsAtXYZ = c("pointsAtX", 
     "pointsAtY", "pointsAtZ"), xyz = c("x", "y", "z")))
     rtv <- list()
-    node <- newXMLNode("feSpotLight", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feSpotLight", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1904,9 +1851,8 @@ fePointLight<-function (...)
     attrs <- comboParamHandler(attrs, list(xyz = c("x", "y", 
     "z")))
     rtv <- list()
-    node <- newXMLNode("fePointLight", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "fePointLight", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1954,6 +1900,7 @@ svg<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -1987,9 +1934,7 @@ svg<-function (...)
             }
         }
     }
-    node <- newXMLNode("svg", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "svg", attrs = attrs, .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2041,6 +1986,7 @@ a<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -2074,9 +2020,7 @@ a<-function (...)
             }
         }
     }
-    node <- newXMLNode("a", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "a", attrs = attrs, .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2129,9 +2073,8 @@ altGlyph<-function (...)
             }
         }
     }
-    node <- newXMLNode("altGlyph", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "altGlyph", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2185,6 +2128,7 @@ circle<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -2233,9 +2177,8 @@ circle<-function (...)
             }
         }
     }
-    node <- newXMLNode("circle", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "circle", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2292,9 +2235,8 @@ clipPath<-function (...)
             }
         }
     }
-    node <- newXMLNode("clipPath", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "clipPath", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2324,9 +2266,8 @@ cursor<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("cursor", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "cursor", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2378,6 +2319,7 @@ defs<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -2411,9 +2353,8 @@ defs<-function (...)
             }
         }
     }
-    node <- newXMLNode("defs", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "defs", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2467,6 +2408,7 @@ ellipse<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -2515,9 +2457,8 @@ ellipse<-function (...)
             }
         }
     }
-    node <- newXMLNode("ellipse", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "ellipse", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2563,9 +2504,8 @@ foreignObject<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("foreignObject", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "foreignObject", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2617,6 +2557,7 @@ g<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -2707,9 +2648,7 @@ g<-function (...)
             }
         }
     }
-    node <- newXMLNode("g", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "g", attrs = attrs, .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2764,6 +2703,7 @@ image<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -2797,9 +2737,8 @@ image<-function (...)
             }
         }
     }
-    node <- newXMLNode("image", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "image", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2854,6 +2793,7 @@ line<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -2944,9 +2884,8 @@ line<-function (...)
             }
         }
     }
-    node <- newXMLNode("line", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "line", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2998,13 +2937,12 @@ linearGradient<-function (...)
         for (i in 1:length(colors)) {
             attrs.si <- list(offset = sprintf("%d%%", as.integer(offsets[i])), 
                 `stop-color` = colors[i])
-            stopi <- newXMLNode("stop", attrs = attrs.si)
+            stopi <- XMLAbstractNode$new("stop", attrs = attrs.si)
             args <- c(args, stopi)
         }
     }
-    node <- newXMLNode("linearGradient", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "linearGradient", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3051,6 +2989,7 @@ marker<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -3084,9 +3023,8 @@ marker<-function (...)
             }
         }
     }
-    node <- newXMLNode("marker", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "marker", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3153,9 +3091,8 @@ mask<-function (...)
             }
         }
     }
-    node <- newXMLNode("mask", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "mask", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3214,6 +3151,7 @@ path<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -3304,9 +3242,8 @@ path<-function (...)
             }
         }
     }
-    node <- newXMLNode("path", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "path", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3361,6 +3298,7 @@ pattern<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -3394,9 +3332,8 @@ pattern<-function (...)
             }
         }
     }
-    node <- newXMLNode("pattern", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "pattern", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3455,6 +3392,7 @@ polygon<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -3545,9 +3483,8 @@ polygon<-function (...)
             }
         }
     }
-    node <- newXMLNode("polygon", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "polygon", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3606,6 +3543,7 @@ polyline<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -3696,9 +3634,8 @@ polyline<-function (...)
             }
         }
     }
-    node <- newXMLNode("polyline", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "polyline", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3749,13 +3686,12 @@ radialGradient<-function (...)
         for (i in 1:length(colors)) {
             attrs.si <- list(offset = sprintf("%d%%", as.integer(offsets[i])), 
                 `stop-color` = colors[i])
-            stopi <- newXMLNode("stop", attrs = attrs.si)
+            stopi <- XMLAbstractNode$new("stop", attrs = attrs.si)
             args <- c(args, stopi)
         }
     }
-    node <- newXMLNode("radialGradient", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "radialGradient", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3810,6 +3746,7 @@ rect<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -3858,9 +3795,8 @@ rect<-function (...)
             }
         }
     }
-    node <- newXMLNode("rect", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "rect", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3872,18 +3808,11 @@ rect<-function (...)
 script<-function (...) 
 {
     args <- list(...)
-    args <- promoteUnamedLists(args)
-    attrs <- named(args)
-    rtv <- list()
-    node <- newXMLNode("script", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
-    {
-        if (length(rtv) > 0) {
-            node <- c(rtv, node)
-        }
-        node
-    }
+    stopifnot(length(args) > 0, sapply(args, function(x) inherits(x, 
+        "character")))
+    js <- paste(args, collapse = "\n")
+    XMLAbstractNode$new("script", attrs = list(type = "text/JavaScript"), 
+        XMLCDataNode$new(.children = as.list(js)))
 }
 
 switch<-function (...) 
@@ -3929,6 +3858,7 @@ switch<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -3962,9 +3892,8 @@ switch<-function (...)
             }
         }
     }
-    node <- newXMLNode("switch", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "switch", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4009,6 +3938,7 @@ symbol<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -4042,9 +3972,8 @@ symbol<-function (...)
             }
         }
     }
-    node <- newXMLNode("symbol", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "symbol", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4057,6 +3986,7 @@ text<-function (...)
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
+    args <- insertImpliedTextNodes(args)
     attrs <- named(args)
     attrs <- comboParamHandler(attrs, list(dxy = c("dx", "dy"
     ), xy = c("x", "y")))
@@ -4098,6 +4028,7 @@ text<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -4165,9 +4096,8 @@ text<-function (...)
             attrs["text"] <- NULL
         }
     }
-    node <- newXMLNode("text", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "text", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4180,6 +4110,7 @@ textPath<-function (...)
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
+    args <- insertImpliedTextNodes(args)
     attrs <- named(args)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
         x, "($| )", sep = ""), "requiredExtensions requiredFeatures class"))
@@ -4237,9 +4168,8 @@ textPath<-function (...)
             attrs["text"] <- NULL
         }
     }
-    node <- newXMLNode("textPath", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "textPath", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4292,9 +4222,8 @@ tref<-function (...)
             }
         }
     }
-    node <- newXMLNode("tref", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "tref", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4307,6 +4236,7 @@ tspan<-function (...)
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
+    args <- insertImpliedTextNodes(args)
     attrs <- named(args)
     attrs <- comboParamHandler(attrs, list(dxy = c("dx", "dy"
     ), xy = c("x", "y")))
@@ -4366,9 +4296,8 @@ tspan<-function (...)
             attrs["text"] <- NULL
         }
     }
-    node <- newXMLNode("tspan", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "tspan", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4423,6 +4352,7 @@ use<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -4456,9 +4386,7 @@ use<-function (...)
             }
         }
     }
-    node <- newXMLNode("use", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "use", attrs = attrs, .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4487,9 +4415,8 @@ view<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("view", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "view", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4504,9 +4431,8 @@ altGlyphDef<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("altGlyphDef", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "altGlyphDef", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4521,9 +4447,8 @@ altGlyphItem<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("altGlyphItem", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "altGlyphItem", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4545,9 +4470,8 @@ altGlyphItem<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "color-profile", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4576,9 +4500,8 @@ desc<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("desc", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "desc", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4619,16 +4542,14 @@ feMergeNode<-function (...)
             }
         }
     }
-    node <- newXMLNode("feMergeNode", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "feMergeNode", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-    node <- c(rtv, node)
 }
 
 "font-face-src"<-function (...) 
@@ -4637,9 +4558,8 @@ feMergeNode<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-src", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4677,9 +4597,8 @@ glyphRef<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("glyphRef", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "glyphRef", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4694,9 +4613,8 @@ metadata<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("metadata", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "metadata", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4725,9 +4643,8 @@ stop<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("stop", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "stop", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4749,9 +4666,8 @@ style<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("style", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "style", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4780,9 +4696,8 @@ title<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("title", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "title", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4811,9 +4726,8 @@ font.face<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("font-face", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4860,6 +4774,7 @@ missing.glyph<-function (...)
                   stop("Not a filter node")
                 }
                 fid <- getsafeNodeAttr("id", filterNode)
+                filterNode$attrs[["id"]] <- fid
                 rtv <- c(rtv, filterNode)
                 attrs[[n]] = paste0("url(#", fid, ")")
             }
@@ -4893,9 +4808,8 @@ missing.glyph<-function (...)
             }
         }
     }
-    node <- newXMLNode("missing-glyph", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "missing-glyph", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4910,9 +4824,8 @@ font.face.name<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-name", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-name", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4927,9 +4840,8 @@ font.face.format<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-format", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-format", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4944,9 +4856,8 @@ font.face.uri<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-uri", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-uri", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4968,9 +4879,8 @@ color.profile<-function (...)
         })
     }
     rtv <- list()
-    node <- newXMLNode("color-profile", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "color-profile", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4985,41 +4895,14 @@ font.face.src<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
-    node <- newXMLNode("font-face-src", attrs = attrs, .children = allGoodChildern(args), 
-        suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
+    node <- XMLAbstractNode$new(tag = "font-face-src", attrs = attrs, 
+        .children = allGoodChildern(args))
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
         }
         node
     }
-}
-
-getNode<-function (rootNode, id) 
-{
-    if (id != "root") {
-        kidV <- getNodeSet(rootNode, paste("//*[@id=\"", id, 
-            "\"]", sep = ""))
-    }
-    else {
-        kidV <- list(rootNode)
-    }
-    if (length(kidV) == 0) {
-        stop("Cannot find node with id=", id)
-    }
-    kidV
-}
-
-script<-function (...) 
-{
-    args <- list(...)
-    stopifnot(length(args) > 0, sapply(args, function(x) inherits(x, 
-        "character")))
-    js <- paste(args, collapse = "\n")
-    newXMLNode("script", attrs = list(type = "text/JavaScript"), 
-        newXMLCDataNode(js), suppressNamespaceWarning = getOption("suppressXMLNamespaceWarning", 
-            TRUE))
 }
 
 translate<-function (dx, dy = NULL) 

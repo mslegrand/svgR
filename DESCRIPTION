@@ -13,7 +13,7 @@ Suggests:
     testthat
 VignetteBuilder: knitr
 Imports: 
-    XML,
     stringr,
+    R6,
     shiny
 RoxygenNote: 5.0.1

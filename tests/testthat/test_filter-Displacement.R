@@ -4,7 +4,7 @@ context("filter-Displacement")
 assign("attr.no", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-filter-Displacement-1", {
-library(svgR)
+
 WH=c(800, 200) # window rect
 svgR( wh=WH, 
       symbol(
@@ -68,7 +68,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-filter-Displacement-2", {
-library(svgR)
+
 WH=c(400, 400) # window rect
 svgR( wh=WH, 
       symbol(
@@ -151,7 +151,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-filter-Displacement-3", {
-library(svgR)
+
 WH=c(800, 600) # window rect
 svgR( wh=WH, 
       symbol(
@@ -204,7 +204,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-filter-Displacement-4", {
-library(svgR)
+
 WH=c(800, 600) # window rect
 svgR( wh=WH, 
       symbol(
@@ -259,7 +259,7 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-filter-Displacement-5", {
-library(svgR)
+
 WH=c(800, 600) # window rect
 svgR( wh=WH, 
       symbol(

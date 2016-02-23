@@ -1246,8 +1246,20 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
 
 # -----------------------------------------------------
 test_that("test-filter-Textures-6", {
-bf=3 # This is a kludge to force bf
-library(svgR)
+  funkyFilter %<c-% function(id, baseFrequency=.01, numOctaves=3, slope=c(4,4,4), seed=100){
+    filter( id=id,
+            feTurbulence(baseFrequency=baseFrequency, numOctaves=numOctaves, seed=100),
+            feComponentTransfer(
+              feFuncR(type="linear", slope=slope[1], intercept=-1),
+              feFuncG(type="linear", slope=slope[2], intercept=-1),
+              feFuncB(type="linear", slope=slope[3], intercept=-1),
+              feFuncA(type="linear", slope=0, intercept=1)
+            ),
+            feColorMatrix(type="saturate")
+    )
+  }
+  
+
 WH=c(800, 800) # window rect
 N<-4
 dH<-WH[2]/(N+1)
@@ -1256,7 +1268,7 @@ ww<-WH[1]-40
 svgR( wh=WH,
   lapply(1:N, function(i){
     id=paste0("funky1-",i/N)
-    bf<<-.02/i # Very bad kludge
+    bf<-.02/i
     txt<-paste0('funky filter base frequency=', bf)
     g(
       text(txt, xy=c(20, y[i]+35) ),
@@ -1332,6 +1344,12 @@ expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w
     }
 })
 # -----------------------------------------------------
+
+#  ------------------------------------------------------------------------
+
+
+#  ------------------------------------------------------------------------
+
 
 
 

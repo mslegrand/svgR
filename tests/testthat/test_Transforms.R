@@ -118,18 +118,18 @@ assign("attr.no", 1, envir=environment(genId))
 test_that("test-Transforms-17", {
 WH=c(600, 200) # window rect
 wh=c(80,30) # small rect
-pt=c(c,0)
+pt=c(10,0)
 svgR( 
   wh=WH, 
   g(
-      rect( xy=pt, wh=wh, stroke ='black', fill='blue', opacity=.3),
+      rect( xy=pt, wh=wh, stroke ="black", fill="blue", opacity=.3),
       circle(cxy=pt, r=wh[2], stroke="black", fill="red", opacity=.3),
       transform="translate(200,100) rotate(-30) scale(.5,3) skewX(80)"
   )
  )->res
 expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="200">
 <g transform="translate(200,100) rotate(-30) scale(.5,3) skewX(80)">
-<rect stroke="black" fill="blue" opacity="0.3" width="80" height="30" x=".Primitive(&quot;c&quot;)" y="0"/>
+<rect stroke="black" fill="blue" opacity="0.3" width="80" height="30" x="10" y="0"/>
 <circle r="30" stroke="black" fill="red" opacity="0.3" cx=".Primitive(&quot;c&quot;)" cy="0"/>
 </g>
 </svg>'

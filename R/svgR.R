@@ -1,5 +1,5 @@
-#' @import XML
 #' @import stringr
+#' @import R6
 #' @import shiny
 
 
@@ -29,6 +29,9 @@ unnamed <- function(x) {
 
 promoteUnamedLists<-function(args){
   args->ml1
+#   if(inherits(ml1,"XMLAbstractNode")){
+#     return(ml1)
+#   }
   if(!inherits(ml1,'list') | length(args)==0){
     return(ml1)
   }
@@ -47,17 +50,39 @@ promoteUnamedLists<-function(args){
     rtv  
   })
   do.call(c, ml2)->ml3
-  ml3
+  #ml3
   nms<-names(ml3)
-  ml4<-lapply(1:length(ml3), function(i){
-    rtv<-ml3[[i]]
-    if(nms[i]=="" && (inherits(rtv, 'character')|| inherits(rtv, 'numeric'))){
-      rtv<-newXMLTextNode(rtv)
+#   ml4<-lapply(1:length(ml3), function(i){
+#     rtv<-ml3[[i]]
+#     if(nms[i]=="" && (inherits(rtv, 'character')|| inherits(rtv, 'numeric'))){
+#       rtv<-XMLTextNode$new( .children=rtv)
+#         #newXMLTextNode(rtv)
+#     }
+#     rtv
+#   })
+#   names(ml4)<-names(ml3)
+  #ml4
+ml3
+}
+
+
+insertImpliedTextNodes<-function(args){
+  stopifnot(class(args)=="list")
+  if(length(args)>0){
+    if (is.null(names(args))) {
+      uindx<-1:length(args)
+    } else{
+      uindx<-which(names(args)=="")
     }
-    rtv
-  })
-  names(ml4)<-names(ml3)
-  ml4
+    for(i in uindx){
+      #cat("class(args[[i]])=",class(args[[i]]),"\n")
+      if( inherits(args[[i]], c("numeric", "character")) ){
+        args[[i]]<-XMLTextNode$new( .children=paste0(args[[i]]))
+          #newXMLTextNode(.children=paste0(args[[i]]))
+      }
+    } 
+  }
+  return(args)
 }
 
 # extracts only the unamed args (if any)
@@ -68,7 +93,8 @@ allGoodChildern<-function(args){
     unnamed<-args[names(args)==""]
   } 
   if(length(unnamed)>0){
-    indx<-sapply(unnamed, function(x)inherits(x, c("numeric", "character", "XMLAbstractNode" )))
+    #indx<-sapply(unnamed, function(x)inherits(x, c("numeric", "character","XMLAbstractNode")))
+    indx<-sapply(unnamed, function(x)inherits(x, "XMLAbstractNode" ))
     kids<-unnamed[indx]
   } else {
     kids<-unnamed
@@ -311,35 +337,6 @@ preProcAnimate<-function(attrs){
     attrs<-animateOneParamExpand(attrs, paramName)
   }
   attrs
-}
-
-getDefsNode<-function(anyNode){
-  xmlElementsByTagName(xmlRoot(anyNode), 'defs')->defsNodelist
-  if(length(defsNodelist)==0){
-    newXMLNode('defs')->defsnode
-    defsNodelist<-list(defsnode)
-    #works but I am not confortable with this
-    addChildren(xmlRoot(anyNode), kids=defsNodelist, at=0)
-  }
-  defsNodelist[[1]]
-}
-
-genId.new<-function(gname="genid"){
-  attr.no<-1
-  function(){
-    attr.no<<-attr.no+1
-    attr.id<-paste0("genid", attr.no)
-  } 
-}
-genId<-genId.new()
-
-getsafeNodeAttr<-function(attr.name, node){
-  xmlGetAttr(node, attr.name)->attr.id
-  if(is.null(attr.id)){    
-    attr.id<-genId()    
-    xmlAttrs(node)<-structure(list(attr.id), names=attr.name)
-  }
-  attr.id
 }
 
 
