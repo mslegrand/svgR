@@ -42,18 +42,23 @@ svgR<-function( ... ){
 #called by svgR
 svgRoot<-function( width, height, args){
   #specific to svgRoot
-  if( "namespaceDefinitons" %in% names(args)){
-    namespaceDefinitions<-args[["namespaceDefinitions"]]
-    args[["namespaceDefinitions"]]=NULL
-  } else {
-    namespaceDefinitions<- c(
-      "http://www.w3.org/2000/svg",
-      "xlink"="http://www.w3.org/1999/xlink",
-      "ev"="http://www.w3.org/2001/xml-events"
-    )
-  }
-  namespaceDefinitions<-as.list(namespaceDefinitions)
- 
+#   if( "namespaceDefinitons" %in% names(args)){
+#     namespaceDefinitions<-args[["namespaceDefinitions"]]
+#     args[["namespaceDefinitions"]]=NULL
+#   } else {
+#     namespaceDefinitions<- c(
+#       "xmlns=http://www.w3.org/2000/svg",
+#       "xlink"="http://www.w3.org/1999/xlink",
+#       "ev"="http://www.w3.org/2001/xml-events"
+#     )
+#   }
+#   namespaceDefinitions<-as.list(namespaceDefinitions)
+  namespaceDefinitions<- c(
+    xmlns="http://www.w3.org/2000/svg",
+    "xmlns:xlink"="http://www.w3.org/1999/xlink",#xmlns:xlink="http://www.w3.org/1999/xlink"
+    ev="http://www.w3.org/2001/xml-events"
+  )
+  #args<-c(namespaceDefinitions,args)
   args <- promoteUnamedLists(args)
   attrs <- named(args)
   attrs <- comboParamHandler(attrs, list(wh = c("width", "height")))
@@ -98,7 +103,14 @@ as.character.svgDoc<-function(x){
   if(!is.null(x$root)){
     asCharacter(x$root)
   } else {
-    "Rootless"
+    "EmptyDoc"
   }
 }
+
+#' @method "print" svgDoc
+#' @export
+print.svgDoc<-function(x){
+  invisible(cat(as.character(x))) 
+}
+
 

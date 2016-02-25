@@ -77,7 +77,7 @@ insertImpliedTextNodes<-function(args){
     for(i in uindx){
       #cat("class(args[[i]])=",class(args[[i]]),"\n")
       if( inherits(args[[i]], c("numeric", "character")) ){
-        args[[i]]<-XMLTextNode$new( .children=paste0(args[[i]]))
+        args[[i]]<-XMLTextNode$new( .children=list(paste0(args[[i]])))
           #newXMLTextNode(.children=paste0(args[[i]]))
       }
     } 

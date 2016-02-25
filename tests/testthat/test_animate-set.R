@@ -1,7 +1,7 @@
 context("animate-set")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("attr.no", 1, envir=environment(svgR:::genId))
 # -----------------------------------------------------
 test_that("test-animate-set-1", {
 WH<-c(800,200)

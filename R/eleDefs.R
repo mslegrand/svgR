@@ -3759,8 +3759,8 @@ script = function (...)
     stopifnot(length(args) > 0, sapply(args, function(x) inherits(x, 
         "character")))
     js <- paste(args, collapse = "\n")
-    XMLAbstractNode$new("script", attrs = list(type = "text/JavaScript"), 
-        XMLCDataNode$new(.children = as.list(js)))
+    XMLScriptNode$new("script", attrs = list(type = "application/ecmascript"), 
+        .children = list(XMLCDataNode$new(.children = as.list(js))))
 }, 
 switch = function (...) 
 {

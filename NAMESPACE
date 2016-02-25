@@ -2,6 +2,7 @@
 
 S3method("[[",svgDoc)
 S3method("as.character",svgDoc)
+S3method("print",svgDoc)
 export("%<c-%")
 export(as.rgb)
 export(mathSymbol)

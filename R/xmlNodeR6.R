@@ -130,7 +130,7 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       }
       return(rtv)
     },
-    pretty=function(indent=""){
+   pretty=function(indent=""){
       rtv<-paste0("<",self$tagName)
       indentKid= paste0("  ",indent)
       if(length(self$attrs)>0){
@@ -147,8 +147,9 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
         kid$pretty(indentKid)
       }))
       val<-unlist(sapply(self$children, function(child)inherits(child, "XMLTextNode")))
-      if(any(val)){
-        return( paste0(rtv, kids, "</",self$tagName,">", collapse=""))
+      if(all(val)){
+        kids<-paste0(kids,collapse="")
+        return( paste0(rtv, kids, "</",self$tagName,">"))
       }
       # at least one child that is not an XMLTextNode
       kids<-paste0(indentKid,kids)
@@ -162,6 +163,9 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
     }
   )
 )
+
+#  ------------------------------------------------------------------------
+
 
 #text nodes appear on a single line in XML package
 #I consider text node to be any node that can have 
@@ -187,7 +191,38 @@ XMLTextNode<-R6Class("XMLTextNode",
               ) 
 )
   
-  
+XMLScriptNode<-R6Class("XMLScriptNode",
+ inherit=XMLAbstractNode,
+ lock_objects = FALSE,
+ public =list(
+  initialize = function(tag, attrs, .children){
+     if (!missing(tag)) self$tagName <- tag 
+     if (!missing(attrs)) self$attrs <- attrs 
+     if (!missing(.children)) self$children <- .children 
+   },
+   pretty=function(indent=""){
+     rtv<-paste0("<",self$tagName)
+     indentKid= paste0("  ",indent)
+     if(length(self$attrs)>0){
+       attr<-lapply(self$attrs, shQuote)
+       attr<-paste0(names(attr),"=",attr, collapse=" ")
+       rtv<-paste(rtv,attr)
+     }
+     if(length(self$children)==0){
+       return( paste0(rtv, "/>"))
+     }
+     # length(self$children)>0)
+     rtv<-paste0(rtv,">")
+     kids<-unlist(lapply(self$children, function(kid){
+       kid$pretty(indentKid)
+     }))
+     kids[1]<-paste0( rtv,kids[1])
+     kids[length(kids)]<-paste0(kids[length(kids)], "</",self$tagName,">")
+     return(kids)
+   }  
+ )
+)
+
 XMLCDataNode<-R6Class("XMLCDataNode",
               inherit=XMLAbstractNode,
               lock_objects = FALSE,
@@ -206,7 +241,7 @@ XMLCDataNode<-R6Class("XMLCDataNode",
                   return(
                     c(paste0( "<![CDATA[" ), 
                       rtv,
-                      "]]> ")
+                      "]]>")
                   )
                 }
               )
@@ -234,29 +269,18 @@ XMLCDataNode<-R6Class("XMLCDataNode",
 #   paste0(res,collapse="\n")
 # }
 
-# svgR(script("xxx"))->tmp
-# cat(show(tmp$root))
 
-# WH=c(600, 100) # window rect
-# svgR( wh=WH,
-#   circle( cxy=c(50,50), r=30, fill='darkblue',
-#     mask=mask(
-#       rect(cxy= WH/2, wh=c(600,10), fill='black')
-#     )
-#   )
-# )->res
-# root<-res$root
-# show(res$root)
-
-nd2<-XMLAbstractNode$new("circle", attrs=list(x=100,y=50, radius=30))
-nd1<-XMLAbstractNode$new("rect", attrs=list(x=200,y=10, width=30, height=20))
-nd0<-XMLAbstractNode$new("g", 
-                 .children=list(nd1,nd2))
-ndR<-XMLAbstractNode$new("svg", attrs=list(x=0,y=0, width=600, height=200),
-                .children=list(nd0))
 
 asCharacter<-function(node){
   stopifnot(inherits(node,"XMLAbstractNode"))
   lines<-node$pretty()
+  #lines<-lines[-grep("^ *$", lines)] #remove any spaces to prevent <p> occuring
   paste0(lines,collapse="\n")
 }
+
+
+# tn<-XMLTextNode$new(tag="textData", list("abc def"))
+# sn<-XMLAbstractNode$new(tag="set",attrs=list(begin=0, end=1))
+# node <- XMLAbstractNode$new(tag = "text", attrs = list(x=0,y=0), 
+#                             .children = c(tn,sn))
+# cat(asCharacter(node))
