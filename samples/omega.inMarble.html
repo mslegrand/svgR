@@ -117,7 +117,7 @@ svgR(wh=c(600,200),
     use(xlink.href=&quot;#t2&quot;, fill=&quot;none&quot;)
   )
 )  </code></pre>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="600" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ev="http://www.w3.org/2001/xml-events" width="600" height="200">
 <defs> <filter id="marble"> <feTurbulence in="SourceGraphic" type="turbulence" baseFrequency="0.05" numOctaves="2" result="marb"></feTurbulence> </filter> <clipPath id="clp1"> <text id="t2" stroke="bcol" stroke-width="1" font-size="250" font-weight="bold" x="0" y="0">Ω</text> </clipPath> </defs> <g transform="translate(50,200)"> <filter id="genid2"> <feGaussianBlur stdDeviation="10"></feGaussianBlur> </filter> <use xlink:href="#t2" stroke="lightgrey" fill="lightgrey" transform="scale(1,0.4) skewX(-60)" filter="url(#genid2)"></use> <g transform="translate(5,-3)"> <use xlink:href="#t2" fill="lightgrey" stroke="lightgrey"></use> <rect fill="blue" filter="url(#marble)" clip-path="url(#clp1)" width="800" height="400" x="0" y="-200"></rect> </g> <use xlink:href="#t2" fill="white"></use> <rect fill="white" filter="url(#marble)" clip-path="url(#clp1)" width="800" height="400" x="0" y="-200"></rect> <use xlink:href="#t2" fill="none"></use> </g>
 </svg>
 <p><a id="svgOut"></a></p>
