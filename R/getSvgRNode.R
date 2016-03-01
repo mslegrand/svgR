@@ -24,47 +24,54 @@
 #' @export
 "[[.svgDoc"<-
   function(doc,id=''){
-    if(!(id==''|| is.null(id))){
-      if(is.null(id)){
-        id<-"NULL"
-        id<-"emptystring"
-      }
-      stop("doc does not have element with id=",id)
-    }
-    
-    root<-doc$root
-    sNode<-root$findNode('id',id)
-    #path<-getXmlPath(root,'id',id)
-    if(is.null(sNode)){
-      stop("doc does not have element with id=",id)
-    }
-    
-    #parentNode<-getNodeAt(path)
-
     fn<-function(...){
-    pf<-as.list(parent.frame()) #pf=y
-    
-    enames<-names( parent.env(environment() ) )
-    indx<-setdiff(names(pf),enames)
-    el<-pf[indx]
-    env1<-environment()
-    
-    list2env(el, environment() )
-    s<-substitute(list(...))
-    
-    args<-eval(s )       
-    args <- promoteUnamedLists(args)
-    attrS<-named(args)
-    kids<-allGoodChildern(args)
-    if(length(attrS)>0){
-      sNode$addAttributes(attrS)
-      #addAttributes(parentNode, .attrs=attrS, append=TRUE)
+      base::stop("doc does not have element with specified id")
+      NULL
     }
-    if(length(kids)>0){
-      sNode$addChildren(kids)
+    
+#     if(!(id==''|| is.null(id))){
+#       if(is.null(id)){
+#         id<-"NULL"
+#         id<-"emptystring"
+#       }
+#       stop("doc does not have element with id=",id)
+#     }
+   
+    if(!is.null(id) && id!=''){
+      root<-doc$root
+      sNode<-root$findNode('id',id)
+      #path<-getXmlPath(root,'id',id)
+      if(!is.null(sNode)){
+        #parentNode<-getNodeAt(path)
+        
+        fn<-function(...){
+          pf<-as.list(parent.frame()) #pf=y
+          
+          enames<-names( parent.env(environment() ) )
+          indx<-setdiff(names(pf),enames)
+          el<-pf[indx]
+          env1<-environment()
+          
+          list2env(el, environment() )
+          s<-substitute(list(...))
+          
+          args<-eval(s )       
+          args <- promoteUnamedLists(args)
+          attrS<-named(args)
+          kids<-allGoodChildern(args)
+          if(length(attrS)>0){
+            sNode$addAttributes(attrS)
+            #addAttributes(parentNode, .attrs=attrS, append=TRUE)
+          }
+          if(length(kids)>0){
+            sNode$addChildren(kids)
+          }
+          sNode
+        }
+        
+      } 
     }
-    sNode
-  }
+  return(fn)
 }
 
 

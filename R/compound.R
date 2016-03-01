@@ -36,7 +36,7 @@ toCompound<-function(f){
 #'
 `%<c-%`<-function(name,f){
   name<-substitute(name)
-  if (!is.name(name)) stop("Left-hand side must be a name")
+  if (!is.name(name)) base::stop("Left-hand side must be a name")
   name<-deparse(name)
   f<-toCompound(f)
   assign(name,f, envir=parent.frame())

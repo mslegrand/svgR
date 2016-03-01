@@ -1,7 +1,7 @@
 context("animate-set")
 
 
-assign("attr.no", 1, envir=environment(svgR:::genId))
+assign("attr.no", 1, envir=environment(svgR))
 # -----------------------------------------------------
 test_that("test-animate-set-1", {
 WH<-c(800,200)
@@ -13,9 +13,7 @@ svgR( wh=WH,
           )
     )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<text font-size="100" stroke="black" fill="lightgreen" x="40" y="120">svgR<set attributeName="fill" to="green" begin="0" end="0"/></text>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='800' height='200'>\n  <text font-size='100' stroke='black' fill='lightgreen' x='40' y='120'>\n      svgR\n      <set attributeName='fill' to='green' begin='0' end='0'/>\n  </text>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
@@ -39,9 +37,7 @@ svgR( wh=WH,
           )
     )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<text font-size="100" stroke="black" fill="lightgreen" x="40" y="120">svgR<set attributeName="visibility" to="hidden" begin="0" end="0"/></text>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='800' height='200'>\n  <text font-size='100' stroke='black' fill='lightgreen' x='40' y='120'>\n      svgR\n      <set attributeName='visibility' to='hidden' begin='0' end='0'/>\n  </text>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
@@ -72,9 +68,7 @@ svgR( wh=WH,
           )
     )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<text font-size="100" stroke="black" fill="lightgreen" x="50" y="120">svgR<set attributeName="x" to="550" begin="0" end="0"/></text>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='800' height='200'>\n  <text font-size='100' stroke='black' fill='lightgreen' x='50' y='120'>\n      svgR\n      <set attributeName='x' to='550' begin='0' end='0'/>\n  </text>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
@@ -98,9 +92,7 @@ test_that("test-animate-set-5", {
            )
      )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<text font-size="50" stroke="black" fill="lightgreen" x="50" y="120">svgR<set attributeName="x" to="200" begin="0" end="0"/><set attributeName="y" to="50" begin="0" end="0"/></text>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='800' height='200'>\n  <text font-size='50' stroke='black' fill='lightgreen' x='50' y='120'>\n      svgR\n      <set attributeName='x' to='200' begin='0' end='0'/>\n      <set attributeName='y' to='50' begin='0' end='0'/>\n  </text>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
@@ -256,9 +248,7 @@ svgR( wh=WH,
           )
     )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<text font-size="100" fill="lightgreen" stroke="black" x="40" y="100">svgR<set attributeName="font-family" to="fantasy" begin="0" end="0"/></text>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='800' height='200'>\n  <text font-size='100' fill='lightgreen' stroke='black' x='40' y='100'>\n      svgR\n      <set attributeName='font-family' to='fantasy' begin='0' end='0'/>\n  </text>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])

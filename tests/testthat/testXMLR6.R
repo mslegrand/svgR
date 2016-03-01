@@ -27,7 +27,7 @@ test_that("xmlNode asCharacter",{
 )
 #-----------------
 test_that("xmlDataNode",{
-  expectRes<-"<![CDATA[\nvar Roof;\nfunction(x)={x+1};\n]]> "
+  expectRes<-"<![CDATA[\nvar Roof;\nfunction(x)={x+1};\n]]>"
   dnD<-XMLCDataNode$new(.children=list("var Roof;","function(x)={x+1};" ))
   expect_equal(asCharacter(dnD), expectRes)
 })
@@ -35,7 +35,7 @@ test_that("xmlDataNode",{
 
 
 #-----------------
-test_that("xmlNode findNode",{
+test_that("XMLAbstractNode findNode",{
   nd2<-XMLAbstractNode$new("circle", attrs=list(x=100,y=50, radius=30))
   nd1<-XMLAbstractNode$new("rect", attrs=list(x=200,y=10, width=30, height=20))
   nd0<-XMLAbstractNode$new("g", 
@@ -51,6 +51,24 @@ test_that("xmlNode findNode",{
 })
 #-----------------
 
+ #-----------------
+ test_that("XMLTextNode findNode ",{
+   nd3<-XMLAbstractNode$new("text", attrs=list(x=100,y=50, radius=30))
+   nd2<-XMLAbstractNode$new("circle", attrs=list(x=100,y=50, radius=30))
+   nd1<-XMLAbstractNode$new("rect", attrs=list(x=200,y=10, width=30, height=20))
+   nd0<-XMLAbstractNode$new("g", 
+                            .children=list(nd1,nd2,nd3))
+   ndR<-XMLAbstractNode$new("svg", attrs=list(x=0,y=0, width=600, height=200),
+                            .children=list(nd0))
+   
+   
+   expect_identical(nd2, ndR$findNode( "radius", 30))
+   expect_identical(NULL, ndR$findNode( "radius", 10))
+   expect_identical(NULL, ndR$findNode( "beans", 30))
+   
+ })
+ #-----------------
+ 
 
 # 
 # #-----------------

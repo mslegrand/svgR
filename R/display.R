@@ -17,7 +17,7 @@ shinyShow<-function(svgMarkup=NULL, fileName=NULL,  rCode=NULL) {
     svgMarkup<-eval(rCode)
   }
   if(is.null(svgMarkup)){
-    stop('no svg to display')
+    base::stop('no svg to display')
   }
   svg<-svgMarkup
   app <- list(

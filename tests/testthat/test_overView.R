@@ -9,9 +9,7 @@ svgR( wh=c(100,50),
     tspan(dy=10, "line2")
   )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="100" height="50">
-<text x="20" y="10">line 1<tspan dy="10">line2 </tspan></text>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='100' height='50'>\n  <text x='20' y='10'>\n      line 1\n      <tspan dy='10'>line2</tspan>\n  </text>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])

@@ -182,6 +182,6 @@ mathSymbol<-function(laTeXSymbolSpec){
  if( laTeXSymbolSpec %in% names(TeXUniCode ) ) {
    TeXUniCode[laTeXSymbolSpec]
  } else {
-   stop("laTeX symbol not supported")
+   base::stop("laTeX symbol not supported")
  }
 }

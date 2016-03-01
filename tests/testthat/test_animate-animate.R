@@ -688,18 +688,7 @@ svgR(
             )
     )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="860">
-<text font-size="20" x="20" y="30">animate with chaining both text and shadow</text>
-<filter width="800" height="120" x="-10" y="-10" id="genid6">
-<feOffset in="SourceAlpha" dx="10" dy="10" result="genid4">
-<animate id="animateShadow1" attributeName="dx" from="10" to="-10" dur="0.5" begin="0" fill="freeze"/>
-<animate attributeName="dx" from="-10" to="10" dur="0.5" begin="animateShadow1.end+0.5" fill="freeze"/>
-</feOffset>
-<feGaussianBlur stdDeviation="3" in="genid4" result="genid5"/>
-<feBlend x="-10" width="800" in="SourceGraphic" in2="genid5"/>
-</filter>
-<text font-size="150" fill="lightblue" stroke="darkblue" filter="url(#genid6)" x="200" y="150">svgR<animate attributeName="x" from="200" to="210" dur="0.5" begin="0" fill="freeze"/><animate attributeName="x" from="210" to="200" dur="0.5" begin="animateShadow1.end+0.5" fill="freeze"/></text>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='1150' height='860'>\n  <text font-size='20' x='20' y='30'>animate with chaining both text and shadow</text>\n  <filter width='800' height='120' x='-10' y='-10' id='genid9'>\n      <feOffset in='SourceAlpha' dx='10' dy='10' result='genid7'>\n            <animate id='animateShadow1' attributeName='dx' from='10' to='-10' dur='0.5' begin='0' fill='freeze'/>\n            <animate attributeName='dx' from='-10' to='10' dur='0.5' begin='animateShadow1.end+0.5' fill='freeze'/>\n      </feOffset>\n      <feGaussianBlur stdDeviation='3' in='genid7' result='genid8'/>\n      <feBlend x='-10' width='800' in='SourceGraphic' in2='genid8'/>\n  </filter>\n  <text font-size='150' fill='lightblue' stroke='darkblue' filter='url(#genid9)' x='200' y='150'>\n      svgR\n      <animate attributeName='x' from='200' to='210' dur='0.5' begin='0' fill='freeze'/>\n      <animate attributeName='x' from='210' to='200' dur='0.5' begin='animateShadow1.end+0.5' fill='freeze'/>\n  </text>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])

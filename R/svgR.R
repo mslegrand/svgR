@@ -187,7 +187,7 @@ svgPreproc<-list(
      if(dim(x)[1]==2 & length(x)==6){ # so that the second dim need not be specified
        return(paste0("matrix(", paste(x, collapse=" "),")"))
       } else {
-        stop("expecting transfrom matrix to be dimension 2 x 3")
+        base::stop("expecting transfrom matrix to be dimension 2 x 3")
       }
     }
     return(paste(x, collapse=" "))
@@ -244,7 +244,7 @@ extractValues<-function(val,aNames){ #for example aNames=c("x","y","z")
     if(!inherits(val, 'matrix')){
       val<-matrix(unlist(val), N,)
     }
-    if(!(dim(val)[1]==N)) stop("animated combo attribute has incorrect 'value' count")
+    if(!(dim(val)[1]==N)) base::stop("animated combo attribute has incorrect 'value' count")
     val<-split(val, 1:N)
     names(val)<-aNames
   }
@@ -291,7 +291,7 @@ comboParamHandler<-function(attrs, cp ){
   unlist(attrs[nacp])->tmp
   unlist(cp[nacp])->names4tmp
   if(length(names4tmp)!=length(tmp)){
-    stop("combo param ",nacp,"length mistmatch")
+    base::stop("combo param ",nacp,"length mistmatch")
   }
   names4tmp->names(tmp)  
   tmp<-as.list(tmp)

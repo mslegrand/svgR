@@ -15,12 +15,7 @@ svgR(
       )
     )    
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="860">
-<text fill="darkblue" font-size="20" x="30" y="40">Animate Transform:  type=translate</text>
-<rect fill="lightblue" stroke="blue" opacity="0.5" width="40" height="40" x="80" y="80">
-<animateTransform attributeName="transform" type="translate" from="0,0" to="600,0" begin="0" dur="5"/>
-</rect>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='1150' height='860'>\n  <text fill='darkblue' font-size='20' x='30' y='40'>Animate Transform:  type=translate</text>\n  <rect fill='lightblue' stroke='blue' opacity='0.5' width='40' height='40' x='80' y='80'>\n      <animateTransform attributeName='transform' type='translate' from='0,0' to='600,0' begin='0' dur='5'/>\n  </rect>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
@@ -89,24 +84,7 @@ svgR(
     )
   )
 )->res
-expected_res<-"<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ev=\"http://www.w3.org/2001/xml-events\" width=\"860\">
-<text fill=\"red\" font-size=\"60\" visibility=\"hidden\" x=\"300\" y=\"80\">I'm busy<set attributeName=\"visibility\" to=\"visible\" begin=\"0\" dur=\"6.25\"/></text>
-<g>
-<rect fill=\"blue\" fill-opacity=\"0.175\" transform=\"rotate(30,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.21\" transform=\"rotate(60,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.245\" transform=\"rotate(90,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.28\" transform=\"rotate(120,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.315\" transform=\"rotate(150,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.35\" transform=\"rotate(180,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.385\" transform=\"rotate(210,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.42\" transform=\"rotate(240,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.455\" transform=\"rotate(270,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.49\" transform=\"rotate(300,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.525\" transform=\"rotate(330,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<rect fill=\"blue\" fill-opacity=\"0.56\" transform=\"rotate(360,150,50) translate(0,10)\" width=\"3\" height=\"10\" x=\"150\" y=\"50\"/>
-<animateTransform attributeName=\"transform\" type=\"rotate\" from=\"0,150,50\" to=\"360,150,50\" begin=\"0\" dur=\"1.25\" repeatCount=\"5\"/>
-</g>
-</svg>"
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' ev='http://www.w3.org/2001/xml-events' width='1150' height='860'>\n  <text fill='red' font-size='60' visibility='hidden' x='300' y='80'>\n      I'm busy\n      <set attributeName='visibility' to='visible' begin='0' dur='6.25'/>\n  </text>\n  <g>\n      <rect fill='blue' fill-opacity='0.175' transform='rotate(30,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.21' transform='rotate(60,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.245' transform='rotate(90,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.28' transform='rotate(120,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.315' transform='rotate(150,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.35' transform='rotate(180,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.385' transform='rotate(210,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.42' transform='rotate(240,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.455' transform='rotate(270,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.49' transform='rotate(300,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.525' transform='rotate(330,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <rect fill='blue' fill-opacity='0.56' transform='rotate(360,150,50) translate(0,10)' width='3' height='10' x='150' y='50'/>\n      <animateTransform attributeName='transform' type='rotate' from='0,150,50' to='360,150,50' begin='0' dur='1.25' repeatCount='5'/>\n  </g>\n</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])

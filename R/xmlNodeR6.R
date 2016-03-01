@@ -35,8 +35,13 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
        good<-sapply(.children, function(child){
          !is.null(child) & inherits(child,"XMLAbstractNode")
         })
-       stopifnot(all(good))
-       self$setChildren(.children)
+       #stopifnot(all(good))
+       if(length(good)>0 ){
+         kids<-.children[good]
+         self$setChildren(kids)
+       } else {
+         self$setChildren( list() )
+       }  
      }  
     },
     xmlName =function(){self$tagName},
@@ -176,9 +181,19 @@ XMLTextNode<-R6Class("XMLTextNode",
               lock_objects = FALSE,
               public =list(
                 initialize = function(tag,  .children){
-                  self$tag <- "textData" 
+                  self$tagName <- "textData" 
                   attrs<-NULL
                   if (!missing(.children)) self$children <- .children 
+                },
+                findNode=function(attrName, attrValue){
+                  stopifnot(inherits(attrName,c("character")))
+                  stopifnot(inherits(attrValue,c("numeric", "character")))
+                  if(!is.null(self$attrs[[attrName]]) && 
+                       self$attrs[[attrName]]==attrValue){
+                    return(self)
+                  } else {
+                    return(NULL)
+                  }
                 },
                 pretty=function(indent=0){
                   if(length(self$children)==0){
@@ -190,7 +205,8 @@ XMLTextNode<-R6Class("XMLTextNode",
                 }
               ) 
 )
-  
+
+
 XMLScriptNode<-R6Class("XMLScriptNode",
  inherit=XMLAbstractNode,
  lock_objects = FALSE,
@@ -200,6 +216,16 @@ XMLScriptNode<-R6Class("XMLScriptNode",
      if (!missing(attrs)) self$attrs <- attrs 
      if (!missing(.children)) self$children <- .children 
    },
+  findNode=function(attrName, attrValue){
+    stopifnot(inherits(attrName,c("character")))
+    stopifnot(inherits(attrValue,c("numeric", "character")))
+    if(!is.null(self$attrs[[attrName]]) && 
+         self$attrs[[attrName]]==attrValue){
+      return(self)
+    } else {
+      return(NULL)
+    }
+  },
    pretty=function(indent=""){
      rtv<-paste0("<",self$tagName)
      indentKid= paste0("  ",indent)
