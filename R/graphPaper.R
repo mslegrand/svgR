@@ -1,6 +1,5 @@
 
 #---------------------------------------------------------------
-# graphPaper background
 
 #' @name graphPaper
 #' @title graphPaper Internal Compound

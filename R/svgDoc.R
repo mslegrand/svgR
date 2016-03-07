@@ -107,6 +107,7 @@ as.character.svgDoc<-function(x, ...){
   }
 }
 
+
 #' @method "print" svgDoc
 #' @export
 print.svgDoc<-function(x, ...){

@@ -19,6 +19,7 @@ toCompound<-function(f){
 #     bdTmp<-body(tmplateFn)
 #     bdTmp[[5]]<-bd0
 #     body(f)<-bdTmp
+    
     environment(f)<-parent.frame()
     class(f)<-c(class(f),'Component')
   }
