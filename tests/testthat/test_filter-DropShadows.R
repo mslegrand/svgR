@@ -1,7 +1,7 @@
 context("filter-DropShadows")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-filter-DropShadows-1", {
 WH=c(800, 120) # window rect

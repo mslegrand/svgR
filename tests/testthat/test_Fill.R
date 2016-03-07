@@ -1,7 +1,7 @@
 context("Fill")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-Fill-1", {
 colors=c('blue','green','white','orange','red')

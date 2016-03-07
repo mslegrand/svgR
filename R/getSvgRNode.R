@@ -75,36 +75,33 @@
 }
 
 
-# getDefsNode<-function(anyNode){
-#   xmlElementsByTagName(xmlRoot(anyNode), 'defs')->defsNodelist
-#   if(length(defsNodelist)==0){
-#     newXMLNode('defs')->defsnode
-#     defsNodelist<-list(defsnode)
-#     #works but I am not confortable with this
-#     addChildren(xmlRoot(anyNode), kids=defsNodelist, at=0)
-#   }
-#   defsNodelist[[1]]
-# }
 
-genId.new<-function(gname="genid"){
-  attr.no<-1
-  function(){
-    attr.no<<-attr.no+1
-    attr.id<-paste0("genid", attr.no)
-  } 
-}
-genId<-genId.new()
 
-#' finds the attr.name in the attrs of the node
-#' if in doesnt exist add a genId to it.
+#' Get the attribute value having the name attr.name in the given node
+#' 
+#' @param attr.name the name of the attribute 
+#' @param node the node on which the value is sought
+#' 
+#' @note If the attribute with name attr.name fails to exits on the
+#' given node, then an attribute id is generated and added to  the
+#' node
 getsafeNodeAttr<-function(attr.name, node){
   if(attr.name %in% names(node$attrs)){
     return(node$attrs[[attr.name]])
   } else {
     attr.id<-genId()
     node$appendAttr(attr.name, attr.id)
-    #node$attrs[[attr.name]]<-attr.id
   }
   return(attr.id)
 }
 
+#getDefsNode<-function(anyNode){
+  #   xmlElementsByTagName(xmlRoot(anyNode), 'defs')->defsNodelist
+  #   if(length(defsNodelist)==0){
+  #     newXMLNode('defs')->defsnode
+  #     defsNodelist<-list(defsnode)
+  #     #works but I am not confortable with this
+  #     addChildren(xmlRoot(anyNode), kids=defsNodelist, at=0)
+  #   }
+  #   defsNodelist[[1]]
+  # }

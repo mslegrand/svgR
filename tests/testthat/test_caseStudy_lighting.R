@@ -1,7 +1,7 @@
 context("caseStudy_lighting")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-caseStudy_lighting-1", {
 # 

@@ -1,7 +1,7 @@
 context("filter-ShinyBevel")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-filter-ShinyBevel-1", {
 WH=c(800, 200) # window rect

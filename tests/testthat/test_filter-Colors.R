@@ -1,7 +1,7 @@
 context("filter-Colors")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-filter-Colors-1", {
 WH=c(800, 100) # window rect

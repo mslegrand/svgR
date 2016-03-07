@@ -1,7 +1,7 @@
 context("overView")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-overView-1", {
 svgR( wh=c(100,50),

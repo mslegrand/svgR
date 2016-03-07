@@ -1,7 +1,7 @@
 context("Shapes")
 
 
-assign("attr.no", 1, envir=environment(svgR:::genId))
+assign("count", 1, envir=environment(svgR:::genId))
 # -----------------------------------------------------
 test_that("test-Shapes-1", {
 WH<-c(600, 100) # window rect

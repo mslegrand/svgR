@@ -1,7 +1,7 @@
 context("filter-Textures")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-filter-Textures-1", {
 WH=c(800, 100) # window rect

@@ -1,7 +1,7 @@
 context("Coordinates")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 # test-Coordinates-1 Ommited!!!
 

@@ -1,7 +1,7 @@
 context("text")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-text-1", {
 WH=c(800, 400) # window rect

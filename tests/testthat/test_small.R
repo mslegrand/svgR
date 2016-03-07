@@ -1,6 +1,6 @@
 context("Simple Elements")
 library(stringr)
-#assign("attr.no", 1, envir=environment(genId))
+#assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 
 

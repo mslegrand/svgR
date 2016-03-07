@@ -6,13 +6,11 @@
 #Helper functions---
 named <- function(x) {
   if (is.null(names(x))) return(NULL)
-  #x<-x[names(x) != ""]
   x<-x[names(x) != "" & names(x)!="list"]
   # this is where we do all the pre substitution
   for(sl in preSubList){
     names(x)<-gsub(sl$sfrom, sl$sto, names(x) )
   }    
-  #names(x)<-gsub("\\.","-", names(x)) # dot to dashes 
   x
 }
 
@@ -22,7 +20,6 @@ unnamed <- function(x) {
   } else{
     rtv<-c(x[names(x) == ""], unlist(x[names(x)=="list"]))
   }
-  # sapply(rtv, function(x)print(class(x)))
   rtv  
 }
 
@@ -285,7 +282,7 @@ attrSplitX<-function(attrs,  a1, a2, a12){
 # cp is a combo param list: 
 # for example
 # cp=list(xy=c('x','y'), in12=c('in', 'in2'))
-#used in eleDefs
+# used in eleDefs
 comboParamHandler<-function(attrs, cp ){
   nacp<-names(cp)[match(names(cp),names(attrs),0)!=0]
   unlist(attrs[nacp])->tmp
@@ -339,33 +336,4 @@ preProcAnimate<-function(attrs){
   attrs
 }
 
-
-#}
-#"cmm-wsp-list", "number-optional-number", "path-data-list", "transform-list", 
-#"wsp-list"))
-
-
-#END Helper functions---
-
-# ggetNode <- function (rootNode, id) 
-# {
-#   if(id!='root'){
-#     kidV <- getNodeSet(rootNode, paste("//*[@id=\"", id, "\"]", sep=""))
-#   } else {
-#     kidV <- list(rootNode)
-#   }
-#   if (length(kidV)==0){
-#     stop("Cannot find node with id=",id)
-#   }
-#   kidV
-# }
-# 
-# getNode<-function(rootNode,id){
-#   if(id=="root"){
-#     kidV<-getNodeSet(rootNode, paste( '//*[@id="',id,'"]' ) )
-#   } else {
-#     kidV<-list(rootNode)
-#   }
-#   kidV
-# }         
 

@@ -9,16 +9,17 @@
 #'
 toCompound<-function(f){
   if(!inherits(f, "Compound")){
-    tmplateFn<-function(...){
-      el<-get("eleDefs", envir = parent.frame() )
-      tmp<-c(el,list(eleDefs=el))
-      list2env(tmp, environment())
-      xxx
-    }
-    bd0<-body(f)
-    bdTmp<-body(tmplateFn)
-    bdTmp[[5]]<-bd0
-    body(f)<-bdTmp
+#     tmplateFn<-function(...){
+#       el<-get("eleDefs", envir = parent.frame() )
+#       tmp<-c(el,list(eleDefs=el))
+#       list2env(tmp, environment())
+#       xxx
+#     }
+#     bd0<-body(f)
+#     bdTmp<-body(tmplateFn)
+#     bdTmp[[5]]<-bd0
+#     body(f)<-bdTmp
+    environment(f)<-parent.frame()
     class(f)<-c(class(f),'Component')
   }
   f

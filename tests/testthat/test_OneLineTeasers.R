@@ -1,7 +1,7 @@
 context("OneLineTeasers")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-OneLineTeasers-1", {
 svgR( wh=c(600, 100), circle(cxy=c(200,50),r=50, fill='lightgreen') )->res

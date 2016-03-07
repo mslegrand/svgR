@@ -1,7 +1,7 @@
 context("filter-Lighting")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-filter-Lighting-1", {
 ## 

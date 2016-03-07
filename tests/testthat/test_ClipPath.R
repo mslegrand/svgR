@@ -1,7 +1,7 @@
 context("ClipPath")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-ClipPath-1", {
 WH=c(600, 100) # window rect

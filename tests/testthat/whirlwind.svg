@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="250">
+  <filter id="genid19">
+    <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="genid16"/>
+    <feSpecularLighting surfaceScale="6" specularConstant="1" specularExponent="30" lighting-color="yellow" in="genid16" result="genid17">
+      <fePointLight x="40" y="-30" z="200"/>
+    </feSpecularLighting>
+    <feComposite operator="in" in="genid17" in2="SourceAlpha" result="genid18"/>
+    <feMerge>
+      <feMergeNode in="SourceGraphic"/>
+      <feMergeNode in="genid18"/>
+    </feMerge>
+  </filter>
+  <g stroke="black" filter="url(#genid19)">
+    <text fill="darkblue" font-size="100" font-family="san serif" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="200" y="125">svgR</text>
+    <text fill="darkblue" font-size="60" font-family="fantasy" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="560" y="62.5">Whirlwind Tutorial</text>
+    <circle r="99" stroke-width="10" fill="none" cx="200" cy="125"/>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 context("Transforms")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 # test-Transforms-1 Ommited!!!
 

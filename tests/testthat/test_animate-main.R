@@ -1,7 +1,7 @@
 context("animate-main")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-animate-main-1", {
 # not run

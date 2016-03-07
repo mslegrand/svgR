@@ -99,7 +99,7 @@ svgRoot<-function( width, height, args){
 
 #' @method "as.character" svgDoc
 #' @export
-as.character.svgDoc<-function(x){
+as.character.svgDoc<-function(x, ...){
   if(!is.null(x$root)){
     asCharacter(x$root)
   } else {
@@ -109,7 +109,7 @@ as.character.svgDoc<-function(x){
 
 #' @method "print" svgDoc
 #' @export
-print.svgDoc<-function(x){
+print.svgDoc<-function(x, ...){
   invisible(cat(as.character(x))) 
 }
 

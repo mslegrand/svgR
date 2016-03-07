@@ -1,7 +1,7 @@
 context("animate-animateTransform")
 
 
-assign("attr.no", 1, envir=environment(genId))
+assign("count", 1, envir=environment(genId))
 # -----------------------------------------------------
 test_that("test-animate-animateTransform-1", {
 WH<-c(800,200)
