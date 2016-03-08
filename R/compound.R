@@ -1,30 +1,37 @@
 
+getEssentials<-function(){
+  c(eleDefs,
+    list(
+      graphPaper=graphPaper, 
+      playBar=playBar, 
+      playButton.click=playButton.click,
+      toggleButton.click=toggleButton.click, 
+      toggleBar=toggleBar
+    )  
+  )
+}
+
+
+
 
 #' Wraps an R function to be used as a compounds
 #'
 #' @export
 #' @param f an R function
-#'
+#' @param envir environment for this function (default is parent.frame)
 #' @return A function that evaluates the f in the svg environment.
 #'
-toCompound<-function(f){
+toCompound<-function(f, envir=parent.frame()){
   if(!inherits(f, "Compound")){
-#     tmplateFn<-function(...){
-#       el<-get("eleDefs", envir = parent.frame() )
-#       tmp<-c(el,list(eleDefs=el))
-#       list2env(tmp, environment())
-#       xxx
-#     }
-#     bd0<-body(f)
-#     bdTmp<-body(tmplateFn)
-#     bdTmp[[5]]<-bd0
-#     body(f)<-bdTmp
-    
-    environment(f)<-parent.frame()
+    bd1<-as.list(body(f)[-1])
+    bd0<-quote(list2env(svgR:::getEssentials(), environment()))
+    body(f)<-as.call(c(as.name("{"),bd0, bd1))
+    environment(f)<-envir
     class(f)<-c(class(f),'Component')
   }
   f
 }
+
 
 #' Convenience operator for creating compounds
 #'
@@ -40,7 +47,7 @@ toCompound<-function(f){
   name<-substitute(name)
   if (!is.name(name)) base::stop("Left-hand side must be a name")
   name<-deparse(name)
-  f<-toCompound(f)
+  f<-toCompound(f, envir=parent.frame())
   assign(name,f, envir=parent.frame())
   invisible()
 }

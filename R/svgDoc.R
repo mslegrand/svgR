@@ -2,7 +2,6 @@
 require("XML")
 require("stringr")
 require("R6")
-#require("data.table")
 
 
 
@@ -22,6 +21,7 @@ svgR<-function( ... ){
   enames<-names( parent.env(environment() ) )
   indx<-setdiff(names(pf),enames)
   el<-pf[indx]
+  essentials<-getEssentials()
   
   list2env(el, environment() )
   s<-substitute(list(...)) 

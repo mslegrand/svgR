@@ -26,7 +26,7 @@ graphPaper <- function(wh=c(600,200), dxy=c(10, 10), labels=FALSE ){
   }
   g( stroke.width=1,
      font.size=10,
-     stroke="lightgrey",
+     stroke="grey",
      grph
   )
 }
