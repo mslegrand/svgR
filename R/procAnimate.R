@@ -5,18 +5,24 @@
 #  to return a list with names aNames, containg the time seq val as vectors
 #  we assume the input val is one of 3 forms
 #  1. a named list with names==aNames and values the corresponding vals
-#  2. a matrix whose rows vals for each aMame in aNames
+#  2. a matrix whose rows values for each aName in aNames
 #  3. a unnamed list which, cbinds to the above matrix.
 extractValues<-function(val,aNames){ #for example aNames=c("x","y","z")
   # the strategy: convert val to a matrix with rows corresponding
   # to desired aName, then convert to list row-wise
   N<-length(aNames)
+  stopifnot(N>0) #should be impossible!
   # if not in desired output form
   if(!(inherits(val,"list") & setequal( names(val), aNames) ) ){ #ow. this is what we wanted  
     if(!inherits(val, 'matrix')){
       val<-matrix(unlist(val), N,)
     }
-    if(!(dim(val)[1]==N)) base::stop("animated combo attribute has incorrect 'value' count")
+    if(!(dim(val)[1]==N)){
+      cbAttr<-paste(aNames)
+      emssg1<-paste("animated combo attribut, ",cbAttr,", has incorrect 'value' count,\n")
+      emssg2<-paste("expectiong",N,"got ",dim(val)[1],"\n")
+      base::stop(c(emssg1,emssg2))
+    } 
     val<-split(val, 1:N)
     names(val)<-aNames
   }
@@ -50,8 +56,7 @@ animateOneParamExpand<-function(attrs, paramName){
     if(!is.null(attributeType) && attributeType!="CSS"){
       attributeName<-attrs[['attributeName']]
       if(attributeName %in% ani.df$V1){
-        #param<-attrs[[paramName]]
-        tva<-ani.df[which(ani.df$V1==attributeName),1]
+         tva<-ani.df[which(ani.df$V1==attributeName),1]
         attrs[[paramName]]=svgPreproc[[tva]](attrs[[paramName]])
       }
     } 
