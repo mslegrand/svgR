@@ -79,9 +79,9 @@ textCircle %<c-% function(txt, cxy, r=120,  fill='lightblue', stroke='darkblue')
 }
 
 matrix2Arrows %<c-% function( points=matrix(c(0,0,100,100), 2,2), ... ){
-  if(length(points)%%4 !=0){ stop("bad point given to matrix2Arrows") }
+  if(length(points)%%4 !=0){ base::stop("bad point given to matrix2Arrows") }
   if( inherits(points, "matrix") && nrow(points)%%2!=0){
-    stop("points must be a  2 by 2n matrix")
+    base::stop("points must be a  2 by 2n matrix")
   }
   mid<-newId()
   points<-matrix(points, 4, )
