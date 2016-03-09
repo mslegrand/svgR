@@ -24,7 +24,6 @@ shinyShow<-function(svgMarkup=NULL, fileName=NULL,  rCode=NULL) {
     ui = bootstrapPage(  
         htmlOutput("svg") ,
         actionButton("submit", "Dismiss")
-        #submitButton("submit", "Dimiss!")
         ) ,
     server = function(input, output) {
       output$svg<-renderUI({ HTML(svg) }  )  

@@ -52,13 +52,6 @@ svgR<-function( ... ){
     )                                   
   })  
   
-#   s<-substitute(list(...)) 
-#   args<-eval(s )
-#   
-
-  
-  #to extract namespace or make default
-  
   doc<-structure(list(
     root=svgRoot( wh=wh, args=argsL)
   ),
@@ -66,6 +59,7 @@ svgR<-function( ... ){
   ) 
   doc
 }
+
 
 
 #called by svgR
@@ -85,33 +79,19 @@ svgRoot<-function( wh, args){
   attrs <- named(args)
   attrs <- comboParamHandler(attrs, list(wh = c("width", "height")))
   
-#   #this has no meaning in outermost svg, ie root
-#   if(is.null(attrs$width)){
-#     attrs$width=width
-#   }
-#   if(is.null(attrs$height)){
-#     attrs$height=height
-#   }
+  attrs<-preprocSpAttrs(attrs, 
+          specs=c("requiredExtensions", "requiredFeatures", "class", "preserveAspectRatio"), 
+          sep="wsp-list"
+          )
+  attrs<-preprocSpAttrs(attrs, 
+                      specs=c("systemLanguage", "viewBox"),
+                      sep="cmm-list"
+          )
+  attrs<-preprocSpAttrs(attrs, 
+                      specs=c("style"),
+                      sep="cln-scln-list"
+          )
 
-  indx <- sapply(names(attrs), function(x) grepl(paste("(^| )",
-                                                     x, "($| )", sep = ""), "requiredExtensions requiredFeatures class preserveAspectRatio"))
-  attrs[indx] <- lapply(attrs[indx], function(x) {
-    svgPreproc[["wsp-list"]](x)
-  })
-  indx <- sapply(names(attrs),
-                 function(x){
-                   grepl( paste("(^| )", x,  "($| )", sep = ""),
-                          "systemLanguage viewBox")
-                 })
-  attrs[indx] <- lapply(attrs[indx], function(x) {
-    svgPreproc[["cmm-list"]](x)
-  })
-  indx <- sapply(names(attrs), function(x){
-    grepl(paste("(^| )",  x, "($| )", sep = ""), "style")
-  })
-  attrs[indx] <- lapply(attrs[indx], function(x) {
-    svgPreproc[["cln-scln-list"]](x)
-  }) 
   attrs<-c(namespaceDefinitions, attrs)
 
   root<-XMLAbstractNode$new("svg", 
