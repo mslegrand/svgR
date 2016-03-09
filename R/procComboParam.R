@@ -19,7 +19,7 @@ mapCenteredXY<-function(attrs){
         warning=function(w){stop("height cannot be converted to numeric")}
       )
       wh<-c(w, h)
-    } else if(!is.nulls[["wh"]]){
+    } else if(!is.null[["wh"]]){
       tryCatch( 
         wh<-as.numeric(attrs[["wh"]]),
         error=function(e){stop("wh cannot be converted to numeric")}, 
