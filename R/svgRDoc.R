@@ -66,7 +66,7 @@ svgR<-function( ... ){
   })  
   
   doc<-structure(list(
-    root=svgRoot( wh=wh, args=argsL)
+    root=svgRRoot( wh=wh, args=argsL)
   ),
     class="svgDoc"
   ) 

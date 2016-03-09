@@ -1,6 +1,6 @@
 
 #called by svgR
-svgRoot<-function( wh, args){
+svgRRoot<-function( wh, args){
   #specific to svgRoot
   
   #   namespaceDefinitions<-as.list(namespaceDefinitions)
