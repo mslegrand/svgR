@@ -184,7 +184,8 @@ svgPreproc<-list(
      if(dim(x)[1]==2 & length(x)==6){ # so that the second dim need not be specified
        return(paste0("matrix(", paste(x, collapse=" "),")"))
       } else {
-        base::stop("expecting transfrom matrix to be dimension 2 x 3")
+        
+        base::stop("expecting transform matrix to be dimension 2 x 3")
       }
     }
     return(paste(x, collapse=" "))
@@ -281,14 +282,20 @@ attrSplitX<-function(attrs,  a1, a2, a12){
 
 # cp is a combo param list: 
 # for example
-# cp=list(xy=c('x','y'), in12=c('in', 'in2'))
+# cp=list(xy=c('x','y'), in12=c('in', 'in2'), wh=c('width','height'))
 # used in eleDefs
 comboParamHandler<-function(attrs, cp ){
   nacp<-names(cp)[match(names(cp),names(attrs),0)!=0]
   unlist(attrs[nacp])->tmp
   unlist(cp[nacp])->names4tmp
   if(length(names4tmp)!=length(tmp)){
-    base::stop("combo param ",nacp,"length mistmatch")
+    for(name in nacp){ #attempt to find exact name length mismatch
+      if(length(attrs[[name]])!=length(cp[[name]])){
+        base::stop("combo parameter ",name," length mismatch")
+      }     
+    } 
+    #give up, but somethings wrong
+    base::stop("combo param ",paste(nacp,collapse=" ")," length mismatch")
   }
   names4tmp->names(tmp)  
   tmp<-as.list(tmp)
