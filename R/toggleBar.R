@@ -15,7 +15,7 @@ toggleButtonId<-function(choice){
 # the user svgR application,
 toggleButton.click<-function(choice){
   if(!(choice %in% c('left','right'))){
-    stop("toggle button choice can be either 'left' or 'right' ")
+    base::stop("toggle button choice can be either 'left' or 'right' ")
   }   
   return(paste0( toggleButtonId(choice), ".click" ) )
 }
