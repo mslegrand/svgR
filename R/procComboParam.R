@@ -4,26 +4,26 @@ mapCenteredXY<-function(attrs){
   if( !is.null(attrs[["cxy"]])) {
     tryCatch( 
       cxy<-as.numeric(attrs[["cxy"]]),
-      error=function(e){stop("cxy cannot be converted to numeric")}, 
-      warning=function(w){stop("cxy cannot be converted to numeric")}
+      error=function(e){base::stop("cxy cannot be converted to numeric")}, 
+      warning=function(w){base::stop("cxy cannot be converted to numeric")}
     )
     if(!is.null(attrs[["width"]]) & !is.null(attrs[["height"]]) ){
       tryCatch( 
         w<-as.numeric(attrs[["width"]]),
-        error=function(e){stop("width cannot be converted to numeric")}, 
-        warning=function(w){stop("width cannot be converted to numeric")}
+        error=function(e){base::stop("width cannot be converted to numeric")}, 
+        warning=function(w){base::stop("width cannot be converted to numeric")}
       )
       tryCatch( 
         h<-as.numeric(attrs[["height"]]),
-        error=function(e){stop("height cannot be converted to numeric")}, 
-        warning=function(w){stop("height cannot be converted to numeric")}
+        error=function(e){base::stop("height cannot be converted to numeric")}, 
+        warning=function(w){base::stop("height cannot be converted to numeric")}
       )
       wh<-c(w, h)
     } else if(!is.null[["wh"]]){
       tryCatch( 
         wh<-as.numeric(attrs[["wh"]]),
-        error=function(e){stop("wh cannot be converted to numeric")}, 
-        warning=function(w){stop("wh cannot be converted to numeric")}
+        error=function(e){base::stop("wh cannot be converted to numeric")}, 
+        warning=function(w){base::stop("wh cannot be converted to numeric")}
       )
     }
     if(!exists("wh")){
