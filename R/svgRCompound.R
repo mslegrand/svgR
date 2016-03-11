@@ -1,5 +1,6 @@
 
 getEssentials<-function(){
+  eleDefs<-
   c(eleDefs,
     list(
       graphPaper=graphPaper, 
@@ -41,7 +42,7 @@ toCompound<-function(f, envir=parent.frame()){
 #'
 #' @return A function that evaluates the body of f in the calling environment.
 #'
-#' @usage circir %<c-% function(cxy,r,...){g(circle(cxy=cxy, r=r,...), circle(cxt=cxy, r=2*r, ...))}
+#' @usage name \%<c-\% f
 #'
 `%<c-%`<-function(name,f){
   name<-substitute(name)

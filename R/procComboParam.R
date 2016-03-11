@@ -27,7 +27,7 @@ mapCenteredXY<-function(attrs){
       )
     }
     if(!exists("wh")){
-      stop("cannot center due to missing wh (width, height)")
+      base::stop("cannot center due to missing wh (width, height)")
     }
     attrs[["xy"]]<- cxy - wh/2
     attrs[["cxy"]]<-NULL

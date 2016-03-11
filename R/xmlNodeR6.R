@@ -254,7 +254,7 @@ XMLCDataNode<-R6Class("XMLCDataNode",
               lock_objects = FALSE,
               public =list(
                 initialize = function( .children){
-                  self$tag <- "textData" 
+                  self$tag <- "cData" 
                   attrs<-NULL
                   if (!missing(.children)) self$children <- .children 
                 },

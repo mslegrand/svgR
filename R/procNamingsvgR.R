@@ -62,6 +62,27 @@ promoteUnamedLists<-function(args){
 ml3
 }
 
+checkChild<-function(kid, parentTag){
+  if(!inherits(kid, "XMLAbstractNode" )){
+    base::stop(parentTag, " encountered a non xml child\n")
+  }
+  kname<-kid$tagName
+  if( !(kname %in% contentElements[[parentTag]]) ){
+    emssg<-paste(
+      kname,
+      "is not a permissable content element of", 
+      parentTag,
+      "\n"
+    )
+    base::stop(emssg)
+  }
+  kid
+}
+
+checkKids<-function(kids, parentTag){
+    kids<-lapply(kids, function(kid) checkChild(kid, parentTag) )
+}
+
 # extracts only the unamed args (if any)
 allGoodChildern<-function(args){
   if (is.null(names(args))) {

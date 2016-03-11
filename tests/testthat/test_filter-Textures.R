@@ -1379,7 +1379,7 @@ svgR( wh=WH,
           feMergeNode(in1= feFlood(xy=c(0,0), wh=WH,
           flood.color="#CCAC6C") ),
           feMergeNode(
-            feColorMatrix( type="matrix", values=m , 
+            in1=feColorMatrix( type="matrix", values=m , 
               in1=feTurbulence( baseFrequency=c(.008,.25), numOctaves=1)
             )
           )
@@ -1392,24 +1392,23 @@ svgR( wh=WH,
     )
   )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<filter id="genid194">
-<feFlood flood-color="#CCAC6C" width="800" height="200" x="0" y="0" result="genid190"/>
-<feTurbulence baseFrequency="0.008,0.25" numOctaves="1" result="genid191"/>
-<feMerge result="genid192">
-<feMergeNode in="genid190"/>
-<feMergeNode>
-<feColorMatrix type="matrix" values="c(1, 0, 0, 1, 0, -1, 0, -1, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0)" in="genid191"/>
-</feMergeNode>
-</feMerge>
-<feTurbulence baseFrequency="0.04,0.2" numOctaves="1" result="genid193"/>
-<feDisplacementMap scale="9" xChannelSelector="R" yChannelSelector="B" in="genid192" in2="genid193"/>
-</filter>
-<clipPath id="genid195">
-<text font-size="250" font-face="bold" text-anchor="middle" dominant-baseline="central" x="400" y="100">Wood</text>
-</clipPath>
-<rect stroke-width="2" stroke="black" filter="url(#genid194)" clip-path="url(#genid195)" width="800" height="200" x="0" y="0"/>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' width='800' height='200'>
+  <filter id='genid195'>
+      <feFlood flood-color='#CCAC6C' width='800' height='200' x='0' y='0' result='genid190'/>
+      <feTurbulence baseFrequency='0.008,0.25' numOctaves='1' result='genid191'/>
+      <feColorMatrix type='matrix' values=c(\"'1'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'-1'\", \"'0'\", \"'-1'\", \"'0'\", \"'0'\", \"'-1'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\") in='genid191' result='genid192'/>
+      <feMerge result='genid193'>
+            <feMergeNode in='genid190'/>
+            <feMergeNode in='genid192'/>
+      </feMerge>
+      <feTurbulence baseFrequency='0.04,0.2' numOctaves='1' result='genid194'/>
+      <feDisplacementMap scale='9' xChannelSelector='R' yChannelSelector='B' in='genid193' in2='genid194'/>
+  </filter>
+  <clipPath id='genid196'>
+      <text font-size='250' font-face='bold' text-anchor='middle' dominant-baseline='central' x='400' y='100'>Wood</text>
+  </clipPath>
+  <rect stroke-width='2' stroke='black' filter='url(#genid195)' clip-path='url(#genid196)' width='800' height='200' x='0' y='0'/>
+</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
@@ -1434,7 +1433,7 @@ svgR( wh=WH,
           feMergeNode(in1= feFlood(xy=c(0,0), wh=WH,
           flood.color="#CCDCDC"), flood.opacity=.5 ),
           feMergeNode(
-            feColorMatrix( type="matrix", values=m , 
+            in1=feColorMatrix( type="matrix", values=m , 
               in1=feTurbulence( baseFrequency=c(.2,.3), numOctaves=1)
             )
           )
@@ -1447,26 +1446,25 @@ svgR( wh=WH,
     )
   )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<filter id="genid200">
-<feFlood flood-color="#CCDCDC" width="800" height="200" x="0" y="0" result="genid196"/>
-<feTurbulence baseFrequency="0.2,0.3" numOctaves="1" result="genid197"/>
-<feMerge result="genid198">
-<feMergeNode in="genid196" flood-opacity="0.5"/>
-<feMergeNode>
-<feColorMatrix type="matrix" values="c(3, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0)" in="genid197"/>
-</feMergeNode>
-</feMerge>
-<feTurbulence baseFrequency="0.006,0.004" numOctaves="2" result="genid199"/>
-<feDisplacementMap scale="9" xChannelSelector="R" yChannelSelector="B" in="genid198" in2="genid199"/>
-</filter>
-<clipPath id="genid201">
-<text font-size="250" font-face="bold" text-anchor="middle" dominant-baseline="central" x="400" y="100">Stucco</text>
-</clipPath>
-<rect stroke-width="2" stroke="black" filter="url(#genid200)" clip-path="url(#genid201)" width="800" height="200" x="0" y="0"/>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' width='800' height='200'>
+  <filter id='genid202'>
+      <feFlood flood-color='#CCDCDC' width='800' height='200' x='0' y='0' result='genid197'/>
+      <feTurbulence baseFrequency='0.2,0.3' numOctaves='1' result='genid198'/>
+      <feColorMatrix type='matrix' values=c(\"'3'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'-1'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\") in='genid198' result='genid199'/>
+      <feMerge result='genid200'>
+            <feMergeNode in='genid197' flood-opacity='0.5'/>
+            <feMergeNode in='genid199'/>
+      </feMerge>
+      <feTurbulence baseFrequency='0.006,0.004' numOctaves='2' result='genid201'/>
+      <feDisplacementMap scale='9' xChannelSelector='R' yChannelSelector='B' in='genid200' in2='genid201'/>
+  </filter>
+  <clipPath id='genid203'>
+      <text font-size='250' font-face='bold' text-anchor='middle' dominant-baseline='central' x='400' y='100'>Stucco</text>
+  </clipPath>
+  <rect stroke-width='2' stroke='black' filter='url(#genid202)' clip-path='url(#genid203)' width='800' height='200' x='0' y='0'/>
+</svg>"
     res <- as.character(res)
-    rlines <- str_trim(strsplit(res, "\n")[[1]])
+rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
     expect_equal(length(rlines), length(elines))
     for (i in length(rlines)) {
@@ -1489,7 +1487,7 @@ svgR( wh=WH,
           feMergeNode(in1= feFlood(xy=c(0,0), wh=WH,
           flood.color="#FFDCDC"), flood.opacity=.5 ),
           feMergeNode(
-            feColorMatrix( type="matrix", values=m , 
+            in1=feColorMatrix( type="matrix", values=m , 
               in1=feTurbulence( baseFrequency=c(.5,.1), numOctaves=4)
             )
           )
@@ -1502,26 +1500,26 @@ svgR( wh=WH,
     )
   )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<filter id="genid206">
-<feFlood flood-color="#FFDCDC" width="800" height="200" x="0" y="0" result="genid202"/>
-<feTurbulence baseFrequency="0.5,0.1" numOctaves="4" result="genid203"/>
-<feMerge result="genid204">
-<feMergeNode in="genid202" flood-opacity="0.5"/>
-<feMergeNode>
-<feColorMatrix type="matrix" values="c(3, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0)" in="genid203"/>
-</feMergeNode>
-</feMerge>
-<feTurbulence baseFrequency="0.006,0.004" numOctaves="2" result="genid205"/>
-<feDisplacementMap scale="9" xChannelSelector="R" yChannelSelector="B" in="genid204" in2="genid205"/>
-</filter>
-<clipPath id="genid207">
-<text font-size="250" font-face="bold" text-anchor="middle" dominant-baseline="central" x="400" y="100">Stucco</text>
-</clipPath>
-<rect stroke-width="2" stroke="black" filter="url(#genid206)" clip-path="url(#genid207)" width="800" height="200" x="0" y="0"/>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' width='800' height='200'>
+  <filter id='genid209'>
+      <feFlood flood-color='#FFDCDC' width='800' height='200' x='0' y='0' result='genid204'/>
+      <feTurbulence baseFrequency='0.5,0.1' numOctaves='4' result='genid205'/>
+      <feColorMatrix type='matrix' values=c(\"'3'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'-1'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\") in='genid205' result='genid206'/>
+      <feMerge result='genid207'>
+            <feMergeNode in='genid204' flood-opacity='0.5'/>
+            <feMergeNode in='genid206'/>
+      </feMerge>
+      <feTurbulence baseFrequency='0.006,0.004' numOctaves='2' result='genid208'/>
+      <feDisplacementMap scale='9' xChannelSelector='R' yChannelSelector='B' in='genid207' in2='genid208'/>
+  </filter>
+  <clipPath id='genid210'>
+      <text font-size='250' font-face='bold' text-anchor='middle' dominant-baseline='central' x='400' y='100'>Stucco</text>
+  </clipPath>
+  <rect stroke-width='2' stroke='black' filter='url(#genid209)' clip-path='url(#genid210)' width='800' height='200' x='0' y='0'/>
+</svg>"
     res <- as.character(res)
-    rlines <- str_trim(strsplit(res, "\n")[[1]])
+
+rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
     expect_equal(length(rlines), length(elines))
     for (i in length(rlines)) {
@@ -1544,7 +1542,7 @@ svgR( wh=WH,
           feMergeNode(in1= feFlood(xy=c(0,0), wh=WH,
           flood.color="#CFFCDC"), flood.opacity=.5 ),
           feMergeNode(
-            feColorMatrix( type="matrix", values=m , 
+            in1=feColorMatrix( type="matrix", values=m , 
               in1=feTurbulence( baseFrequency=c(.1,.1), numOctaves=4)
             )
           )
@@ -1557,24 +1555,23 @@ svgR( wh=WH,
     )
   )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="200">
-<filter id="genid212">
-<feFlood flood-color="#CFFCDC" width="800" height="200" x="0" y="0" result="genid208"/>
-<feTurbulence baseFrequency="0.1,0.1" numOctaves="4" result="genid209"/>
-<feMerge result="genid210">
-<feMergeNode in="genid208" flood-opacity="0.5"/>
-<feMergeNode>
-<feColorMatrix type="matrix" values="c(3, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0)" in="genid209"/>
-</feMergeNode>
-</feMerge>
-<feTurbulence baseFrequency="0.06,0.004" numOctaves="2" result="genid211"/>
-<feDisplacementMap scale="9" xChannelSelector="R" yChannelSelector="B" in="genid210" in2="genid211"/>
-</filter>
-<clipPath id="genid213">
-<text font-size="250" font-face="bold" text-anchor="middle" dominant-baseline="central" x="400" y="100">Jade</text>
-</clipPath>
-<rect stroke-width="2" stroke="black" filter="url(#genid212)" clip-path="url(#genid213)" width="800" height="200" x="0" y="0"/>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' width='800' height='200'>
+  <filter id='genid216'>
+      <feFlood flood-color='#CFFCDC' width='800' height='200' x='0' y='0' result='genid211'/>
+      <feTurbulence baseFrequency='0.1,0.1' numOctaves='4' result='genid212'/>
+      <feColorMatrix type='matrix' values=c(\"'3'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'-1'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\") in='genid212' result='genid213'/>
+      <feMerge result='genid214'>
+            <feMergeNode in='genid211' flood-opacity='0.5'/>
+            <feMergeNode in='genid213'/>
+      </feMerge>
+      <feTurbulence baseFrequency='0.06,0.004' numOctaves='2' result='genid215'/>
+      <feDisplacementMap scale='9' xChannelSelector='R' yChannelSelector='B' in='genid214' in2='genid215'/>
+  </filter>
+  <clipPath id='genid217'>
+      <text font-size='250' font-face='bold' text-anchor='middle' dominant-baseline='central' x='400' y='100'>Jade</text>
+  </clipPath>
+  <rect stroke-width='2' stroke='black' filter='url(#genid216)' clip-path='url(#genid217)' width='800' height='200' x='0' y='0'/>
+</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])
@@ -1599,7 +1596,7 @@ svgR( wh=WH,
           feMergeNode(in1= feFlood(xy=c(0,0), wh=WH,
           flood.color="#CFFCDC"), flood.opacity=.5 ),
           feMergeNode(
-            feColorMatrix( type="matrix", values=m , 
+            in1=feColorMatrix( type="matrix", values=m , 
               in1=feTurbulence( baseFrequency=c(.01,.01), numOctaves=1)
             )
           )
@@ -1612,24 +1609,23 @@ svgR( wh=WH,
     )
   )
 )->res
-expected_res<-'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="800" height="300">
-<filter id="genid218">
-<feFlood flood-color="#CFFCDC" width="800" height="300" x="0" y="0" result="genid214"/>
-<feTurbulence baseFrequency="0.01,0.01" numOctaves="1" result="genid215"/>
-<feMerge result="genid216">
-<feMergeNode in="genid214" flood-opacity="0.5"/>
-<feMergeNode>
-<feColorMatrix type="matrix" values="c(3, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0)" in="genid215"/>
-</feMergeNode>
-</feMerge>
-<feTurbulence baseFrequency="0.006,0.04" numOctaves="2" result="genid217"/>
-<feDisplacementMap scale="9" xChannelSelector="R" yChannelSelector="B" in="genid216" in2="genid217"/>
-</filter>
-<clipPath id="genid219">
-<text font-size="250" font-face="bold" text-anchor="middle" dominant-baseline="central" x="400" y="150">Shiny</text>
-</clipPath>
-<rect stroke-width="2" stroke="black" filter="url(#genid218)" clip-path="url(#genid219)" width="800" height="300" x="0" y="0"/>
-</svg>'
+expected_res<-"<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' width='800' height='300'>
+  <filter id='genid223'>
+      <feFlood flood-color='#CFFCDC' width='800' height='300' x='0' y='0' result='genid218'/>
+      <feTurbulence baseFrequency='0.01,0.01' numOctaves='1' result='genid219'/>
+      <feColorMatrix type='matrix' values=c(\"'3'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'1'\", \"'0'\", \"'0'\", \"'-1'\", \"'1'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\", \"'0'\") in='genid219' result='genid220'/>
+      <feMerge result='genid221'>
+            <feMergeNode in='genid218' flood-opacity='0.5'/>
+            <feMergeNode in='genid220'/>
+      </feMerge>
+      <feTurbulence baseFrequency='0.006,0.04' numOctaves='2' result='genid222'/>
+      <feDisplacementMap scale='9' xChannelSelector='R' yChannelSelector='B' in='genid221' in2='genid222'/>
+  </filter>
+  <clipPath id='genid224'>
+      <text font-size='250' font-face='bold' text-anchor='middle' dominant-baseline='central' x='400' y='150'>Shiny</text>
+  </clipPath>
+  <rect stroke-width='2' stroke='black' filter='url(#genid223)' clip-path='url(#genid224)' width='800' height='300' x='0' y='0'/>
+</svg>"
     res <- as.character(res)
     rlines <- str_trim(strsplit(res, "\n")[[1]])
     elines <- str_trim(strsplit(expected_res, "\n")[[1]])

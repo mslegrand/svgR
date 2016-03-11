@@ -1,3 +1,10 @@
+# About:
+  # The code in this file was programmiclly generated,
+  # the program responsible can be found at
+  # https://github.com/mslegrand/svgcomposeR_PrjBlder
+  #
+  
+
 "font-face"<-function (...) 
 {
     args <- list(...)
@@ -18,8 +25,10 @@
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face")
     node <- XMLAbstractNode$new(tag = "font-face", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -107,8 +116,10 @@ glyph<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "glyph")
     node <- XMLAbstractNode$new(tag = "glyph", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -189,8 +200,10 @@ glyph<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "missing-glyph")
     node <- XMLAbstractNode$new(tag = "missing-glyph", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -214,8 +227,10 @@ hkern<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "hkern")
     node <- XMLAbstractNode$new(tag = "hkern", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -239,8 +254,10 @@ vkern<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "vkern")
     node <- XMLAbstractNode$new(tag = "vkern", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -272,8 +289,10 @@ font<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font")
     node <- XMLAbstractNode$new(tag = "font", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -288,8 +307,10 @@ font<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-name")
     node <- XMLAbstractNode$new(tag = "font-face-name", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -304,8 +325,10 @@ font<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-format")
     node <- XMLAbstractNode$new(tag = "font-face-format", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -320,8 +343,10 @@ font<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-uri")
     node <- XMLAbstractNode$new(tag = "font-face-uri", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -347,7 +372,7 @@ animate<-function (...)
     attributeName <- args[["attributeName"]]
     "# combo should have (values) Xor (from or to)"
     if (is.null(attributeName)) 
-        stop("missing attributName in animation")
+        base::stop("missing attributName in animation")
     aNames <- combos[[attributeName]]
     if (!is.null(aNames)) {
         eListNames <- intersect(names(args), c("from", "to", 
@@ -370,9 +395,10 @@ animate<-function (...)
                   vals <- strsplit(vals, "[ ,]+")[[1]]
                 }
                 vals <- as.list(vals)
-                if (!(length(vals)[1] == length(aNames))) 
-                  stop(paste0("animated combo attribute has incorrect '", 
+                if (!(length(vals)[1] == length(aNames))) {
+                  base::stop(paste0("animated combo attribute has incorrect '", 
                     an, "' count"))
+                }
                 names(vals) <- aNames
             }
             vals
@@ -428,8 +454,10 @@ animate<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "animate")
     node <- XMLAbstractNode$new(tag = "animate", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -480,8 +508,10 @@ animateColor<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "animateColor")
     node <- XMLAbstractNode$new(tag = "animateColor", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -538,8 +568,10 @@ animateMotion<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "animateMotion")
     node <- XMLAbstractNode$new(tag = "animateMotion", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -590,8 +622,10 @@ animateTransform<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "animateTransform")
     node <- XMLAbstractNode$new(tag = "animateTransform", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -617,7 +651,7 @@ set<-function (...)
     attributeName <- args[["attributeName"]]
     "# combo should have (values) Xor (from or to)"
     if (is.null(attributeName)) 
-        stop("missing attributName in animation")
+        base::stop("missing attributName in animation")
     aNames <- combos[[attributeName]]
     if (!is.null(aNames)) {
         eListNames <- intersect(names(args), c("from", "to", 
@@ -640,9 +674,10 @@ set<-function (...)
                   vals <- strsplit(vals, "[ ,]+")[[1]]
                 }
                 vals <- as.list(vals)
-                if (!(length(vals)[1] == length(aNames))) 
-                  stop(paste0("animated combo attribute has incorrect '", 
+                if (!(length(vals)[1] == length(aNames))) {
+                  base::stop(paste0("animated combo attribute has incorrect '", 
                     an, "' count"))
+                }
                 names(vals) <- aNames
             }
             vals
@@ -683,7 +718,9 @@ set<-function (...)
         })
     }
     rtv <- list()
-    node <- XMLAbstractNode$new(tag = "set", attrs = attrs, .children = allGoodChildern(args))
+    kids <- allGoodChildern(args)
+    checkKids(kids, "set")
+    node <- XMLAbstractNode$new(tag = "set", attrs = attrs, .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -698,8 +735,10 @@ mpath<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "mpath")
     node <- XMLAbstractNode$new(tag = "mpath", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -714,8 +753,10 @@ feFuncA<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feFuncA")
     node <- XMLAbstractNode$new(tag = "feFuncA", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -730,8 +771,10 @@ feFuncB<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feFuncB")
     node <- XMLAbstractNode$new(tag = "feFuncB", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -746,8 +789,10 @@ feFuncG<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feFuncG")
     node <- XMLAbstractNode$new(tag = "feFuncG", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -762,8 +807,10 @@ feFuncR<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feFuncR")
     node <- XMLAbstractNode$new(tag = "feFuncR", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -778,8 +825,10 @@ feDistantLight<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feDistantLight")
     node <- XMLAbstractNode$new(tag = "feDistantLight", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -844,8 +893,10 @@ feTurbulence<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feTurbulence")
     node <- XMLAbstractNode$new(tag = "feTurbulence", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -913,8 +964,10 @@ feConvolveMatrix<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feConvolveMatrix")
     node <- XMLAbstractNode$new(tag = "feConvolveMatrix", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -979,8 +1032,10 @@ feDiffuseLighting<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feDiffuseLighting")
     node <- XMLAbstractNode$new(tag = "feDiffuseLighting", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1039,8 +1094,10 @@ feOffset<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feOffset")
     node <- XMLAbstractNode$new(tag = "feOffset", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1085,8 +1142,10 @@ filter<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "filter")
     node <- XMLAbstractNode$new(tag = "filter", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1144,8 +1203,10 @@ feBlend<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feBlend")
     node <- XMLAbstractNode$new(tag = "feBlend", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1203,8 +1264,10 @@ feColorMatrix<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feColorMatrix")
     node <- XMLAbstractNode$new(tag = "feColorMatrix", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1262,8 +1325,10 @@ feComponentTransfer<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feComponentTransfer")
     node <- XMLAbstractNode$new(tag = "feComponentTransfer", 
-        attrs = attrs, .children = allGoodChildern(args))
+        attrs = attrs, .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1322,8 +1387,10 @@ feComposite<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feComposite")
     node <- XMLAbstractNode$new(tag = "feComposite", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1381,8 +1448,10 @@ feDisplacementMap<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feDisplacementMap")
     node <- XMLAbstractNode$new(tag = "feDisplacementMap", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1440,8 +1509,10 @@ feFlood<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feFlood")
     node <- XMLAbstractNode$new(tag = "feFlood", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1506,8 +1577,10 @@ feGaussianBlur<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feGaussianBlur")
     node <- XMLAbstractNode$new(tag = "feGaussianBlur", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1565,8 +1638,10 @@ feImage<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feImage")
     node <- XMLAbstractNode$new(tag = "feImage", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1624,8 +1699,10 @@ feMerge<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feMerge")
     node <- XMLAbstractNode$new(tag = "feMerge", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1690,8 +1767,10 @@ feMorphology<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feMorphology")
     node <- XMLAbstractNode$new(tag = "feMorphology", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1756,8 +1835,10 @@ feSpecularLighting<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feSpecularLighting")
     node <- XMLAbstractNode$new(tag = "feSpecularLighting", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1815,8 +1896,10 @@ feTile<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feTile")
     node <- XMLAbstractNode$new(tag = "feTile", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1833,8 +1916,10 @@ feSpotLight<-function (...)
     attrs <- comboParamHandler(attrs, list(pointsAtXYZ = c("pointsAtX", 
     "pointsAtY", "pointsAtZ"), xyz = c("x", "y", "z")))
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feSpotLight")
     node <- XMLAbstractNode$new(tag = "feSpotLight", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1851,8 +1936,10 @@ fePointLight<-function (...)
     attrs <- comboParamHandler(attrs, list(xyz = c("x", "y", 
     "z")))
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "fePointLight")
     node <- XMLAbstractNode$new(tag = "fePointLight", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -1934,7 +2021,9 @@ svg<-function (...)
             }
         }
     }
-    node <- XMLAbstractNode$new(tag = "svg", attrs = attrs, .children = allGoodChildern(args))
+    kids <- allGoodChildern(args)
+    checkKids(kids, "svg")
+    node <- XMLAbstractNode$new(tag = "svg", attrs = attrs, .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2020,7 +2109,9 @@ a<-function (...)
             }
         }
     }
-    node <- XMLAbstractNode$new(tag = "a", attrs = attrs, .children = allGoodChildern(args))
+    kids <- allGoodChildern(args)
+    checkKids(kids, "a")
+    node <- XMLAbstractNode$new(tag = "a", attrs = attrs, .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2073,8 +2164,10 @@ altGlyph<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "altGlyph")
     node <- XMLAbstractNode$new(tag = "altGlyph", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2177,8 +2270,10 @@ circle<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "circle")
     node <- XMLAbstractNode$new(tag = "circle", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2235,8 +2330,10 @@ clipPath<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "clipPath")
     node <- XMLAbstractNode$new(tag = "clipPath", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2266,8 +2363,10 @@ cursor<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "cursor")
     node <- XMLAbstractNode$new(tag = "cursor", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2353,8 +2452,10 @@ defs<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "defs")
     node <- XMLAbstractNode$new(tag = "defs", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2457,8 +2558,10 @@ ellipse<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "ellipse")
     node <- XMLAbstractNode$new(tag = "ellipse", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2504,8 +2607,10 @@ foreignObject<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "foreignObject")
     node <- XMLAbstractNode$new(tag = "foreignObject", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2648,7 +2753,9 @@ g<-function (...)
             }
         }
     }
-    node <- XMLAbstractNode$new(tag = "g", attrs = attrs, .children = allGoodChildern(args))
+    kids <- allGoodChildern(args)
+    checkKids(kids, "g")
+    node <- XMLAbstractNode$new(tag = "g", attrs = attrs, .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2737,8 +2844,10 @@ image<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "image")
     node <- XMLAbstractNode$new(tag = "image", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2884,8 +2993,10 @@ line<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "line")
     node <- XMLAbstractNode$new(tag = "line", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -2941,8 +3052,10 @@ linearGradient<-function (...)
             args <- c(args, stopi)
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "linearGradient")
     node <- XMLAbstractNode$new(tag = "linearGradient", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3023,8 +3136,10 @@ marker<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "marker")
     node <- XMLAbstractNode$new(tag = "marker", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3091,8 +3206,10 @@ mask<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "mask")
     node <- XMLAbstractNode$new(tag = "mask", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3242,8 +3359,10 @@ path<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "path")
     node <- XMLAbstractNode$new(tag = "path", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3332,8 +3451,10 @@ pattern<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "pattern")
     node <- XMLAbstractNode$new(tag = "pattern", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3483,8 +3604,10 @@ polygon<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "polygon")
     node <- XMLAbstractNode$new(tag = "polygon", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3634,8 +3757,10 @@ polyline<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "polyline")
     node <- XMLAbstractNode$new(tag = "polyline", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3690,8 +3815,10 @@ radialGradient<-function (...)
             args <- c(args, stopi)
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "radialGradient")
     node <- XMLAbstractNode$new(tag = "radialGradient", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3795,8 +3922,10 @@ rect<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "rect")
     node <- XMLAbstractNode$new(tag = "rect", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3892,8 +4021,10 @@ switch<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "switch")
     node <- XMLAbstractNode$new(tag = "switch", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -3972,8 +4103,10 @@ symbol<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "symbol")
     node <- XMLAbstractNode$new(tag = "symbol", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4096,8 +4229,10 @@ text<-function (...)
             attrs["text"] <- NULL
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "text")
     node <- XMLAbstractNode$new(tag = "text", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4168,8 +4303,10 @@ textPath<-function (...)
             attrs["text"] <- NULL
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "textPath")
     node <- XMLAbstractNode$new(tag = "textPath", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4222,8 +4359,10 @@ tref<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "tref")
     node <- XMLAbstractNode$new(tag = "tref", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4296,8 +4435,10 @@ tspan<-function (...)
             attrs["text"] <- NULL
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "tspan")
     node <- XMLAbstractNode$new(tag = "tspan", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4386,7 +4527,9 @@ use<-function (...)
             }
         }
     }
-    node <- XMLAbstractNode$new(tag = "use", attrs = attrs, .children = allGoodChildern(args))
+    kids <- allGoodChildern(args)
+    checkKids(kids, "use")
+    node <- XMLAbstractNode$new(tag = "use", attrs = attrs, .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4415,8 +4558,10 @@ view<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "view")
     node <- XMLAbstractNode$new(tag = "view", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4431,8 +4576,10 @@ altGlyphDef<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "altGlyphDef")
     node <- XMLAbstractNode$new(tag = "altGlyphDef", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4447,8 +4594,10 @@ altGlyphItem<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "altGlyphItem")
     node <- XMLAbstractNode$new(tag = "altGlyphItem", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4470,8 +4619,10 @@ altGlyphItem<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "color-profile")
     node <- XMLAbstractNode$new(tag = "color-profile", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4500,8 +4651,10 @@ desc<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "desc")
     node <- XMLAbstractNode$new(tag = "desc", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4542,8 +4695,10 @@ feMergeNode<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "feMergeNode")
     node <- XMLAbstractNode$new(tag = "feMergeNode", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4558,8 +4713,10 @@ feMergeNode<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-src")
     node <- XMLAbstractNode$new(tag = "font-face-src", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4597,8 +4754,10 @@ glyphRef<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "glyphRef")
     node <- XMLAbstractNode$new(tag = "glyphRef", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4613,8 +4772,10 @@ metadata<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "metadata")
     node <- XMLAbstractNode$new(tag = "metadata", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4643,8 +4804,10 @@ stop<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "stop")
     node <- XMLAbstractNode$new(tag = "stop", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4666,8 +4829,10 @@ style<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "style")
     node <- XMLAbstractNode$new(tag = "style", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4696,8 +4861,10 @@ title<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "title")
     node <- XMLAbstractNode$new(tag = "title", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4726,8 +4893,10 @@ font.face<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face")
     node <- XMLAbstractNode$new(tag = "font-face", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4808,8 +4977,10 @@ missing.glyph<-function (...)
             }
         }
     }
+    kids <- allGoodChildern(args)
+    checkKids(kids, "missing-glyph")
     node <- XMLAbstractNode$new(tag = "missing-glyph", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4824,8 +4995,10 @@ font.face.name<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-name")
     node <- XMLAbstractNode$new(tag = "font-face-name", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4840,8 +5013,10 @@ font.face.format<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-format")
     node <- XMLAbstractNode$new(tag = "font-face-format", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4856,8 +5031,10 @@ font.face.uri<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-uri")
     node <- XMLAbstractNode$new(tag = "font-face-uri", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4879,8 +5056,10 @@ color.profile<-function (...)
         })
     }
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "color-profile")
     node <- XMLAbstractNode$new(tag = "color-profile", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)
@@ -4895,8 +5074,10 @@ font.face.src<-function (...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
     rtv <- list()
+    kids <- allGoodChildern(args)
+    checkKids(kids, "font-face-src")
     node <- XMLAbstractNode$new(tag = "font-face-src", attrs = attrs, 
-        .children = allGoodChildern(args))
+        .children = kids)
     {
         if (length(rtv) > 0) {
             node <- c(rtv, node)

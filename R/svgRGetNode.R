@@ -1,20 +1,5 @@
 
-# There seems to be an element of this name in 
-# the element list (bad bad)
-# only used below by "[[.svgDoc"
 
-# getNode=function(doc,id){
-#   if(id=='/' || id=='root'){
-#     id<-'root'
-#     return(xmlRoot(doc)) # so root need not be the id of the root  node
-#   }
-#   #kidV <- getNodeSet(doc$top, paste("//*[@id=\"", id, "\"]", sep=""))
-#   kidV <- getNodeSet(doc, paste("//*[@id=\"", id, "\"]", sep=""))
-#   if (length(kidV)==0){
-#     stop("Cannot find node with id=",id)
-#   }
-#   kidV[[1]]
-# }
 
 #' Edit the document at the node given by the index
 #'

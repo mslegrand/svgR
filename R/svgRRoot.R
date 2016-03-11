@@ -33,6 +33,6 @@ svgRRoot<-function( wh, args){
   
   root<-XMLAbstractNode$new("svg", 
                             attrs=attrs,
-                            .children=unnamed(args)
+                            .children=allGoodChildern(args)
   )
 }
