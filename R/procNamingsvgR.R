@@ -47,18 +47,7 @@ promoteUnamedLists<-function(args){
     rtv  
   })
   do.call(c, ml2)->ml3
-  #ml3
   nms<-names(ml3)
-#   ml4<-lapply(1:length(ml3), function(i){
-#     rtv<-ml3[[i]]
-#     if(nms[i]=="" && (inherits(rtv, 'character')|| inherits(rtv, 'numeric'))){
-#       rtv<-XMLTextNode$new( .children=rtv)
-#         #newXMLTextNode(rtv)
-#     }
-#     rtv
-#   })
-#   names(ml4)<-names(ml3)
-  #ml4
 ml3
 }
 

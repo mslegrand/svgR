@@ -160,6 +160,10 @@ NULL
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=AltGlyphElementDXAttribute]{dx}}, \code{\link[=AltGlyphElementDYAttribute]{dy}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=AltGlyphElementFormatAttribute]{format}}, \code{\link[=AltGlyphElementGlyphRefAttribute]{glyphRef}}, \code{\link[=AltGlyphElementRotateAttribute]{rotate}}, \code{\link[=StyleAttribute]{style}}}
 #' \item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=AltGlyphElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
+#' }
 #' @keywords element
 NULL
 
@@ -172,6 +176,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{\link[=altGlyphItem]{altGlyphItem}}, \code{\link[=glyphRef]{glyphRef}}}
+#' }
 #' @keywords element
 NULL
 
@@ -183,6 +191,10 @@ NULL
 #' @section Available Attributes (Named Parameters):
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
 #' }
 #' @keywords element
 NULL
@@ -199,6 +211,10 @@ NULL
 #' \item{\emph{filter primitive attributes}}{\code{\link[=GlyphRefElementXAttribute]{x}}, \code{\link[=GlyphRefElementYAttribute]{y}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=GlyphRefElementDXAttribute]{dx}}, \code{\link[=GlyphRefElementDYAttribute]{dy}}, \code{\link[=GlyphRefElementFormatAttribute]{format}}, \code{\link[=GlyphRefElementGlyphRefAttribute]{glyphRef}}, \code{\link[=StyleAttribute]{style}}}
 #' \item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=GlyphRefElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Empty.}}
 #' }
 #' @keywords element
 NULL
@@ -666,6 +682,10 @@ NULL
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
+#' }
 #' @keywords element
 NULL
 
@@ -678,6 +698,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
 #' }
 #' @keywords element
 NULL
@@ -814,6 +838,10 @@ NULL
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{unclassified}}{\code{\link[=feDistantLightAzimuthAttribute]{azimuth}}, \code{\link[=feDistantLightElevationAttribute]{elevation}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -828,6 +856,10 @@ NULL
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{filter primitive attributes}}{\code{\link[=fePointLightXAttribute]{x}}, \code{\link[=fePointLightYAttribute]{y}}}
 #' \item{\emph{unclassified}}{\code{\link[=fePointLightZAttribute]{z}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -844,6 +876,10 @@ NULL
 #' \item{\emph{filter primitive attributes}}{\code{\link[=feSpotLightXAttribute]{x}}, \code{\link[=feSpotLightYAttribute]{y}}}
 #' \item{\emph{unclassified}}{\code{\link[=feSpotLightLimitingConeAngleAttribute]{limitingConeAngle}}, \code{\link[=feSpotLightPointsAtXAttribute]{pointsAtX}}, \code{\link[=feSpotLightPointsAtYAttribute]{pointsAtY}}, \code{\link[=feSpotLightPointsAtZAttribute]{pointsAtZ}}, \code{\link[=feSpotLightSpecularExponentAttribute]{specularExponent}}, \code{\link[=feSpotLightZAttribute]{z}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -859,6 +895,10 @@ NULL
 #' \item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feBlendIn2Attribute]{in2}}, \code{\link[=feBlendModeAttribute]{mode}}, \code{\link[=StyleAttribute]{style}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -878,6 +918,10 @@ NULL
 #' \item{\emph{transfer function element attributes}}{\code{\link[=feColorMatrixTypeAttribute]{type}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -894,6 +938,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
+#' }
 #' @keywords element
 NULL
 
@@ -906,6 +954,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{transfer function element attributes}}{\code{\link[=feComponentTransferAmplitudeAttribute]{amplitude}}, \code{\link[=feComponentTransferExponentAttribute]{exponent}}, \code{\link[=feComponentTransferInterceptAttribute]{intercept}}, \code{\link[=feComponentTransferOffsetAttribute]{offset}}, \code{\link[=feComponentTransferSlopeAttribute]{slope}}, \code{\link[=feComponentTransferTableValuesAttribute]{tableValues}}, \code{\link[=feComponentTransferTypeAttribute]{type}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -920,6 +972,10 @@ NULL
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{transfer function element attributes}}{\code{\link[=feComponentTransferAmplitudeAttribute]{amplitude}}, \code{\link[=feComponentTransferExponentAttribute]{exponent}}, \code{\link[=feComponentTransferInterceptAttribute]{intercept}}, \code{\link[=feComponentTransferOffsetAttribute]{offset}}, \code{\link[=feComponentTransferSlopeAttribute]{slope}}, \code{\link[=feComponentTransferTableValuesAttribute]{tableValues}}, \code{\link[=feComponentTransferTypeAttribute]{type}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -933,6 +989,10 @@ NULL
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{transfer function element attributes}}{\code{\link[=feComponentTransferAmplitudeAttribute]{amplitude}}, \code{\link[=feComponentTransferExponentAttribute]{exponent}}, \code{\link[=feComponentTransferInterceptAttribute]{intercept}}, \code{\link[=feComponentTransferOffsetAttribute]{offset}}, \code{\link[=feComponentTransferSlopeAttribute]{slope}}, \code{\link[=feComponentTransferTableValuesAttribute]{tableValues}}, \code{\link[=feComponentTransferTypeAttribute]{type}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -945,6 +1005,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{transfer function element attributes}}{\code{\link[=feComponentTransferAmplitudeAttribute]{amplitude}}, \code{\link[=feComponentTransferExponentAttribute]{exponent}}, \code{\link[=feComponentTransferInterceptAttribute]{intercept}}, \code{\link[=feComponentTransferOffsetAttribute]{offset}}, \code{\link[=feComponentTransferSlopeAttribute]{slope}}, \code{\link[=feComponentTransferTableValuesAttribute]{tableValues}}, \code{\link[=feComponentTransferTypeAttribute]{type}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -962,6 +1026,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feCompositeIn2Attribute]{in2}}, \code{\link[=feCompositeK1Attribute]{k1}}, \code{\link[=feCompositeK2Attribute]{k2}}, \code{\link[=feCompositeK3Attribute]{k3}}, \code{\link[=feCompositeK4Attribute]{k4}}, \code{\link[=feCompositeOperatorAttribute]{operator}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -977,6 +1045,10 @@ NULL
 #' \item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=feConvolveMatrixElementBiasAttribute]{bias}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=feConvolveMatrixElementDivisorAttribute]{divisor}}, \code{\link[=feConvolveMatrixElementEdgeModeAttribute]{edgeMode}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feConvolveMatrixElementKernelMatrixAttribute]{kernelMatrix}}, \code{\link[=feConvolveMatrixElementKernelUnitLengthAttribute]{kernelUnitLength}}, \code{\link[=feConvolveMatrixElementOrderAttribute]{order}}, \code{\link[=feConvolveMatrixElementPreserveAlphaAttribute]{preserveAlpha}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=feConvolveMatrixElementTargetXAttribute]{targetX}}, \code{\link[=feConvolveMatrixElementTargetYAttribute]{targetY}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -1015,6 +1087,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feDisplacementMapIn2Attribute]{in2}}, \code{\link[=feDisplacementMapScaleAttribute]{scale}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=feDisplacementMapXChannelSelectorAttribute]{xChannelSelector}}, \code{\link[=feDisplacementMapYChannelSelectorAttribute]{yChannelSelector}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -1031,6 +1107,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-presentationAttribute]{color}}, \code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}, \code{\link[=flood-color-presentationAttribute]{flood.color}}, \code{\link[=flood-opacity-presentationAttribute]{flood.opacity}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -1046,6 +1126,10 @@ NULL
 #' \item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feGaussianBlurStdDeviationAttribute]{stdDeviation}}, \code{\link[=StyleAttribute]{style}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -1064,6 +1148,10 @@ NULL
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=PreserveAspectRatioAttribute]{preserveAspectRatio}}, \code{\link[=StyleAttribute]{style}}}
 #' \item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=feImageElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -1080,6 +1168,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{\link[=feMergeNode]{feMergeNode}}}
+#' }
 #' @keywords element
 NULL
 
@@ -1091,6 +1183,10 @@ NULL
 #' @section Available Attributes (Named Parameters):
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -1108,6 +1204,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feMorphologyOperatorAttribute]{operator}}, \code{\link[=feMorphologyRadiusAttribute]{radius}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -1123,6 +1223,10 @@ NULL
 #' \item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=feOffsetDxAttribute]{dx}}, \code{\link[=feOffsetDyAttribute]{dy}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=StyleAttribute]{style}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -1161,6 +1265,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=StyleAttribute]{style}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
+#' }
 #' @keywords element
 NULL
 
@@ -1177,6 +1285,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
 #' \item{\emph{transfer function element attributes}}{\code{\link[=feTurbulenceTypeAttribute]{type}}}
 #' \item{\emph{unclassified}}{\code{\link[=feTurbulenceBaseFrequencyAttribute]{baseFrequency}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=feTurbulenceNumOctavesAttribute]{numOctaves}}, \code{\link[=feTurbulenceSeedAttribute]{seed}}, \code{\link[=feTurbulenceStitchTilesAttribute]{stitchTiles}}, \code{\link[=StyleAttribute]{style}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -1260,6 +1372,10 @@ NULL
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{unclassified}}{\code{\link[=HKernElementG1Attribute]{g1}}, \code{\link[=HKernElementG2Attribute]{g2}}, \code{\link[=HKernElementKAttribute]{k}}, \code{\link[=HKernElementU1Attribute]{u1}}, \code{\link[=HKernElementU2Attribute]{u2}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Empty.}}
+#' }
 #' @keywords element
 NULL
 
@@ -1273,6 +1389,10 @@ NULL
 #' \item{\emph{combining attributes}}{\code{\link[=HKernElementG12Attribute]{g12}}, \code{\link[=HKernElementU12Attribute]{u12}}}
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{unclassified}}{\code{\link[=HKernElementG1Attribute]{g1}}, \code{\link[=HKernElementG2Attribute]{g2}}, \code{\link[=HKernElementKAttribute]{k}}, \code{\link[=HKernElementU1Attribute]{u1}}, \code{\link[=HKernElementU2Attribute]{u2}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Empty.}}
 #' }
 #' @keywords element
 NULL
@@ -1307,6 +1427,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{\link[=font-face-name]{font.face.name}}, \code{\link[=font-face-uri]{font.face.uri}}}
+#' }
 #' @keywords element
 NULL
 
@@ -1320,6 +1444,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=FontFaceUriElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{\link[=font-face-format]{font.face.format}}}
 #' }
 #' @keywords element
 NULL
@@ -1335,6 +1463,10 @@ NULL
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{unclassified}}{\code{\link[=FontFaceFormatElementStringAttribute]{string}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Empty.}}
+#' }
 #' @keywords element
 NULL
 
@@ -1348,6 +1480,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' \item{\emph{unclassified}}{\code{\link[=FontFaceNameElementNameAttribute]{name}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Empty.}}
 #' }
 #' @keywords element
 NULL
@@ -1367,6 +1503,10 @@ NULL
 #' \item{\emph{graphical event attributes}}{\code{\link[=OnActivateEventAttribute]{onactivate}}, \code{\link[=OnClickEventAttribute]{onclick}}, \code{\link[=OnFocusInEventAttribute]{onfocusin}}, \code{\link[=OnFocusOutEventAttribute]{onfocusout}}, \code{\link[=OnLoadEventAttribute]{onload}}, \code{\link[=OnMouseDownEventAttribute]{onmousedown}}, \code{\link[=OnMouseMoveEventAttribute]{onmousemove}}, \code{\link[=OnMouseOutEventAttribute]{onmouseout}}, \code{\link[=OnMouseOverEventAttribute]{onmouseover}}, \code{\link[=OnMouseUpEventAttribute]{onmouseup}}}
 #' \item{\emph{presentation attributes}}{\code{\link[=clip-presentationAttribute]{clip}}, \code{\link[=display-presentationAttribute]{display}}, \code{\link[=overflow-presentationAttribute]{overflow}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=TransformAttribute]{transform}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
 #' }
 #' @keywords element
 NULL
@@ -1424,6 +1564,10 @@ NULL
 #' \item{\emph{presentation attributes}}{\code{\link[=color-presentationAttribute]{color}}, \code{\link[=stop-color-presentationAttribute]{stop.color}}, \code{\link[=stop-opacity-presentationAttribute]{stop.opacity}}}
 #' \item{\emph{transfer function element attributes}}{\code{\link[=StopElementOffsetAttribute]{offset}}}
 #' \item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=set]{set}}}
 #' }
 #' @keywords element
 NULL
@@ -1488,6 +1632,10 @@ NULL
 #' \describe{
 #' \item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
+#' }
 #' @keywords element
 NULL
 
@@ -1525,6 +1673,10 @@ NULL
 #' \item{\emph{unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}}
 #' \item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=ScriptElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 #' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
+#' }
 #' @keywords element
 NULL
 
@@ -1539,6 +1691,10 @@ NULL
 #' \item{\emph{descriptive elements}}{\code{\link[=StyleElementTitleAttribute]{title}}}
 #' \item{\emph{transfer function element attributes}}{\code{\link[=StyleElementTypeAttribute]{type}}}
 #' \item{\emph{unclassified}}{\code{\link[=StyleElementMediaAttribute]{media}}}
+#' }
+#' @section Available Content Elements (Unnamed Parameters):
+#' \describe{
+#' \item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
 #' }
 #' @keywords element
 NULL

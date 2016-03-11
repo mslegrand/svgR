@@ -1,9 +1,9 @@
 # About:
-  # The code in this file was programmiclly generated,
-  # the program responsible can be found at
-  # https://github.com/mslegrand/svgcomposeR_PrjBlder
-  #
-   eleDefs<-
+# The code in this file was programmiclly generated.
+# The program responsible can be found at
+# https://github.com/mslegrand/svgcomposeR_PrjBlder
+#
+ eleDefs<-
  structure(list("font-face" = function (...) 
 {
     args <- list(...)

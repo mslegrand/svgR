@@ -19,8 +19,8 @@ extractValues<-function(val,aNames){ #for example aNames=c("x","y","z")
     }
     if(!(dim(val)[1]==N)){
       cbAttr<-paste(aNames)
-      emssg1<-paste("animated combo attribut, ",cbAttr,", has incorrect 'value' count,\n")
-      emssg2<-paste("expectiong",N,"got ",dim(val)[1],"\n")
+      emssg1<-paste("Animated combo attribute, ",cbAttr,", has incorrect number of variables,\n")
+      emssg2<-paste("Expecting",N," variables got ",dim(val)[1],"\n")
       base::stop(c(emssg1,emssg2))
     } 
     val<-split(val, 1:N)
