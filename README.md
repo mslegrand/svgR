@@ -14,7 +14,6 @@ http://mslegrand.github.io/svgR/)
 # Installation
 - install.packages("devtools")
 - library(devtools)
-- install_github("XML", "omegahat")
 - install_github("svgR", "mslegrand")
 
 # Reporting issues
