@@ -8,7 +8,7 @@ A short example is:
     library(svgR)
     svgR(wh=c(800,600), circle(cxy=c(400,300), r=100))
 
-Numerous examples, a User Guide, Structural Information and a tutorial can be found [here](
+Numerous examples, a User Guide, Structural Information and a tutorial can be found at [http://mslegrand.github.io/svgR/](
 http://mslegrand.github.io/svgR/)
 
 # Installation
