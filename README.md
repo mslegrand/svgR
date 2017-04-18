@@ -35,7 +35,7 @@ install.packages("drat", repos="http://cran.rstudio.com")
 
 drat:::add("mslegrand")
 ```
-3. install or update 
+3. Install or update 
 
 ```
 install.packages("svgR", "pointR", "shinyDMDMenu")
