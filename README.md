@@ -24,17 +24,17 @@ http://mslegrand.github.io/svgR/) for
 
 # Installation
 
-- 1. For install drat
+1. For install drat
 
 ```
 install.packages("drat", repos="http://cran.rstudio.com")
 ```
-- 2. 
+2. 
 Add one line to your .Rprofile file (or to Rprofile.site):
 ```
 drat:::add("mslegrand")
 ```
-- 3. install 
+3. install 
 
 ```
 install.packages("svgR", "pointR", "shinyDMDMenu")
