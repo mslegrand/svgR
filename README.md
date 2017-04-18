@@ -24,7 +24,7 @@ http://mslegrand.github.io/svgR/) for
 
 # Installation
 
-1. Install  the drat package manager.
+1. Install  the [drat](http://eddelbuettel.github.io/drat/) package manager.
 
 ```
 install.packages("drat", repos="http://cran.rstudio.com")
