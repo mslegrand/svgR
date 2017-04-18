@@ -2,19 +2,44 @@
 An R package to generate SVG markup to create custom graphics. 
 Scripts using svgR can be embedding in R presentations, slides and Shiny applications. 
 
-#Examples
+# Examples
 A short example is:
 
+```
     library(svgR)
     svgR(wh=c(800,600), circle(cxy=c(400,300), r=100))
+```
 
-Numerous examples, a User Guide, Structural Information and a tutorial can be found at [http://mslegrand.github.io/svgR/](
-http://mslegrand.github.io/svgR/)
+# Moreinfo at 
+
+Checkout [http://mslegrand.github.io/svgR/](
+http://mslegrand.github.io/svgR/) for
+
+- Tutorial
+- User Guide
+- Structural Information
+- Numerous examples
+
+
 
 # Installation
-- install.packages("devtools")
-- library(devtools)
-- install_github("svgR", "mslegrand")
+
+- 1. For install drat
+
+```
+install.packages("drat", repos="http://cran.rstudio.com")
+```
+- 2. 
+Add one line to your .Rprofile file (or to Rprofile.site):
+```
+drat:::add("mslegrand")
+```
+- 3. install 
+
+```
+install.packages("svgR", "pointR", "shinyDMDMenu")
+```
+
 
 # Reporting issues
 Please report any bugs/issue in the 
