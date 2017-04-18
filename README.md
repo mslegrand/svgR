@@ -22,7 +22,7 @@ http://mslegrand.github.io/svgR/) for
 
 
 
-# Installation
+# Installation & Updates
 
 1. Install  the [drat](http://eddelbuettel.github.io/drat/) package manager.
 
@@ -35,12 +35,15 @@ install.packages("drat", repos="http://cran.rstudio.com")
 
 drat:::add("mslegrand")
 ```
-3. install 
+3. install or update 
 
 ```
 install.packages("svgR", "pointR", "shinyDMDMenu")
 ```
 
+```
+update.packages("svgR", "pointR", "shinyDMDMenu")
+```
 
 # Reporting issues
 Please report any bugs/issue in the 
