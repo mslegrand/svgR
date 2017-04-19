@@ -12,7 +12,7 @@
   </filter>
   <g stroke="black" filter="url(#svgLogId13)">
     <text fill="darkblue" font-size="100" font-family="san serif" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="200" y="125">svgR</text>
-    <text fill="darkblue" font-size="60" font-family="fantasy" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="560" y="62.5">Users Guide</text>
+    <text fill="darkblue" font-size="60" font-family="san serif" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="560" y="62.5">Users Guide</text>
     <circle r="99" stroke-width="10" fill="none" cx="200" cy="125"/>
   </g>
 </svg> 
