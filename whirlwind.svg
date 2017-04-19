@@ -12,7 +12,7 @@
   </filter>
   <g stroke="black" filter="url(#genid5)">
     <text fill="darkblue" font-size="100" font-family="san serif" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="200" y="125">svgR</text>
-    <text fill="darkblue" font-size="60" font-family="fantasy" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="560" y="62.5">Whirlwind Tutorial</text>
+    <text fill="darkblue" font-size="60" font-family="san serif" stroke-width="3" text-anchor="middle" dominant-baseline="central" x="560" y="62.5">Whirlwind Tutorial</text>
     <circle r="99" stroke-width="10" fill="none" cx="200" cy="125"/>
   </g>
 </svg>
