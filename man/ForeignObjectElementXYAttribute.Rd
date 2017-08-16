@@ -4,26 +4,25 @@
 \alias{ForeignObjectElementXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=ForeignObjectElementXAttribute]{x}}, \code{\link[=ForeignObjectElementYAttribute]{y}}
+\code{\link[=ForeignObjectElementXYAttribute]{x}}, \code{\link[=ForeignObjectElementXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

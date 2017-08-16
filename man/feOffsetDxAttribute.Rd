@@ -4,13 +4,20 @@
 \alias{feOffsetDxAttribute}
 \title{dx}
 \description{
-ToDo: Needs to be written!!!
+Sets how much  of an  offset, the input graphics should have along the x-axis.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The amount to offset the input graphic along the x.axis. The offset amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<number>}{Specifies to offset the input graphic by the amount dx along the x-axis, where dx is is given in the \emph{primitiveUnits} terms of the \strong{filter}. Default for dx is dx=0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feOffset]{feOffset}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

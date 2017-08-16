@@ -3,16 +3,16 @@
 \name{color-profile}
 \alias{color-profile}
 \alias{color.profile}
-\title{Element used to specify color profiles}
+\title{An element used to specify color profiles}
 \description{
 The element allows describing the color profile used for the image.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=ColorProfileElementLocalAttribute]{local}}, \code{\link[=ColorProfileElementNameAttribute]{name}}, \code{\link[=ColorProfileElementRenderingIntentAttribute]{rendering.intent}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=ColorProfileElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=ColorProfileElementLocalAttribute]{local}}, \code{\link[=ColorProfileElementNameAttribute]{name}}, \code{\link[=ColorProfileElementRenderingIntentAttribute]{rendering.intent}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=ColorProfileElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -22,5 +22,5 @@ The element allows describing the color profile used for the image.
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

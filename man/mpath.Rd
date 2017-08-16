@@ -2,16 +2,16 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{mpath}
 \alias{mpath}
-\title{Element used to specify path for animateMotion}
+\title{An elementt used to specify path for animateMotion}
 \description{
 the mpath sub-element for the <animatemotion> element provides the ability to reference an external <path> element as the definition of a motion path.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=MPathElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=MPathElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -21,5 +21,5 @@ the mpath sub-element for the <animatemotion> element provides the ability to re
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

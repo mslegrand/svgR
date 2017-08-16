@@ -4,23 +4,24 @@
 \alias{letter-spacing-presentationAttribute}
 \title{letter.spacing}
 \description{
-ToDo: Needs to be written!!!
+Governs supplemental to kerning spacing between letters.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{normal}{**ToDo!!!** }
-\item{<length>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<length>}{Sets a value for the amount of supplemental (to kerning) spacing between text characters.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit  the value of letter-spacing adjustment from the parent.}
+\item{\emph{'\emph{'normal'}'}}{Specifies no supplemental (to kerning) spacing between text characters.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,26 +4,25 @@
 \alias{TextElementDXYAttribute}
 \title{dxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning dx and dy
 }
 \section{Combines}{
 
-\code{\link[=TextElementDXAttribute]{dx}}, \code{\link[=TextElementDYAttribute]{dy}}
+\code{\link[=TextElementDXYAttribute]{dx}}, \code{\link[=TextElementDXYAttribute]{dy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{dxy=c(value.DX,value.DY)}
-\item{and}{dx = value.DX; dy = value.DY}
+dxy =v is equivalent to  dx=v[1], dy=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

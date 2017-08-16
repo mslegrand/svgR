@@ -4,13 +4,19 @@
 \alias{XLinkTitleAttribute}
 \title{xlink.title}
 \description{
-ToDo: Needs to be written!!!
+Sets a textual description which is intended to convey the meaning of this link.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<anything>}{The title attribute shall be used to describe the meaning of a link or resource in a human.readable fashion, along the same lines as the role or arcrole attribute. A value is optional; if a value is supplied, it shall contain a string that describes the resource. In general it is preferable to use a 'title' child element rather than a 'title' attribute. The use of this information is highly dependent on the type of processing being done. It may be used, for example, to make titles available to applications used by visually impaired users, or to create a table of links, or to present help text that appears when a user lets a mouse pointer hover over a starting resource. Refer to the XML Linking Language (XLink) [XLINK]. Animatable. no.}
+\item{<character>}{Specifies the title attribute which is used to provide an optional description of the meaning of a link or resource for humans.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,10 +25,11 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feImage]{feImage}}}
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}, \code{\link[=radialGradient]{radialGradient}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=image]{image}}, \code{\link[=mpath]{mpath}}, \code{\link[=pattern]{pattern}}, \code{\link[=script]{script}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=mpath]{mpath}}, \code{\link[=script]{script}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

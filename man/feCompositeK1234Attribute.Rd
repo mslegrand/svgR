@@ -4,18 +4,17 @@
 \alias{feCompositeK1234Attribute}
 \title{k1234}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning k1, k2, k3 and k4
 }
 \section{Combines}{
 
-\code{\link[=feCompositeK1Attribute]{k1}}, \code{\link[=feCompositeK2Attribute]{k2}}, \code{\link[=feCompositeK3Attribute]{k3}}, \code{\link[=feCompositeK4Attribute]{k4}}
+\code{\link[=feCompositeK1234Attribute]{k1}}, \code{\link[=feCompositeK1234Attribute]{k2}}, \code{\link[=feCompositeK1234Attribute]{k3}}, \code{\link[=feCompositeK1234Attribute]{k4}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{k1234=c(value.K1,value.K2,value.K3,value.K4)}
-\item{and}{k1 = value.K1; k2 = value.K2; k3 = value.K3; k4 = value.K4}
+k1234 =v is equivalent to  k1=v[1], k2=v[2], k3=v[3], k4=v[4]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feComposite]{feComposite}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

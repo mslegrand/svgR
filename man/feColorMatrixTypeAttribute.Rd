@@ -4,12 +4,16 @@
 \alias{feColorMatrixTypeAttribute}
 \title{type}
 \description{
-ToDo: Needs to be written!!!
+Governs the type of matrix operation that the feColorMatrix represents.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{matrix | saturate | hueRotate | luminanceToAlpha}{Indicates the type of matrix operation. The keyword 'matrix' indicates that a full 5x4 matrix of values will be provided. The other keywords represent convenience shortcuts to allow commonly used color operations to be performed without specifying a complete matrix. If attribute 'type' is not specified, then the effect is as if a value of matrix were specified.Animatable. yes.}
+\item{\emph{'matrix'}}{Specifies to interpret the \strong{feColorMatrix} values parameter as a 4x5 matrix . The result color transformation is given by premultiplying this with c(R, G.B, A, 1) Default.}
+\item{\emph{'saturate'}}{Specifies that the values parameter is a single numeric between 0 and 1. used to perform color saturation.}
+\item{\emph{'hueRotate'}}{Specifies that the values parameter is a single numeric representing degrees between 0 and 360, and is . used to perform hue rotation.}
+\item{\emph{'luminanceToAlpha'}}{Specifies to produce a \emph{luminance} to \emph{alpha} effect, and does not use values}
 }
 }
 
@@ -19,5 +23,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feColorMatrix]{feColorMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

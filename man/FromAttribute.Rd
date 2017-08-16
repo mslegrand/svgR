@@ -4,13 +4,19 @@
 \alias{FromAttribute}
 \title{from}
 \description{
-ToDo: Needs to be written!!!
+Sets the starting value of the animation.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<value>}{Specifies the starting value of the animation. Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. 'from' attribute ([SMILANIM], section 3.2.2).}
+\item{<attribute-value>}{Specifies the initial value of the attribute chosen for animation.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

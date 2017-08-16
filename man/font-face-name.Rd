@@ -3,23 +3,23 @@
 \name{font-face-name}
 \alias{font-face-name}
 \alias{font.face.name}
-\title{Element used to specify a local font-face by name}
+\title{An element used to specify a local font-face by name}
 \description{
 The font-face-name element points to a locally installed copy of this font, identified by its name. The font-face element is used within a font-face-src element.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=FontFaceNameElementNameAttribute]{name}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=FontFaceNameElementNameAttribute]{name}}}
 }
 }
 
 \section{Available Content Elements (Unnamed Parameters)}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{Empty.}}
+{No Content Elements Applicable}{!}
 }
 }
-\keyword{element}
 
+\keyword{element}

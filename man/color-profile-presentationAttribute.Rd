@@ -4,24 +4,26 @@
 \alias{color-profile-presentationAttribute}
 \title{color.profile}
 \description{
-ToDo: Needs to be written!!!
+Governs what color profile to use.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{sRGB}{**ToDo!!!** }
-\item{<name>}{**ToDo!!!** }
-\item{<iri>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<iri>}{Specifies an IRI reference to the color profile to be used}
+\item{<name>}{Specifies the color profile by name}
+\item{\emph{'\emph{'auto'}'}}{Specifies to auto select the color profile}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the color profiel from the parents color profile.}
+\item{\emph{'\emph{'sRGB'}'}}{Specifies to use the sRGB  color profile}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{OnAbortEventAttribute}
 \title{onabort}
 \description{
-ToDo: Needs to be written!!!
+Sets the script to be executed when an abort event is received
 }
 \section{Available Attribute Values}{
 
+The value is a script, likely ecmascript (i.e.  javascript).
 \describe{
-\item{<anything>}{onerror = "<anything>"}
+\item{<script>}{Specifies what to execute when an \emph{SVGAbort} event is fired. \emph{SvgAbort} occurs when page loading stops before an element has been allowed to be completely loaded.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,35 @@
 \alias{FontFaceElementFontStretchAttribute}
 \title{font.stretch}
 \description{
-ToDo: Needs to be written!!!
+Governs the width or narrowness, of the font face relative to others within the same font family.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{all | [ normal | ultra.condensed | extra.condensed | condensed | semi.condensed | semi.expanded | expanded | extra.expanded | ultra.expanded] [, [ normal | ultra.condensed | extra.condensed | condensed | semi.condensed | semi.expanded | expanded | extra.expanded | ultra.expanded] ]*}{Same syntax and semantics as the 'font.stretch' descriptor within an font.face rule. Indication of the condensed or expanded nature of the face relative to others in the same font family. Takes on the same values as the 'font.stretch' property except that. relative keywords (wider, narrower) are not permitteda comma.separated list is permittedthe keyword 'all' is permitted If the attribute is not specified, the effect is as if a value of 'normal' were specified.Animatable. no.}
+\item{\emph{'all'}}{Specifies to apply all font factors.}
+\item{\emph{'normal'}}{Specifies no stretching and no condensing of the \emph{glyphs}.}
+\item{\emph{'ultra-condensed'}}{Specifies maximum condensing (ultra) of the \emph{glyphs}.}
+\item{\emph{'extra-condensed'}}{Specifies a slightly more condensed than \emph{condensed}.}
+\item{\emph{'condensed'}}{Specifies a slightly more condensed than \emph{semi-condensed}.}
+\item{\emph{'semi-condensed'}}{Specifies a slightly more condensed than \emph{normal}.}
+\item{\emph{'semi-expanded'}}{Specifies a slightly more expanded than \emph{normal}.}
+\item{\emph{'expanded'}}{Specifies a slightly more expanded than the \emph{semi-expanded}  amount of stretching.}
+\item{\emph{'extra-expanded'}}{Specifies a slightly more expanded than \emph{expanded}  amount of stretching.}
+\item{\emph{'ultra-expanded'}}{Specifies the maximum amount of stretching.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,27 @@
 \alias{TSpanElementTextLengthAttribute}
 \title{textLength}
 \description{
-ToDo: Needs to be written!!!
+Sets the intended text length.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The author's computation of the total sum of all of the advance values that correspond to character data within this element, including the advance value on the glyph (horizontal or vertical), the effect of properties 'kerning', 'letter.spacing' and 'word.spacing' and adjustments due to attributes 'dx' and 'dy' on this 'tspan' element or any descendants. This value is used to calibrate the user agent's own calculations with that of the author. The purpose of this attribute is to allow the author to achieve exact alignment, in visual rendering order after any bidirectional reordering, for the first and last rendered glyphs that correspond to this element; thus, for the last rendered character (in visual rendering order after any bidirectional reordering), any supplemental inter.character spacing beyond normal glyph advances are ignored (in most cases) when the user agent determines the appropriate amount to expand/compress the text string to fit within a length of 'textLength'. If attribute 'textLength' is specified on a given element and also specified on an ancestor, the adjustments on all character data within this element are controlled by the value of 'textLength' on this element exclusively, with the possible side.effect that the adjustment ratio for the contents of this element might be different than the adjustment ratio used for other content that shares the same ancestor. The user agent must assume that the total advance values for the other content within that ancestor is the difference between the advance value on that ancestor and the advance value for this element. A negative value is an error (see Error processing). If the attribute is not specified anywhere within a 'text' element, the effect is as if the author's computation exactly matched the value calculated by the user agent; thus, no advance adjustments are made.Animatable. yes.}
+\item{<length>}{Specifies a presumed total sum of all of the advance values that correspond to character data within this element to assist by the user agent to in achieving exact alignment. The presumed total sum should include the advance value on the \emph{glyph} (horizontal or vertical), the effect of properties \emph{'kerning'}, \emph{'letter.spacing'} and \emph{'word.spacing'} and any adjustments due to attributes \emph{'dx'} and \emph{'dy'} on \emph{'tspan'} elements.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

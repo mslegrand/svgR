@@ -4,26 +4,25 @@
 \alias{HKernElementU12Attribute}
 \title{u12}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning u1 and u2
 }
 \section{Combines}{
 
-\code{\link[=HKernElementU1Attribute]{u1}}, \code{\link[=HKernElementU2Attribute]{u2}}
+\code{\link[=HKernElementU12Attribute]{u1}}, \code{\link[=HKernElementU12Attribute]{u2}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{u12=c(value.U1,value.U2)}
-\item{and}{u1 = value.U1; u2 = value.U2}
+u12 =v is equivalent to  u1=v[1], u2=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

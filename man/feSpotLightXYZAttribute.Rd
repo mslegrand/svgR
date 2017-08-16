@@ -4,26 +4,25 @@
 \alias{feSpotLightXYZAttribute}
 \title{xyz}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x, y and z
 }
 \section{Combines}{
 
-\code{\link[=feSpotLightXAttribute]{x}}, \code{\link[=feSpotLightYAttribute]{y}}, \code{\link[=feSpotLightZAttribute]{z}}
+\code{\link[=feSpotLightXYZAttribute]{x}}, \code{\link[=feSpotLightXYZAttribute]{y}}, \code{\link[=feSpotLightXYZAttribute]{z}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xyz=c(value.X,value.Y,value.Z)}
-\item{and}{x = value.X; y = value.Y; z = value.Z}
+xyz =v is equivalent to  x=v[1], y=v[2], z=v[3]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

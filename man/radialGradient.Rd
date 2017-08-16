@@ -2,17 +2,17 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{radialGradient}
 \alias{radialGradient}
-\title{An Element to define a radial gradient}
+\title{An element to define a radial gradient}
 \description{
 RadialGradient is used to define a radial gradient fill or stroke of  a graphical element.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=RadialGradientElementCXYAttribute]{cxy}}, \code{\link[=RadialGradientElementFXYAttribute]{fxy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=RadialGradientElementCXAttribute]{cx}}, \code{\link[=RadialGradientElementCYAttribute]{cy}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=RadialGradientElementFXAttribute]{fx}}, \code{\link[=RadialGradientElementFYAttribute]{fy}}, \code{\link[=RadialGradientElementGradientTransformAttribute]{gradientTransform}}, \code{\link[=RadialGradientElementGradientUnitsAttribute]{gradientUnits}}, \code{\link[=RadialGradientElementRAttribute]{r}}, \code{\link[=RadialGradientElementSpreadMethodAttribute]{spreadMethod}}, \code{\link[=StyleAttribute]{style}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=RadialGradientElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=RadialGradientElementCXYAttribute]{cxy}}, \code{\link[=RadialGradientElementFXYAttribute]{fxy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=RadialGradientElementCXAttribute]{cx}}, \code{\link[=RadialGradientElementCYAttribute]{cy}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=RadialGradientElementFXAttribute]{fx}}, \code{\link[=RadialGradientElementFYAttribute]{fy}}, \code{\link[=RadialGradientElementGradientTransformAttribute]{gradientTransform}}, \code{\link[=RadialGradientElementGradientUnitsAttribute]{gradientUnits}}, \code{\link[=RadialGradientElementRAttribute]{r}}, \code{\link[=RadialGradientElementSpreadMethodAttribute]{spreadMethod}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=RadialGradientElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -21,8 +21,8 @@ RadialGradient is used to define a radial gradient fill or stroke of  a graphica
 \describe{
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
-\item{\emph{Unclassfied:}}{\code{\link[=stop]{stop}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=stop]{stop}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

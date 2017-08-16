@@ -4,20 +4,29 @@
 \alias{FontFaceElementFontStyleAttribute}
 \title{font.style}
 \description{
-ToDo: Needs to be written!!!
+Governs the font style ( for example, italic, bold, )
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{all | [ normal | italic | oblique] [, [normal | italic | oblique]]*}{Same syntax and semantics as the 'font.style' descriptor within an font.face rule. The style of a font. Takes on the same values as the 'font.style' property, except that a comma.separated list is permitted. If the attribute is not specified, the effect is as if a value of 'all' were specified.Animatable. no.}
+\item{\emph{'all'}}{Specifies all three font styles.}
+\item{\emph{'normal'}}{Specifies a \emph{normal} font style.}
+\item{\emph{'italic'}}{Specifies an \emph{italic} font style}
+\item{\emph{'oblique'}}{Specifies an \emph{oblique} font style.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{GlyphRefElementFormatAttribute}
 \title{format}
 \description{
-ToDo: Needs to be written!!!
+Sets the fonts glyph font.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{The format of the given font. If the font is in one of the formats listed in CSS2 ([CSS2], section 15.3.5), such as TrueDoc Portable Font Resource or Embedded OpenType, then the <string> must contain the corresponding font format string, such as truedoc.pfr or embedded.opentype.Animatable. no.}
+\item{<glyph-format>}{Specifies a \emph{Glyph} format.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

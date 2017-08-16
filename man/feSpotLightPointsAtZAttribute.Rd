@@ -4,20 +4,27 @@
 \alias{feSpotLightPointsAtZAttribute}
 \title{pointsAtZ}
 \description{
-ToDo: Needs to be written!!!
+Sets the Z-location of where the spot light is pointing.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Z location in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element of the point at which the light source is pointing, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the z-coordinate of where light source is point to. The coordinate is given in terms of the \emph{primitiveUnits} of the coordinate system  established on the \strong{filter element}. (Default=0)}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

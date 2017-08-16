@@ -4,20 +4,27 @@
 \alias{PatternElementHeightAttribute}
 \title{height}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the pattern element
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{See 'x'. A negative value is an error (see Error processing). A value of zero disables rendering of the element (i.e., no paint is applied). If the attribute is not specified, the effect is as if a value of zero were specified.Animatable. yes.}
+\item{<length>}{Specifies a tile \emph{height.} (Must be non-negative).}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=pattern]{pattern}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,12 +4,14 @@
 \alias{feMorphologyOperatorAttribute}
 \title{operator}
 \description{
-ToDo: Needs to be written!!!
+Governs whether to erode (make thin) or dilate (make fatter).
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{erode | dilate}{A keyword indicating whether to erode (i.e., thin) or dilate (fatten) the source graphic. If attribute 'operator' is not specified, then the effect is as if a value of erode were specified. Animatable. yes.}
+\item{\emph{'erode'}}{Specifies to \emph{erode} (to thin)}
+\item{\emph{'dilate'}}{Specifies to \emph{dilate} (to fatten)}
 }
 }
 
@@ -19,5 +21,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feMorphology]{feMorphology}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

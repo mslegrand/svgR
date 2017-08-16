@@ -4,13 +4,15 @@
 \alias{fill-opacity-presentationAttribute}
 \title{fill.opacity}
 \description{
-ToDo: Needs to be written!!!
+Defines the opacity of the painting operation used to paint the interior the current object.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<opacity-value>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<opacity-value>}{Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the opacity value from the parent.}
 }
 }
 
@@ -18,9 +20,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

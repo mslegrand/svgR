@@ -11,7 +11,7 @@
 #' @keywords display helper
 NULL
 
-graphPaper <- function(wh=c(600,200), dxy=c(10, 10), labels=FALSE ){
+graphPaper <- function(wh=getRootWH(), dxy=c(10, 10), labels=FALSE ){
   seq(0,wh[1],dxy[1])->xs
   seq(0,wh[2],dxy[2])->ys
   grph<-c(

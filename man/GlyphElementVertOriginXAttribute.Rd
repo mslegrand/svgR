@@ -4,20 +4,26 @@
 \alias{GlyphElementVertOriginXAttribute}
 \title{vert.origin.x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the glyphs origin to be applied to a vertically orientented text. This value is to be interpreted within the fonts coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The X.coordinate in the font coordinate system of the origin of the glyph to be used when drawing vertically oriented text. If the attribute is not specified, the effect is as if the attribute were set to the value of the font's 'vert.origin.x' attribute.Animatable. no.}
+\item{<numeric>}{Specifies the default x-coordinate of the origin for a \emph{glyph} relative to coordinate system when in text orientation is vertical. Default is value of vert-origin-x of font.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

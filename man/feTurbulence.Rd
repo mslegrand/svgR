@@ -2,19 +2,19 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feTurbulence}
 \alias{feTurbulence}
-\title{A Filter Primitive Element producing turbulence effect on an image}
+\title{A filter primitive element producing turbulence effect on an image}
 \description{
 This filter primitive creates an image using the Perlin turbulence function. It allows the synthesis of artificial textures like clouds or marble.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
-\item{\emph{transfer function element attributes}}{\code{\link[=feTurbulenceTypeAttribute]{type}}}
-\item{\emph{unclassified}}{\code{\link[=feTurbulenceBaseFrequencyAttribute]{baseFrequency}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=feTurbulenceNumOctavesAttribute]{numOctaves}}, \code{\link[=feTurbulenceSeedAttribute]{seed}}, \code{\link[=feTurbulenceStitchTilesAttribute]{stitchTiles}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
+\item{\emph{Transfer Function Element Attributes}}{\code{\link[=feTurbulenceTypeAttribute]{type}}}
+\item{\emph{Unclassified}}{\code{\link[=feTurbulenceBaseFrequencyAttribute]{baseFrequency}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=feTurbulenceNumOctavesAttribute]{numOctaves}}, \code{\link[=feTurbulenceSeedAttribute]{seed}}, \code{\link[=feTurbulenceStitchTilesAttribute]{stitchTiles}}, \code{\link[=StyleAttribute]{style}}}
 }
 }
 
@@ -24,5 +24,5 @@ This filter primitive creates an image using the Perlin turbulence function. It 
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

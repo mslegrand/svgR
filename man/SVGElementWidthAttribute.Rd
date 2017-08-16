@@ -4,20 +4,27 @@
 \alias{SVGElementWidthAttribute}
 \title{width}
 \description{
-ToDo: Needs to be written!!!
+Sets the width of the svg.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{For outermost svg elements, the intrinsic width of the SVG document fragment. For embedded 'svg' elements, the width of the rectangular region into which the 'svg' element is placed. A negative value is an error (see Error processing). A value of zero disables rendering of the element. If the attribute is not specified, the effect is as if a value of '100' were specified.Animatable. yes.}
+\item{<length>}{Specifies the \emph{width} of the \strong{svg}. This applies to both for an embedded \strong{svg} and an outer-most \strong{svg} (i.e. \strong{svgR}).}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

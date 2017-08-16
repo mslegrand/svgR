@@ -4,21 +4,23 @@
 \alias{ViewBoxAttribute}
 \title{viewBox}
 \description{
-ToDo: Needs to be written!!!
+Sets the size and placement of the viewBox. The viewBox is a rectangular region into which the viewport is mapped.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{c(x,y,w,h)}{x, y upper left hand corner; w,h width height}
+\item{<numeric>[4] ( =c(x,y,w,h))}{Specifies the \emph{viewbox} with c( x, y) being upper left hand corner and c(w, h) being the \emph{width} and \emph{height.}}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
-\item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}, \code{\link[=view]{view}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=view]{view}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

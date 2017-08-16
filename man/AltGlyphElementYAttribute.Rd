@@ -4,20 +4,26 @@
 \alias{AltGlyphElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinates for the alternative glyphs..
 }
 \section{Available Attribute Values}{
 
 \describe{
-\item{<list.of.coordinates>}{The corresponding absolute Y coordinates for rendering the 'altGlyph' element.Animatable. yes.}
+\item{<coordinate>}{Specifies corresponding absolute y-coordinates for \strong{altGlyph} element. If rendering only unicode characters inside an \strong{altGlyph} element, then this specifies the absolute y-coordinates for the first n characters where n is the length of the y-vector . If rendering alternate \emph{glyphs}, then y[1] specifies a new the absolute y-coordinate for the current text position, so that text begins as y[1], with the remainder, y[-1], being ignored.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

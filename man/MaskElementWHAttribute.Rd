@@ -4,26 +4,25 @@
 \alias{MaskElementWHAttribute}
 \title{wh}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning height and width
 }
 \section{Combines}{
 
-\code{\link[=MaskElementHeightAttribute]{height}}, \code{\link[=MaskElementWidthAttribute]{width}}
+\code{\link[=MaskElementWHAttribute]{height}}, \code{\link[=MaskElementWHAttribute]{width}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{wh=c(value.HEIGHT,value.WIDTH)}
-\item{and}{height = value.HEIGHT; width = value.WIDTH}
+wh =v is equivalent to  height=v[1], width=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

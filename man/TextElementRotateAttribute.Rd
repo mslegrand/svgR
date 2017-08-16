@@ -4,20 +4,27 @@
 \alias{TextElementRotateAttribute}
 \title{rotate}
 \description{
-ToDo: Needs to be written!!!
+Sets a sequence of  one or more rotations to be applied to consecutive glyphs upon rendering.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<list.of.numbers>}{The supplemental rotation about the current text position that will be applied to all of the glyphs corresponding to each character within this element. Refer to the description of the 'rotate' attribute on the 'tspan' element. If the attribute is not specified on this element or any of its descendants, no supplemental rotations will occur.Animatable. yes (non.additive).}
+\item{<angle>[N]}{Specifies an additional rotation (in degrees) to be applied sequentiolly to each character. If the number of characters exceeds the number of rotations, the extra character receive the last rotation.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

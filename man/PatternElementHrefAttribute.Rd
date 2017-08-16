@@ -4,20 +4,27 @@
 \alias{PatternElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to another pattern element residing in the current fragment.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to a different 'pattern' element within the current SVG document fragment. Any attributes which are defined on the referenced element which are not defined on this element are inherited by this element. If this element has no children, and the referenced element does (possibly due to its own 'xlink.href' attribute), then this element inherits the children from the referenced element. Inheritance can be indirect to an arbitrary level; thus, if the referenced element inherits attributes or children due to its own 'xlink.href' attribute, then the current element can inherit those attributes or children.Animatable. yes.}
+\item{<IRI>}{Specifies a reference to a pattern element.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=pattern]{pattern}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

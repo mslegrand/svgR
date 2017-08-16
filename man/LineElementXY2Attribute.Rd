@@ -4,18 +4,17 @@
 \alias{LineElementXY2Attribute}
 \title{xy2}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x2 and y2
 }
 \section{Combines}{
 
-\code{\link[=LineElementX2Attribute]{x2}}, \code{\link[=LineElementY2Attribute]{y2}}
+\code{\link[=LineElementXY2Attribute]{x2}}, \code{\link[=LineElementXY2Attribute]{y2}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy2=c(value.X2,value.Y2)}
-\item{and}{x2 = value.X2; y2 = value.Y2}
+xy2 =v is equivalent to  x2=v[1], y2=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=line]{line}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

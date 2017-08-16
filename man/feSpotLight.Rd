@@ -2,17 +2,17 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feSpotLight}
 \alias{feSpotLight}
-\title{A Primitive Filter Element that defines a spotlight light source}
+\title{A primitive filter element that defines a spot light  source}
 \description{
-description=
+This filter primitive defines a directed light source simulating the effect of a spot light.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtXYZ}}, \code{\link[=feSpotLightXYZAttribute]{xyz}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=feSpotLightXAttribute]{x}}, \code{\link[=feSpotLightYAttribute]{y}}}
-\item{\emph{unclassified}}{\code{\link[=feSpotLightLimitingConeAngleAttribute]{limitingConeAngle}}, \code{\link[=feSpotLightPointsAtXAttribute]{pointsAtX}}, \code{\link[=feSpotLightPointsAtYAttribute]{pointsAtY}}, \code{\link[=feSpotLightPointsAtZAttribute]{pointsAtZ}}, \code{\link[=feSpotLightSpecularExponentAttribute]{specularExponent}}, \code{\link[=feSpotLightZAttribute]{z}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtXYZ}}, \code{\link[=feSpotLightXYZAttribute]{xyz}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=feSpotLightXAttribute]{x}}, \code{\link[=feSpotLightYAttribute]{y}}}
+\item{\emph{Unclassified}}{\code{\link[=feSpotLightLimitingConeAngleAttribute]{limitingConeAngle}}, \code{\link[=feSpotLightPointsAtXAttribute]{pointsAtX}}, \code{\link[=feSpotLightPointsAtYAttribute]{pointsAtY}}, \code{\link[=feSpotLightPointsAtZAttribute]{pointsAtZ}}, \code{\link[=feSpotLightSpecularExponentAttribute]{specularExponent}}, \code{\link[=feSpotLightZAttribute]{z}}}
 }
 }
 
@@ -22,5 +22,5 @@ description=
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

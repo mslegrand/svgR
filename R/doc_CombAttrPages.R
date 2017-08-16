@@ -1,17 +1,16 @@
 #' @name AltGlyphElementDXYAttribute
 #' @title dxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning dx and dy
 #' @section Combines:
-#' \code{\link[=AltGlyphElementDXAttribute]{dx}}, \code{\link[=AltGlyphElementDYAttribute]{dy}}
+#' \code{\link[=AltGlyphElementDXYAttribute]{dx}}, \code{\link[=AltGlyphElementDXYAttribute]{dy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{dxy=c(value.DX,value.DY)}
-#' \item{and}{dx = value.DX; dy = value.DY}
+#' dxy =v is equivalent to  dx=v[1], dy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+#' \item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 #' }
 #' @keywords internal
 NULL
@@ -20,17 +19,16 @@ NULL
 #' @name AltGlyphElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=AltGlyphElementXAttribute]{x}}, \code{\link[=AltGlyphElementYAttribute]{y}}
+#' \code{\link[=AltGlyphElementXYAttribute]{x}}, \code{\link[=AltGlyphElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+#' \item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 #' }
 #' @keywords internal
 NULL
@@ -39,13 +37,12 @@ NULL
 #' @name CircleElementCXYAttribute
 #' @title cxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning cx and cy
 #' @section Combines:
-#' \code{\link[=CircleElementCXAttribute]{cx}}, \code{\link[=CircleElementCYAttribute]{cy}}
+#' \code{\link[=CircleElementCXYAttribute]{cx}}, \code{\link[=CircleElementCXYAttribute]{cy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{cxy=c(value.CX,value.CY)}
-#' \item{and}{cx = value.CX; cy = value.CY}
+#' cxy =v is equivalent to  cx=v[1], cy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -58,17 +55,16 @@ NULL
 #' @name CursorElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=CursorElementXAttribute]{x}}, \code{\link[=CursorElementYAttribute]{y}}
+#' \code{\link[=CursorElementXYAttribute]{x}}, \code{\link[=CursorElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=cursor]{cursor}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=cursor]{cursor}}}
 #' }
 #' @keywords internal
 NULL
@@ -77,13 +73,12 @@ NULL
 #' @name EllipseElementCXYAttribute
 #' @title cxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning cx and cy
 #' @section Combines:
-#' \code{\link[=EllipseElementCXAttribute]{cx}}, \code{\link[=EllipseElementCYAttribute]{cy}}
+#' \code{\link[=EllipseElementCXYAttribute]{cx}}, \code{\link[=EllipseElementCXYAttribute]{cy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{cxy=c(value.CX,value.CY)}
-#' \item{and}{cx = value.CX; cy = value.CY}
+#' cxy =v is equivalent to  cx=v[1], cy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -96,13 +91,12 @@ NULL
 #' @name EllipseElementRXYAttribute
 #' @title rxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning rx and ry
 #' @section Combines:
-#' \code{\link[=EllipseElementRXAttribute]{rx}}, \code{\link[=EllipseElementRYAttribute]{ry}}
+#' \code{\link[=EllipseElementRXYAttribute]{rx}}, \code{\link[=EllipseElementRXYAttribute]{ry}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{rxy=c(value.RX,value.RY)}
-#' \item{and}{rx = value.RX; ry = value.RY}
+#' rxy =v is equivalent to  rx=v[1], ry=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -112,35 +106,15 @@ NULL
 NULL
 
 
-#' @name FilterPrimitiveIN1Attribute
-#' @title in1
-#' @description 
-#' ToDo: Needs to be written!!!
-#' @section Combines:
-#' \code{\link[=FilterPrimitiveInAttribute]{in}}
-#' @section Equivalence:
-#' \describe{
-#' \item{}{in1=c(value.IN)}
-#' \item{and}{in = value.IN}
-#' }
-#' @section Used by the Elements:
-#' \describe{
-#' \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feColorMatrix]{feColorMatrix}}, \code{\link[=feComponentTransfer]{feComponentTransfer}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feConvolveMatrix]{feConvolveMatrix}}, \code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}, \code{\link[=feGaussianBlur]{feGaussianBlur}}, \code{\link[=feMorphology]{feMorphology}}, \code{\link[=feOffset]{feOffset}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}, \code{\link[=feTile]{feTile}}}
-#' }
-#' @keywords internal
-NULL
-
-
 #' @name FilterPrimitiveIN12Attribute
 #' @title in12
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning in and in2
 #' @section Combines:
-#' \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feBlendIn2Attribute]{in2}}, \code{\link[=feCompositeIn2Attribute]{in}}, \code{\link[=feDisplacementMapIn2Attribute]{in2}}
+#' \code{\link[=FilterPrimitiveIN12Attribute]{in1}}, \code{\link[=FilterPrimitiveIN12Attribute]{in2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{in12=c(value.IN,value.IN2)}
-#' \item{and}{in = value.IN; in2 = value.IN2}
+#' in12 =v is equivalent to  in=v[1], in2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -153,13 +127,12 @@ NULL
 #' @name FilterPrimitiveWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}
+#' \code{\link[=FilterPrimitiveWHAttribute]{height}}, \code{\link[=FilterPrimitiveWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -172,13 +145,12 @@ NULL
 #' @name FilterPrimitiveXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}
+#' \code{\link[=FilterPrimitiveXYAttribute]{x}}, \code{\link[=FilterPrimitiveXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -191,13 +163,12 @@ NULL
 #' @name feCompositeK1234Attribute
 #' @title k1234
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning k1, k2, k3 and k4
 #' @section Combines:
-#' \code{\link[=feCompositeK1Attribute]{k1}}, \code{\link[=feCompositeK2Attribute]{k2}}, \code{\link[=feCompositeK3Attribute]{k3}}, \code{\link[=feCompositeK4Attribute]{k4}}
+#' \code{\link[=feCompositeK1234Attribute]{k1}}, \code{\link[=feCompositeK1234Attribute]{k2}}, \code{\link[=feCompositeK1234Attribute]{k3}}, \code{\link[=feCompositeK1234Attribute]{k4}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{k1234=c(value.K1,value.K2,value.K3,value.K4)}
-#' \item{and}{k1 = value.K1; k2 = value.K2; k3 = value.K3; k4 = value.K4}
+#' k1234 =v is equivalent to  k1=v[1], k2=v[2], k3=v[3], k4=v[4]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -210,13 +181,12 @@ NULL
 #' @name feConvolveMatrixElementTARGETXYAttribute
 #' @title targetXY
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning targetX and targetY
 #' @section Combines:
-#' \code{\link[=feConvolveMatrixElementTargetXAttribute]{targetX}}, \code{\link[=feConvolveMatrixElementTargetYAttribute]{targetY}}
+#' \code{\link[=feConvolveMatrixElementTARGETXYAttribute]{targetX}}, \code{\link[=feConvolveMatrixElementTARGETXYAttribute]{targetY}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{targetXY=c(value.TARGETX,value.TARGETY)}
-#' \item{and}{targetX = value.TARGETX; targetY = value.TARGETY}
+#' targetXY =v is equivalent to  targetX=v[1], targetY=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -229,13 +199,12 @@ NULL
 #' @name feOffsetDXYAttribute
 #' @title dxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning dx and dy
 #' @section Combines:
-#' \code{\link[=feOffsetDxAttribute]{dx}}, \code{\link[=feOffsetDyAttribute]{dy}}
+#' \code{\link[=feOffsetDXYAttribute]{dx}}, \code{\link[=feOffsetDXYAttribute]{dy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{dxy=c(value.DX,value.DY)}
-#' \item{and}{dx = value.DX; dy = value.DY}
+#' dxy =v is equivalent to  dx=v[1], dy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -248,17 +217,16 @@ NULL
 #' @name fePointLightXYZAttribute
 #' @title xyz
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x, y and z
 #' @section Combines:
-#' \code{\link[=fePointLightXAttribute]{x}}, \code{\link[=fePointLightYAttribute]{y}}, \code{\link[=fePointLightZAttribute]{z}}
+#' \code{\link[=fePointLightXYZAttribute]{x}}, \code{\link[=fePointLightXYZAttribute]{y}}, \code{\link[=fePointLightXYZAttribute]{z}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xyz=c(value.X,value.Y,value.Z)}
-#' \item{and}{x = value.X; y = value.Y; z = value.Z}
+#' xyz =v is equivalent to  x=v[1], y=v[2], z=v[3]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=fePointLight]{fePointLight}}}
+#' \item{\emph{Light Source Elements}}{\code{\link[=fePointLight]{fePointLight}}}
 #' }
 #' @keywords internal
 NULL
@@ -267,17 +235,16 @@ NULL
 #' @name feSpotLightPOINTSATXYZAttribute
 #' @title pointsAtXYZ
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning pointsAtX, pointsAtY and pointsAtZ
 #' @section Combines:
-#' \code{\link[=feSpotLightPointsAtXAttribute]{pointsAtX}}, \code{\link[=feSpotLightPointsAtYAttribute]{pointsAtY}}, \code{\link[=feSpotLightPointsAtZAttribute]{pointsAtZ}}
+#' \code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtX}}, \code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtY}}, \code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtZ}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{pointsAtXYZ=c(value.POINTSATX,value.POINTSATY,value.POINTSATZ)}
-#' \item{and}{pointsAtX = value.POINTSATX; pointsAtY = value.POINTSATY; pointsAtZ = value.POINTSATZ}
+#' pointsAtXYZ =v is equivalent to  pointsAtX=v[1], pointsAtY=v[2], pointsAtZ=v[3]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+#' \item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 #' }
 #' @keywords internal
 NULL
@@ -286,17 +253,16 @@ NULL
 #' @name feSpotLightXYZAttribute
 #' @title xyz
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x, y and z
 #' @section Combines:
-#' \code{\link[=feSpotLightXAttribute]{x}}, \code{\link[=feSpotLightYAttribute]{y}}, \code{\link[=feSpotLightZAttribute]{z}}
+#' \code{\link[=feSpotLightXYZAttribute]{x}}, \code{\link[=feSpotLightXYZAttribute]{y}}, \code{\link[=feSpotLightXYZAttribute]{z}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xyz=c(value.X,value.Y,value.Z)}
-#' \item{and}{x = value.X; y = value.Y; z = value.Z}
+#' xyz =v is equivalent to  x=v[1], y=v[2], z=v[3]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+#' \item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 #' }
 #' @keywords internal
 NULL
@@ -305,17 +271,16 @@ NULL
 #' @name FilterElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=FilterElementHeightAttribute]{height}}, \code{\link[=FilterElementWidthAttribute]{width}}
+#' \code{\link[=FilterElementWHAttribute]{height}}, \code{\link[=FilterElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 #' }
 #' @keywords internal
 NULL
@@ -324,17 +289,16 @@ NULL
 #' @name FilterElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=FilterElementXAttribute]{x}}, \code{\link[=FilterElementYAttribute]{y}}
+#' \code{\link[=FilterElementXYAttribute]{x}}, \code{\link[=FilterElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 #' }
 #' @keywords internal
 NULL
@@ -343,17 +307,16 @@ NULL
 #' @name FontElementHORIZORIGINXYAttribute
 #' @title horiz.origin.xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning horiz-origin-x and horiz-origin-y
 #' @section Combines:
-#' \code{\link[=FontElementHorizOriginXAttribute]{horiz.origin.x}}, \code{\link[=FontElementHorizOriginYAttribute]{horiz.origin.y}}
+#' \code{\link[=FontElementHORIZORIGINXYAttribute]{horiz.origin.x}}, \code{\link[=FontElementHORIZORIGINXYAttribute]{horiz.origin.y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{horiz.origin.xy=c(value.HORIZ.ORIGIN.X,value.HORIZ.ORIGIN.Y)}
-#' \item{and}{horiz.origin.x = value.HORIZ.ORIGIN.X; horiz.origin.y = value.HORIZ.ORIGIN.Y}
+#' horiz-origin-xy =v is equivalent to  horiz-origin-x=v[1], horiz-origin-y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=font]{font}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=font]{font}}}
 #' }
 #' @keywords internal
 NULL
@@ -362,17 +325,16 @@ NULL
 #' @name FontElementVERTORIGINXYAttribute
 #' @title vert.origin.xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning vert-origin-x and vert-origin-y
 #' @section Combines:
-#' \code{\link[=FontElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=FontElementVertOriginYAttribute]{vert.origin.y}}
+#' \code{\link[=FontElementVERTORIGINXYAttribute]{vert.origin.x}}, \code{\link[=FontElementVERTORIGINXYAttribute]{vert.origin.y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{vert.origin.xy=c(value.VERT.ORIGIN.X,value.VERT.ORIGIN.Y)}
-#' \item{and}{vert.origin.x = value.VERT.ORIGIN.X; vert.origin.y = value.VERT.ORIGIN.Y}
+#' vert-origin-xy =v is equivalent to  vert-origin-x=v[1], vert-origin-y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=font]{font}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=font]{font}}}
 #' }
 #' @keywords internal
 NULL
@@ -381,17 +343,16 @@ NULL
 #' @name ForeignObjectElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=ForeignObjectElementHeightAttribute]{height}}, \code{\link[=ForeignObjectElementWidthAttribute]{width}}
+#' \code{\link[=ForeignObjectElementWHAttribute]{height}}, \code{\link[=ForeignObjectElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 #' }
 #' @keywords internal
 NULL
@@ -400,17 +361,16 @@ NULL
 #' @name ForeignObjectElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=ForeignObjectElementXAttribute]{x}}, \code{\link[=ForeignObjectElementYAttribute]{y}}
+#' \code{\link[=ForeignObjectElementXYAttribute]{x}}, \code{\link[=ForeignObjectElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 #' }
 #' @keywords internal
 NULL
@@ -419,17 +379,16 @@ NULL
 #' @name GlyphElementVERTORIGINXYAttribute
 #' @title vert.origin.xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning vert-origin-x and vert-origin-y
 #' @section Combines:
-#' \code{\link[=GlyphElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=GlyphElementVertOriginYAttribute]{vert.origin.y}}
+#' \code{\link[=GlyphElementVERTORIGINXYAttribute]{vert.origin.x}}, \code{\link[=GlyphElementVERTORIGINXYAttribute]{vert.origin.y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{vert.origin.xy=c(value.VERT.ORIGIN.X,value.VERT.ORIGIN.Y)}
-#' \item{and}{vert.origin.x = value.VERT.ORIGIN.X; vert.origin.y = value.VERT.ORIGIN.Y}
+#' vert-origin-xy =v is equivalent to  vert-origin-x=v[1], vert-origin-y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
+#' \item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
 #' }
 #' @keywords internal
 NULL
@@ -438,17 +397,16 @@ NULL
 #' @name GlyphRefElementDXYAttribute
 #' @title dxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning dx and dy
 #' @section Combines:
-#' \code{\link[=GlyphRefElementDXAttribute]{dx}}, \code{\link[=GlyphRefElementDYAttribute]{dy}}
+#' \code{\link[=GlyphRefElementDXYAttribute]{dx}}, \code{\link[=GlyphRefElementDXYAttribute]{dy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{dxy=c(value.DX,value.DY)}
-#' \item{and}{dx = value.DX; dy = value.DY}
+#' dxy =v is equivalent to  dx=v[1], dy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 #' }
 #' @keywords internal
 NULL
@@ -457,17 +415,16 @@ NULL
 #' @name GlyphRefElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=GlyphRefElementXAttribute]{x}}, \code{\link[=GlyphRefElementYAttribute]{y}}
+#' \code{\link[=GlyphRefElementXYAttribute]{x}}, \code{\link[=GlyphRefElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 #' }
 #' @keywords internal
 NULL
@@ -476,17 +433,16 @@ NULL
 #' @name HKernElementG12Attribute
 #' @title g12
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning g1 and g2
 #' @section Combines:
-#' \code{\link[=HKernElementG1Attribute]{g1}}, \code{\link[=HKernElementG2Attribute]{g2}}
+#' \code{\link[=HKernElementG12Attribute]{g1}}, \code{\link[=HKernElementG12Attribute]{g2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{g12=c(value.G1,value.G2)}
-#' \item{and}{g1 = value.G1; g2 = value.G2}
+#' g12 =v is equivalent to  g1=v[1], g2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 #' }
 #' @keywords internal
 NULL
@@ -495,17 +451,16 @@ NULL
 #' @name HKernElementU12Attribute
 #' @title u12
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning u1 and u2
 #' @section Combines:
-#' \code{\link[=HKernElementU1Attribute]{u1}}, \code{\link[=HKernElementU2Attribute]{u2}}
+#' \code{\link[=HKernElementU12Attribute]{u1}}, \code{\link[=HKernElementU12Attribute]{u2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{u12=c(value.U1,value.U2)}
-#' \item{and}{u1 = value.U1; u2 = value.U2}
+#' u12 =v is equivalent to  u1=v[1], u2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+#' \item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 #' }
 #' @keywords internal
 NULL
@@ -514,17 +469,16 @@ NULL
 #' @name ImageElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=ImageElementHeightAttribute]{height}}, \code{\link[=ImageElementWidthAttribute]{width}}
+#' \code{\link[=ImageElementWHAttribute]{height}}, \code{\link[=ImageElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+#' \item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 #' }
 #' @keywords internal
 NULL
@@ -533,17 +487,16 @@ NULL
 #' @name ImageElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=ImageElementXAttribute]{x}}, \code{\link[=ImageElementYAttribute]{y}}
+#' \code{\link[=ImageElementXYAttribute]{x}}, \code{\link[=ImageElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+#' \item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 #' }
 #' @keywords internal
 NULL
@@ -552,13 +505,12 @@ NULL
 #' @name LineElementX12Attribute
 #' @title x12
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x1 and x2
 #' @section Combines:
-#' \code{\link[=LineElementX1Attribute]{x1}}, \code{\link[=LineElementX2Attribute]{x2}}
+#' \code{\link[=LineElementX12Attribute]{x1}}, \code{\link[=LineElementX12Attribute]{x2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{x12=c(value.X1,value.X2)}
-#' \item{and}{x1 = value.X1; x2 = value.X2}
+#' x12 =v is equivalent to  x1=v[1], x2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -571,13 +523,12 @@ NULL
 #' @name LineElementXY1Attribute
 #' @title xy1
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x1 and y1
 #' @section Combines:
-#' \code{\link[=LineElementX1Attribute]{x1}}, \code{\link[=LineElementY1Attribute]{y1}}
+#' \code{\link[=LineElementXY1Attribute]{x1}}, \code{\link[=LineElementXY1Attribute]{y1}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy1=c(value.X1,value.Y1)}
-#' \item{and}{x1 = value.X1; y1 = value.Y1}
+#' xy1 =v is equivalent to  x1=v[1], y1=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -590,13 +541,12 @@ NULL
 #' @name LineElementXY2Attribute
 #' @title xy2
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x2 and y2
 #' @section Combines:
-#' \code{\link[=LineElementX2Attribute]{x2}}, \code{\link[=LineElementY2Attribute]{y2}}
+#' \code{\link[=LineElementXY2Attribute]{x2}}, \code{\link[=LineElementXY2Attribute]{y2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy2=c(value.X2,value.Y2)}
-#' \item{and}{x2 = value.X2; y2 = value.Y2}
+#' xy2 =v is equivalent to  x2=v[1], y2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -609,13 +559,12 @@ NULL
 #' @name LineElementY12Attribute
 #' @title y12
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning y1 and y2
 #' @section Combines:
-#' \code{\link[=LineElementY1Attribute]{y1}}, \code{\link[=LineElementY2Attribute]{y2}}
+#' \code{\link[=LineElementY12Attribute]{y1}}, \code{\link[=LineElementY12Attribute]{y2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{y12=c(value.Y1,value.Y2)}
-#' \item{and}{y1 = value.Y1; y2 = value.Y2}
+#' y12 =v is equivalent to  y1=v[1], y2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -628,13 +577,12 @@ NULL
 #' @name LinearGradientElementX12Attribute
 #' @title x12
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x1 and x2
 #' @section Combines:
-#' \code{\link[=LinearGradientElementX1Attribute]{x1}}, \code{\link[=LinearGradientElementX2Attribute]{x2}}
+#' \code{\link[=LinearGradientElementX12Attribute]{x1}}, \code{\link[=LinearGradientElementX12Attribute]{x2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{x12=c(value.X1,value.X2)}
-#' \item{and}{x1 = value.X1; x2 = value.X2}
+#' x12 =v is equivalent to  x1=v[1], x2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -647,13 +595,12 @@ NULL
 #' @name LinearGradientElementXY1Attribute
 #' @title xy1
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x1 and y1
 #' @section Combines:
-#' \code{\link[=LinearGradientElementX1Attribute]{x1}}, \code{\link[=LinearGradientElementY1Attribute]{y1}}
+#' \code{\link[=LinearGradientElementXY1Attribute]{x1}}, \code{\link[=LinearGradientElementXY1Attribute]{y1}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy1=c(value.X1,value.Y1)}
-#' \item{and}{x1 = value.X1; y1 = value.Y1}
+#' xy1 =v is equivalent to  x1=v[1], y1=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -666,13 +613,12 @@ NULL
 #' @name LinearGradientElementXY2Attribute
 #' @title xy2
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x2 and y2
 #' @section Combines:
-#' \code{\link[=LinearGradientElementX2Attribute]{x2}}, \code{\link[=LinearGradientElementY2Attribute]{y2}}
+#' \code{\link[=LinearGradientElementXY2Attribute]{x2}}, \code{\link[=LinearGradientElementXY2Attribute]{y2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy2=c(value.X2,value.Y2)}
-#' \item{and}{x2 = value.X2; y2 = value.Y2}
+#' xy2 =v is equivalent to  x2=v[1], y2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -685,13 +631,12 @@ NULL
 #' @name LinearGradientElementY12Attribute
 #' @title y12
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning y1 and y2
 #' @section Combines:
-#' \code{\link[=LinearGradientElementY1Attribute]{y1}}, \code{\link[=LinearGradientElementY2Attribute]{y2}}
+#' \code{\link[=LinearGradientElementY12Attribute]{y1}}, \code{\link[=LinearGradientElementY12Attribute]{y2}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{y12=c(value.Y1,value.Y2)}
-#' \item{and}{y1 = value.Y1; y2 = value.Y2}
+#' y12 =v is equivalent to  y1=v[1], y2=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -704,17 +649,16 @@ NULL
 #' @name MarkerElementREFXYAttribute
 #' @title refXY
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning refX and refY
 #' @section Combines:
-#' \code{\link[=MarkerElementRefXAttribute]{refX}}, \code{\link[=MarkerElementRefYAttribute]{refY}}
+#' \code{\link[=MarkerElementREFXYAttribute]{refX}}, \code{\link[=MarkerElementREFXYAttribute]{refY}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{refXY=c(value.REFX,value.REFY)}
-#' \item{and}{refX = value.REFX; refY = value.REFY}
+#' refXY =v is equivalent to  refX=v[1], refY=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}}
+#' \item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}}
 #' }
 #' @keywords internal
 NULL
@@ -723,17 +667,16 @@ NULL
 #' @name MaskElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=MaskElementHeightAttribute]{height}}, \code{\link[=MaskElementWidthAttribute]{width}}
+#' \code{\link[=MaskElementWHAttribute]{height}}, \code{\link[=MaskElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+#' \item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 #' }
 #' @keywords internal
 NULL
@@ -742,17 +685,16 @@ NULL
 #' @name MaskElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=MaskElementXAttribute]{x}}, \code{\link[=MaskElementYAttribute]{y}}
+#' \code{\link[=MaskElementXYAttribute]{x}}, \code{\link[=MaskElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+#' \item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 #' }
 #' @keywords internal
 NULL
@@ -761,17 +703,16 @@ NULL
 #' @name PatternElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=PatternElementHeightAttribute]{height}}, \code{\link[=PatternElementWidthAttribute]{width}}
+#' \code{\link[=PatternElementWHAttribute]{height}}, \code{\link[=PatternElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=pattern]{pattern}}}
+#' \item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
 #' }
 #' @keywords internal
 NULL
@@ -780,17 +721,16 @@ NULL
 #' @name PatternElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=PatternElementXAttribute]{x}}, \code{\link[=PatternElementYAttribute]{y}}
+#' \code{\link[=PatternElementXYAttribute]{x}}, \code{\link[=PatternElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=pattern]{pattern}}}
+#' \item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
 #' }
 #' @keywords internal
 NULL
@@ -799,13 +739,12 @@ NULL
 #' @name RadialGradientElementCXYAttribute
 #' @title cxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning cx and cy
 #' @section Combines:
-#' \code{\link[=RadialGradientElementCXAttribute]{cx}}, \code{\link[=RadialGradientElementCYAttribute]{cy}}
+#' \code{\link[=RadialGradientElementCXYAttribute]{cx}}, \code{\link[=RadialGradientElementCXYAttribute]{cy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{cxy=c(value.CX,value.CY)}
-#' \item{and}{cx = value.CX; cy = value.CY}
+#' cxy =v is equivalent to  cx=v[1], cy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -818,13 +757,12 @@ NULL
 #' @name RadialGradientElementFXYAttribute
 #' @title fxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning fx and fy
 #' @section Combines:
-#' \code{\link[=RadialGradientElementFXAttribute]{fx}}, \code{\link[=RadialGradientElementFYAttribute]{fy}}
+#' \code{\link[=RadialGradientElementFXYAttribute]{fx}}, \code{\link[=RadialGradientElementFXYAttribute]{fy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{fxy=c(value.FX,value.FY)}
-#' \item{and}{fx = value.FX; fy = value.FY}
+#' fxy =v is equivalent to  fx=v[1], fy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -837,13 +775,12 @@ NULL
 #' @name RectElementRXYAttribute
 #' @title rxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning rx and ry
 #' @section Combines:
-#' \code{\link[=RectElementRXAttribute]{rx}}, \code{\link[=RectElementRYAttribute]{ry}}
+#' \code{\link[=RectElementRXYAttribute]{rx}}, \code{\link[=RectElementRXYAttribute]{ry}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{rxy=c(value.RX,value.RY)}
-#' \item{and}{rx = value.RX; ry = value.RY}
+#' rxy =v is equivalent to  rx=v[1], ry=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -856,13 +793,12 @@ NULL
 #' @name RectElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=RectElementHeightAttribute]{height}}, \code{\link[=RectElementWidthAttribute]{width}}
+#' \code{\link[=RectElementWHAttribute]{height}}, \code{\link[=RectElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -875,13 +811,12 @@ NULL
 #' @name RectElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=RectElementXAttribute]{x}}, \code{\link[=RectElementYAttribute]{y}}
+#' \code{\link[=RectElementXYAttribute]{x}}, \code{\link[=RectElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
@@ -894,17 +829,16 @@ NULL
 #' @name SVGElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=SVGElementHeightAttribute]{height}}, \code{\link[=SVGElementWidthAttribute]{width}}
+#' \code{\link[=SVGElementWHAttribute]{height}}, \code{\link[=SVGElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+#' \item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 #' }
 #' @keywords internal
 NULL
@@ -913,17 +847,16 @@ NULL
 #' @name SVGElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=SVGElementXAttribute]{x}}, \code{\link[=SVGElementYAttribute]{y}}
+#' \code{\link[=SVGElementXYAttribute]{x}}, \code{\link[=SVGElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+#' \item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 #' }
 #' @keywords internal
 NULL
@@ -932,17 +865,16 @@ NULL
 #' @name TextElementDXYAttribute
 #' @title dxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning dx and dy
 #' @section Combines:
-#' \code{\link[=TextElementDXAttribute]{dx}}, \code{\link[=TextElementDYAttribute]{dy}}
+#' \code{\link[=TextElementDXYAttribute]{dx}}, \code{\link[=TextElementDXYAttribute]{dy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{dxy=c(value.DX,value.DY)}
-#' \item{and}{dx = value.DX; dy = value.DY}
+#' dxy =v is equivalent to  dx=v[1], dy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+#' \item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 #' }
 #' @keywords internal
 NULL
@@ -951,17 +883,16 @@ NULL
 #' @name TextElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=TextElementXAttribute]{x}}, \code{\link[=TextElementYAttribute]{y}}
+#' \code{\link[=TextElementXYAttribute]{x}}, \code{\link[=TextElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+#' \item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 #' }
 #' @keywords internal
 NULL
@@ -970,17 +901,16 @@ NULL
 #' @name TSpanElementDXYAttribute
 #' @title dxy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning dx and dy
 #' @section Combines:
-#' \code{\link[=TSpanElementDXAttribute]{dx}}, \code{\link[=TSpanElementDYAttribute]{dy}}
+#' \code{\link[=TSpanElementDXYAttribute]{dx}}, \code{\link[=TSpanElementDXYAttribute]{dy}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{dxy=c(value.DX,value.DY)}
-#' \item{and}{dx = value.DX; dy = value.DY}
+#' dxy =v is equivalent to  dx=v[1], dy=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+#' \item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 #' }
 #' @keywords internal
 NULL
@@ -989,17 +919,16 @@ NULL
 #' @name TSpanElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=TSpanElementXAttribute]{x}}, \code{\link[=TSpanElementYAttribute]{y}}
+#' \code{\link[=TSpanElementXYAttribute]{x}}, \code{\link[=TSpanElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+#' \item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 #' }
 #' @keywords internal
 NULL
@@ -1008,17 +937,16 @@ NULL
 #' @name UseElementWHAttribute
 #' @title wh
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning height and width
 #' @section Combines:
-#' \code{\link[=UseElementHeightAttribute]{height}}, \code{\link[=UseElementWidthAttribute]{width}}
+#' \code{\link[=UseElementWHAttribute]{height}}, \code{\link[=UseElementWHAttribute]{width}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{wh=c(value.HEIGHT,value.WIDTH)}
-#' \item{and}{height = value.HEIGHT; width = value.WIDTH}
+#' wh =v is equivalent to  height=v[1], width=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
+#' \item{\emph{Graphics Referencing Elements}}{\code{\link[=use]{use}}}
 #' }
 #' @keywords internal
 NULL
@@ -1027,17 +955,16 @@ NULL
 #' @name UseElementXYAttribute
 #' @title xy
 #' @description 
-#' ToDo: Needs to be written!!!
+#' Shortcut for assigning x and y
 #' @section Combines:
-#' \code{\link[=UseElementXAttribute]{x}}, \code{\link[=UseElementYAttribute]{y}}
+#' \code{\link[=UseElementXYAttribute]{x}}, \code{\link[=UseElementXYAttribute]{y}}
 #' @section Equivalence:
 #' \describe{
-#' \item{}{xy=c(value.X,value.Y)}
-#' \item{and}{x = value.X; y = value.Y}
+#' xy =v is equivalent to  x=v[1], y=v[2]
 #' }
 #' @section Used by the Elements:
 #' \describe{
-#' \item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
+#' \item{\emph{Graphics Referencing Elements}}{\code{\link[=use]{use}}}
 #' }
 #' @keywords internal
 NULL

@@ -4,20 +4,26 @@
 \alias{OnErrorEventAttribute}
 \title{onerror}
 \description{
-ToDo: Needs to be written!!!
+Sets the script to execute when an error event is received
 }
 \section{Available Attribute Values}{
 
+The value is a script, likely ecmascript (i.e.  javascript).
 \describe{
-\item{<anything>}{onresize = "<anything>"}
+\item{<script>}{Specifies what to execute when an \emph{SVGError} event is fired. \emph{SvgErrpr} occurs when either a script error occurs or an element fails to load properly.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

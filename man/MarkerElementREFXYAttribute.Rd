@@ -4,26 +4,25 @@
 \alias{MarkerElementREFXYAttribute}
 \title{refXY}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning refX and refY
 }
 \section{Combines}{
 
-\code{\link[=MarkerElementRefXAttribute]{refX}}, \code{\link[=MarkerElementRefYAttribute]{refY}}
+\code{\link[=MarkerElementREFXYAttribute]{refX}}, \code{\link[=MarkerElementREFXYAttribute]{refY}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{refXY=c(value.REFX,value.REFY)}
-\item{and}{refX = value.REFX; refY = value.REFY}
+refXY =v is equivalent to  refX=v[1], refY=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

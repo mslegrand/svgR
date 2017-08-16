@@ -4,20 +4,27 @@
 \alias{MaskElementWidthAttribute}
 \title{width}
 \description{
-ToDo: Needs to be written!!!
+Sets the width of the largest possible offscreen buffer.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The width of the largest possible offscreen buffer. Note that the clipping path used to render any graphics within the mask will consist of the intersection of the current clipping path associated with the given object and the rectangle defined by 'x', 'y', 'width' and 'height'. A negative value is an error (see Error processing). A value of zero disables rendering of the element. If the attribute is not specified, the effect is as if a value of '120' were specified.Animatable. yes.}
+\item{<length>}{Specifies the \emph{width} of the rectangle defining the offscreen buffer used in computing the masked image. The resulting masked image is the intersection of the mask and that buffer. The default width=1.2 when maskUnits=\emph{'objectBoundingBox'}. Note: \eqn{width geq 0}}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

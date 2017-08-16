@@ -4,20 +4,26 @@
 \alias{FontFaceElementDescentAttribute}
 \title{descent}
 \description{
-ToDo: Needs to be written!!!
+Sets the maximum unaccented depth of the font. Measurements to be  expressed in terms of  the font coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'descent' descriptor within an font.face rule. The maximum unaccented depth of the font within the font coordinate system. If the attribute is not specified, the effect is as if the attribute were set to the 'vert.origin.y' value for the corresponding font.Animatable. no.}
+\item{<number>}{Specifies an maximum unaccented font depth with respect to the font coordinate system.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

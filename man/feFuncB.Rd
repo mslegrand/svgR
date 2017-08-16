@@ -2,15 +2,15 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feFuncB}
 \alias{feFuncB}
-\title{Element used to specify blue component transfer function}
+\title{An element used to specify blue component transfer function}
 \description{
 This filter primitive defines the transfer function for the blue component of the input graphic of its parent <fecomponenttransfer> element.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{transfer function element attributes}}{\code{\link[=feComponentTransferAmplitudeAttribute]{amplitude}}, \code{\link[=feComponentTransferExponentAttribute]{exponent}}, \code{\link[=feComponentTransferInterceptAttribute]{intercept}}, \code{\link[=feComponentTransferOffsetAttribute]{offset}}, \code{\link[=feComponentTransferSlopeAttribute]{slope}}, \code{\link[=feComponentTransferTableValuesAttribute]{tableValues}}, \code{\link[=feComponentTransferTypeAttribute]{type}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Transfer Function Element Attributes}}{\code{\link[=feComponentTransferAmplitudeAttribute]{amplitude}}, \code{\link[=feComponentTransferExponentAttribute]{exponent}}, \code{\link[=feComponentTransferInterceptAttribute]{intercept}}, \code{\link[=feComponentTransferOffsetAttribute]{offset}}, \code{\link[=feComponentTransferSlopeAttribute]{slope}}, \code{\link[=feComponentTransferTableValuesAttribute]{tableValues}}, \code{\link[=feComponentTransferTypeAttribute]{type}}}
 }
 }
 
@@ -20,5 +20,5 @@ This filter primitive defines the transfer function for the blue component of th
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

@@ -4,24 +4,32 @@
 \alias{RequiredFeaturesAttribute}
 \title{requiredFeatures}
 \description{
-ToDo: Needs to be written!!!
+Sets a check-list of required features, used to determine whether an given element is renderable.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{list.of.features}{The value is a list of feature strings, with the individual values separated by white space. Determines whether all of the named features are supported by the user agent. Only feature strings defined in the Feature String appendix are allowed. If all of the given features are supported, then the attribute evaluates to true; otherwise, the current element and its children are skipped and thus will not be rendered.Animatable. no.}
+\item{<features>[N]}{Specifies a list of features. If all features are supported by the user agent, returns true, else false. Intended to be used in conjunction of \strong{switch} element.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=mask]{mask}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=clipPath]{clipPath}}, \code{\link[=cursor]{cursor}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=image]{image}}, \code{\link[=mask]{mask}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=clipPath]{clipPath}}, \code{\link[=cursor]{cursor}}, \code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

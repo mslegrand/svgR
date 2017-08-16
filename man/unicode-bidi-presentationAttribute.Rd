@@ -4,24 +4,25 @@
 \alias{unicode-bidi-presentationAttribute}
 \title{unicode.bidi}
 \description{
-ToDo: Needs to be written!!!
+Governs mixing directionalit for  text in a single line.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{normal}{**ToDo!!!** }
-\item{embed}{**ToDo!!!** }
-\item{bidi-override}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'bidi-override'}'}}{Specifies to override the implicit aspect of biddirectional algorithm and use a strict sequence given by the direction. This applies only to the cases of inline or block-level composed of inline:}
+\item{\emph{'\emph{'embed'}'}}{Specifes an embedding to override of the biddirectional algorithm using the direction given by the \emph{direction} attribute.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{unicode-bidi} value from the parent.}
+\item{\emph{'\emph{'normal'}'}}{Specifies to use the  implicit ordering of the biddirectional algorithm.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

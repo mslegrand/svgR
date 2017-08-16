@@ -4,12 +4,13 @@
 \alias{FilterPrimitiveResultAttribute}
 \title{result}
 \description{
-ToDo: Needs to be written!!!
+Sets a name to assign to the filter primitive.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<filter.primitive.reference>}{Assigned name for this filter primitive. If supplied, then graphics that result from processing this filter primitive can be referenced by an 'in' attribute on a subsequent filter primitive within the same 'filter' element. If no value is provided, the output will only be available for re.use as the implicit input into the next filter primitive if that filter primitive provides no value for its 'in' attribute. Note that a <filter.primitive.reference> is not an XML ID; instead, a <filter.primitive.reference> is only meaningful within a given 'filter' element and thus have only local scope. It is legal for the same <filter.primitive.reference> to appear multiple times within the same 'filter' element. When referenced, the <filter.primitive.reference> will use the closest preceding filter primitive with the given result.Animatable. yes.}
+\item{<filter-primitive-reference>}{Specifies a name that can be used to reference the result of this \emph{filter primitive} by another \emph{filter primitive} using \emph{in1} or \emph{in2}.}
 }
 }
 
@@ -19,5 +20,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feColorMatrix]{feColorMatrix}}, \code{\link[=feComponentTransfer]{feComponentTransfer}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feConvolveMatrix]{feConvolveMatrix}}, \code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}, \code{\link[=feFlood]{feFlood}}, \code{\link[=feGaussianBlur]{feGaussianBlur}}, \code{\link[=feImage]{feImage}}, \code{\link[=feMerge]{feMerge}}, \code{\link[=feMorphology]{feMorphology}}, \code{\link[=feOffset]{feOffset}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}, \code{\link[=feTile]{feTile}}, \code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

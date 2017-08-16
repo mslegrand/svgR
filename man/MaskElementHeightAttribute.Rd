@@ -4,20 +4,27 @@
 \alias{MaskElementHeightAttribute}
 \title{height}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the largest possible offscreen buffer.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The height of the largest possible offscreen buffer. A negative value is an error (see Error processing). A value of zero disables rendering of the element. If the attribute is not specified, the effect is as if a value of '120' were specified.Animatable. yes.}
+\item{<length>[1 or 2]}{Specifies the \emph{height} of the rectangle defining the offscreen buffer used in computing the masked image. The resulting masked image is the intersection of the mask and that buffer. The default is y=.1, height=1.2, maskUnits=\emph{'objectBoundingBox'}. Note: \eqn{height geq 0}.s if a value of \emph{'120'} were specified.Animatable. yes.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

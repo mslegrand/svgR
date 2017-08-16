@@ -4,15 +4,17 @@
 \alias{color-interpolation-filters-presentationAttribute}
 \title{color.interpolation.filters}
 \description{
-ToDo: Needs to be written!!!
+Governs the color space for imaging operations performed via filter effects.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{sRGB}{**ToDo!!!** }
-\item{linearRGB}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'auto'}'}}{Specifies to auto select the color-interpolation filter}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the color-interpolation methodology from the parent.}
+\item{\emph{'\emph{'linearRGB'}'}}{Specifies to use the linearized RGB color space for the filter effects color operations .}
+\item{\emph{'\emph{'sRGB'}'}}{Specifies to use the sRGB color space for the filter effects color operations .}
 }
 }
 
@@ -22,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feColorMatrix]{feColorMatrix}}, \code{\link[=feComponentTransfer]{feComponentTransfer}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feConvolveMatrix]{feConvolveMatrix}}, \code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}, \code{\link[=feFlood]{feFlood}}, \code{\link[=feGaussianBlur]{feGaussianBlur}}, \code{\link[=feImage]{feImage}}, \code{\link[=feMerge]{feMerge}}, \code{\link[=feMorphology]{feMorphology}}, \code{\link[=feOffset]{feOffset}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}, \code{\link[=feTile]{feTile}}, \code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

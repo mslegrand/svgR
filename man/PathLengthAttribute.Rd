@@ -4,13 +4,20 @@
 \alias{PathLengthAttribute}
 \title{pathLength}
 \description{
-ToDo: Needs to be written!!!
+Sets the desired length of the path in user units.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The author's computation of the total length of the path, in user units. This value is used to calibrate the user agent's own distance.along.a.path calculations with that of the author. The user agent will scale all distance.along.a.path computations by the ratio of 'pathLength' to the user agent's own computed value for total path length. 'pathLength' potentially affects calculations for text on a path, motion animation and various stroke operations. A negative value is an error (see Error processing).Animatable. yes.}
+\item{<numeric>}{Specifies a path length, in user units, given to the user agent whose goal is to attempt to match that value by using an appropriate amount of scaling. This can affect the rendering of text along that path, or path stroke operations and possibly even animation along the path.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=path]{path}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,14 +4,20 @@
 \alias{AdditiveAttribute}
 \title{additive}
 \description{
-ToDo: Needs to be written!!!
+Governs whether or not the animation is additive.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{sum}{Specifies that the animation will add to the underlying value of the attribute and other lower priority animations.}
-\item{replace}{Specifies that the animation will override the underlying value of the attribute and other lower priority animations. This is the default, however the behavior is also affected by the animation value attributes 'by' and 'to', as described in SMIL Animation. How from, to and by attributes affect additive behavior.}
+\item{\emph{'sum'}}{Specifies that the animation is to add to the underlying value of the attribute and any other lower priority animations.}
+\item{\emph{'replace'}}{Specifies that the the animation is to replace (override) the underlying value of the attributes. This is the default}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -20,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

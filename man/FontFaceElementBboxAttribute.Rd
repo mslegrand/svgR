@@ -4,20 +4,26 @@
 \alias{FontFaceElementBboxAttribute}
 \title{bbox}
 \description{
-ToDo: Needs to be written!!!
+Sets the maximal bounding box of the font.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{Same syntax and semantics as the 'bbox' descriptor within an font.face rule.Animatable. no.}
+\item{<numeric>[4] (=c(left-x, lower-y, right-x, upper-y))}{Specifies the maximal bounding box of the font. This is represented as a vector c(lower-left-x, lower-left-y, upper-right-x, upper-right-y).}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

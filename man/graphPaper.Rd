@@ -18,4 +18,3 @@ Internal compound used to add a background with graphpaper appearance.
 }
 \keyword{display}
 \keyword{helper}
-

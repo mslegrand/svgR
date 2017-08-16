@@ -4,14 +4,20 @@
 \alias{FillAttribute}
 \title{fill}
 \description{
-ToDo: Needs to be written!!!
+Governs whether to freeze or to remove the animation upon completion.  Freeze means stop in place, remove means to return to the state prior to the beginning of the animation.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{freeze}{The animation effect F(t) is defined to freeze the effect value at the last value of the active duration. The animation effect is "frozen" for the remainder of the document duration (or until the animation is restarted . see SMIL Animation. Restarting animation).}
-\item{remove}{The animation effect is removed (no longer applied) when the active duration of the animation is over. After the active end of the animation, the animation no longer affects the target (unless the animation is restarted . see SMIL Animation. Restarting animation). This is the default value.}
+\item{\emph{'freeze'}}{Specifies upon completing the animation to freeze in place, there by keeping the last value for that animation frozen.}
+\item{\emph{'remove'}}{Specifies upon completing the animation to return to the initial state, that being what value the attribute had prior to the start of the animation.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -20,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

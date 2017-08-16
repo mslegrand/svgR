@@ -4,20 +4,22 @@
 \alias{MarkerUnitsAttribute}
 \title{markerUnits}
 \description{
-ToDo: Needs to be written!!!
+Determines how to interpret marker coordinates, the choices being either using the stroke width as 1 unit (strokeWidthst), or using the units inherited from current user coordinate system ( userSpaceOnUse).
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{strokeWidth | userSpaceOnUse}{Defines the coordinate system for attributes 'markerWidth', 'markerHeight' and the contents of the 'marker'. If markerUnits="strokeWidth", 'markerWidth', 'markerHeight' and the contents of the 'marker' represent values in a coordinate system which has a single unit equal the size in user units of the current stroke width (see the 'stroke.width' property) in place for the graphic object referencing the marker. If markerUnits="userSpaceOnUse", 'markerWidth', 'markerHeight' and the contents of the 'marker' represent values in the current user coordinate system in place for the graphic object referencing the marker (i.e., the user coordinate system for the element referencing the 'marker' element via a 'marker', 'marker.start', 'marker.mid' or 'marker.end' property). If attribute 'markerUnits' is not specified, then the effect is as if a value of 'strokeWidth' were specified.Animatable. yes.}
+\item{\emph{'userSpaceOnUse'}}{Specifies that \emph{'markerWidth'}, \emph{'markerHeight'} and any coordinate values of marker contents are in terms of the user coordinate system in effect at the time when this marker is referenced.}
+\item{\emph{'strokeWidth'}}{Specifies that \emph{'markerWidth'}, \emph{'markerHeight'} and any-coordinate values of the marker contents are given in terms of a coordinate system which has been scaled in such a way that the current stroke has a width of 1 in that system.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

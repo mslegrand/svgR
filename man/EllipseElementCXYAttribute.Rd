@@ -4,18 +4,17 @@
 \alias{EllipseElementCXYAttribute}
 \title{cxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning cx and cy
 }
 \section{Combines}{
 
-\code{\link[=EllipseElementCXAttribute]{cx}}, \code{\link[=EllipseElementCYAttribute]{cy}}
+\code{\link[=EllipseElementCXYAttribute]{cx}}, \code{\link[=EllipseElementCXYAttribute]{cy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{cxy=c(value.CX,value.CY)}
-\item{and}{cx = value.CX; cy = value.CY}
+cxy =v is equivalent to  cx=v[1], cy=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=ellipse]{ellipse}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

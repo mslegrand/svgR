@@ -4,20 +4,27 @@
 \alias{FilterElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to different filter element within this svg fragment.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to another 'filter' element within the current SVG document fragment. Any attributes which are defined on the referenced 'filter' element which are not defined on this element are inherited by this element. If this element has no defined filter nodes, and the referenced element has defined filter nodes (possibly due to its own 'xlink.href' attribute), then this element inherits the filter nodes defined from the referenced 'filter' element. Inheritance can be indirect to an arbitrary level; thus, if the referenced 'filter' element inherits attributes or its filter node specification due to its own 'xlink.href' attribute, then the current element can inherit those attributes or filter node specifications.Animatable. yes.}
+\item{<IRI>}{Specifies a reference to another filter element residing in the same SVG fragment.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

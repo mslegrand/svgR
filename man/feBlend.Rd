@@ -2,18 +2,18 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feBlend}
 \alias{feBlend}
-\title{A Filter Primitive Element used  to blend}
+\title{A filter primitive element used for blending}
 \description{
 The feBlend filter composes two objects together ruled by a certain blending mode. This is similar to what is known from image editing software when blending two layers. The mode is defined by the mode attribute.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FilterPrimitiveIN1Attribute]{in1}}, \code{\link[=FilterPrimitiveIN12Attribute]{in12}}, \code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feBlendIn2Attribute]{in2}}, \code{\link[=feBlendModeAttribute]{mode}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FilterPrimitiveIN12Attribute]{in12}}, \code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveIn1Attribute]{in1}}, \code{\link[=FilterPrimitiveIn2Attribute]{in2}}, \code{\link[=feBlendModeAttribute]{mode}}, \code{\link[=StyleAttribute]{style}}}
 }
 }
 
@@ -23,5 +23,5 @@ The feBlend filter composes two objects together ruled by a certain blending mod
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

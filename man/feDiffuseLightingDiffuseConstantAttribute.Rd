@@ -4,13 +4,20 @@
 \alias{feDiffuseLightingDiffuseConstantAttribute}
 \title{diffuseConstant}
 \description{
-ToDo: Needs to be written!!!
+Sets the kd term of the phong lighting model.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{kd in Phong lighting model. In SVG, this can be any non.negative number. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+\item{<numeric>}{Specifies a scaling factor for the resulting RGB components, It is the \eqn{kd} in \emph{Phong lighting model}. Default=1.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feDiffuseLighting]{feDiffuseLighting}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

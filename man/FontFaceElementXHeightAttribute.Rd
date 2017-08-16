@@ -4,20 +4,26 @@
 \alias{FontFaceElementXHeightAttribute}
 \title{x.height}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the lowercase glyphs of the given font, where the value of the height is in terms of the units used by the font coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'x.height' descriptor within an font.face rule. The height of lowercase glyphs in the font within the font coordinate system.Animatable. no.}
+\item{<number>}{Specifies the height of lowercase \emph{glyphs} of the font using \emph{units per em}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

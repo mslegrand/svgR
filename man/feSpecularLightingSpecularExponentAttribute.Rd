@@ -4,13 +4,20 @@
 \alias{feSpecularLightingSpecularExponentAttribute}
 \title{specularExponent}
 \description{
-ToDo: Needs to be written!!!
+Sets the  specular term (the exponent)  in the specular lighting.  This  controls how shiny the object appears.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Exponent for specular term, larger is more "shiny". Range 1.0 to 128.0. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+\item{<number>}{Specifies the \emph{exponent} for \emph{specular} term, used to control how shiny the object appears . Typical values should range from 1.0 to 128.0. (128 being very shiny.) Default=1.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feSpecularLighting]{feSpecularLighting}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

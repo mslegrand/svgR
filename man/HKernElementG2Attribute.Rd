@@ -4,20 +4,26 @@
 \alias{HKernElementG2Attribute}
 \title{g2}
 \description{
-ToDo: Needs to be written!!!
+Sets a collection of names to be used as candiates for the second glyph in the kerning pair.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<name> [, <name> ]*}{Same as the 'g1' attribute, except that 'g2' specifies possible second glyphs in the kerning pair.Animatable. no.}
+\item{<glyph-names>[N]}{Specifies a set of candiate 2nd \emph{glyphs} in the kerning pair using a vector of glyph names.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

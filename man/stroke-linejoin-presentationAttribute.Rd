@@ -4,15 +4,17 @@
 \alias{stroke-linejoin-presentationAttribute}
 \title{stroke.linejoin}
 \description{
-ToDo: Needs to be written!!!
+Defines the shape to be used at the corners of paths or basic shapes when they are stroked.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{miter}{**ToDo!!!** }
-\item{round}{**ToDo!!!** }
-\item{bevel}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'bevel'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{bevel style join}.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-linejoin} value from the parent.}
+\item{\emph{'\emph{'miter'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{mitre style join}.}
+\item{\emph{'\emph{'round'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{round style join}.}
 }
 }
 
@@ -20,9 +22,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

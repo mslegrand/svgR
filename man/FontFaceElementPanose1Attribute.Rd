@@ -4,20 +4,26 @@
 \alias{FontFaceElementPanose1Attribute}
 \title{panose.1}
 \description{
-ToDo: Needs to be written!!!
+Set panrose-1 numbers (for True-type font matching and classification)
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{[<integer>]{10}}{Same syntax and semantics as the 'panose.1' descriptor within an font.face rule. The Panose.1 number, consisting of ten decimal integers, separated by whitespace. Except for any additional information provided in this specification, the normative definition of the attribute is in CSS2 ([CSS2], section 15.3.6). If the attribute is not specified, the effect is as if a value of '0 0 0 0 0 0 0 0 0 0' were specified.Animatable. no.}
+\item{[<integer>]{10}}{Specifies \emph{panrose} using vector of length 10. (Default=c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)). Used by Latin fonts}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,24 +4,26 @@
 \alias{clip-rule-presentationAttribute}
 \title{clip.rule}
 \description{
-ToDo: Needs to be written!!!
+Specifies whether to use an even-odd rule for clipping
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{nonzero}{**ToDo!!!** }
-\item{evenodd}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'evenodd'}'}}{Specifies the use of the even-odd rule to determine the interior.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to use the same rule as the parent for the determination of the interior.]}
+\item{\emph{'\emph{'nonzero'}'}}{Specifies to use the \emph{non-zero rule} to determine the interior.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}, \code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

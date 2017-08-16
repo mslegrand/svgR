@@ -4,20 +4,26 @@
 \alias{ScriptElementTypeAttribute}
 \title{type}
 \description{
-ToDo: Needs to be written!!!
+Sets which scripting language to use.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{content.type}{Identifies the scripting language for the given 'script' element. The value content.type specifies a media type, per Multipurpose Internet Mail Extensions (MIME) Part Two [RFC2046]. If a 'type' is not provided, the value of 'contentScriptType' on the 'svg' element shall be used, which in turn defaults to "application/ecmascript" [RFC4329]. If a 'script' element falls outside of the outermost svg element and the 'type' is not provided, the 'type' must default to "application/ecmascript" [RFC4329].Animatable. no.}
+\item{<content-type>[N]}{Specifies the scripting language for the given \emph{'script'} element. Default is \emph{""""""""""""""""application/ecmascript""""""""""""""""}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=script]{script}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=script]{script}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

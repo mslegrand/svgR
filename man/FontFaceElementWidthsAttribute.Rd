@@ -4,20 +4,26 @@
 \alias{FontFaceElementWidthsAttribute}
 \title{widths}
 \description{
-ToDo: Needs to be written!!!
+Sets the glyphs widths for each individual glyph in terms of the design grid.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{Same syntax and semantics as the 'widths' descriptor within an font.face rule.Animatable. no.}
+\item{<named-list-of-widths>}{Specifies \emph{glyphs} widths, given a \emph{urange} an a number representing the \emph{width.} The format is a list with names as \emph{uranges} and values as width.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

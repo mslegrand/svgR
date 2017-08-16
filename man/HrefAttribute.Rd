@@ -4,13 +4,19 @@
 \alias{HrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to the animations target element.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to the element which is the target of this animation and which therefore will be modified over time. The target element must be part of the current SVG document fragment. <iri> must point to exactly one target element which is capable of being the target of the given animation. If <iri> points to multiple target elements, if the given target element is not capable of being a target of the given animation, or if the given target element is not part of the current SVG document fragment, then the document is in error (see Error processing). If the 'xlink.href' attribute is not provided, then the target element will be the immediate parent element of the current animation element. Refer to the descriptions of the individual animation elements for any restrictions on what types of elements can be targets of particular types of animations. Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. Specifying the animation target ([SMILANIM], section 3.1).}
+\item{<IRI>}{Specifies animation target via an \emph{IRI} reference}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

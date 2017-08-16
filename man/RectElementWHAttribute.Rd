@@ -4,18 +4,17 @@
 \alias{RectElementWHAttribute}
 \title{wh}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning height and width
 }
 \section{Combines}{
 
-\code{\link[=RectElementHeightAttribute]{height}}, \code{\link[=RectElementWidthAttribute]{width}}
+\code{\link[=RectElementWHAttribute]{height}}, \code{\link[=RectElementWHAttribute]{width}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{wh=c(value.HEIGHT,value.WIDTH)}
-\item{and}{height = value.HEIGHT; width = value.WIDTH}
+wh =v is equivalent to  height=v[1], width=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=rect]{rect}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

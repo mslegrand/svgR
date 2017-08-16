@@ -4,20 +4,26 @@
 \alias{FontFaceElementVertHangingAttribute}
 \title{v.hanging}
 \description{
-ToDo: Needs to be written!!!
+Sets an alignment coordinate adjustment for a vertically oriented glyph layout to aid in achieving an  hanging baseline alignment.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{For vertically oriented glyph layouts, indicates the alignment coordinate for glyphs to achieve hanging baseline alignment. The value is an offset in the font coordinate system relative to the glyph.specific 'vert.origin.x' attribute.Animatable. no.}
+\item{<numeric>}{Specifies, in font coordinates, for vertically orientated \emph{glyphs}, the alignment to produce an \emph{hanging baseline alignment}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

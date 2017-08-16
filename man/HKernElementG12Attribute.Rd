@@ -4,26 +4,25 @@
 \alias{HKernElementG12Attribute}
 \title{g12}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning g1 and g2
 }
 \section{Combines}{
 
-\code{\link[=HKernElementG1Attribute]{g1}}, \code{\link[=HKernElementG2Attribute]{g2}}
+\code{\link[=HKernElementG12Attribute]{g1}}, \code{\link[=HKernElementG12Attribute]{g2}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{g12=c(value.G1,value.G2)}
-\item{and}{g1 = value.G1; g2 = value.G2}
+g12 =v is equivalent to  g1=v[1], g2=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

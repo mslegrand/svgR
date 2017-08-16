@@ -2,19 +2,19 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{cursor}
 \alias{cursor}
-\title{Element used to define platform-independent custom cursor}
+\title{An element used to define platform-independent custom cursor}
 \description{
 The cursor element can be used to define a platform-independent custom cursor. A recommended approach for defining a platform-independent custom cursor is to create a PNG image and define a cursor element that references the PNG image and identifies the exact position within the image which is the pointer position (i.e., the hot spot),.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=CursorElementXYAttribute]{xy}}}
-\item{\emph{conditional processing attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=CursorElementXAttribute]{x}}, \code{\link[=CursorElementYAttribute]{y}}}
-\item{\emph{unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=CursorElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=CursorElementXYAttribute]{xy}}}
+\item{\emph{Conditional Processing Attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=CursorElementXAttribute]{x}}, \code{\link[=CursorElementYAttribute]{y}}}
+\item{\emph{Unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=CursorElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -24,5 +24,5 @@ The cursor element can be used to define a platform-independent custom cursor. A
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

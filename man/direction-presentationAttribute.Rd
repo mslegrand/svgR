@@ -4,23 +4,24 @@
 \alias{direction-presentationAttribute}
 \title{direction}
 \description{
-ToDo: Needs to be written!!!
+Controls the base writing direction of text
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{ltr}{**ToDo!!!** }
-\item{rtl}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit tne direction from an ancestor.}
+\item{\emph{'\emph{'ltr'}'}}{Specifies a left to right direction.}
+\item{\emph{'\emph{'rtl'}'}}{Specifies a right to left direction.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

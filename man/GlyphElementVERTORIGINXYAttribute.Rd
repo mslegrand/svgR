@@ -4,26 +4,25 @@
 \alias{GlyphElementVERTORIGINXYAttribute}
 \title{vert.origin.xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning vert-origin-x and vert-origin-y
 }
 \section{Combines}{
 
-\code{\link[=GlyphElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=GlyphElementVertOriginYAttribute]{vert.origin.y}}
+\code{\link[=GlyphElementVERTORIGINXYAttribute]{vert.origin.x}}, \code{\link[=GlyphElementVERTORIGINXYAttribute]{vert.origin.y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{vert.origin.xy=c(value.VERT.ORIGIN.X,value.VERT.ORIGIN.Y)}
-\item{and}{vert.origin.x = value.VERT.ORIGIN.X; vert.origin.y = value.VERT.ORIGIN.Y}
+vert-origin-xy =v is equivalent to  vert-origin-x=v[1], vert-origin-y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -2,17 +2,17 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{clipPath}
 \alias{clipPath}
-\title{Element used to define a boundry (path), for clipping}
+\title{An element used to define a boundry (path), for clipping}
 \description{
 The clipping path restricts the region to which paint can be applied. Conceptually, any parts of the drawing that lie outside of the region bounded by the currently active clipping path are not drawn.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{conditional processing attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{presentation attributes}}{\code{\link[=clip-path-presentationAttribute]{clip.path}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ClipPathElementClipPathUnitsAttribute]{clipPathUnits}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=TransformAttribute]{transform}}}
+\item{\emph{Conditional Processing Attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=clip-path-presentationAttribute]{clip.path}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ClipPathElementClipPathUnitsAttribute]{clipPathUnits}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=TransformAttribute]{transform}}}
 }
 }
 
@@ -21,10 +21,10 @@ The clipping path restricts the region to which paint can be applied. Conceptual
 \describe{
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=use]{use}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

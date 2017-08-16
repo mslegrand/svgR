@@ -4,13 +4,19 @@
 \alias{OnRepeatEventAttribute}
 \title{onrepeat}
 \description{
-ToDo: Needs to be written!!!
+Sets the script to execute when an repeat event is received
 }
 \section{Available Attribute Values}{
 
+The value is a script, likely ecmascript (i.e.  javascript).
 \describe{
-\item{<anything>}{Specifies some script to execute when "bubbling" or "at target" phase listeners for the corresponding event are fired on the element the attribute is specified on. See the Complete list of support events to determine which event each of these event attributes corresponds to.Animatable. no.}
+\item{<script>}{Specifies what to execute when a \emph{repeatEvent} event is fired. A \emph{repeatEvent} occurs at the repeat of an animation.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,34 +4,35 @@
 \alias{font-weight-presentationAttribute}
 \title{font.weight}
 \description{
-ToDo: Needs to be written!!!
+Governs the boldness or lightness of the glyphs used to render the text
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{normal}{**ToDo!!!** }
-\item{bold}{**ToDo!!!** }
-\item{bolder}{**ToDo!!!** }
-\item{lighter}{**ToDo!!!** }
-\item{100}{**ToDo!!!** }
-\item{200}{**ToDo!!!** }
-\item{300}{**ToDo!!!** }
-\item{400}{**ToDo!!!** }
-\item{500}{**ToDo!!!** }
-\item{600}{**ToDo!!!** }
-\item{700}{**ToDo!!!** }
-\item{800}{**ToDo!!!** }
-\item{900}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'100'}'}}{Sets the font-weight to be 100.}
+\item{\emph{'\emph{'200'}'}}{Sets the font-weight to be 200.}
+\item{\emph{'\emph{'300'}'}}{Sets the font-weight to be 300.}
+\item{\emph{'\emph{'400'}'}}{Sets the font-weight to be 400.}
+\item{\emph{'\emph{'500'}'}}{Sets the font-weight to be 500.}
+\item{\emph{'\emph{'600'}'}}{Sets the font-weight to be 600.}
+\item{\emph{'\emph{'700'}'}}{Sets the font-weight to be 700.}
+\item{\emph{'\emph{'800'}'}}{Sets the font-weight to be 800.}
+\item{\emph{'\emph{'900'}'}}{Sets the font-weight to be 900.}
+\item{\emph{'\emph{'bold'}'}}{Sets the font-weight to be 700.}
+\item{\emph{'\emph{'bolder'}'}}{Sets  the font-weight to be darker than inherited font-weight}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to use the  font-weight of parent.}
+\item{\emph{'\emph{'lighter'}'}}{Sets the font-weight to be lighter than inherited font-weight}
+\item{\emph{'\emph{'normal'}'}}{Sets the font-weight to be 400}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

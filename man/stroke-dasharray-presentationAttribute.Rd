@@ -4,14 +4,16 @@
 \alias{stroke-dasharray-presentationAttribute}
 \title{stroke.dasharray}
 \description{
-ToDo: Needs to be written!!!
+Defines the pattern of dashes and gaps used to stroke paths.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{none}{**ToDo!!!** }
-\item{<dasharray>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<dasharray>}{Sets the stoke-dasharray pattern using a vector of lengths (with optional unit identifier)}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-dasharray} value from the parent.}
+\item{\emph{'\emph{'none'}'}}{Specifies no dash array.}
 }
 }
 
@@ -19,9 +21,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,27 @@
 \alias{TSpanElementRotateAttribute}
 \title{rotate}
 \description{
-ToDo: Needs to be written!!!
+Sets a sequence of  one or more rotations to be applied to consecutive glyphs upon rendering.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<list.of.numbers>}{The supplemental rotation about the current text position that will be applied to all of the glyphs corresponding to each character within this element. If a comma. or space.separated list of <number>s is provided, then the first <number> represents the supplemental rotation for the glyphs corresponding to the first character within this element or any of its descendants, the second <number> represents the supplemental rotation for the glyphs that correspond to the second character, and so on. If more <number>s are provided than there are characters, then the extra <number>s will be ignored. If more characters are provided than <number>s, then for each of these extra characters the rotation value specified by the last number must be used. If the attribute is not specified and if an ancestor 'text' or 'tspan' element specifies a supplemental rotation for a given character via a 'rotate' attribute, then the given supplemental rotation is applied to the given character (nearest ancestor has precedence). If there are more characters than <number>s specified in the ancestor's 'rotate' attribute, then for each of these extra characters the rotation value specified by the last number must be used. This supplemental rotation has no impact on the rules by which current text position is modified as glyphs get rendered and is supplemental to any rotation due to text on a path and to 'glyph.orientation.horizontal' or 'glyph.orientation.vertical'.Animatable. yes (non.additive).}
+\item{<angle>[N]}{Specifies an additional rotation (in degrees) to be applied sequentiolly to each character within this \strong{tspan}. If the number of characters exceeds the number of rotations, the extra character receive the last rotation.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

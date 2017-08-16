@@ -4,20 +4,26 @@
 \alias{FontFaceElementOverlineThicknessAttribute}
 \title{overline.thickness}
 \description{
-ToDo: Needs to be written!!!
+Sets the desired overline thickness, as measured within the font-coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The ideal thickness of an overline, expressed as a length within the font coordinate system.Animatable. no.}
+\item{<numeric>}{Specifies, in font coordinates, the intended \emph{overline thickness}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -2,19 +2,19 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feImage}
 \alias{feImage}
-\title{A Filter Primitive Element to fetch image data}
+\title{A filter primitive element to fetch image data}
 \description{
 The feImage filter fetches image data from an external source and provides the pixel data as output (meaning, if the external source is an SVG image, it is rasterize),.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=PreserveAspectRatioAttribute]{preserveAspectRatio}}, \code{\link[=StyleAttribute]{style}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=feImageElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=PreserveAspectRatioAttribute]{preserveAspectRatio}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=feImageElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -24,5 +24,5 @@ The feImage filter fetches image data from an external source and provides the p
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

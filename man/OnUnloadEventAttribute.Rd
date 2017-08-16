@@ -4,20 +4,26 @@
 \alias{OnUnloadEventAttribute}
 \title{onunload}
 \description{
-ToDo: Needs to be written!!!
+Sets the script to execute when an unload event is received
 }
 \section{Available Attribute Values}{
 
+The value is a script, likely ecmascript (i.e.  javascript).
 \describe{
-\item{<anything>}{onabort = "<anything>"}
+\item{<script>}{Specifies what to execute when an \emph{SVGUnload} event is fired. \emph{SvgUnload} occurs when the svg document is removed from the window or frame.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

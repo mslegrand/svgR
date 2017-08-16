@@ -4,20 +4,21 @@
 \alias{AElementXLinkHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference for location of a resource.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<IRI>}{The location of the referenced object, expressed as an IRI reference. Animatable. yes.}
+\item{<IRI>}{Specifies a reference to an object as an \emph{IRI} reference.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

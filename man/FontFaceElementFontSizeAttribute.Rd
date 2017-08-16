@@ -4,20 +4,27 @@
 \alias{FontFaceElementFontSizeAttribute}
 \title{font.size}
 \description{
-ToDo: Needs to be written!!!
+Governs the font size.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<string>}{Same syntax and semantics as the 'font.size' descriptor within an font.face rule.Animatable. no.}
+\item{\emph{'all'}}{Specifies all size (suitable for scalable fonts)}
+\item{<length>}{Specifies the font size (suitable for bitmap fonts)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

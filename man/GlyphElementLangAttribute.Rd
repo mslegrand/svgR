@@ -4,20 +4,26 @@
 \alias{GlyphElementLangAttribute}
 \title{lang}
 \description{
-ToDo: Needs to be written!!!
+Provides a set of languages ot the user agent considered to be supported by this glyph.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{LanguageCodes;}{The attribute value is a comma.separated list of language names as defined in BCP 47 [BCP47]. The glyph can be used if the 'xml.lang' attribute exactly matches one of the languages given in the value of this parameter, or if the 'xml.lang' attribute exactly equals a prefix of one of the languages given in the value of this parameter such that the first tag character following the prefix is ".".Animatable. no.}
+\item{<language-codes>}{Specifies a language code name as defined in BCP 47.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,22 @@
 \alias{FilterElementPrimitiveUnitsAttribute}
 \title{primitiveUnits}
 \description{
-ToDo: Needs to be written!!!
+Governs the units for coordinate system of the filter primitive subregion.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{userSpaceOnUse | objectBoundingBox}{Specifies the coordinate system for the various length values within the filter primitives and for the attributes that define the filter primitive subregion. If primitiveUnits="userSpaceOnUse", any length values within the filter definitions represent values in the current user coordinate system in place at the time when the 'filter' element is referenced (i.e., the user coordinate system for the element referencing the 'filter' element via a 'filter' property). If primitiveUnits="objectBoundingBox", then any length values within the filter definitions represent fractions or percentages of the bounding box on the referencing element (see Object bounding box units). Note that if only one number was specified in a <number.optional.number> value this number is expanded out before the 'primitiveUnits' computation takes place. If attribute 'primitiveUnits' is not specified, then the effect is as if a value of userSpaceOnUse were specified.Animatable. yes.}
+\item{\emph{'userSpaceOnUse'}}{Specifies to interpret \emph{x, y, width, height} ( or \emph{xy, wh}) as current user coordinates.}
+\item{\emph{'objectBoundingBox'}}{Specifies to interpret \emph{x, y, width, height} ( or \emph{xy, wh}) as fractions (or percentages)}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

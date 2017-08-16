@@ -2,18 +2,18 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feMorphology}
 \alias{feMorphology}
-\title{A Filter Primitive Element to erode or dilate}
+\title{A filter primitive element to erode or dilate}
 \description{
 This filter is used to erode or dilate the input image. It's usefulness lies especially in fattening or thinning effects.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FilterPrimitiveIN1Attribute]{in1}}, \code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feMorphologyOperatorAttribute]{operator}}, \code{\link[=feMorphologyRadiusAttribute]{radius}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveIn1Attribute]{in1}}, \code{\link[=feMorphologyOperatorAttribute]{operator}}, \code{\link[=feMorphologyRadiusAttribute]{radius}}, \code{\link[=StyleAttribute]{style}}}
 }
 }
 
@@ -23,5 +23,5 @@ This filter is used to erode or dilate the input image. It's usefulness lies esp
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

@@ -4,18 +4,17 @@
 \alias{feConvolveMatrixElementTARGETXYAttribute}
 \title{targetXY}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning targetX and targetY
 }
 \section{Combines}{
 
-\code{\link[=feConvolveMatrixElementTargetXAttribute]{targetX}}, \code{\link[=feConvolveMatrixElementTargetYAttribute]{targetY}}
+\code{\link[=feConvolveMatrixElementTARGETXYAttribute]{targetX}}, \code{\link[=feConvolveMatrixElementTARGETXYAttribute]{targetY}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{targetXY=c(value.TARGETX,value.TARGETY)}
-\item{and}{targetX = value.TARGETX; targetY = value.TARGETY}
+targetXY =v is equivalent to  targetX=v[1], targetY=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

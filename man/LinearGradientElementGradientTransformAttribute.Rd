@@ -4,13 +4,40 @@
 \alias{LinearGradientElementGradientTransformAttribute}
 \title{gradientTransform}
 \description{
-ToDo: Needs to be written!!!
+Sets a coordinate transformation to be applied to the linear gradient. This coordinate transformation can constructed as the composition of a sequence of the simpler basic linear transformations.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<transform.list>}{Contains the definition of an optional additional transformation from the gradient coordinate system onto the target coordinate system (i.e., userSpaceOnUse or objectBoundingBox). This allows for things such as skewing the gradient. This additional transformation matrix is post.multiplied to (i.e., inserted to the right of) any previously defined transformations, including the implicit transformation necessary to convert from object bounding box units to user space. If attribute 'gradientTransform' is not specified, then the effect is as if an identity transform were specified.Animatable. yes.}
+\item{<transform-list>}{Specifies sequence transforms of the gradient. Exotic effects, such as skewing can be made using these additional transforms. The default is the identity.}
 }
+}
+
+\section{Details}{
+
+A \strong{transform-list} is named list of coordinate transforms to be applied in the order in which they appear. 
+For example:
+\code{ list(translate=c(100,20), scale=1.2, rotate=c(30,100,20))}
+The list names and 
+corresponding values (all numeric)
+are summarized in the following table
+\strong{Transforms}
+\tabular{lll}{
+name     \tab value  \tab action \cr
+matrix   \tab  a 2x3 matrix m. \tab Transforms coordinates x,y to x'y' by c(x',y',1)<-m \%*\% c(x,y,1), where m'<-rbind(m,c(0,0,1). \cr
+translate \tab x or c(x,y) \tab Translates by c(x, y). If only x is specified, y is set to 0. \cr
+scale     \tab sx or c(sx, sy) \tab Scales by sx, sy. If only sx is specified, sy=sx. \cr
+rotate    \tab \eqn{\theta} or c( \eqn{\theta},x,y). \tab Rotates by theta degrees about the point c(x,y). If only the  \eqn{\theta} is specified, then x=y=0. \cr
+skewX    \tab \eqn{\theta_x} \tab Skews along the x-axis by an angle of \eqn{\theta_x} , where \eqn{\theta_x} is interpreted in units of degrees.\cr
+skewY    \tab \eqn{\theta_y}  \tab Skews along the y-axis by an angle of \eqn{\theta_y} , where \eqn{\theta_y} is interpreted in units of degrees.\cr
+}
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animateTransform]{animateTransform}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +46,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

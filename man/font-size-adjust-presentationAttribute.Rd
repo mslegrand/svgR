@@ -4,23 +4,24 @@
 \alias{font-size-adjust-presentationAttribute}
 \title{font.size.adjust}
 \description{
-ToDo: Needs to be written!!!
+Govern the aspect values to preserve the when using a substitute font.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<number>}{**ToDo!!!** }
-\item{none}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<number>}{Specifies the aspect ratio value(font-size divide by x-height) to preserve the x-height for the first font candidate substitution.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies the to inherit the aspect ratio value from the parent.}
+\item{\emph{'\emph{'none'}'}}{Specifies to make no aspect ratio adjustment.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

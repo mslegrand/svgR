@@ -4,18 +4,17 @@
 \alias{FilterPrimitiveWHAttribute}
 \title{wh}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning height and width
 }
 \section{Combines}{
 
-\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}
+\code{\link[=FilterPrimitiveWHAttribute]{height}}, \code{\link[=FilterPrimitiveWHAttribute]{width}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{wh=c(value.HEIGHT,value.WIDTH)}
-\item{and}{height = value.HEIGHT; width = value.WIDTH}
+wh =v is equivalent to  height=v[1], width=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feColorMatrix]{feColorMatrix}}, \code{\link[=feComponentTransfer]{feComponentTransfer}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feConvolveMatrix]{feConvolveMatrix}}, \code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}, \code{\link[=feFlood]{feFlood}}, \code{\link[=feGaussianBlur]{feGaussianBlur}}, \code{\link[=feImage]{feImage}}, \code{\link[=feMerge]{feMerge}}, \code{\link[=feMorphology]{feMorphology}}, \code{\link[=feOffset]{feOffset}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}, \code{\link[=feTile]{feTile}}, \code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

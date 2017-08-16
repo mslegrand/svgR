@@ -12,4 +12,3 @@ Declares the units to be centimeters (cm)
 \item{transform=translate(u.cm(0,2)}{}
 }
 }
-

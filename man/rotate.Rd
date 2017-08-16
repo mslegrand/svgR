@@ -18,4 +18,3 @@ Used as an value for the transform attribute. Rotates the target by an amount gi
 }
 \keyword{helper}
 \keyword{transform}
-

@@ -13,15 +13,6 @@
       base::stop("doc does not have element with specified id")
       NULL
     }
-    
-#     if(!(id==''|| is.null(id))){
-#       if(is.null(id)){
-#         id<-"NULL"
-#         id<-"emptystring"
-#       }
-#       stop("doc does not have element with id=",id)
-#     }
-   
     if(!is.null(id) && id!=''){
       root<-doc$root
       sNode<-root$findNode('id',id)
@@ -80,13 +71,3 @@ getsafeNodeAttr<-function(attr.name, node){
   return(attr.id)
 }
 
-#getDefsNode<-function(anyNode){
-  #   xmlElementsByTagName(xmlRoot(anyNode), 'defs')->defsNodelist
-  #   if(length(defsNodelist)==0){
-  #     newXMLNode('defs')->defsnode
-  #     defsNodelist<-list(defsnode)
-  #     #works but I am not confortable with this
-  #     addChildren(xmlRoot(anyNode), kids=defsNodelist, at=0)
-  #   }
-  #   defsNodelist[[1]]
-  # }

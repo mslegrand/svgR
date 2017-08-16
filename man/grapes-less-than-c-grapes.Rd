@@ -17,4 +17,3 @@ A function that evaluates the body of f in the calling environment.
 \description{
 Convenience operator for creating compounds
 }
-

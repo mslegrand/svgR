@@ -4,14 +4,20 @@
 \alias{AccumulateAttribute}
 \title{accumulate}
 \description{
-ToDo: Needs to be written!!!
+Governs whether or not the animation is cumulative.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{sum}{Specifies that each repeat iteration after the first builds upon the last value of the previous iteration.}
-\item{none}{Specifies that repeat iterations are not cumulative. This is the default.}
+\item{\emph{'sum'}}{Specifies to accumulate values, that is each repeat iteration builds upon the last value of the previous iteration.}
+\item{\emph{'none'}}{Specifies not to accumulate values. (The default)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -20,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

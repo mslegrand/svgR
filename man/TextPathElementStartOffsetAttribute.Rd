@@ -4,20 +4,27 @@
 \alias{TextPathElementStartOffsetAttribute}
 \title{startOffset}
 \description{
-ToDo: Needs to be written!!!
+Sets the offset from the start of the path to the initial text position,
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{An offset from the start of the 'path' for the initial current text position, calculated using the user agent's distance along the path algorithm. If a <length> other than a percentage is given, then the 'startOffset' represents a distance along the path measured in the current user coordinate system. If a percentage is given, then the 'startOffset' represents a percentage distance along the entire path. Thus, startOffset="0" indicates the start point of the 'path' and startOffset="100" indicates the end point of the 'path'. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes.}
+\item{<length>}{Specifies an offset measured from the starting point of the \emph{'path'} to the initial position for the current text. The offset distance is measured either in percent or in the current user coordinate system and is calculated using the user agent's distance along the path algorithm. If measured in percent, then the total distance of the path is defined to be 100 percent.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=textPath]{textPath}}}
+\item{\emph{Text Content Elements}}{\code{\link[=textPath]{textPath}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

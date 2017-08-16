@@ -4,20 +4,107 @@
 \alias{feComponentTransferTypeAttribute}
 \title{type}
 \description{
-ToDo: Needs to be written!!!
+Governs the model of the component transfer. (linear, table, discrete, identity, gamma)
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{identity | table | discrete | linear | gamma}{Indicates the type of component transfer function. The type of function determines the applicability of the other attributes. In the following, C is the initial component (e.g., 'feFuncR'), C' is the remapped component; both in the closed interval [0,1]. For identity. C' = C For table, the function is defined by linear interpolation between values given in the attribute 'tableValues'. The table has n+1 values (i.e., v0 to vn) specifying the start and end values for n evenly sized interpolation regions. Interpolations use the following formula. For a value C < 1 find k such that. k/n <= C < (k+1)/n The result C' is given by. C' = vk + (C . k/n)*n * (vk+1 . vk) If C = 1 then. C' = vn. For discrete, the function is defined by the step function given in the attribute 'tableValues', which provides a list of n values (i.e., v0 to vn.1) in order to identify a step function consisting of n steps. The step function is defined by the following formula. For a value C < 1 find k such that. k/n <= C < (k+1)/n The result C' is given by. C' = vk If C = 1 then. C' = vn.1. For linear, the function is defined by the following linear equation. C' = slope * C + intercept For gamma, the function is defined by the following exponential function. C' = amplitude * pow(C, exponent) + offset Animatable. yes.}
+\item{\emph{'identity'}}{Specifies the identify component transform (i.e. no transform).}
+\item{\emph{'table'}}{Specifies to use a \emph{linear} interpolation of the given tableValues for the \emph{transfer function}.}
+\item{\emph{'discrete'}}{Specifies to use a \emph{step} function produced by the tableValues for the \emph{transfer function}.}
+\item{\emph{'linear'}}{Specifies to use a \emph{simple linear interpolation} for the \emph{transfer function}.}
+\item{\emph{'gamma'}}{Specifies to use an \emph{exponential} for the \emph{transfer function}.}
+}
+}
+
+\section{Component Mapping Algorithm Details}{
+
+The compononet Mappin Algoritms are as follows:
+
+\itemize{
+\item {\strong{identity}:
+\itemize{
+   \item{ To use specify 
+      \itemize{
+          \item{type='identity'}
+      }
+   } 
+   \item{ Provides no mapping. In terms of color components, for each color component C, we have:
+    \deqn{ C^{out}= C^{in}}
+   } 
+}}
+\item{\strong{linear}
+  \itemize{ Specified by
+     \itemize{
+        \item{type='linear'}
+        \item{slope=<NUMERIC>} (default=1)
+        \item{intercept=<NUMERIC>} (default=0)
+     }
+     \item{Maps the colors components using a linear function with the given slope and intercept.
+      In terms of color components 
+     \deqn{ C^{out}= m \times C^{in} + b} where \eqn{m} is given by the value of the slope attribute and
+     \eqn{b} is given by the value of the intercept attribute.
+      }
+  }
+}
+\item{\strong{gamma}
+  \itemize{ Specified by
+    \itemize{
+       \item{type='gamma'}
+       \item{exponent=<NUMERIC>} (default=1)
+       \item{amplitude=<NUMERIC>} (default=1)
+       \item{offset=<NUMERIC>} (default=0)
+    }
+  }
+  \item{ Maps the colors components non-linearly using a exponential function
+   In terms of color components 
+   \deqn{ C_{out}= A \times C_{in}^B +C} where,  
+   A is given by the \emph{amplitute} attribute, B by the \emph{exponent} attribute and C but the \emph{offset} attribute.
+  }}
+\item {\strong{table}
+\itemize{
+    \item{Specified by
+       \itemize{
+          \item{type='table'}
+          \item{table=<NUMERIC VECTOR>}
+       }
+    }
+    \item Maps the colors components using a continous piece-wise linear function 
+      defined by the \emph{valueTable} attribute. In terms of color components and a \emph{valueTable} attribute, v=c(v1,...,vn)
+      for each color component \eqn{C^{in}}, we have:
+      \deqn{C^{out}= v_k + m_k \times (v_{k+1}- v_k)}
+      when \eqn{C^{in}<1} and where \eqn{k} and \eqn{m_k} are given by
+      \deqn{k=floor(C^{in} \times n)}
+      and 
+      \deqn{m_k= C^{in} \times n mod(k) }
+      In the case that  \eqn{C^{in}=1}, then we set \eqn{C^out=v_n}
+}}
+\item {\strong{discrete}
+\itemize{
+   \item{Specified by 
+       \itemize{
+          \item{type='table'}
+          \item{table=<NUMERIC VECTOR>}
+       }
+    }
+    \item {Maps the colors components using a  step function 
+      defined by the \emph{valueTable} attribute. In terms of color components and a \emph{valueTable} attribute, v=c(v1,...,vn)
+      for each color component \eqn{C^{in}}, we have:
+      \deqn{C^{out}= v_k}
+      when \eqn{C^{in}<1} and where k is given by
+      \deqn{k=floor(C^{in} \times n)}
+      In the case that  \eqn{C^{in}=1}, then we set \eqn{C^out=v_n}
+      }
+} }
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

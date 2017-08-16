@@ -4,33 +4,34 @@
 \alias{dominant-baseline-presentationAttribute}
 \title{dominant.baseline}
 \description{
-ToDo: Needs to be written!!!
+Govnerns the dominant baseline of a text element.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{use-script}{**ToDo!!!** }
-\item{no-change}{**ToDo!!!** }
-\item{reset-size}{**ToDo!!!** }
-\item{ideographic}{**ToDo!!!** }
-\item{alphabetic}{**ToDo!!!** }
-\item{hanging}{**ToDo!!!** }
-\item{mathematical}{**ToDo!!!** }
-\item{central}{**ToDo!!!** }
-\item{middle}{**ToDo!!!** }
-\item{text-after-edge}{**ToDo!!!** }
-\item{text-before-edge}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'alphabetic'}'}}{Specifies to use an \emph{alphabetic} baseline.}
+\item{\emph{'\emph{'auto'}'}}{Specifies to pick a baseline depending on element, writing mode, font-size, base-line shift.}
+\item{\emph{'\emph{'central'}'}}{Specifies to use a baseline halfway between the two baselines:  \emph{text-before-edge} and \emph{text-after-edge}.}
+\item{\emph{'\emph{'hanging'}'}}{Specifies to use the  \emph{hanging}  baseline-table of the nominal font}
+\item{\emph{'\emph{'ideographic'}'}}{Specifies to use an  \emph{ideographic} baseline-table of the nominal font}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the balseline from an ancestor.}
+\item{\emph{'\emph{'mathematical'}'}}{Specifies to use  the \emph{mathematical}  baseline-table of the nominal font}
+\item{\emph{'\emph{'middle'}'}}{Specifies to use a baseline which is offset from alphabetic baseline by 1/2  x-height of this  font.}
+\item{\emph{'\emph{'no-change'}'}}{Specifies to use the baseline of the parent.}
+\item{\emph{'\emph{'reset-size'}'}}{Specifies to rescale baselines for current font-size.}
+\item{\emph{'\emph{'text-after-edge'}'}}{Specifies to position the baseline around top of the acenders.}
+\item{\emph{'\emph{'text-before-edge'}'}}{Specifies to position the baseline around the bottom of the  descenders.}
+\item{\emph{'\emph{'use-script'}'}}{Specifies to compute the baseline using the predominant script of the character data content.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

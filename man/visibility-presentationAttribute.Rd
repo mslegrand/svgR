@@ -4,26 +4,28 @@
 \alias{visibility-presentationAttribute}
 \title{visibility}
 \description{
-ToDo: Needs to be written!!!
+Governs whether the current graphics element will be visible.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{visible}{**ToDo!!!** }
-\item{hidden}{**ToDo!!!** }
-\item{collapse}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'collapse'}'}}{For non-tables, this has the same effect as hidden.}
+\item{\emph{'\emph{'hidden'}'}}{Sets the element invisible, but element may still receive pointer events.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{visibility} value from the parent.}
+\item{\emph{'\emph{'visible'}'}}{Sets the element visible.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=image]{image}}, \code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,26 +4,25 @@
 \alias{TextElementXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=TextElementXAttribute]{x}}, \code{\link[=TextElementYAttribute]{y}}
+\code{\link[=TextElementXYAttribute]{x}}, \code{\link[=TextElementXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

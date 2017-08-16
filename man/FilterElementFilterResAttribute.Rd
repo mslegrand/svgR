@@ -4,20 +4,21 @@
 \alias{FilterElementFilterResAttribute}
 \title{filterRes}
 \description{
-ToDo: Needs to be written!!!
+Sets the width and height of the intermediate filtered  images in pixels.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric vector having length 1 or 2.
 \describe{
-\item{<number.optional.number>}{See Filter effects region.}
+\item{<numeric>[1or2]}{Specifies an intermediate \emph{width} and \emph{height} in pixels. If not specified, the user agent will try to insure high quality with a good guess.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

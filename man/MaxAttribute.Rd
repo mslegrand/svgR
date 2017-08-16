@@ -4,14 +4,20 @@
 \alias{MaxAttribute}
 \title{max}
 \description{
-ToDo: Needs to be written!!!
+Governs the maximum length of time that the animation remains active..
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{Clock.value}{Specifies the length of the maximum value of the active duration, measured in local time. Value must be greater than 0.}
-\item{media}{Specifies the maximum value of the active duration as the intrinsic media duration. This is only valid for elements that define media. (For SVG's animation elements, if 'media' is specified, the attribute will be ignored.)}
+\item{<clock.value>}{Specifies the length of the maximum value of the active duration}
+\item{\emph{'media'}}{Specifies the maximum value of the active duration as the intrinsic media duration.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -20,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,23 +4,25 @@
 \alias{image-rendering-presentationAttribute}
 \title{image.rendering}
 \description{
-ToDo: Needs to be written!!!
+Governs the optimization strategy of rendering images.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{optimizeSpeed}{**ToDo!!!** }
-\item{optimizeQuality}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'auto'}'}}{Specifies to employ a trade-off strategy of image-rendering optimization which balances speed vs quality.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the image-rendering optimzation from the parent.}
+\item{\emph{'\emph{'optimizeQuality'}'}}{Specifies to optimize the image-rendiering  for quality.}
+\item{\emph{'\emph{'optimizeSpeed'}'}}{Specifies to optimize the image-rendiering  for speed}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

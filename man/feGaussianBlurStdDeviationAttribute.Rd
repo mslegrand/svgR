@@ -4,12 +4,13 @@
 \alias{feGaussianBlurStdDeviationAttribute}
 \title{stdDeviation}
 \description{
-ToDo: Needs to be written!!!
+Sets the x and y standard deviations to be used by the Gaussian Blur algorithm..
 }
 \section{Available Attribute Values}{
 
+The value is a numeric vector having length 1 or 2.
 \describe{
-\item{<number.optional.number>}{The standard deviation for the blur operation. If two <number>s are provided, the first number represents a standard deviation value along the x.axis of the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. The second value represents a standard deviation in Y. If one number is provided, then that value is used for both X and Y. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is the filter input image). If 'stdDeviation' is 0 in only one of X or Y, then the effect is that the blur is only applied in the direction that has a non.zero value. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<numeric>[1 or 2]}{Specifies the standard deviations \eqn{\sigma_x}, \eqn{\sigma_y} for the blur operation along the x and y axis respectively. The default for \eqn{\sigma_x} is 1, the default for \eqn{\sigma_y} is \eqn{\sigma_x}.}
 }
 }
 
@@ -19,5 +20,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feGaussianBlur]{feGaussianBlur}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,13 +4,20 @@
 \alias{RectElementRYAttribute}
 \title{ry}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-radius of the rounded corner.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{For rounded rectangles, the y.axis radius of the ellipse used to round off the corners of the rectangle. A negative value is an error (see Error processing). See the notes below about what happens if the attribute is not specified.Animatable. yes.}
+\item{<length>}{Specifies a y-radius \eqn{r_y} radius of an ellipse to be used to round off the corners of the rectangle. Note \eqn{r_y>0}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=rect]{rect}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

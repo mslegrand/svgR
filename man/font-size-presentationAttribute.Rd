@@ -4,25 +4,33 @@
 \alias{font-size-presentationAttribute}
 \title{font.size}
 \description{
-ToDo: Needs to be written!!!
+Governs the size of the font .
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<absolute-size>}{**ToDo!!!** }
-\item{<relative-size>}{**ToDo!!!** }
-\item{<length>}{**ToDo!!!** }
-\item{<percentage>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<length>}{Specify font size. If no units are provided, the value is interpreted as a height in the current user coordinate system.}
+\item{<percentage>}{Specifies the  font size as a percentage of parent font-size}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit font-size from parent element.}
+\item{\emph{'\emph{'large'}'}}{Specifies to set the font size to be \emph{large}.}
+\item{\emph{'\emph{'larger'}'}}{Specifies to set  font-size to be larger than parent font-size}
+\item{\emph{'\emph{'medium'}'}}{Specifies to set font size to be \emph{normal}.}
+\item{\emph{'\emph{'small'}'}}{Specifies to set the font size to be \emph{'small'}.}
+\item{\emph{'\emph{'smaller'}'}}{Specify the font-size to be smaller  than parent font-size}
+\item{\emph{'\emph{'x-large'}'}}{Specifies to set the font size to be \emph{'x-large'}.}
+\item{\emph{'\emph{'x-small'}'}}{Specifies to set the font size to be \emph{'x-small'}.}
+\item{\emph{'\emph{'xx-large'}'}}{Specifies to set the font size to be \emph{'xx-large'}.}
+\item{\emph{'\emph{'xx-small'}'}}{Specifies to set the font size to be  \emph{'xx-small'}.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,14 +4,25 @@
 \alias{EndAttribute}
 \title{end}
 \description{
-ToDo: Needs to be written!!!
+Governs the ending constraint for active duration.
 }
 \section{Available Attribute Values}{
 
+The value is a vector composed of one or more of the following:
 \describe{
-\item{end.value.list ..= end.value (S? ";" S? end.value.list )?}{A semicolon separated list of end values. The interpretation of a list of end times is detailed below.}
-\item{end.value ..= ( offset.value | syncbase.value | event.value | repeat.value | accessKey.value | wallclock.sync.value | "indefinite" )}{Describes the active end of the animation.}
+\item{<offset-value>}{Specifies when to end the animation, based upon an offset (+ or - ) from the implicit \emph{synbase} (without units the default is seconds)}
+\item{<syncbase-value>}{Specifies when to end the animation, based upon an offset (+ or - ) from the explicit \emph{synbase} given by the begin or end of the element referenced by id-value.}
+\item{<event-value>}{Specifies when to end the animation, based upon an offset (+ or - ) relative to when the event referenced occurs.}
+\item{<repeat-value>}{Specifies when to end the animation, based upon an offset (+ or - ) relative to a repeating event.}
+\item{<accessKey-value>}{Specifies when to end the animation, based upon an offset (+ or - ) relative to an access key event of the specified character.}
+\item{<wallclock-sync-value>}{Specifies when to end the animation, base on wall clock time.}
+\item{\emph{'indefinite'}}{Specifies when to end the animation, using a \emph{endElement()} method call or a hyperlink targeted to the element to trigger the end.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -20,5 +31,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

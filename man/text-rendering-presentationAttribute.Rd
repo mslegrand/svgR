@@ -4,24 +4,26 @@
 \alias{text-rendering-presentationAttribute}
 \title{text.rendering}
 \description{
-ToDo: Needs to be written!!!
+Governs the optimization strategy of rendering text.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{optimizeSpeed}{**ToDo!!!** }
-\item{optimizeLegibility}{**ToDo!!!** }
-\item{geometricPrecision}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'auto'}'}}{Specifies to apply a \emph{text-rendering} algorithm that balances the trade offs  that occur between optimizing for speed vs legibility vs geometric precision, with emphasis on legibility.}
+\item{\emph{'\emph{'geometricPrecision'}'}}{Specifies to optimize  \emph{text-rendering} for geometric precision.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{text-rendering} value from the parent.}
+\item{\emph{'\emph{'optimizeLegibility'}'}}{Specifies to optimize  \emph{text-rendering} for legibility.}
+\item{\emph{'\emph{'optimizeSpeed'}'}}{Specifies to optimize  \emph{text-rendering} for speed.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

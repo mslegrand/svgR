@@ -4,32 +4,33 @@
 \alias{font-stretch-presentationAttribute}
 \title{font.stretch}
 \description{
-ToDo: Needs to be written!!!
+Governs the amount of condensing or expansion in the glyphs used to render the text.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{normal}{**ToDo!!!** }
-\item{wider}{**ToDo!!!** }
-\item{narrower}{**ToDo!!!** }
-\item{ultra-condensed}{**ToDo!!!** }
-\item{extra-condensed}{**ToDo!!!** }
-\item{condensed}{**ToDo!!!** }
-\item{semi-condensed}{**ToDo!!!** }
-\item{semi-expanded}{**ToDo!!!** }
-\item{expanded}{**ToDo!!!** }
-\item{extra-expanded}{**ToDo!!!** }
-\item{ultra-expanded}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'condensed'}'}}{Specifies the font stretch rank=3}
+\item{\emph{'\emph{'expanded'}'}}{Specifies the font stretch rank=7}
+\item{\emph{'\emph{'extra-condensed'}'}}{Specifies the font stretch rank=2}
+\item{\emph{'\emph{'extra-expanded'}'}}{Specifies the font stretch rank=8}
+\item{\emph{'\emph{'inherit'}'}}{Specifies the font  to inhert font-stretch from parent}
+\item{\emph{'\emph{'narrower'}'}}{Specifies the font stretch rank=-1+stretch rank of parent}
+\item{\emph{'\emph{'normal'}'}}{Specifies the font stretch rank=5 (default)}
+\item{\emph{'\emph{'semi-condensed'}'}}{Specifies the font stretch rank=4}
+\item{\emph{'\emph{'semi-expanded'}'}}{Specifies the font stretch rank=6}
+\item{\emph{'\emph{'ultra-condensed'}'}}{Specifies the font stretch rank=1}
+\item{\emph{'\emph{'ultra-expanded'}'}}{Specifies the font stretch rank=9}
+\item{\emph{'\emph{'wider'}'}}{Specifies the font stretch rank=1+stretch rank of parent}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{HKernElementG1Attribute}
 \title{g1}
 \description{
-ToDo: Needs to be written!!!
+Sets a collection of names to be used as  candiates for the first glyph  in the kerning pair.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<name> [, <name> ]*}{A sequence (comma.separated) of glyph names (i.e., values that match 'glyph.name' attributes on 'glyph' elements) which identify a set of possible first glyphs in the kerning pair. All glyphs with the given glyph name are included in the set. The total set of possible first glyphs in the kerning pair is the union of glyphs specified by the 'u1' and 'g1' attributes.Animatable. no.}
+\item{<glyph-names>[N]}{Specifies a set of candiate 1st \emph{glyphs} in the kerning pair using a vector of glyph names.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

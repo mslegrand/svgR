@@ -4,20 +4,26 @@
 \alias{SVGElementBaseProfileAttribute}
 \title{baseProfile}
 \description{
-ToDo: Needs to be written!!!
+Sets a minimal SVG language profile which considered to be necessary for proper rendering.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{profile.name}{Describes the minimum SVG language profile that the author believes is necessary to correctly render the content. The attribute does not specify any processing restrictions; It can be considered metadata. For example, the value of the attribute could be used by an authoring tool to warn the user when they are modifying the document beyond the scope of the specified base profile. Each SVG profile should define the text that is appropriate for this attribute. If the attribute is not specified, the effect is as if a value of 'none' were specified.Animatable. no.}
+\item{<profile-name>}{Specifies a minimum SVG language profile considered necessary for correct content rendering.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

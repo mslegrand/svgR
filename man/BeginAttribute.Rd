@@ -4,21 +4,25 @@
 \alias{BeginAttribute}
 \title{begin}
 \description{
-ToDo: Needs to be written!!!
+Governs when the animation should begin.
 }
 \section{Available Attribute Values}{
 
+The value is a vector composed of one or more of the following:
 \describe{
-\item{begin.value.list ..= begin.value (S? ";" S? begin.value.list )?}{A semicolon separated list of begin values. The interpretation of a list of begin times is detailed in SMIL Animation's section on "Evaluation of begin and end time lists".}
-\item{begin.value ..= ( offset.value | syncbase.value | event.value | repeat.value | accessKey.value | wallclock.sync.value | "indefinite" )}{Describes the element begin.}
-\item{offset.value ..= ( S? "+" | "." S? )? ( Clock.value )}{For SMIL Animation, this describes the element begin as an offset from an implicit syncbase. For SVG, the implicit syncbase begin is defined to be relative to the document begin. Negative begin times are entirely valid and easy to compute, as long as there is a resolved document begin time.}
-\item{syncbase.value ..= ( Id.value "." ( "begin" | "end" ) ) ( S? ("+"|".") S? Clock.value )?}{Describes a syncbase and an optional offset from that syncbase. The element begin is defined relative to the begin or active end of another animation. A syncbase consists of an ID reference to another animation element followed by either begin or end to identify whether to synchronize with the beginning or active end of the referenced animation element.}
-\item{event.value ..= ( Id.value "." )? ( event.ref ) ( S? ("+"|".") S? Clock.value )?}{Describes an event and an optional offset that determine the element begin. The animation begin is defined relative to the time that the event is raised. The list of event.symbols available for a given event.base element is the list of event attributes available for the given element as defined by the SVG DTD, with the one difference that the leading 'on' is removed from the event name (i.e., the animation event name is 'click', not 'onclick'). A list of all events supported by SVG can be found in Complete list of supported events. Details of event.based timing are described in SMIL Animation. Unifying Event.based and Scheduled Timing.}
-\item{repeat.value ..= ( Id.value "." )? "repeat(" integer ")" ( S? ("+"|".") S? Clock.value )?}{Describes a qualified repeat event. The element begin is defined relative to the time that the repeat event is raised with the specified iteration value.}
-\item{accessKey.value ..= "accessKey(" character ")" ( S? ("+"|".") S? Clock.value )?}{Describes an accessKey that determines the element begin. The element begin is defined relative to the time that the accessKey character is input by the user.}
-\item{wallclock.sync.value ..= "wallclock(" wallclock.value ")"}{Describes the element begin as a real.world clock time. The wallclock time syntax is based upon syntax defined in Representation of dates and times [ISO8601].}
-\item{indefinite}{The begin of the animation will be determined by a "beginElement()" method call or a hyperlink targeted to the element. The animation DOM methods are described in DOM interfaces. Hyperlink.based timing is described in SMIL Animation. Hyperlinks and timing.}
+\item{<offset-value>}{Specifies when to begin the animation, based upon an offset (+ or - ) from the implicit synbase (default is seconds)}
+\item{<syncbase-value>}{Specifies when to begin the animation, based upon an offset (+ or - ) from the explicit synbase given by the begin or end of the element referenced by Id.value}
+\item{<event-value>}{Specifies when to begin the animation, based upon an offset (+ or - ) relative to when the event referenced occurs.}
+\item{<repeat-value>}{Specifies when to begin the animation, based upon an offset (+ or - ) relative to a repeating event.}
+\item{<accessKey-value>}{Specifies when to begin the animation, based upon an offset (+ or - ) relative to an access key event of the specified character.}
+\item{<wallclock-sync-value>}{Specifies when to begin the animation, based on wall clock time.}
+\item{\emph{'indefinite'}}{Specifies when to begin the animation, using a \emph{beginElement()} method call or a hyperlink targeted to the element to trigger the begin.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -27,5 +31,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

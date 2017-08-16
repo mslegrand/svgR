@@ -4,18 +4,17 @@
 \alias{FilterPrimitiveXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}
+\code{\link[=FilterPrimitiveXYAttribute]{x}}, \code{\link[=FilterPrimitiveXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feColorMatrix]{feColorMatrix}}, \code{\link[=feComponentTransfer]{feComponentTransfer}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feConvolveMatrix]{feConvolveMatrix}}, \code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}, \code{\link[=feFlood]{feFlood}}, \code{\link[=feGaussianBlur]{feGaussianBlur}}, \code{\link[=feImage]{feImage}}, \code{\link[=feMerge]{feMerge}}, \code{\link[=feMorphology]{feMorphology}}, \code{\link[=feOffset]{feOffset}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}, \code{\link[=feTile]{feTile}}, \code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

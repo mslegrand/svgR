@@ -4,26 +4,28 @@
 \alias{writing-mode-presentationAttribute}
 \title{writing.mode}
 \description{
-ToDo: Needs to be written!!!
+Governs the initial inline-progression-direction
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{lr-tb}{**ToDo!!!** }
-\item{rl-tb}{**ToDo!!!** }
-\item{tb-rl}{**ToDo!!!** }
-\item{lr}{**ToDo!!!** }
-\item{rl}{**ToDo!!!** }
-\item{tb}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{writing-mode} value from the parent.}
+\item{\emph{'\emph{'lr'}'}}{Specifies \emph{writing-mode} is to be left to right.}
+\item{\emph{'\emph{'lr-tb'}'}}{Specifies \emph{writing-mode} is to be left to right and  top to bottom.}
+\item{\emph{'\emph{'rl'}'}}{Specifies \emph{writing-mode} is to be  right to left.}
+\item{\emph{'\emph{'rl-tb'}'}}{Specifies \emph{writing-mode} is to be right to left, top to bottom.}
+\item{\emph{'\emph{'tb'}'}}{Specifies \emph{writing-mode} is to be top to bottom.}
+\item{\emph{'\emph{'tb-rl'}'}}{Specifies \emph{writing-mode} is to be top to bottom, right to left.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

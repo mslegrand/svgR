@@ -15,4 +15,3 @@ named 'root'}
 \description{
 Edit the document at the node given by the index
 }
-

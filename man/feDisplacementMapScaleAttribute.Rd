@@ -4,13 +4,20 @@
 \alias{feDisplacementMapScaleAttribute}
 \title{scale}
 \description{
-ToDo: Needs to be written!!!
+Sets the displacement scaling factor to be applied.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Displacement scale factor. The amount is expressed in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. When the value of this attribute is 0, this operation has no effect on the source image. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<number>}{Specifies the displacement scale factor, as given in the by the \strong{feDisplacement} Map equations. Note: a value of 0 results in no displacement.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feDisplacementMap]{feDisplacementMap}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

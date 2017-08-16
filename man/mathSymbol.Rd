@@ -188,4 +188,3 @@ unicode character
 \description{
 Converts a laTeX symbol specification into unicode
 }
-

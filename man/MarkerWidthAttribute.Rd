@@ -4,20 +4,27 @@
 \alias{MarkerWidthAttribute}
 \title{markerWidth}
 \description{
-ToDo: Needs to be written!!!
+Sets the width of the viewport into which the marker is to be fitted
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{Represents the width of the viewport into which the marker is to be fitted when it is rendered. A negative value is an error (see Error processing). A value of zero disables rendering of the element. If the attribute is not specified, the effect is as if a value of "3" were specified.Animatable. yes.}
+\item{<length>}{Specifies the width of the marker. Default=3.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

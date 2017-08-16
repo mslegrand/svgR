@@ -4,20 +4,27 @@
 \alias{MarkerElementRefXAttribute}
 \title{refX}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the marker reference point within the marker coordinate system.  Upon rendering, the marker reference point coincides with the point on the curve where the marker is to be attached.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The x.axis coordinate of the reference point which is to be aligned exactly at the marker position. The coordinate is defined in the coordinate system after application of the 'viewBox' and 'preserveAspectRatio' attributes. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the x-coordinate of the \strong{marker} position. Default=0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

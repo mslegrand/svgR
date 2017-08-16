@@ -4,20 +4,27 @@
 \alias{FilterElementWidthAttribute}
 \title{width}
 \description{
-ToDo: Needs to be written!!!
+Sets the width of the filter region.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{See Filter effects region.}
+\item{<length>}{Specifies the bounding box width of the \strong{filter} in terms of the \emph{filterUnits}. (default is 1.20 )}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

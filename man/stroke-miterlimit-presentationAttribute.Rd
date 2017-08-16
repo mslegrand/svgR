@@ -4,13 +4,15 @@
 \alias{stroke-miterlimit-presentationAttribute}
 \title{stroke.miterlimit}
 \description{
-ToDo: Needs to be written!!!
+Defines a limit on the ratio of the miter length to the stroke-width.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<miterlimit>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<miterlimit>}{Sets the miterlimit , a number greater than 1 which is used to limit the ratio of \emph{mitreLength} to \emph{stroke-width}.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-miterlimit} value from the parent.}
 }
 }
 
@@ -18,9 +20,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

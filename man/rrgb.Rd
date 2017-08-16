@@ -12,4 +12,3 @@ returns character vector representing a rgb color (as a character vector)
 \description{
 Generate a random rgb color
 }
-

@@ -4,20 +4,26 @@
 \alias{TSpanElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the tspan x-coordinate(s)
 }
 \section{Available Attribute Values}{
 
 \describe{
-\item{<list.of.coordinates>}{If a single <coordinate> is provided, then the value represents the new absolute X coordinate for the current text position for rendering the glyphs that correspond to the first character within this element or any of its descendants. If a comma. or space.separated list of n <coordinate>s is provided, then the values represent new absolute X coordinates for the current text position for rendering the glyphs corresponding to each of the first n characters within this element or any of its descendants. If more <coordinate>s are provided than characters, then the extra <coordinate>s will have no effect on glyph positioning. If more characters exist than <coordinate>s, then for each of these extra characters. (a) if an ancestor 'text' or 'tspan' element specifies an absolute X coordinate for the given character via an 'x' attribute, then that absolute X coordinate is used as the starting X coordinate for that character (nearest ancestor has precedence), else (b) the starting X coordinate for rendering the glyphs corresponding to the given character is the X coordinate of the resulting current text position from the most recently rendered glyph for the current 'text' element. If the attribute is not specified. (a) if an ancestor 'text' or 'tspan' element specifies an absolute X coordinate for a given character via an 'x' attribute, then that absolute X coordinate is used (nearest ancestor has precedence), else (b) the starting X coordinate for rendering the glyphs corresponding to a given character is the X coordinate of the resulting current text position from the most recently rendered glyph for the current 'text' element.Animatable. yes.}
+\item{<coordinate>[N]}{Specifies the absolute x-coordinate for the first n characters where n is the length of the vector x. (default is 0)}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

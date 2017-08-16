@@ -4,13 +4,20 @@
 \alias{feDiffuseLightingSurfaceScaleAttribute}
 \title{surfaceScale}
 \description{
-ToDo: Needs to be written!!!
+Sets the A_in scale factor used to produce the height of the surface.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{height of surface when Ain = 1. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+\item{<number>}{Specifies scaling factor to be used to scale the \emph{alpha channel} to produce the height of surface. Thus it is the maximum possible height of the surface and realized when the \emph{alpha channel} =1. The default is 1.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feDiffuseLighting]{feDiffuseLighting}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,14 +4,16 @@
 \alias{stroke-width-presentationAttribute}
 \title{stroke.width}
 \description{
-ToDo: Needs to be written!!!
+Defines the width of the stroke on the current object.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<percentage>}{**ToDo!!!** }
-\item{<length>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-width} value from the parent.}
+\item{<percentage>}{Sets the stroke-width value as a precentage of the current viewport.}
+\item{<length>}{Sets the \emph{stroke-width} value using non-percentate units.}
 }
 }
 
@@ -19,9 +21,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

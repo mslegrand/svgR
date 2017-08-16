@@ -2,17 +2,17 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{fePointLight}
 \alias{fePointLight}
-\title{A Primitive Filter Element that defines a pointlight light source}
+\title{A primitive filter element that defines a point light source}
 \description{
-description=
+This filter primitive defines a light source that emanates uniformly from a non-distant  point in space close.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=fePointLightXYZAttribute]{xyz}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=fePointLightXAttribute]{x}}, \code{\link[=fePointLightYAttribute]{y}}}
-\item{\emph{unclassified}}{\code{\link[=fePointLightZAttribute]{z}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=fePointLightXYZAttribute]{xyz}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=fePointLightXAttribute]{x}}, \code{\link[=fePointLightYAttribute]{y}}}
+\item{\emph{Unclassified}}{\code{\link[=fePointLightZAttribute]{z}}}
 }
 }
 
@@ -22,5 +22,5 @@ description=
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

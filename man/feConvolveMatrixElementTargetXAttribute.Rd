@@ -4,13 +4,20 @@
 \alias{feConvolveMatrixElementTargetXAttribute}
 \title{targetX}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-position of the target pixel relative to the convolution matrix.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<integer>}{Determines the positioning in X of the convolution matrix relative to a given target pixel in the input image. The leftmost column of the matrix is column number zero. The value must be such that. 0 <= targetX < orderX. By default, the convolution matrix is centered in X over each pixel of the input image (i.e., targetX = floor ( orderX / 2 )).Animatable. yes.}
+\item{<integer>}{Specifies the placement of the \emph{convolution matrix} implied by specifying the target x-coordinate relative to the \emph{convolution} origin. By default, the \emph{convolution matrix} is centered about the target.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{OnScrollEventAttribute}
 \title{onscroll}
 \description{
-ToDo: Needs to be written!!!
+Sets the script to execute when an scroll event is received
 }
 \section{Available Attribute Values}{
 
+The value is a script, likely ecmascript (i.e.  javascript).
 \describe{
-\item{<anything>}{onzoom = "<anything>"}
+\item{<script>}{Specifies what to execute when an \emph{SVGScroll} event is fired. \emph{SVGScroll} event occurs whenever the view is shifted. This occurs in one of two ways: direct user intervention or a change on the \emph{currentTranslate} property. The \emph{SVGScroll} event applies only to the \emph{outermost svg element}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

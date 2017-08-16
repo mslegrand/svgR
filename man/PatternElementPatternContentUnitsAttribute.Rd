@@ -4,20 +4,22 @@
 \alias{PatternElementPatternContentUnitsAttribute}
 \title{patternContentUnits}
 \description{
-ToDo: Needs to be written!!!
+Governs whether to interpret the coordinate of the contents as fractions of the of the pattern bounding box (objectBoundingBox), or to simply inherit (userSpaceOnUse).
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for the contents of the 'pattern'. Note that this attribute has no effect if attribute 'viewBox' is specified. If patternContentUnits="userSpaceOnUse", the user coordinate system for the contents of the 'pattern' element is the coordinate system that results from taking the current user coordinate system in place at the time when the 'pattern' element is referenced (i.e., the user coordinate system for the element referencing the 'pattern' element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'patternTransform'. If patternContentUnits="objectBoundingBox", the user coordinate system for the contents of the 'pattern' element is established using the bounding box of the element to which the pattern is applied (see Object bounding box units) and then applying the transform specified by attribute 'patternTransform'. If attribute 'patternContentUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
+\item{\emph{'userSpaceOnUse'}}{Specifies that the coordinate system for the contents of the \strong{pattern element} is the user coordinate system at the time of the \strong{pattern element} referencing. Thus the measurement units \emph{patternContentUnits} coincides with the \emph{userSpaceUnits}.}
+\item{\emph{'objectBoundingBox'}}{Specifies that the coordinate system for contents of the \strong{pattern element} is given terms of the bounding box of the object to which the pattern \strong{pattern element} is applied.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=pattern]{pattern}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

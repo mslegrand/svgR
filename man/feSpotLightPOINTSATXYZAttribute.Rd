@@ -4,26 +4,25 @@
 \alias{feSpotLightPOINTSATXYZAttribute}
 \title{pointsAtXYZ}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning pointsAtX, pointsAtY and pointsAtZ
 }
 \section{Combines}{
 
-\code{\link[=feSpotLightPointsAtXAttribute]{pointsAtX}}, \code{\link[=feSpotLightPointsAtYAttribute]{pointsAtY}}, \code{\link[=feSpotLightPointsAtZAttribute]{pointsAtZ}}
+\code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtX}}, \code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtY}}, \code{\link[=feSpotLightPOINTSATXYZAttribute]{pointsAtZ}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{pointsAtXYZ=c(value.POINTSATX,value.POINTSATY,value.POINTSATZ)}
-\item{and}{pointsAtX = value.POINTSATX; pointsAtY = value.POINTSATY; pointsAtZ = value.POINTSATZ}
+pointsAtXYZ =v is equivalent to  pointsAtX=v[1], pointsAtY=v[2], pointsAtZ=v[3]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

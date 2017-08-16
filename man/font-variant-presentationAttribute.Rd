@@ -4,23 +4,24 @@
 \alias{font-variant-presentationAttribute}
 \title{font.variant}
 \description{
-ToDo: Needs to be written!!!
+Governs the which font-variant to use for lower case characters:  normal glyphs or small-caps glyphs.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{normal}{**ToDo!!!** }
-\item{small-caps}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'inherit'}'}}{Inherit font-variant from the parent.}
+\item{\emph{'\emph{'normal'}'}}{Specifies to use a normal variant style.}
+\item{\emph{'\emph{'small-caps'}'}}{Specifies to use a small-caps  variant style.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

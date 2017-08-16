@@ -4,13 +4,20 @@
 \alias{feTurbulenceSeedAttribute}
 \title{seed}
 \description{
-ToDo: Needs to be written!!!
+Sets the seed for the pseudo random number generator used in creating the turbulence effect..
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The starting number for the pseudo random number generator. If the attribute is not specified, then the effect is as if a value of 0 were specified. When the seed number is handed over to the algorithm above it must first be truncated, i.e. rounded to the closest integer value towards zero.Animatable. yes.}
+\item{<non-negative integer>}{Specifies the seed for pseudo random number generator to be used in the \emph{noise} generation. Default is 0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

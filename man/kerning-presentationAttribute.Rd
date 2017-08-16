@@ -4,23 +4,24 @@
 \alias{kerning-presentationAttribute}
 \title{kerning}
 \description{
-ToDo: Needs to be written!!!
+Governs kerning:  inter-glyph spacing adjustments.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{<length>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<length>}{Sets a value for the length for the inter-character spacing. Setting to 0, essentially diables auto kerning.}
+\item{\emph{'\emph{'auto'}'}}{Specifies to auto adjust adjust inter-glyph spacing by using kerning tables includess with the font.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the inter-character spacing adjustment from the parent.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

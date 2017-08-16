@@ -4,13 +4,19 @@
 \alias{XLinkArcRoleAttribute}
 \title{xlink.arcrole}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference which is to identify some resource that describes the intended property.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<IRI>}{An optional IRI reference that identifies some resource that describes the intended property. The value must be an IRI reference as defined in [RFC3987], except that if the IRI scheme used is allowed to have absolute and relative forms, the IRI portion must be absolute. When no value is supplied, no particular role value shall be inferred. The arcrole attribute corresponds to the [RDF.PRIMER] notion of a property, where the role can be interpreted as stating that "starting.resource HAS arc.role ending.resource." This contextual role can differ from the meaning of an ending resource when taken outside the context of this particular arc. For example, a resource might generically represent a "person," but in the context of a particular arc it might have the role of "mother" and in the context of a different arc it might have the role of "daughter." Refer to the XML Linking Language (XLink) [XLINK]. Animatable. no.}
+\item{<IRI>}{Specifies \emph{IRI} an optional reference to resource that describes an intended role.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,10 +25,11 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feImage]{feImage}}}
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}, \code{\link[=radialGradient]{radialGradient}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=image]{image}}, \code{\link[=mpath]{mpath}}, \code{\link[=pattern]{pattern}}, \code{\link[=script]{script}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=mpath]{mpath}}, \code{\link[=script]{script}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

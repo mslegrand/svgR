@@ -4,12 +4,15 @@
 \alias{feConvolveMatrixElementEdgeModeAttribute}
 \title{edgeMode}
 \description{
-ToDo: Needs to be written!!!
+Governs how the convolution is computed along the edges.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{duplicate | wrap | none}{Determines how to extend the input image as necessary with color values so that the matrix operations can be applied when the kernel is positioned at or near the edge of the input image. "duplicate" indicates that the input image is extended along each of its borders as necessary by duplicating the color values at the given edge of the input image.Original N.by.M image, where m=M.1 and n=N.1. 11 12 ... 1m 1M 21 22 ... 2m 2M .. .. ... .. .. n1 n2 ... nm nM N1 N2 ... Nm NMExtended by two pixels using "duplicate". 11 11 11 12 ... 1m 1M 1M 1M 11 11 11 12 ... 1m 1M 1M 1M 11 11 11 12 ... 1m 1M 1M 1M 21 21 21 22 ... 2m 2M 2M 2M .. .. .. .. ... .. .. .. .. n1 n1 n1 n2 ... nm nM nM nM N1 N1 N1 N2 ... Nm NM NM NM N1 N1 N1 N2 ... Nm NM NM NM N1 N1 N1 N2 ... Nm NM NM NM "wrap" indicates that the input image is extended by taking the color values from the opposite edge of the image.Extended by two pixels using "wrap". nm nM n1 n2 ... nm nM n1 n2 Nm NM N1 N2 ... Nm NM N1 N2 1m 1M 11 12 ... 1m 1M 11 12 2m 2M 21 22 ... 2m 2M 21 22 .. .. .. .. ... .. .. .. .. nm nM n1 n2 ... nm nM n1 n2 Nm NM N1 N2 ... Nm NM N1 N2 1m 1M 11 12 ... 1m 1M 11 12 2m 2M 21 22 ... 2m 2M 21 22 "none" indicates that the input image is extended with pixel values of zero for R, G, B and A. If attribute 'edgeMode' is not specified, then the effect is as if a value of duplicate were specified. Animatable. yes.}
+\item{\emph{'duplicate'}}{Specifies to extended the input image along the borders by duplication color values.}
+\item{\emph{'wrap'}}{Specifies to extended the input image along the borders by using a wrap around of the color values.}
+\item{\emph{'none'}}{Specifies to extended the input image along the borders by using a zero color value.}
 }
 }
 
@@ -19,5 +22,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

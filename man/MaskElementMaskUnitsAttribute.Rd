@@ -4,20 +4,22 @@
 \alias{MaskElementMaskUnitsAttribute}
 \title{maskUnits}
 \description{
-ToDo: Needs to be written!!!
+Governs whether to interpret the coordinates x,y,width, height as objectBoundingBox or userSpaceOnUse
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for attributes 'x', 'y', 'width' and 'height'. If maskUnits="userSpaceOnUse", 'x', 'y', 'width' and 'height' represent values in the current user coordinate system in place at the time when the 'mask' element is referenced (i.e., the user coordinate system for the element referencing the 'mask' element via the 'mask' property). If maskUnits="objectBoundingBox", 'x', 'y', 'width' and 'height' represent fractions or percentages of the bounding box of the element to which the mask is applied. (See Object bounding box units.) If attribute 'maskUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
+\item{\emph{'userSpaceOnUse'}}{Specifies that the coordinate system for the mask attributes \emph{'x'}, \emph{'y'}, \emph{'width'} and \emph{'height'} represent values are given in terms of the user coordinate system effective at the time of mask referencing.}
+\item{\emph{'objectBoundingBox'}}{Specifies that the coordinate system for the mask attributes \emph{'x'}, \emph{'y'}, \emph{'width'} and \emph{'height'} are given in terms of fractions or percentages of the bounding box of the object to which the mask is applied. (Default)}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

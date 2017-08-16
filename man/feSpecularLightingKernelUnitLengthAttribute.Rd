@@ -4,12 +4,13 @@
 \alias{feSpecularLightingKernelUnitLengthAttribute}
 \title{kernelUnitLength}
 \description{
-ToDo: Needs to be written!!!
+Sets the dx dy values to be used in the surface normal calculations.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric vector having length 1 or 2.
 \describe{
-\item{<number.optional.number>}{The first number is the <dx> value. The second number is the <dy> value. If the <dy> value is not specified, it defaults to the same value as <dx>. Indicates the intended distance in current filter units (i.e., units as determined by the value of attribute 'primitiveUnits') for dx and dy, respectively, in the surface normal calculation formulas. By specifying value(s) for 'kernelUnitLength', the kernel becomes defined in a scalable, abstract coordinate system. If 'kernelUnitLength' is not specified, the dx and dy values should represent very small deltas relative to a given (x,y) position, which might be implemented in some cases as one pixel in the intermediate image offscreen bitmap, which is a pixel.based coordinate system, and thus potentially not scalable. For some level of consistency across display media and user agents, it is necessary that a value be provided for at least one of 'filterRes' and 'kernelUnitLength'. Discussion of intermediate images are in the Introduction and in the description of attribute 'filterRes'. A negative or zero value is an error (see Error processing).Animatable. yes.}
+\item{<numeric>[1 or 2]}{Specifies the dx, (dy) to be used in calculating the unit normal vector. The default for dx is a small distance, the default for dy is dx. It is advised that at minimal, one should specifies filterRes or kernelUnitLength to assure consistency across displays.}
 }
 }
 
@@ -19,5 +20,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feSpecularLighting]{feSpecularLighting}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

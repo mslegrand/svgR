@@ -4,23 +4,27 @@
 \alias{clip-presentationAttribute}
 \title{clip}
 \description{
-ToDo: Needs to be written!!!
+Governs clipping along the bounds of the elements viewport.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<shape>}{**ToDo!!!** }
-\item{auto}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<shape>}{Specifies the rectangle to clip to.}
+\item{\emph{'\emph{'auto'}'}}{Specifies to clip  this element by the boundry of its viewport.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies that the clipping region for this element should be inherited from its parent,}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
-\item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}, \code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

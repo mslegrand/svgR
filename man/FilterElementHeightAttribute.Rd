@@ -4,20 +4,27 @@
 \alias{FilterElementHeightAttribute}
 \title{height}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the filter effects region.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{See Filter effects region.}
+\item{<length>}{Specifies the \emph{bounding box height} of the filter in terms of the filterUnits. (The default is 1.20).}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

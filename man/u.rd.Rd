@@ -12,4 +12,3 @@ Declares the units to be radians
 \item{transform=rotate(u.rd(pi/2), 100,100)}{}
 }
 }
-

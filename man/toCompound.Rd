@@ -17,4 +17,3 @@ A function that evaluates the f in the svg environment.
 \description{
 Wraps an R function to be used as a compounds
 }
-

@@ -4,20 +4,27 @@
 \alias{feComponentTransferSlopeAttribute}
 \title{slope}
 \description{
-ToDo: Needs to be written!!!
+Sets the slope to be used when the transfer type is linear
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{When type="linear", the slope of the linear function. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+\item{<number>}{Specifies the slope to be used to construct the \emph{transfer} function when the type is \emph{linear}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{FontFaceElementOverlinePositionAttribute}
 \title{overline.position}
 \description{
-ToDo: Needs to be written!!!
+Sets the desired overline position, as measured within the font-coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The ideal position of an overline within the font coordinate system.Animatable. no.}
+\item{<numeric>}{Specifies, in font coordinates, the intended \emph{overline position}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

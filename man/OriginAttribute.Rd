@@ -4,13 +4,19 @@
 \alias{OriginAttribute}
 \title{origin}
 \description{
-ToDo: Needs to be written!!!
+Sets the origin, but has no effect in SVG, but howerver may be applicable when using CSS for positioning.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{default}{The 'origin' attribute is defined in the SMIL Animation specification ([SMILANIM], section 4.3). It has no effect in SVG.}
+\item{<default-value>}{Specifies the origin as defined in the \emph{SMIL} specification.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animateMotion]{animateMotion}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

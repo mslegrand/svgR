@@ -4,20 +4,27 @@
 \alias{FontFaceElementFontVariantAttribute}
 \title{font.variant}
 \description{
-ToDo: Needs to be written!!!
+Governs whether or not to use a small-caps font variant for bicameral fonts.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{[normal | small.caps] [,[normal | small.caps]]*}{Same syntax and semantics as the 'font.variant' descriptor within an font.face rule. Indication of whether this face is the small.caps variant of a font. Takes on the same values as the 'font.variant' property, except that a comma.separated list is permitted. If the attribute is not specified, the effect is as if a value of 'normal' were specified.Animatable. no.}
+\item{\emph{'normal'}}{Specifies the \emph{normal} font variant.}
+\item{\emph{'small-caps'}}{Specifies \emph{small-caps} variant of the font.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

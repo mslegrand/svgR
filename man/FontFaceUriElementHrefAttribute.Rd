@@ -4,20 +4,26 @@
 \alias{FontFaceUriElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference for the location of a font.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<IRI>}{The 'xlink.href' attribute specifies the location of the referenced font.Animatable. no.}
+\item{<IRI>}{Specifies the location of the referenced font}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face-uri]{font.face.uri}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face-uri]{font.face.uri}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

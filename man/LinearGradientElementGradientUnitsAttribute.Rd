@@ -4,12 +4,14 @@
 \alias{LinearGradientElementGradientUnitsAttribute}
 \title{gradientUnits}
 \description{
-ToDo: Needs to be written!!!
+Governs whether to interpret the coordinates of x1, y1, x2, y2 as either objectBoundingBox or userSpaceOnUse.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for attributes 'x1', 'y1', 'x2' and 'y2'. If gradientUnits="userSpaceOnUse", 'x1', 'y1', 'x2' and 'y2' represent values in the coordinate system that results from taking the current user coordinate system in place at the time when the gradient element is referenced (i.e., the user coordinate system for the element referencing the gradient element via a 'fill' or 'stroke' property) and then applying the transform specified by attribute 'gradientTransform'. If gradientUnits="objectBoundingBox", the user coordinate system for attributes 'x1', 'y1', 'x2' and 'y2' is established using the bounding box of the element to which the gradient is applied (see Object bounding box units) and then applying the transform specified by attribute 'gradientTransform'. When gradientUnits="objectBoundingBox" and 'gradientTransform' is the identity matrix, the normal of the linear gradient is perpendicular to the gradient vector in object bounding box space (i.e., the abstract coordinate system where (0,0) is at the top/left of the object bounding box and (1,1) is at the bottom/right of the object bounding box). When the object's bounding box is not square, the gradient normal which is initially perpendicular to the gradient vector within object bounding box space may render non.perpendicular relative to the gradient vector in user space. If the gradient vector is parallel to one of the axes of the bounding box, the gradient normal will remain perpendicular. This transformation is due to application of the non.uniform scaling transformation from bounding box space to user space. If attribute 'gradientUnits' is not specified, then the effect is as if a value of 'objectBoundingBox' were specified.Animatable. yes.}
+\item{\emph{'userSpaceOnUse'}}{Specifies that the gradient values for \emph{'x1'}, \emph{'y1'}, \emph{'x2'} and \emph{'y2'} are given in terms of the user coordinate system in effect at the time when the gradient element is referenced.}
+\item{\emph{'objectBoundingBox'}}{Specifies that the gradient values for \emph{'x1'}, \emph{'y1'}, \emph{'x2'} and \emph{'y2'} are given in terms fractions (or percentages) of the bounding box of the target element to which the gradient is applied. In this case c(0, 0) is the coordinates of the upper left-hand corner of the bounding, and c(1, 0) is the coordinates of the lower right-hand corner of the bounding box.}
 }
 }
 
@@ -19,5 +21,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

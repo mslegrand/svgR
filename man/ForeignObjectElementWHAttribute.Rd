@@ -4,26 +4,25 @@
 \alias{ForeignObjectElementWHAttribute}
 \title{wh}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning height and width
 }
 \section{Combines}{
 
-\code{\link[=ForeignObjectElementHeightAttribute]{height}}, \code{\link[=ForeignObjectElementWidthAttribute]{width}}
+\code{\link[=ForeignObjectElementWHAttribute]{height}}, \code{\link[=ForeignObjectElementWHAttribute]{width}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{wh=c(value.HEIGHT,value.WIDTH)}
-\item{and}{height = value.HEIGHT; width = value.WIDTH}
+wh =v is equivalent to  height=v[1], width=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

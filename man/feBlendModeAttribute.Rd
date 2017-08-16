@@ -4,13 +4,48 @@
 \alias{feBlendModeAttribute}
 \title{mode}
 \description{
-ToDo: Needs to be written!!!
+Governs which algorithm to used for blending of the two image sources.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{normal | multiply | screen | darken | lighten}{One of the image blending modes (see table below). If attribute 'mode' is not specified, then the effect is as if a value of normal were specified.Animatable. yes.}
+\item{\emph{'normal'}}{Specifies the \emph{normal blending mode} See below.}
+\item{\emph{'multiply'}}{Specifies the \emph{multiply blending mode} See below.}
+\item{\emph{'screen'}}{Specifies the \emph{screen blending mode} See below.}
+\item{\emph{'darken'}}{Specifies the \emph{darken blending mode} See below.}
+\item{\emph{'lighten'}}{Specifies the \emph{lighten blending mode} See below.}
 }
+}
+
+\section{feBlend Mode Details}{
+
+feBlend Modes are defned as follows
+
+\strong{normal mode (no blending)}
+
+\deqn{ \alpha_{out} = 1 - (1- \alpha_{in1})  (1- \alpha_{in2}) }
+\deqn{ \alpha_{out}  \times C_{out} =(1-\alpha_{in2})  \alpha_{in1} C_{in1} + \alpha_{in1}  C_{in1} }
+
+\strong{multiply blend mode}
+
+\deqn{ \alpha_{out} = 1 - (1- \alpha_{in1}) \times (1- \alpha_{in2)} }
+\deqn{\alpha_{out}  \times C_{out} = (1-\alpha_{in2})  \alpha_{in1} C_{in1} + (1-\alpha_{in1})  \alpha_{in2} C_{in2} + \alpha_{in1} \alpha_{in2}  C_{in1}   C_{in2} }
+
+\strong{screen blend mode}
+
+\deqn{ \alpha_{out} = 1 - (1- \alpha_{in1}) \times (1- \alpha_{in2)} }
+\deqn{ \alpha_{out}  \times C_{out} = \alpha_{in1} C_{in1} + \alpha_{in2} C_{in2} + \alpha_{in1} \alpha_{in2}  C_{in1}   C_{in2} }
+
+\strong{darken blend mode}
+
+\deqn{ \alpha_{out} = 1 - (1- \alpha_{in1}) \times (1- \alpha_{in2)} }
+\deqn{\alpha_{out}  \times C_{out} = min( (1-\alpha_{in1})  \alpha_{in2} C_{in2} + \alpha_{in1}C_{in1}, (1-\alpha_{in2})  \alpha_{in1} C_{in1} + \alpha_{in2}C_{in2} )}
+
+\strong{lighten blend mode}
+
+\deqn{ \alpha_{out} = 1 - (1- \alpha_{in1}) \times (1- \alpha_{in2)}}
+\deqn{ \alpha_{out}  \times C_{out} = max((1-\alpha_{in1}) \times \alpha_{in2} C_{in2} + \alpha_{in1}C_{in1},(1-\alpha_{in2}) \times \alpha_{in1} C_{in1} + \alpha_{in2}C_{in2})}#'
 }
 
 \section{Used by the Elements}{
@@ -19,5 +54,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

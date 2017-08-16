@@ -4,20 +4,26 @@
 \alias{ContentStyleTypeAttribute}
 \title{contentStyleType}
 \description{
-ToDo: Needs to be written!!!
+Sets the default style sheet language for the given document.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{content.type}{Identifies the default style sheet language for the given document. That language must then be used for all instances of style that do not specify their own style sheet language, such as the 'style' attributes that are available on many elements. The value content.type specifies a media type, per MIME Part Two. Media Types [RFC2046]. The default value is "text/css" [RFC2318].Animatable. no.}
+\item{<content-type>}{Specifies a default style sheet language for the given document.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

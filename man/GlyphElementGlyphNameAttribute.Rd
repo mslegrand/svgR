@@ -4,20 +4,26 @@
 \alias{GlyphElementGlyphNameAttribute}
 \title{glyph.name}
 \description{
-ToDo: Needs to be written!!!
+Sets a name for a glyph
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<name> [, <name> ]*}{A name for the glyph. It is recommended that glyph names be unique within a font. The glyph names can be used in situations where Unicode character numbers do not provide sufficient information to access the correct glyph, such as when there are multiple glyphs per Unicode character. The glyph names can be referenced in kerning definitions.Animatable. no.}
+\item{<glyph-names>[N]}{Specifies a vector of one or more glyph names}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

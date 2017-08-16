@@ -2,16 +2,16 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{font}
 \alias{font}
-\title{Element used to define the font}
+\title{An element which specifies the font.}
 \description{
 The font element defines a font to be used for text layout.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FontElementHorizOriginXAttribute]{horiz.origin.xy}}, \code{\link[=FontElementVertOriginXAttribute]{vert.origin.xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=FontElementHorizAdvXAttribute]{horiz.adv.x}}, \code{\link[=FontElementHorizOriginXAttribute]{horiz.origin.x}}, \code{\link[=FontElementHorizOriginYAttribute]{horiz.origin.y}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=FontElementVertAdvYAttribute]{vert.adv.y}}, \code{\link[=FontElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=FontElementVertOriginYAttribute]{vert.origin.y}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FontElementHorizOriginXAttribute]{horiz.origin.xy}}, \code{\link[=FontElementVertOriginXAttribute]{vert.origin.xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=FontElementHorizAdvXAttribute]{horiz.adv.x}}, \code{\link[=FontElementHorizOriginXAttribute]{horiz.origin.x}}, \code{\link[=FontElementHorizOriginYAttribute]{horiz.origin.y}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=FontElementVertAdvYAttribute]{vert.adv.y}}, \code{\link[=FontElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=FontElementVertOriginYAttribute]{vert.origin.y}}}
 }
 }
 
@@ -19,8 +19,9 @@ The font element defines a font to be used for text layout.
 
 \describe{
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}, \code{\link[=glyph]{glyph}}, \code{\link[=hkern]{hkern}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}, \code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

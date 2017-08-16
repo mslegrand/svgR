@@ -4,12 +4,13 @@
 \alias{feConvolveMatrixElementOrderAttribute}
 \title{order}
 \description{
-ToDo: Needs to be written!!!
+Sets the number of cells in each dimension of the kernel matrix to be used in a convolution.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric vector having length 1 or 2.
 \describe{
-\item{<number.optional.number>}{Indicates the number of cells in each dimension for 'kernelMatrix'. The values provided must be <integer>s greater than zero. The first number, <orderX>, indicates the number of columns in the matrix. The second number, <orderY>, indicates the number of rows in the matrix. If <orderY> is not provided, it defaults to <orderX>. A typical value is order="3". It is recommended that only small values (e.g., 3) be used; higher values may result in very high CPU overhead and usually do not produce results that justify the impact on performance. If the attribute is not specified, the effect is as if a value of 3 were specified.Animatable. yes.}
+\item{<numeric>[1 or 2]}{Specifies the number of columns and rows to use for the \emph{kernelMatrix.} Typically usage is c(3, 3).}
 }
 }
 
@@ -19,5 +20,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

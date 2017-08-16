@@ -4,20 +4,27 @@
 \alias{FilterElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the left-hand side of the filter effects region.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{See Filter effects region.}
+\item{<coordinate>}{Specifies the left edge of the \strong{filter element} region.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,12 +4,14 @@
 \alias{stroke-presentationAttribute}
 \title{stroke}
 \description{
-ToDo: Needs to be written!!!
+Defines the paint used for the outline of the given graphical element
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<paint> (See Specifying paint)}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'none'}'}}{Specifies no stroke (no border outline)}
 }
 }
 
@@ -17,9 +19,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

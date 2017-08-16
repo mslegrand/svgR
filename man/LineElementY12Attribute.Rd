@@ -4,18 +4,17 @@
 \alias{LineElementY12Attribute}
 \title{y12}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning y1 and y2
 }
 \section{Combines}{
 
-\code{\link[=LineElementY1Attribute]{y1}}, \code{\link[=LineElementY2Attribute]{y2}}
+\code{\link[=LineElementY12Attribute]{y1}}, \code{\link[=LineElementY12Attribute]{y2}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{y12=c(value.Y1,value.Y2)}
-\item{and}{y1 = value.Y1; y2 = value.Y2}
+y12 =v is equivalent to  y1=v[1], y2=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=line]{line}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

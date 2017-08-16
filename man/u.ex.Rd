@@ -12,4 +12,3 @@ Declares the units to be ex's. (An ex is a measure relative to the height of the
 \item{transform=translate(u.ex(c(0,2))}{}
 }
 }
-

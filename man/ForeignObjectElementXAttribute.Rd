@@ -4,20 +4,27 @@
 \alias{ForeignObjectElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the left side of rectangular region where the foreign object is to be placed.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The x.axis coordinate of one corner of the rectangular region into which the graphics associated with the contents of the 'foreignObject' will be rendered. If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the x-coordinate of the left side of the rectangular region into which the \emph{'foreignObject'} will be rendered. Default=0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

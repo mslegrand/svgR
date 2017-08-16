@@ -4,13 +4,20 @@
 \alias{RadialGradientElementFYAttribute}
 \title{fy}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinate of the focal point of the radial gradient.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{See 'fx'. If attribute 'fy' is not specified, 'fy' will coincide with the presentational value of 'cy' for the element whether the value for 'cy' was inherited or not. If the element references an element that specifies a value for 'fy', then the value of 'fy' is inherited from the referenced element.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of the focal point of the radial gradient. (The focal point being the location of the initial gradient stop.) Default is 0.50 .}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=radialGradient]{radialGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

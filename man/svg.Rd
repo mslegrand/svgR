@@ -2,22 +2,22 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{svg}
 \alias{svg}
-\title{ala svg}
+\title{A container element with it’s own viewpor used for gouping elements.}
 \description{
-ToDo: Needs to be written!!!
+A container element for graphical elements with it's own viewport and coordinate system.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{animation event attributes}}{\code{\link[=OnLoadEventAttribute]{onload}}}
-\item{\emph{combining attributes}}{\code{\link[=SVGElementWHAttribute]{wh}}, \code{\link[=SVGElementXYAttribute]{xy}}}
-\item{\emph{conditional processing attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{document event attributes}}{\code{\link[=OnAbortEventAttribute]{onabort}}, \code{\link[=OnErrorEventAttribute]{onerror}}, \code{\link[=OnResizeEventAttribute]{onresize}}, \code{\link[=OnScrollEventAttribute]{onscroll}}, \code{\link[=OnUnloadEventAttribute]{onunload}}, \code{\link[=OnZoomEventAttribute]{onzoom}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=SVGElementHeightAttribute]{height}}, \code{\link[=SVGElementWidthAttribute]{width}}, \code{\link[=SVGElementXAttribute]{x}}, \code{\link[=SVGElementYAttribute]{y}}}
-\item{\emph{graphical event attributes}}{\code{\link[=OnActivateEventAttribute]{onactivate}}, \code{\link[=OnClickEventAttribute]{onclick}}, \code{\link[=OnFocusInEventAttribute]{onfocusin}}, \code{\link[=OnFocusOutEventAttribute]{onfocusout}}, \code{\link[=OnLoadEventAttribute]{onload}}, \code{\link[=OnMouseDownEventAttribute]{onmousedown}}, \code{\link[=OnMouseMoveEventAttribute]{onmousemove}}, \code{\link[=OnMouseOutEventAttribute]{onmouseout}}, \code{\link[=OnMouseOverEventAttribute]{onmouseover}}, \code{\link[=OnMouseUpEventAttribute]{onmouseup}}}
-\item{\emph{presentation attributes}}{\code{\link[=clip-presentationAttribute]{clip}}, \code{\link[=clip-path-presentationAttribute]{clip.path}}, \code{\link[=color-interpolation-presentationAttribute]{color.interpolation}}, \code{\link[=color-rendering-presentationAttribute]{color.rendering}}, \code{\link[=cursor-presentationAttribute]{cursor}}, \code{\link[=display-presentationAttribute]{display}}, \code{\link[=enable-background-presentationAttribute]{enable.background}}, \code{\link[=filter-presentationAttribute]{filter}}, \code{\link[=mask-presentationAttribute]{mask}}, \code{\link[=opacity-presentationAttribute]{opacity}}, \code{\link[=overflow-presentationAttribute]{overflow}}}
-\item{\emph{unclassified}}{\code{\link[=SVGElementBaseProfileAttribute]{baseProfile}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=ContentScriptTypeAttribute]{contentScriptType}}, \code{\link[=ContentStyleTypeAttribute]{contentStyleType}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=PreserveAspectRatioAttribute]{preserveAspectRatio}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=SVGElementVersionAttribute]{version}}, \code{\link[=ViewBoxAttribute]{viewBox}}, \code{\link[=ZoomAndPanAttribute]{zoomAndPan}}}
+\item{\emph{Animation Event Attributes}}{\code{\link[=OnLoadEventAttribute]{onload}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=SVGElementWHAttribute]{wh}}, \code{\link[=SVGElementXYAttribute]{xy}}}
+\item{\emph{Conditional Processing Attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Document Event Attributes}}{\code{\link[=OnAbortEventAttribute]{onabort}}, \code{\link[=OnErrorEventAttribute]{onerror}}, \code{\link[=OnResizeEventAttribute]{onresize}}, \code{\link[=OnScrollEventAttribute]{onscroll}}, \code{\link[=OnUnloadEventAttribute]{onunload}}, \code{\link[=OnZoomEventAttribute]{onzoom}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=SVGElementHeightAttribute]{height}}, \code{\link[=SVGElementWidthAttribute]{width}}, \code{\link[=SVGElementXAttribute]{x}}, \code{\link[=SVGElementYAttribute]{y}}}
+\item{\emph{Graphical Event Attributes}}{\code{\link[=OnActivateEventAttribute]{onactivate}}, \code{\link[=OnClickEventAttribute]{onclick}}, \code{\link[=OnFocusInEventAttribute]{onfocusin}}, \code{\link[=OnFocusOutEventAttribute]{onfocusout}}, \code{\link[=OnLoadEventAttribute]{onload}}, \code{\link[=OnMouseDownEventAttribute]{onmousedown}}, \code{\link[=OnMouseMoveEventAttribute]{onmousemove}}, \code{\link[=OnMouseOutEventAttribute]{onmouseout}}, \code{\link[=OnMouseOverEventAttribute]{onmouseover}}, \code{\link[=OnMouseUpEventAttribute]{onmouseup}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=clip-presentationAttribute]{clip}}, \code{\link[=clip-path-presentationAttribute]{clip.path}}, \code{\link[=color-interpolation-presentationAttribute]{color.interpolation}}, \code{\link[=color-rendering-presentationAttribute]{color.rendering}}, \code{\link[=cursor-presentationAttribute]{cursor}}, \code{\link[=display-presentationAttribute]{display}}, \code{\link[=enable-background-presentationAttribute]{enable.background}}, \code{\link[=filter-presentationAttribute]{filter}}, \code{\link[=mask-presentationAttribute]{mask}}, \code{\link[=opacity-presentationAttribute]{opacity}}, \code{\link[=overflow-presentationAttribute]{overflow}}}
+\item{\emph{Unclassified}}{\code{\link[=SVGElementBaseProfileAttribute]{baseProfile}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=ContentScriptTypeAttribute]{contentScriptType}}, \code{\link[=ContentStyleTypeAttribute]{contentStyleType}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=PreserveAspectRatioAttribute]{preserveAspectRatio}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=SVGElementVersionAttribute]{version}}, \code{\link[=ViewBoxAttribute]{viewBox}}, \code{\link[=ZoomAndPanAttribute]{zoomAndPan}}}
 }
 }
 
@@ -27,10 +27,13 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}, \code{\link[=radialGradient]{radialGradient}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}, \code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=altGlyphDef]{altGlyphDef}}, \code{\link[=clipPath]{clipPath}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font]{font}}, \code{\link[=font-face]{font.face}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=pattern]{pattern}}, \code{\link[=script]{script}}, \code{\link[=style]{style}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}, \code{\link[=view]{view}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=altGlyphDef]{altGlyphDef}}, \code{\link[=clipPath]{clipPath}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font]{font}}, \code{\link[=font-face]{font.face}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=script]{script}}, \code{\link[=style]{style}}, \code{\link[=view]{view}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

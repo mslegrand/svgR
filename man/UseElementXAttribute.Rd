@@ -4,20 +4,27 @@
 \alias{UseElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the left side of the region where an element referenced by use is to be placed.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The x.axis coordinate of one corner of the rectangular region into which the referenced element is placed. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the x-coordinate of the left hand side rectangular region into which the referenced element by use is to be placed.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=use]{use}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

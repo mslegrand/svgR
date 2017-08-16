@@ -4,13 +4,19 @@
 \alias{KeyPointsAttribute}
 \title{keyPoints}
 \description{
-ToDo: Needs to be written!!!
+Sets the points corresponding to the keyTime values. The keyTime and keyPoints together form a contraint that at each specific keyTime, the object should be located at the corresponding key point. This constaint may cause the object to move faster or slower along the path between the intervals defined by the keytimes/keypoints. Another of saying this is that keyTime-keyPoints are used to control the pacing of the motion along the path.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<list.of.numbers>}{'keyPoints' takes a semicolon.separated list of floating point values between 0 and 1 and indicates how far along the motion path the object shall move at the moment in time specified by corresponding 'keyTimes' value. Distance calculations use the user agent's distance along the path algorithm. Each progress value in the list corresponds to a value in the 'keyTimes' attribute list. If a list of 'keyPoints' is specified, there must be exactly as many values in the 'keyPoints' list as in the 'keyTimes' list. If there are any errors in the 'keyPoints' specification (bad values, too many or too few values), then the document is in error (see Error processing).}
+\item{<numeric-in-the-[0,1]-range>[N]}{Specifies points as a numeric vector with values in the (0-1) range, with 0 being the start, and 1 being the end. The length of this value should match in length of the keytimes attribute value.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animateMotion]{animateMotion}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{ViewElementViewTargetAttribute}
 \title{viewTarget}
 \description{
-ToDo: Needs to be written!!!
+Sets the target object to be for this view.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{XML_Name [XML_NAME]*}{Indicates the target object associated with the view. Animatable. no.}
+\item{<names>}{Specifies one or more targets to be associated with this view.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=view]{view}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=view]{view}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

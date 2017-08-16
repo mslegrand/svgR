@@ -4,13 +4,20 @@
 \alias{RectElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinate of the top of the rectangle.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The y.axis coordinate of the side of the rectangle which has the smaller y.axis coordinate value in the current user coordinate system. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of the top side of the rectangle.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=rect]{rect}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

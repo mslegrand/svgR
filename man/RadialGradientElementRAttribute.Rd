@@ -4,13 +4,20 @@
 \alias{RadialGradientElementRAttribute}
 \title{r}
 \description{
-ToDo: Needs to be written!!!
+Sets the radius of the outer circle of the radial gradient.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{See 'cx'. A negative value is an error (see Error processing). A value of zero will cause the area to be painted as a single color using the color and opacity of the last gradient stop. If the attribute is not specified, the effect is as if a value of '50' were specified.Animatable. yes.}
+\item{<length>}{Specifies the radius outermost circle of the \strong{radialGradient}. (The outermost circle being the location of the final gradient \emph{stop}.) Default is 0.50 .}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=radialGradient]{radialGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

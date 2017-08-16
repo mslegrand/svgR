@@ -4,20 +4,22 @@
 \alias{OrientAttribute}
 \title{orient}
 \description{
-ToDo: Needs to be written!!!
+Governs the orientation of the marker,
 }
 \section{Available Attribute Values}{
 
+The value is a numeric representing an angle in degrees.
 \describe{
-\item{auto | <angle>}{Indicates how the marker is rotated. A value of 'auto' indicates that the marker is oriented such that its positive x.axis is pointing as follows. If there is a path segment coming into the vertex and another path segment going out of the vertex, the marker's positive x.axis should point toward the angle bisector for the angle at the given vertex, where that angle has one side consisting of tangent vector for the path segment going into the vertex and the other side the tangent vector for the path segment going out of the vertex. Note. If the tangent vectors are the same, the angle bisector equals the two tangent vectors.If an incoming and an outgoing vertex produce a zero vector the direction of marker is undefined. If there is only a path segment going into the vertex (e.g., the last vertex on an open path), the marker's positive x.axis should point in the same direction as the tangent vector for the path segment going into the vertex. If there is only a path segment going out of the vertex (e.g., the first vertex on an open path), the marker's positive x.axis should point in the same direction as the tangent vector for the path segment going out of the vertex. (Refer to 'path' element implementation notes for a more thorough discussion of the directionality of path segments.) In all cases for closed subpaths (e.g., subpaths which end with a 'closepath' command), the orientation of the marker corresponding to the initial point of the subpath is calculated assuming that. the path segment going into the vertex is the path segment corresponding to the closepaththe path segment coming out of the vertex is the first path segment in the subpath When a 'closepath' command is followed by a command other than a 'moveto' command, then the orientation of the marker corresponding to the 'closepath' command is calculated assuming that. the path segment going into the vertex is the path segment corresponding to the closepaththe path segment coming out of the vertex is the first path segment of the subsequent subpath A <angle> value represents a particular orientation in the user space of the graphic object referencing the marker. For example, if a value of "0" is given, then the marker will be drawn such that its x.axis will align with the x.axis of the user space of the graphic object referencing the marker. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes (non.additive).}
+\item{\emph{'auto'}}{Specifies to rotate the \strong{marker} in such a way that the orientation automatically follows the path.}
+\item{<angle>}{Specifies the value of much to rotate (in degrees) the \strong{marker}.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

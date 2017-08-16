@@ -4,20 +4,27 @@
 \alias{TSpanElementDXAttribute}
 \title{dx}
 \description{
-ToDo: Needs to be written!!!
+Set shifts in the current x-position prior to rendering.
 }
 \section{Available Attribute Values}{
 
+The value  represents one or more lengths, given as a vector.
 \describe{
-\item{<list.of.lengths>}{If a single <length> is provided, this value represents the new relative X coordinate for the current text position for rendering the glyphs corresponding to the first character within this element or any of its descendants. The current text position is shifted along the x.axis of the current user coordinate system by <length> before the first character's glyphs are rendered. If a comma. or space.separated list of n <length>s is provided, then the values represent incremental shifts along the x.axis for the current text position before rendering the glyphs corresponding to the first n characters within this element or any of its descendants. Thus, before the glyphs are rendered corresponding to each character, the current text position resulting from drawing the glyphs for the previous character within the current 'text' element is shifted along the X axis of the current user coordinate system by <length>. If more <length>s are provided than characters, then any extra <length>s will have no effect on glyph positioning. If more characters exist than <length>s, then for each of these extra characters. (a) if an ancestor 'text' or 'tspan' element specifies a relative X coordinate for the given character via a 'dx' attribute, then the current text position is shifted along the x.axis of the current user coordinate system by that amount (nearest ancestor has precedence), else (b) no extra shift along the x.axis occurs. If the attribute is not specified. (a) if an ancestor 'text' or 'tspan' element specifies a relative X coordinate for a given character via a 'dx' attribute, then the current text position is shifted along the x.axis of the current user coordinate system by that amount (nearest ancestor has precedence), else (b) no extra shift along the x.axis occurs.Animatable. yes.}
+\item{<length>[N]}{Specifies a sequence of x-shifts starting with the current text position for the characters within this \strong{tspan} or any of its descendants.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

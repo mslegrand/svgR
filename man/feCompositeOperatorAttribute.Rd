@@ -4,13 +4,47 @@
 \alias{feCompositeOperatorAttribute}
 \title{operator}
 \description{
-ToDo: Needs to be written!!!
+Governs the behaviour of the composite operation.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{over | in | out | atop | xor | arithmetic}{The compositing operation that is to be performed. All of the 'operator' types except arithmetic match the corresponding operation as described in [PORTERDUFF]. The arithmetic operator is described above. If attribute 'operator' is not specified, then the effect is as if a value of over were specified.Animatable. yes.}
+\item{\emph{'over'}}{Specifies to apply the \emph{over} operator (aka Painters algorithm) Used to display both \emph{in1} and \emph{in2} but places \emph{in1} over \emph{in2.} (aka. Painters algorithm)}
+\item{\emph{'in'}}{Specifies to apply the \emph{Porter/Duff in} operator.  Used to  display only  the portion of \emph{in1}  intersecting \emph{in2}  without displaying any portion of \emph{in2}.}
+\item{\emph{'out'}}{Specifies to apply the \emph{Porter/Duff out} operator, Used to display only the portion of \emph{in1} outside \emph{in2} and without displaying any portion of  \emph{in2}.}
+\item{\emph{'atop'}}{Specifies to apply the \emph{Porter/Duff atop} operator. Used to display the portion of  \emph{in1}  inside \emph{in2}, and the portion of  \emph{in2} outside \emph{in1}.}
+\item{\emph{'xor'}}{Specifies to apply the \emph{Porter/Duff xor} operator. Used to display  those portions  \emph{in1} and \emph{in2} that do not intersect.}
+\item{\emph{'arithmetic'}}{Specifies the \emph{arithmetic} operator, which is linear in \emph{in1}, \emph{in2} and \eqn{in1 \times in2}.}
 }
+
+ @section Composite Operator Details: 
+ The following defines each \emph{composite operator}. In particular, how the resulting output alpha channel (\eqn{\alpha_{out}}) and
+ the resulting color channels \eqn{\C_{out}}) are computed from the input channels of \emph{in1} and \emph{in2}.
+ 
+ \strong{over operator}
+ \deqn{ \alpha_{out} = \alpha_{in1}  + \alpha_{in2}  (1-\alpha_{in1})  }
+ \deqn{ \alpha_{out}  \times C_{out}  = \alpha_{in1}  C_{in1} + \alpha_{in2} (1-\alpha_{in1}) C_{in2} }
+ 
+ \strong{in operator}
+ \deqn{ \alpha_{out} = \alpha_{in1}  \alpha_{in2}   }
+ \deqn{ \alpha_{out}  \times C_{out} = \alpha_{in1}  \alpha_{in2}  C_{in1}  }
+ 
+ \strong{out operator}
+ \deqn{ \alpha_{out} = \alpha_{in1} (1- \alpha_{in2}) )  }
+ \deqn{ \alpha_{out}  \times C_{out} = \alpha_{in1} (1- \alpha_{in2})  C_{in1}  }
+ 
+ \strong{atop operato}r
+ \deqn{ \alpha_{out} = \alpha_{in1} \alpha_{in2} + (1-\alpha_{in1}) \alpha_{in2}  }
+ \deqn{ \alpha_{out}  \times C_{out} = \alpha_{in1} \alpha_{in2} C_{in1} + \alpha_{in2} (1-\alpha_{in1}) C_{in2} }
+ 
+ \strong{xor operator}
+ \deqn{ \alpha_{out} = \alpha_{in1} ( 1- \alpha_{in2}) + (1-\alpha_{in1}) \alpha_{in2}  }
+  \deqn{ \alpha_{out}  \times C_{out} = \alpha_{in1}( 1- \alpha_{in2})  C_{in1} + \alpha_{in2} (1-\alpha_{in1}) C_{in2} }
+ 
+ \strong{arithemetic operator}
+ \deqn{ \alpha_{out} = max(0,min(1,k1 \alpha_{in1} \alpha_{in2} + k2 \alpha_{in1}+ k3 \alpha_{in2} +k4))}
+ \deqn{ C_{out}= k1  C_{in1}  C_{in2}  +   k2  C_{in1} + k3  C_{in2} + k4 }#'
 }
 
 \section{Used by the Elements}{
@@ -19,5 +53,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feComposite]{feComposite}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

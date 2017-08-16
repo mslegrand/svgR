@@ -4,14 +4,20 @@
 \alias{RepeatCountAttribute}
 \title{repeatCount}
 \description{
-ToDo: Needs to be written!!!
+Governs the number of iterations of the animation.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{numeric value}{This is a (base 10) "floating point" numeric value that specifies the number of iterations. It can include partial iterations expressed as fraction values. A fractional value describes a portion of the simple duration. Values must be greater than 0.}
-\item{indefinite}{The animation is defined to repeat indefinitely (i.e. until the document ends).}
+\item{<numeric>}{Specifies the total number of cycles through the anaimation.  (can be fraction).}
+\item{\emph{'indefinite'}}{Specifies to repeat indefinitely.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -20,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

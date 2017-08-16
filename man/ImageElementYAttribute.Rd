@@ -4,20 +4,27 @@
 \alias{ImageElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets y-coordinate of the top side of the rectangular region where the image is to be placed.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The y.axis coordinate of one corner of the rectangular region into which the referenced document is placed. If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of the top side rectangular region into which the image element is to be placed.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

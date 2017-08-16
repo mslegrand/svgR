@@ -4,13 +4,20 @@
 \alias{feConvolveMatrixElementBiasAttribute}
 \title{bias}
 \description{
-ToDo: Needs to be written!!!
+Sets a bias shift which is to be applied, component-wise,  to the result of the convolution.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{After applying the 'kernelMatrix' to the input image to yield a number and applying the 'divisor', the 'bias' attribute is added to each component. One application of 'bias' is when it is desirable to have .5 gray value be the zero response of the filter. The bias property shifts the range of the filter. This allows representation of values that would otherwise be clamped to 0 or 1. If 'bias' is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<numeric>}{Specifies the value to be added to each image component after applying the \emph{kernelMatrix} and \emph{divisor.}}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

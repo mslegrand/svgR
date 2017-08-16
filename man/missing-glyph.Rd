@@ -3,17 +3,17 @@
 \name{missing-glyph}
 \alias{missing-glyph}
 \alias{missing.glyph}
-\title{Element used to define the graphics to use when an attempt to draw a glyph that has not been defined.}
+\title{An element used to define the graphics to use when an attempt to draw a glyph that has not been defined.}
 \description{
 The missing-glyph's content is rendered, if for a given character the font doesn't define an appropriate <glyph>.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=GlyphElementVertOriginXAttribute]{vert.origin.xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{presentation attributes}}{\code{\link[=clip-path-presentationAttribute]{clip.path}}, \code{\link[=color-interpolation-presentationAttribute]{color.interpolation}}, \code{\link[=color-rendering-presentationAttribute]{color.rendering}}, \code{\link[=cursor-presentationAttribute]{cursor}}, \code{\link[=enable-background-presentationAttribute]{enable.background}}, \code{\link[=filter-presentationAttribute]{filter}}, \code{\link[=mask-presentationAttribute]{mask}}, \code{\link[=opacity-presentationAttribute]{opacity}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=GlyphElementDAttribute]{d}}, \code{\link[=GlyphElementHorizAdvXAttribute]{horiz.adv.x}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=GlyphElementVertAdvYAttribute]{vert.adv.y}}, \code{\link[=GlyphElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=GlyphElementVertOriginYAttribute]{vert.origin.y}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=GlyphElementVertOriginXAttribute]{vert.origin.xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=clip-path-presentationAttribute]{clip.path}}, \code{\link[=color-interpolation-presentationAttribute]{color.interpolation}}, \code{\link[=color-rendering-presentationAttribute]{color.rendering}}, \code{\link[=cursor-presentationAttribute]{cursor}}, \code{\link[=enable-background-presentationAttribute]{enable.background}}, \code{\link[=filter-presentationAttribute]{filter}}, \code{\link[=mask-presentationAttribute]{mask}}, \code{\link[=opacity-presentationAttribute]{opacity}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=GlyphElementDAttribute]{d}}, \code{\link[=GlyphElementHorizAdvXAttribute]{horiz.adv.x}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=GlyphElementVertAdvYAttribute]{vert.adv.y}}, \code{\link[=GlyphElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=GlyphElementVertOriginYAttribute]{vert.origin.y}}}
 }
 }
 
@@ -23,10 +23,13 @@ The missing-glyph's content is rendered, if for a given character the font doesn
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}, \code{\link[=radialGradient]{radialGradient}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}, \code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=altGlyphDef]{altGlyphDef}}, \code{\link[=clipPath]{clipPath}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font]{font}}, \code{\link[=font-face]{font.face}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=pattern]{pattern}}, \code{\link[=script]{script}}, \code{\link[=style]{style}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}, \code{\link[=view]{view}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=altGlyphDef]{altGlyphDef}}, \code{\link[=clipPath]{clipPath}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font]{font}}, \code{\link[=font-face]{font.face}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=script]{script}}, \code{\link[=style]{style}}, \code{\link[=view]{view}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

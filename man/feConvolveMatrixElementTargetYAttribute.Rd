@@ -4,13 +4,20 @@
 \alias{feConvolveMatrixElementTargetYAttribute}
 \title{targetY}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-position of the target pixel relative to the convolution matrix.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<integer>}{Determines the positioning in Y of the convolution matrix relative to a given target pixel in the input image. The topmost row of the matrix is row number zero. The value must be such that. 0 <= targetY < orderY. By default, the convolution matrix is centered in Y over each pixel of the input image (i.e., targetY = floor ( orderY / 2 )).Animatable. yes.}
+\item{<integer>}{Specifies the placement of the \emph{convolution matrix} implied by specifying the target y-coordinate relative to the \emph{convolution} origin. By default, the \emph{convolution matrix} is centered about the target.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,13 +4,19 @@
 \alias{XLinkTypeAttribute}
 \title{xlink.type}
 \description{
-ToDo: Needs to be written!!!
+Sets the type of link being used.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{simple}{Identifies the type of XLink being used. In SVG 1.1, only simple links are available. Links are simple links by default, so the attribute xlink.type="simple" is optional and may be omitted on simple links. Refer to the XML Linking Language (XLink) [XLINK]. Animatable. no.}
+\item{\emph{'simple'}}{Only simple is available in \emph{svg1.1}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,10 +25,11 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feImage]{feImage}}}
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}, \code{\link[=radialGradient]{radialGradient}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=image]{image}}, \code{\link[=mpath]{mpath}}, \code{\link[=pattern]{pattern}}, \code{\link[=script]{script}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=mpath]{mpath}}, \code{\link[=script]{script}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,27 @@
 \alias{PatternElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate (left) of the tile of the pattern element
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{'x', 'y', 'width' and 'height' indicate how the pattern tiles are placed and spaced. These attributes represent coordinates and values in the coordinate space specified by the combination of attributes 'patternUnits' and 'patternTransform'. If the attribute is not specified, the effect is as if a value of zero were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the x-coordinate of the left-hand side of a tile}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=pattern]{pattern}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,21 +4,25 @@
 \alias{text-decoration-presentationAttribute}
 \title{text.decoration}
 \description{
-ToDo: Needs to be written!!!
+Governs the application text decorations. (Such as blinking)
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{none | [ underline || overline || line-through || blink ] | inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{text-decoration} value from the parent.}
+\item{\emph{'\emph{'line-through'}'}}{Specifies to decorate the text by placing  a line through the text.}
+\item{\emph{'\emph{'none'}'}}{Specifies no text decoration}
+\item{\emph{'\emph{'underline'}'}}{Specifies to decorate the text by underlining  the text.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

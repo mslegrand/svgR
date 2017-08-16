@@ -4,20 +4,63 @@
 \alias{GlyphElementDAttribute}
 \title{d}
 \description{
-ToDo: Needs to be written!!!
+Sets the path-data points used to create a glyph outline.
 }
 \section{Available Attribute Values}{
 
+The value is a path-data description and is expressed in either one of the following ways.
 \describe{
-\item{path data}{The definition of the outline of a glyph, using the same syntax as for the 'd' attribute on a 'path' element. See Path data. See below for a discussion of this attribute.Animatable. no.}
+\item{<path-data-vector>}{Specifies the outline of the glyph path as a vector, built from both \emph{path commands} (M, m, Z, z, L, l, H, h, V, v) and the points those commands are to operate on.}
+\item{<path-data-list>}{Specifies the outline of the glyph path as a named list, with names originating from the \emph{path commands}: M, m, Z, z, L, l, H, h, V, v.}
 }
+}
+
+\section{Path-Data Details}{
+
+Path-data is a description consisting of a collection of pairs of path commands and values.  
+Path-data is be represented in one of two ways, either as an named list or as a vector.
+In the named list representation, the names are letters-tokens for commands and the corresponding values play the role of the parameters for those commands.
+\code{list(M=c(100,100), L=c(200,200), h=10, Z=NULL)}
+In the vector representation, each name is a letter-token (of class character) followed by the corresponding values, again playing the role of the parameters for those commands. 
+\code{c('M', c(100,100), 'L', c(200,200), 'h', 10, 'Z')}
+In the following we write pt for a point c(x,y).
+
+\strong{Path Data Command Table}
+\tabular{lll}{
+Name  \tab Values   \tab    Interpetion \cr
+'M','m'   \tab pt+   \tab    Move the current point to a new location (without drawing) \cr
+'L','l'   \tab pt+   \tab    Draw a line from the current point to pt \cr
+'H','h'   \tab (x)+     \tab    Draw a horizontal line from the current point \cr
+'V','v'   \tab (y)+     \tab    Draw a vertical line from the current\cr
+'C','c'   \tab c(pt1,pt2,pt)+  \tab  Draw a cubic Bezier curve to pt with control points pt1,pt2, (x2,y2)\cr
+'S','s'   \tab c(pt2,pt))+  \tab  Draw a cubic Bézier to pt using pt2 as the second control pt (inheriting the first control point from a preceding Bézier)\cr
+'Q','q'   \tab c(pt1,pt))+  \tab  Draw a quadratic Bézier to pt using pt1 as the control pt \cr     
+'T','t'   \tab pt+ \tab Draw a quadratic Bézier curve to pt (inheriting the control from a preceding Bézier)\cr
+'A','a'  \tab c(rxy, theta, LargeArc, SweepRight, pt) \tab   Draw an arc the current point to the point pt, based on an ellipse of radii rxy, rotated by \eqn{\theta} degrees. \cr
+      \tab                 \tab   Use 1 or 0 for TRUE or FALSE in the LargeArc, SweepRigh flags \cr
+'Z','z'     \tab \tab Closes the Path
+}
+
+\strong{Note:}
+\itemize{
+\item{Each name is denoted by a single letter}
+\item{Names can be repeated in the list (or vector)}
+\item{Names with upper-case letters indicate the coordinate values are interpreted to be absolute.}
+\item{Names with lower-case letters indicate the coordinate values are interpreted to be relative.}
+\item{Z (or z), the command that closes the path, takes no value in the vector form, and in list form the value is ignored.}
+}
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

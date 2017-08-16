@@ -4,26 +4,25 @@
 \alias{FilterElementXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=FilterElementXAttribute]{x}}, \code{\link[=FilterElementYAttribute]{y}}
+\code{\link[=FilterElementXYAttribute]{x}}, \code{\link[=FilterElementXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=filter]{filter}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=filter]{filter}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

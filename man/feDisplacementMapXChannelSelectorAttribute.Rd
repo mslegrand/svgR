@@ -4,12 +4,16 @@
 \alias{feDisplacementMapXChannelSelectorAttribute}
 \title{xChannelSelector}
 \description{
-ToDo: Needs to be written!!!
+Governs which channel (R|G|B|A) of the image given by in2 to be used for the computing the amount of displacement of of the image given by in1 in the x direction.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{R | G | B | A}{Indicates which channel from 'in2' to use to displace the pixels in 'in' along the x.axis. If attribute 'xChannelSelector' is not specified, then the effect is as if a value of A were specified. Animatable. yes.}
+\item{\emph{'R'}}{Specifies to use the R channel from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the x-axis.}
+\item{\emph{'G'}}{Specifies to use the G channel from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the x-axis.}
+\item{\emph{'B'}}{Specifies to use the B channel from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the x-axis.}
+\item{\emph{'A'}}{Specifies to use the A channel from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the x-axis. (The default.)}
 }
 }
 
@@ -19,5 +23,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feDisplacementMap]{feDisplacementMap}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

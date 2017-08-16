@@ -4,20 +4,27 @@
 \alias{ForeignObjectElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coord of the top side of rectangular region into which the referenced document is placed.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The y.axis coordinate of one corner of the rectangular region into which the referenced document is placed. If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of the top side of the rectangular region into which the \emph{'foreignObject'} will be rendered. Default=0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,18 +4,17 @@
 \alias{RadialGradientElementCXYAttribute}
 \title{cxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning cx and cy
 }
 \section{Combines}{
 
-\code{\link[=RadialGradientElementCXAttribute]{cx}}, \code{\link[=RadialGradientElementCYAttribute]{cy}}
+\code{\link[=RadialGradientElementCXYAttribute]{cx}}, \code{\link[=RadialGradientElementCXYAttribute]{cy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{cxy=c(value.CX,value.CY)}
-\item{and}{cx = value.CX; cy = value.CY}
+cxy =v is equivalent to  cx=v[1], cy=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=radialGradient]{radialGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

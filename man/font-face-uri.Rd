@@ -3,23 +3,23 @@
 \name{font-face-uri}
 \alias{font-face-uri}
 \alias{font.face.uri}
-\title{An  Element to define the font face}
+\title{An element to defining the font face by speicfing a URI to the font-face}
 \description{
 The font-face-uri element points to a remote definition of the current font.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=FontFaceUriElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=FontFaceUriElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
 \section{Available Content Elements (Unnamed Parameters)}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face-format]{font.face.format}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face-format]{font.face.format}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

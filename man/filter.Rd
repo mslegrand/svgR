@@ -2,18 +2,18 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{filter}
 \alias{filter}
-\title{Container element used to modify an image}
+\title{A container element used to modify an image}
 \description{
 The filter element serves as container for atomic filter operations. It is never rendered directly. A filter is referenced by using the filter attribute on the target SVG element.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FilterElementWHAttribute]{wh}}, \code{\link[=FilterElementXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterElementHeightAttribute]{height}}, \code{\link[=FilterElementWidthAttribute]{width}}, \code{\link[=FilterElementXAttribute]{x}}, \code{\link[=FilterElementYAttribute]{y}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=FilterElementFilterResAttribute]{filterRes}}, \code{\link[=FilterElementFilterUnitsAttribute]{filterUnits}}, \code{\link[=FilterElementPrimitiveUnitsAttribute]{primitiveUnits}}, \code{\link[=StyleAttribute]{style}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=FilterElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FilterElementWHAttribute]{wh}}, \code{\link[=FilterElementXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterElementHeightAttribute]{height}}, \code{\link[=FilterElementWidthAttribute]{width}}, \code{\link[=FilterElementXAttribute]{x}}, \code{\link[=FilterElementYAttribute]{y}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=FilterElementFilterResAttribute]{filterRes}}, \code{\link[=FilterElementFilterUnitsAttribute]{filterUnits}}, \code{\link[=FilterElementPrimitiveUnitsAttribute]{primitiveUnits}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=FilterElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -25,5 +25,5 @@ The filter element serves as container for atomic filter operations. It is never
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feColorMatrix]{feColorMatrix}}, \code{\link[=feComponentTransfer]{feComponentTransfer}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feConvolveMatrix]{feConvolveMatrix}}, \code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}, \code{\link[=feFlood]{feFlood}}, \code{\link[=feGaussianBlur]{feGaussianBlur}}, \code{\link[=feImage]{feImage}}, \code{\link[=feMerge]{feMerge}}, \code{\link[=feMorphology]{feMorphology}}, \code{\link[=feOffset]{feOffset}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}, \code{\link[=feTile]{feTile}}, \code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

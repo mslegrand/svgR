@@ -2,18 +2,18 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feConvolveMatrix}
 \alias{feConvolveMatrix}
-\title{A Filter Primitive Element that performs image convolution}
+\title{A filter primitive element that performs image convolution}
 \description{
 the feConvolveMatrix element applies a matrix convolution filter effect. A convolution combines pixels in the input image with neighboring pixels to produce a resulting image. A wide variety of imaging operations can be achieved through convolutions, including blurring, edge detection, sharpening, embossing and beveling.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FilterPrimitiveIN1Attribute]{in1}}, \code{\link[=feConvolveMatrixElementTARGETXYAttribute]{targetXY}}, \code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
-\item{\emph{unclassified}}{\code{\link[=feConvolveMatrixElementBiasAttribute]{bias}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=feConvolveMatrixElementDivisorAttribute]{divisor}}, \code{\link[=feConvolveMatrixElementEdgeModeAttribute]{edgeMode}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feConvolveMatrixElementKernelMatrixAttribute]{kernelMatrix}}, \code{\link[=feConvolveMatrixElementKernelUnitLengthAttribute]{kernelUnitLength}}, \code{\link[=feConvolveMatrixElementOrderAttribute]{order}}, \code{\link[=feConvolveMatrixElementPreserveAlphaAttribute]{preserveAlpha}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=feConvolveMatrixElementTargetXAttribute]{targetX}}, \code{\link[=feConvolveMatrixElementTargetYAttribute]{targetY}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=feConvolveMatrixElementTARGETXYAttribute]{targetXY}}, \code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
+\item{\emph{Unclassified}}{\code{\link[=feConvolveMatrixElementBiasAttribute]{bias}}, \code{\link[=ClassAttribute]{class}}, \code{\link[=feConvolveMatrixElementDivisorAttribute]{divisor}}, \code{\link[=feConvolveMatrixElementEdgeModeAttribute]{edgeMode}}, \code{\link[=FilterPrimitiveIn1Attribute]{in1}}, \code{\link[=feConvolveMatrixElementKernelMatrixAttribute]{kernelMatrix}}, \code{\link[=feConvolveMatrixElementKernelUnitLengthAttribute]{kernelUnitLength}}, \code{\link[=feConvolveMatrixElementOrderAttribute]{order}}, \code{\link[=feConvolveMatrixElementPreserveAlphaAttribute]{preserveAlpha}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=feConvolveMatrixElementTargetXAttribute]{targetX}}, \code{\link[=feConvolveMatrixElementTargetYAttribute]{targetY}}}
 }
 }
 
@@ -23,5 +23,5 @@ the feConvolveMatrix element applies a matrix convolution filter effect. A convo
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

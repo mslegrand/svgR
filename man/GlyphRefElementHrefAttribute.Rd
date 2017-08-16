@@ -4,20 +4,26 @@
 \alias{GlyphRefElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to a glyph element in this svg fragment..
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to a 'glyph' element in an SVG document fragment. The referenced 'glyph' is rendered as an alternate glyph.Animatable. no.}
+\item{<IRI>}{Specifies a refernce to an alternative glyph.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

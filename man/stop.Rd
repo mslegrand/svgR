@@ -9,10 +9,10 @@ The ramp of colors to use on a gradient is defined by the stop elements that are
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-presentationAttribute]{color}}, \code{\link[=stop-color-presentationAttribute]{stop.color}}, \code{\link[=stop-opacity-presentationAttribute]{stop.opacity}}}
-\item{\emph{transfer function element attributes}}{\code{\link[=StopElementOffsetAttribute]{offset}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-presentationAttribute]{color}}, \code{\link[=stop-color-presentationAttribute]{stop.color}}, \code{\link[=stop-opacity-presentationAttribute]{stop.opacity}}}
+\item{\emph{Transfer Function Element Attributes}}{\code{\link[=StopElementOffsetAttribute]{offset}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
 }
 }
 
@@ -22,5 +22,5 @@ The ramp of colors to use on a gradient is defined by the stop elements that are
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

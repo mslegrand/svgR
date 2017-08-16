@@ -4,20 +4,27 @@
 \alias{CursorElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the cursor point, this coordinate being interpreted using the cursors coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The x.coordinate of the position in the cursor's coordinate system which represents the precise position that is being pointed to. If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies x-coordinate of the point that the \strong{cursor} is pointing to. This position is expressed in the \emph{cursor's} coordinate system. The default is 0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=cursor]{cursor}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=cursor]{cursor}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

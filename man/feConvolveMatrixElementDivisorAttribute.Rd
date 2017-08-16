@@ -4,13 +4,20 @@
 \alias{feConvolveMatrixElementDivisorAttribute}
 \title{divisor}
 \description{
-ToDo: Needs to be written!!!
+Sets a divisor to be  applied  to the results of the convolution. This is generally used  for evening out the color values.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{After applying the 'kernelMatrix' to the input image to yield a number, that number is divided by 'divisor' to yield the final destination color value. A divisor that is the sum of all the matrix values tends to have an evening effect on the overall color intensity of the result. It is an error to specify a divisor of zero. The default value is the sum of all values in kernelMatrix, with the exception that if the sum is zero, then the divisor is set to 1.Animatable. yes.}
+\item{<numeric>}{Specifies a divisor to scale down the resulting image component values obtained by multiply by the \emph{kernelMatrix}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

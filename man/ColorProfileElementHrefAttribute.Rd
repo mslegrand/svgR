@@ -4,20 +4,26 @@
 \alias{ColorProfileElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to an ICC color profile resource.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{The location of an ICC profile resource.Animatable. no.}
+\item{<IRI>}{Specifies a reference to an \emph{ICC profile} resource.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=color-profile]{color.profile}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

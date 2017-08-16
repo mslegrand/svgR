@@ -4,12 +4,14 @@
 \alias{feConvolveMatrixElementPreserveAlphaAttribute}
 \title{preserveAlpha}
 \description{
-ToDo: Needs to be written!!!
+Governs whether or not  to apply the convolution to the alpha channel.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{false | true}{A value of false indicates that the convolution will be applied to all channels, including the alpha channel. A value of true indicates the convolution is to be applied to only the color channels}
+\item{\emph{'FALSE'}}{Specifies to apply the \emph{convolution} to all channels, including the \emph{alpha channel}.}
+\item{\emph{'TRUE'}}{Specifies to apply the \emph{convolution} to only the colors channels. (Not the \emph{alpha channel}!)}
 }
 }
 
@@ -19,5 +21,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

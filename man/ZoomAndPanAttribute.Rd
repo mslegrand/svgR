@@ -4,22 +4,28 @@
 \alias{ZoomAndPanAttribute}
 \title{zoomAndPan}
 \description{
-ToDo: Needs to be written!!!
+Governs whether or not the outermost svg can zoom and pan.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{disable}{disable zooming}
-\item{magnify}{enable zooming (only for outermost svg)}
+\item{\emph{'disable'}}{disables zooming}
+\item{\emph{'magnify'}}{enables zooming (applies only to the for outermost \emph{svg}, typically arrising from an \emph{svgR} call)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
-\item{\emph{Unclassfied:}}{\code{\link[=view]{view}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=view]{view}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

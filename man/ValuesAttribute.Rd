@@ -4,13 +4,20 @@
 \alias{ValuesAttribute}
 \title{values}
 \description{
-ToDo: Needs to be written!!!
+Sets thef animation values to be used for the given animation type.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{<list>}{A semicolon.separated list of one or more values. Vector.valued attributes are supported using the vector syntax of the 'attributeType' domain. Per the SMIL specification, leading and trailing white space, and white space before and after semicolon separators, is allowed and will be ignored. Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. 'values' attribute ([SMILANIM], section 3.2.2).}
+\item{<values>[[N]] (list-of-values)}{Specifies an unamed list attributes values over which to iterate.}
+\item{<values>[N,M] (matrix-of-values)}{A matrix with columns corresponding to the attribute values. Obviously assumes that the length of each attribute value is the same. Thisos useful for defining animations involving points.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

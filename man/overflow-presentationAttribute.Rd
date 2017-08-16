@@ -4,25 +4,29 @@
 \alias{overflow-presentationAttribute}
 \title{overflow}
 \description{
-ToDo: Needs to be written!!!
+Governs the behaviour of an element when it overflows its viewport.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{visible}{**ToDo!!!** }
-\item{hidden}{**ToDo!!!** }
-\item{scroll}{**ToDo!!!** }
-\item{auto}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'auto'}'}}{Signals to the user agent to  provide scrolling for overflowing boxes}
+\item{\emph{'\emph{'hidden'}'}}{Specifies to clip or hide overflow (default for inner svgs, pattern and markers)}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the overflow property from the parent.}
+\item{\emph{'\emph{'scroll'}'}}{Specifies to clip over flow but to provide scrollbar for scrolling.}
+\item{\emph{'\emph{'visible'}'}}{Specifies to show overflow (default for outer most svg, i.e. svgR)}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
-\item{\emph{Unclassfied:}}{\code{\link[=foreignObject]{foreignObject}}, \code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

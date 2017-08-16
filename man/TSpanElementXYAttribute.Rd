@@ -4,26 +4,25 @@
 \alias{TSpanElementXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=TSpanElementXAttribute]{x}}, \code{\link[=TSpanElementYAttribute]{y}}
+\code{\link[=TSpanElementXYAttribute]{x}}, \code{\link[=TSpanElementXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

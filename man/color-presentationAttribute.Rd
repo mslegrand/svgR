@@ -4,13 +4,15 @@
 \alias{color-presentationAttribute}
 \title{color}
 \description{
-ToDo: Needs to be written!!!
+Defines *currentColor*, which is may be used indirectly as fall-back color for the properties:  *fill*, *stroke*, *stop-color*, *flood-color* and *lighting-color*
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<color>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<color>}{Sets the color. The color may be expressed in one of three ways: name (i.e. red),  or  numeric (#f00 or #ff0000) or  rgb (rgb(255,0,0)). An optional ICC color may also be specified as a 2nd component of the color vector.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies the color is to be inherited from the ancestor..}
 }
 }
 
@@ -19,9 +21,9 @@ ToDo: Needs to be written!!!
 \describe{
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feFlood]{feFlood}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=stop]{stop}}, \code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=stop]{stop}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

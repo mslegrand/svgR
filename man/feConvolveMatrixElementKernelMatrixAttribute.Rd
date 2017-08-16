@@ -4,12 +4,14 @@
 \alias{feConvolveMatrixElementKernelMatrixAttribute}
 \title{kernelMatrix}
 \description{
-ToDo: Needs to be written!!!
+Sets the kernelMatrix to be used in the convolution filter.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{<list of numbers>}{The list of <number>s that make up the kernel matrix for the convolution. Values are separated by space characters and/or a comma. The number of entries in the list must equal <orderX> times <orderY>.Animatable. yes.}
+\item{<numeric>[N]}{Specifies the entries of the \emph{kernelMatrix}.}
+\item{matrix[N.M]}{Specifies the  \emph{kernelMatrix} using a matrix.}
 }
 }
 
@@ -19,5 +21,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

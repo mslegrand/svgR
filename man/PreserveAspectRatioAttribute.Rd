@@ -4,12 +4,48 @@
 \alias{PreserveAspectRatioAttribute}
 \title{preserveAspectRatio}
 \description{
-ToDo: Needs to be written!!!
+Governs the aspect ration preservation  and alignment of an image when scaling.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{ToDo!!!}{ToDo!!!}
+\item{\emph{'<align>'}}{Specities the \emph{alignment directive} (See details below)}
+\item{\emph{'c( <defer>, <align>)'}}{Specifies both a \emph{defer directive} and an \emph{alignment directive}. (See details below)}
+\item{\emph{'c(<align> <meet-or-Slice>)'}}{Specifies both an \emph{alignment directive} and a \emph{meet-or-slice directive}. (See details below)}
+\item{\emph{'c( defer <align> <meet-or-Slice>)'}}{Specifies a \emph{defer}, an \emph{alignment directive} and a \emph{meet-or-slice directive}. (See details below)}
+}
+}
+
+\section{Details}{
+ 
+A preserveAspectRatio value is a vector, which consists of mandatory alignment directive, possibly prepended with an optional defer directive and possibly
+postpended with an optional meet-or-slice directive.
+
+\strong{The Align Directives} (mandatory, pick one)
+\tabular{ll}{
+xMinYMin  \tab Place the viewBox in the top-left hand corner of the viewport, and force uniform scaling. \cr
+xMidYMin  \tab Place the viewBox at the top of the viewport and center it horizontally with respect to the viewport, and force uniform scaling. \cr
+xMaxYMin  \tab Place the viewBox at the top-left hand corner of the viewport, and force uniform scaling. \cr
+xMinYMid   \tab Place the viewBox to be centered at the left edge of the viewport, and force uniform scaling. \cr
+xMidYMid   \tab Place the viewBox to be centered at the center of the viewport, and force uniform scaling. This is the default. \cr
+xMaxYMid  \tab Place the viewBox to be centered at the right edge of the viewport, and force uniform scaling. \cr
+xMinYMax  \tab Place the viewBox at the lower-left hand corner of the viewport, and force uniform scaling. \cr
+xMidYMax  \tab Place the viewBox at the center of the bottom edge of the viewport, and force uniform scaling. \cr
+xMaxYMax  \tab Place the viewBox at the lower-lright hand corner of the viewport, and force uniform scaling.\cr
+none  \tab Scale the graphics so that the viewBox coinsides with the viewport and ignore any meet or slice directives. 
+}
+(Note: if <align> is none, then the optional <meetOrSlice> value is ignored.)
+
+\strong{The Meet-o-Slice Directives} (optional)
+\tabular{ll}{
+meet \tab Directive to scale up the graphic  as  such that the resulting viewBox is still contained within the viewPort, while still maintaining the original the aspect ratio. \cr
+slice \tab Directive to scale up the graphic as  such that the resulting viewBox just covers the viewPort, while still maintaining the original the aspect ratio. 
+}	
+
+\strong{The Defer Directive} (optional):
+\tabular{ll}{
+defer \tab Directive to instruct that any 'peserveAspectRation' value set in the content takes precedence.
 }
 }
 
@@ -17,9 +53,11 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feImage]{feImage}}}
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}, \code{\link[=view]{view}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=view]{view}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

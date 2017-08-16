@@ -4,20 +4,26 @@
 \alias{FontFaceElementAscentAttribute}
 \title{ascent}
 \description{
-ToDo: Needs to be written!!!
+Sets the maximum unaccented height of the font, as measured within the font coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'ascent' descriptor within an font.face rule. The maximum unaccented height of the font within the font coordinate system. If the attribute is not specified, the effect is as if the attribute were set to the difference between the 'units.per.em' value and the 'vert.origin.y' value for the corresponding font.Animatable. no.}
+\item{<number>}{Specifies the maximum height for an unaccented \emph{glyph} where the height is given in the same units of the font coordinate system.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -2,22 +2,22 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{metadata}
 \alias{metadata}
-\title{A element that contains metadata}
+\title{An element that contains metadata}
 \description{
 Metadata is structured data about data. Metadata which is included with SVG content should be specified within metadata elements. The contents of the metadata should be elements from other XML namespaces such as RDF, FOAF, etc.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
 }
 }
 
 \section{Available Content Elements (Unnamed Parameters)}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
+{No Content Elements Applicable}{!}
 }
 }
-\keyword{element}
 
+\keyword{element}

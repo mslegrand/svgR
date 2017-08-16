@@ -4,12 +4,16 @@
 \alias{feDisplacementMapYChannelSelectorAttribute}
 \title{yChannelSelector}
 \description{
-ToDo: Needs to be written!!!
+Governs which channel (R|G|B|A) of the image given by in2 to be used for the computing the amount of displacement of of the image given by in1 in the y direction.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{R | G | B | A}{Indicates which channel from 'in2' to use to displace the pixels in 'in' along the y.axis. If attribute 'yChannelSelector' is not specified, then the effect is as if a value of A were specified. Animatable. yes.}
+\item{\emph{'R'}}{Specifies to use the \emph{R-channel} from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the y-axis.}
+\item{\emph{'G'}}{Specifies to use the \emph{G-channel} from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the y-axis.}
+\item{\emph{'B'}}{Specifies to use the \emph{B-channel} from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the y-axis.}
+\item{\emph{'A'}}{Specifies to use the \emph{A-channel} from \emph{'in2'} to calculate a displacement of the pixels in \emph{'in1'} along the y-axis. (The default.)}
 }
 }
 
@@ -19,5 +23,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feDisplacementMap]{feDisplacementMap}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

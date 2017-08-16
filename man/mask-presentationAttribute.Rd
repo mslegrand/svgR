@@ -4,24 +4,29 @@
 \alias{mask-presentationAttribute}
 \title{mask}
 \description{
-ToDo: Needs to be written!!!
+Governs what to use for masking
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<funciri>}{**ToDo!!!** }
-\item{none}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<funciri>}{Sets a functional IRI reference to a mask element to be used for masking.}
+\item{<mask>}{Sets the given mask element as the element to be used for masking.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to Inherit the maks from the parent.}
+\item{\emph{'\emph{'none'}'}}{Specifies not to mask.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=glyph]{glyph}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}, \code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=glyph]{glyph}}, \code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

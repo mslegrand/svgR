@@ -4,20 +4,37 @@
 \alias{FontFaceElementFontWeightAttribute}
 \title{font.weight}
 \description{
-ToDo: Needs to be written!!!
+Governs the weight of the font (ie. Bold, etc)
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{all | [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900] [, [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]]*}{Same syntax and semantics as the 'font.weight' descriptor within an font.face rule. The weight of a face relative to others in the same font family. Takes on the same values as the 'font.weight' property with three exceptions. relative keywords (bolder, lighter) are not permitteda comma.separated list of values is permitted, for fonts that contain multiple weightsan additional keyword, 'all', is permitted, which means that the font will match for all possible weights; either because it contains multiple weights, or because that face only has a single weight. If the attribute is not specified, the effect is as if a value of 'all' were specified.Animatable. no.}
+\item{\emph{'all'}}{Specifies to match all possible weights.}
+\item{\emph{'normal'}}{Specifies a \emph{normal} weight (i.e. 400)}
+\item{\emph{'bold'}}{Specifies a \emph{bold} weight (i.e. 700)}
+\item{\emph{'100'}}{Specifies a 100 font weight (lightest)}
+\item{\emph{'200'}}{Specifies a 200 font weight.}
+\item{\emph{'300'}}{Specifies a 300 font weight.}
+\item{\emph{'400'}}{Specifies a 400 font weight. (Normal.)}
+\item{\emph{'500'}}{Specifies a 500 font weight.}
+\item{\emph{'600'}}{Specifies a 600 font weight}
+\item{\emph{'700'}}{Specifies a 700 font weight}
+\item{\emph{'800'}}{Specifies a 800 font weight}
+\item{\emph{'900'}}{Specifies a 900 font weight. (Boldest)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

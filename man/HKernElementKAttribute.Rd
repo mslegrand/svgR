@@ -4,20 +4,26 @@
 \alias{HKernElementKAttribute}
 \title{k}
 \description{
-ToDo: Needs to be written!!!
+Sets an how much to  decrease the spacing between the two glyphs in the kerning pair
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The amount to decrease the spacing between the two glyphs in the kerning pair. The value is in the font coordinate system. This attribute is required.Animatable. no.}
+\item{<numeric>}{Specifies an reduction in the spacing, relative to the font coordinate system, between the two \emph{glyphs} of the kerning pair. ( Required.)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,26 +4,25 @@
 \alias{ImageElementXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=ImageElementXAttribute]{x}}, \code{\link[=ImageElementYAttribute]{y}}
+\code{\link[=ImageElementXYAttribute]{x}}, \code{\link[=ImageElementXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

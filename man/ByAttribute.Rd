@@ -4,13 +4,19 @@
 \alias{ByAttribute}
 \title{by}
 \description{
-ToDo: Needs to be written!!!
+Sets a relative offset value for the animation.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<value>}{Specifies a relative offset value for the animation. Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. 'by' attribute ([SMILANIM], section 3.2.2).}
+\item{<value>}{Specifies the relative offset value to be used to compute the final ending value, That is  \eqn{endValue = startingValue + by}. This overrides any \emph{from to} specification.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

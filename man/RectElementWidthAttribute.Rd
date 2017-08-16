@@ -4,13 +4,20 @@
 \alias{RectElementWidthAttribute}
 \title{width}
 \description{
-ToDo: Needs to be written!!!
+Sets the width of the rectangle.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The width of the rectangle. A negative value is an error (see Error processing). A value of zero disables rendering of the element.Animatable. yes.}
+\item{<length>}{Specifies the \emph{width} of a rectangle (distance between the left and right sides).}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=rect]{rect}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,13 +4,20 @@
 \alias{EllipseElementCYAttribute}
 \title{cy}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinate of the center of the ellipse.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The y.axis coordinate of the center of the ellipse. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y- coordinate, \eqn{c_y} of the center of the\strong{ellipse}. Default is 0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=ellipse]{ellipse}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

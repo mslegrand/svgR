@@ -4,24 +4,25 @@
 \alias{font-style-presentationAttribute}
 \title{font.style}
 \description{
-ToDo: Needs to be written!!!
+Governs which font face to use:  normal, italic or oblique face.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{normal}{**ToDo!!!** }
-\item{italic}{**ToDo!!!** }
-\item{oblique}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'inherit'}'}}{Specifies to Inherit the font style from the parent.}
+\item{\emph{'\emph{'italic'}'}}{Specifies to use an italicl style}
+\item{\emph{'\emph{'normal'}'}}{Specifies to use a normal style}
+\item{\emph{'\emph{'oblique'}'}}{Specifies to use an oblique style}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{FontFaceElementStrikeThroughPositionAttribute}
 \title{strikethrough.position}
 \description{
-ToDo: Needs to be written!!!
+Sets the preferred positioning within the font-coordinate system for rendering a strikethrough.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The ideal position of a strike.through within the font coordinate system.Animatable. no.}
+\item{<number>}{Specifies, in font coordinates, the intended \emph{strikethrough} position.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

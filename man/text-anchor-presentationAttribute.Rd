@@ -4,24 +4,25 @@
 \alias{text-anchor-presentationAttribute}
 \title{text.anchor}
 \description{
-ToDo: Needs to be written!!!
+Governs positioning a string of text relative to a given point
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{start}{**ToDo!!!** }
-\item{middle}{**ToDo!!!** }
-\item{end}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'end'}'}}{Specifies that the text is to be rendered such that it ends at the current (text) position.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{text-anchor} value from the parent.}
+\item{\emph{'\emph{'middle'}'}}{Specifies that the text is to be rendered such that it is centered  at the current (text) position.}
+\item{\emph{'\emph{'start'}'}}{Specifies that the text is to be rendered such that it begins at the current (text) position.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

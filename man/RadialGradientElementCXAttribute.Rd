@@ -4,13 +4,20 @@
 \alias{RadialGradientElementCXAttribute}
 \title{cx}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the center of the ending-stop  circle of the radial gradient.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{'cx', 'cy' and 'r' define the largest (i.e., outermost) circle for the radial gradient. The gradient will be drawn such that the 100 gradient stop is mapped to the perimeter of this largest (i.e., outermost) circle. If the attribute is not specified, the effect is as if a value of '50' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the x-coordinate of the center of outermost circle of the radial gradient. (The outermost circle being the location of the final gradient stop.) Default is 0.50  .}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=radialGradient]{radialGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

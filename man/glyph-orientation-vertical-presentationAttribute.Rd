@@ -4,23 +4,24 @@
 \alias{glyph-orientation-vertical-presentationAttribute}
 \title{glyph.orientation.vertical}
 \description{
-ToDo: Needs to be written!!!
+Controls glyph orientation when the inline-progression-direction is vertical
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{<angle>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<angle>}{Sets the angle of orientation (restricted to 0, 90, 180, and 270 degrees).}
+\item{\emph{'\emph{'auto'}'}}{Specifies to set orientation to 0 degrees if full-width full width,  else 90 degrees.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the glyph orientation  from the parent.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

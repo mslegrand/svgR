@@ -15,4 +15,3 @@ Internal compound used to toggle animations .
 }
 \keyword{display}
 \keyword{helper}
-

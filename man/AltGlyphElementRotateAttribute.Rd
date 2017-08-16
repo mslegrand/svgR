@@ -4,20 +4,27 @@
 \alias{AltGlyphElementRotateAttribute}
 \title{rotate}
 \description{
-ToDo: Needs to be written!!!
+Sets a sequence of  one or more rotations to be applied to consecutive glyphs upon rendering.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<list.of.numbers>}{The <number> values are processed in the same manner as the 'rotate' attribute on the 'tspan' element, with the following exception. If the referenced alternate glyphs are rendered instead of the Unicode characters inside the 'altGlyph' element, then any supplemental rotation values specified via an 'rotate' attribute on this element or any ancestor 'text' or 'tspan' elements for Unicode characters 2 through n within the 'altGlyph' element are ignored. Supplemental rotation values specified via an 'rotate' attribute on this element or any ancestor 'text' or 'tspan' elements for the first Unicode character within the 'altGlyph' element sets a new supplemental rotation angle before rendering the alternate glyphs.Animatable. yes (non.additive).}
+\item{<angle>[N]}{Specifies an additional rotation (in degrees) to be applied to characters within this \strong{altGlyph}. If rendering only unicode characters inside an \strong{altGlyph} element, then this specifies an aditional rotation (in degrees) to be applied sequentially for the first n characters where n is the length of the rotate-vector and applies the final rotate to the remaining characters (if any). If rendering alternate \emph{glyphs}, then dy[1] specifies a rotation to be applied to the entire sequence, while the remainder, dy[-1], is ignored.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

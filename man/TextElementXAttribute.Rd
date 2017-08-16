@@ -4,20 +4,26 @@
 \alias{TextElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the text x-coordinate(s).
 }
 \section{Available Attribute Values}{
 
 \describe{
-\item{<list.of.coordinates>}{If a single <coordinate> is provided, then the value represents the new absolute X coordinate for the current text position for rendering the glyphs that correspond to the first character within this element or any of its descendants. If a comma. or space.separated list of n <coordinate>s is provided, then the values represent new absolute X coordinates for the current text position for rendering the glyphs corresponding to each of the first n characters within this element or any of its descendants. For additional processing rules, refer to the description of the 'x' attribute on the 'tspan' element. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes.}
+\item{<coordinate>[N]}{Specifies the absolute x-coordinate for the first n characters where n is the length of the vector x. (default is 0)}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

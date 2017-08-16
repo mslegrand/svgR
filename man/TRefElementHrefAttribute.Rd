@@ -4,20 +4,27 @@
 \alias{TRefElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to chararcter data for this tref..
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to an element whose character data content shall be used as character data for this 'tref' element.Animatable. yes.}
+\item{<IRI>}{Specifies an \emph{IRI} reference to an element containing the content character data to be used.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

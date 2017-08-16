@@ -4,20 +4,26 @@
 \alias{ScriptElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to  the scripting code.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to an external resource containing the script code.Animatable. no.}
+\item{<IRI>}{Specifies an \emph{IRI} reference the script code.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=script]{script}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=script]{script}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{GlyphRefElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinates for the alternative glyphs..
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The corresponding new absolute Y coordinate within the font's coordinate system for this glyph.Animatable. no.}
+\item{<number>}{Specifies the y-coordinate for the \emph{glyph} in terms of the fonts coordinate system.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{ContentScriptTypeAttribute}
 \title{contentScriptType}
 \description{
-ToDo: Needs to be written!!!
+Sets the default scripting language for the given SVG document fragment.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{content.type}{Identifies the default scripting language for the given SVG document fragment. This attribute sets the default scripting language used to process the value strings in event attributes. This language must be used for all instances of script that do not specify their own scripting language. The value content.type specifies a media type, per MIME Part Two. Media Types [RFC2046]. The default value is 'application/ecmascript' [RFC4329].Animatable. no.}
+\item{<content-type>}{Specifies the default scripting language of the event attributes value strings. The default is \emph{'application/ecmascript'}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

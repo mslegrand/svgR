@@ -4,20 +4,27 @@
 \alias{feComponentTransferInterceptAttribute}
 \title{intercept}
 \description{
-ToDo: Needs to be written!!!
+Sets the intercept to be used when the component transfer type is linear
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{When type="linear", the intercept of the linear function. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<number>}{Specifies the intercept to be used to construct the transfer function when the type is \emph{linear}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

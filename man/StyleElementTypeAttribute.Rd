@@ -4,20 +4,26 @@
 \alias{StyleElementTypeAttribute}
 \title{type}
 \description{
-ToDo: Needs to be written!!!
+Sets the style sheet language of the element's contents.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{content.type}{This attribute specifies the style sheet language of the element's contents. The style sheet language is specified as a content type (e.g., "text/css"), as per MIME Part Two. Media Types [RFC2046]. If a 'type' is not provided, the value of 'contentStyleType' on the 'svg' element shall be used, which in turn defaults to "text/css" [RFC2046]. If a 'style' element falls outside of the outermost svg element and the 'type' is not provided, the 'type' must default to "text/css" [RFC2046]. Animatable. no.}
+\item{\emph{'content-type'}}{Specifies the style sheet language of the element's contents, such as \emph{""""""""""""""""text/css""""""""""""""""}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=style]{style}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=style]{style}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

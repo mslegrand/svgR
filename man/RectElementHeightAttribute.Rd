@@ -4,13 +4,20 @@
 \alias{RectElementHeightAttribute}
 \title{height}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the rectangle.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The height of the rectangle. A negative value is an error (see Error processing). A value of zero disables rendering of the element.Animatable. yes.}
+\item{<length>}{Specifies the \emph{height} of the rectangle (the distance between the top and bottom.)}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=rect]{rect}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

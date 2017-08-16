@@ -4,20 +4,22 @@
 \alias{ClipPathElementClipPathUnitsAttribute}
 \title{clipPathUnits}
 \description{
-ToDo: Needs to be written!!!
+Governs how to interpret the coordinates for the contents of the clipPath. That should they be interpeted  as objectBoundingBox or userSpaceOnUse?
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for the contents of the 'clipPath'. If clipPathUnits="userSpaceOnUse", the contents of the 'clipPath' represent values in the current user coordinate system in place at the time when the 'clipPath' element is referenced (i.e., the user coordinate system for the element referencing the 'clipPath' element via the 'clip.path' property). If clipPathUnits="objectBoundingBox", then the user coordinate system for the contents of the 'clipPath' element is established using the bounding box of the element to which the clipping path is applied (see Object bounding box units). If attribute 'clipPathUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
+\item{\emph{'userSpaceOnUse'}}{Specifies that the coordinate system for the contents of the \emph{'clipPath'} is given in terms of the specific user coordinate system that is in effect at the time of clipPath referrencing. (Default)}
+\item{\emph{'objectBoundingBox'}}{Specifies that the coordinate system for the contents of the \emph{'clipPath'} is given in terms of the bounding box of target object(s) to be clipped.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=clipPath]{clipPath}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=clipPath]{clipPath}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{StyleElementMediaAttribute}
 \title{media}
 \description{
-ToDo: Needs to be written!!!
+Sets a set of one or more media descriptors used to indicate intended destination medium for the style information.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{media.descriptors}{This attribute specifies the intended destination medium for style information. It may be a single media descriptor or a comma.separated list. The default value for this attribute is "all". The set of recognized media.descriptors are the list of media types recognized by CSS2 ([CSS2], section 7.3).Animatable. no.}
+\item{<media-descriptors>[N]}{Specifies the intended destination medium for style information Default is \emph{all} .}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=style]{style}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=style]{style}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,26 +4,25 @@
 \alias{SVGElementWHAttribute}
 \title{wh}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning height and width
 }
 \section{Combines}{
 
-\code{\link[=SVGElementHeightAttribute]{height}}, \code{\link[=SVGElementWidthAttribute]{width}}
+\code{\link[=SVGElementWHAttribute]{height}}, \code{\link[=SVGElementWHAttribute]{width}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{wh=c(value.HEIGHT,value.WIDTH)}
-\item{and}{height = value.HEIGHT; width = value.WIDTH}
+wh =v is equivalent to  height=v[1], width=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

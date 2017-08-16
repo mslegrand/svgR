@@ -4,26 +4,25 @@
 \alias{AltGlyphElementDXYAttribute}
 \title{dxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning dx and dy
 }
 \section{Combines}{
 
-\code{\link[=AltGlyphElementDXAttribute]{dx}}, \code{\link[=AltGlyphElementDYAttribute]{dy}}
+\code{\link[=AltGlyphElementDXYAttribute]{dx}}, \code{\link[=AltGlyphElementDXYAttribute]{dy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{dxy=c(value.DX,value.DY)}
-\item{and}{dx = value.DX; dy = value.DY}
+dxy =v is equivalent to  dx=v[1], dy=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

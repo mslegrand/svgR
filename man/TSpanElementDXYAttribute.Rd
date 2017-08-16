@@ -4,26 +4,25 @@
 \alias{TSpanElementDXYAttribute}
 \title{dxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning dx and dy
 }
 \section{Combines}{
 
-\code{\link[=TSpanElementDXAttribute]{dx}}, \code{\link[=TSpanElementDYAttribute]{dy}}
+\code{\link[=TSpanElementDXYAttribute]{dx}}, \code{\link[=TSpanElementDXYAttribute]{dy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{dxy=c(value.DX,value.DY)}
-\item{and}{dx = value.DX; dy = value.DY}
+dxy =v is equivalent to  dx=v[1], dy=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

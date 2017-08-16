@@ -4,20 +4,26 @@
 \alias{FontElementHorizOriginXAttribute}
 \title{horiz.origin.x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the origin to be used when rendering the horizontally oriented text.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<number>}{The X.coordinate in the font coordinate system of the origin of a glyph to be used when drawing horizontally oriented text. (Note that the origin applies to all glyphs in the font.) If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. no.}
+\item{<coordinate>}{Specifies the x-coordinate of the glyph origin relative to the font coordinate system in horizontal text mode. Default=0.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font]{font}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font]{font}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

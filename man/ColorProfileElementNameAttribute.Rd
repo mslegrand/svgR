@@ -4,20 +4,26 @@
 \alias{ColorProfileElementNameAttribute}
 \title{name}
 \description{
-ToDo: Needs to be written!!!
+Sets the color profile name.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<name>}{The name which is used as the first parameter for icc.color specifications within 'fill', 'stroke', 'stop.color', 'flood.color' and 'lighting.color' property values to identify the color profile to use for the ICC color specification and the name which can be the value of the 'color.profile' property. Note that if <name> is not provided, it will be impossible to reference the given color profile description. The name "sRGB" is predefined; any color profile descriptions with <name> set to "sRGB" will be ignored. For consistency with CSS lexical scanning and parsing rules ([CSS2], section D.2), the keyword "sRGB" is case.insensitive; however, it is recommended that the mixed capitalization "sRGB" be used for consistency with common industry practice.Animatable. no.}
+\item{<name>}{Specifies the name of the first parameter in \emph{icc-color} specification. Note: \emph{""""""""""""""""sRGB""""""""""""""""} is predefined; and will result in the specification this being ignored.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=color-profile]{color.profile}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

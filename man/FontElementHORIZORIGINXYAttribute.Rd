@@ -4,26 +4,25 @@
 \alias{FontElementHORIZORIGINXYAttribute}
 \title{horiz.origin.xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning horiz-origin-x and horiz-origin-y
 }
 \section{Combines}{
 
-\code{\link[=FontElementHorizOriginXAttribute]{horiz.origin.x}}, \code{\link[=FontElementHorizOriginYAttribute]{horiz.origin.y}}
+\code{\link[=FontElementHORIZORIGINXYAttribute]{horiz.origin.x}}, \code{\link[=FontElementHORIZORIGINXYAttribute]{horiz.origin.y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{horiz.origin.xy=c(value.HORIZ.ORIGIN.X,value.HORIZ.ORIGIN.Y)}
-\item{and}{horiz.origin.x = value.HORIZ.ORIGIN.X; horiz.origin.y = value.HORIZ.ORIGIN.Y}
+horiz-origin-xy =v is equivalent to  horiz-origin-x=v[1], horiz-origin-y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font]{font}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font]{font}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

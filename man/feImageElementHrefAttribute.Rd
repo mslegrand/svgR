@@ -4,13 +4,20 @@
 \alias{feImageElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to a source image of the feImage element.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to the image source. Animatable. yes.}
+\item{<IRI>}{Specifies an \emph{IRI} reference to the image source.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feImage]{feImage}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

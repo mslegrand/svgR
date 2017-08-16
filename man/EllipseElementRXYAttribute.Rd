@@ -4,18 +4,17 @@
 \alias{EllipseElementRXYAttribute}
 \title{rxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning rx and ry
 }
 \section{Combines}{
 
-\code{\link[=EllipseElementRXAttribute]{rx}}, \code{\link[=EllipseElementRYAttribute]{ry}}
+\code{\link[=EllipseElementRXYAttribute]{rx}}, \code{\link[=EllipseElementRXYAttribute]{ry}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{rxy=c(value.RX,value.RY)}
-\item{and}{rx = value.RX; ry = value.RY}
+rxy =v is equivalent to  rx=v[1], ry=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=ellipse]{ellipse}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

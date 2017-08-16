@@ -4,14 +4,20 @@
 \alias{RepeatDurAttribute}
 \title{repeatDur}
 \description{
-ToDo: Needs to be written!!!
+Governs the total amount of time that the animation can continue (including repeats)
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{Clock.value}{Specifies the duration in presentation time to repeat the animation function f(t).}
-\item{indefinite}{The animation is defined to repeat indefinitely (i.e. until the document ends).}
+\item{<clock.value>}{Specifies a duration during which the animation is repeated.}
+\item{\emph{'indefinite'}}{Specifies to repeat indefinitely.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -20,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

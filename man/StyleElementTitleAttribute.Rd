@@ -4,20 +4,26 @@
 \alias{StyleElementTitleAttribute}
 \title{title}
 \description{
-ToDo: Needs to be written!!!
+Sets an advisory title for the style element.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{advisory.title}{(For compatibility with HTML 4 [HTML4].) This attribute specifies an advisory title for the 'style' element.Animatable. no.}
+\item{\emph{'advisory-title'}}{Specifies an advisory title for the style element (HTML 4)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=style]{style}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=style]{style}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

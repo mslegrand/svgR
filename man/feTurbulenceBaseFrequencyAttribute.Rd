@@ -4,12 +4,13 @@
 \alias{feTurbulenceBaseFrequencyAttribute}
 \title{baseFrequency}
 \description{
-ToDo: Needs to be written!!!
+Sets the base frequency for the noise function.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric vector having length 1 or 2.
 \describe{
-\item{<number.optional.number>}{The base frequency (frequencies) parameter(s) for the noise function. If two <number>s are provided, the first number represents a base frequency in the X direction and the second value represents a base frequency in the Y direction. If one number is provided, then that value is used for both X and Y. A negative value for base frequency is an error (see Error processing). If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<numeric>[1 or 2] (=fx or c(fx,fy))}{Specifies the base frequency parameter, \eqn{f_x}, \eqn{f_y}, used to generate the noise function in the X, Y directions respectively. The default for \eqn{f_x} is 0 (no effect), the default for \eqn{f_y} is \eqn{f_x}.}
 }
 }
 
@@ -19,5 +20,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

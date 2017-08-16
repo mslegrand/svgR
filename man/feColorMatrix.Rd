@@ -2,20 +2,20 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feColorMatrix}
 \alias{feColorMatrix}
-\title{A Filter Primitvie Element for modifing  color based on a transformation matrix}
+\title{A filter primitvie element for modifying  color based on a transformation matrix}
 \description{
 This filter changes colors based on a transformation matrix. Every pixel's color value (represented by an [R,G,B,A] vector), is matrix multiplied to create a new color.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{animation value attributes}}{\code{\link[=feColorMatrixValuesAttribute]{values}}}
-\item{\emph{combining attributes}}{\code{\link[=FilterPrimitiveIN1Attribute]{in1}}, \code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
-\item{\emph{transfer function element attributes}}{\code{\link[=feColorMatrixTypeAttribute]{type}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Animation Value Attributes}}{\code{\link[=feColorMatrixValuesAttribute]{values}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}}
+\item{\emph{Transfer Function Element Attributes}}{\code{\link[=feColorMatrixTypeAttribute]{type}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=FilterPrimitiveIn1Attribute]{in1}}, \code{\link[=StyleAttribute]{style}}}
 }
 }
 
@@ -25,5 +25,5 @@ This filter changes colors based on a transformation matrix. Every pixel's color
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

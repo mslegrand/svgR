@@ -4,13 +4,19 @@
 \alias{AttributeNameAttribute}
 \title{attributeName}
 \description{
-ToDo: Needs to be written!!!
+Sets the name of the target attribute.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<attributeName>}{Specifies the name of the target attribute. An XMLNS prefix may be used to indicate the XML namespace for the attribute. The prefix will be interpreted in the scope of the current (i.e., the referencing) animation element. Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. Specifying the animation target ([SMILANIM], section 3.1).}
+\item{<attribute-name>}{Specifies the name of the target attribute.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

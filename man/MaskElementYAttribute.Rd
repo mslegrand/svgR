@@ -4,20 +4,27 @@
 \alias{MaskElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets y coordinate of the top-side of the rectangular region defining the largest possible offscreen buffer.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The y.axis coordinate of one corner of the rectangle for the largest possible offscreen buffer. If the attribute is not specified, the effect is as if a value of '.10' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of top side of a rectangle defining the offscreen buffer used in computing the masked image. The resulting masked imageis the intersection of the mask and that buffer. The default is y=.1, maskUnits=\emph{'objectBoundingBox'}).}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

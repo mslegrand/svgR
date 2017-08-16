@@ -18,4 +18,3 @@ Used as an value for the transform attribute. Scales the target by an amount giv
 }
 \keyword{helper}
 \keyword{transform}
-

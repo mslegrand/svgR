@@ -4,20 +4,26 @@
 \alias{FontFaceElementUnicodeRangeAttribute}
 \title{unicode.range}
 \description{
-ToDo: Needs to be written!!!
+Sets the range of ISO 10646 characters [UNICODE] to be covered by the glyphs in the font.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<urange> [, <urange>]*}{Same syntax and semantics as the 'unicode.range' descriptor within an font.face rule. The range of ISO 10646 characters [UNICODE] possibly covered by the glyphs in the font. Except for any additional information provided in this specification, the normative definition of the attribute is in CSS2 ([CSS2], section 15.3.3). If the attribute is not specified, the effect is as if a value of 'U+0.10FFFF' were specified.Animatable. no.}
+\item{<urange>[N] (vector-of-uranges)}{Specifies range of ISO 10646 characters covered by the \emph{font}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

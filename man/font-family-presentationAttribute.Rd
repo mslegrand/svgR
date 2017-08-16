@@ -4,21 +4,23 @@
 \alias{font-family-presentationAttribute}
 \title{font.family}
 \description{
-ToDo: Needs to be written!!!
+Governs the candidiates of  font families to be used in text rendering.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{[[ <family-name> | <generic-family> ],]* [<family-name> | <generic-family>] | inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<family-name | generica-family>+}{Specifies a vector of consisting of  font-family names or a generic-font-family names.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the font family from the parent.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

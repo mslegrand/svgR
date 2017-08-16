@@ -4,16 +4,18 @@
 \alias{shape-rendering-presentationAttribute}
 \title{shape.rendering}
 \description{
-ToDo: Needs to be written!!!
+Governs the optimization strategy of rendering shapes.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{auto}{**ToDo!!!** }
-\item{optimizeSpeed}{**ToDo!!!** }
-\item{crispEdges}{**ToDo!!!** }
-\item{geometricPrecision}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'auto'}'}}{Specifies to apply  a shape-rendering algorithm that balances the trade offs  that occur between optimizing for speed vs crispEdges vs geometric precision.}
+\item{\emph{'\emph{'crispEdges'}'}}{Specifies to optimize the shape-rendering algorithm for crisp edges.}
+\item{\emph{'\emph{'geometricPrecision'}'}}{Specifies to optimize the shape-rendering algorithm for geometric precision.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the shape-rendering optimization critera from the parent.}
+\item{\emph{'\emph{'optimizeSpeed'}'}}{Specifies to optimize the shape-rendering algorithm for speed.}
 }
 }
 
@@ -23,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

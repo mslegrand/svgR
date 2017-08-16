@@ -4,26 +4,25 @@
 \alias{CursorElementXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=CursorElementXAttribute]{x}}, \code{\link[=CursorElementYAttribute]{y}}
+\code{\link[=CursorElementXYAttribute]{x}}, \code{\link[=CursorElementXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=cursor]{cursor}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=cursor]{cursor}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

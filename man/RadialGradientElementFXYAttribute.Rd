@@ -4,18 +4,17 @@
 \alias{RadialGradientElementFXYAttribute}
 \title{fxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning fx and fy
 }
 \section{Combines}{
 
-\code{\link[=RadialGradientElementFXAttribute]{fx}}, \code{\link[=RadialGradientElementFYAttribute]{fy}}
+\code{\link[=RadialGradientElementFXYAttribute]{fx}}, \code{\link[=RadialGradientElementFXYAttribute]{fy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{fxy=c(value.FX,value.FY)}
-\item{and}{fx = value.FX; fy = value.FY}
+fxy =v is equivalent to  fx=v[1], fy=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=radialGradient]{radialGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

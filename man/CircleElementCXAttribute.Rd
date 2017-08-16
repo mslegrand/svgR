@@ -4,13 +4,20 @@
 \alias{CircleElementCXAttribute}
 \title{cx}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the center of the circle.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{The x.axis coordinate of the center of the circle. If the attribute is not specified, the effect is as if a value of "0" were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the x- coordinate, \eqn{c_x} of the center of the \strong{circle}. Default is 0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

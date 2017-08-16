@@ -4,15 +4,21 @@
 \alias{RestartAttribute}
 \title{restart}
 \description{
-ToDo: Needs to be written!!!
+Provides the conditions for a restart of an animation.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{always}{The animation can be restarted at any time (The default)}
-\item{whenNotActive}{The animation can be restarted only when not active (i.e. the active end)}
-\item{never}{The element cannot be restarted for the duration of the parent container.}
+\item{\emph{'always'}}{Specifies the animation can be restarted at any time. (Default).}
+\item{\emph{'whenNotActive'}}{Specifies the animation can only be restarted when it is not active.}
+\item{\emph{'never'}}{Specifies the animation cannot be restarted for the duration of the parent container.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -21,5 +27,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

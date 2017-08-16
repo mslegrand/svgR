@@ -4,13 +4,14 @@
 \alias{ClassAttribute}
 \title{class}
 \description{
-ToDo: Needs to be written!!!
+Sets  one or more class names to be associated with this element.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{list}{This attribute assigns a class name or set of class names to an element. Any number of elements may be assigned the same class name or names. Multiple class names must be separated by white space characters.Animatable. yes.}
-\item{character}{character vector of class names}
+\item{<character>[[N]]}{Specifies one or more class names to be assigned to this element.}
+\item{<character>[N]}{Specifies one or more class names to be assigned to this element.}
 }
 }
 
@@ -20,11 +21,13 @@ ToDo: Needs to be written!!!
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=title]{title}}}
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feColorMatrix]{feColorMatrix}}, \code{\link[=feComponentTransfer]{feComponentTransfer}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feConvolveMatrix]{feConvolveMatrix}}, \code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}, \code{\link[=feFlood]{feFlood}}, \code{\link[=feGaussianBlur]{feGaussianBlur}}, \code{\link[=feImage]{feImage}}, \code{\link[=feMerge]{feMerge}}, \code{\link[=feMorphology]{feMorphology}}, \code{\link[=feOffset]{feOffset}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}, \code{\link[=feTile]{feTile}}, \code{\link[=feTurbulence]{feTurbulence}}}
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}, \code{\link[=radialGradient]{radialGradient}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=glyph]{glyph}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}, \code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=clipPath]{clipPath}}, \code{\link[=filter]{filter}}, \code{\link[=font]{font}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=glyph]{glyph}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=stop]{stop}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=clipPath]{clipPath}}, \code{\link[=filter]{filter}}, \code{\link[=font]{font}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=stop]{stop}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

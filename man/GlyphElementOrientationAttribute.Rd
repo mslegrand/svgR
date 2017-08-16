@@ -4,20 +4,27 @@
 \alias{GlyphElementOrientationAttribute}
 \title{orientation}
 \description{
-ToDo: Needs to be written!!!
+Governs the orientation of the the glyph with respect to the inline-progression-direction.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{h | v}{Indicates that the given glyph is only to be used for a particular inline.progression.direction (i.e., horizontal or vertical). If the attribute is not specified, then the glyph can be used in all cases (i.e., both horizontal and vertical inline.progression.direction).Animatable. no.}
+\item{\emph{'h'}}{Specifies that the \strong{glyph element} is to be exclusively rendered in a horizontal inline progression.}
+\item{\emph{'v'}}{Specifies that the \strong{glyph element} is to be exclusively rendered in a  vertical inline progression.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

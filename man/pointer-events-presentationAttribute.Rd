@@ -4,31 +4,33 @@
 \alias{pointer-events-presentationAttribute}
 \title{pointer.events}
 \description{
-ToDo: Needs to be written!!!
+Governs the under what conditions this  graphics element can be the targetof a pointer event.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{visiblePainted}{**ToDo!!!** }
-\item{visibleFill}{**ToDo!!!** }
-\item{visibleStroke}{**ToDo!!!** }
-\item{visible}{**ToDo!!!** }
-\item{painted}{**ToDo!!!** }
-\item{fill}{**ToDo!!!** }
-\item{stroke}{**ToDo!!!** }
-\item{all}{**ToDo!!!** }
-\item{none}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'all'}'}}{Specifies that this element can be targeted for a pointer event provided  pointer is over either the interior or border of this element.}
+\item{\emph{'\emph{'fill'}'}}{Specifies that this element can be targeted for a pointer event provided the pointer is over the interior of this element.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{pointer-events} property from the parent.}
+\item{\emph{'\emph{'none'}'}}{Specifies that this element cannot be targeted  for a pointer event}
+\item{\emph{'\emph{'painted'}'}}{Specifies that this element can be targeted for a pointer event provided the  pointer is over a painted area. (Area being either interior or border).}
+\item{\emph{'\emph{'stroke'}'}}{Specifies that this element can be targeted for a pointer event provided and pointer is over the border.}
+\item{\emph{'\emph{'visible'}'}}{Specifies that element can be targeted for a pointer event provided visibilty='visible' and pointer is over either the interior or border.}
+\item{\emph{'\emph{'visibleFill'}'}}{Speciries that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted interior. (thus fill!='none').}
+\item{\emph{'\emph{'visiblePainted'}'}}{Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted area (area being either the interior or border).}
+\item{\emph{'\emph{'visibleStroke'}'}}{Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted border. (thus stroke!='none').}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}, \code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

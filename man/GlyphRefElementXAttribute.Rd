@@ -4,20 +4,26 @@
 \alias{GlyphRefElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the glyph, the whose value is interpreted within the fonts coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{This value represents the new absolute X coordinate within the font's coordinate system for this glyph. The font coordinate system is based on the em square model described in the Fonts chapter of CSS2 ([CSS2], chapter 15). If the attribute is not specified, for the first 'glyphRef' child element, the effect is as if the attribute were set to "0", whereas for subsequent 'glyphRef' child elements, the effect is as if the attribute were set to the end X coordinate from the previous 'glyphRef' element.Animatable. no.}
+\item{<number>}{Specifies the x-coordinate for the \emph{glyph} in terms of the fonts coordinate system.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

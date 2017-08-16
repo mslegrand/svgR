@@ -4,20 +4,27 @@
 \alias{feSpotLightLimitingConeAngleAttribute}
 \title{limitingConeAngle}
 \description{
-ToDo: Needs to be written!!!
+Sets the angle in degrees between the spot light axis and the spot light cone.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{A limiting cone which restricts the region where the light is projected. No light is projected outside the cone. 'limitingConeAngle' represents the angle in degrees between the spot light axis (i.e. the axis between the light source and the point to which it is pointing at) and the spot light cone. User agents should apply a smoothing technique such as anti.aliasing at the boundary of the cone. If no value is specified, then no limiting cone will be applied.Animatable. yes.}
+\item{<numeric>}{Specifies an angle (in degrees) that defines a cone of light emulating a spot light. Default is no cone.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

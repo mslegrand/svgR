@@ -4,22 +4,46 @@
 \alias{TransformAttribute}
 \title{transform}
 \description{
-ToDo: Needs to be written!!!
+Sets an orderd list of transform definitions to be applied prior to rendering..
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{ToDo!!!}{ToDo!!!}
+\item{<tranform-list>}{Specifies a named list of coordinate transforms. The order in which the transforms are applied is given by the order in the list.}
+}
+}
+
+\section{Details}{
+
+A \strong{transform-list} is named list of coordinate transforms to be applied in the order in which they appear. 
+For example:
+\code{ list(translate=c(100,20), scale=1.2, rotate=c(30,100,20))}
+The list names and 
+corresponding values (all numeric)
+are summarized in the following table
+\strong{Transforms}
+\tabular{lll}{
+name     \tab value  \tab action \cr
+matrix   \tab  a 2x3 matrix m. \tab Transforms coordinates x,y to x'y' by c(x',y',1)<-m \%*\% c(x,y,1), where m'<-rbind(m,c(0,0,1). \cr
+translate \tab x or c(x,y) \tab Translates by c(x, y). If only x is specified, y is set to 0. \cr
+scale     \tab sx or c(sx, sy) \tab Scales by sx, sy. If only sx is specified, sy=sx. \cr
+rotate    \tab \eqn{\theta} or c( \eqn{\theta},x,y). \tab Rotates by theta degrees about the point c(x,y). If only the  \eqn{\theta} is specified, then x=y=0. \cr
+skewX    \tab \eqn{\theta_x} \tab Skews along the x-axis by an angle of \eqn{\theta_x} , where \eqn{\theta_x} is interpreted in units of degrees.\cr
+skewY    \tab \eqn{\theta_y}  \tab Skews along the y-axis by an angle of \eqn{\theta_y} , where \eqn{\theta_y} is interpreted in units of degrees.\cr
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=clipPath]{clipPath}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=image]{image}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=clipPath]{clipPath}}, \code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

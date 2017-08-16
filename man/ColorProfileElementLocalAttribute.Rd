@@ -4,20 +4,26 @@
 \alias{ColorProfileElementLocalAttribute}
 \title{local}
 \description{
-ToDo: Needs to be written!!!
+Assigns a unique ID for a locally stored color profile, for referencing elsewhere.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{The unique ID for a locally stored color profile. <string> is the profile's unique ID as specified by International Color Consortium. If both the 'xlink.href' and the 'local' attributes are specified, then the user agent shall search the local system for the locally stored color profile first, and, if not available locally, then attempt to use the resource identified by the 'xlink.href' attribute. (Note. Profile description fields do not represent a profile's unique ID. With current ICC proposals, the profile's unique ID is an MD5.encoded value within the profile header.)Animatable. no.}
+\item{<string>}{Specifes a color profile by ID.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=color-profile]{color.profile}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

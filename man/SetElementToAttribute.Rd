@@ -4,13 +4,19 @@
 \alias{SetElementToAttribute}
 \title{to}
 \description{
-ToDo: Needs to be written!!!
+Sets the value for the attribute to be assign and  maintained for  the duration of the set element.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<value>}{Specifies the value for the attribute during the duration of the 'set' element. The argument value must match the attribute type.}
+\item{<value>}{Specifies a new attribute value to be set to.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

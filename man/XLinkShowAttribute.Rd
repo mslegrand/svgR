@@ -4,14 +4,23 @@
 \alias{XLinkShowAttribute}
 \title{xlink.show}
 \description{
-ToDo: Needs to be written!!!
+Sets the display context in which target is intended to be placed, This applies only to Xlink aware processors.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{new replace embed other none}{This attribute is provided for backwards compatibility with SVG 1.1. It provides documentation to XLink.aware processors. In case of a conflict, the target attribute has priority, since it can express a wider range of values. Refer to the XML Linking Language (XLink) [XLINK]. Animatable. no.}
-\item{new replace}{This attribute provides documentation to XLink.aware processors. If target="_blank" then use xlink.show="new" else use 'replace'. In case of a conflict, the target attribute has priority, since it can express a wider range of values. Refer to the XML Linking Language (XLink) [XLINK]. Animatable. no.}
+\item{\emph{'new'}}{Specifies \emph{new} to Xlink-aware processors. This attribute is provided for backwards compatibility with \emph{SVG 1.1}.}
+\item{\emph{'replace'}}{Specifies \emph{replace} to Xlink-aware processors. This attribute is provided for backwards compatibility with \emph{SVG 1.1}.}
+\item{\emph{'embed'}}{Specifies \emph{embed} to Xlink-aware processors. This attribute is provided for backwards compatibility with \emph{SVG 1.1}.}
+\item{\emph{'other'}}{Specifies \emph{other} to Xlink-aware processors. This attribute is provided for backwards compatibility with \emph{SVG 1.1}.}
+\item{\emph{'none'}}{Specifies \emph{none} to Xlink-aware processors. This attribute is provided for backwards compatibility with \emph{SVG 1.1}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,10 +28,11 @@ ToDo: Needs to be written!!!
 \describe{
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feImage]{feImage}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=image]{image}}, \code{\link[=mpath]{mpath}}, \code{\link[=pattern]{pattern}}, \code{\link[=script]{script}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=pattern]{pattern}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=mpath]{mpath}}, \code{\link[=script]{script}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,15 +4,17 @@
 \alias{stroke-linecap-presentationAttribute}
 \title{stroke.linecap}
 \description{
-ToDo: Needs to be written!!!
+Defines the shape to be used at the end of open subpaths when they are stroked.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{butt}{**ToDo!!!** }
-\item{round}{**ToDo!!!** }
-\item{square}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'butt'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{butt style cap}.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-linecap} value from the parent.}
+\item{\emph{'\emph{'round'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{round style cap}.}
+\item{\emph{'\emph{'square'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{square style cap}.}
 }
 }
 
@@ -20,9 +22,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,27 @@
 \alias{StopElementOffsetAttribute}
 \title{offset}
 \description{
-ToDo: Needs to be written!!!
+Governs the placement of the gradient stop.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number> | <percentage>}{The 'offset' attribute is either a <number> (usually ranging from 0 to 1) or a <percentage> (usually ranging from 0 to 100) which indicates where the gradient stop is placed. For linear gradients, the 'offset' attribute represents a location along the gradient vector. For radial gradients, it represents a percentage distance from (fx,fy) to the edge of the outermost/largest circle.Animatable. yes.}
+\item{<numeric | percentage>}{Specifies a fraction (or percentage) determining location of the \strong{stop} element. For \strong{linearGradient} elements this fraction is given by distance from start to stop over the distance from start to end. Here start is the point c(x1, y1) or xy1 and end is the point c(x2, y2) or xy2. For \strong{radialGradient} elements the fraction is computed using the outermost circle and the focal point.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=stop]{stop}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=stop]{stop}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

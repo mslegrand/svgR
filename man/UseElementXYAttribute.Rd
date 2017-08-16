@@ -4,26 +4,25 @@
 \alias{UseElementXYAttribute}
 \title{xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x and y
 }
 \section{Combines}{
 
-\code{\link[=UseElementXAttribute]{x}}, \code{\link[=UseElementYAttribute]{y}}
+\code{\link[=UseElementXYAttribute]{x}}, \code{\link[=UseElementXYAttribute]{y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xy=c(value.X,value.Y)}
-\item{and}{x = value.X; y = value.Y}
+xy =v is equivalent to  x=v[1], y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=use]{use}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

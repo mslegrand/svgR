@@ -4,20 +4,26 @@
 \alias{FontFaceElementUnderlineThicknessAttribute}
 \title{underline.thickness}
 \description{
-ToDo: Needs to be written!!!
+Sets the preferred thickness using the seame units as the font-coordinates to render a underline.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The ideal thickness of an underline, expressed as a length within the font coordinate system.Animatable. no.}
+\item{<numeric>}{Specifies, in font coordinates, the intended \emph{underline thickness}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

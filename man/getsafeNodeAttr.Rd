@@ -19,4 +19,3 @@ If the attribute with name attr.name fails to exits on the
 given node, then an attribute id is generated and added to  the
 node
 }
-

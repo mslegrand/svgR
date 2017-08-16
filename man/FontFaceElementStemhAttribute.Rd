@@ -4,20 +4,26 @@
 \alias{FontFaceElementStemhAttribute}
 \title{stemh}
 \description{
-ToDo: Needs to be written!!!
+Sets the horizontal stem width.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'stemh' descriptor within an font.face rule.Animatable. no.}
+\item{<number>}{Specifies dominant stem width if the font via \emph{units per em}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

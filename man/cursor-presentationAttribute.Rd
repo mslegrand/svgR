@@ -4,22 +4,43 @@
 \alias{cursor-presentationAttribute}
 \title{cursor}
 \description{
-ToDo: Needs to be written!!!
+Governs the type of cursor to display.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{[ [<funciri> ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize| text | wait | help ] ] | inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<funciri>}{Specifies a reference to the image for \strong{cursor} by using  functional IRI notation.}
+\item{\emph{'\emph{'auto'}'}}{Specifies to automatically select cursor based on current context.}
+\item{\emph{'\emph{'crosshair'}'}}{Specifies that cursor is to  be a \emph{crosshair} cursor.}
+\item{\emph{'\emph{'default'}'}}{Specifies that cursor is to  be the \emph{default} cursor.   This will most likely appear to be an arrow.}
+\item{\emph{'\emph{'e-resize'}'}}{Specifies that the right edge of the cursor is to move.}
+\item{\emph{'\emph{'help ] ]'}'}}{Specifies that the cursor is to be a help cursor ( question mark or balloon)}
+\item{\emph{'\emph{'inherit'}'}}{Specifies that the cursor is inherited from parent.}
+\item{\emph{'\emph{'move'}'}}{Specifies a move (drag) of the cursor.}
+\item{\emph{'\emph{'n-resize'}'}}{Specifies that the top edge of the cursor is to move.}
+\item{\emph{'\emph{'ne-resize'}'}}{Specifies that the top-right corner of the cursor is to move.}
+\item{\emph{'\emph{'nw-resize'}'}}{Specifies that the top-left corner of the cursor is to move.}
+\item{\emph{'\emph{'pointer'}'}}{Specifies that the cursor is a linking cursor. (often a small hand)}
+\item{\emph{'\emph{'s-resize'}'}}{Specifies that the bottom edge of the cursor is to move.}
+\item{\emph{'\emph{'se-resize'}'}}{Specifies that the bottom-right corner of the cursor is to move.}
+\item{\emph{'\emph{'sw-resize'}'}}{Specifies that the bottom-left corner of the cursor is to move.}
+\item{\emph{'\emph{'text'}'}}{Specifies that the cursor is a text select cursor (usually an I beam)}
+\item{\emph{'\emph{'w-resize'}'}}{Specifies that the left edge of the cursor is to move.}
+\item{\emph{'\emph{'wait'}'}}{Specifies that the cursor is a wait cursor ( often a watch or hour-class)}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=glyph]{glyph}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}, \code{\link[=use]{use}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=glyph]{glyph}}, \code{\link[=image]{image}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

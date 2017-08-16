@@ -4,20 +4,27 @@
 \alias{PatternElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinate (top) of the tile of the pattern element.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{See 'x'. If the attribute is not specified, the effect is as if a value of zero were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of the top side of a tile}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=pattern]{pattern}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -12,4 +12,3 @@ Declares the units to be inches (in)
 \item{transform=translate(u.in(0,.5)}{}
 }
 }
-

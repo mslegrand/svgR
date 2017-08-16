@@ -12,4 +12,3 @@ Declares the units to be pica's. (1pc=1/6 inch)
 \item{transform=translate(u.pc(0,3))}{}
 }
 }
-

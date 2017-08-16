@@ -4,20 +4,27 @@
 \alias{SVGElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets y-coordinate of the top side of an embedded svg.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{(Has no meaning or effect on outermost svg elements.) The y.axis coordinate of one corner of the rectangular region into which an embedded 'svg' element is placed. If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of the top side of an embedded \emph{svg}. This has no effect on the outer most \emph{svg}(i.e. \emph{svgR}). The default is 0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

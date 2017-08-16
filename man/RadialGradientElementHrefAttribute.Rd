@@ -4,13 +4,20 @@
 \alias{RadialGradientElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to a another radialGradient element residing in the same fragment.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to a different 'linearGradient' or 'radialGradient' element within the current SVG document fragment. Any 'radialGradient' attributes which are defined on the referenced element which are not defined on this element are inherited by this element. If this element has no defined gradient stops, and the referenced element does (possibly due to its own 'xlink.href' attribute), then this element inherits the gradient stop from the referenced element. Inheritance can be indirect to an arbitrary level; thus, if the referenced element inherits attribute or gradient stops due to its own 'xlink.href' attribute, then the current element can inherit those attributes or gradient stops.Animatable. yes.}
+\item{<IRI>}{Specifies a reference to a gradient element (either a linearGradient or radialGradine) using an \emph{IRI} reference.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=radialGradient]{radialGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

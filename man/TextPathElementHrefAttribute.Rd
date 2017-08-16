@@ -4,20 +4,21 @@
 \alias{TextPathElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to path element which defines the path along which the text will be rendered.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to the 'path' element onto which the glyphs will be rendered. If <iri> is an invalid reference (e.g., no such element exists, or the referenced element is not a 'path'), then the 'textPath' element is in error and its entire contents shall not be rendered by the user agent.Animatable. yes.}
+\item{<IRI>}{Specifies a reference to a path element along which the \emph{glyphs} should be placed.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=textPath]{textPath}}}
+\item{\emph{Text Content Elements}}{\code{\link[=textPath]{textPath}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

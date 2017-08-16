@@ -4,20 +4,27 @@
 \alias{feDistantLightAzimuthAttribute}
 \title{azimuth}
 \description{
-ToDo: Needs to be written!!!
+Sets the angle between the x-axis and the projection into the xy-plane of the vector from the origin to the light source.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric representing an angle in degrees.
 \describe{
-\item{<number>}{Direction angle for the light source on the XY plane (clockwise), in degrees from the x axis. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<angle>}{Specifies the azimuth angle (in degrees). The azimuth angle is defined as the angle between the x-axis and the projection into the xy-plane of vector from the origin to the light source. This angle is measured clockwise.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feDistantLight]{feDistantLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feDistantLight]{feDistantLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

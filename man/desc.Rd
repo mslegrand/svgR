@@ -2,23 +2,23 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{desc}
 \alias{desc}
-\title{Element to contain a description}
+\title{An element to contain a description}
 \description{
 Each container element or graphics element in an SVG drawing can supply a desc description string where the description is text-only. When the current SVG document fragment is rendered as SVG on visual media, desc elements are not rendered as part of the graphics. Alternate presentations are possible, both visual and aural, which display the desc element but do not display path elements or other graphics elements. The desc element generally improve accessibility of SVG documents
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
 }
 }
 
 \section{Available Content Elements (Unnamed Parameters)}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{Any elements or character data.}}
+{No Content Elements Applicable}{!}
 }
 }
-\keyword{element}
 
+\keyword{element}

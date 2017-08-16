@@ -4,20 +4,27 @@
 \alias{feSpotLightZAttribute}
 \title{z}
 \description{
-ToDo: Needs to be written!!!
+Sets the z-coordinate of the spot light source.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Z location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element, assuming that, in the initial coordinate system, the positive Z.axis comes out towards the person viewing the content and assuming that one unit along the Z.axis equals one unit in X and Y. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<number>}{Specifies the z-coordinate of the light source location with respect to the coordinates system on the filter produce by \emph{primitiveUnits}. (Default=0)}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

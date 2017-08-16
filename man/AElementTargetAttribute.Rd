@@ -4,25 +4,26 @@
 \alias{AElementTargetAttribute}
 \title{target}
 \description{
-ToDo: Needs to be written!!!
+Governs the manner in which the link is opened. That is where is the target placed?
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{_replace}{The current SVG image is replaced by the linked content in the same rectangular area in the same frame as the current SVG image.}
-\item{_self}{The current SVG image is replaced by the linked content in the same frame as the current SVG image. If the attribute is not specified, '_self' is assumed.}
-\item{_parent}{The immediate frameset parent of the SVG image is replaced by the linked content.}
-\item{_top}{The content of the full window or tab, including any frames, is replaced by the linked content}
-\item{_blank}{A new un.named window or tab is requested for the display of the linked content. If this fails, the result is the same as _top}
-\item{<XML.Name>}{Specifies the name of the frame, pane, or other relevant presentation context for display of the linked content. If this already exists, it is re.used, replacing the existing content. If it does not exist, it is created (the same as '_blank', except that it now has a name).}
+\item{\emph{'_replace'}}{Specifies to replace in the current \emph{SVG image} by the linked content. The replacement will occupy the same region and frame as the current SVG.}
+\item{\emph{'_self'}}{Specifies to replace in the current \emph{SVG image} by the linked content The replacement will occupy the frame as the current SVG. This is the default.}
+\item{\emph{'_parent'}}{Specifies to replace the parent frameset \emph{SVG image} by the linked content.}
+\item{\emph{'_top'}}{Specifies to replace the full window/tab (and frames) byt the linked content.}
+\item{\emph{'_blank'}}{Specifies to create a new (unnamed) window/tab display and fill with the linked content.}
+\item{<name>}{Specifies to find an existing window/tab/pane having the target name, and if one does not exist create one. Then fill it with the linked content.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

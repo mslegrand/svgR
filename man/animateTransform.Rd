@@ -2,24 +2,24 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{animateTransform}
 \alias{animateTransform}
-\title{Element used to scale, rotate, translate and skew a shape over time}
+\title{An element used to scale, rotate, translate and skew a shape over time}
 \description{
 The animateTransform element animates a transformation attribute on a target element, thereby allowing animations to control translation, scaling, rotation and/or skewing.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{animation addition attributes}}{\code{\link[=AccumulateAttribute]{accumulate}}, \code{\link[=AdditiveAttribute]{additive}}}
-\item{\emph{animation attribute target attributes}}{\code{\link[=AttributeNameAttribute]{attributeName}}, \code{\link[=AttributeTypeAttribute]{attributeType}}}
-\item{\emph{animation event attributes}}{\code{\link[=OnBeginEventAttribute]{onbegin}}, \code{\link[=OnEndEventAttribute]{onend}}, \code{\link[=OnLoadEventAttribute]{onload}}, \code{\link[=OnRepeatEventAttribute]{onrepeat}}}
-\item{\emph{animation timing attributes}}{\code{\link[=BeginAttribute]{begin}}, \code{\link[=DurAttribute]{dur}}, \code{\link[=EndAttribute]{end}}, \code{\link[=FillAttribute]{fill}}, \code{\link[=MaxAttribute]{max}}, \code{\link[=MinAttribute]{min}}, \code{\link[=RepeatCountAttribute]{repeatCount}}, \code{\link[=RepeatDurAttribute]{repeatDur}}, \code{\link[=RestartAttribute]{restart}}}
-\item{\emph{animation value attributes}}{\code{\link[=ByAttribute]{by}}, \code{\link[=CalcModeAttribute]{calcMode}}, \code{\link[=FromAttribute]{from}}, \code{\link[=KeySplinesAttribute]{keySplines}}, \code{\link[=KeyTimesAttribute]{keyTimes}}, \code{\link[=ToAttribute]{to}}, \code{\link[=ValuesAttribute]{values}}}
-\item{\emph{conditional processing attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{graphical event attributes}}{\code{\link[=OnLoadEventAttribute]{onload}}}
-\item{\emph{transfer function element attributes}}{\code{\link[=AnimateTransformElementTypeAttribute]{type}}}
-\item{\emph{unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=HrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Animation Addition Attributes}}{\code{\link[=AccumulateAttribute]{accumulate}}, \code{\link[=AdditiveAttribute]{additive}}}
+\item{\emph{Animation Attribute Target Attributes}}{\code{\link[=AttributeNameAttribute]{attributeName}}, \code{\link[=AttributeTypeAttribute]{attributeType}}}
+\item{\emph{Animation Event Attributes}}{\code{\link[=OnBeginEventAttribute]{onbegin}}, \code{\link[=OnEndEventAttribute]{onend}}, \code{\link[=OnLoadEventAttribute]{onload}}, \code{\link[=OnRepeatEventAttribute]{onrepeat}}}
+\item{\emph{Animation Timing Attributes}}{\code{\link[=BeginAttribute]{begin}}, \code{\link[=DurAttribute]{dur}}, \code{\link[=EndAttribute]{end}}, \code{\link[=FillAttribute]{fill}}, \code{\link[=MaxAttribute]{max}}, \code{\link[=MinAttribute]{min}}, \code{\link[=RepeatCountAttribute]{repeatCount}}, \code{\link[=RepeatDurAttribute]{repeatDur}}, \code{\link[=RestartAttribute]{restart}}}
+\item{\emph{Animation Value Attributes}}{\code{\link[=ByAttribute]{by}}, \code{\link[=CalcModeAttribute]{calcMode}}, \code{\link[=FromAttribute]{from}}, \code{\link[=KeySplinesAttribute]{keySplines}}, \code{\link[=KeyTimesAttribute]{keyTimes}}, \code{\link[=ToAttribute]{to}}, \code{\link[=ValuesAttribute]{values}}}
+\item{\emph{Conditional Processing Attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Graphical Event Attributes}}{\code{\link[=OnLoadEventAttribute]{onload}}}
+\item{\emph{Transfer Function Element Attributes}}{\code{\link[=AnimateTransformElementTypeAttribute]{type}}}
+\item{\emph{Unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=HrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -29,5 +29,5 @@ The animateTransform element animates a transformation attribute on a target ele
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

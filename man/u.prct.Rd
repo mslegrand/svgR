@@ -12,4 +12,3 @@ Declares the units to be percentage (\%)
 \item{viewBox=u.\%(c(0,0,50,50))}{}
 }
 }
-

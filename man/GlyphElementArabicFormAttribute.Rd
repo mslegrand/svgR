@@ -4,20 +4,29 @@
 \alias{GlyphElementArabicFormAttribute}
 \title{arabic.form}
 \description{
-ToDo: Needs to be written!!!
+Governs which of the four possible forms for an arabic glyph
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{initial | medial | terminal | isolated}{For Arabic glyphs, indicates which of the four possible forms this glyph represents.Animatable. no.}
+\item{\emph{'initial'}}{Specifies the initial \emph{Arabic} \emph{glyph} form.}
+\item{\emph{'medial'}}{Specifies the medial \emph{Arabic} \emph{glyph} form.}
+\item{\emph{'terminal'}}{Specifies the terminal \emph{Arabic} \emph{glyph} form.}
+\item{\emph{'isolated'}}{Specifies the isolated \emph{Arabic} \emph{glyph} form.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

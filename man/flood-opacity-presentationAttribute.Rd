@@ -4,13 +4,15 @@
 \alias{flood-opacity-presentationAttribute}
 \title{flood.opacity}
 \description{
-ToDo: Needs to be written!!!
+Defines the opacity value to be used across the entire filter primitive subregion.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<opacity-value>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<opacity-value>}{Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the opacity value from the parent.}
 }
 }
 
@@ -20,5 +22,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feFlood]{feFlood}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

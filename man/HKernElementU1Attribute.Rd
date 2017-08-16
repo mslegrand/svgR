@@ -4,20 +4,26 @@
 \alias{HKernElementU1Attribute}
 \title{u1}
 \description{
-ToDo: Needs to be written!!!
+Sets the  first glyphs candidates.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{[<character> | <urange> ] [, [<character> | <urange>] ]*}{A sequence (comma.separated) of Unicode characters (refer to the description of the 'unicode' attribute to the 'glyph' element for a description of how to express individual Unicode characters) and/or ranges of Unicode characters (see description of ranges of Unicode characters in CSS2; [CSS2], section 15.3.3) which identify a set of possible first glyphs in the kerning pair. If a given Unicode character within the set has multiple corresponding 'glyph' elements (i.e., there are multiple 'glyph' elements with the same 'unicode' attribute value, but different 'glyph.name' values), then all such glyphs are included in the set. Comma is the separator character; thus, to kern a comma, specify the comma as part of a range of Unicode characters or as a glyph name using the 'g1' attribute. The total set of possible first glyphs in the kerning pair is the union of glyphs specified by the 'u1' and 'g1' attributes.Animatable. no.}
+\item{<glyph-unicode>[N]}{Specifies possible 1st \emph{glyphs} in the \emph{kerning pair} using a vector of Unicode characters or Unicode ranges.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

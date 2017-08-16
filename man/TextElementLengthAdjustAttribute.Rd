@@ -4,21 +4,22 @@
 \alias{TextElementLengthAdjustAttribute}
 \title{lengthAdjust}
 \description{
-ToDo: Needs to be written!!!
+Governs the adjustments to employ to try to render the text with a length matching that specified by the textLength attribute. More specifically, indicates whether to use just spacing or a combination of spacing and glyphs compression or stretching to match the rendered text length match with the value specified by the attribute  textLength.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{spacing|spacingAndGlyphs}{Indicates the type of adjustments which the user agent shall make to make the rendered length of the text match the value specified on the 'textLength' attribute.'spacing' indicates that only the advance values are adjusted. The glyphs themselves are not stretched or compressed.'spacingAndGlyphs' indicates that the advance values are adjusted and the glyphs themselves stretched or compressed in one axis (i.e., a direction parallel to the inline.progression.direction). The user agent is required to achieve correct start and end positions for the text strings, but the locations of intermediate glyphs are not predictable because user agents might employ advanced algorithms to stretch or compress text strings in order to balance correct start and end positioning with optimal typography. Note that, for a text string that contains n characters, the adjustments to the advance values often occur only for n1 characters (see description of attribute 'textLength'), whereas stretching or compressing of the glyphs will be applied to all n characters. If the attribute is not specified, the effect is as a value of 'spacing' were specified.Animatable. yes.}
+\item{\emph{'spacing'}}{Specifies to the user agent, that when attempting to match the rendered text length with the value specified by the \emph{'textLength'} attribute, only spacing adjustments are allowed.}
+\item{\emph{'spacingAndGlyphs'}}{Specifies to the user agent, that when attempting to match the rendered text length with the value specified by the \emph{textLength} attribute, both spacing and compressing/stretching of the \emph{glyphs} are allowed.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

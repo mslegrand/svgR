@@ -4,20 +4,26 @@
 \alias{GlyphRefElementGlyphRefAttribute}
 \title{glyphRef}
 \description{
-ToDo: Needs to be written!!!
+Sets the glyph reference identifier.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{The glyph identifier, the format of which is dependent on the 'format' of the given font.Animatable. no.}
+\item{<string>}{Specifies a \emph{glyph} identifier.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

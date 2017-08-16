@@ -4,13 +4,21 @@
 \alias{PolylineElementPointsAttribute}
 \title{points}
 \description{
-ToDo: Needs to be written!!!
+Sets the points corresponding to the vertices of the polyline.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{<list.of.points>}{The points that make up the polyline. All coordinate values are in the user coordinate system.Animatable. yes.}
+\item{<coordinates>[2,N]}{Specifies the vertices of the \strong{polyline} by taking the points defined by the columns of this matrix, with adjacent columns corresponding to adjacent vertices. The points are interpreted in the user coordinate system.}
+\item{<coordinates>[[N]][2]}{Specifies the vertices of the \strong{polyline} by taking the points given in by this unnamed list, with adjacent list entries corresponding to adjacent vertices. The points are interpreted in the user coordinate system.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +27,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=polyline]{polyline}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

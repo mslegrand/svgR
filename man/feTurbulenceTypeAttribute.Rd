@@ -4,12 +4,14 @@
 \alias{feTurbulenceTypeAttribute}
 \title{type}
 \description{
-ToDo: Needs to be written!!!
+Governs which model of turbublence to use.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{fractalNoise | turbulence}{Indicates whether the filter primitive should perform a noise or turbulence function. If attribute 'type' is not specified, then the effect is as if a value of turbulence were specified. Animatable. yes.}
+\item{\emph{'fractalNoise'}}{Specifies to the filter primitive to use the \emph{noise} function.}
+\item{\emph{'turbulence'}}{Specifies to the filter primitive to use the \emph{turbulence} function.}
 }
 }
 
@@ -19,5 +21,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

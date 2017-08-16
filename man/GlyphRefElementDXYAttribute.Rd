@@ -4,26 +4,25 @@
 \alias{GlyphRefElementDXYAttribute}
 \title{dxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning dx and dy
 }
 \section{Combines}{
 
-\code{\link[=GlyphRefElementDXAttribute]{dx}}, \code{\link[=GlyphRefElementDYAttribute]{dy}}
+\code{\link[=GlyphRefElementDXYAttribute]{dx}}, \code{\link[=GlyphRefElementDXYAttribute]{dy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{dxy=c(value.DX,value.DY)}
-\item{and}{dx = value.DX; dy = value.DY}
+dxy =v is equivalent to  dx=v[1], dy=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

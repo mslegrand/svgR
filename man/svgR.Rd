@@ -18,4 +18,3 @@ By default, name space definition are given by
 "http://www.w3.org/2001/xml-events", but can be overriddent by
 specifying namespaceDefinitions=c(...) as an additional parameter.
 }
-

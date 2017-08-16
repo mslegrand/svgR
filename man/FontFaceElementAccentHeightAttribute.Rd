@@ -4,20 +4,26 @@
 \alias{FontFaceElementAccentHeightAttribute}
 \title{accent.height}
 \description{
-ToDo: Needs to be written!!!
+Sets the distance from the font origin to the top of the accent characters.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The distance from the origin to the top of accent characters, measured by a distance within the font coordinate system. If the attribute is not specified, the effect is as if the attribute were set to the value of the 'ascent' attribute.Animatable. no.}
+\item{<numeric>}{Specifies the distance from the font origin to the top of the accent characters, given in the units of the font coordinate system.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

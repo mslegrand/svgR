@@ -4,15 +4,21 @@
 \alias{AttributeTypeAttribute}
 \title{attributeType}
 \description{
-ToDo: Needs to be written!!!
+Governs the namespace in which the target attribute and its associated values are defined.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{CSS}{This specifies that the value of 'attributeName' is the name of a CSS property defined as animatable in this specification.}
-\item{XML}{This specifies that the value of 'attributeName' is the name of an XML attribute defined in the default XML namespace for the target element. If the value for 'attributeName' has an XMLNS prefix, the implementation must use the associated namespace as defined in the scope of the target element. The attribute must be defined as animatable in this specification.}
-\item{auto}{The implementation should match the 'attributeName' to an attribute for the target element. The implementation must first search through the list of CSS properties for a matching property name, and if none is found, search the default XML namespace for the element.}
+\item{\emph{'CSS'}}{Specifies that the value of \emph{'attributeName'} should be interpreted  as the name of a CSS property.}
+\item{\emph{'XML'}}{Specifies that the value of  \emph{'attributeName'} should be interpreted as the name of a XML attribute}
+\item{\emph{'auto'}}{Specifies to discover the value by searching for the matching property name, first through the CSS, then if not found then searching next through the XML.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -21,5 +27,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

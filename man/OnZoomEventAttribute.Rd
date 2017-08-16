@@ -4,20 +4,26 @@
 \alias{OnZoomEventAttribute}
 \title{onzoom}
 \description{
-ToDo: Needs to be written!!!
+Sets the script to execute when an zoom event is received
 }
 \section{Available Attribute Values}{
 
+The value is a script, likely ecmascript (i.e.  javascript).
 \describe{
-\item{<anything>}{Specifies some script to execute when "bubbling" or "at target" phase listeners for the corresponding event are fired on the element the attribute is specified on. See the Complete list of support events to determine which event each of these event attributes corresponds to.Animatable. no.}
+\item{<script>}{Specifies what to execute when an \emph{SVGZoom} event is fired. The \emph{SVGZoom} event occurs if zoom level of the document changes. This occurs for one of two reasons: the direct interaction by the user orchange to the \emph{currentScale Property. The }SVGZoom* event applies only to the outermost svg element.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

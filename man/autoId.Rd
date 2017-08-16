@@ -15,4 +15,3 @@ Auto id generator
 \note{
 inc=FALSE is provided to retreive the last inc=TRUE value
 }
-

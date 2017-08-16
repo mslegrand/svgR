@@ -4,20 +4,27 @@
 \alias{MarkerHeightAttribute}
 \title{markerHeight}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the marker viewport.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{Represents the height of the viewport into which the marker is to be fitted when it is rendered. A negative value is an error (see Error processing). A value of zero disables rendering of the element. If the attribute is not specified, the effect is as if a value of "3" were specified.Animatable. yes.}
+\item{<length>}{Specifies the height of the marker viewport. Must be non-negative. The default is 3.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=marker]{marker}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=marker]{marker}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

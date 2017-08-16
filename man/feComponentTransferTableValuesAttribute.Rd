@@ -4,20 +4,27 @@
 \alias{feComponentTransferTableValuesAttribute}
 \title{tableValues}
 \description{
-ToDo: Needs to be written!!!
+Sets the lookup table to be used when the transfer type is table
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{(list of <number>s)}{When type="table", the list of <number>s v0,v1,...vn, separated by white space and/or a comma, which define the lookup table. An empty list results in an identity transfer function. If the attribute is not specified, then the effect is as if an empty list were provided.Animatable. yes.}
+\item{<numeric>[N]}{Specifies a numerical vector to be used to the construction of the \emph{transfer function} when the type is either \emph{""""""""""""""""table""""""""""""""""} or \emph{""""""""""""""""step""""""""""""""""}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

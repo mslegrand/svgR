@@ -4,15 +4,21 @@
 \alias{RotateAttribute}
 \title{rotate}
 \description{
-ToDo: Needs to be written!!!
+Governs the rotation of an object along a path.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric representing an angle in degrees.
 \describe{
-\item{auto}{Indicates that the object is rotated over time by the angle of the direction (i.e., directional tangent vector) of the motion path.}
-\item{auto.reverse}{Indicates that the object is rotated over time by the angle of the direction (i.e., directional tangent vector) of the motion path plus 180 degrees.}
-\item{<number>}{Indicates that the target element has a constant rotation transformation applied to it, where the rotation angle is the specified number of degrees.}
+\item{\emph{'auto'}}{Specifies that as the target element moves along the path, its orientation is to be continously adjusted by an \eqn{\theta(t)}, such that at any time \eqn{t} the vector \eqn{(cos(\theta(t)), sin(\theta(t))} lies in the direction of the objects trajectory. Since, at any given moment, the direction of the trajectory is a vector tangent to the path in the direction of the motion, the orientation of the element with respect to the path is continously maintained.}
+\item{\emph{'auto-reverse'}}{Specifies that as the target element moves along the path, its orientation is to be continously adjusted by an \eqn{\theta(t)}, such that at any time \eqn{t} the vector \eqn{(-cos(\theta(t)), -sin(\theta(t))} lies in the direction of the objects trajectory.  Both \emph{auto} and \emph{auto-reverse}  maintain the orientation of the element with respect to the path, but the \emph{auto-reverse} image is a contionus reflection of the \emph{auto} image through a moving reference point on the path corresponding to the origin in the targets coordinate system.}
+\item{<angle>}{Specifies to apply a constant rotational transformation on target element, where the rotational angle is the specified number of degrees.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -21,5 +27,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animateMotion]{animateMotion}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

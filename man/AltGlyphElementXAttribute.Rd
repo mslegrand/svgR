@@ -4,20 +4,26 @@
 \alias{AltGlyphElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinates for the alternative glyphs..
 }
 \section{Available Attribute Values}{
 
 \describe{
-\item{<list.of.coordinates>}{The <coordinate> values are processed in the same manner as the 'x' attribute on the 'tspan' element, with the following exception. If the referenced alternate glyphs are rendered instead of the Unicode characters inside the 'altGlyph' element, then any absolute X coordinates specified via an 'x' attribute on this element or any ancestor 'text' or 'tspan' elements for Unicode characters 2 through n within the 'altGlyph' element are ignored. Any absolute X coordinate specified via an 'x' attribute on this element or any ancestor 'text' or 'tspan' elements for the first Unicode character within the 'altGlyph' element sets a new absolute X coordinate for the current text position before rendering the first alternate glyph.Animatable. yes.}
+\item{<coordinate>}{Specifies corresponding absolute x-coordinates for \strong{altGlyph} element. If rendering only unicode characters inside a \strong{altGlyph} element, then this specifies the absolute x-coordinates for the first n characters where n is the length of the x-vector . If rendering alternate \emph{glyphs}, then x[1] specifies a new the absolute x-coordinate for the current text position, so that text begins as x[1], with the remainder, x[-1], being ignored.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

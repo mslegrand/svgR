@@ -4,24 +4,30 @@
 \alias{ColorProfileElementRenderingIntentAttribute}
 \title{rendering.intent}
 \description{
-ToDo: Needs to be written!!!
+Governs a color profile rendering intent.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{auto}{This is the default behavior. The user agent determines the best intent based on the content type. For image content containing an embedded profile, it shall be assumed that the intent specified within the profile is the desired intent. Otherwise, the user agent shall use the current profile and force the intent, overriding any intent that might be stored in the profile itself.}
-\item{perceptual}{This method, often the preferred choice for images, preserves the relationship between colors. It attempts to maintain relative color values among the pixels as they are mapped to the target device gamut. Sometimes pixel values that were originally within the target device gamut are changed in order to avoid hue shifts and discontinuities and to preserve as much as possible the overall appearance of the scene.}
-\item{saturation}{Preserves the relative saturation (chroma) values of the original pixels. Out of gamut colors are converted to colors that have the same saturation but fall just inside the gamut.}
-\item{relative.colorimetric}{Leaves colors that fall inside the gamut unchanged. This method usually converts out of gamut colors to colors that have the same lightness but fall just inside the gamut.}
-\item{absolute.colorimetric}{Disables white point matching when converting colors. This option is generally not recommended.}
+\item{\emph{'auto'}}{Directs the user agent to determine intent based on the content type. This is the Default.}
+\item{\emph{'perceptual'}}{Specifies to perserve relative \emph{color}, used often for images.}
+\item{\emph{'saturation'}}{Specifies to preserve \emph{saturation.}}
+\item{\emph{'Relative-colorimetric'}}{Specifies to not change colors that fall within the range supported by the rendering device.}
+\item{\emph{'Absolute-colorimetric'}}{Specifies the disable any \emph{white} point matching during color convertion. \emph{Not recommended.}}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=color-profile]{color.profile}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

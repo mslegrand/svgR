@@ -4,12 +4,13 @@
 \alias{feMorphologyRadiusAttribute}
 \title{radius}
 \description{
-ToDo: Needs to be written!!!
+Governs the amount of  dilation or erodion in the x and y directions..
 }
 \section{Available Attribute Values}{
 
+The value is a numeric vector having length 1 or 2.
 \describe{
-\item{<number.optional.number>}{The radius (or radii) for the operation. If two <number>s are provided, the first number represents a x.radius and the second value represents a y.radius. If one number is provided, then that value is used for both X and Y. The values are in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. A negative value is an error (see Error processing). A value of zero disables the effect of the given filter primitive (i.e., the result is a transparent black image). If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<numeric>[1 or 2]}{Specifies the radii \eqn{r_x}, \eqn{r_y}, used in the x, y-directions to produce the \emph{erosion/dilation} effects. The default for \eqn{r_x} is 0, the default for \eqn{r_y} is \eqn{r_x}.}
 }
 }
 
@@ -19,5 +20,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feMorphology]{feMorphology}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

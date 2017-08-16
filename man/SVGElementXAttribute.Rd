@@ -4,20 +4,27 @@
 \alias{SVGElementXAttribute}
 \title{x}
 \description{
-ToDo: Needs to be written!!!
+Sets the x-coordinate of the left side of an embedded svg. (Revelant only for embedded svg elements)
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{(Has no meaning or effect on outermost svg elements.) The x.axis coordinate of one corner of the rectangular region into which an embedded 'svg' element is placed. If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the x-coordinate of the left hand side of an embedded \strong{svg}. This has no effect on the outer most \strong{svg}(i.e. \strong{svgR}). The default is 0.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

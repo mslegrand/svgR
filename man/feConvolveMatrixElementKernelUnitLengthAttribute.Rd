@@ -4,12 +4,13 @@
 \alias{feConvolveMatrixElementKernelUnitLengthAttribute}
 \title{kernelUnitLength}
 \description{
-ToDo: Needs to be written!!!
+Governs the spacing between successive rows and columns in the kernel matrix, That spacing, dx dy ,is interpreted in the current filter units
 }
 \section{Available Attribute Values}{
 
+The value is a numeric vector having length 1 or 2.
 \describe{
-\item{<number.optional.number>}{The first number is the <dx> value. The second number is the <dy> value. If the <dy> value is not specified, it defaults to the same value as <dx>. Indicates the intended distance in current filter units (i.e., units as determined by the value of attribute 'primitiveUnits') between successive columns and rows, respectively, in the 'kernelMatrix'. By specifying value(s) for 'kernelUnitLength', the kernel becomes defined in a scalable, abstract coordinate system. If 'kernelUnitLength' is not specified, the default value is one pixel in the offscreen bitmap, which is a pixel.based coordinate system, and thus potentially not scalable. For some level of consistency across display media and user agents, it is necessary that a value be provided for at least one of 'filterRes' and 'kernelUnitLength'. In some implementations, the most consistent results and the fastest performance will be achieved if the pixel grid of the temporary offscreen images aligns with the pixel grid of the kernel. A negative or zero value is an error (see Error processing).Animatable. yes.}
+\item{<numeric>[1 or 2]}{Specifies a dx, (dy) distance(s) in current filter units between successive rows and columns. Default for dx is 1 pixel, default for dy is dx.}
 }
 }
 
@@ -19,5 +20,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feConvolveMatrix]{feConvolveMatrix}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

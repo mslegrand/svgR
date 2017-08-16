@@ -4,18 +4,17 @@
 \alias{LinearGradientElementX12Attribute}
 \title{x12}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x1 and x2
 }
 \section{Combines}{
 
-\code{\link[=LinearGradientElementX1Attribute]{x1}}, \code{\link[=LinearGradientElementX2Attribute]{x2}}
+\code{\link[=LinearGradientElementX12Attribute]{x1}}, \code{\link[=LinearGradientElementX12Attribute]{x2}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{x12=c(value.X1,value.X2)}
-\item{and}{x1 = value.X1; x2 = value.X2}
+x12 =v is equivalent to  x1=v[1], x2=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

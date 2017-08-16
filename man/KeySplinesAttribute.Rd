@@ -4,13 +4,20 @@
 \alias{KeySplinesAttribute}
 \title{keySplines}
 \description{
-ToDo: Needs to be written!!!
+Sets a set of Bzier control points associated with the keyTimes attribute.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{<list>}{A set of Bzier control points associated with the 'keyTimes' list, defining a cubic Bzier function that controls interval pacing. The attribute value is a semicolon.separated list of control point descriptions. Each control point description is a set of four values. x1 y1 x2 y2, describing the Bzier control points for one time segment. Note. SMIL allows these values to be separated either by commas with optional whitespace, or by whitespace alone. The 'keyTimes' values that define the associated segment are the Bzier "anchor points", and the 'keySplines' values are the control points. Thus, there must be one fewer sets of control points than there are 'keyTimes'. The values must all be in the range 0 to 1. This attribute is ignored unless the 'calcMode' is set to 'spline'. If there are any errors in the 'keySplines' specification (bad values, too many or too few values), the document fragment is in error (see error processing). Except for any SVG.specific rules explicitly mentioned in this specification, the normative definition for this attribute is the SMIL Animation specification. In particular, see SMIL Animation. 'keySplines' attribute ([SMILANIM], section 3.2.3).}
+\item{<coordinates>[[N]][4]}{A list of Bezier control points associated with the \emph{'keyTimes'} list. Each pt has 4 values, \emph{x1, y1, x2, y2} with values in the range between 0 and 1.}
+\item{<coordinates>[4,N]}{A 4xN matrix whose columns are the Bezier control points associated with the \emph{'keyTimes'} list. Each pt has 4 values, x1, y1, x2, y2 with values in the range between 0 and 1.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

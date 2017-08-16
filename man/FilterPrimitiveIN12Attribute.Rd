@@ -4,18 +4,17 @@
 \alias{FilterPrimitiveIN12Attribute}
 \title{in12}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning in and in2
 }
 \section{Combines}{
 
-\code{\link[=FilterPrimitiveInAttribute]{in}}, \code{\link[=feBlendIn2Attribute]{in2}}, \code{\link[=feCompositeIn2Attribute]{in}}, \code{\link[=feDisplacementMapIn2Attribute]{in2}}
+\code{\link[=FilterPrimitiveIN12Attribute]{in1}}, \code{\link[=FilterPrimitiveIN12Attribute]{in2}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{in12=c(value.IN,value.IN2)}
-\item{and}{in = value.IN; in2 = value.IN2}
+in12 =v is equivalent to  in=v[1], in2=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feBlend]{feBlend}}, \code{\link[=feComposite]{feComposite}}, \code{\link[=feDisplacementMap]{feDisplacementMap}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

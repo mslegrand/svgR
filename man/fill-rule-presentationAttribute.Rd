@@ -4,14 +4,16 @@
 \alias{fill-rule-presentationAttribute}
 \title{fill.rule}
 \description{
-ToDo: Needs to be written!!!
+Governs which algorithm to use for determination of  the  interior of the shape. When rendering a shape, this algorithm will be used to perform a  fill operation.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{nonzero}{**ToDo!!!** }
-\item{evenodd}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'evenodd'}'}}{Specifies to use even-odd rule to determine the what is inside}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to use the same \emph{fill-rule} as the parent.}
+\item{\emph{'\emph{'nonzero'}'}}{Specifies to use the  non-zero rule to determine the what is the interior.}
 }
 }
 
@@ -19,9 +21,8 @@ ToDo: Needs to be written!!!
 
 \describe{
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

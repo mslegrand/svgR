@@ -2,15 +2,15 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{view}
 \alias{view}
-\title{Element used to change the appearance of the content of an svg element it contains}
+\title{An element used to change the appearance of the content of an svg element it contains}
 \description{
 A view is a defined way to view the image, like a zoom level or a detail view.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=PreserveAspectRatioAttribute]{preserveAspectRatio}}, \code{\link[=ViewBoxAttribute]{viewBox}}, \code{\link[=ViewElementViewTargetAttribute]{viewTarget}}, \code{\link[=ZoomAndPanAttribute]{zoomAndPan}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=PreserveAspectRatioAttribute]{preserveAspectRatio}}, \code{\link[=ViewBoxAttribute]{viewBox}}, \code{\link[=ViewElementViewTargetAttribute]{viewTarget}}, \code{\link[=ZoomAndPanAttribute]{zoomAndPan}}}
 }
 }
 
@@ -20,5 +20,5 @@ A view is a defined way to view the image, like a zoom level or a detail view.
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

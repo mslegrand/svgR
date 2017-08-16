@@ -4,20 +4,26 @@
 \alias{TSpanElementYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Set tspan y-coordinate(s).
 }
 \section{Available Attribute Values}{
 
 \describe{
-\item{<list.of.coordinates>}{The corresponding list of absolute Y coordinates for the glyphs corresponding to the characters within this element. The processing rules for the 'y' attribute parallel the processing rules for the 'x' attribute.Animatable. yes.}
+\item{<coordinate>}{Specifies the absolute y-coordinate for the first n characters where n is the length of the vector x. (default is 0.)}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

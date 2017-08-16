@@ -4,20 +4,26 @@
 \alias{GlyphRefElementDXAttribute}
 \title{dx}
 \description{
-ToDo: Needs to be written!!!
+Set shifts in the current x-position prior to rendering.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{This value represents the relative X coordinate within the font's coordinate system for this glyph. The glyph is thus shifted by <number> units along the positive X axis within the font's coordinate system supplemental to the absolute X coordinate established by the 'x' attribute (either due to an explicit 'x' attribute or due to default value processing for the 'x' attribute). The font coordinate system is based on the em square model described in the Fonts chapter of CSS2 ([CSS2], chapter 15). If the attribute is not specified, the effect is as if the attribute were set to "0".Animatable. no.}
+\item{<numeric>}{Specifies an x-shift for this glyph using the font's coordinate system for this glyph.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

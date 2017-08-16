@@ -4,26 +4,25 @@
 \alias{ImageElementWHAttribute}
 \title{wh}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning height and width
 }
 \section{Combines}{
 
-\code{\link[=ImageElementHeightAttribute]{height}}, \code{\link[=ImageElementWidthAttribute]{width}}
+\code{\link[=ImageElementWHAttribute]{height}}, \code{\link[=ImageElementWHAttribute]{width}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{wh=c(value.HEIGHT,value.WIDTH)}
-\item{and}{height = value.HEIGHT; width = value.WIDTH}
+wh =v is equivalent to  height=v[1], width=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

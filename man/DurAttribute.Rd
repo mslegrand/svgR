@@ -4,15 +4,21 @@
 \alias{DurAttribute}
 \title{dur}
 \description{
-ToDo: Needs to be written!!!
+Governs the simple duration.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{Clock.value}{Specifies the length of the simple duration in presentation time. Value must be greater than 0.}
-\item{media}{Specifies the simple duration as the intrinsic media duration. This is only valid for elements that define media. (For SVG's animation elements, if 'media' is specified, the attribute will be ignored.)}
-\item{indefinite}{Specifies the simple duration as indefinite.}
+\item{<clock-value>}{Specifies the length of the simple duration in presentation time. This value must be greater than 0. (The default unis is in seconds)}
+\item{\emph{'media'}}{Specifies the simple duration as the intrinsic media duration.}
+\item{\emph{'indefinite'}}{Specifies the simple duration as \emph{indefinite}, that is the animation is to continue indefinitely.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -21,5 +27,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

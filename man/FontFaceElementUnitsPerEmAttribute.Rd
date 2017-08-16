@@ -4,20 +4,26 @@
 \alias{FontFaceElementUnitsPerEmAttribute}
 \title{units.per.em}
 \description{
-ToDo: Needs to be written!!!
+Sets the the number of coordinate units along the sides the em square of the glyph design grid
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'units.per.em' descriptor within an font.face rule. The number of coordinate units on the em square, the size of the design grid on which glyphs are laid out. This value is almost always necessary as nearly every other attribute requires the definition of a design grid. If the attribute is not specified, the effect is as if a value of '1000' were specified.Animatable. no.}
+\item{<numeric>}{Specifies the number of coordinate units on an em square. (Default = 1000)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

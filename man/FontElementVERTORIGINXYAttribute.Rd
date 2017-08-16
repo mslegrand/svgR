@@ -4,26 +4,25 @@
 \alias{FontElementVERTORIGINXYAttribute}
 \title{vert.origin.xy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning vert-origin-x and vert-origin-y
 }
 \section{Combines}{
 
-\code{\link[=FontElementVertOriginXAttribute]{vert.origin.x}}, \code{\link[=FontElementVertOriginYAttribute]{vert.origin.y}}
+\code{\link[=FontElementVERTORIGINXYAttribute]{vert.origin.x}}, \code{\link[=FontElementVERTORIGINXYAttribute]{vert.origin.y}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{vert.origin.xy=c(value.VERT.ORIGIN.X,value.VERT.ORIGIN.Y)}
-\item{and}{vert.origin.x = value.VERT.ORIGIN.X; vert.origin.y = value.VERT.ORIGIN.Y}
+vert-origin-xy =v is equivalent to  vert-origin-x=v[1], vert-origin-y=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font]{font}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font]{font}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

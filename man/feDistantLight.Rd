@@ -2,15 +2,15 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feDistantLight}
 \alias{feDistantLight}
-\title{A Primitive Filter Element that defines a distant light source}
+\title{A primitive filter element that defines a distant light source}
 \description{
 This filter primitive define a distant light source that can be used within a lighting filter primitive : <fediffuselighting> or <fespecularlighting>.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=feDistantLightAzimuthAttribute]{azimuth}}, \code{\link[=feDistantLightElevationAttribute]{elevation}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=feDistantLightAzimuthAttribute]{azimuth}}, \code{\link[=feDistantLightElevationAttribute]{elevation}}}
 }
 }
 
@@ -20,5 +20,5 @@ This filter primitive define a distant light source that can be used within a li
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

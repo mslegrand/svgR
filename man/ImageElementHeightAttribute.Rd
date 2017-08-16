@@ -4,20 +4,27 @@
 \alias{ImageElementHeightAttribute}
 \title{height}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the rectangular region into which the referenced document is placed.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The height of the rectangular region into which the referenced document is placed. A negative value is an error (see Error processing). A value of zero disables rendering of the element.Animatable. yes.}
+\item{<length>}{Specifies the \emph{height} of the rectangular region into which the image element is to be placed.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=image]{image}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,27 @@
 \alias{AltGlyphElementDYAttribute}
 \title{dy}
 \description{
-ToDo: Needs to be written!!!
+Set shifts in the current y-position prior to rendering.
 }
 \section{Available Attribute Values}{
 
+The value  represents one or more lengths, given as a vector.
 \describe{
-\item{<list.of.lengths>}{The corresponding relative Y coordinates for rendering the 'altGlyph' element.Animatable. yes.}
+\item{<length>[N]}{Specifies a sequence of  the y-shifts values for the \emph{altGlyph} element. If rendering only unicode characters inside an \strong{altGlyph} element, then this specifies the absolute y-shift for the first n characters where n is the length of the dy-vector . If rendering alternate \emph{glyphs}, then dy[1] specifies a y-shift of the current text position, while the remainder, dy[-1], is ignored.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

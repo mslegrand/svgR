@@ -4,20 +4,26 @@
 \alias{GlyphElementUnicodeAttribute}
 \title{unicode}
 \description{
-ToDo: Needs to be written!!!
+Sets a string of Unicode characters that are to correspond to this glyph.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{One or more Unicode characters indicating the sequence of Unicode characters which corresponds to this glyph. If a character is provided, then this glyph corresponds to the given Unicode character. If multiple characters are provided, then this glyph corresponds to the given sequence of Unicode characters. One use of a sequence of characters is ligatures. For example, if unicode="ffl", then the given glyph will be used to render the sequence of characters "f", "f", and "l". It is often useful to refer to characters using XML character references expressed in hexadecimal notation or decimal notation. For example, unicode="ffl" could be expressed as XML character references in hexadecimal notation as unicode="&#x66;&#x66;&#x6c;" or in decimal notation as unicode="&#102;&#102;&#108;". The 'unicode' attribute contributes to the process for deciding which glyph(s) are used to represent which character(s). See glyph selection rules. If the 'unicode' attribute is not provided for a given 'glyph', then the only way to use this glyph is via an 'altGlyph' reference.Animatable. no.}
+\item{<string>}{Specifies one or more Unicode characters indicating the sequence of Unicode characters which corresponds to this \emph{glyph.}}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{FontFaceElementCapHeightAttribute}
 \title{cap.height}
 \description{
-ToDo: Needs to be written!!!
+Sets the height of the uppercase glyphs of the fon. The height is measured in terms of the font coordinate system.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'cap.height' descriptor within an font.face rule. The height of uppercase glyphs in the font within the font coordinate system.Animatable. no.}
+\item{<numeric>}{Specifies the height of uppercase \emph{glyphs} of the font using \emph{units per em}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

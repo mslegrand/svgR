@@ -4,25 +4,27 @@
 \alias{baseline-shift-presentationAttribute}
 \title{baseline.shift}
 \description{
-ToDo: Needs to be written!!!
+Governs shifing of the base-line relative to the dominant baseline of the parent.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{baseline}{**ToDo!!!** }
-\item{sub}{**ToDo!!!** }
-\item{super}{**ToDo!!!** }
-\item{<percentage>}{**ToDo!!!** }
-\item{<length>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<length>}{Specifies to shift the baseline by the given amount of length.}
+\item{<percentage>}{Specifies to shift the baseline by the amount given as  percentage of the line-height of text.}
+\item{\emph{'\emph{'baseline'}'}}{Specifies a zero baseline shift, than is no shifting of the baseline.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to Inherit the \emph{baseline-shift} from the parent of this element..}
+\item{\emph{'\emph{'sub'}'}}{Specifies to shift the baseline to the subscript position}
+\item{\emph{'\emph{'super'}'}}{Specifies to shift the baseline to the superscript position}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

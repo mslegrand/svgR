@@ -4,20 +4,21 @@
 \alias{CursorElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to a cursor image element or cursor image file.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<funciri>}{A Functional IRI reference to the file or element which provides the image of the cursor.Animatable. yes.}
+\item{<FUNCIRI>}{Specifies a reference to the cursor image. The reference is in the form of a A Functional \emph{IRI} pointing to a file or element.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=cursor]{cursor}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=cursor]{cursor}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

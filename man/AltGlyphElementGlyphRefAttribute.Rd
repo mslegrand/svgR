@@ -4,20 +4,26 @@
 \alias{AltGlyphElementGlyphRefAttribute}
 \title{glyphRef}
 \description{
-ToDo: Needs to be written!!!
+Sets the alt-glyph reference identifier.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{The glyph identifier, the format of which is dependent on the 'format' of the given font. (Same meaning as the 'glyphRef' attribute on the 'glyphRef' element.)Animatable. no.}
+\item{<string>}{Specifies a \emph{glyph} identifier. The format of the font will determine the \emph{glyph} identifier format.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

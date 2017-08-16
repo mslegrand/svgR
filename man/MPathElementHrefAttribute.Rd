@@ -4,20 +4,26 @@
 \alias{MPathElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to the path element that is used the path motion for animateMotion.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference to the 'path' element which defines the motion path.Animatable. no.}
+\item{<IRI>}{Specifies an \emph{IRI} reference to the path element to be used to define the path motion.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=mpath]{mpath}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=mpath]{mpath}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

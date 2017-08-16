@@ -4,20 +4,27 @@
 \alias{TSpanElementDYAttribute}
 \title{dy}
 \description{
-ToDo: Needs to be written!!!
+Set shifts in the current y-position prior to rendering.
 }
 \section{Available Attribute Values}{
 
+The value  represents one or more lengths, given as a vector.
 \describe{
-\item{<list.of.lengths>}{The corresponding list of relative Y coordinates for the characters within the 'tspan' element. The processing rules for the 'dy' attribute parallel the processing rules for the 'dx' attribute.Animatable. yes.}
+\item{<length>[N]}{Specifies a sequence of y-shifts starting with the current text position for the characters within this \strong{tspan} or any of its descendants}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Text Content Elements}}{\code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

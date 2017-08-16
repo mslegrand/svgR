@@ -4,13 +4,20 @@
 \alias{LinearGradientElementY1Attribute}
 \title{y1}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinate of the starting point for a linear gradient.
 }
 \section{Available Attribute Values}{
 
+The value represents a coordinate.
 \describe{
-\item{<coordinate>}{See 'x1'. If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. yes.}
+\item{<coordinate>}{Specifies the y-coordinate of the starting point of the \emph{gradient-vector} of a \strong{linearGradient element}. Can be numeric or percentage.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=linearGradient]{linearGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

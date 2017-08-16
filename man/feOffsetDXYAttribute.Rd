@@ -4,18 +4,17 @@
 \alias{feOffsetDXYAttribute}
 \title{dxy}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning dx and dy
 }
 \section{Combines}{
 
-\code{\link[=feOffsetDxAttribute]{dx}}, \code{\link[=feOffsetDyAttribute]{dy}}
+\code{\link[=feOffsetDXYAttribute]{dx}}, \code{\link[=feOffsetDXYAttribute]{dy}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{dxy=c(value.DX,value.DY)}
-\item{and}{dx = value.DX; dy = value.DY}
+dxy =v is equivalent to  dx=v[1], dy=v[2]
 }
 }
 
@@ -25,5 +24,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feOffset]{feOffset}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

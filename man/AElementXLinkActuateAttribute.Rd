@@ -4,20 +4,26 @@
 \alias{AElementXLinkActuateAttribute}
 \title{xlink.actuate}
 \description{
-ToDo: Needs to be written!!!
+For XLink-aware processors, governs the conditions of loading the linked resource.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{onRequest}{This attribute provides documentation to XLink.aware processors that an application should traverse from the starting resource to the ending resource only on a post.loading event triggered for the purpose of traversal. Refer to the XML Linking Language (XLink) [XLINK]. Animatable. no.}
+\item{\emph{'onRequest'}}{Specifies for Xlink-aware processors to perform only on a trigger of post-loading event trigger, a traversal from the starting resource to the ending resource.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

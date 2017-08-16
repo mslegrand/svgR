@@ -4,20 +4,27 @@
 \alias{feSpotLightSpecularExponentAttribute}
 \title{specularExponent}
 \description{
-ToDo: Needs to be written!!!
+Sets the exponent controlling the focus of the spot light.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Exponent value controlling the focus for the light source. If the attribute is not specified, then the effect is as if a value of 1 were specified.Animatable. yes.}
+\item{<number>}{Specifies the \emph{specular exponent}, which controls the shininess 0 is essentially ambient light, infinity approaching a mirror like surface. (Default=1).}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

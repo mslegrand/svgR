@@ -4,20 +4,26 @@
 \alias{GlyphElementHorizAdvXAttribute}
 \title{horiz.adv.x}
 \description{
-ToDo: Needs to be written!!!
+Sets the amount of horizontal advance to after rendering the given horizontally orientated glyph.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The horizontal advance after rendering the glyph in horizontal orientation. If the attribute is not specified, the effect is as if the attribute were set to the value of the font's 'horiz.adv.x' attribute. Glyph widths are required to be non.negative, even if the glyph is typically rendered right.to.left, as in Hebrew and Arabic scripts.Animatable. no.}
+\item{<number>}{Specifies what the default horizontal advance should be after rendering in a horizontal orientation. Needs to be non-negative.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

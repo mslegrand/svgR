@@ -19,4 +19,3 @@ returns character vector representing a rgb color
 \description{
 convert to rgb representation
 }
-

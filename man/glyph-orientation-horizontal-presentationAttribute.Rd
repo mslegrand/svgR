@@ -4,22 +4,23 @@
 \alias{glyph-orientation-horizontal-presentationAttribute}
 \title{glyph.orientation.horizontal}
 \description{
-ToDo: Needs to be written!!!
+Controls glyph orientation when the inline-progression-direction is horizontal
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{<angle>}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<angle>}{Sets the angle of orientation (restricted to 0, 90, 180, and 270 degrees).}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the glyph orientation  from the  parent.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,12 +4,16 @@
 \alias{lighting-color-presentationAttribute}
 \title{lighting.color}
 \description{
-ToDo: Needs to be written!!!
+Governs the color of the light source for filter primitives feDiffuseLighting and feSpecularLighting.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{currentColor |<color> [<icccolor>] | inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{<color> [<icccolor>]}{Sets the color of the lighting. The color may be given in any one of 3 ways: name (i.e. red), numeric (#f00 or #ff0000) or as ab rgb (rgb(255,0,0)).}
+\item{\emph{'\emph{'currentColor'}'}}{Specifes to use the \emph{currentColor} for the light color. The current color is the value of the color specified by the \emph{color} property.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies inheriting the lighting color from the parent.}
 }
 }
 
@@ -19,5 +23,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feDiffuseLighting]{feDiffuseLighting}}, \code{\link[=feSpecularLighting]{feSpecularLighting}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

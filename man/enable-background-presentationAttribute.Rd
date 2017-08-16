@@ -4,21 +4,25 @@
 \alias{enable-background-presentationAttribute}
 \title{enable.background}
 \description{
-ToDo: Needs to be written!!!
+Governs the accumulation of background images of container elements.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{accumulate | new [ <x> <y> <width> <height> ] | inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'accumulate'}'}}{Directive to render to a 'background image canvas' if one exists ( previously created by an ancestor invoking enable-background=new ).  This is in addition to the rendering to the target device.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies the to inherit the background enable status from the parent.}
+\item{\emph{'\emph{'new [ <x> <y> <width> <height> ]'}'}}{Specifies the creation of  a new  'background image canvas'  to overlay any existing one ( exists by way of an ancestor) and render to that. This is in addition to the rendering to the target device.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=glyph]{glyph}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=glyph]{glyph}}, \code{\link[=marker]{marker}}, \code{\link[=mask]{mask}}, \code{\link[=missing-glyph]{missing.glyph}}, \code{\link[=pattern]{pattern}}, \code{\link[=switch]{switch}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=defs]{defs}}, \code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=symbol]{symbol}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

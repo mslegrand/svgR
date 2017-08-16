@@ -4,13 +4,20 @@
 \alias{feCompositeK1Attribute}
 \title{k1}
 \description{
-ToDo: Needs to be written!!!
+Sets the value to be used for k1 when the composite operator is arithmetic.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Only applicable if operator="arithmetic". If the attribute is not specified, the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<numeric>}{Specifies the \emph{k1} coefficient for the \emph{arithmetic composite operator}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feComposite]{feComposite}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

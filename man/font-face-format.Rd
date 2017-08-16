@@ -3,23 +3,23 @@
 \name{font-face-format}
 \alias{font-face-format}
 \alias{font.face.format}
-\title{An Element to define the font fac}
+\title{An element for specifing the font face format.}
 \description{
 The font-face-format element describes the type of font referenced by its parent <font-face-uri>.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{unclassified}}{\code{\link[=FontFaceFormatElementStringAttribute]{string}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=FontFaceFormatElementStringAttribute]{string}}}
 }
 }
 
 \section{Available Content Elements (Unnamed Parameters)}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{Empty.}}
+{No Content Elements Applicable}{!}
 }
 }
-\keyword{element}
 
+\keyword{element}

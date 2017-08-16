@@ -4,20 +4,22 @@
 \alias{TextPathElementSpacingAttribute}
 \title{spacing}
 \description{
-ToDo: Needs to be written!!!
+Governs the spacing of individual glyphs when rendering along a given path.
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{auto | exact}{Indicates how the user agent should determine the spacing between glyphs that are to be rendered along a path. A value of exact indicates that the glyphs should be rendered exactly according to the spacing rules as specified in Text on a path layout rules. A value of auto indicates that the user agent should use text.on.a.path layout algorithms to adjust the spacing between glyphs in order to achieve visually appealing results. If the attribute is not specified, the effect is as if a value of exact were specified.Animatable. yes.}
+\item{\emph{'exact'}}{Specifies to the user agent the spacing between _glyphs_ that are to be rendered along a path to be rendered exactly without any adjustment along the path.}
+\item{\emph{'auto'}}{Specifies for the user agent to adjust the spacing between \emph{glyphs} using a \emph{text-on-a-path layout algorithm}. The intension is to create a better visual apeal.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=textPath]{textPath}}}
+\item{\emph{Text Content Elements}}{\code{\link[=textPath]{textPath}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

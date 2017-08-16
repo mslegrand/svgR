@@ -4,13 +4,19 @@
 \alias{OnEndEventAttribute}
 \title{onend}
 \description{
-ToDo: Needs to be written!!!
+Sets the script to execute when an end event is received
 }
 \section{Available Attribute Values}{
 
+The value is a script, likely ecmascript (i.e.  javascript).
 \describe{
-\item{<anything>}{onrepeat = "<anything>"}
+\item{<script>}{Specifies what to execute when a \emph{endEvent} event is fired. An \emph{endEvent} occurs at the end of an animation.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +25,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

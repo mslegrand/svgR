@@ -4,26 +4,25 @@
 \alias{UseElementWHAttribute}
 \title{wh}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning height and width
 }
 \section{Combines}{
 
-\code{\link[=UseElementHeightAttribute]{height}}, \code{\link[=UseElementWidthAttribute]{width}}
+\code{\link[=UseElementWHAttribute]{height}}, \code{\link[=UseElementWHAttribute]{width}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{wh=c(value.HEIGHT,value.WIDTH)}
-\item{and}{height = value.HEIGHT; width = value.WIDTH}
+wh =v is equivalent to  height=v[1], width=v[2]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=use]{use}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

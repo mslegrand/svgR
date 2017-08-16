@@ -4,20 +4,26 @@
 \alias{FontFaceElementFontFamilyAttribute}
 \title{font.family}
 \description{
-ToDo: Needs to be written!!!
+Sets a prioritized list of font families.  This instructs the user agent to use  first available font in the list.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<string>}{Same syntax and semantics as the 'font.family' descriptor within an font.face rule.Animatable. no.}
+\item{<character>[N]}{Specifies, as a character vector, one or more font family names.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

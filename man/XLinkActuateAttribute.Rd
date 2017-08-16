@@ -4,13 +4,19 @@
 \alias{XLinkActuateAttribute}
 \title{xlink.actuate}
 \description{
-ToDo: Needs to be written!!!
+For XLink-aware processors, governs the conditions of loading the linked resource.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{onLoad}{This attribute is provided for backwards compatibility with SVG 1.1. It provides documentation to XLink.aware processors. Refer to the XML Linking Language (XLink) [XLINK]. Animatable. no.}
+\item{\emph{'onLoad'}}{Specifies onLoad for Xlink-aware processors.This attribute is provided for backwards compatibility with \emph{SVG 1.1.}}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -18,10 +24,11 @@ ToDo: Needs to be written!!!
 \describe{
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}, \code{\link[=set]{set}}}
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feImage]{feImage}}}
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
-\item{\emph{Unclassfied:}}{\code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=image]{image}}, \code{\link[=mpath]{mpath}}, \code{\link[=pattern]{pattern}}, \code{\link[=script]{script}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=pattern]{pattern}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=color-profile]{color.profile}}, \code{\link[=cursor]{cursor}}, \code{\link[=filter]{filter}}, \code{\link[=font-face-uri]{font.face.uri}}, \code{\link[=glyphRef]{glyphRef}}, \code{\link[=mpath]{mpath}}, \code{\link[=script]{script}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

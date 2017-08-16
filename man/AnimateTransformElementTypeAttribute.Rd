@@ -4,13 +4,23 @@
 \alias{AnimateTransformElementTypeAttribute}
 \title{type}
 \description{
-ToDo: Needs to be written!!!
+Governs the type of transformation which is to have its values change over time.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{translate | scale | rotate | skewX | skewY}{Indicates the type of transformation which is to have its values change over time. If the attribute is not specified, then the effect is as if a value of 'translate' were specified.}
+\item{\emph{'translate'}}{Specifies a translational transform}
+\item{\emph{'scale'}}{Specifies a scaling transform}
+\item{\emph{'rotate'}}{Specifies a rotational transform}
+\item{\emph{'skewX'}}{Specifies a skew transform along the X axis}
+\item{\emph{'skewY'}}{Specifies a skew transform along the Y axis}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -19,5 +29,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

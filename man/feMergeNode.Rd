@@ -2,14 +2,15 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feMergeNode}
 \alias{feMergeNode}
-\title{Element used to wrap a filter primitive prior to being used by femerge}
+\title{An element used to wrap input prior to being used by femerge}
 \description{
-The feMergeNode takes the result of another filter to be processed by its parent <femerge>.
+This is a simple  wrapoer input to be processed by its parent <femerge>.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Unclassified}}{\code{\link[=FilterPrimitiveIn1Attribute]{in1}}}
 }
 }
 
@@ -19,5 +20,5 @@ The feMergeNode takes the result of another filter to be processed by its parent
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

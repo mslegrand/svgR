@@ -4,20 +4,26 @@
 \alias{FontFaceElementStrikeThroughThicknessAttribute}
 \title{strikethrough.thickness}
 \description{
-ToDo: Needs to be written!!!
+Sets the preferred thickness using units from the font-coordinate system tp render a strikethrough.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The ideal thickness of a strike.through, expressed as a length within the font coordinate system.Animatable. no.}
+\item{<number>}{Specifies, in font coordinates, the intended \emph{strikethrough} thickness.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

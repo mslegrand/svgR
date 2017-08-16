@@ -4,12 +4,14 @@
 \alias{feTurbulenceStitchTilesAttribute}
 \title{stitchTiles}
 \description{
-ToDo: Needs to be written!!!
+Governs whether or not to stitch the tiles together when performing the turbulence operation..
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{stitch | noStitch}{If stitchTiles="noStitch", no attempt it made to achieve smooth transitions at the border of tiles which contain a turbulence function. Sometimes the result will show clear discontinuities at the tile borders. If stitchTiles="stitch", then the user agent will automatically adjust baseFrequency.x and baseFrequency.y values such that the feTurbulence node's width and height (i.e., the width and height of the current subregion) contains an integral number of the Perlin tile width and height for the first octave. The baseFrequency will be adjusted up or down depending on which way has the smallest relative (not absolute) change as follows. Given the frequency, calculate lowFreq=floor(width*frequency)/width and hiFreq=ceil(width*frequency)/width. If frequency/lowFreq < hiFreq/frequency then use lowFreq, else use hiFreq. While generating turbulence values, generate lattice vectors as normal for Perlin Noise, except for those lattice points that lie on the right or bottom edges of the active area (the size of the resulting tile). In those cases, copy the lattice vector from the opposite edge of the active area. If attribute 'stitchTiles' is not specified, then the effect is as if a value of noStitch were specified. Animatable. yes.}
+\item{\emph{'stitch'}}{Specifies to the user agent to adjust  \emph{x-baseFrequency} \eqn{f_x} and \emph{y-baseFrequency} \eqn{f_y} values in such a way as to maintain a smooth transition at the border of the tiles containing the turbulence.}
+\item{\emph{'noStitch'}}{Specifies to the user agent to make no attempt to achieve smooth transitions at the borders of the tiles which contain a turbulence function. (Default)}
 }
 }
 
@@ -19,5 +21,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Filter Primitive Elements}}{\code{\link[=feTurbulence]{feTurbulence}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

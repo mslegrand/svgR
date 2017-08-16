@@ -2,18 +2,18 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{feFlood}
 \alias{feFlood}
-\title{A Filter Primitive Element that floods with a color}
+\title{A filter primitive element that floods with a color}
 \description{
 The filter fills the filter subregion with the color and opacity defined by flood-color and flood-opacity.
 }
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{combining attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
-\item{\emph{presentation attributes}}{\code{\link[=color-presentationAttribute]{color}}, \code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}, \code{\link[=flood-color-presentationAttribute]{flood.color}}, \code{\link[=flood-opacity-presentationAttribute]{flood.opacity}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=FilterPrimitiveWHAttribute]{wh}}, \code{\link[=FilterPrimitiveXYAttribute]{xy}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=FilterPrimitiveHeightAttribute]{height}}, \code{\link[=FilterPrimitiveResultAttribute]{result}}, \code{\link[=FilterPrimitiveWidthAttribute]{width}}, \code{\link[=FilterPrimitiveXAttribute]{x}}, \code{\link[=FilterPrimitiveYAttribute]{y}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=color-presentationAttribute]{color}}, \code{\link[=color-interpolation-filters-presentationAttribute]{color.interpolation.filters}}, \code{\link[=flood-color-presentationAttribute]{flood.color}}, \code{\link[=flood-opacity-presentationAttribute]{flood.opacity}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=StyleAttribute]{style}}}
 }
 }
 
@@ -23,5 +23,5 @@ The filter fills the filter subregion with the color and opacity defined by floo
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=set]{set}}}
 }
 }
-\keyword{element}
 
+\keyword{element}

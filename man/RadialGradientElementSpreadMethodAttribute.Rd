@@ -4,12 +4,15 @@
 \alias{RadialGradientElementSpreadMethodAttribute}
 \title{spreadMethod}
 \description{
-ToDo: Needs to be written!!!
+Governs the behaviour that should occur if the gradient starts or ends inside the bounds of the target rectangle.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{pad | reflect | repeat}{Indicates what happens if the gradient starts or ends inside the bounds of the object(s) being painted by the gradient. Has the same values and meanings as the 'spreadMethod' attribute on 'linearGradient' element.Animatable. yes.}
+\item{\emph{'pad'}}{Specifies to extend the painting beyond the \emph{outermost-circle} of the \strong{radialGradient}, by using terminal color of the outermost circle. (Default)}
+\item{\emph{'reflect'}}{Specifes to extend the painting beyond the \emph{outermost-circle} of the \strong{radialGradient}, by reflecting the gradient pattern. The reflections are continued until the entire gradient region is filled. For example, we might have a pattern of red white blue (red at the \emph{focus}, blue at the \emph{outermost-circle}) and then observe: red white blue blue white red red white blue.}
+\item{\emph{'repeat'}}{Specifes to extend the painting beyond the \emph{outermost-circle} of the \strong{radialGradient}, by repeating the gradient pattern. The repetitions are continued until the entire gradient region is filled. For example, we might have a pattern of red white blue (red at the \emph{focus}, blue at the \emph{outermost-circle}) and then observe: red white blue red white blue red white blue.}
 }
 }
 
@@ -19,5 +22,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Gradient Elements}}{\code{\link[=radialGradient]{radialGradient}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

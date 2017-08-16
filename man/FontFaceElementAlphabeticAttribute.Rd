@@ -4,20 +4,26 @@
 \alias{FontFaceElementAlphabeticAttribute}
 \title{alphabetic}
 \description{
-ToDo: Needs to be written!!!
+Sets the alignment coordinate for glyphs to achieve an alphabetic baseline alignment
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'baseline' descriptor within an font.face rule. For horizontally oriented glyph layouts, indicates the alignment coordinate for glyphs to achieve alphabetic baseline alignment. The value is an offset in the font coordinate system.Animatable. no.}
+\item{<number>}{Specifies an amount of alignment to be used to produce an ideographic baseline alignment, given that the \emph{glyphs} are  horizontally orientated.  The units of this value is the same as the units given by the font coordinate system.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

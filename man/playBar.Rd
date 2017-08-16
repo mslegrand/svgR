@@ -20,4 +20,3 @@ recommend placing immediately after the svgR call
 }
 \keyword{display}
 \keyword{helper}
-

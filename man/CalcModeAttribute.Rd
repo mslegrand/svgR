@@ -4,16 +4,22 @@
 \alias{CalcModeAttribute}
 \title{calcMode}
 \description{
-ToDo: Needs to be written!!!
+Governs the interpolation model for the animation.
 }
 \section{Available Attribute Values}{
 
+The value can be any one of the following:
 \describe{
-\item{discrete}{This specifies that the animation function will jump from one value to the next without any interpolation.}
-\item{linear}{Simple linear interpolation between values is used to calculate the animation function. Except for 'animateMotion', this is the default 'calcMode'.}
-\item{paced}{Defines interpolation to produce an even pace of change across the animation. This is only supported for the data types for which there is an appropriate distance function defined, which includes only scalar numeric types plus the types listed in Paced animation and complex types. If 'paced' is specified, any 'keyTimes' or 'keySplines' will be ignored. For 'animateMotion', this is the default 'calcMode'. Authors are discouraged from using paced animation on types that do not have a distance function defined, due to its unpredictable behavior in some user agents.}
-\item{spline}{Interpolates from one value in the 'values' list to the next according to a time function defined by a cubic Bzier spline. The points of the spline are defined in the 'keyTimes' attribute, and the control points for each interval are defined in the 'keySplines' attribute.}
+\item{\emph{'discrete'}}{Specifies a discrete jump to the next value without any intermediate transitioning.}
+\item{\emph{'linear'}}{Specifies an intermediate transitioning based on a linear interpolation across time from the starting value to the ending value. (This is the the default for all except for \emph{animateMotion})}
+\item{\emph{'paced'}}{Specifies an even paced intermediate transitioning. This is the default for \emph{animateMotion}.}
+\item{\emph{'spline'}}{Specifies an intermediate transitioning based on a cubic Bezier spline with points defined using the \emph{keyTimes} and \emph{keySplines} attributes.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
@@ -22,5 +28,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Animation Elements}}{\code{\link[=animate]{animate}}, \code{\link[=animateColor]{animateColor}}, \code{\link[=animateMotion]{animateMotion}}, \code{\link[=animateTransform]{animateTransform}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

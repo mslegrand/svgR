@@ -4,20 +4,27 @@
 \alias{TextElementDYAttribute}
 \title{dy}
 \description{
-ToDo: Needs to be written!!!
+Set shifts in the current y-position prior to rendering.
 }
 \section{Available Attribute Values}{
 
+The value  represents one or more lengths, given as a vector.
 \describe{
-\item{<list.of.lengths>}{Shifts in the current text position along the y.axis for the characters within this element or any of its descendants. Refer to the description of the 'dy' attribute on the 'tspan' element. If the attribute is not specified on this element or any of its descendants, no supplemental shifts along the y.axis will occur.Animatable. yes.}
+\item{<length>[N]}{Specifies a sequence of y-shifts starting with the current text position for the characters within this element or any of its descendants}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=text]{text}}}
+\item{\emph{Text Content Elements}}{\code{\link[=text]{text}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

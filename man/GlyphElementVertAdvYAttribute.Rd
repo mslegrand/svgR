@@ -4,20 +4,26 @@
 \alias{GlyphElementVertAdvYAttribute}
 \title{vert.adv.y}
 \description{
-ToDo: Needs to be written!!!
+Sets the amount to advance to occur after rendering this glyph, where both the orientation and the direction of advance are vertical.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The vertical advance after rendering a glyph in vertical orientation. If the attribute is not specified, the effect is as if the attribute were set to the value of the font's 'vert.adv.y' attribute.Animatable. no.}
+\item{<numeric>}{Specifies what the default vertical advance should be after rendering in a vertical orientation. Needs to be non-negative. Default is vert-adv-y of font.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=glyph]{glyph}}, \code{\link[=missing-glyph]{missing.glyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

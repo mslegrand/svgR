@@ -4,13 +4,20 @@
 \alias{EllipseElementRYAttribute}
 \title{ry}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-radius of the ellipse.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The y.axis radius of the ellipse. A negative value is an error (see Error processing). A value of zero disables rendering of the element.Animatable. yes.}
+\item{<length>}{Specifies the y-axis radius, \eqn{r_y} of the \strong{ellipse}. Note \eqn{r_y \geq 0} is required.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=ellipse]{ellipse}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

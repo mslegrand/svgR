@@ -4,20 +4,27 @@
 \alias{feDistantLightElevationAttribute}
 \title{elevation}
 \description{
-ToDo: Needs to be written!!!
+Sets the angle between the xy-plane and the vector from the origin to the light source.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric representing an angle in degrees.
 \describe{
-\item{<number>}{Direction angle for the light source from the XY plane towards the z axis, in degrees. Note the positive Z.axis points towards the viewer of the content. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<angle>}{Specifies the elevation angle (in degrees). The elevation angle is defined as the between the z-axis and the vector from the origin to the light source.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feDistantLight]{feDistantLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feDistantLight]{feDistantLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

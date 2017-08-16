@@ -4,13 +4,20 @@
 \alias{CircleElementRAttribute}
 \title{r}
 \description{
-ToDo: Needs to be written!!!
+Sets the radius of a circle.
 }
 \section{Available Attribute Values}{
 
+The value represents a length.
 \describe{
-\item{<length>}{The radius of the circle. A negative value is an error (see Error processing). A value of zero disables rendering of the element.Animatable. yes.}
+\item{<length>}{Specifies the radius, \eqn{r} of the \strong{circle}. Note: \eqn{r\geq0}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
@@ -19,5 +26,5 @@ ToDo: Needs to be written!!!
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

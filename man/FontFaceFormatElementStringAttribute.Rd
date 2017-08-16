@@ -4,20 +4,26 @@
 \alias{FontFaceFormatElementStringAttribute}
 \title{string}
 \description{
-ToDo: Needs to be written!!!
+Sets which  formats are supported by the given font.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<anything>}{The 'string' attribute is a hint to the user agent, and specifies a list of formats that the font referenced by the parent 'font.face.uri' element supports. The syntax of the attribute value is a format string as defined in CSS2, such as 'truetype'. Refer to the description of the 'src' descriptor in CSS2 for details on how the format hint is interpreted ([CSS2], section 15.3.5).Animatable. no.}
+\item{<character>[N]}{Specifies a list of formats supported by the referenced font. Examples are \emph{truedoc-pfr}, or \emph{opentype}.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face-format]{font.face.format}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face-format]{font.face.format}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

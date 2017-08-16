@@ -4,20 +4,27 @@
 \alias{UseElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to an element within this fragment to be used.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{A IRI reference to an element/fragment within an SVG document.Animatable. yes.}
+\item{<IRI>}{Specifies an element or fragment to use by way of an \emph{IRI} reference. \emph{IRI} should be contained within the same document.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=use]{use}}}
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=use]{use}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

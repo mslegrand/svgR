@@ -4,20 +4,26 @@
 \alias{AltGlyphElementHrefAttribute}
 \title{xlink.href}
 \description{
-ToDo: Needs to be written!!!
+Sets an IRI reference to either a glyph or altGlyphDef.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<iri>}{An IRI reference either to a 'glyph' element in an SVG document fragment or to an 'altGlyphDef' element. If the reference is to a 'glyph' element and that glyph is available, then that glyph is rendered instead of the character(s) that are inside of the 'altGlyph' element. If the reference is to an 'altGlyphDef' element, then if an appropriate set of alternate glyphs is located from processing the 'altGlyphDef' element, then those alternate glyphs are rendered instead of the character(s) that are inside of the 'altGlyph' element.Animatable. no.}
+\item{<IRI>}{Specifies an \emph{IRI} reference to either a glyph or an altGlyphDef.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

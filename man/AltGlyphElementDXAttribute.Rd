@@ -4,20 +4,27 @@
 \alias{AltGlyphElementDXAttribute}
 \title{dx}
 \description{
-ToDo: Needs to be written!!!
+Set shifts in the current x-position prior to rendering.
 }
 \section{Available Attribute Values}{
 
+The value  represents one or more lengths, given as a vector.
 \describe{
-\item{<list.of.lengths>}{The <length> values are processed in the same manner as the 'dx' attribute on the 'tspan' element, with the following exception. If the referenced alternate glyphs are rendered instead of the Unicode characters inside the 'altGlyph' element, then any relative X coordinates specified via an 'dx' attribute on this element or any ancestor 'text' or 'tspan' elements for Unicode characters 2 through n within the 'altGlyph' element are ignored. Any relative X coordinate specified via an 'dx' attribute on this element or any ancestor 'text' or 'tspan' elements for the first Unicode character within the 'altGlyph' element sets a new relative X coordinate for the current text position before rendering the first alternate glyph.Animatable. yes.}
+\item{<length>[N]}{Specifies the x-shifts values for the \strong{altGlyph} element. If rendering only unicode characters inside an \strong{altGlyph} element, then this specifies the absolute x-shift for the first n characters where n is the length of the dx-vector . If rendering alternate \emph{glyphs}, then dx[1] specifies a x-shift of the current text position, while the remainder, dx[-1], is ignored.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: No .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

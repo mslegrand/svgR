@@ -4,20 +4,27 @@
 \alias{feComponentTransferOffsetAttribute}
 \title{offset}
 \description{
-ToDo: Needs to be written!!!
+Sets the offset of the gamma function to be used when the component transfer type is gamma.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{When type="gamma", the offset of the gamma function. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<numeric>}{Specifies the \emph{offset} to be used to construct the transfer function when the type is \emph{gamma}.}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=feFuncA]{feFuncA}}, \code{\link[=feFuncB]{feFuncB}}, \code{\link[=feFuncG]{feFuncG}}, \code{\link[=feFuncR]{feFuncR}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

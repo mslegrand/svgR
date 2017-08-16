@@ -4,20 +4,26 @@
 \alias{SVGElementVersionAttribute}
 \title{version}
 \description{
-ToDo: Needs to be written!!!
+Sets the svg version number which this  fragment is based upon.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Indicates the SVG language version to which this document fragment conforms. In SVG 1.0 [SVG10], this attribute was fixed to the value '1.0'. For SVG 1.1, the attribute should have the value '1.1'.Animatable. no.}
+\item{<numeric>}{Specifies the \emph{SVG} language version.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Structural Elements}}{\code{\link[=svg]{svg}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=svg]{svg}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

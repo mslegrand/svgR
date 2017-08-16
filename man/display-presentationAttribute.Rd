@@ -4,40 +4,44 @@
 \alias{display-presentationAttribute}
 \title{display}
 \description{
-ToDo: Needs to be written!!!
+Governs whether an element or container will be rendered.
 }
 \section{Available Attribute Values}{
 
-\itemize{
-\item{inline}{**ToDo!!!** }
-\item{block}{**ToDo!!!** }
-\item{list-item}{**ToDo!!!** }
-\item{run-in}{**ToDo!!!** }
-\item{compact}{**ToDo!!!** }
-\item{marker}{**ToDo!!!** }
-\item{table}{**ToDo!!!** }
-\item{inline-table}{**ToDo!!!** }
-\item{table-row-group}{**ToDo!!!** }
-\item{table-header-group}{**ToDo!!!** }
-\item{table-footer-group}{**ToDo!!!** }
-\item{table-row}{**ToDo!!!** }
-\item{table-column-group}{**ToDo!!!** }
-\item{table-column}{**ToDo!!!** }
-\item{table-cell}{**ToDo!!!** }
-\item{table-caption}{**ToDo!!!** }
-\item{none}{**ToDo!!!** }
-\item{inherit}{**ToDo!!!** }
+
+
+\describe{
+\item{\emph{'\emph{'block'}'}}{Specifies a block display.}
+\item{\emph{'\emph{'compact'}'}}{Specifies a compack display.}
+\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the display from the parent.}
+\item{\emph{'\emph{'inline'}'}}{Specifies  the display to be \emph{inline}.}
+\item{\emph{'\emph{'inline-table'}'}}{Specifies  the display to be \emph{inline-table}.}
+\item{\emph{'\emph{'list-item'}'}}{Specifies  the display to be \emph{list-item}.}
+\item{\emph{'\emph{'marker'}'}}{Specifies  the display to be \emph{marker}.}
+\item{\emph{'\emph{'none'}'}}{Specifies not to render this element or its children.}
+\item{\emph{'\emph{'run-in'}'}}{Specifies  the display to be \emph{run-in}.}
+\item{\emph{'\emph{'table'}'}}{Specifies  the display to be \emph{table}.}
+\item{\emph{'\emph{'table-caption'}'}}{Specifies  the display to be \emph{table-caption}.}
+\item{\emph{'\emph{'table-cell'}'}}{Specifies  the display to be \emph{table-cell}.}
+\item{\emph{'\emph{'table-column'}'}}{Specifies  the display to be \emph{table-column}.}
+\item{\emph{'\emph{'table-column-group'}'}}{Specifies  the display to be \emph{table-column-group}.}
+\item{\emph{'\emph{'table-footer-group'}'}}{Specifies  the display to be \emph{table-footer-group}.}
+\item{\emph{'\emph{'table-header-group'}'}}{Specifies  the display to be \emph{table-header-group}.}
+\item{\emph{'\emph{'table-row'}'}}{Specifies  the display to be \emph{table-row}.}
+\item{\emph{'\emph{'table-row-group'}'}}{Specifies  the display to be \emph{table-row-group}.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
+\item{\emph{Graphics Referencing Elements}}{\code{\link[=image]{image}}, \code{\link[=use]{use}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=a]{a}}, \code{\link[=switch]{switch}}}
 \item{\emph{Shape Elements}}{\code{\link[=circle]{circle}}, \code{\link[=ellipse]{ellipse}}, \code{\link[=line]{line}}, \code{\link[=path]{path}}, \code{\link[=polygon]{polygon}}, \code{\link[=polyline]{polyline}}, \code{\link[=rect]{rect}}}
-\item{\emph{Structural Elements}}{\code{\link[=g]{g}}, \code{\link[=svg]{svg}}, \code{\link[=use]{use}}}
-\item{\emph{Text Content Child Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
-\item{\emph{Unclassfied:}}{\code{\link[=a]{a}}, \code{\link[=foreignObject]{foreignObject}}, \code{\link[=image]{image}}, \code{\link[=switch]{switch}}, \code{\link[=text]{text}}}
+\item{\emph{Structural Container Elements}}{\code{\link[=g]{g}}, \code{\link[=svg]{svg}}}
+\item{\emph{Text Content Elements}}{\code{\link[=altGlyph]{altGlyph}}, \code{\link[=text]{text}}, \code{\link[=text]{text}}, \code{\link[=textPath]{textPath}}, \code{\link[=tref]{tref}}, \code{\link[=tspan]{tspan}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=foreignObject]{foreignObject}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

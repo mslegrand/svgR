@@ -4,20 +4,27 @@
 \alias{feSpotLightYAttribute}
 \title{y}
 \description{
-ToDo: Needs to be written!!!
+Sets the y-coordinate of the spot light source.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Y location for the light source in the coordinate system established by attribute 'primitiveUnits' on the 'filter' element. If the attribute is not specified, then the effect is as if a value of 0 were specified.Animatable. yes.}
+\item{<number>}{Specifies the y-coordinate of the light source location with respect to the coordinates system on the filter produce by \emph{primitiveUnits}. (Default=0)}
 }
+}
+
+\section{Animatable}{
+
+Using:  \code{\link[=animate]{animate}}, \code{\link[=set]{set}} .
+Supports Additive: Yes .
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=feSpotLight]{feSpotLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=feSpotLight]{feSpotLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

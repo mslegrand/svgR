@@ -4,20 +4,26 @@
 \alias{GlyphRefElementDYAttribute}
 \title{dy}
 \description{
-ToDo: Needs to be written!!!
+Set shifts in the current y-position prior to rendering.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{The corresponding number of units within the font's coordinate system to shift the glyph along the positive Y axis relative to the absolute Y coordinate established by the 'y' attribute.Animatable. no.}
+\item{<number>}{Specifies a y-shift for this \emph{glyph} using the font's coordinate system for this glyph.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=glyphRef]{glyphRef}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=glyphRef]{glyphRef}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

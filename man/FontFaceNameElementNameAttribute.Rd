@@ -4,20 +4,26 @@
 \alias{FontFaceNameElementNameAttribute}
 \title{name}
 \description{
-ToDo: Needs to be written!!!
+Sets the name of the local font.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<anything>}{The 'name' attribute specifies the name of a local font. Unlike the syntax allowed between the parentheses of the local(...) clause in an font.face rule 'src' descriptor, the font name specified in this attribute is not surrounded in single or double quotes. Refer to the description of the 'src' descriptor in CSS2 for details on how the font name is interpreted ([CSS2], section 15.3.5).Animatable. no.}
+\item{<name>}{Specifies a name of a local font.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face-name]{font.face.name}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face-name]{font.face.name}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

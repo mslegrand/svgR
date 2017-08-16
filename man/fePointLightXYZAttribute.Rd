@@ -4,26 +4,25 @@
 \alias{fePointLightXYZAttribute}
 \title{xyz}
 \description{
-ToDo: Needs to be written!!!
+Shortcut for assigning x, y and z
 }
 \section{Combines}{
 
-\code{\link[=fePointLightXAttribute]{x}}, \code{\link[=fePointLightYAttribute]{y}}, \code{\link[=fePointLightZAttribute]{z}}
+\code{\link[=fePointLightXYZAttribute]{x}}, \code{\link[=fePointLightXYZAttribute]{y}}, \code{\link[=fePointLightXYZAttribute]{z}}
 }
 
 \section{Equivalence}{
 
 \describe{
-\item{}{xyz=c(value.X,value.Y,value.Z)}
-\item{and}{x = value.X; y = value.Y; z = value.Z}
+xyz =v is equivalent to  x=v[1], y=v[2], z=v[3]
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=fePointLight]{fePointLight}}}
+\item{\emph{Light Source Elements}}{\code{\link[=fePointLight]{fePointLight}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

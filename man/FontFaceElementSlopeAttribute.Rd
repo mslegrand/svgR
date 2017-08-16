@@ -4,20 +4,26 @@
 \alias{FontFaceElementSlopeAttribute}
 \title{slope}
 \description{
-ToDo: Needs to be written!!!
+Sets the vertical stroke angle of the font.
 }
 \section{Available Attribute Values}{
 
+The value is a numeric representing an angle in degrees.
 \describe{
-\item{<number>}{Same syntax and semantics as the 'slope' descriptor within an font.face rule. The vertical stroke angle of the font. Except for any additional information provided in this specification, the normative definition of the attribute is in CSS2 ([CSS2], section 15.3.6). If the attribute is not specified, the effect is as if a value of '0' were specified.Animatable. no.}
+\item{<angle>}{Specifies an angle in degrees from the vertical of the dominant vertical strokes of the font. (Default=0)}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

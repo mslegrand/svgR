@@ -4,20 +4,22 @@
 \alias{MaskElementMaskContentUnitsAttribute}
 \title{maskContentUnits}
 \description{
-ToDo: Needs to be written!!!
+Governs whether to interpret the units for coordinates of the contents of mask either as  as fractions of the bounding box (objectBoundingBox) or using the units inherited from current user coordinate system ( userSpaceOnUse).
 }
 \section{Available Attribute Values}{
 
+The value can be either of the one of the following:
 \describe{
-\item{userSpaceOnUse | objectBoundingBox}{Defines the coordinate system for the contents of the 'mask'. If maskContentUnits="userSpaceOnUse", the user coordinate system for the contents of the 'mask' element is the current user coordinate system in place at the time when the 'mask' element is referenced (i.e., the user coordinate system for the element referencing the 'mask' element via the 'mask' property). If maskContentUnits="objectBoundingBox", the user coordinate system for the contents of the 'mask' is established using the bounding box of the element to which the mask is applied. (See Object bounding box units.) If attribute 'maskContentUnits' is not specified, then the effect is as if a value of 'userSpaceOnUse' were specified.Animatable. yes.}
+\item{\emph{'userSpaceOnUse'}}{Specifies that the coordinate system for contents is given terms of the user coordinate system in effect at the time of \strong{mask} referencing.}
+\item{\emph{'objectBoundingBox'}}{Specifies that the coordinate system for contents is given terms of the bounding box of the object to which the \strong{mask} is applied.}
 }
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=mask]{mask}}}
+\item{\emph{Non-structural Container Elements}}{\code{\link[=mask]{mask}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

@@ -4,20 +4,26 @@
 \alias{FontFaceElementMathematicalAttribute}
 \title{mathematical}
 \description{
-ToDo: Needs to be written!!!
+Sets an offset within the font coordinate system to provide an alignment of a horizontally oriented glyph layout, with the goal of achieving an mathematical baseline alignment.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{<number>}{Same syntax and semantics as the 'mathline' descriptor within an font.face rule. For horizontally oriented glyph layouts, indicates the alignment coordinate for glyphs to achieve mathematical baseline alignment. The value is an offset in the font coordinate system.Animatable. no.}
+\item{<numeric>}{Specifies, in font coordinates, for horizontally orientated \emph{glyphs}, the alignment to produce an \emph{ideographic} baseline alignment.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=font-face]{font.face}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=font-face]{font.face}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

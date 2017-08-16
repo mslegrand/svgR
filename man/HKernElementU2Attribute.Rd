@@ -4,20 +4,26 @@
 \alias{HKernElementU2Attribute}
 \title{u2}
 \description{
-ToDo: Needs to be written!!!
+Sets the  second glyphs candidates.
 }
 \section{Available Attribute Values}{
 
+The value is defined as follows:
 \describe{
-\item{[<character> | <urange>] [, [<character> | <urange>] ]*}{Same as the 'u1' attribute, except that 'u2' specifies possible second glyphs in the kerning pair.Animatable. no.}
+\item{<glyph-unicode>[N]}{Specifies possible 2nd \emph{glyphs} in the \emph{kerning pair} using a vector of Unicode characters or Unicode ranges.}
 }
+}
+
+\section{Animatable}{
+
+Not Animatable
 }
 
 \section{Used by the Elements}{
 
 \describe{
-\item{\emph{Unclassfied:}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
+\item{\emph{Uncategorized Elements}}{\code{\link[=hkern]{hkern}}, \code{\link[=vkern]{vkern}}}
 }
 }
-\keyword{internal}
 
+\keyword{internal}

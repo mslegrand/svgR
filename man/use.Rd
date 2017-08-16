@@ -9,15 +9,15 @@ The use element takes nodes from within the SVG document, and duplicates them so
 \section{Available Attributes (Named Parameters)}{
 
 \describe{
-\item{\emph{animation event attributes}}{\code{\link[=OnLoadEventAttribute]{onload}}}
-\item{\emph{combining attributes}}{\code{\link[=UseElementWHAttribute]{wh}}, \code{\link[=UseElementXYAttribute]{xy}}}
-\item{\emph{conditional processing attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
-\item{\emph{core attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
-\item{\emph{filter primitive attributes}}{\code{\link[=UseElementHeightAttribute]{height}}, \code{\link[=UseElementWidthAttribute]{width}}, \code{\link[=UseElementXAttribute]{x}}, \code{\link[=UseElementYAttribute]{y}}}
-\item{\emph{graphical event attributes}}{\code{\link[=OnActivateEventAttribute]{onactivate}}, \code{\link[=OnClickEventAttribute]{onclick}}, \code{\link[=OnFocusInEventAttribute]{onfocusin}}, \code{\link[=OnFocusOutEventAttribute]{onfocusout}}, \code{\link[=OnLoadEventAttribute]{onload}}, \code{\link[=OnMouseDownEventAttribute]{onmousedown}}, \code{\link[=OnMouseMoveEventAttribute]{onmousemove}}, \code{\link[=OnMouseOutEventAttribute]{onmouseout}}, \code{\link[=OnMouseOverEventAttribute]{onmouseover}}, \code{\link[=OnMouseUpEventAttribute]{onmouseup}}}
-\item{\emph{presentation attributes}}{\code{\link[=clip-path-presentationAttribute]{clip.path}}, \code{\link[=clip-rule-presentationAttribute]{clip.rule}}, \code{\link[=color-interpolation-presentationAttribute]{color.interpolation}}, \code{\link[=color-rendering-presentationAttribute]{color.rendering}}, \code{\link[=cursor-presentationAttribute]{cursor}}, \code{\link[=display-presentationAttribute]{display}}, \code{\link[=filter-presentationAttribute]{filter}}, \code{\link[=mask-presentationAttribute]{mask}}, \code{\link[=opacity-presentationAttribute]{opacity}}, \code{\link[=pointer-events-presentationAttribute]{pointer.events}}, \code{\link[=visibility-presentationAttribute]{visibility}}}
-\item{\emph{unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=TransformAttribute]{transform}}}
-\item{\emph{xlink attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=UseElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
+\item{\emph{Animation Event Attributes}}{\code{\link[=OnLoadEventAttribute]{onload}}}
+\item{\emph{Complementary Attributes}}{\code{\link[=UseElementWHAttribute]{wh}}, \code{\link[=UseElementXYAttribute]{xy}}}
+\item{\emph{Conditional Processing Attributes}}{\code{\link[=RequiredExtensionsAttribute]{requiredExtensions}}, \code{\link[=RequiredFeaturesAttribute]{requiredFeatures}}, \code{\link[=SystemLanguageAttribute]{systemLanguage}}}
+\item{\emph{Core Attributes}}{\code{\link[=IDAttribute]{id}}, \code{\link[=XMLBaseAttribute]{xml.base}}, \code{\link[=XMLLangAttribute]{xml.lang}}, \code{\link[=XMLSpaceAttribute]{xml.space}}}
+\item{\emph{Filter Primitive Attributes}}{\code{\link[=UseElementHeightAttribute]{height}}, \code{\link[=UseElementWidthAttribute]{width}}, \code{\link[=UseElementXAttribute]{x}}, \code{\link[=UseElementYAttribute]{y}}}
+\item{\emph{Graphical Event Attributes}}{\code{\link[=OnActivateEventAttribute]{onactivate}}, \code{\link[=OnClickEventAttribute]{onclick}}, \code{\link[=OnFocusInEventAttribute]{onfocusin}}, \code{\link[=OnFocusOutEventAttribute]{onfocusout}}, \code{\link[=OnLoadEventAttribute]{onload}}, \code{\link[=OnMouseDownEventAttribute]{onmousedown}}, \code{\link[=OnMouseMoveEventAttribute]{onmousemove}}, \code{\link[=OnMouseOutEventAttribute]{onmouseout}}, \code{\link[=OnMouseOverEventAttribute]{onmouseover}}, \code{\link[=OnMouseUpEventAttribute]{onmouseup}}}
+\item{\emph{Presentation Attributes}}{\code{\link[=clip-path-presentationAttribute]{clip.path}}, \code{\link[=clip-rule-presentationAttribute]{clip.rule}}, \code{\link[=color-interpolation-presentationAttribute]{color.interpolation}}, \code{\link[=color-rendering-presentationAttribute]{color.rendering}}, \code{\link[=cursor-presentationAttribute]{cursor}}, \code{\link[=display-presentationAttribute]{display}}, \code{\link[=filter-presentationAttribute]{filter}}, \code{\link[=mask-presentationAttribute]{mask}}, \code{\link[=opacity-presentationAttribute]{opacity}}, \code{\link[=pointer-events-presentationAttribute]{pointer.events}}, \code{\link[=visibility-presentationAttribute]{visibility}}}
+\item{\emph{Unclassified}}{\code{\link[=ClassAttribute]{class}}, \code{\link[=ExternalResourcesRequiredAttribute]{externalResourcesRequired}}, \code{\link[=StyleAttribute]{style}}, \code{\link[=TransformAttribute]{transform}}}
+\item{\emph{Xlink Attributes}}{\code{\link[=XLinkActuateAttribute]{xlink.actuate}}, \code{\link[=XLinkArcRoleAttribute]{xlink.arcrole}}, \code{\link[=UseElementHrefAttribute]{xlink.href}}, \code{\link[=XLinkRoleAttribute]{xlink.role}}, \code{\link[=XLinkShowAttribute]{xlink.show}}, \code{\link[=XLinkTitleAttribute]{xlink.title}}, \code{\link[=XLinkTypeAttribute]{xlink.type}}}
 }
 }
 
@@ -28,5 +28,5 @@ The use element takes nodes from within the SVG document, and duplicates them so
 \item{\emph{Descriptive Elements}}{\code{\link[=desc]{desc}}, \code{\link[=metadata]{metadata}}, \code{\link[=title]{title}}}
 }
 }
-\keyword{element}
 
+\keyword{element}
