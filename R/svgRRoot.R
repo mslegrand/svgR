@@ -7,11 +7,10 @@ svgRRoot<-function( wh, args){
   namespaceDefinitions<- c(
     xmlns="http://www.w3.org/2000/svg",
     "xmlns:xlink"="http://www.w3.org/1999/xlink",
-    "xmlns:xlink"="http://www.w3.org/1999/xlink",
     "xmlns:ev"="http://www.w3.org/2001/xml-events"
   )
   
-  #args<-c(namespaceDefinitions,args)
+ 
   args <- promoteUnamedLists(args)
   attrs <- named(args)
   attrs <- comboParamHandler(attrs, list(wh = c("width", "height")))
