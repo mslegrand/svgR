@@ -51,7 +51,7 @@ svgR<-function( ... ){
     wh<-c(1150, 860)
   }
   
-  getRootWH<-function(){return(wh)} #I may need to make this into an environment!!!
+  #getRootWH<-function(){return(wh)} #I may need to make this into an environment!!!
   
   # extract width and height
   
