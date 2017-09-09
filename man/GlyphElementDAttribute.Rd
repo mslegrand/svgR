@@ -33,9 +33,9 @@ Name  \tab Values   \tab    Interpetion \cr
 'H','h'   \tab (x)+     \tab    Draw a horizontal line from the current point \cr
 'V','v'   \tab (y)+     \tab    Draw a vertical line from the current\cr
 'C','c'   \tab c(pt1,pt2,pt)+  \tab  Draw a cubic Bezier curve to pt with control points pt1,pt2, (x2,y2)\cr
-'S','s'   \tab c(pt2,pt))+  \tab  Draw a cubic Bézier to pt using pt2 as the second control pt (inheriting the first control point from a preceding Bézier)\cr
-'Q','q'   \tab c(pt1,pt))+  \tab  Draw a quadratic Bézier to pt using pt1 as the control pt \cr     
-'T','t'   \tab pt+ \tab Draw a quadratic Bézier curve to pt (inheriting the control from a preceding Bézier)\cr
+'S','s'   \tab c(pt2,pt))+  \tab  Draw a cubic Bezier to pt using pt2 as the second control pt (inheriting the first control point from a preceding Bezier)\cr
+'Q','q'   \tab c(pt1,pt))+  \tab  Draw a quadratic Bezier to pt using pt1 as the control pt \cr     
+'T','t'   \tab pt+ \tab Draw a quadratic Bezier curve to pt (inheriting the control from a preceding Bezier)\cr
 'A','a'  \tab c(rxy, theta, LargeArc, SweepRight, pt) \tab   Draw an arc the current point to the point pt, based on an ellipse of radii rxy, rotated by \eqn{\theta} degrees. \cr
       \tab                 \tab   Use 1 or 0 for TRUE or FALSE in the LargeArc, SweepRigh flags \cr
 'Z','z'     \tab \tab Closes the Path
