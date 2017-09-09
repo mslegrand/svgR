@@ -2,7 +2,7 @@
 % Please edit documentation in R/doc_ElePages.R
 \name{svg}
 \alias{svg}
-\title{A container element with it’s own viewpor used for gouping elements.}
+\title{A container element with it's own viewport used for gouping elements.}
 \description{
 A container element for graphical elements with it's own viewport and coordinate system.
 }

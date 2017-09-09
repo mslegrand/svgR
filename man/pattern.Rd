@@ -4,7 +4,7 @@
 \alias{pattern}
 \title{An element to create a specified pattern (used as fill),}
 \description{
-A pattern is used to fill or stroke an object using a pre-defined graphic object which can be replicated (""""tiled""""), at fixed intervals in x and y to cover the areas to be painted. Patterns are defined using the pattern element and then referenced by properties fill and stroke on a given graphics element to indicate that the given element shall be filled or stroked with the referenced pattern.
+A pattern is used to fill or stroke an object using a pre-defined graphic object which can be replicated (""tiled""), at fixed intervals in x and y to cover the areas to be painted. Patterns are defined using the pattern element and then referenced by properties fill and stroke on a given graphics element to indicate that the given element shall be filled or stroked with the referenced pattern.
 }
 \section{Available Attributes (Named Parameters)}{
 
