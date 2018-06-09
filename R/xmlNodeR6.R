@@ -48,17 +48,20 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
     
     xmlAttrs=function(){self$attrs},
     xmlChildren=function(){self$children},
+    # appends the given node
     appendNode=function(node){
       stopifnot(inherits(node,"XMLAbstractNode"))
       self$children<-c(children, node)
       invisible(self)
     },
+    # appends a single attribue with name=name and val=val
     appendAttr=function(name,val){
       stopifnot(inherits(name,"character"))
       self$attrs[[name]]<-val
       stopifnot(inherits(val,c("numeric", "character","NULL")))
       invisible(self)
     },
+    # appends child to childred
     addChildren=function(children){
       stopifnot(inherits(children,"list"))
 #       childrenIsValid<-sapply(nodeSet, function(n){
@@ -68,6 +71,7 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       self$children=c(self$children, children)
       invisible(self)
     },
+    # replaces children
     setChildren=function(children){
       stopifnot(inherits(children,"list"))
 #       childrenIsValid<-sapply(nodeSet, function(n){
@@ -77,6 +81,7 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       self$children= children
       invisible(self)
     },
+    # appends attrs to attributes attrs
     addAttributes=function(attrs){
       stopifnot(inherits(attrs,"list"))
       lapply(attrs, function(n){
@@ -85,6 +90,7 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       self$attrs=c(self$attrs, attrs)
       invisible(self)
     },
+    # replaces attributes with attrs ( a list of attibutes)
     setAttributes=function(attrs){
       stopifnot(inherits(attrs,"list"))
       lapply(attrs, function(n){
@@ -93,6 +99,7 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       self$attrs=attrs
       invisible(self)
     },
+   #locates a given node by attribute value pair
     findNode=function(attrName, attrValue){
       stopifnot(inherits(attrName,c("character")))
       stopifnot(inherits(attrValue,c("numeric", "character")))
@@ -108,6 +115,7 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       }
       return(NULL)
     },
+    # locates the parent node of the given srchNode
     findNodeParent=function(srchNode, parent=NULL){
       stopifnot(inherits(srchNode,"XMLAbstractNode"))
       if(identical(srchNode,self)){
@@ -121,6 +129,7 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       }
       return(NULL)
     },
+    # retieves all the nodes with the given attributeSet
     getNodeSet=function(attrName, attrValue){
       stopifnot(inherits(attrName,c("character")))
       stopifnot(inherits(attrValue,c("numeric", "character")))

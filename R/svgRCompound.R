@@ -28,7 +28,7 @@ toCompound<-function(f, envir=parent.frame()){
     bd0<-quote(list2env(svgR:::getEssentials(), environment()))
     body(f)<-as.call(c(as.name("{"),bd0, bd1))
     environment(f)<-envir
-    class(f)<-c(class(f),'Component')
+    class(f)<-c(class(f),'Compound')
   }
   f
 }
