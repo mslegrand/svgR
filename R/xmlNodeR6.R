@@ -48,33 +48,48 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
     
     xmlAttrs=function(){self$attrs},
     xmlChildren=function(){self$children},
-    # appends the given node
+    # appends the given node to children of self
     appendNode=function(node){
       stopifnot(inherits(node,"XMLAbstractNode"))
-      self$children<-c(children, node)
+      self$children<-c(self$children, node)
       invisible(self)
     },
-    # appends a single attribue with name=name and val=val
-    appendAttr=function(name,val){
+    # prepends the given node to children of self
+    prependNode=function(node){
+      stopifnot(inherits(node,"XMLAbstractNode"))
+      self$children<-c(node, self$children)
+      invisible(self)
+    },
+    # sets a single attribue with name=name and val=val
+    setAttr=function(name,val){
       stopifnot(inherits(name,"character"))
       self$attrs[[name]]<-val
       stopifnot(inherits(val,c("numeric", "character","NULL")))
       invisible(self)
     },
-    # appends child to childred
-    addChildren=function(children){
+    # appends children to children of self
+    appendChildren=function(children){
       stopifnot(inherits(children,"list"))
-#       childrenIsValid<-sapply(nodeSet, function(n){
+#       childrenIsValid<-sapply(children, function(n){
 #         self$validChild(n)
 #       })
 #       stopifnot(all(childrenIsValid))
       self$children=c(self$children, children)
       invisible(self)
     },
-    # replaces children
+    prependChildren=function(children){
+      stopifnot(inherits(children,"list"))
+      #       childrenIsValid<-sapply(children, function(n){
+      #         self$validChild(n)
+      #       })
+      #       stopifnot(all(childrenIsValid))
+      self$children=c(children, self$children)
+      invisible(self)
+    },
+    # replaces children of self
     setChildren=function(children){
       stopifnot(inherits(children,"list"))
-#       childrenIsValid<-sapply(nodeSet, function(n){
+#       childrenIsValid<-sapply(children, function(n){
 #         self$validChild(n)
 #       })
 #       stopifnot(all(childrenIsValid))

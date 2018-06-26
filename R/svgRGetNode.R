@@ -40,7 +40,7 @@
             #addAttributes(parentNode, .attrs=attrS, append=TRUE)
           }
           if(length(kids)>0){
-            sNode$addChildren(kids)
+            sNode$appendChildren(kids)
           }
           sNode
         }
@@ -66,7 +66,7 @@ getsafeNodeAttr<-function(attr.name, node){
     return(node$attrs[[attr.name]])
   } else {
     attr.id<-genId()
-    node$appendAttr(attr.name, attr.id)
+    node$setAttr(attr.name, attr.id)
   }
   return(attr.id)
 }
