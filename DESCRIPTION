@@ -1,7 +1,7 @@
 Package: svgR
 Type: Package
 Title: svgR is an R DSL to generate svg markup
-Version: 0.9.2.4
+Version: 0.9.2.5
 Date: 2018-26-08
 Author: M.S.Legrand
 Maintainer: M.S.Legrand <slegrand3.14@gmail.com>

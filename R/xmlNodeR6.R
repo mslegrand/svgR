@@ -67,6 +67,10 @@ XMLAbstractNode<-R6Class("XMLAbstractNode",
       stopifnot(inherits(val,c("numeric", "character","NULL")))
       invisible(self)
     },
+    getAttr=function(name){
+      stopifnot(inherits(name,"character"))
+      self$attrs[[name]]
+    },
     # appends children to children of self
     appendChildren=function(children){
       stopifnot(inherits(children,"list"))
