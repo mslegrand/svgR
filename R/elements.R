@@ -752,6 +752,13 @@ feFuncA<-function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncA")
@@ -770,6 +777,13 @@ feFuncB<-function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncB")
@@ -788,6 +802,13 @@ feFuncG<-function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncG")
@@ -806,6 +827,13 @@ feFuncR<-function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncR")
@@ -1224,7 +1252,7 @@ feColorMatrix<-function (...)
     "height"), xy = c("x", "y")))
     attrs <- mapCenteredXY(attrs)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "class"))
+        x, "($| )", sep = ""), "class values"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
             svgPreproc[["wsp-list"]](x)

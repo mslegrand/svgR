@@ -4,7 +4,7 @@
 # https://github.com/mslegrand/svgcomposeR_PrjBlder
 #
  eleDefs<-
- structure(list("font-face" = function (...) 
+ list("font-face" = function (...) 
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
@@ -738,6 +738,13 @@ feFuncA = function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncA")
@@ -755,6 +762,13 @@ feFuncB = function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncB")
@@ -772,6 +786,13 @@ feFuncG = function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncG")
@@ -789,6 +810,13 @@ feFuncR = function (...)
     args <- list(...)
     args <- promoteUnamedLists(args)
     attrs <- named(args)
+    indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
+        x, "($| )", sep = ""), "tableValues"))
+    if (length(indx) > 0) {
+        attrs[indx] <- lapply(attrs[indx], function(x) {
+            svgPreproc[["wsp-list"]](x)
+        })
+    }
     rtv <- list()
     kids <- allGoodChildern(args)
     checkKids(kids, "feFuncR")
@@ -1199,7 +1227,7 @@ feColorMatrix = function (...)
     "height"), xy = c("x", "y")))
     attrs <- mapCenteredXY(attrs)
     indx <- sapply(names(attrs), function(x) grepl(paste("(^| )", 
-        x, "($| )", sep = ""), "class"))
+        x, "($| )", sep = ""), "class values"))
     if (length(indx) > 0) {
         attrs[indx] <- lapply(attrs[indx], function(x) {
             svgPreproc[["wsp-list"]](x)
@@ -5040,22 +5068,4 @@ paste0(x, "cm"), u.mm = function (x)
 paste0(x, "mm"), u.in = function (x) 
 paste0(x, "in"), u.prct = function (x) 
 paste0(x, "%"), u.rad = function (x) 
-x * 180/pi), .Names = c("font-face", "glyph", "missing-glyph", 
-"hkern", "vkern", "font", "font-face-name", "font-face-format", 
-"font-face-uri", "animate", "animateColor", "animateMotion", 
-"animateTransform", "set", "mpath", "feFuncA", "feFuncB", "feFuncG", 
-"feFuncR", "feDistantLight", "feTurbulence", "feConvolveMatrix", 
-"feDiffuseLighting", "feOffset", "filter", "feBlend", "feColorMatrix", 
-"feComponentTransfer", "feComposite", "feDisplacementMap", "feFlood", 
-"feGaussianBlur", "feImage", "feMerge", "feMorphology", "feSpecularLighting", 
-"feTile", "feSpotLight", "fePointLight", "svg", "a", "altGlyph", 
-"circle", "clipPath", "cursor", "defs", "ellipse", "foreignObject", 
-"g", "image", "line", "linearGradient", "marker", "mask", "path", 
-"pattern", "polygon", "polyline", "radialGradient", "rect", "script", 
-"switch", "symbol", "text", "textPath", "tref", "tspan", "use", 
-"view", "altGlyphDef", "altGlyphItem", "color-profile", "desc", 
-"feMergeNode", "font-face-src", "glyphRef", "metadata", "stop", 
-"style", "title", "font.face", "missing.glyph", "font.face.name", 
-"font.face.format", "font.face.uri", "color.profile", "font.face.src", 
-"translate", "rotate", "rotatR", "scale", "u.em", "u.ex", "u.px", 
-"u.pt", "u.pc", "u.cm", "u.mm", "u.in", "u.prct", "u.rad"))
+x * 180/pi)
