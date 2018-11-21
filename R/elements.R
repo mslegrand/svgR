@@ -5148,6 +5148,22 @@ scale<-function (dx, dy = NULL)
     list(scale = c(dx, dy))
 }
 
+skewX<-function (angle) 
+{
+    if (length(angle) != 1) {
+        base::stop("bad skewX arguments")
+    }
+    list(skewX = angle)
+}
+
+skewY<-function (angle) 
+{
+    if (length(angle) != 1) {
+        base::stop("bad skewY arguments")
+    }
+    list(skewY = angle)
+}
+
 u.em<-function (x) 
 paste0(x, "em")
 
