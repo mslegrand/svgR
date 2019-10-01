@@ -13,8 +13,8 @@ Governs what to use for masking
 \describe{
 \item{<funciri>}{Sets a functional IRI reference to a mask element to be used for masking.}
 \item{<mask>}{Sets the given mask element as the element to be used for masking.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to Inherit the maks from the parent.}
-\item{\emph{'\emph{'none'}'}}{Specifies not to mask.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to Inherit the maks from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies not to mask.}
 }
 }
 

@@ -11,10 +11,10 @@ Governs which font face to use:  normal, italic or oblique face.
 
 
 \describe{
-\item{\emph{'\emph{'inherit'}'}}{Specifies to Inherit the font style from the parent.}
-\item{\emph{'\emph{'italic'}'}}{Specifies to use an italicl style}
-\item{\emph{'\emph{'normal'}'}}{Specifies to use a normal style}
-\item{\emph{'\emph{'oblique'}'}}{Specifies to use an oblique style}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to Inherit the font style from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'italic'}'}'}'}}{Specifies to use an italicl style}
+\item{\emph{'\emph{'\emph{'\emph{'normal'}'}'}'}}{Specifies to use a normal style}
+\item{\emph{'\emph{'\emph{'\emph{'oblique'}'}'}'}}{Specifies to use an oblique style}
 }
 }
 

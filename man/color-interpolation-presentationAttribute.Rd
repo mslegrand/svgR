@@ -11,10 +11,10 @@ Governs the optimization strategy for color-interpolation.
 
 
 \describe{
-\item{\emph{'\emph{'auto'}'}}{Specifies an auto selection of the color interpolation.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the method of color interpolation from the parents.}
-\item{\emph{'\emph{'linearRGB'}'}}{Specifies to use a  linearized RGB color space for color interpolation}
-\item{\emph{'\emph{'sRGB'}'}}{Specifies to use sRGB color space for color interpolation}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies an auto selection of the color interpolation.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the method of color interpolation from the parents.}
+\item{\emph{'\emph{'\emph{'\emph{'linearRGB'}'}'}'}}{Specifies to use a  linearized RGB color space for color interpolation}
+\item{\emph{'\emph{'\emph{'\emph{'sRGB'}'}'}'}}{Specifies to use sRGB color space for color interpolation}
 }
 }
 

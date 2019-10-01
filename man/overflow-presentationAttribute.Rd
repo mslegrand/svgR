@@ -11,11 +11,11 @@ Governs the behaviour of an element when it overflows its viewport.
 
 
 \describe{
-\item{\emph{'\emph{'auto'}'}}{Signals to the user agent to  provide scrolling for overflowing boxes}
-\item{\emph{'\emph{'hidden'}'}}{Specifies to clip or hide overflow (default for inner svgs, pattern and markers)}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the overflow property from the parent.}
-\item{\emph{'\emph{'scroll'}'}}{Specifies to clip over flow but to provide scrollbar for scrolling.}
-\item{\emph{'\emph{'visible'}'}}{Specifies to show overflow (default for outer most svg, i.e. svgR)}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Signals to the user agent to  provide scrolling for overflowing boxes}
+\item{\emph{'\emph{'\emph{'\emph{'hidden'}'}'}'}}{Specifies to clip or hide overflow (default for inner svgs, pattern and markers)}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the overflow property from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'scroll'}'}'}'}}{Specifies to clip over flow but to provide scrollbar for scrolling.}
+\item{\emph{'\emph{'\emph{'\emph{'visible'}'}'}'}}{Specifies to show overflow (default for outer most svg, i.e. svgR)}
 }
 }
 

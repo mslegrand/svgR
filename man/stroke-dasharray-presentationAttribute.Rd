@@ -12,8 +12,8 @@ Defines the pattern of dashes and gaps used to stroke paths.
 
 \describe{
 \item{<dasharray>}{Sets the stoke-dasharray pattern using a vector of lengths (with optional unit identifier)}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-dasharray} value from the parent.}
-\item{\emph{'\emph{'none'}'}}{Specifies no dash array.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{stroke-dasharray} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies no dash array.}
 }
 }
 

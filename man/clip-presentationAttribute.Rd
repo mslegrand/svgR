@@ -12,8 +12,8 @@ Governs clipping along the bounds of the elements viewport.
 
 \describe{
 \item{<shape>}{Specifies the rectangle to clip to.}
-\item{\emph{'\emph{'auto'}'}}{Specifies to clip  this element by the boundry of its viewport.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies that the clipping region for this element should be inherited from its parent,}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to clip  this element by the boundry of its viewport.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies that the clipping region for this element should be inherited from its parent,}
 }
 }
 

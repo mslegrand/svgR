@@ -11,10 +11,10 @@ Governs the color space for gradient interpolations, color animations and alpha 
 
 
 \describe{
-\item{\emph{'\emph{'auto'}'}}{Specifies to employ a trade-off strategy of optimization of color-rending  which balances speed vs quality.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the color-rendering optimzation from the parent.}
-\item{\emph{'\emph{'optimizeQuality'}'}}{Specifies to optimize the color-rendiering  for quality.}
-\item{\emph{'\emph{'optimizeSpeed'}'}}{Specifies to optimize the color-rendiering  for speed}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to employ a trade-off strategy of optimization of color-rending  which balances speed vs quality.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the color-rendering optimzation from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'optimizeQuality'}'}'}'}}{Specifies to optimize the color-rendiering  for quality.}
+\item{\emph{'\emph{'\emph{'\emph{'optimizeSpeed'}'}'}'}}{Specifies to optimize the color-rendiering  for speed}
 }
 }
 

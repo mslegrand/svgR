@@ -2602,6 +2602,7 @@ foreignObject<-function (...)
 {
     args <- list(...)
     args <- promoteUnamedLists(args)
+    args <- insertImpliedTextNodes(args)
     attrs <- named(args)
     attrs <- comboParamHandler(attrs, list(wh = c("width", "height"
     ), xy = c("x", "y")))
@@ -2635,6 +2636,25 @@ foreignObject<-function (...)
         })
     }
     rtv <- list()
+    if (!is.null(names(attrs))) {
+        attr.names <- names(attrs)
+        attr.names <- gsub("^(((style))|((weight))|((variant))|((size))|((family)))$", 
+            "font-\\1", attr.names, fixed = F)
+        attr.names <- gsub("^anchor$", "text-anchor", attr.names)
+        names(attrs) <- attr.names
+        if (!is.null(attrs[["cxy"]])) {
+            attrs[["text-anchor"]] <- "middle"
+            attrs[["dominant-baseline"]] = "central"
+            attrs[["xy"]] = attrs[["cxy"]]
+            attrs[["cxy"]] = NULL
+        }
+        attrs <- mapArg(attrs, "xy", c("x", "y"))
+        text <- NULL
+        if ("text" %in% attr.names) {
+            text <- attrs["text"]
+            attrs["text"] <- NULL
+        }
+    }
     kids <- allGoodChildern(args)
     checkKids(kids, "foreignObject")
     node <- XMLAbstractNode$new(tag = "foreignObject", attrs = attrs, 

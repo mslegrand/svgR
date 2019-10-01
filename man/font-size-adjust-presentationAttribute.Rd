@@ -12,8 +12,8 @@ Govern the aspect values to preserve the when using a substitute font.
 
 \describe{
 \item{<number>}{Specifies the aspect ratio value(font-size divide by x-height) to preserve the x-height for the first font candidate substitution.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies the to inherit the aspect ratio value from the parent.}
-\item{\emph{'\emph{'none'}'}}{Specifies to make no aspect ratio adjustment.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies the to inherit the aspect ratio value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies to make no aspect ratio adjustment.}
 }
 }
 

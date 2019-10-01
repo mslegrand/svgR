@@ -11,19 +11,19 @@ Govnerns the dominant baseline of a text element.
 
 
 \describe{
-\item{\emph{'\emph{'alphabetic'}'}}{Specifies to use an \emph{alphabetic} baseline.}
-\item{\emph{'\emph{'auto'}'}}{Specifies to pick a baseline depending on element, writing mode, font-size, base-line shift.}
-\item{\emph{'\emph{'central'}'}}{Specifies to use a baseline halfway between the two baselines:  \emph{text-before-edge} and \emph{text-after-edge}.}
-\item{\emph{'\emph{'hanging'}'}}{Specifies to use the  \emph{hanging}  baseline-table of the nominal font}
-\item{\emph{'\emph{'ideographic'}'}}{Specifies to use an  \emph{ideographic} baseline-table of the nominal font}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the balseline from an ancestor.}
-\item{\emph{'\emph{'mathematical'}'}}{Specifies to use  the \emph{mathematical}  baseline-table of the nominal font}
-\item{\emph{'\emph{'middle'}'}}{Specifies to use a baseline which is offset from alphabetic baseline by 1/2  x-height of this  font.}
-\item{\emph{'\emph{'no-change'}'}}{Specifies to use the baseline of the parent.}
-\item{\emph{'\emph{'reset-size'}'}}{Specifies to rescale baselines for current font-size.}
-\item{\emph{'\emph{'text-after-edge'}'}}{Specifies to position the baseline around top of the acenders.}
-\item{\emph{'\emph{'text-before-edge'}'}}{Specifies to position the baseline around the bottom of the  descenders.}
-\item{\emph{'\emph{'use-script'}'}}{Specifies to compute the baseline using the predominant script of the character data content.}
+\item{\emph{'\emph{'\emph{'\emph{'alphabetic'}'}'}'}}{Specifies to use an \emph{alphabetic} baseline.}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to pick a baseline depending on element, writing mode, font-size, base-line shift.}
+\item{\emph{'\emph{'\emph{'\emph{'central'}'}'}'}}{Specifies to use a baseline halfway between the two baselines:  \emph{text-before-edge} and \emph{text-after-edge}.}
+\item{\emph{'\emph{'\emph{'\emph{'hanging'}'}'}'}}{Specifies to use the  \emph{hanging}  baseline-table of the nominal font}
+\item{\emph{'\emph{'\emph{'\emph{'ideographic'}'}'}'}}{Specifies to use an  \emph{ideographic} baseline-table of the nominal font}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the balseline from an ancestor.}
+\item{\emph{'\emph{'\emph{'\emph{'mathematical'}'}'}'}}{Specifies to use  the \emph{mathematical}  baseline-table of the nominal font}
+\item{\emph{'\emph{'\emph{'\emph{'middle'}'}'}'}}{Specifies to use a baseline which is offset from alphabetic baseline by 1/2  x-height of this  font.}
+\item{\emph{'\emph{'\emph{'\emph{'no-change'}'}'}'}}{Specifies to use the baseline of the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'reset-size'}'}'}'}}{Specifies to rescale baselines for current font-size.}
+\item{\emph{'\emph{'\emph{'\emph{'text-after-edge'}'}'}'}}{Specifies to position the baseline around top of the acenders.}
+\item{\emph{'\emph{'\emph{'\emph{'text-before-edge'}'}'}'}}{Specifies to position the baseline around the bottom of the  descenders.}
+\item{\emph{'\emph{'\emph{'\emph{'use-script'}'}'}'}}{Specifies to compute the baseline using the predominant script of the character data content.}
 }
 }
 

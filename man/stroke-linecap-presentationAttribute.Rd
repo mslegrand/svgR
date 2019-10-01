@@ -11,10 +11,10 @@ Defines the shape to be used at the end of open subpaths when they are stroked.
 
 
 \describe{
-\item{\emph{'\emph{'butt'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{butt style cap}.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-linecap} value from the parent.}
-\item{\emph{'\emph{'round'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{round style cap}.}
-\item{\emph{'\emph{'square'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{square style cap}.}
+\item{\emph{'\emph{'\emph{'\emph{'butt'}'}'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{butt style cap}.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{stroke-linecap} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'round'}'}'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{round style cap}.}
+\item{\emph{'\emph{'\emph{'\emph{'square'}'}'}'}}{Specifies the \emph{stroke-linecap} to be a \emph{square style cap}.}
 }
 }
 

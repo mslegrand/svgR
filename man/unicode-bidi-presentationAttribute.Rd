@@ -11,10 +11,10 @@ Governs mixing directionalit for  text in a single line.
 
 
 \describe{
-\item{\emph{'\emph{'bidi-override'}'}}{Specifies to override the implicit aspect of biddirectional algorithm and use a strict sequence given by the direction. This applies only to the cases of inline or block-level composed of inline:}
-\item{\emph{'\emph{'embed'}'}}{Specifes an embedding to override of the biddirectional algorithm using the direction given by the \emph{direction} attribute.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{unicode-bidi} value from the parent.}
-\item{\emph{'\emph{'normal'}'}}{Specifies to use the  implicit ordering of the biddirectional algorithm.}
+\item{\emph{'\emph{'\emph{'\emph{'bidi-override'}'}'}'}}{Specifies to override the implicit aspect of biddirectional algorithm and use a strict sequence given by the direction. This applies only to the cases of inline or block-level composed of inline:}
+\item{\emph{'\emph{'\emph{'\emph{'embed'}'}'}'}}{Specifes an embedding to override of the biddirectional algorithm using the direction given by the \emph{direction} attribute.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{unicode-bidi} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'normal'}'}'}'}}{Specifies to use the  implicit ordering of the biddirectional algorithm.}
 }
 }
 

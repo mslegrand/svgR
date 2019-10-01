@@ -13,7 +13,7 @@ Defines the distance into the dash pattern to start the dash.
 \describe{
 \item{<length>}{Sets distance from dash pattern to dash start given in non-percent units}
 \item{<percentage>}{Sets distance from dash pattern to dash start given as a percentage of current viewport}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-dashoffset} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{stroke-dashoffset} value from the parent.}
 }
 }
 

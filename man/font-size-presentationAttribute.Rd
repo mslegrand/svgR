@@ -13,16 +13,16 @@ Governs the size of the font .
 \describe{
 \item{<length>}{Specify font size. If no units are provided, the value is interpreted as a height in the current user coordinate system.}
 \item{<percentage>}{Specifies the  font size as a percentage of parent font-size}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit font-size from parent element.}
-\item{\emph{'\emph{'large'}'}}{Specifies to set the font size to be \emph{large}.}
-\item{\emph{'\emph{'larger'}'}}{Specifies to set  font-size to be larger than parent font-size}
-\item{\emph{'\emph{'medium'}'}}{Specifies to set font size to be \emph{normal}.}
-\item{\emph{'\emph{'small'}'}}{Specifies to set the font size to be \emph{'small'}.}
-\item{\emph{'\emph{'smaller'}'}}{Specify the font-size to be smaller  than parent font-size}
-\item{\emph{'\emph{'x-large'}'}}{Specifies to set the font size to be \emph{'x-large'}.}
-\item{\emph{'\emph{'x-small'}'}}{Specifies to set the font size to be \emph{'x-small'}.}
-\item{\emph{'\emph{'xx-large'}'}}{Specifies to set the font size to be \emph{'xx-large'}.}
-\item{\emph{'\emph{'xx-small'}'}}{Specifies to set the font size to be  \emph{'xx-small'}.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit font-size from parent element.}
+\item{\emph{'\emph{'\emph{'\emph{'large'}'}'}'}}{Specifies to set the font size to be \emph{large}.}
+\item{\emph{'\emph{'\emph{'\emph{'larger'}'}'}'}}{Specifies to set  font-size to be larger than parent font-size}
+\item{\emph{'\emph{'\emph{'\emph{'medium'}'}'}'}}{Specifies to set font size to be \emph{normal}.}
+\item{\emph{'\emph{'\emph{'\emph{'small'}'}'}'}}{Specifies to set the font size to be \emph{'small'}.}
+\item{\emph{'\emph{'\emph{'\emph{'smaller'}'}'}'}}{Specify the font-size to be smaller  than parent font-size}
+\item{\emph{'\emph{'\emph{'\emph{'x-large'}'}'}'}}{Specifies to set the font size to be \emph{'x-large'}.}
+\item{\emph{'\emph{'\emph{'\emph{'x-small'}'}'}'}}{Specifies to set the font size to be \emph{'x-small'}.}
+\item{\emph{'\emph{'\emph{'\emph{'xx-large'}'}'}'}}{Specifies to set the font size to be \emph{'xx-large'}.}
+\item{\emph{'\emph{'\emph{'\emph{'xx-small'}'}'}'}}{Specifies to set the font size to be  \emph{'xx-small'}.}
 }
 }
 

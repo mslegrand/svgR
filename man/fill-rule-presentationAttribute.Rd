@@ -11,9 +11,9 @@ Governs which algorithm to use for determination of  the  interior of the shape.
 
 
 \describe{
-\item{\emph{'\emph{'evenodd'}'}}{Specifies to use even-odd rule to determine the what is inside}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to use the same \emph{fill-rule} as the parent.}
-\item{\emph{'\emph{'nonzero'}'}}{Specifies to use the  non-zero rule to determine the what is the interior.}
+\item{\emph{'\emph{'\emph{'\emph{'evenodd'}'}'}'}}{Specifies to use even-odd rule to determine the what is inside}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to use the same \emph{fill-rule} as the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'nonzero'}'}'}'}}{Specifies to use the  non-zero rule to determine the what is the interior.}
 }
 }
 

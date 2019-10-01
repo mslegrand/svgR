@@ -13,10 +13,10 @@ Governs shifing of the base-line relative to the dominant baseline of the parent
 \describe{
 \item{<length>}{Specifies to shift the baseline by the given amount of length.}
 \item{<percentage>}{Specifies to shift the baseline by the amount given as  percentage of the line-height of text.}
-\item{\emph{'\emph{'baseline'}'}}{Specifies a zero baseline shift, than is no shifting of the baseline.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to Inherit the \emph{baseline-shift} from the parent of this element..}
-\item{\emph{'\emph{'sub'}'}}{Specifies to shift the baseline to the subscript position}
-\item{\emph{'\emph{'super'}'}}{Specifies to shift the baseline to the superscript position}
+\item{\emph{'\emph{'\emph{'\emph{'baseline'}'}'}'}}{Specifies a zero baseline shift, than is no shifting of the baseline.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to Inherit the \emph{baseline-shift} from the parent of this element..}
+\item{\emph{'\emph{'\emph{'\emph{'sub'}'}'}'}}{Specifies to shift the baseline to the subscript position}
+\item{\emph{'\emph{'\emph{'\emph{'super'}'}'}'}}{Specifies to shift the baseline to the superscript position}
 }
 }
 

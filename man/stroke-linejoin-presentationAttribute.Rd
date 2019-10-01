@@ -11,10 +11,10 @@ Defines the shape to be used at the corners of paths or basic shapes when they a
 
 
 \describe{
-\item{\emph{'\emph{'bevel'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{bevel style join}.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-linejoin} value from the parent.}
-\item{\emph{'\emph{'miter'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{mitre style join}.}
-\item{\emph{'\emph{'round'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{round style join}.}
+\item{\emph{'\emph{'\emph{'\emph{'bevel'}'}'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{bevel style join}.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{stroke-linejoin} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'miter'}'}'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{mitre style join}.}
+\item{\emph{'\emph{'\emph{'\emph{'round'}'}'}'}}{Specifies the \emph{stroke-linejoin} to be a \emph{round style join}.}
 }
 }
 

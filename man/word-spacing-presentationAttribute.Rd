@@ -12,8 +12,8 @@ Governs the  spacing behavior between words.
 
 \describe{
 \item{<length>}{Sets a value for the amount of  spacing between words.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{word-spacing} value from the parent.}
-\item{\emph{'\emph{'normal'}'}}{Specifies to use the default \emph{word-spacing} value.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{word-spacing} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'normal'}'}'}'}}{Specifies to use the default \emph{word-spacing} value.}
 }
 }
 

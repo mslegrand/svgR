@@ -11,18 +11,18 @@ Governs the amount of condensing or expansion in the glyphs used to render the t
 
 
 \describe{
-\item{\emph{'\emph{'condensed'}'}}{Specifies the font stretch rank=3}
-\item{\emph{'\emph{'expanded'}'}}{Specifies the font stretch rank=7}
-\item{\emph{'\emph{'extra-condensed'}'}}{Specifies the font stretch rank=2}
-\item{\emph{'\emph{'extra-expanded'}'}}{Specifies the font stretch rank=8}
-\item{\emph{'\emph{'inherit'}'}}{Specifies the font  to inhert font-stretch from parent}
-\item{\emph{'\emph{'narrower'}'}}{Specifies the font stretch rank=-1+stretch rank of parent}
-\item{\emph{'\emph{'normal'}'}}{Specifies the font stretch rank=5 (default)}
-\item{\emph{'\emph{'semi-condensed'}'}}{Specifies the font stretch rank=4}
-\item{\emph{'\emph{'semi-expanded'}'}}{Specifies the font stretch rank=6}
-\item{\emph{'\emph{'ultra-condensed'}'}}{Specifies the font stretch rank=1}
-\item{\emph{'\emph{'ultra-expanded'}'}}{Specifies the font stretch rank=9}
-\item{\emph{'\emph{'wider'}'}}{Specifies the font stretch rank=1+stretch rank of parent}
+\item{\emph{'\emph{'\emph{'\emph{'condensed'}'}'}'}}{Specifies the font stretch rank=3}
+\item{\emph{'\emph{'\emph{'\emph{'expanded'}'}'}'}}{Specifies the font stretch rank=7}
+\item{\emph{'\emph{'\emph{'\emph{'extra-condensed'}'}'}'}}{Specifies the font stretch rank=2}
+\item{\emph{'\emph{'\emph{'\emph{'extra-expanded'}'}'}'}}{Specifies the font stretch rank=8}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies the font  to inhert font-stretch from parent}
+\item{\emph{'\emph{'\emph{'\emph{'narrower'}'}'}'}}{Specifies the font stretch rank=-1+stretch rank of parent}
+\item{\emph{'\emph{'\emph{'\emph{'normal'}'}'}'}}{Specifies the font stretch rank=5 (default)}
+\item{\emph{'\emph{'\emph{'\emph{'semi-condensed'}'}'}'}}{Specifies the font stretch rank=4}
+\item{\emph{'\emph{'\emph{'\emph{'semi-expanded'}'}'}'}}{Specifies the font stretch rank=6}
+\item{\emph{'\emph{'\emph{'\emph{'ultra-condensed'}'}'}'}}{Specifies the font stretch rank=1}
+\item{\emph{'\emph{'\emph{'\emph{'ultra-expanded'}'}'}'}}{Specifies the font stretch rank=9}
+\item{\emph{'\emph{'\emph{'\emph{'wider'}'}'}'}}{Specifies the font stretch rank=1+stretch rank of parent}
 }
 }
 

@@ -11,9 +11,9 @@ Specifies whether to use an even-odd rule for clipping
 
 
 \describe{
-\item{\emph{'\emph{'evenodd'}'}}{Specifies the use of the even-odd rule to determine the interior.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to use the same rule as the parent for the determination of the interior.]}
-\item{\emph{'\emph{'nonzero'}'}}{Specifies to use the \emph{non-zero rule} to determine the interior.}
+\item{\emph{'\emph{'\emph{'\emph{'evenodd'}'}'}'}}{Specifies the use of the even-odd rule to determine the interior.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to use the same rule as the parent for the determination of the interior.]}
+\item{\emph{'\emph{'\emph{'\emph{'nonzero'}'}'}'}}{Specifies to use the \emph{non-zero rule} to determine the interior.}
 }
 }
 

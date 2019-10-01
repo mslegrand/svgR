@@ -12,8 +12,8 @@ Controls glyph orientation when the inline-progression-direction is vertical
 
 \describe{
 \item{<angle>}{Sets the angle of orientation (restricted to 0, 90, 180, and 270 degrees).}
-\item{\emph{'\emph{'auto'}'}}{Specifies to set orientation to 0 degrees if full-width full width,  else 90 degrees.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the glyph orientation  from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to set orientation to 0 degrees if full-width full width,  else 90 degrees.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the glyph orientation  from the parent.}
 }
 }
 

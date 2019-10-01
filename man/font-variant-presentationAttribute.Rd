@@ -11,9 +11,9 @@ Governs the which font-variant to use for lower case characters:  normal glyphs 
 
 
 \describe{
-\item{\emph{'\emph{'inherit'}'}}{Inherit font-variant from the parent.}
-\item{\emph{'\emph{'normal'}'}}{Specifies to use a normal variant style.}
-\item{\emph{'\emph{'small-caps'}'}}{Specifies to use a small-caps  variant style.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Inherit font-variant from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'normal'}'}'}'}}{Specifies to use a normal variant style.}
+\item{\emph{'\emph{'\emph{'\emph{'small-caps'}'}'}'}}{Specifies to use a small-caps  variant style.}
 }
 }
 

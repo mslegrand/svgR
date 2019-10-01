@@ -11,10 +11,10 @@ Governs whether the current graphics element will be visible.
 
 
 \describe{
-\item{\emph{'\emph{'collapse'}'}}{For non-tables, this has the same effect as hidden.}
-\item{\emph{'\emph{'hidden'}'}}{Sets the element invisible, but element may still receive pointer events.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{visibility} value from the parent.}
-\item{\emph{'\emph{'visible'}'}}{Sets the element visible.}
+\item{\emph{'\emph{'\emph{'\emph{'collapse'}'}'}'}}{For non-tables, this has the same effect as hidden.}
+\item{\emph{'\emph{'\emph{'\emph{'hidden'}'}'}'}}{Sets the element invisible, but element may still receive pointer events.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{visibility} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'visible'}'}'}'}}{Sets the element visible.}
 }
 }
 

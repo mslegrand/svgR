@@ -11,11 +11,11 @@ Governs the optimization strategy of rendering shapes.
 
 
 \describe{
-\item{\emph{'\emph{'auto'}'}}{Specifies to apply  a shape-rendering algorithm that balances the trade offs  that occur between optimizing for speed vs crispEdges vs geometric precision.}
-\item{\emph{'\emph{'crispEdges'}'}}{Specifies to optimize the shape-rendering algorithm for crisp edges.}
-\item{\emph{'\emph{'geometricPrecision'}'}}{Specifies to optimize the shape-rendering algorithm for geometric precision.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the shape-rendering optimization critera from the parent.}
-\item{\emph{'\emph{'optimizeSpeed'}'}}{Specifies to optimize the shape-rendering algorithm for speed.}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to apply  a shape-rendering algorithm that balances the trade offs  that occur between optimizing for speed vs crispEdges vs geometric precision.}
+\item{\emph{'\emph{'\emph{'\emph{'crispEdges'}'}'}'}}{Specifies to optimize the shape-rendering algorithm for crisp edges.}
+\item{\emph{'\emph{'\emph{'\emph{'geometricPrecision'}'}'}'}}{Specifies to optimize the shape-rendering algorithm for geometric precision.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the shape-rendering optimization critera from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'optimizeSpeed'}'}'}'}}{Specifies to optimize the shape-rendering algorithm for speed.}
 }
 }
 

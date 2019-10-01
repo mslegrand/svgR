@@ -11,16 +11,16 @@ Governs the under what conditions this  graphics element can be the targetof a p
 
 
 \describe{
-\item{\emph{'\emph{'all'}'}}{Specifies that this element can be targeted for a pointer event provided  pointer is over either the interior or border of this element.}
-\item{\emph{'\emph{'fill'}'}}{Specifies that this element can be targeted for a pointer event provided the pointer is over the interior of this element.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{pointer-events} property from the parent.}
-\item{\emph{'\emph{'none'}'}}{Specifies that this element cannot be targeted  for a pointer event}
-\item{\emph{'\emph{'painted'}'}}{Specifies that this element can be targeted for a pointer event provided the  pointer is over a painted area. (Area being either interior or border).}
-\item{\emph{'\emph{'stroke'}'}}{Specifies that this element can be targeted for a pointer event provided and pointer is over the border.}
-\item{\emph{'\emph{'visible'}'}}{Specifies that element can be targeted for a pointer event provided visibilty='visible' and pointer is over either the interior or border.}
-\item{\emph{'\emph{'visibleFill'}'}}{Speciries that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted interior. (thus fill!='none').}
-\item{\emph{'\emph{'visiblePainted'}'}}{Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted area (area being either the interior or border).}
-\item{\emph{'\emph{'visibleStroke'}'}}{Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted border. (thus stroke!='none').}
+\item{\emph{'\emph{'\emph{'\emph{'all'}'}'}'}}{Specifies that this element can be targeted for a pointer event provided  pointer is over either the interior or border of this element.}
+\item{\emph{'\emph{'\emph{'\emph{'fill'}'}'}'}}{Specifies that this element can be targeted for a pointer event provided the pointer is over the interior of this element.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{pointer-events} property from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies that this element cannot be targeted  for a pointer event}
+\item{\emph{'\emph{'\emph{'\emph{'painted'}'}'}'}}{Specifies that this element can be targeted for a pointer event provided the  pointer is over a painted area. (Area being either interior or border).}
+\item{\emph{'\emph{'\emph{'\emph{'stroke'}'}'}'}}{Specifies that this element can be targeted for a pointer event provided and pointer is over the border.}
+\item{\emph{'\emph{'\emph{'\emph{'visible'}'}'}'}}{Specifies that element can be targeted for a pointer event provided visibilty='visible' and pointer is over either the interior or border.}
+\item{\emph{'\emph{'\emph{'\emph{'visibleFill'}'}'}'}}{Speciries that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted interior. (thus fill!='none').}
+\item{\emph{'\emph{'\emph{'\emph{'visiblePainted'}'}'}'}}{Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted area (area being either the interior or border).}
+\item{\emph{'\emph{'\emph{'\emph{'visibleStroke'}'}'}'}}{Specifies that this element can be targeted for a pointer event provided visibilty='visible' and pointer is over a painted border. (thus stroke!='none').}
 }
 }
 

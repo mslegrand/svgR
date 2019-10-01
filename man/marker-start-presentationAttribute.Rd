@@ -11,8 +11,8 @@ Defines the marker that is to be rendered at the first vertex of the given **pat
 
 
 \describe{
-\item{\emph{'\emph{'none'}'}}{Specifies for no marker symbol to be rendered.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the marker symbol from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies for no marker symbol to be rendered.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the marker symbol from the parent.}
 \item{<funciri>}{Sets a functional IRI reference to a marker element to be used..}
 \item{<marker-element>}{Sets the \strong{marker element} to be used.}
 }

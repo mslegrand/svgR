@@ -12,7 +12,7 @@ Defines a limit on the ratio of the miter length to the stroke-width.
 
 \describe{
 \item{<miterlimit>}{Sets the miterlimit , a number greater than 1 which is used to limit the ratio of \emph{mitreLength} to \emph{stroke-width}.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-miterlimit} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{stroke-miterlimit} value from the parent.}
 }
 }
 

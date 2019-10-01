@@ -13,9 +13,9 @@ Governs what color profile to use.
 \describe{
 \item{<iri>}{Specifies an IRI reference to the color profile to be used}
 \item{<name>}{Specifies the color profile by name}
-\item{\emph{'\emph{'auto'}'}}{Specifies to auto select the color profile}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the color profiel from the parents color profile.}
-\item{\emph{'\emph{'sRGB'}'}}{Specifies to use the sRGB  color profile}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to auto select the color profile}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the color profiel from the parents color profile.}
+\item{\emph{'\emph{'\emph{'\emph{'sRGB'}'}'}'}}{Specifies to use the sRGB  color profile}
 }
 }
 

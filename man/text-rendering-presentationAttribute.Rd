@@ -11,11 +11,11 @@ Governs the optimization strategy of rendering text.
 
 
 \describe{
-\item{\emph{'\emph{'auto'}'}}{Specifies to apply a \emph{text-rendering} algorithm that balances the trade offs  that occur between optimizing for speed vs legibility vs geometric precision, with emphasis on legibility.}
-\item{\emph{'\emph{'geometricPrecision'}'}}{Specifies to optimize  \emph{text-rendering} for geometric precision.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{text-rendering} value from the parent.}
-\item{\emph{'\emph{'optimizeLegibility'}'}}{Specifies to optimize  \emph{text-rendering} for legibility.}
-\item{\emph{'\emph{'optimizeSpeed'}'}}{Specifies to optimize  \emph{text-rendering} for speed.}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to apply a \emph{text-rendering} algorithm that balances the trade offs  that occur between optimizing for speed vs legibility vs geometric precision, with emphasis on legibility.}
+\item{\emph{'\emph{'\emph{'\emph{'geometricPrecision'}'}'}'}}{Specifies to optimize  \emph{text-rendering} for geometric precision.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{text-rendering} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'optimizeLegibility'}'}'}'}}{Specifies to optimize  \emph{text-rendering} for legibility.}
+\item{\emph{'\emph{'\emph{'\emph{'optimizeSpeed'}'}'}'}}{Specifies to optimize  \emph{text-rendering} for speed.}
 }
 }
 

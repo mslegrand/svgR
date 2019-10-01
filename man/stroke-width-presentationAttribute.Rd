@@ -11,7 +11,7 @@ Defines the width of the stroke on the current object.
 
 
 \describe{
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{stroke-width} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{stroke-width} value from the parent.}
 \item{<percentage>}{Sets the stroke-width value as a precentage of the current viewport.}
 \item{<length>}{Sets the \emph{stroke-width} value using non-percentate units.}
 }

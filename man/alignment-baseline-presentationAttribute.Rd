@@ -11,19 +11,19 @@ Governs baseline alignment with parent, that is which baseline of this element i
 
 
 \describe{
-\item{\emph{'\emph{'after-edge'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{alignment} baseline.}
-\item{\emph{'\emph{'alphabetic'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{alphabetic}  baseline.}
-\item{\emph{'\emph{'auto'}'}}{Specifies to set the alignment point to be the dominant-baseline of the parent.}
-\item{\emph{'\emph{'baseline'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{dominant}  baseline}
-\item{\emph{'\emph{'before-edge'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{before-edge} baseline}
-\item{\emph{'\emph{'central'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{central} baseline}
-\item{\emph{'\emph{'hanging'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{hanging} baseline}
-\item{\emph{'\emph{'ideographic'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{ideographic}  baseline}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit \emph{alignment-baseline} value from the parent text content element..}
-\item{\emph{'\emph{'mathematical'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{mathematical}  baseline}
-\item{\emph{'\emph{'middle'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{middle} baseline}
-\item{\emph{'\emph{'text-after-edge'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{text-after-edge} baseline}
-\item{\emph{'\emph{'text-before-edge'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{text-before-edge} baseline}
+\item{\emph{'\emph{'\emph{'\emph{'after-edge'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{alignment} baseline.}
+\item{\emph{'\emph{'\emph{'\emph{'alphabetic'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{alphabetic}  baseline.}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to set the alignment point to be the dominant-baseline of the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'baseline'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{dominant}  baseline}
+\item{\emph{'\emph{'\emph{'\emph{'before-edge'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{before-edge} baseline}
+\item{\emph{'\emph{'\emph{'\emph{'central'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{central} baseline}
+\item{\emph{'\emph{'\emph{'\emph{'hanging'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{hanging} baseline}
+\item{\emph{'\emph{'\emph{'\emph{'ideographic'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{ideographic}  baseline}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit \emph{alignment-baseline} value from the parent text content element..}
+\item{\emph{'\emph{'\emph{'\emph{'mathematical'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's  \emph{mathematical}  baseline}
+\item{\emph{'\emph{'\emph{'\emph{'middle'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{middle} baseline}
+\item{\emph{'\emph{'\emph{'\emph{'text-after-edge'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{text-after-edge} baseline}
+\item{\emph{'\emph{'\emph{'\emph{'text-before-edge'}'}'}'}}{Specifies to set the alignment point to be aligned with the parent text content element 's \emph{text-before-edge} baseline}
 }
 }
 

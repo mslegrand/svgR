@@ -11,7 +11,7 @@ Defines the paint used for the outline of the given graphical element
 
 
 \describe{
-\item{\emph{'\emph{'none'}'}}{Specifies no stroke (no border outline)}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies no stroke (no border outline)}
 }
 }
 

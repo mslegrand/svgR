@@ -12,8 +12,8 @@ Governs the color of the light source for filter primitives feDiffuseLighting an
 
 \describe{
 \item{<color> [<icccolor>]}{Sets the color of the lighting. The color may be given in any one of 3 ways: name (i.e. red), numeric (#f00 or #ff0000) or as ab rgb (rgb(255,0,0)).}
-\item{\emph{'\emph{'currentColor'}'}}{Specifes to use the \emph{currentColor} for the light color. The current color is the value of the color specified by the \emph{color} property.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies inheriting the lighting color from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'currentColor'}'}'}'}}{Specifes to use the \emph{currentColor} for the light color. The current color is the value of the color specified by the \emph{color} property.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies inheriting the lighting color from the parent.}
 }
 }
 

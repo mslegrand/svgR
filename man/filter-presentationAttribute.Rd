@@ -13,8 +13,8 @@ Defines which filter is to be applied to this element. (This element being a gra
 \describe{
 \item{<filter>}{Specifies  a \strong{filter} element as the value of the  \emph{filter} attribute.}
 \item{<funciri>}{Specifies  a  reference to a \strong{filter} element given by functional IRI.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the filter from parent.}
-\item{\emph{'\emph{'none'}'}}{Specifies that there is no  filter to be applied.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the filter from parent.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies that there is no  filter to be applied.}
 }
 }
 

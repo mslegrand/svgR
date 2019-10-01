@@ -11,10 +11,10 @@ Governs the color space for imaging operations performed via filter effects.
 
 
 \describe{
-\item{\emph{'\emph{'auto'}'}}{Specifies to auto select the color-interpolation filter}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the color-interpolation methodology from the parent.}
-\item{\emph{'\emph{'linearRGB'}'}}{Specifies to use the linearized RGB color space for the filter effects color operations .}
-\item{\emph{'\emph{'sRGB'}'}}{Specifies to use the sRGB color space for the filter effects color operations .}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to auto select the color-interpolation filter}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the color-interpolation methodology from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'linearRGB'}'}'}'}}{Specifies to use the linearized RGB color space for the filter effects color operations .}
+\item{\emph{'\emph{'\emph{'\emph{'sRGB'}'}'}'}}{Specifies to use the sRGB color space for the filter effects color operations .}
 }
 }
 

@@ -11,9 +11,9 @@ Controls the base writing direction of text
 
 
 \describe{
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit tne direction from an ancestor.}
-\item{\emph{'\emph{'ltr'}'}}{Specifies a left to right direction.}
-\item{\emph{'\emph{'rtl'}'}}{Specifies a right to left direction.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit tne direction from an ancestor.}
+\item{\emph{'\emph{'\emph{'\emph{'ltr'}'}'}'}}{Specifies a left to right direction.}
+\item{\emph{'\emph{'\emph{'\emph{'rtl'}'}'}'}}{Specifies a right to left direction.}
 }
 }
 

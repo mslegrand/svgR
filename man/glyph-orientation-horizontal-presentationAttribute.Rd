@@ -12,7 +12,7 @@ Controls glyph orientation when the inline-progression-direction is horizontal
 
 \describe{
 \item{<angle>}{Sets the angle of orientation (restricted to 0, 90, 180, and 270 degrees).}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the glyph orientation  from the  parent.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the glyph orientation  from the  parent.}
 }
 }
 

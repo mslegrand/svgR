@@ -12,7 +12,7 @@ Governs the candidiates of  font families to be used in text rendering.
 
 \describe{
 \item{<family-name | generica-family>+}{Specifies a vector of consisting of  font-family names or a generic-font-family names.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the font family from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the font family from the parent.}
 }
 }
 

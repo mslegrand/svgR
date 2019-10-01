@@ -13,8 +13,8 @@ Specifies path for clipping.
 \describe{
 \item{<clipPath-Element>}{Specifies a \strong{clipPath} element to be used for clipping}
 \item{<funciri>}{Specifies a reference to the \strong{clipPath} to be used for clipping by using the functional IRI notation.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies that the clip-path to be applied to  this element should  be inherited from this elements parents.}
-\item{\emph{'\emph{'none'}'}}{Specifies no clipping to occur.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies that the clip-path to be applied to  this element should  be inherited from this elements parents.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies no clipping to occur.}
 }
 }
 

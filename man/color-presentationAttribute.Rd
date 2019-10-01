@@ -12,7 +12,7 @@ Defines *currentColor*, which is may be used indirectly as fall-back color for t
 
 \describe{
 \item{<color>}{Sets the color. The color may be expressed in one of three ways: name (i.e. red),  or  numeric (#f00 or #ff0000) or  rgb (rgb(255,0,0)). An optional ICC color may also be specified as a 2nd component of the color vector.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies the color is to be inherited from the ancestor..}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies the color is to be inherited from the ancestor..}
 }
 }
 

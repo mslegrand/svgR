@@ -12,8 +12,8 @@ Governs supplemental to kerning spacing between letters.
 
 \describe{
 \item{<length>}{Sets a value for the amount of supplemental (to kerning) spacing between text characters.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit  the value of letter-spacing adjustment from the parent.}
-\item{\emph{'\emph{'normal'}'}}{Specifies no supplemental (to kerning) spacing between text characters.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit  the value of letter-spacing adjustment from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'normal'}'}'}'}}{Specifies no supplemental (to kerning) spacing between text characters.}
 }
 }
 

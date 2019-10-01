@@ -12,23 +12,23 @@ Governs the type of cursor to display.
 
 \describe{
 \item{<funciri>}{Specifies a reference to the image for \strong{cursor} by using  functional IRI notation.}
-\item{\emph{'\emph{'auto'}'}}{Specifies to automatically select cursor based on current context.}
-\item{\emph{'\emph{'crosshair'}'}}{Specifies that cursor is to  be a \emph{crosshair} cursor.}
-\item{\emph{'\emph{'default'}'}}{Specifies that cursor is to  be the \emph{default} cursor.   This will most likely appear to be an arrow.}
-\item{\emph{'\emph{'e-resize'}'}}{Specifies that the right edge of the cursor is to move.}
-\item{\emph{'\emph{'help ] ]'}'}}{Specifies that the cursor is to be a help cursor ( question mark or balloon)}
-\item{\emph{'\emph{'inherit'}'}}{Specifies that the cursor is inherited from parent.}
-\item{\emph{'\emph{'move'}'}}{Specifies a move (drag) of the cursor.}
-\item{\emph{'\emph{'n-resize'}'}}{Specifies that the top edge of the cursor is to move.}
-\item{\emph{'\emph{'ne-resize'}'}}{Specifies that the top-right corner of the cursor is to move.}
-\item{\emph{'\emph{'nw-resize'}'}}{Specifies that the top-left corner of the cursor is to move.}
-\item{\emph{'\emph{'pointer'}'}}{Specifies that the cursor is a linking cursor. (often a small hand)}
-\item{\emph{'\emph{'s-resize'}'}}{Specifies that the bottom edge of the cursor is to move.}
-\item{\emph{'\emph{'se-resize'}'}}{Specifies that the bottom-right corner of the cursor is to move.}
-\item{\emph{'\emph{'sw-resize'}'}}{Specifies that the bottom-left corner of the cursor is to move.}
-\item{\emph{'\emph{'text'}'}}{Specifies that the cursor is a text select cursor (usually an I beam)}
-\item{\emph{'\emph{'w-resize'}'}}{Specifies that the left edge of the cursor is to move.}
-\item{\emph{'\emph{'wait'}'}}{Specifies that the cursor is a wait cursor ( often a watch or hour-class)}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to automatically select cursor based on current context.}
+\item{\emph{'\emph{'\emph{'\emph{'crosshair'}'}'}'}}{Specifies that cursor is to  be a \emph{crosshair} cursor.}
+\item{\emph{'\emph{'\emph{'\emph{'default'}'}'}'}}{Specifies that cursor is to  be the \emph{default} cursor.   This will most likely appear to be an arrow.}
+\item{\emph{'\emph{'\emph{'\emph{'e-resize'}'}'}'}}{Specifies that the right edge of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'help ] ]'}'}'}'}}{Specifies that the cursor is to be a help cursor ( question mark or balloon)}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies that the cursor is inherited from parent.}
+\item{\emph{'\emph{'\emph{'\emph{'move'}'}'}'}}{Specifies a move (drag) of the cursor.}
+\item{\emph{'\emph{'\emph{'\emph{'n-resize'}'}'}'}}{Specifies that the top edge of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'ne-resize'}'}'}'}}{Specifies that the top-right corner of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'nw-resize'}'}'}'}}{Specifies that the top-left corner of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'pointer'}'}'}'}}{Specifies that the cursor is a linking cursor. (often a small hand)}
+\item{\emph{'\emph{'\emph{'\emph{'s-resize'}'}'}'}}{Specifies that the bottom edge of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'se-resize'}'}'}'}}{Specifies that the bottom-right corner of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'sw-resize'}'}'}'}}{Specifies that the bottom-left corner of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'text'}'}'}'}}{Specifies that the cursor is a text select cursor (usually an I beam)}
+\item{\emph{'\emph{'\emph{'\emph{'w-resize'}'}'}'}}{Specifies that the left edge of the cursor is to move.}
+\item{\emph{'\emph{'\emph{'\emph{'wait'}'}'}'}}{Specifies that the cursor is a wait cursor ( often a watch or hour-class)}
 }
 }
 

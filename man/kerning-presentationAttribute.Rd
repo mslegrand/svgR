@@ -12,8 +12,8 @@ Governs kerning:  inter-glyph spacing adjustments.
 
 \describe{
 \item{<length>}{Sets a value for the length for the inter-character spacing. Setting to 0, essentially diables auto kerning.}
-\item{\emph{'\emph{'auto'}'}}{Specifies to auto adjust adjust inter-glyph spacing by using kerning tables includess with the font.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the inter-character spacing adjustment from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'auto'}'}'}'}}{Specifies to auto adjust adjust inter-glyph spacing by using kerning tables includess with the font.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the inter-character spacing adjustment from the parent.}
 }
 }
 

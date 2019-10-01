@@ -11,24 +11,24 @@ Governs whether an element or container will be rendered.
 
 
 \describe{
-\item{\emph{'\emph{'block'}'}}{Specifies a block display.}
-\item{\emph{'\emph{'compact'}'}}{Specifies a compack display.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the display from the parent.}
-\item{\emph{'\emph{'inline'}'}}{Specifies  the display to be \emph{inline}.}
-\item{\emph{'\emph{'inline-table'}'}}{Specifies  the display to be \emph{inline-table}.}
-\item{\emph{'\emph{'list-item'}'}}{Specifies  the display to be \emph{list-item}.}
-\item{\emph{'\emph{'marker'}'}}{Specifies  the display to be \emph{marker}.}
-\item{\emph{'\emph{'none'}'}}{Specifies not to render this element or its children.}
-\item{\emph{'\emph{'run-in'}'}}{Specifies  the display to be \emph{run-in}.}
-\item{\emph{'\emph{'table'}'}}{Specifies  the display to be \emph{table}.}
-\item{\emph{'\emph{'table-caption'}'}}{Specifies  the display to be \emph{table-caption}.}
-\item{\emph{'\emph{'table-cell'}'}}{Specifies  the display to be \emph{table-cell}.}
-\item{\emph{'\emph{'table-column'}'}}{Specifies  the display to be \emph{table-column}.}
-\item{\emph{'\emph{'table-column-group'}'}}{Specifies  the display to be \emph{table-column-group}.}
-\item{\emph{'\emph{'table-footer-group'}'}}{Specifies  the display to be \emph{table-footer-group}.}
-\item{\emph{'\emph{'table-header-group'}'}}{Specifies  the display to be \emph{table-header-group}.}
-\item{\emph{'\emph{'table-row'}'}}{Specifies  the display to be \emph{table-row}.}
-\item{\emph{'\emph{'table-row-group'}'}}{Specifies  the display to be \emph{table-row-group}.}
+\item{\emph{'\emph{'\emph{'\emph{'block'}'}'}'}}{Specifies a block display.}
+\item{\emph{'\emph{'\emph{'\emph{'compact'}'}'}'}}{Specifies a compack display.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the display from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'inline'}'}'}'}}{Specifies  the display to be \emph{inline}.}
+\item{\emph{'\emph{'\emph{'\emph{'inline-table'}'}'}'}}{Specifies  the display to be \emph{inline-table}.}
+\item{\emph{'\emph{'\emph{'\emph{'list-item'}'}'}'}}{Specifies  the display to be \emph{list-item}.}
+\item{\emph{'\emph{'\emph{'\emph{'marker'}'}'}'}}{Specifies  the display to be \emph{marker}.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies not to render this element or its children.}
+\item{\emph{'\emph{'\emph{'\emph{'run-in'}'}'}'}}{Specifies  the display to be \emph{run-in}.}
+\item{\emph{'\emph{'\emph{'\emph{'table'}'}'}'}}{Specifies  the display to be \emph{table}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-caption'}'}'}'}}{Specifies  the display to be \emph{table-caption}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-cell'}'}'}'}}{Specifies  the display to be \emph{table-cell}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-column'}'}'}'}}{Specifies  the display to be \emph{table-column}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-column-group'}'}'}'}}{Specifies  the display to be \emph{table-column-group}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-footer-group'}'}'}'}}{Specifies  the display to be \emph{table-footer-group}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-header-group'}'}'}'}}{Specifies  the display to be \emph{table-header-group}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-row'}'}'}'}}{Specifies  the display to be \emph{table-row}.}
+\item{\emph{'\emph{'\emph{'\emph{'table-row-group'}'}'}'}}{Specifies  the display to be \emph{table-row-group}.}
 }
 }
 

@@ -11,10 +11,10 @@ Governs positioning a string of text relative to a given point
 
 
 \describe{
-\item{\emph{'\emph{'end'}'}}{Specifies that the text is to be rendered such that it ends at the current (text) position.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{text-anchor} value from the parent.}
-\item{\emph{'\emph{'middle'}'}}{Specifies that the text is to be rendered such that it is centered  at the current (text) position.}
-\item{\emph{'\emph{'start'}'}}{Specifies that the text is to be rendered such that it begins at the current (text) position.}
+\item{\emph{'\emph{'\emph{'\emph{'end'}'}'}'}}{Specifies that the text is to be rendered such that it ends at the current (text) position.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{text-anchor} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'middle'}'}'}'}}{Specifies that the text is to be rendered such that it is centered  at the current (text) position.}
+\item{\emph{'\emph{'\emph{'\emph{'start'}'}'}'}}{Specifies that the text is to be rendered such that it begins at the current (text) position.}
 }
 }
 

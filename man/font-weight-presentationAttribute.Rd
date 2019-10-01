@@ -11,20 +11,20 @@ Governs the boldness or lightness of the glyphs used to render the text
 
 
 \describe{
-\item{\emph{'\emph{'100'}'}}{Sets the font-weight to be 100.}
-\item{\emph{'\emph{'200'}'}}{Sets the font-weight to be 200.}
-\item{\emph{'\emph{'300'}'}}{Sets the font-weight to be 300.}
-\item{\emph{'\emph{'400'}'}}{Sets the font-weight to be 400.}
-\item{\emph{'\emph{'500'}'}}{Sets the font-weight to be 500.}
-\item{\emph{'\emph{'600'}'}}{Sets the font-weight to be 600.}
-\item{\emph{'\emph{'700'}'}}{Sets the font-weight to be 700.}
-\item{\emph{'\emph{'800'}'}}{Sets the font-weight to be 800.}
-\item{\emph{'\emph{'900'}'}}{Sets the font-weight to be 900.}
-\item{\emph{'\emph{'bold'}'}}{Sets the font-weight to be 700.}
-\item{\emph{'\emph{'bolder'}'}}{Sets  the font-weight to be darker than inherited font-weight}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to use the  font-weight of parent.}
-\item{\emph{'\emph{'lighter'}'}}{Sets the font-weight to be lighter than inherited font-weight}
-\item{\emph{'\emph{'normal'}'}}{Sets the font-weight to be 400}
+\item{\emph{'\emph{'\emph{'\emph{'100'}'}'}'}}{Sets the font-weight to be 100.}
+\item{\emph{'\emph{'\emph{'\emph{'200'}'}'}'}}{Sets the font-weight to be 200.}
+\item{\emph{'\emph{'\emph{'\emph{'300'}'}'}'}}{Sets the font-weight to be 300.}
+\item{\emph{'\emph{'\emph{'\emph{'400'}'}'}'}}{Sets the font-weight to be 400.}
+\item{\emph{'\emph{'\emph{'\emph{'500'}'}'}'}}{Sets the font-weight to be 500.}
+\item{\emph{'\emph{'\emph{'\emph{'600'}'}'}'}}{Sets the font-weight to be 600.}
+\item{\emph{'\emph{'\emph{'\emph{'700'}'}'}'}}{Sets the font-weight to be 700.}
+\item{\emph{'\emph{'\emph{'\emph{'800'}'}'}'}}{Sets the font-weight to be 800.}
+\item{\emph{'\emph{'\emph{'\emph{'900'}'}'}'}}{Sets the font-weight to be 900.}
+\item{\emph{'\emph{'\emph{'\emph{'bold'}'}'}'}}{Sets the font-weight to be 700.}
+\item{\emph{'\emph{'\emph{'\emph{'bolder'}'}'}'}}{Sets  the font-weight to be darker than inherited font-weight}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to use the  font-weight of parent.}
+\item{\emph{'\emph{'\emph{'\emph{'lighter'}'}'}'}}{Sets the font-weight to be lighter than inherited font-weight}
+\item{\emph{'\emph{'\emph{'\emph{'normal'}'}'}'}}{Sets the font-weight to be 400}
 }
 }
 

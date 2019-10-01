@@ -11,9 +11,9 @@ Governs the accumulation of background images of container elements.
 
 
 \describe{
-\item{\emph{'\emph{'accumulate'}'}}{Directive to render to a 'background image canvas' if one exists ( previously created by an ancestor invoking enable-background=new ).  This is in addition to the rendering to the target device.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies the to inherit the background enable status from the parent.}
-\item{\emph{'\emph{'new [ <x> <y> <width> <height> ]'}'}}{Specifies the creation of  a new  'background image canvas'  to overlay any existing one ( exists by way of an ancestor) and render to that. This is in addition to the rendering to the target device.}
+\item{\emph{'\emph{'\emph{'\emph{'accumulate'}'}'}'}}{Directive to render to a 'background image canvas' if one exists ( previously created by an ancestor invoking enable-background=new ).  This is in addition to the rendering to the target device.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies the to inherit the background enable status from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'new [ <x> <y> <width> <height> ]'}'}'}'}}{Specifies the creation of  a new  'background image canvas'  to overlay any existing one ( exists by way of an ancestor) and render to that. This is in addition to the rendering to the target device.}
 }
 }
 

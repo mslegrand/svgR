@@ -73,7 +73,8 @@ checkKids<-function(kids, parentTag){
 }
 
 # extracts only the unamed args (if any)
-allGoodChildern<-function(args){
+allGoodChildern<-function(args, goodClass= "XMLAbstractNode"){
+ 
   if (is.null(names(args))) {
     unnamed<-args
   } else{
@@ -81,7 +82,7 @@ allGoodChildern<-function(args){
   } 
   if(length(unnamed)>0){
     #indx<-sapply(unnamed, function(x)inherits(x, c("numeric", "character","XMLAbstractNode")))
-    indx<-sapply(unnamed, function(x)inherits(x, "XMLAbstractNode" ))
+    indx<-sapply(unnamed, function(x)inherits(x, goodClass) )
     kids<-unnamed[indx]
   } else {
     kids<-unnamed

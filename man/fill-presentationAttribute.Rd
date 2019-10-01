@@ -11,15 +11,15 @@ Defines the paints used to fill the interior of a given graphical element.
 
 
 \describe{
-\item{\emph{'\emph{'none'}'}}{Specifies not to paint the interior of the element.}
-\item{\emph{'\emph{'currentColor'}'}}{Specifies to use the \emph{currentColor} to paint the interior. The current color is the value of the color specified by the \emph{color} property.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies not to paint the interior of the element.}
+\item{\emph{'\emph{'\emph{'\emph{'currentColor'}'}'}'}}{Specifies to use the \emph{currentColor} to paint the interior. The current color is the value of the color specified by the \emph{color} property.}
 \item{<color>}{Specifies a paint color to fill either a shape element or at text content element. The color may be given in any one of 3 ways: name (i.e. red), numeric (#f00 or #ff0000) or as ab rgb (rgb(255,0,0)).}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to use the fill from the parent element.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to use the fill from the parent element.}
 \item{<funciri>}{Specifies to fill using this reference to a paint server, a paint server being a \emph{pattern} or a \emph{gradient}, or a custom paint extension}
 \item{<linearGradient>}{Specifies to fill using this \strong{linearGradient} element}
 \item{<pattern>}{Specifies to fill using this \strong{pattern} element}
 \item{<radialGradient>}{Specifies to fill using this \strong{radialGradient} element}
-\item{\emph{'\emph{'currentColor'}'}}{Specifies to use the \emph{currentColor} to paint the interior. The current color is the value of the color specified by the \emph{color} property.}
+\item{\emph{'\emph{'\emph{'\emph{'currentColor'}'}'}'}}{Specifies to use the \emph{currentColor} to paint the interior. The current color is the value of the color specified by the \emph{color} property.}
 }
 }
 

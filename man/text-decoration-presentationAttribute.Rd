@@ -11,10 +11,10 @@ Governs the application text decorations. (Such as blinking)
 
 
 \describe{
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{text-decoration} value from the parent.}
-\item{\emph{'\emph{'line-through'}'}}{Specifies to decorate the text by placing  a line through the text.}
-\item{\emph{'\emph{'none'}'}}{Specifies no text decoration}
-\item{\emph{'\emph{'underline'}'}}{Specifies to decorate the text by underlining  the text.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{text-decoration} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'line-through'}'}'}'}}{Specifies to decorate the text by placing  a line through the text.}
+\item{\emph{'\emph{'\emph{'\emph{'none'}'}'}'}}{Specifies no text decoration}
+\item{\emph{'\emph{'\emph{'\emph{'underline'}'}'}'}}{Specifies to decorate the text by underlining  the text.}
 }
 }
 

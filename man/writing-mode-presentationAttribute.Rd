@@ -11,13 +11,13 @@ Governs the initial inline-progression-direction
 
 
 \describe{
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the \emph{writing-mode} value from the parent.}
-\item{\emph{'\emph{'lr'}'}}{Specifies \emph{writing-mode} is to be left to right.}
-\item{\emph{'\emph{'lr-tb'}'}}{Specifies \emph{writing-mode} is to be left to right and  top to bottom.}
-\item{\emph{'\emph{'rl'}'}}{Specifies \emph{writing-mode} is to be  right to left.}
-\item{\emph{'\emph{'rl-tb'}'}}{Specifies \emph{writing-mode} is to be right to left, top to bottom.}
-\item{\emph{'\emph{'tb'}'}}{Specifies \emph{writing-mode} is to be top to bottom.}
-\item{\emph{'\emph{'tb-rl'}'}}{Specifies \emph{writing-mode} is to be top to bottom, right to left.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the \emph{writing-mode} value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'lr'}'}'}'}}{Specifies \emph{writing-mode} is to be left to right.}
+\item{\emph{'\emph{'\emph{'\emph{'lr-tb'}'}'}'}}{Specifies \emph{writing-mode} is to be left to right and  top to bottom.}
+\item{\emph{'\emph{'\emph{'\emph{'rl'}'}'}'}}{Specifies \emph{writing-mode} is to be  right to left.}
+\item{\emph{'\emph{'\emph{'\emph{'rl-tb'}'}'}'}}{Specifies \emph{writing-mode} is to be right to left, top to bottom.}
+\item{\emph{'\emph{'\emph{'\emph{'tb'}'}'}'}}{Specifies \emph{writing-mode} is to be top to bottom.}
+\item{\emph{'\emph{'\emph{'\emph{'tb-rl'}'}'}'}}{Specifies \emph{writing-mode} is to be top to bottom, right to left.}
 }
 }
 

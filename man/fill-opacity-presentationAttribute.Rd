@@ -12,7 +12,7 @@ Defines the opacity of the painting operation used to paint the interior the cur
 
 \describe{
 \item{<opacity-value>}{Specifies the opacity value, a  number between 0 and 1 indicating the opacity to be used as fill , with 1 being opaque and 0 being transparent.}
-\item{\emph{'\emph{'inherit'}'}}{Specifies to inherit the opacity value from the parent.}
+\item{\emph{'\emph{'\emph{'\emph{'inherit'}'}'}'}}{Specifies to inherit the opacity value from the parent.}
 }
 }
 
