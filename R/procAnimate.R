@@ -65,14 +65,40 @@ animateOneParamExpand<-function(attrs, paramName){
 }
 
 #used only by animate element in eleDefs
+# preProcAnimate<-function(attrs){
+#   if("attributeName" %in% names(attrs)){
+#     attrs[["attributeName"]]<-sub('\\.',"-",attrs[["attributeName"]])
+#   }
+#   params<-c("from","to")
+#   for(paramName in params){
+#     attrs<-animateOneParamExpand(attrs, paramName)
+#   }
+#   attrs
+# }
+
+
+#used only by animate element in eleDefs
 preProcAnimate<-function(attrs){
-  if("attributeName" %in% names(attrs)){
-    attrs[["attributeName"]]<-sub('\\.',"-",attrs[["attributeName"]])
-  }
-  params<-c("from","to")
-  for(paramName in params){
-    attrs<-animateOneParamExpand(attrs, paramName)
+  if( identical('d',attrs[["attributeName"]] )){
+    if(
+      'from' %in% names(attrs) && 
+      'to' %in% names(attrs) 
+    ){
+      v<-list(attrs$from, attrs$to)
+      attrs$to<-attrs$from<-NULL
+      attrs$values<-v
+    }
+    
+    values<-attrs[['values']]
+    if( is.list(values) && length(values)>0){
+      values<-lapply(values, function(v){
+        if(length(names(v))>0){
+          v<-unlist(mapply(c,names(v) ,v), use.names=F)
+        }
+        v
+      })
+      attrs[['values']]<-values
+    }
   }
   attrs
 }
-
