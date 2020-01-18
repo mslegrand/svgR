@@ -93,6 +93,8 @@ preProcAnimate<-function(attrs){
     if( is.list(values) && length(values)>0){
       values<-lapply(values, function(v){
         if(length(names(v))>0){
+          v[names(v)=='z']<-' '
+          v[names(v)=='Z']<-' '
           v<-unlist(mapply(c,names(v) ,v), use.names=F)
         }
         v
